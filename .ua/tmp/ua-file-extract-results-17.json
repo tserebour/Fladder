@@ -1,0 +1,135 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 2,
+  "filesSkipped": [
+    "android/app/src/production/res/values/colors.xml",
+    "android/app/src/profile/AndroidManifest.xml",
+    "android/gradle/wrapper/gradle-wrapper.properties",
+    "assets/Icon.afdesign",
+    "assets/fladder_icon.afphoto",
+    "assets/fladder_icon_general.afphoto",
+    "assets/macos-dmg/Fladder-DMG-Background.afphoto",
+    "assets/marketing/banner.afphoto",
+    "assets/marketing/banner2.afphoto",
+    "assets/windows-installer/fladder-installer-100.bmp",
+    "assets/windows-installer/fladder-installer-125.bmp",
+    "assets/windows-installer/fladder-installer-150.bmp",
+    "fastlane/metadata/android/en-US/changelogs/0.10.3.txt",
+    "flatpak/Fladder.desktop",
+    "flatpak/nl.jknaapen.fladder.metainfo.xml",
+    "ios/Flutter/AppFrameworkInfo.plist",
+    "ios/Flutter/Debug.xcconfig",
+    "ios/Flutter/Release.xcconfig",
+    "ios/Podfile",
+    "ios/Runner.xcodeproj/project.pbxproj",
+    "ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+    "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+    "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 2,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 2
+    }
+  },
+  "results": [
+    {
+      "path": "config/config.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 5,
+      "nonEmptyLines": 5,
+      "sections": [
+        {
+          "heading": "baseUrl",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seerrBaseUrl",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "seerrHeader",
+          "level": 1,
+          "line": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "flatpak/nl.jknaapen.fladder.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 153,
+      "nonEmptyLines": 147,
+      "sections": [
+        {
+          "heading": "id",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "runtime",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "runtime-version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "sdk",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "command",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "add-extensions",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "cleanup-commands",
+          "level": 1,
+          "line": 13
+        },
+        {
+          "heading": "finish-args",
+          "level": 1,
+          "line": 16
+        },
+        {
+          "heading": "modules",
+          "level": 1,
+          "line": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    }
+  ]
+}

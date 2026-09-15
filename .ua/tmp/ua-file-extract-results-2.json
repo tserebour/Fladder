@@ -1,0 +1,1622 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 7,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 7,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/MainActivity.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 141,
+      "nonEmptyLines": 122,
+      "functions": [
+        {
+          "name": "configureFlutterEngine",
+          "startLine": 42,
+          "endLine": 109,
+          "params": [
+            "flutterEngine"
+          ]
+        },
+        {
+          "name": "onNewIntent",
+          "startLine": 111,
+          "endLine": 115,
+          "params": [
+            "intent"
+          ]
+        },
+        {
+          "name": "launchActivity",
+          "startLine": 123,
+          "endLine": 132,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "disposeActivity",
+          "startLine": 134,
+          "endLine": 138,
+          "params": []
+        },
+        {
+          "name": "isLeanBackEnabled",
+          "startLine": 140,
+          "endLine": 140,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "WallpaperFileProvider",
+          "startLine": 36,
+          "endLine": 36,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "MainActivity",
+          "startLine": 38,
+          "endLine": 141,
+          "methods": [
+            "configureFlutterEngine",
+            "onNewIntent",
+            "launchActivity",
+            "disposeActivity",
+            "isLeanBackEnabled"
+          ],
+          "properties": [
+            "videoPlayerLauncher",
+            "videoPlayerCallback",
+            "wallpaperLauncher"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "WallpaperFileProvider",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "configureFlutterEngine",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "onNewIntent",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "launchActivity",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "disposeActivity",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "isLeanBackEnabled",
+          "line": 140,
+          "isDefault": false
+        },
+        {
+          "name": "MainActivity",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "configureFlutterEngine",
+          "lineNumber": 43
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "setUp",
+          "lineNumber": 46
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "setUp",
+          "lineNumber": 50
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "WallpaperApiUtility",
+          "lineNumber": 52
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "setUp",
+          "lineNumber": 54
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "VideoPlayerListenerCallback",
+          "lineNumber": 59
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "VideoPlayerControlsCallback",
+          "lineNumber": 62
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "TranslationsPigeon",
+          "lineNumber": 65
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "setUp",
+          "lineNumber": 67
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "setUp",
+          "lineNumber": 72
+        },
+        {
+          "caller": "isIgnoringBatteryOptimizations",
+          "callee": "getSystemService",
+          "lineNumber": 76
+        },
+        {
+          "caller": "isIgnoringBatteryOptimizations",
+          "callee": "isIgnoringBatteryOptimizations",
+          "lineNumber": 77
+        },
+        {
+          "caller": "openBatteryOptimizationSettings",
+          "callee": "startActivity",
+          "lineNumber": 81
+        },
+        {
+          "caller": "openBatteryOptimizationSettings",
+          "callee": "Intent",
+          "lineNumber": 81
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "setUp",
+          "lineNumber": 86
+        },
+        {
+          "caller": "getAndroidSdkInt",
+          "callee": "toLong",
+          "lineNumber": 89
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "registerForActivityResult",
+          "lineNumber": 93
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "StartActivityForResult",
+          "lineNumber": 94
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "StartResult",
+          "lineNumber": 100
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "getStringExtra",
+          "lineNumber": 100
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "StartResult",
+          "lineNumber": 102
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "stop",
+          "lineNumber": 105
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "release",
+          "lineNumber": 106
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "invoke",
+          "lineNumber": 107
+        },
+        {
+          "caller": "configureFlutterEngine",
+          "callee": "success",
+          "lineNumber": 107
+        },
+        {
+          "caller": "onNewIntent",
+          "callee": "onNewIntent",
+          "lineNumber": 112
+        },
+        {
+          "caller": "onNewIntent",
+          "callee": "setIntent",
+          "lineNumber": 114
+        },
+        {
+          "caller": "launchActivity",
+          "callee": "Intent",
+          "lineNumber": 126
+        },
+        {
+          "caller": "launchActivity",
+          "callee": "launch",
+          "lineNumber": 127
+        },
+        {
+          "caller": "launchActivity",
+          "callee": "printStackTrace",
+          "lineNumber": 129
+        },
+        {
+          "caller": "launchActivity",
+          "callee": "callback",
+          "lineNumber": 130
+        },
+        {
+          "caller": "launchActivity",
+          "callee": "failure",
+          "lineNumber": 130
+        },
+        {
+          "caller": "disposeActivity",
+          "callee": "stop",
+          "lineNumber": 135
+        },
+        {
+          "caller": "disposeActivity",
+          "callee": "release",
+          "lineNumber": 136
+        },
+        {
+          "caller": "disposeActivity",
+          "callee": "finish",
+          "lineNumber": 137
+        },
+        {
+          "caller": "isLeanBackEnabled",
+          "callee": "leanBackEnabled",
+          "lineNumber": 140
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 7,
+        "functionCount": 5,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/Theme.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 73,
+      "functions": [
+        {
+          "name": "VideoPlayerTheme",
+          "startLine": 22,
+          "endLine": 50,
+          "params": [
+            "content"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "VideoPlayerTheme",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "VideoPlayerTheme",
+          "callee": "collectAsState",
+          "lineNumber": 28
+        },
+        {
+          "caller": "VideoPlayerTheme",
+          "callee": "rememberDynamicColorScheme",
+          "lineNumber": 30
+        },
+        {
+          "caller": "VideoPlayerTheme",
+          "callee": "Color",
+          "lineNumber": 31
+        },
+        {
+          "caller": "VideoPlayerTheme",
+          "callee": "dynamicDarkColorScheme",
+          "lineNumber": 39
+        },
+        {
+          "caller": "VideoPlayerTheme",
+          "callee": "MaterialTheme",
+          "lineNumber": 44
+        },
+        {
+          "caller": "VideoPlayerTheme",
+          "callee": "content",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/controls/SkipOverlay.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 171,
+      "nonEmptyLines": 156,
+      "functions": [
+        {
+          "name": "SegmentSkipOverlay",
+          "startLine": 46,
+          "endLine": 162,
+          "params": [
+            "modifier"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SegmentSkipOverlay",
+          "line": 46,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "leanBackEnabled",
+          "lineNumber": 50
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "remember",
+          "lineNumber": 51
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "FocusRequester",
+          "lineNumber": 51
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "collectAsState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "collectAsState",
+          "lineNumber": 54
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "emptyList",
+          "lineNumber": 56
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "collectAsState",
+          "lineNumber": 58
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "mapOf",
+          "lineNumber": 58
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "remember",
+          "lineNumber": 59
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "mutableStateListOf",
+          "lineNumber": 59
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "LaunchedEffect",
+          "lineNumber": 61
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "isEmpty",
+          "lineNumber": 63
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "firstOrNull",
+          "lineNumber": 65
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "let",
+          "lineNumber": 69
+        },
+        {
+          "caller": "skipSegment",
+          "callee": "seekTo",
+          "lineNumber": 72
+        },
+        {
+          "caller": "skipSegment",
+          "callee": "add",
+          "lineNumber": 73
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "LaunchedEffect",
+          "lineNumber": 76
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "isEmpty",
+          "lineNumber": 77
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "contains",
+          "lineNumber": 79
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "skipSegment",
+          "lineNumber": 83
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "LaunchedEffect",
+          "lineNumber": 88
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "captureFocus",
+          "lineNumber": 90
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 94
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "AnimatedVisibility",
+          "lineNumber": 96
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "safeContentPadding",
+          "lineNumber": 98
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "padding",
+          "lineNumber": 98
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "align",
+          "lineNumber": 98
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "CustomButton",
+          "lineNumber": 103
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "defaultSelected",
+          "lineNumber": 104
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "focusRequester",
+          "lineNumber": 104
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "copy",
+          "lineNumber": 107
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "let",
+          "lineNumber": 110
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "seekTo",
+          "lineNumber": 111
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "Row",
+          "lineNumber": 115
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "spacedBy",
+          "lineNumber": 116
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "Box",
+          "lineNumber": 120
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "border",
+          "lineNumber": 121
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "background",
+          "lineNumber": 121
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "size",
+          "lineNumber": 121
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "copy",
+          "lineNumber": 124
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "copy",
+          "lineNumber": 129
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "Box",
+          "lineNumber": 133
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "background",
+          "lineNumber": 134
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "fillMaxSize",
+          "lineNumber": 134
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "padding",
+          "lineNumber": 134
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "let",
+          "lineNumber": 146
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "Translate",
+          "lineNumber": 147
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "skip",
+          "lineNumber": 148
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "lowercase",
+          "lineNumber": 149
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "Text",
+          "lineNumber": 153
+        },
+        {
+          "caller": "SegmentSkipOverlay",
+          "callee": "copy",
+          "lineNumber": 155
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/screensavers/Screensaver.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 101,
+      "nonEmptyLines": 90,
+      "functions": [
+        {
+          "name": "ScreenSaver",
+          "startLine": 29,
+          "endLine": 92,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "BlackScreensaver",
+          "startLine": 94,
+          "endLine": 101,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ScreenSaver",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ScreenSaver",
+          "callee": "collectAsState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "collectAsState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "content",
+          "lineNumber": 37
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "collectAsState",
+          "lineNumber": 41
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "collectAsState",
+          "lineNumber": 42
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "remember",
+          "lineNumber": 44
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 44
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "currentTimeMillis",
+          "lineNumber": 44
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "remember",
+          "lineNumber": 46
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "derivedStateOf",
+          "lineNumber": 47
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "remember",
+          "lineNumber": 52
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "mutableStateOf",
+          "lineNumber": 52
+        },
+        {
+          "caller": "updateLastInteraction",
+          "callee": "currentTimeMillis",
+          "lineNumber": 56
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "LaunchedEffect",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "delay",
+          "lineNumber": 61
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "Box",
+          "lineNumber": 68
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "onKeyEvent",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "updateLastInteraction",
+          "lineNumber": 70
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "content",
+          "lineNumber": 77
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "AnimatedVisibility",
+          "lineNumber": 78
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "fadeIn",
+          "lineNumber": 80
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "fadeOut",
+          "lineNumber": 81
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "ScreensaverDvd",
+          "lineNumber": 84
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "ScreensaverLogo",
+          "lineNumber": 85
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "ScreensaverTime",
+          "lineNumber": 86
+        },
+        {
+          "caller": "ScreenSaver",
+          "callee": "BlackScreensaver",
+          "lineNumber": 87
+        },
+        {
+          "caller": "BlackScreensaver",
+          "callee": "Box",
+          "lineNumber": 96
+        },
+        {
+          "caller": "BlackScreensaver",
+          "callee": "background",
+          "lineNumber": 97
+        },
+        {
+          "caller": "BlackScreensaver",
+          "callee": "fillMaxSize",
+          "lineNumber": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/messengers/VideoPlayerImplementation.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 211,
+      "nonEmptyLines": 184,
+      "functions": [
+        {
+          "name": "sendPlayableModel",
+          "startLine": 41,
+          "endLine": 55,
+          "params": [
+            "playableData",
+            "callback"
+          ]
+        },
+        {
+          "name": "sendTVGuideModel",
+          "startLine": 57,
+          "endLine": 65,
+          "params": [
+            "guide",
+            "callback"
+          ]
+        },
+        {
+          "name": "setSubtitleSettings",
+          "startLine": 67,
+          "endLine": 73,
+          "params": [
+            "settings"
+          ]
+        },
+        {
+          "name": "open",
+          "startLine": 75,
+          "endLine": 127,
+          "params": [
+            "url",
+            "play",
+            "callback"
+          ]
+        },
+        {
+          "name": "setLooping",
+          "startLine": 130,
+          "endLine": 132,
+          "params": [
+            "looping"
+          ]
+        },
+        {
+          "name": "setVolume",
+          "startLine": 134,
+          "endLine": 136,
+          "params": [
+            "volume"
+          ]
+        },
+        {
+          "name": "setPlaybackSpeed",
+          "startLine": 138,
+          "endLine": 140,
+          "params": [
+            "speed"
+          ]
+        },
+        {
+          "name": "play",
+          "startLine": 142,
+          "endLine": 144,
+          "params": []
+        },
+        {
+          "name": "pause",
+          "startLine": 146,
+          "endLine": 148,
+          "params": []
+        },
+        {
+          "name": "seekTo",
+          "startLine": 150,
+          "endLine": 152,
+          "params": [
+            "position"
+          ]
+        },
+        {
+          "name": "stop",
+          "startLine": 154,
+          "endLine": 156,
+          "params": []
+        },
+        {
+          "name": "init",
+          "startLine": 158,
+          "endLine": 166,
+          "params": [
+            "exoPlayer"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "VideoPlayerImplementation",
+          "startLine": 30,
+          "endLine": 167,
+          "methods": [
+            "sendPlayableModel",
+            "sendTVGuideModel",
+            "setSubtitleSettings",
+            "open",
+            "setLooping",
+            "setVolume",
+            "setPlaybackSpeed",
+            "play",
+            "pause",
+            "seekTo",
+            "stop",
+            "init"
+          ],
+          "properties": [
+            "player",
+            "playbackData",
+            "subsInitialized",
+            "isTVMode"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "player",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "playbackData",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "subsInitialized",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "isTVMode",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "sendPlayableModel",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "sendTVGuideModel",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "setSubtitleSettings",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "open",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "setLooping",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "setVolume",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "setPlaybackSpeed",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "play",
+          "line": 142,
+          "isDefault": false
+        },
+        {
+          "name": "pause",
+          "line": 146,
+          "isDefault": false
+        },
+        {
+          "name": "seekTo",
+          "line": 150,
+          "isDefault": false
+        },
+        {
+          "name": "stop",
+          "line": 154,
+          "isDefault": false
+        },
+        {
+          "name": "init",
+          "line": 158,
+          "isDefault": false
+        },
+        {
+          "name": "VideoPlayerImplementation",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "sendPlayableModel",
+          "callee": "println",
+          "lineNumber": 46
+        },
+        {
+          "caller": "sendPlayableModel",
+          "callee": "callback",
+          "lineNumber": 48
+        },
+        {
+          "caller": "sendPlayableModel",
+          "callee": "success",
+          "lineNumber": 48
+        },
+        {
+          "caller": "sendPlayableModel",
+          "callee": "println",
+          "lineNumber": 51
+        },
+        {
+          "caller": "sendPlayableModel",
+          "callee": "callback",
+          "lineNumber": 52
+        },
+        {
+          "caller": "sendPlayableModel",
+          "callee": "success",
+          "lineNumber": 52
+        },
+        {
+          "caller": "sendTVGuideModel",
+          "callee": "callback",
+          "lineNumber": 60
+        },
+        {
+          "caller": "sendTVGuideModel",
+          "callee": "success",
+          "lineNumber": 60
+        },
+        {
+          "caller": "sendTVGuideModel",
+          "callee": "println",
+          "lineNumber": 62
+        },
+        {
+          "caller": "sendTVGuideModel",
+          "callee": "callback",
+          "lineNumber": 63
+        },
+        {
+          "caller": "sendTVGuideModel",
+          "callee": "success",
+          "lineNumber": 63
+        },
+        {
+          "caller": "setSubtitleSettings",
+          "callee": "println",
+          "lineNumber": 71
+        },
+        {
+          "caller": "open",
+          "callee": "postDelayed",
+          "lineNumber": 76
+        },
+        {
+          "caller": "open",
+          "callee": "Handler",
+          "lineNumber": 76
+        },
+        {
+          "caller": "open",
+          "callee": "getMainLooper",
+          "lineNumber": 76
+        },
+        {
+          "caller": "open",
+          "callee": "let",
+          "lineNumber": 78
+        },
+        {
+          "caller": "open",
+          "callee": "setAudioTrackIndex",
+          "lineNumber": 79
+        },
+        {
+          "caller": "open",
+          "callee": "toInt",
+          "lineNumber": 79
+        },
+        {
+          "caller": "open",
+          "callee": "setSubtitleTrackIndex",
+          "lineNumber": 80
+        },
+        {
+          "caller": "open",
+          "callee": "toInt",
+          "lineNumber": 80
+        },
+        {
+          "caller": "open",
+          "callee": "contains",
+          "lineNumber": 83
+        },
+        {
+          "caller": "open",
+          "callee": "endsWith",
+          "lineNumber": 83
+        },
+        {
+          "caller": "open",
+          "callee": "listOf",
+          "lineNumber": 87
+        },
+        {
+          "caller": "open",
+          "callee": "setSubtitleConfigurations",
+          "lineNumber": 88
+        },
+        {
+          "caller": "open",
+          "callee": "setMediaId",
+          "lineNumber": 88
+        },
+        {
+          "caller": "open",
+          "callee": "setTag",
+          "lineNumber": 88
+        },
+        {
+          "caller": "open",
+          "callee": "setUri",
+          "lineNumber": 88
+        },
+        {
+          "caller": "open",
+          "callee": "Builder",
+          "lineNumber": 88
+        },
+        {
+          "caller": "open",
+          "callee": "map",
+          "lineNumber": 93
+        },
+        {
+          "caller": "open",
+          "callee": "filter",
+          "lineNumber": 93
+        },
+        {
+          "caller": "open",
+          "callee": "isNullOrEmpty",
+          "lineNumber": 93
+        },
+        {
+          "caller": "open",
+          "callee": "build",
+          "lineNumber": 94
+        },
+        {
+          "caller": "open",
+          "callee": "setLabel",
+          "lineNumber": 94
+        },
+        {
+          "caller": "open",
+          "callee": "setLanguage",
+          "lineNumber": 94
+        },
+        {
+          "caller": "open",
+          "callee": "setMimeType",
+          "lineNumber": 94
+        },
+        {
+          "caller": "open",
+          "callee": "Builder",
+          "lineNumber": 94
+        },
+        {
+          "caller": "open",
+          "callee": "toUri",
+          "lineNumber": 94
+        },
+        {
+          "caller": "open",
+          "callee": "guessSubtitleMimeType",
+          "lineNumber": 95
+        },
+        {
+          "caller": "open",
+          "callee": "setMimeType",
+          "lineNumber": 103
+        },
+        {
+          "caller": "open",
+          "callee": "build",
+          "lineNumber": 106
+        },
+        {
+          "caller": "open",
+          "callee": "stop",
+          "lineNumber": 108
+        },
+        {
+          "caller": "open",
+          "callee": "clearMediaItems",
+          "lineNumber": 109
+        },
+        {
+          "caller": "open",
+          "callee": "setMediaItem",
+          "lineNumber": 110
+        },
+        {
+          "caller": "open",
+          "callee": "prepare",
+          "lineNumber": 111
+        },
+        {
+          "caller": "open",
+          "callee": "seekTo",
+          "lineNumber": 115
+        },
+        {
+          "caller": "open",
+          "callee": "callback",
+          "lineNumber": 118
+        },
+        {
+          "caller": "open",
+          "callee": "success",
+          "lineNumber": 118
+        },
+        {
+          "caller": "open",
+          "callee": "println",
+          "lineNumber": 122
+        },
+        {
+          "caller": "open",
+          "callee": "callback",
+          "lineNumber": 123
+        },
+        {
+          "caller": "open",
+          "callee": "success",
+          "lineNumber": 123
+        },
+        {
+          "caller": "setVolume",
+          "callee": "toFloat",
+          "lineNumber": 135
+        },
+        {
+          "caller": "setPlaybackSpeed",
+          "callee": "setPlaybackSpeed",
+          "lineNumber": 139
+        },
+        {
+          "caller": "setPlaybackSpeed",
+          "callee": "toFloat",
+          "lineNumber": 139
+        },
+        {
+          "caller": "play",
+          "callee": "play",
+          "lineNumber": 143
+        },
+        {
+          "caller": "pause",
+          "callee": "pause",
+          "lineNumber": 147
+        },
+        {
+          "caller": "seekTo",
+          "callee": "seekTo",
+          "lineNumber": 151
+        },
+        {
+          "caller": "stop",
+          "callee": "stop",
+          "lineNumber": 155
+        },
+        {
+          "caller": "init",
+          "callee": "setAudioTrackIndex",
+          "lineNumber": 163
+        },
+        {
+          "caller": "init",
+          "callee": "toInt",
+          "lineNumber": 163
+        },
+        {
+          "caller": "init",
+          "callee": "setSubtitleTrackIndex",
+          "lineNumber": 164
+        },
+        {
+          "caller": "init",
+          "callee": "toInt",
+          "lineNumber": 164
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 17,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/objects/PlayerSettingsObject.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "sendPlayerSettings",
+          "startLine": 49,
+          "endLine": 51,
+          "params": [
+            "playerSettings"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PlayerSettingsObject",
+          "startLine": 15,
+          "endLine": 52,
+          "methods": [
+            "sendPlayerSettings"
+          ],
+          "properties": [
+            "settings",
+            "subtitleSettings",
+            "skipMap",
+            "forwardSpeed",
+            "backwardSpeed",
+            "themeColor",
+            "autoNextType",
+            "acceptedOrientations",
+            "fillScreen",
+            "videoFit",
+            "screenSaver"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "settings",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "subtitleSettings",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "skipMap",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "forwardSpeed",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "backwardSpeed",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "themeColor",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "autoNextType",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "acceptedOrientations",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "fillScreen",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "videoFit",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "screenSaver",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "sendPlayerSettings",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "PlayerSettingsObject",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 13,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/wallpaper/WallpaperApiUtility.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "openWallpaperPopup",
+          "startLine": 14,
+          "endLine": 39,
+          "params": [
+            "filePath",
+            "callback"
+          ]
+        },
+        {
+          "name": "onResult",
+          "startLine": 41,
+          "endLine": 44,
+          "params": [
+            "success"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "WallpaperApiUtility",
+          "startLine": 8,
+          "endLine": 45,
+          "methods": [
+            "openWallpaperPopup",
+            "onResult"
+          ],
+          "properties": [
+            "applicationContext",
+            "launcher",
+            "pendingCallback"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "openWallpaperPopup",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "onResult",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "WallpaperApiUtility",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "openWallpaperPopup",
+          "callee": "File",
+          "lineNumber": 18
+        },
+        {
+          "caller": "openWallpaperPopup",
+          "callee": "getUriForFile",
+          "lineNumber": 21
+        },
+        {
+          "caller": "openWallpaperPopup",
+          "callee": "apply",
+          "lineNumber": 27
+        },
+        {
+          "caller": "openWallpaperPopup",
+          "callee": "Intent",
+          "lineNumber": 27
+        },
+        {
+          "caller": "openWallpaperPopup",
+          "callee": "addCategory",
+          "lineNumber": 28
+        },
+        {
+          "caller": "openWallpaperPopup",
+          "callee": "setDataAndType",
+          "lineNumber": 29
+        },
+        {
+          "caller": "openWallpaperPopup",
+          "callee": "putExtra",
+          "lineNumber": 30
+        },
+        {
+          "caller": "openWallpaperPopup",
+          "callee": "addFlags",
+          "lineNumber": 31
+        },
+        {
+          "caller": "openWallpaperPopup",
+          "callee": "launch",
+          "lineNumber": 34
+        },
+        {
+          "caller": "openWallpaperPopup",
+          "callee": "createChooser",
+          "lineNumber": 34
+        },
+        {
+          "caller": "openWallpaperPopup",
+          "callee": "FlutterError",
+          "lineNumber": 37
+        },
+        {
+          "caller": "onResult",
+          "callee": "invoke",
+          "lineNumber": 42
+        },
+        {
+          "caller": "onResult",
+          "callee": "success",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    }
+  ]
+}

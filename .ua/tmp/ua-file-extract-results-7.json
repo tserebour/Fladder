@@ -1,0 +1,1434 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 4,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/controls/CustomButton.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 138,
+      "nonEmptyLines": 125,
+      "functions": [
+        {
+          "name": "CustomButton",
+          "startLine": 36,
+          "endLine": 138,
+          "params": [
+            "modifier",
+            "onClick",
+            "enabled",
+            "enableScaledFocus",
+            "clickAnimation",
+            "backgroundColor",
+            "foreGroundColor",
+            "backgroundFocusedColor",
+            "foreGroundFocusedColor",
+            "shape",
+            "onFocused",
+            "padding",
+            "icon"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CustomButton",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CustomButton",
+          "callee": "copy",
+          "lineNumber": 43
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "remember",
+          "lineNumber": 52
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "MutableInteractionSource",
+          "lineNumber": 52
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "remember",
+          "lineNumber": 53
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "mutableStateOf",
+          "lineNumber": 53
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "remember",
+          "lineNumber": 55
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "mutableStateOf",
+          "lineNumber": 55
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "collectIsPressedAsState",
+          "lineNumber": 56
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "animateFloatAsState",
+          "lineNumber": 66
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "spring",
+          "lineNumber": 68
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "animateColorAsState",
+          "lineNumber": 72
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "animateColorAsState",
+          "lineNumber": 80
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "Box",
+          "lineNumber": 88
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "alpha",
+          "lineNumber": 89
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "clickable",
+          "lineNumber": 89
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "onFocusChanged",
+          "lineNumber": 89
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "background",
+          "lineNumber": 89
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "conditional",
+          "lineNumber": 89
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "onKeyEvent",
+          "lineNumber": 89
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "scale",
+          "lineNumber": 115
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "invoke",
+          "lineNumber": 121
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "CompositionLocalProvider",
+          "lineNumber": 132
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "Box",
+          "lineNumber": 133
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "padding",
+          "lineNumber": 133
+        },
+        {
+          "caller": "CustomButton",
+          "callee": "icon",
+          "lineNumber": 134
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/dialogs/TrackButton.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "TrackButton",
+          "startLine": 21,
+          "endLine": 53,
+          "params": [
+            "modifier",
+            "onClick",
+            "selected",
+            "content"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TrackButton",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "TrackButton",
+          "callee": "copy",
+          "lineNumber": 29
+        },
+        {
+          "caller": "TrackButton",
+          "callee": "CustomButton",
+          "lineNumber": 31
+        },
+        {
+          "caller": "TrackButton",
+          "callee": "copy",
+          "lineNumber": 32
+        },
+        {
+          "caller": "TrackButton",
+          "callee": "defaultMinSize",
+          "lineNumber": 33
+        },
+        {
+          "caller": "TrackButton",
+          "callee": "padding",
+          "lineNumber": 33
+        },
+        {
+          "caller": "TrackButton",
+          "callee": "Row",
+          "lineNumber": 38
+        },
+        {
+          "caller": "TrackButton",
+          "callee": "spacedBy",
+          "lineNumber": 39
+        },
+        {
+          "caller": "TrackButton",
+          "callee": "Icon",
+          "lineNumber": 43
+        },
+        {
+          "caller": "TrackButton",
+          "callee": "CompositionLocalProvider",
+          "lineNumber": 48
+        },
+        {
+          "caller": "TrackButton",
+          "callee": "content",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/NextUpOverlay.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 340,
+      "nonEmptyLines": 306,
+      "functions": [
+        {
+          "name": "NextUpOverlay",
+          "startLine": 59,
+          "endLine": 241,
+          "params": [
+            "modifier",
+            "overlay"
+          ]
+        },
+        {
+          "name": "MediaInfo",
+          "startLine": 243,
+          "endLine": 284,
+          "params": []
+        },
+        {
+          "name": "showNextUp",
+          "startLine": 286,
+          "endLine": 340,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NextUpOverlay",
+          "line": 59,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NextUpOverlay",
+          "callee": "collectAsState",
+          "lineNumber": 64
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "collectAsState",
+          "lineNumber": 66
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "remember",
+          "lineNumber": 67
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "mutableStateOf",
+          "lineNumber": 67
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Box",
+          "lineNumber": 70
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "fillMaxSize",
+          "lineNumber": 71
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "overlay",
+          "lineNumber": 73
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "showNextUp",
+          "lineNumber": 77
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "remember",
+          "lineNumber": 79
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "mutableStateOf",
+          "lineNumber": 79
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "remember",
+          "lineNumber": 80
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "FocusRequester",
+          "lineNumber": 80
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "remember",
+          "lineNumber": 81
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "mutableIntStateOf",
+          "lineNumber": 81
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "LaunchedEffect",
+          "lineNumber": 88
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "requestFocus",
+          "lineNumber": 92
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "collectAsState",
+          "lineNumber": 98
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "LaunchedEffect",
+          "lineNumber": 100
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "reInitNextUp",
+          "lineNumber": 101
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "loadNextVideo",
+          "lineNumber": 106
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "reInitNextUp",
+          "lineNumber": 107
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "LaunchedEffect",
+          "lineNumber": 112
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "delay",
+          "lineNumber": 115
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "loadNextVideo",
+          "lineNumber": 118
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "animateDpAsState",
+          "lineNumber": 124
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "animateFloatAsState",
+          "lineNumber": 125
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Box",
+          "lineNumber": 130
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "background",
+          "lineNumber": 131
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Color",
+          "lineNumber": 132
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Box",
+          "lineNumber": 135
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "clickable",
+          "lineNumber": 136
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "conditional",
+          "lineNumber": 136
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "fillMaxSize",
+          "lineNumber": 136
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "align",
+          "lineNumber": 136
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "padding",
+          "lineNumber": 136
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "highlightOnFocus",
+          "lineNumber": 141
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "overlay",
+          "lineNumber": 153
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Column",
+          "lineNumber": 156
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "padding",
+          "lineNumber": 157
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "background",
+          "lineNumber": 157
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "padding",
+          "lineNumber": 157
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "visible",
+          "lineNumber": 157
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "align",
+          "lineNumber": 157
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "fillMaxWidth",
+          "lineNumber": 157
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "wrapContentHeight",
+          "lineNumber": 157
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 165
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "spacedBy",
+          "lineNumber": 168
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Column",
+          "lineNumber": 170
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "weight",
+          "lineNumber": 171
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "spacedBy",
+          "lineNumber": 172
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Translate",
+          "lineNumber": 174
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "nextUpInSeconds",
+          "lineNumber": 176
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "toLong",
+          "lineNumber": 177
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Text",
+          "lineNumber": 183
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Box",
+          "lineNumber": 192
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "background",
+          "lineNumber": 193
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "heightIn",
+          "lineNumber": 193
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "fillMaxWidth",
+          "lineNumber": 193
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "align",
+          "lineNumber": 193
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "copy",
+          "lineNumber": 198
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 199
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "MediaInfo",
+          "lineNumber": 202
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Row",
+          "lineNumber": 204
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "fillMaxWidth",
+          "lineNumber": 205
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "CustomButton",
+          "lineNumber": 208
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "focusRequester",
+          "lineNumber": 209
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Row",
+          "lineNumber": 212
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "spacedBy",
+          "lineNumber": 213
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Translate",
+          "lineNumber": 215
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Text",
+          "lineNumber": 216
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Icon",
+          "lineNumber": 218
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "let",
+          "lineNumber": 221
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "CustomButton",
+          "lineNumber": 222
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "reInitNextUp",
+          "lineNumber": 224
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "finish",
+          "lineNumber": 225
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Row",
+          "lineNumber": 228
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "spacedBy",
+          "lineNumber": 229
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Translate",
+          "lineNumber": 231
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Text",
+          "lineNumber": 232
+        },
+        {
+          "caller": "NextUpOverlay",
+          "callee": "Icon",
+          "lineNumber": 234
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "collectAsState",
+          "lineNumber": 247
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "let",
+          "lineNumber": 249
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "Column",
+          "lineNumber": 250
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "spacedBy",
+          "lineNumber": 251
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "Text",
+          "lineNumber": 253
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "Text",
+          "lineNumber": 259
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "copy",
+          "lineNumber": 262
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "AsyncImage",
+          "lineNumber": 264
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "clip",
+          "lineNumber": 265
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "aspectRatio",
+          "lineNumber": 265
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "fillMaxWidth",
+          "lineNumber": 265
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 268
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "let",
+          "lineNumber": 273
+        },
+        {
+          "caller": "MediaInfo",
+          "callee": "Text",
+          "lineNumber": 274
+        },
+        {
+          "caller": "showNextUp",
+          "callee": "collectAsState",
+          "lineNumber": 288
+        },
+        {
+          "caller": "showNextUp",
+          "callee": "collectAsState",
+          "lineNumber": 289
+        },
+        {
+          "caller": "showNextUp",
+          "callee": "collectAsState",
+          "lineNumber": 290
+        },
+        {
+          "caller": "showNextUp",
+          "callee": "collectAsState",
+          "lineNumber": 291
+        },
+        {
+          "caller": "showNextUp",
+          "callee": "toDuration",
+          "lineNumber": 293
+        },
+        {
+          "caller": "showNextUp",
+          "callee": "toDuration",
+          "lineNumber": 294
+        },
+        {
+          "caller": "showNextUp",
+          "callee": "collectAsState",
+          "lineNumber": 300
+        },
+        {
+          "caller": "showNextUp",
+          "callee": "firstOrNull",
+          "lineNumber": 302
+        },
+        {
+          "caller": "showNextUp",
+          "callee": "listOf",
+          "lineNumber": 302
+        },
+        {
+          "caller": "showNextUp",
+          "callee": "toDuration",
+          "lineNumber": 317
+        },
+        {
+          "caller": "showNextUp",
+          "callee": "toDuration",
+          "lineNumber": 318
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/guide/GuideRow.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 307,
+      "nonEmptyLines": 295,
+      "functions": [
+        {
+          "name": "GuideRow",
+          "startLine": 54,
+          "endLine": 198,
+          "params": [
+            "modifier",
+            "channel",
+            "currentChannel",
+            "startDate",
+            "horizontalScrollState",
+            "focusRequesters",
+            "totalWidth",
+            "onProgramSelected"
+          ]
+        },
+        {
+          "name": "GuideProgram",
+          "startLine": 200,
+          "endLine": 299,
+          "params": [
+            "modifier",
+            "program",
+            "programWidth",
+            "offsetSinceStart",
+            "previousSameProgram",
+            "focusRequester",
+            "onClick"
+          ]
+        },
+        {
+          "name": "generateColorFromString",
+          "startLine": 301,
+          "endLine": 307,
+          "params": [
+            "input"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "GuideRow",
+          "line": 54,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GuideRow",
+          "callee": "remember",
+          "lineNumber": 65
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "mutableStateOf",
+          "lineNumber": 65
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "remember",
+          "lineNumber": 66
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "mutableStateOf",
+          "lineNumber": 66
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "remember",
+          "lineNumber": 68
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "associateWith",
+          "lineNumber": 69
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "FocusRequester",
+          "lineNumber": 69
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "LaunchedEffect",
+          "lineNumber": 72
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "fetchProgramsForChannel",
+          "lineNumber": 74
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "getOrNull",
+          "lineNumber": 75
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "emptyList",
+          "lineNumber": 75
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "Row",
+          "lineNumber": 81
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "clip",
+          "lineNumber": 82
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "height",
+          "lineNumber": 82
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "Column",
+          "lineNumber": 86
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "background",
+          "lineNumber": 87
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "width",
+          "lineNumber": 87
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "height",
+          "lineNumber": 87
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "let",
+          "lineNumber": 94
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "AsyncImage",
+          "lineNumber": 95
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "clip",
+          "lineNumber": 98
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "aspectRatio",
+          "lineNumber": 98
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "fillMaxHeight",
+          "lineNumber": 98
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 101
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "Text",
+          "lineNumber": 104
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "copy",
+          "lineNumber": 106
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "Box",
+          "lineNumber": 112
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "horizontalScroll",
+          "lineNumber": 113
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "weight",
+          "lineNumber": 113
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "Box",
+          "lineNumber": 117
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "width",
+          "lineNumber": 118
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "height",
+          "lineNumber": 118
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "Row",
+          "lineNumber": 122
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "clip",
+          "lineNumber": 123
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "fillMaxSize",
+          "lineNumber": 123
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "Box",
+          "lineNumber": 128
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "padding",
+          "lineNumber": 129
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "fillMaxHeight",
+          "lineNumber": 129
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "width",
+          "lineNumber": 129
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "CircularProgressIndicator",
+          "lineNumber": 135
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "size",
+          "lineNumber": 135
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "isEmpty",
+          "lineNumber": 137
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "CustomButton",
+          "lineNumber": 138
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "border",
+          "lineNumber": 139
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "background",
+          "lineNumber": 139
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "padding",
+          "lineNumber": 139
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "fillMaxHeight",
+          "lineNumber": 139
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "width",
+          "lineNumber": 139
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "copy",
+          "lineNumber": 149
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "copy",
+          "lineNumber": 154
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "Text",
+          "lineNumber": 157
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "mapIndexed",
+          "lineNumber": 164
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "toDuration",
+          "lineNumber": 167
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "coerceAtLeast",
+          "lineNumber": 168
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "toFloat",
+          "lineNumber": 168
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "getOrNull",
+          "lineNumber": 172
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "maxOf",
+          "lineNumber": 174
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "toDuration",
+          "lineNumber": 176
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "toFloat",
+          "lineNumber": 178
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "GuideProgram",
+          "lineNumber": 180
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "FocusRequester",
+          "lineNumber": 187
+        },
+        {
+          "caller": "GuideRow",
+          "callee": "onProgramSelected",
+          "lineNumber": 189
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "isNullOrBlank",
+          "lineNumber": 210
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "generateColorFromString",
+          "lineNumber": 211
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "CustomButton",
+          "lineNumber": 213
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "fillMaxHeight",
+          "lineNumber": 214
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "clip",
+          "lineNumber": 214
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "width",
+          "lineNumber": 214
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "border",
+          "lineNumber": 214
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "background",
+          "lineNumber": 214
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "focusRequester",
+          "lineNumber": 214
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "padding",
+          "lineNumber": 214
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "padding",
+          "lineNumber": 214
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "coerceAtLeast",
+          "lineNumber": 215
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "copy",
+          "lineNumber": 219
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "copy",
+          "lineNumber": 225
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "copy",
+          "lineNumber": 231
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "Row",
+          "lineNumber": 237
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "spacedBy",
+          "lineNumber": 238
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "let",
+          "lineNumber": 241
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "AsyncImage",
+          "lineNumber": 242
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "clip",
+          "lineNumber": 245
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "offset",
+          "lineNumber": 245
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "fillMaxHeight",
+          "lineNumber": 245
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "aspectRatio",
+          "lineNumber": 245
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 249
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "Column",
+          "lineNumber": 253
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "weight",
+          "lineNumber": 254
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "padding",
+          "lineNumber": 254
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "fillMaxHeight",
+          "lineNumber": 254
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "Text",
+          "lineNumber": 261
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "lowercase",
+          "lineNumber": 267
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "lowercase",
+          "lineNumber": 267
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "let",
+          "lineNumber": 268
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "Text",
+          "lineNumber": 269
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "Row",
+          "lineNumber": 277
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "SimpleDateFormat",
+          "lineNumber": 278
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "getDefault",
+          "lineNumber": 280
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "getDefault",
+          "lineNumber": 282
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "Date",
+          "lineNumber": 283
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "Date",
+          "lineNumber": 284
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "Text",
+          "lineNumber": 285
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "format",
+          "lineNumber": 286
+        },
+        {
+          "caller": "GuideProgram",
+          "callee": "format",
+          "lineNumber": 287
+        },
+        {
+          "caller": "generateColorFromString",
+          "callee": "hashCode",
+          "lineNumber": 302
+        },
+        {
+          "caller": "generateColorFromString",
+          "callee": "Color",
+          "lineNumber": 306
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    }
+  ]
+}

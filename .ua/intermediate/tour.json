@@ -1,0 +1,74 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "Start with the README to understand Fladder: a cross-platform Jellyfin frontend built with Flutter, targeting Android, iOS, Linux, macOS, Windows, and Web.",
+    "nodeIds": ["file:README.md"]
+  },
+  {
+    "order": 2,
+    "title": "Application Entry Point",
+    "description": "main.dart boots the Flutter app. It initializes services, sets up Riverpod providers, and launches the platform-appropriate wrapper.",
+    "nodeIds": ["file:lib/main.dart", "file:lib/bootstrap/app_bootstrap.dart"]
+  },
+  {
+    "order": 3,
+    "title": "Core Data Models",
+    "description": "ItemBaseModel is the foundation of the data layer. All Jellyfin items (movies, series, episodes, albums) extend from it. Models use Freezed for immutability and json_serializable for JSON mapping.",
+    "nodeIds": ["file:lib/models/item_base_model.dart", "file:lib/models/items/movie_model.dart", "file:lib/models/items/series_model.dart", "file:lib/models/items/episode_model.dart"]
+  },
+  {
+    "order": 4,
+    "title": "API Integration (Chopper)",
+    "description": "The Jellyfin API client is generated from OpenAPI specs. client_index.dart exports the Chopper service, and jellyfin_open_api.swagger.dart contains the full typed API surface.",
+    "nodeIds": ["file:lib/jellyfin/client_index.dart", "file:lib/jellyfin/jellyfin_open_api.swagger.dart", "file:lib/jellyfin/client_mapping.dart"]
+  },
+  {
+    "order": 5,
+    "title": "State Management (Riverpod)",
+    "description": "Riverpod providers form the business logic layer. api_provider wraps the Chopper client, auth_provider handles login/session, and user_provider manages user state. Each provider is a StateNotifier or AsyncNotifier.",
+    "nodeIds": ["file:lib/providers/api_provider.dart", "file:lib/providers/auth_provider.dart", "file:lib/providers/shared_provider.dart", "file:lib/providers/user_provider.dart", "file:lib/providers/service_provider.dart"]
+  },
+  {
+    "order": 6,
+    "title": "Navigation and Routing",
+    "description": "auto_router.dart defines the full navigation graph using the auto_route package. Routes are code-generated in auto_router.gr.dart, enabling type-safe page transitions across all screens.",
+    "nodeIds": ["file:lib/routes/auto_router.dart", "file:lib/routes/auto_router.gr.dart", "file:lib/screens/home_screen.dart"]
+  },
+  {
+    "order": 7,
+    "title": "UI Layer: Screens",
+    "description": "Screens are organized by feature: login, dashboard, library, details_screens, video_player, settings, live_tv, and seerr. Each screen consumes Riverpod providers and builds the widget tree.",
+    "nodeIds": ["file:lib/screens/dashboard/dashboard_screen.dart", "file:lib/screens/library/library_screen.dart", "file:lib/screens/details_screens/movie_detail_screen.dart", "file:lib/screens/login/login_screen.dart"]
+  },
+  {
+    "order": 8,
+    "title": "Video Player and Media Playback",
+    "description": "The video player layer wraps platform-specific players (MDK, MPV, native) behind a base_player abstraction. video_player_provider orchestrates playback state, queue, and subtitle handling.",
+    "nodeIds": ["file:lib/providers/video_player_provider.dart", "file:lib/wrappers/players/base_player.dart", "file:lib/wrappers/players/lib_mdk.dart", "file:lib/screens/video_player/video_player.dart"]
+  },
+  {
+    "order": 9,
+    "title": "Platform-Specific Code",
+    "description": "Each platform has native code: Android uses Kotlin for ExoPlayer integration and leanback TV support, iOS/macOS use Swift, Linux uses C++, and Windows uses C++. Pigeon handles Flutter-to-native communication.",
+    "nodeIds": ["file:android/app/src/main/kotlin/nl/jknaapen/fladder/MainActivity.kt", "file:android/app/src/main/kotlin/nl/jknaapen/fladder/messengers/VideoPlayerImplementation.kt", "file:ios/Runner/AppDelegate.swift", "file:pigeons/video_player.dart"]
+  },
+  {
+    "order": 10,
+    "title": "Offline Sync and Background Services",
+    "description": "sync_provider.dart manages offline content downloads and playback. background_download_provider handles queue and progress. Items are stored locally with Drift for offline access.",
+    "nodeIds": ["file:lib/providers/sync_provider.dart", "file:lib/providers/sync/background_download_provider.dart", "file:lib/background/update_notifications_worker.dart"]
+  },
+  {
+    "order": 11,
+    "title": "Theme and Adaptive Layout",
+    "description": "theme.dart defines the visual language. adaptive_layout.dart adjusts the UI for phone, tablet, desktop, and TV form factors. The navigation_scaffold provides the app shell.",
+    "nodeIds": ["file:lib/theme.dart", "file:lib/util/adaptive_layout/adaptive_layout.dart", "file:lib/widgets/navigation_scaffold/navigation_scaffold.dart"]
+  },
+  {
+    "order": 12,
+    "title": "Configuration and Build Infrastructure",
+    "description": "pubspec.yaml declares dependencies and build variants (development, production). CI/CD runs via GitHub Actions. Docker support enables headless server deployment. l10n.yaml configures internationalization across 30+ languages.",
+    "nodeIds": ["file:pubspec.yaml", "file:l10n.yaml", "file:.github/workflows/build.yml", "file:Dockerfile", "file:lib/localization_delegates.dart"]
+  }
+]

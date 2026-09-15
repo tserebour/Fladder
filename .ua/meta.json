@@ -1,0 +1,38 @@
+{
+  "gitCommitHash": "5cff64dd9c224b95773d1aa6f031a31f18d4fb52",
+  "totalFiles": 959,
+  "totalNodes": 19498,
+  "totalEdges": 18598,
+  "totalLayers": 7,
+  "tourSteps": 12,
+  "estimatedComplexity": "very-large",
+  "languages": [
+    "dart",
+    "kotlin",
+    "swift",
+    "cpp",
+    "c",
+    "xml",
+    "yaml",
+    "json",
+    "arb",
+    "markdown",
+    "gradle",
+    "shell",
+    "html",
+    "javascript"
+  ],
+  "frameworks": [
+    "flutter",
+    "riverpod",
+    "drift",
+    "chopper",
+    "auto_route",
+    "freezed",
+    "json_serializable",
+    "pigeon",
+    "media_kit",
+    "audio_service",
+    "build_runner"
+  ]
+}

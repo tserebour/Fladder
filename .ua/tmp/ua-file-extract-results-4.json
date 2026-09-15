@@ -1,0 +1,1763 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 5,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 5,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/controls/VideoPlayerControls.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 616,
+      "nonEmptyLines": 571,
+      "functions": [
+        {
+          "name": "CustomVideoControls",
+          "startLine": 85,
+          "endLine": 403,
+          "params": [
+            "exoPlayer"
+          ]
+        },
+        {
+          "name": "PlaybackButtons",
+          "startLine": 406,
+          "endLine": 527,
+          "params": [
+            "player",
+            "bottomControlFocusRequester",
+            "onPause"
+          ]
+        },
+        {
+          "name": "LeftButtons",
+          "startLine": 529,
+          "endLine": 564,
+          "params": [
+            "openChapterSelection",
+            "openPlaybackSpeedPicker"
+          ]
+        },
+        {
+          "name": "RightButtons",
+          "startLine": 566,
+          "endLine": 616,
+          "params": [
+            "showAudioDialog",
+            "showSubDialog"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CustomVideoControls",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "PlaybackButtons",
+          "line": 406,
+          "isDefault": false
+        },
+        {
+          "name": "LeftButtons",
+          "line": 529,
+          "isDefault": false
+        },
+        {
+          "name": "RightButtons",
+          "line": 566,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CustomVideoControls",
+          "callee": "remember",
+          "lineNumber": 89
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "mutableStateOf",
+          "lineNumber": 89
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "remember",
+          "lineNumber": 90
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 90
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "currentTimeMillis",
+          "lineNumber": 90
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "remember",
+          "lineNumber": 92
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "mutableStateOf",
+          "lineNumber": 92
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "remember",
+          "lineNumber": 93
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "mutableStateOf",
+          "lineNumber": 93
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "remember",
+          "lineNumber": 94
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "mutableStateOf",
+          "lineNumber": 94
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "remember",
+          "lineNumber": 95
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "mutableStateOf",
+          "lineNumber": 95
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "remember",
+          "lineNumber": 97
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "MutableInteractionSource",
+          "lineNumber": 97
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "collectAsState",
+          "lineNumber": 99
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "collectAsState",
+          "lineNumber": 103
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "collectAsState",
+          "lineNumber": 104
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "ImmersiveSystemBars",
+          "lineNumber": 107
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "remember",
+          "lineNumber": 109
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "FocusRequester",
+          "lineNumber": 109
+        },
+        {
+          "caller": "hideControls",
+          "callee": "requestFocus",
+          "lineNumber": 113
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "BackHandler",
+          "lineNumber": 116
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "hideControls",
+          "lineNumber": 120
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "finish",
+          "lineNumber": 122
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "LaunchedEffect",
+          "lineNumber": 127
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "delay",
+          "lineNumber": 128
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "hideControls",
+          "lineNumber": 129
+        },
+        {
+          "caller": "updateLastInteraction",
+          "callee": "currentTimeMillis",
+          "lineNumber": 134
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "collectAsState",
+          "lineNumber": 137
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "collectAsState",
+          "lineNumber": 138
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "collectAsState",
+          "lineNumber": 140
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "remember",
+          "lineNumber": 142
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 142
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "currentTimeMillis",
+          "lineNumber": 142
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "remember",
+          "lineNumber": 144
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 144
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "LaunchedEffect",
+          "lineNumber": 147
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "delay",
+          "lineNumber": 148
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "seekTo",
+          "lineNumber": 150
+        },
+        {
+          "caller": "updateSeekInteraction",
+          "callee": "currentTimeMillis",
+          "lineNumber": 155
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Box",
+          "lineNumber": 158
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "clickable",
+          "lineNumber": 159
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "keyEvent",
+          "lineNumber": 159
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "onFocusChanged",
+          "lineNumber": 159
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "focusable",
+          "lineNumber": 159
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "fillMaxSize",
+          "lineNumber": 159
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "requestFocus",
+          "lineNumber": 164
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "finish",
+          "lineNumber": 170
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "play",
+          "lineNumber": 175
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "let",
+          "lineNumber": 180
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "pause",
+          "lineNumber": 182
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "updateLastInteraction",
+          "lineNumber": 183
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "play",
+          "lineNumber": 185
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "pause",
+          "lineNumber": 193
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "updateLastInteraction",
+          "lineNumber": 194
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "hideControls",
+          "lineNumber": 200
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "finish",
+          "lineNumber": 203
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "updateSeekInteraction",
+          "lineNumber": 213
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "updateSeekInteraction",
+          "lineNumber": 219
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "requestFocus",
+          "lineNumber": 223
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "updateLastInteraction",
+          "lineNumber": 224
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "updateLastInteraction",
+          "lineNumber": 227
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "currentTimeMillis",
+          "lineNumber": 236
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Box",
+          "lineNumber": 240
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "visible",
+          "lineNumber": 241
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Column",
+          "lineNumber": 245
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "fillMaxWidth",
+          "lineNumber": 248
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Row",
+          "lineNumber": 251
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "safeContentPadding",
+          "lineNumber": 252
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "background",
+          "lineNumber": 252
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "wrapContentHeight",
+          "lineNumber": 252
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "fillMaxWidth",
+          "lineNumber": 252
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "linearGradient",
+          "lineNumber": 256
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "listOf",
+          "lineNumber": 257
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "copy",
+          "lineNumber": 258
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "copy",
+          "lineNumber": 259
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Offset",
+          "lineNumber": 261
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Offset",
+          "lineNumber": 262
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "spacedBy",
+          "lineNumber": 266
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Column",
+          "lineNumber": 268
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "weight",
+          "lineNumber": 269
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "padding",
+          "lineNumber": 269
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Row",
+          "lineNumber": 273
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "collectAsState",
+          "lineNumber": 277
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "let",
+          "lineNumber": 280
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "ItemHeader",
+          "lineNumber": 281
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "weight",
+          "lineNumber": 282
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "IconButton",
+          "lineNumber": 288
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "finish",
+          "lineNumber": 290
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Icon",
+          "lineNumber": 293
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "focusable",
+          "lineNumber": 295
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "size",
+          "lineNumber": 295
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "CurrentTime",
+          "lineNumber": 303
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Spacer",
+          "lineNumber": 308
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "weight",
+          "lineNumber": 308
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Column",
+          "lineNumber": 310
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "padding",
+          "lineNumber": 311
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "displayCutoutPadding",
+          "lineNumber": 311
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "padding",
+          "lineNumber": 311
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "background",
+          "lineNumber": 311
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "linearGradient",
+          "lineNumber": 313
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "listOf",
+          "lineNumber": 314
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "copy",
+          "lineNumber": 315
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "copy",
+          "lineNumber": 316
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Offset",
+          "lineNumber": 318
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Offset",
+          "lineNumber": 319
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "ProgressBar",
+          "lineNumber": 326
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "Row",
+          "lineNumber": 330
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "fillMaxWidth",
+          "lineNumber": 333
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "LeftButtons",
+          "lineNumber": 336
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "PlaybackButtons",
+          "lineNumber": 344
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "updateLastInteraction",
+          "lineNumber": 345
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "RightButtons",
+          "lineNumber": 347
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "SegmentSkipOverlay",
+          "lineNumber": 352
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "SeekOverlay",
+          "lineNumber": 353
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "CircularProgressIndicator",
+          "lineNumber": 355
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "size",
+          "lineNumber": 356
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "align",
+          "lineNumber": 356
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "AudioPicker",
+          "lineNumber": 366
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "SubtitlePicker",
+          "lineNumber": 375
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "ChapterSelectionSheet",
+          "lineNumber": 384
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "seekTo",
+          "lineNumber": 386
+        },
+        {
+          "caller": "CustomVideoControls",
+          "callee": "PlaybackSpeedPicker",
+          "lineNumber": 396
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "collectAsState",
+          "lineNumber": 412
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "collectAsState",
+          "lineNumber": 414
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "collectAsState",
+          "lineNumber": 415
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "collectAsState",
+          "lineNumber": 417
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "collectAsState",
+          "lineNumber": 423
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "Row",
+          "lineNumber": 425
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "wrapContentWidth",
+          "lineNumber": 426
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "padding",
+          "lineNumber": 426
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "spacedBy",
+          "lineNumber": 429
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "CustomButton",
+          "lineNumber": 436
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "loadPreviousVideo",
+          "lineNumber": 437
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "Icon",
+          "lineNumber": 440
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "CustomButton",
+          "lineNumber": 445
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "seekTo",
+          "lineNumber": 447
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "Box",
+          "lineNumber": 452
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "wrapContentSize",
+          "lineNumber": 453
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "Icon",
+          "lineNumber": 457
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "size",
+          "lineNumber": 459
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "Text",
+          "lineNumber": 462
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "CustomButton",
+          "lineNumber": 469
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "defaultSelected",
+          "lineNumber": 470
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "focusRequester",
+          "lineNumber": 470
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "pause",
+          "lineNumber": 476
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "onPause",
+          "lineNumber": 477
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "play",
+          "lineNumber": 479
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "Icon",
+          "lineNumber": 483
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "size",
+          "lineNumber": 485
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "CustomButton",
+          "lineNumber": 490
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "seekTo",
+          "lineNumber": 492
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "Box",
+          "lineNumber": 497
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "wrapContentSize",
+          "lineNumber": 498
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "Icon",
+          "lineNumber": 502
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "scale",
+          "lineNumber": 505
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "size",
+          "lineNumber": 505
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "Text",
+          "lineNumber": 509
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "toString",
+          "lineNumber": 510
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "CustomButton",
+          "lineNumber": 516
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "loadNextVideo",
+          "lineNumber": 517
+        },
+        {
+          "caller": "PlaybackButtons",
+          "callee": "Icon",
+          "lineNumber": 520
+        },
+        {
+          "caller": "LeftButtons",
+          "callee": "collectAsState",
+          "lineNumber": 534
+        },
+        {
+          "caller": "LeftButtons",
+          "callee": "emptyList",
+          "lineNumber": 534
+        },
+        {
+          "caller": "LeftButtons",
+          "callee": "collectAsState",
+          "lineNumber": 535
+        },
+        {
+          "caller": "LeftButtons",
+          "callee": "Row",
+          "lineNumber": 538
+        },
+        {
+          "caller": "LeftButtons",
+          "callee": "weight",
+          "lineNumber": 539
+        },
+        {
+          "caller": "LeftButtons",
+          "callee": "spacedBy",
+          "lineNumber": 540
+        },
+        {
+          "caller": "LeftButtons",
+          "callee": "CustomButton",
+          "lineNumber": 543
+        },
+        {
+          "caller": "LeftButtons",
+          "callee": "isNotEmpty",
+          "lineNumber": 545
+        },
+        {
+          "caller": "LeftButtons",
+          "callee": "Icon",
+          "lineNumber": 547
+        },
+        {
+          "caller": "LeftButtons",
+          "callee": "CustomButton",
+          "lineNumber": 553
+        },
+        {
+          "caller": "LeftButtons",
+          "callee": "Icon",
+          "lineNumber": 557
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "collectAsState",
+          "lineNumber": 571
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "collectAsState",
+          "lineNumber": 572
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "collectAsState",
+          "lineNumber": 574
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "Row",
+          "lineNumber": 576
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "weight",
+          "lineNumber": 577
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "spacedBy",
+          "lineNumber": 578
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "CustomButton",
+          "lineNumber": 581
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "toggleGuideVisibility",
+          "lineNumber": 583
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "Icon",
+          "lineNumber": 586
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "CustomButton",
+          "lineNumber": 592
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "Icon",
+          "lineNumber": 598
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "CustomButton",
+          "lineNumber": 603
+        },
+        {
+          "caller": "RightButtons",
+          "callee": "Icon",
+          "lineNumber": 609
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/dialogs/ChapterSelectionSheet.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 168,
+      "nonEmptyLines": 154,
+      "functions": [
+        {
+          "name": "ChapterSelectionSheet",
+          "startLine": 42,
+          "endLine": 156,
+          "params": [
+            "onSelected",
+            "onDismiss"
+          ]
+        },
+        {
+          "name": "indexOfCurrent",
+          "startLine": 158,
+          "endLine": 168,
+          "params": [
+            "currentPosition"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChapterSelectionSheet",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "collectAsState",
+          "lineNumber": 48
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "listOf",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "collectAsState",
+          "lineNumber": 50
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "remember",
+          "lineNumber": 52
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "associateWith",
+          "lineNumber": 53
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "FocusRequester",
+          "lineNumber": 53
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "isEmpty",
+          "lineNumber": 56
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "rememberLazyListState",
+          "lineNumber": 58
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "remember",
+          "lineNumber": 60
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "indexOfCurrent",
+          "lineNumber": 61
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "getOrNull",
+          "lineNumber": 64
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "LaunchedEffect",
+          "lineNumber": 66
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "animateScrollToItem",
+          "lineNumber": 67
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "indexOf",
+          "lineNumber": 67
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "requestFocus",
+          "lineNumber": 68
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "CustomModalBottomSheet",
+          "lineNumber": 71
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "Column",
+          "lineNumber": 74
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "wrapContentHeight",
+          "lineNumber": 75
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "padding",
+          "lineNumber": 75
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "wrapContentHeight",
+          "lineNumber": 75
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "fillMaxHeight",
+          "lineNumber": 75
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "fillMaxWidth",
+          "lineNumber": 75
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "spacedBy",
+          "lineNumber": 81
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "Translate",
+          "lineNumber": 83
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "chapters",
+          "lineNumber": 83
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "toLong",
+          "lineNumber": 83
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "Text",
+          "lineNumber": 84
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "LazyRow",
+          "lineNumber": 91
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "spacedBy",
+          "lineNumber": 93
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "forEachIndexed",
+          "lineNumber": 95
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "indexOfCurrent",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "item",
+          "lineNumber": 97
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "Column",
+          "lineNumber": 98
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "padding",
+          "lineNumber": 99
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "spacedBy",
+          "lineNumber": 103
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "AsyncImage",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "weight",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "clip",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "aspectRatio",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "clickable",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "highlightOnFocus",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "focusRequester",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 115
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "onSelected",
+          "lineNumber": 119
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 123
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "Row",
+          "lineNumber": 128
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "spacedBy",
+          "lineNumber": 129
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "Box",
+          "lineNumber": 136
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "background",
+          "lineNumber": 137
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "size",
+          "lineNumber": 137
+        },
+        {
+          "caller": "ChapterSelectionSheet",
+          "callee": "Text",
+          "lineNumber": 144
+        },
+        {
+          "caller": "indexOfCurrent",
+          "callee": "isEmpty",
+          "lineNumber": 159
+        },
+        {
+          "caller": "indexOfCurrent",
+          "callee": "getOrNull",
+          "lineNumber": 163
+        },
+        {
+          "caller": "indexOfCurrent",
+          "callee": "first",
+          "lineNumber": 167
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/dialogs/PlaybackSpeedPicker.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 62,
+      "functions": [
+        {
+          "name": "PlaybackSpeedPicker",
+          "startLine": 21,
+          "endLine": 68,
+          "params": [
+            "player",
+            "onDismissRequest"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PlaybackSpeedPicker",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "coerceAtLeast",
+          "lineNumber": 27
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "indexOf",
+          "lineNumber": 27
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "rememberLazyListState",
+          "lineNumber": 29
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "remember",
+          "lineNumber": 30
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "map",
+          "lineNumber": 31
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "FocusRequester",
+          "lineNumber": 31
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "LaunchedEffect",
+          "lineNumber": 34
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "scrollToItem",
+          "lineNumber": 36
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "requestFocus",
+          "lineNumber": 37
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "CustomModalBottomSheet",
+          "lineNumber": 41
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "LazyColumn",
+          "lineNumber": 45
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "padding",
+          "lineNumber": 47
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "wrapContentWidth",
+          "lineNumber": 47
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "itemsIndexed",
+          "lineNumber": 51
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "TrackButton",
+          "lineNumber": 53
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "focusRequester",
+          "lineNumber": 54
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "fillMaxWidth",
+          "lineNumber": 54
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "setPlaybackSpeed",
+          "lineNumber": 58
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "onDismissRequest",
+          "lineNumber": 59
+        },
+        {
+          "caller": "PlaybackSpeedPicker",
+          "callee": "Text",
+          "lineNumber": 63
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/dialogs/SubtitlePicker.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 105,
+      "nonEmptyLines": 94,
+      "functions": [
+        {
+          "name": "SubtitlePicker",
+          "startLine": 27,
+          "endLine": 105,
+          "params": [
+            "player",
+            "onDismissRequest"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SubtitlePicker",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SubtitlePicker",
+          "callee": "collectAsState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "collectAsState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "emptyList",
+          "lineNumber": 34
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "collectAsState",
+          "lineNumber": 35
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "emptyList",
+          "lineNumber": 35
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "isEmpty",
+          "lineNumber": 37
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "remember",
+          "lineNumber": 39
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "associateWith",
+          "lineNumber": 40
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "FocusRequester",
+          "lineNumber": 40
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "rememberLazyListState",
+          "lineNumber": 43
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "LaunchedEffect",
+          "lineNumber": 45
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "indexOfFirst",
+          "lineNumber": 46
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "toLong",
+          "lineNumber": 46
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "scrollToItem",
+          "lineNumber": 49
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "requestFocus",
+          "lineNumber": 50
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "CustomModalBottomSheet",
+          "lineNumber": 54
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "LazyColumn",
+          "lineNumber": 58
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "padding",
+          "lineNumber": 60
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "wrapContentWidth",
+          "lineNumber": 60
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "forEachIndexed",
+          "lineNumber": 64
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "toLong",
+          "lineNumber": 66
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "item",
+          "lineNumber": 68
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "TrackButton",
+          "lineNumber": 69
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "focusRequester",
+          "lineNumber": 70
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "fillMaxWidth",
+          "lineNumber": 70
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "setSubtitleTrackIndex",
+          "lineNumber": 75
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "clearSubtitleTrack",
+          "lineNumber": 76
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "elementAtOrNull",
+          "lineNumber": 81
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "setSubtitleTrackIndex",
+          "lineNumber": 84
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "toInt",
+          "lineNumber": 84
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "setInternalSubtitleTrack",
+          "lineNumber": 85
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "Translate",
+          "lineNumber": 92
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "Text",
+          "lineNumber": 93
+        },
+        {
+          "caller": "SubtitlePicker",
+          "callee": "Text",
+          "lineNumber": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/ImmersiveSystemBars.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "ImmersiveSystemBars",
+          "startLine": 10,
+          "endLine": 34,
+          "params": [
+            "isImmersive"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ImmersiveSystemBars",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ImmersiveSystemBars",
+          "callee": "DisposableEffect",
+          "lineNumber": 14
+        },
+        {
+          "caller": "ImmersiveSystemBars",
+          "callee": "let",
+          "lineNumber": 17
+        },
+        {
+          "caller": "ImmersiveSystemBars",
+          "callee": "WindowInsetsControllerCompat",
+          "lineNumber": 17
+        },
+        {
+          "caller": "ImmersiveSystemBars",
+          "callee": "setDecorFitsSystemWindows",
+          "lineNumber": 20
+        },
+        {
+          "caller": "ImmersiveSystemBars",
+          "callee": "hide",
+          "lineNumber": 24
+        },
+        {
+          "caller": "ImmersiveSystemBars",
+          "callee": "systemBars",
+          "lineNumber": 24
+        },
+        {
+          "caller": "ImmersiveSystemBars",
+          "callee": "show",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ImmersiveSystemBars",
+          "callee": "systemBars",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ImmersiveSystemBars",
+          "callee": "onDispose",
+          "lineNumber": 30
+        },
+        {
+          "caller": "ImmersiveSystemBars",
+          "callee": "show",
+          "lineNumber": 31
+        },
+        {
+          "caller": "ImmersiveSystemBars",
+          "callee": "systemBars",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

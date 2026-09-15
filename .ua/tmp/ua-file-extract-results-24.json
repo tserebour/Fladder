@@ -1,0 +1,7952 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "lib/models/library_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 58,
+      "functions": [
+        {
+          "name": "LibraryModel",
+          "startLine": 20,
+          "endLine": 32,
+          "params": [
+            "loading",
+            "id",
+            "name",
+            "timelinePhotos",
+            "posters",
+            "recommendations",
+            "genres",
+            "latest",
+            "nextUp",
+            "favourites",
+            "type"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 34,
+          "endLine": 46,
+          "params": [
+            "loading",
+            "id",
+            "name",
+            "timelinePhotos",
+            "posters",
+            "recommendations",
+            "genres",
+            "latest",
+            "nextUp",
+            "favourites",
+            "type"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LibraryModel",
+          "startLine": 7,
+          "endLine": 61,
+          "methods": [
+            "LibraryModel",
+            "copyWith"
+          ],
+          "properties": [
+            "loading",
+            "id",
+            "name",
+            "timelinePhotos",
+            "posters",
+            "recommendations",
+            "genres",
+            "latest",
+            "nextUp",
+            "favourites",
+            "type"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LibraryModel",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "LibraryModel",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "LibraryModel",
+          "lineNumber": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/library_search/library_search_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 176,
+      "nonEmptyLines": 156,
+      "functions": [
+        {
+          "name": "hasActiveFilters",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "totalItemCount",
+          "startLine": 35,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "allDoneFetching",
+          "startLine": 44,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "searchBarTitle",
+          "startLine": 58,
+          "endLine": 58,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "activePosters",
+          "startLine": 67,
+          "endLine": 67,
+          "params": []
+        },
+        {
+          "name": "showOpenMultiple",
+          "startLine": 69,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "showPlayButtons",
+          "startLine": 86,
+          "endLine": 86,
+          "params": []
+        },
+        {
+          "name": "showGalleryButtons",
+          "startLine": 99,
+          "endLine": 99,
+          "params": []
+        },
+        {
+          "name": "showMusicButtons",
+          "startLine": 113,
+          "endLine": 113,
+          "params": []
+        },
+        {
+          "name": "resetLazyLoad",
+          "startLine": 126,
+          "endLine": 126,
+          "params": []
+        },
+        {
+          "name": "fullReset",
+          "startLine": 134,
+          "endLine": 134,
+          "params": []
+        },
+        {
+          "name": "setFiltersToDefault",
+          "startLine": 143,
+          "endLine": 143,
+          "params": []
+        },
+        {
+          "name": "yearRange",
+          "startLine": 147,
+          "endLine": 149,
+          "params": []
+        },
+        {
+          "name": "availableYearRange",
+          "startLine": 156,
+          "endLine": 158,
+          "params": []
+        },
+        {
+          "name": "currentIds",
+          "startLine": 167,
+          "endLine": 167,
+          "params": []
+        },
+        {
+          "name": "shouldRefresh",
+          "startLine": 171,
+          "endLine": 171,
+          "params": [
+            "other"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LibrarySearchModel",
+          "startLine": 17,
+          "endLine": 30,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "LibrarySearchModelX",
+          "startLine": 32,
+          "endLine": 176,
+          "methods": [
+            "hasActiveFilters",
+            "totalItemCount",
+            "allDoneFetching",
+            "searchBarTitle",
+            "activePosters",
+            "showOpenMultiple",
+            "showPlayButtons",
+            "showGalleryButtons",
+            "showMusicButtons",
+            "resetLazyLoad",
+            "fullReset",
+            "setFiltersToDefault",
+            "yearRange",
+            "availableYearRange",
+            "currentIds",
+            "shouldRefresh"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LibrarySearchModel",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "hasActiveFilters",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "totalItemCount",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "allDoneFetching",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "searchBarTitle",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "activePosters",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "showOpenMultiple",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "showPlayButtons",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "showGalleryButtons",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "showMusicButtons",
+          "line": 113,
+          "isDefault": false
+        },
+        {
+          "name": "resetLazyLoad",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "fullReset",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "setFiltersToDefault",
+          "line": 143,
+          "isDefault": false
+        },
+        {
+          "name": "yearRange",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "availableYearRange",
+          "line": 156,
+          "isDefault": false
+        },
+        {
+          "name": "currentIds",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "shouldRefresh",
+          "line": 171,
+          "isDefault": false
+        },
+        {
+          "name": "LibrarySearchModelX",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "searchBarTitle",
+          "callee": "map",
+          "lineNumber": 60
+        },
+        {
+          "caller": "searchBarTitle",
+          "callee": "join",
+          "lineNumber": 60
+        },
+        {
+          "caller": "searchBarTitle",
+          "callee": "library",
+          "lineNumber": 64
+        },
+        {
+          "caller": "showOpenMultiple",
+          "callee": "none",
+          "lineNumber": 72
+        },
+        {
+          "caller": "showOpenMultiple",
+          "callee": "contains",
+          "lineNumber": 80
+        },
+        {
+          "caller": "showPlayButtons",
+          "callee": "any",
+          "lineNumber": 89
+        },
+        {
+          "caller": "showPlayButtons",
+          "callee": "contains",
+          "lineNumber": 90
+        },
+        {
+          "caller": "showPlayButtons",
+          "callee": "containsAny",
+          "lineNumber": 94
+        },
+        {
+          "caller": "showGalleryButtons",
+          "callee": "any",
+          "lineNumber": 102
+        },
+        {
+          "caller": "showGalleryButtons",
+          "callee": "contains",
+          "lineNumber": 104
+        },
+        {
+          "caller": "showGalleryButtons",
+          "callee": "containsAny",
+          "lineNumber": 108
+        },
+        {
+          "caller": "showMusicButtons",
+          "callee": "any",
+          "lineNumber": 116
+        },
+        {
+          "caller": "showMusicButtons",
+          "callee": "contains",
+          "lineNumber": 117
+        },
+        {
+          "caller": "showMusicButtons",
+          "callee": "containsAny",
+          "lineNumber": 121
+        },
+        {
+          "caller": "resetLazyLoad",
+          "callee": "copyWith",
+          "lineNumber": 127
+        },
+        {
+          "caller": "fullReset",
+          "callee": "copyWith",
+          "lineNumber": 135
+        },
+        {
+          "caller": "setFiltersToDefault",
+          "callee": "copyWith",
+          "lineNumber": 144
+        },
+        {
+          "caller": "setFiltersToDefault",
+          "callee": "LibraryFilterModel",
+          "lineNumber": 145
+        },
+        {
+          "caller": "yearRange",
+          "callee": "reduce",
+          "lineNumber": 153
+        },
+        {
+          "caller": "yearRange",
+          "callee": "reduce",
+          "lineNumber": 154
+        },
+        {
+          "caller": "availableYearRange",
+          "callee": "now",
+          "lineNumber": 160
+        },
+        {
+          "caller": "availableYearRange",
+          "callee": "now",
+          "lineNumber": 160
+        },
+        {
+          "caller": "availableYearRange",
+          "callee": "reduce",
+          "lineNumber": 162
+        },
+        {
+          "caller": "availableYearRange",
+          "callee": "reduce",
+          "lineNumber": 163
+        },
+        {
+          "caller": "currentIds",
+          "callee": "map",
+          "lineNumber": 168
+        },
+        {
+          "caller": "currentIds",
+          "callee": "toList",
+          "lineNumber": 168
+        },
+        {
+          "caller": "currentIds",
+          "callee": "map",
+          "lineNumber": 169
+        },
+        {
+          "caller": "currentIds",
+          "callee": "toList",
+          "lineNumber": 169
+        },
+        {
+          "caller": "shouldRefresh",
+          "callee": "DeepCollectionEquality",
+          "lineNumber": 172
+        },
+        {
+          "caller": "shouldRefresh",
+          "callee": "equals",
+          "lineNumber": 172
+        },
+        {
+          "caller": "shouldRefresh",
+          "callee": "DeepCollectionEquality",
+          "lineNumber": 173
+        },
+        {
+          "caller": "shouldRefresh",
+          "callee": "equals",
+          "lineNumber": 173
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 18,
+        "functionCount": 16,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/models/library_search/library_search_model.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 566,
+      "nonEmptyLines": 522,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "loading",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "selecteMode",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "folderOverwrite",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "views",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "posters",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "selectedPosters",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "filters",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "lastIndices",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "libraryItemCounts",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "fetchingItems",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "debugFillProperties",
+          "startLine": 36,
+          "endLine": 36,
+          "params": [
+            "properties"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 52,
+          "endLine": 52,
+          "params": [
+            "minLevel"
+          ]
+        },
+        {
+          "name": "call",
+          "startLine": 62,
+          "endLine": 72,
+          "params": [
+            "loading",
+            "selecteMode",
+            "folderOverwrite",
+            "views",
+            "posters",
+            "selectedPosters",
+            "filters",
+            "lastIndices",
+            "libraryItemCounts",
+            "fetchingItems"
+          ]
+        },
+        {
+          "name": "_$LibrarySearchModelCopyWithImpl",
+          "startLine": 79,
+          "endLine": 79,
+          "params": [
+            "_self",
+            "_then"
+          ]
+        },
+        {
+          "name": "call",
+          "startLine": 88,
+          "endLine": 99,
+          "params": [
+            "loading",
+            "selecteMode",
+            "folderOverwrite",
+            "views",
+            "posters",
+            "selectedPosters",
+            "filters",
+            "lastIndices",
+            "libraryItemCounts",
+            "fetchingItems"
+          ]
+        },
+        {
+          "name": "filters",
+          "startLine": 148,
+          "endLine": 148,
+          "params": []
+        },
+        {
+          "name": "maybeMap",
+          "startLine": 170,
+          "endLine": 173,
+          "params": [
+            "$default",
+            "orElse"
+          ]
+        },
+        {
+          "name": "map",
+          "startLine": 197,
+          "endLine": 199,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "mapOrNull",
+          "startLine": 222,
+          "endLine": 224,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "maybeWhen",
+          "startLine": 247,
+          "endLine": 261,
+          "params": [
+            "$default",
+            "orElse"
+          ]
+        },
+        {
+          "name": "when",
+          "startLine": 286,
+          "endLine": 299,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "whenOrNull",
+          "startLine": 323,
+          "endLine": 336,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "folderOverwrite",
+          "startLine": 378,
+          "endLine": 378,
+          "params": []
+        },
+        {
+          "name": "views",
+          "startLine": 387,
+          "endLine": 387,
+          "params": []
+        },
+        {
+          "name": "posters",
+          "startLine": 396,
+          "endLine": 396,
+          "params": []
+        },
+        {
+          "name": "selectedPosters",
+          "startLine": 405,
+          "endLine": 405,
+          "params": []
+        },
+        {
+          "name": "lastIndices",
+          "startLine": 417,
+          "endLine": 417,
+          "params": []
+        },
+        {
+          "name": "libraryItemCounts",
+          "startLine": 426,
+          "endLine": 426,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 441,
+          "endLine": 441,
+          "params": []
+        },
+        {
+          "name": "debugFillProperties",
+          "startLine": 445,
+          "endLine": 445,
+          "params": [
+            "properties"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 461,
+          "endLine": 461,
+          "params": [
+            "minLevel"
+          ]
+        },
+        {
+          "name": "call",
+          "startLine": 472,
+          "endLine": 482,
+          "params": [
+            "loading",
+            "selecteMode",
+            "folderOverwrite",
+            "views",
+            "posters",
+            "selectedPosters",
+            "filters",
+            "lastIndices",
+            "libraryItemCounts",
+            "fetchingItems"
+          ]
+        },
+        {
+          "name": "__$LibrarySearchModelCopyWithImpl",
+          "startLine": 490,
+          "endLine": 490,
+          "params": [
+            "_self",
+            "_then"
+          ]
+        },
+        {
+          "name": "call",
+          "startLine": 499,
+          "endLine": 510,
+          "params": [
+            "loading",
+            "selecteMode",
+            "folderOverwrite",
+            "views",
+            "posters",
+            "selectedPosters",
+            "filters",
+            "lastIndices",
+            "libraryItemCounts",
+            "fetchingItems"
+          ]
+        },
+        {
+          "name": "filters",
+          "startLine": 559,
+          "endLine": 559,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$LibrarySearchModel",
+          "startLine": 16,
+          "endLine": 55,
+          "methods": [
+            "loading",
+            "selecteMode",
+            "folderOverwrite",
+            "views",
+            "posters",
+            "selectedPosters",
+            "filters",
+            "lastIndices",
+            "libraryItemCounts",
+            "fetchingItems",
+            "copyWith",
+            "debugFillProperties",
+            "toString"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_$LibrarySearchModelCopyWithImpl",
+          "startLine": 78,
+          "endLine": 153,
+          "methods": [
+            "_$LibrarySearchModelCopyWithImpl",
+            "call",
+            "filters"
+          ],
+          "properties": [
+            "_self",
+            "_then"
+          ]
+        },
+        {
+          "name": "LibrarySearchModelPatterns",
+          "startLine": 156,
+          "endLine": 346,
+          "methods": [
+            "maybeMap",
+            "map",
+            "mapOrNull",
+            "maybeWhen",
+            "when",
+            "whenOrNull"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_LibrarySearchModel",
+          "startLine": 350,
+          "endLine": 464,
+          "methods": [
+            "folderOverwrite",
+            "views",
+            "posters",
+            "selectedPosters",
+            "lastIndices",
+            "libraryItemCounts",
+            "copyWith",
+            "debugFillProperties",
+            "toString"
+          ],
+          "properties": [
+            "loading",
+            "selecteMode",
+            "_folderOverwrite",
+            "_views",
+            "_posters",
+            "_selectedPosters",
+            "filters",
+            "_lastIndices",
+            "_libraryItemCounts",
+            "fetchingItems"
+          ]
+        },
+        {
+          "name": "__$LibrarySearchModelCopyWithImpl",
+          "startLine": 489,
+          "endLine": 564,
+          "methods": [
+            "__$LibrarySearchModelCopyWithImpl",
+            "call",
+            "filters"
+          ],
+          "properties": [
+            "_self",
+            "_then"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "loading",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "selecteMode",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "folderOverwrite",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "views",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "posters",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "selectedPosters",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "filters",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "lastIndices",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "libraryItemCounts",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "fetchingItems",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "debugFillProperties",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "call",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "call",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "filters",
+          "line": 148,
+          "isDefault": false
+        },
+        {
+          "name": "maybeMap",
+          "line": 170,
+          "isDefault": false
+        },
+        {
+          "name": "map",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "mapOrNull",
+          "line": 222,
+          "isDefault": false
+        },
+        {
+          "name": "maybeWhen",
+          "line": 247,
+          "isDefault": false
+        },
+        {
+          "name": "when",
+          "line": 286,
+          "isDefault": false
+        },
+        {
+          "name": "whenOrNull",
+          "line": 323,
+          "isDefault": false
+        },
+        {
+          "name": "LibrarySearchModelPatterns",
+          "line": 156,
+          "isDefault": false
+        },
+        {
+          "name": "folderOverwrite",
+          "line": 378,
+          "isDefault": false
+        },
+        {
+          "name": "views",
+          "line": 387,
+          "isDefault": false
+        },
+        {
+          "name": "posters",
+          "line": 396,
+          "isDefault": false
+        },
+        {
+          "name": "selectedPosters",
+          "line": 405,
+          "isDefault": false
+        },
+        {
+          "name": "lastIndices",
+          "line": 417,
+          "isDefault": false
+        },
+        {
+          "name": "libraryItemCounts",
+          "line": 426,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 441,
+          "isDefault": false
+        },
+        {
+          "name": "debugFillProperties",
+          "line": 445,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 461,
+          "isDefault": false
+        },
+        {
+          "name": "call",
+          "line": 472,
+          "isDefault": false
+        },
+        {
+          "name": "call",
+          "line": 499,
+          "isDefault": false
+        },
+        {
+          "name": "filters",
+          "line": 559,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$LibrarySearchModelCopyWithImpl",
+          "lineNumber": 33
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 38
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 39
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 40
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 41
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 42
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 43
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 44
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 45
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 46
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 47
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 48
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 100
+        },
+        {
+          "caller": "call",
+          "callee": "copyWith",
+          "lineNumber": 100
+        },
+        {
+          "caller": "filters",
+          "callee": "$LibraryFilterModelCopyWith",
+          "lineNumber": 149
+        },
+        {
+          "caller": "filters",
+          "callee": "_then",
+          "lineNumber": 150
+        },
+        {
+          "caller": "filters",
+          "callee": "copyWith",
+          "lineNumber": 150
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "_LibrarySearchModel",
+          "lineNumber": 176
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "$default",
+          "lineNumber": 177
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "orElse",
+          "lineNumber": 179
+        },
+        {
+          "caller": "map",
+          "callee": "_LibrarySearchModel",
+          "lineNumber": 202
+        },
+        {
+          "caller": "map",
+          "callee": "$default",
+          "lineNumber": 203
+        },
+        {
+          "caller": "map",
+          "callee": "StateError",
+          "lineNumber": 205
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_LibrarySearchModel",
+          "lineNumber": 227
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 228
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_LibrarySearchModel",
+          "lineNumber": 264
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 265
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 268
+        },
+        {
+          "caller": "when",
+          "callee": "_LibrarySearchModel",
+          "lineNumber": 302
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 303
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 306
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_LibrarySearchModel",
+          "lineNumber": 339
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 340
+        },
+        {
+          "caller": "folderOverwrite",
+          "callee": "EqualUnmodifiableMapView",
+          "lineNumber": 381
+        },
+        {
+          "caller": "views",
+          "callee": "EqualUnmodifiableMapView",
+          "lineNumber": 390
+        },
+        {
+          "caller": "posters",
+          "callee": "EqualUnmodifiableListView",
+          "lineNumber": 399
+        },
+        {
+          "caller": "selectedPosters",
+          "callee": "EqualUnmodifiableListView",
+          "lineNumber": 408
+        },
+        {
+          "caller": "lastIndices",
+          "callee": "EqualUnmodifiableMapView",
+          "lineNumber": 420
+        },
+        {
+          "caller": "libraryItemCounts",
+          "callee": "EqualUnmodifiableMapView",
+          "lineNumber": 429
+        },
+        {
+          "caller": "copyWith",
+          "callee": "__$LibrarySearchModelCopyWithImpl",
+          "lineNumber": 442
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 447
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 448
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 449
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 450
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 451
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 452
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 453
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 454
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 455
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 456
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 457
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 511
+        },
+        {
+          "caller": "call",
+          "callee": "_LibrarySearchModel",
+          "lineNumber": 511
+        },
+        {
+          "caller": "filters",
+          "callee": "$LibraryFilterModelCopyWith",
+          "lineNumber": 560
+        },
+        {
+          "caller": "filters",
+          "callee": "_then",
+          "lineNumber": 561
+        },
+        {
+          "caller": "filters",
+          "callee": "copyWith",
+          "lineNumber": 561
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 35,
+        "functionCount": 37,
+        "classCount": 5
+      }
+    },
+    {
+      "path": "lib/models/library_search/library_search_options.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 126,
+      "nonEmptyLines": 114,
+      "classes": [
+        {
+          "name": "SortingOptions",
+          "startLine": 8,
+          "endLine": 9,
+          "methods": [],
+          "properties": [
+            "sortName"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SortingOptions",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 27
+        },
+        {
+          "caller": "value",
+          "callee": "switch",
+          "lineNumber": 53
+        },
+        {
+          "caller": "value",
+          "callee": "genre",
+          "lineNumber": 56
+        },
+        {
+          "caller": "value",
+          "callee": "tag",
+          "lineNumber": 58
+        },
+        {
+          "caller": "value",
+          "callee": "rating",
+          "lineNumber": 60
+        },
+        {
+          "caller": "value",
+          "callee": "type",
+          "lineNumber": 61
+        },
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 82
+        },
+        {
+          "caller": "sortItems",
+          "callee": "compareTo",
+          "lineNumber": 96
+        },
+        {
+          "caller": "sortItems",
+          "callee": "DateTime",
+          "lineNumber": 106
+        },
+        {
+          "caller": "sortItems",
+          "callee": "compareTo",
+          "lineNumber": 106
+        },
+        {
+          "caller": "sortItems",
+          "callee": "DateTime",
+          "lineNumber": 106
+        },
+        {
+          "caller": "sortItems",
+          "callee": "compareTo",
+          "lineNumber": 109
+        },
+        {
+          "caller": "sortItems",
+          "callee": "compareTo",
+          "lineNumber": 113
+        },
+        {
+          "caller": "sortItems",
+          "callee": "compareTo",
+          "lineNumber": 116
+        },
+        {
+          "caller": "sortItems",
+          "callee": "compareTo",
+          "lineNumber": 119
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/live_tv_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "classes": [
+        {
+          "name": "LiveTvModel",
+          "startLine": 8,
+          "endLine": 16,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LiveTvModel",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/live_tv_model.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 389,
+      "nonEmptyLines": 355,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "startDate",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "endDate",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "channels",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "loadedChannelIds",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "loadingChannelIds",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 27,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 31,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$LiveTvModel",
+          "startLine": 16,
+          "endLine": 34,
+          "methods": [
+            "startDate",
+            "endDate",
+            "channels",
+            "loadedChannelIds",
+            "loadingChannelIds",
+            "copyWith",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "startDate",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "endDate",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "channels",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "loadedChannelIds",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "loadingChannelIds",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$LiveTvModelCopyWithImpl",
+          "lineNumber": 28
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 68
+        },
+        {
+          "caller": "call",
+          "callee": "copyWith",
+          "lineNumber": 68
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "_LiveTvModel",
+          "lineNumber": 114
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "$default",
+          "lineNumber": 115
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "orElse",
+          "lineNumber": 117
+        },
+        {
+          "caller": "map",
+          "callee": "_LiveTvModel",
+          "lineNumber": 140
+        },
+        {
+          "caller": "map",
+          "callee": "$default",
+          "lineNumber": 141
+        },
+        {
+          "caller": "map",
+          "callee": "StateError",
+          "lineNumber": 143
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_LiveTvModel",
+          "lineNumber": 165
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 166
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_LiveTvModel",
+          "lineNumber": 197
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 198
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 201
+        },
+        {
+          "caller": "when",
+          "callee": "_LiveTvModel",
+          "lineNumber": 230
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 231
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 234
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_LiveTvModel",
+          "lineNumber": 262
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 263
+        },
+        {
+          "caller": "call",
+          "callee": "__$LiveTvModelCopyWithImpl",
+          "lineNumber": 348
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 364
+        },
+        {
+          "caller": "call",
+          "callee": "_LiveTvModel",
+          "lineNumber": 364
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/login_screen_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 31,
+      "classes": [
+        {
+          "name": "LoginScreenType",
+          "startLine": 8,
+          "endLine": 12,
+          "methods": [],
+          "properties": [
+            "users",
+            "login",
+            "code"
+          ]
+        },
+        {
+          "name": "LoginScreenModel",
+          "startLine": 15,
+          "endLine": 26,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "ServerLoginModel",
+          "startLine": 29,
+          "endLine": 36,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LoginScreenType",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "LoginScreenModel",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "ServerLoginModel",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/models/login_screen_model.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 858,
+      "nonEmptyLines": 786,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "accounts",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "screen",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "serverLoginModel",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "errorMessage",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "hasBaseUrl",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "loading",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "tempSeerrUrl",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "tempSeerrSessionCookie",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 35,
+          "endLine": 35,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$LoginScreenModel",
+          "startLine": 16,
+          "endLine": 38,
+          "methods": [
+            "accounts",
+            "screen",
+            "serverLoginModel",
+            "errorMessage",
+            "hasBaseUrl",
+            "loading",
+            "tempSeerrUrl",
+            "tempSeerrSessionCookie",
+            "copyWith",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "accounts",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "screen",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "serverLoginModel",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "errorMessage",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "hasBaseUrl",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "loading",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "tempSeerrUrl",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "tempSeerrSessionCookie",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$LoginScreenModelCopyWithImpl",
+          "lineNumber": 31
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 127
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 127
+        },
+        {
+          "caller": "_LoginScreenModel",
+          "callee": "_LoginScreenModel",
+          "lineNumber": 179
+        },
+        {
+          "caller": "_LoginScreenModel",
+          "callee": "$default",
+          "lineNumber": 180
+        },
+        {
+          "caller": "_LoginScreenModel",
+          "callee": "StateError",
+          "lineNumber": 182
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_LoginScreenModel",
+          "lineNumber": 204
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 205
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_LoginScreenModel",
+          "lineNumber": 239
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 240
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 250
+        },
+        {
+          "caller": "when",
+          "callee": "_LoginScreenModel",
+          "lineNumber": 282
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 283
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 293
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_LoginScreenModel",
+          "lineNumber": 324
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 325
+        },
+        {
+          "caller": "call",
+          "callee": "__$LoginScreenModelCopyWithImpl",
+          "lineNumber": 420
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 439
+        },
+        {
+          "caller": "call",
+          "callee": "_LoginScreenModel",
+          "lineNumber": 439
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 485
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 485
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 544
+        },
+        {
+          "caller": "call",
+          "callee": "copyWith",
+          "lineNumber": 544
+        },
+        {
+          "caller": "$CredentialsModelCopyWith",
+          "callee": "_then",
+          "lineNumber": 570
+        },
+        {
+          "caller": "$CredentialsModelCopyWith",
+          "callee": "copyWith",
+          "lineNumber": 570
+        },
+        {
+          "caller": "when",
+          "callee": "_ServerLoginModel",
+          "lineNumber": 710
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 711
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 714
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_ServerLoginModel",
+          "lineNumber": 741
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 742
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 827
+        },
+        {
+          "caller": "call",
+          "callee": "_ServerLoginModel",
+          "lineNumber": 827
+        },
+        {
+          "caller": "$CredentialsModelCopyWith",
+          "callee": "_then",
+          "lineNumber": 853
+        },
+        {
+          "caller": "$CredentialsModelCopyWith",
+          "callee": "copyWith",
+          "lineNumber": 853
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/media_playback_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 81,
+      "functions": [
+        {
+          "name": "MediaPlaybackModel",
+          "startLine": 36,
+          "endLine": 51,
+          "params": [
+            "state",
+            "playing",
+            "position",
+            "lastPosition",
+            "duration",
+            "buffer",
+            "completed",
+            "errorPlaying",
+            "buffering",
+            "fullScreen",
+            "queueRefilling",
+            "shuffleEnabled",
+            "repeatMode",
+            "skippedSegments"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 53,
+          "endLine": 68,
+          "params": [
+            "state",
+            "playing",
+            "position",
+            "lastPosition",
+            "duration",
+            "buffer",
+            "completed",
+            "errorPlaying",
+            "buffering",
+            "fullScreen",
+            "queueRefilling",
+            "shuffleEnabled",
+            "repeatMode",
+            "skippedSegments"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "VideoPlayerState",
+          "startLine": 1,
+          "endLine": 5,
+          "methods": [],
+          "properties": [
+            "minimized",
+            "fullScreen",
+            "disposed"
+          ]
+        },
+        {
+          "name": "AudioRepeatMode",
+          "startLine": 7,
+          "endLine": 12,
+          "methods": [],
+          "properties": [
+            "off",
+            "all",
+            "AudioRepeatMode"
+          ]
+        },
+        {
+          "name": "MediaPlaybackModel",
+          "startLine": 21,
+          "endLine": 86,
+          "methods": [
+            "MediaPlaybackModel",
+            "copyWith"
+          ],
+          "properties": [
+            "state",
+            "playing",
+            "position",
+            "lastPosition",
+            "duration",
+            "buffer",
+            "completed",
+            "errorPlaying",
+            "buffering",
+            "fullScreen",
+            "queueRefilling",
+            "shuffleEnabled",
+            "repeatMode",
+            "skippedSegments"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "VideoPlayerState",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "AudioRepeatMode",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "MediaPlaybackModel",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "MediaPlaybackModel",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "MediaPlaybackModel",
+          "lineNumber": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/models/notification_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 109,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "NotificationModel.fromJson",
+          "startLine": 26,
+          "endLine": 26,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "createList",
+          "startLine": 28,
+          "endLine": 28,
+          "params": [
+            "items",
+            "l10n"
+          ]
+        },
+        {
+          "name": "fromSeerrRequest",
+          "startLine": 31,
+          "endLine": 37,
+          "params": [
+            "req",
+            "l10n",
+            "title",
+            "image",
+            "detailedPayload"
+          ]
+        },
+        {
+          "name": "_fromItem",
+          "startLine": 74,
+          "endLine": 74,
+          "params": [
+            "item",
+            "l10n"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotificationModel",
+          "startLine": 15,
+          "endLine": 109,
+          "methods": [
+            "NotificationModel.fromJson",
+            "createList",
+            "fromSeerrRequest",
+            "_fromItem"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotificationModel.fromJson",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "createList",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "fromSeerrRequest",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "NotificationModel",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NotificationModel.fromJson",
+          "callee": "_$NotificationModelFromJson",
+          "lineNumber": 26
+        },
+        {
+          "caller": "createList",
+          "callee": "map",
+          "lineNumber": 29
+        },
+        {
+          "caller": "createList",
+          "callee": "_fromItem",
+          "lineNumber": 29
+        },
+        {
+          "caller": "createList",
+          "callee": "toList",
+          "lineNumber": 29
+        },
+        {
+          "caller": "fromSeerrRequest",
+          "callee": "toLowerCase",
+          "lineNumber": 40
+        },
+        {
+          "caller": "fromSeerrRequest",
+          "callee": "contains",
+          "lineNumber": 41
+        },
+        {
+          "caller": "fromSeerrRequest",
+          "callee": "buildSeerrDeepLink",
+          "lineNumber": 43
+        },
+        {
+          "caller": "defaultTitle",
+          "callee": "contains",
+          "lineNumber": 47
+        },
+        {
+          "caller": "fromSeerrRequest",
+          "callee": "switch",
+          "lineNumber": 53
+        },
+        {
+          "caller": "fromSeerrRequest",
+          "callee": "NotificationModel",
+          "lineNumber": 64
+        },
+        {
+          "caller": "fromSeerrRequest",
+          "callee": "defaultTitle",
+          "lineNumber": 68
+        },
+        {
+          "caller": "_fromItem",
+          "callee": "switch",
+          "lineNumber": 77
+        },
+        {
+          "caller": "_fromItem",
+          "callee": "NotificationModel",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_fromItem",
+          "callee": "episodeLabel",
+          "lineNumber": 84
+        },
+        {
+          "caller": "_fromItem",
+          "callee": "buildDetailsDeepLink",
+          "lineNumber": 85
+        },
+        {
+          "caller": "_fromItem",
+          "callee": "NotificationModel",
+          "lineNumber": 87
+        },
+        {
+          "caller": "_fromItem",
+          "callee": "detailedName",
+          "lineNumber": 92
+        },
+        {
+          "caller": "_fromItem",
+          "callee": "buildDetailsDeepLink",
+          "lineNumber": 94
+        },
+        {
+          "caller": "_fromItem",
+          "callee": "NotificationModel",
+          "lineNumber": 96
+        },
+        {
+          "caller": "_fromItem",
+          "callee": "buildDetailsDeepLink",
+          "lineNumber": 103
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/notification_model.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 242,
+      "nonEmptyLines": 219,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "key",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "id",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "childCount",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "image",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "title",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "subtitle",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "payLoad",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "toJson",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 29,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "maybeMap",
+          "startLine": 49,
+          "endLine": 52,
+          "params": [
+            "$default",
+            "orElse"
+          ]
+        },
+        {
+          "name": "map",
+          "startLine": 76,
+          "endLine": 78,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "mapOrNull",
+          "startLine": 101,
+          "endLine": 103,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "maybeWhen",
+          "startLine": 126,
+          "endLine": 131,
+          "params": [
+            "$default",
+            "orElse"
+          ]
+        },
+        {
+          "name": "when",
+          "startLine": 156,
+          "endLine": 160,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "whenOrNull",
+          "startLine": 184,
+          "endLine": 188,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "_NotificationModel.fromJson",
+          "startLine": 211,
+          "endLine": 211,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "toJson",
+          "startLine": 230,
+          "endLine": 230,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 237,
+          "endLine": 237,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$NotificationModel",
+          "startLine": 16,
+          "endLine": 32,
+          "methods": [
+            "key",
+            "id",
+            "childCount",
+            "image",
+            "title",
+            "subtitle",
+            "payLoad",
+            "toJson",
+            "toString"
+          ],
+          "properties": []
+        },
+        {
+          "name": "NotificationModelPatterns",
+          "startLine": 35,
+          "endLine": 198,
+          "methods": [
+            "maybeMap",
+            "map",
+            "mapOrNull",
+            "maybeWhen",
+            "when",
+            "whenOrNull"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_NotificationModel",
+          "startLine": 202,
+          "endLine": 240,
+          "methods": [
+            "_NotificationModel.fromJson",
+            "toJson",
+            "toString"
+          ],
+          "properties": [
+            "key",
+            "id",
+            "childCount",
+            "image",
+            "title",
+            "subtitle",
+            "payLoad"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "key",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "id",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "childCount",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "image",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "title",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "subtitle",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "payLoad",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "toJson",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "maybeMap",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "map",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "mapOrNull",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "maybeWhen",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "when",
+          "line": 156,
+          "isDefault": false
+        },
+        {
+          "name": "whenOrNull",
+          "line": 184,
+          "isDefault": false
+        },
+        {
+          "name": "NotificationModelPatterns",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "toJson",
+          "line": 230,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 237,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "maybeMap",
+          "callee": "_NotificationModel",
+          "lineNumber": 55
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "$default",
+          "lineNumber": 56
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "orElse",
+          "lineNumber": 58
+        },
+        {
+          "caller": "map",
+          "callee": "_NotificationModel",
+          "lineNumber": 81
+        },
+        {
+          "caller": "map",
+          "callee": "$default",
+          "lineNumber": 82
+        },
+        {
+          "caller": "map",
+          "callee": "StateError",
+          "lineNumber": 84
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_NotificationModel",
+          "lineNumber": 106
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 107
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_NotificationModel",
+          "lineNumber": 134
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 135
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 138
+        },
+        {
+          "caller": "when",
+          "callee": "_NotificationModel",
+          "lineNumber": 163
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 164
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 167
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_NotificationModel",
+          "lineNumber": 191
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 192
+        },
+        {
+          "caller": "_NotificationModel.fromJson",
+          "callee": "_$NotificationModelFromJson",
+          "lineNumber": 212
+        },
+        {
+          "caller": "toJson",
+          "callee": "_$NotificationModelToJson",
+          "lineNumber": 231
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 18,
+        "functionCount": 19,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/models/notification_model.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "_$NotificationModelFromJson",
+          "startLine": 9,
+          "endLine": 9,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "_$NotificationModelToJson",
+          "startLine": 20,
+          "endLine": 20,
+          "params": [
+            "instance"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_$NotificationModelFromJson",
+          "callee": "_NotificationModel",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/models/playback/audio_prefetch_buffer.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "AudioPrefetchBuffer",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "bufferSize"
+          ]
+        },
+        {
+          "name": "prefetch",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "items",
+            "resolver"
+          ]
+        },
+        {
+          "name": "getUrl",
+          "startLine": 16,
+          "endLine": 16,
+          "params": [
+            "itemId"
+          ]
+        },
+        {
+          "name": "invalidate",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AudioPrefetchBuffer",
+          "startLine": 4,
+          "endLine": 19,
+          "methods": [
+            "AudioPrefetchBuffer",
+            "prefetch",
+            "getUrl",
+            "invalidate"
+          ],
+          "properties": [
+            "bufferSize",
+            "_cache"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AudioPrefetchBuffer",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "prefetch",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "getUrl",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "invalidate",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "AudioPrefetchBuffer",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "prefetch",
+          "callee": "take",
+          "lineNumber": 11
+        },
+        {
+          "caller": "prefetch",
+          "callee": "putIfAbsent",
+          "lineNumber": 12
+        },
+        {
+          "caller": "prefetch",
+          "callee": "resolve",
+          "lineNumber": 12
+        },
+        {
+          "caller": "getUrl",
+          "callee": "value",
+          "lineNumber": 16
+        },
+        {
+          "caller": "invalidate",
+          "callee": "clear",
+          "lineNumber": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/playback/audio_url_resolver.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 33,
+      "functions": [
+        {
+          "name": "resolve",
+          "startLine": 14,
+          "endLine": 14,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "_directUrl",
+          "startLine": 22,
+          "endLine": 22,
+          "params": [
+            "item"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AudioUrlResolver",
+          "startLine": 9,
+          "endLine": 40,
+          "methods": [
+            "resolve",
+            "_directUrl"
+          ],
+          "properties": [
+            "ref"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "resolve",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "AudioUrlResolver",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "resolve",
+          "callee": "read",
+          "lineNumber": 15
+        },
+        {
+          "caller": "resolve",
+          "callee": "getSyncedItem",
+          "lineNumber": 15
+        },
+        {
+          "caller": "resolve",
+          "callee": "existsSync",
+          "lineNumber": 16
+        },
+        {
+          "caller": "resolve",
+          "callee": "_directUrl",
+          "lineNumber": 19
+        },
+        {
+          "caller": "_directUrl",
+          "callee": "read",
+          "lineNumber": 23
+        },
+        {
+          "caller": "_directUrl",
+          "callee": "buildServerUrl",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/playback/direct_playback_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 167,
+      "nonEmptyLines": 148,
+      "functions": [
+        {
+          "name": "DirectPlaybackModel",
+          "startLine": 21,
+          "endLine": 33,
+          "params": [
+            "item",
+            "media",
+            "playbackInfo",
+            "mediaStreams",
+            "mediaSegments",
+            "chapters",
+            "trickPlay",
+            "queue",
+            "playbackQueue",
+            "queueSource",
+            "bitRateOptions"
+          ]
+        },
+        {
+          "name": "subStreams",
+          "startLine": 36,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "itemsInQueue",
+          "startLine": 38,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "setSubtitle",
+          "startLine": 42,
+          "endLine": 42,
+          "params": [
+            "model",
+            "player"
+          ]
+        },
+        {
+          "name": "audioStreams",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "setAudio",
+          "startLine": 51,
+          "endLine": 51,
+          "params": [
+            "model",
+            "player"
+          ]
+        },
+        {
+          "name": "setQualityOption",
+          "startLine": 57,
+          "endLine": 57,
+          "params": [
+            "map"
+          ]
+        },
+        {
+          "name": "playbackStarted",
+          "startLine": 62,
+          "endLine": 62,
+          "params": [
+            "position",
+            "ref"
+          ]
+        },
+        {
+          "name": "playbackStopped",
+          "startLine": 83,
+          "endLine": 83,
+          "params": [
+            "position",
+            "totalDuration",
+            "ref"
+          ]
+        },
+        {
+          "name": "updatePlaybackPosition",
+          "startLine": 99,
+          "endLine": 99,
+          "params": [
+            "position",
+            "isPlaying",
+            "ref"
+          ]
+        },
+        {
+          "name": "updateUserData",
+          "startLine": 122,
+          "endLine": 122,
+          "params": [
+            "userData"
+          ]
+        },
+        {
+          "name": "updatePlaybackQueue",
+          "startLine": 131,
+          "endLine": 131,
+          "params": [
+            "newQueue"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 136,
+          "endLine": 136,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 139,
+          "endLine": 152,
+          "params": [
+            "item",
+            "media",
+            "lastPosition",
+            "playbackInfo",
+            "mediaStreams",
+            "mediaSegments",
+            "chapters",
+            "trickPlay",
+            "queue",
+            "playbackQueue",
+            "queueSource",
+            "bitRateOptions"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirectPlaybackModel",
+          "startLine": 20,
+          "endLine": 167,
+          "methods": [
+            "DirectPlaybackModel",
+            "subStreams",
+            "itemsInQueue",
+            "setSubtitle",
+            "audioStreams",
+            "setAudio",
+            "setQualityOption",
+            "playbackStarted",
+            "playbackStopped",
+            "updatePlaybackPosition",
+            "updateUserData",
+            "updatePlaybackQueue",
+            "toString",
+            "copyWith"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DirectPlaybackModel",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "subStreams",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "itemsInQueue",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "setSubtitle",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "audioStreams",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "setAudio",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "setQualityOption",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "playbackStarted",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "playbackStopped",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "updatePlaybackPosition",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "updateUserData",
+          "line": 122,
+          "isDefault": false
+        },
+        {
+          "name": "updatePlaybackQueue",
+          "line": 131,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 139,
+          "isDefault": false
+        },
+        {
+          "name": "DirectPlaybackModel",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "subStreams",
+          "callee": "no",
+          "lineNumber": 36
+        },
+        {
+          "caller": "itemsInQueue",
+          "callee": "mapIndexed",
+          "lineNumber": 39
+        },
+        {
+          "caller": "itemsInQueue",
+          "callee": "QueueItem",
+          "lineNumber": 39
+        },
+        {
+          "caller": "itemsInQueue",
+          "callee": "toList",
+          "lineNumber": 39
+        },
+        {
+          "caller": "setSubtitle",
+          "callee": "setSubtitleTrack",
+          "lineNumber": 43
+        },
+        {
+          "caller": "setSubtitle",
+          "callee": "copyWith",
+          "lineNumber": 44
+        },
+        {
+          "caller": "audioStreams",
+          "callee": "no",
+          "lineNumber": 48
+        },
+        {
+          "caller": "setAudio",
+          "callee": "setAudioTrack",
+          "lineNumber": 52
+        },
+        {
+          "caller": "setAudio",
+          "callee": "copyWith",
+          "lineNumber": 53
+        },
+        {
+          "caller": "setQualityOption",
+          "callee": "copyWith",
+          "lineNumber": 58
+        },
+        {
+          "caller": "playbackStarted",
+          "callee": "read",
+          "lineNumber": 63
+        },
+        {
+          "caller": "playbackStarted",
+          "callee": "sessionsPlayingPost",
+          "lineNumber": 63
+        },
+        {
+          "caller": "playbackStarted",
+          "callee": "PlaybackStartInfo",
+          "lineNumber": 64
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "resolvedStopPosition",
+          "lineNumber": 84
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "read",
+          "lineNumber": 86
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "sessionsPlayingStoppedPost",
+          "lineNumber": 86
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "PlaybackStopInfo",
+          "lineNumber": 87
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "read",
+          "lineNumber": 100
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "sessionsPlayingProgressPost",
+          "lineNumber": 101
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "PlaybackProgressInfo",
+          "lineNumber": 102
+        },
+        {
+          "caller": "updateUserData",
+          "callee": "copyWith",
+          "lineNumber": 123
+        },
+        {
+          "caller": "updateUserData",
+          "callee": "copyWith",
+          "lineNumber": 124
+        },
+        {
+          "caller": "updatePlaybackQueue",
+          "callee": "copyWith",
+          "lineNumber": 132
+        },
+        {
+          "caller": "copyWith",
+          "callee": "DirectPlaybackModel",
+          "lineNumber": 153
+        },
+        {
+          "caller": "copyWith",
+          "callee": "media",
+          "lineNumber": 155
+        },
+        {
+          "caller": "copyWith",
+          "callee": "mediaStreams",
+          "lineNumber": 157
+        },
+        {
+          "caller": "copyWith",
+          "callee": "mediaSegments",
+          "lineNumber": 158
+        },
+        {
+          "caller": "copyWith",
+          "callee": "chapters",
+          "lineNumber": 159
+        },
+        {
+          "caller": "copyWith",
+          "callee": "trickPlay",
+          "lineNumber": 160
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/playback/offline_playback_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 161,
+      "nonEmptyLines": 141,
+      "functions": [
+        {
+          "name": "OfflinePlaybackModel",
+          "startLine": 21,
+          "endLine": 33,
+          "params": [
+            "syncedItem",
+            "mediaStreams",
+            "playbackInfo",
+            "item",
+            "media",
+            "mediaSegments",
+            "trickPlay",
+            "queue",
+            "playbackQueue",
+            "queueSource",
+            "syncedQueue"
+          ]
+        },
+        {
+          "name": "chapters",
+          "startLine": 39,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "startDuration",
+          "startLine": 42,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "nextVideo",
+          "startLine": 45,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "previousVideo",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "subStreams",
+          "startLine": 51,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "setSubtitle",
+          "startLine": 54,
+          "endLine": 54,
+          "params": [
+            "model",
+            "player"
+          ]
+        },
+        {
+          "name": "audioStreams",
+          "startLine": 60,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "setAudio",
+          "startLine": 63,
+          "endLine": 63,
+          "params": [
+            "model",
+            "player"
+          ]
+        },
+        {
+          "name": "playbackStarted",
+          "startLine": 69,
+          "endLine": 69,
+          "params": [
+            "position",
+            "ref"
+          ]
+        },
+        {
+          "name": "playbackStopped",
+          "startLine": 74,
+          "endLine": 74,
+          "params": [
+            "position",
+            "totalDuration",
+            "ref"
+          ]
+        },
+        {
+          "name": "updatePlaybackPosition",
+          "startLine": 94,
+          "endLine": 94,
+          "params": [
+            "position",
+            "isPlaying",
+            "ref"
+          ]
+        },
+        {
+          "name": "_progressFor",
+          "startLine": 112,
+          "endLine": 112,
+          "params": [
+            "position",
+            "totalDuration"
+          ]
+        },
+        {
+          "name": "updateUserData",
+          "startLine": 119,
+          "endLine": 119,
+          "params": [
+            "userData"
+          ]
+        },
+        {
+          "name": "updatePlaybackQueue",
+          "startLine": 128,
+          "endLine": 128,
+          "params": [
+            "newQueue"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 133,
+          "endLine": 133,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 136,
+          "endLine": 147,
+          "params": [
+            "item",
+            "media",
+            "syncedItem",
+            "mediaStreams",
+            "mediaSegments",
+            "trickPlay",
+            "queue",
+            "playbackQueue",
+            "queueSource",
+            "syncedQueue"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "OfflinePlaybackModel",
+          "startLine": 20,
+          "endLine": 161,
+          "methods": [
+            "OfflinePlaybackModel",
+            "chapters",
+            "startDuration",
+            "nextVideo",
+            "previousVideo",
+            "subStreams",
+            "setSubtitle",
+            "audioStreams",
+            "setAudio",
+            "playbackStarted",
+            "playbackStopped",
+            "updatePlaybackPosition",
+            "_progressFor",
+            "updateUserData",
+            "updatePlaybackQueue",
+            "toString",
+            "copyWith"
+          ],
+          "properties": [
+            "syncedItem",
+            "syncedQueue"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "OfflinePlaybackModel",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "chapters",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "startDuration",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "nextVideo",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "previousVideo",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "subStreams",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "setSubtitle",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "audioStreams",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "setAudio",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "playbackStarted",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "playbackStopped",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "updatePlaybackPosition",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "updateUserData",
+          "line": 119,
+          "isDefault": false
+        },
+        {
+          "name": "updatePlaybackQueue",
+          "line": 128,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 133,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "OfflinePlaybackModel",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "nextVideo",
+          "callee": "nextOrNull",
+          "lineNumber": 45
+        },
+        {
+          "caller": "previousVideo",
+          "callee": "previousOrNull",
+          "lineNumber": 48
+        },
+        {
+          "caller": "subStreams",
+          "callee": "no",
+          "lineNumber": 51
+        },
+        {
+          "caller": "setSubtitle",
+          "callee": "setSubtitleTrack",
+          "lineNumber": 55
+        },
+        {
+          "caller": "setSubtitle",
+          "callee": "copyWith",
+          "lineNumber": 56
+        },
+        {
+          "caller": "audioStreams",
+          "callee": "no",
+          "lineNumber": 60
+        },
+        {
+          "caller": "setAudio",
+          "callee": "setAudioTrack",
+          "lineNumber": 64
+        },
+        {
+          "caller": "setAudio",
+          "callee": "copyWith",
+          "lineNumber": 65
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "read",
+          "lineNumber": 75
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "resolvedStopPosition",
+          "lineNumber": 77
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "_progressFor",
+          "lineNumber": 78
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "isPlayed",
+          "lineNumber": 79
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "now",
+          "lineNumber": 84
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "toUtc",
+          "lineNumber": 84
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "copyWith",
+          "lineNumber": 86
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "read",
+          "lineNumber": 89
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "updateItem",
+          "lineNumber": 89
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "read",
+          "lineNumber": 95
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "_progressFor",
+          "lineNumber": 97
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "isPlayed",
+          "lineNumber": 98
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "now",
+          "lineNumber": 103
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "toUtc",
+          "lineNumber": 103
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "copyWith",
+          "lineNumber": 105
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "read",
+          "lineNumber": 108
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "updateItem",
+          "lineNumber": 108
+        },
+        {
+          "caller": "_progressFor",
+          "callee": "clamp",
+          "lineNumber": 115
+        },
+        {
+          "caller": "_progressFor",
+          "callee": "toDouble",
+          "lineNumber": 115
+        },
+        {
+          "caller": "updateUserData",
+          "callee": "copyWith",
+          "lineNumber": 120
+        },
+        {
+          "caller": "updateUserData",
+          "callee": "copyWith",
+          "lineNumber": 121
+        },
+        {
+          "caller": "updatePlaybackQueue",
+          "callee": "copyWith",
+          "lineNumber": 129
+        },
+        {
+          "caller": "copyWith",
+          "callee": "OfflinePlaybackModel",
+          "lineNumber": 148
+        },
+        {
+          "caller": "copyWith",
+          "callee": "media",
+          "lineNumber": 150
+        },
+        {
+          "caller": "copyWith",
+          "callee": "mediaStreams",
+          "lineNumber": 152
+        },
+        {
+          "caller": "copyWith",
+          "callee": "mediaSegments",
+          "lineNumber": 153
+        },
+        {
+          "caller": "copyWith",
+          "callee": "trickPlay",
+          "lineNumber": 154
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 17,
+        "functionCount": 17,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/playback/playback_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 653,
+      "nonEmptyLines": 553,
+      "functions": [
+        {
+          "name": "defaultSubStream",
+          "startLine": 57,
+          "endLine": 57,
+          "params": []
+        },
+        {
+          "name": "defaultAudioStream",
+          "startLine": 64,
+          "endLine": 64,
+          "params": []
+        },
+        {
+          "name": "label",
+          "startLine": 71,
+          "endLine": 71,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "queue",
+          "startLine": 84,
+          "endLine": 84,
+          "params": []
+        },
+        {
+          "name": "nextUpQueue",
+          "startLine": 85,
+          "endLine": 85,
+          "params": []
+        },
+        {
+          "name": "updatePlaybackPosition",
+          "startLine": 95,
+          "endLine": 95,
+          "params": [
+            "position",
+            "isPlaying",
+            "ref"
+          ]
+        },
+        {
+          "name": "playbackStarted",
+          "startLine": 97,
+          "endLine": 97,
+          "params": [
+            "position",
+            "ref"
+          ]
+        },
+        {
+          "name": "playbackStopped",
+          "startLine": 98,
+          "endLine": 98,
+          "params": [
+            "position",
+            "totalDuration",
+            "ref"
+          ]
+        },
+        {
+          "name": "dispose",
+          "startLine": 101,
+          "endLine": 101,
+          "params": []
+        },
+        {
+          "name": "subStreams",
+          "startLine": 104,
+          "endLine": 104,
+          "params": []
+        },
+        {
+          "name": "audioStreams",
+          "startLine": 105,
+          "endLine": 105,
+          "params": []
+        },
+        {
+          "name": "isAudioPlayback",
+          "startLine": 107,
+          "endLine": 107,
+          "params": []
+        },
+        {
+          "name": "resolvedStopPosition",
+          "startLine": 109,
+          "endLine": 109,
+          "params": [
+            "position",
+            "totalDuration"
+          ]
+        },
+        {
+          "name": "resolvedStartPosition",
+          "startLine": 114,
+          "endLine": 114,
+          "params": [
+            "requestedStartPosition"
+          ]
+        },
+        {
+          "name": "startDuration",
+          "startLine": 119,
+          "endLine": 119,
+          "params": []
+        },
+        {
+          "name": "updateUserData",
+          "startLine": 121,
+          "endLine": 121,
+          "params": [
+            "userData"
+          ]
+        },
+        {
+          "name": "setSubtitle",
+          "startLine": 123,
+          "endLine": 123,
+          "params": [
+            "model",
+            "player"
+          ]
+        },
+        {
+          "name": "setAudio",
+          "startLine": 124,
+          "endLine": 124,
+          "params": [
+            "model",
+            "player"
+          ]
+        },
+        {
+          "name": "setQualityOption",
+          "startLine": 125,
+          "endLine": 125,
+          "params": [
+            "map"
+          ]
+        },
+        {
+          "name": "updatePlaybackQueue",
+          "startLine": 127,
+          "endLine": 127,
+          "params": [
+            "newQueue"
+          ]
+        },
+        {
+          "name": "nextVideo",
+          "startLine": 129,
+          "endLine": 129,
+          "params": []
+        },
+        {
+          "name": "previousVideo",
+          "startLine": 130,
+          "endLine": 130,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 132,
+          "endLine": 132,
+          "params": []
+        },
+        {
+          "name": "PlaybackModel",
+          "startLine": 134,
+          "endLine": 150,
+          "params": [
+            "playbackInfo",
+            "mediaStreams",
+            "item",
+            "media",
+            "queue",
+            "playbackQueue",
+            "queueSource",
+            "bitRateOptions",
+            "mediaSegments",
+            "chapters",
+            "trickPlay"
+          ]
+        },
+        {
+          "name": "api",
+          "startLine": 162,
+          "endLine": 162,
+          "params": []
+        },
+        {
+          "name": "loadNewVideo",
+          "startLine": 164,
+          "endLine": 164,
+          "params": [
+            "newItem"
+          ]
+        },
+        {
+          "name": "loadTVChannel",
+          "startLine": 186,
+          "endLine": 186,
+          "params": [
+            "channel"
+          ]
+        },
+        {
+          "name": "_createOfflinePlaybackModel",
+          "startLine": 218,
+          "endLine": 224,
+          "params": [
+            "item",
+            "streamModel",
+            "syncedItem",
+            "oldModel",
+            "queueSource"
+          ]
+        },
+        {
+          "name": "createPlaybackModel",
+          "startLine": 247,
+          "endLine": 256,
+          "params": [
+            "context",
+            "item",
+            "oldModel",
+            "libraryQueue",
+            "queueSource",
+            "showPlaybackOptions",
+            "forcedPlaybackType",
+            "startPosition"
+          ]
+        },
+        {
+          "name": "_createServerPlaybackModel",
+          "startLine": 352,
+          "endLine": 360,
+          "params": [
+            "item",
+            "streamModel",
+            "type",
+            "oldModel",
+            "libraryQueue",
+            "queueSource",
+            "startPosition"
+          ]
+        },
+        {
+          "name": "isValidVideoUrl",
+          "startLine": 512,
+          "endLine": 512,
+          "params": [
+            "path"
+          ]
+        },
+        {
+          "name": "collectQueue",
+          "startLine": 517,
+          "endLine": 517,
+          "params": [
+            "model"
+          ]
+        },
+        {
+          "name": "fetchEpisodesFromSeries",
+          "startLine": 530,
+          "endLine": 530,
+          "params": [
+            "seriesId"
+          ]
+        },
+        {
+          "name": "shouldReload",
+          "startLine": 546,
+          "endLine": 546,
+          "params": [
+            "playbackModel"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Media",
+          "startLine": 48,
+          "endLine": 54,
+          "methods": [],
+          "properties": [
+            "url"
+          ]
+        },
+        {
+          "name": "PlaybackModelExtension",
+          "startLine": 56,
+          "endLine": 78,
+          "methods": [
+            "defaultSubStream",
+            "defaultAudioStream",
+            "label"
+          ],
+          "properties": []
+        },
+        {
+          "name": "PlaybackModel",
+          "startLine": 80,
+          "endLine": 151,
+          "methods": [
+            "queue",
+            "nextUpQueue",
+            "updatePlaybackPosition",
+            "playbackStarted",
+            "playbackStopped",
+            "dispose",
+            "subStreams",
+            "audioStreams",
+            "isAudioPlayback",
+            "resolvedStopPosition",
+            "resolvedStartPosition",
+            "startDuration",
+            "updateUserData",
+            "setSubtitle",
+            "setAudio",
+            "setQualityOption",
+            "updatePlaybackQueue",
+            "nextVideo",
+            "previousVideo",
+            "copyWith",
+            "PlaybackModel"
+          ],
+          "properties": [
+            "item",
+            "media",
+            "playbackQueue",
+            "queueSource",
+            "mediaSegments",
+            "playbackInfo",
+            "bitRateOptions",
+            "chapters",
+            "trickPlay",
+            "mediaStreams"
+          ]
+        },
+        {
+          "name": "PlaybackModelHelper",
+          "startLine": 157,
+          "endLine": 653,
+          "methods": [
+            "api",
+            "loadNewVideo",
+            "loadTVChannel",
+            "_createOfflinePlaybackModel",
+            "createPlaybackModel",
+            "_createServerPlaybackModel",
+            "isValidVideoUrl",
+            "collectQueue",
+            "fetchEpisodesFromSeries",
+            "shouldReload"
+          ],
+          "properties": [
+            "ref"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "playback_queue_source.dart",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "Media",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "defaultSubStream",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "defaultAudioStream",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "PlaybackModelExtension",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "queue",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "nextUpQueue",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "updatePlaybackPosition",
+          "line": 95,
+          "isDefault": false
+        },
+        {
+          "name": "playbackStarted",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "playbackStopped",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "subStreams",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "audioStreams",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "isAudioPlayback",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "resolvedStopPosition",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "resolvedStartPosition",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "startDuration",
+          "line": 119,
+          "isDefault": false
+        },
+        {
+          "name": "updateUserData",
+          "line": 121,
+          "isDefault": false
+        },
+        {
+          "name": "setSubtitle",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "setAudio",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "setQualityOption",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "updatePlaybackQueue",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "nextVideo",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "previousVideo",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 132,
+          "isDefault": false
+        },
+        {
+          "name": "PlaybackModel",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "PlaybackModel",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "api",
+          "line": 162,
+          "isDefault": false
+        },
+        {
+          "name": "loadNewVideo",
+          "line": 164,
+          "isDefault": false
+        },
+        {
+          "name": "loadTVChannel",
+          "line": 186,
+          "isDefault": false
+        },
+        {
+          "name": "createPlaybackModel",
+          "line": 247,
+          "isDefault": false
+        },
+        {
+          "name": "isValidVideoUrl",
+          "line": 512,
+          "isDefault": false
+        },
+        {
+          "name": "collectQueue",
+          "line": 517,
+          "isDefault": false
+        },
+        {
+          "name": "fetchEpisodesFromSeries",
+          "line": 530,
+          "isDefault": false
+        },
+        {
+          "name": "shouldReload",
+          "line": 546,
+          "isDefault": false
+        },
+        {
+          "name": "PlaybackModelHelper",
+          "line": 157,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "defaultSubStream",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 60
+        },
+        {
+          "caller": "defaultSubStream",
+          "callee": "no",
+          "lineNumber": 61
+        },
+        {
+          "caller": "defaultAudioStream",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 67
+        },
+        {
+          "caller": "defaultAudioStream",
+          "callee": "no",
+          "lineNumber": 68
+        },
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 71
+        },
+        {
+          "caller": "label",
+          "callee": "name",
+          "lineNumber": 72
+        },
+        {
+          "caller": "label",
+          "callee": "name",
+          "lineNumber": 73
+        },
+        {
+          "caller": "label",
+          "callee": "name",
+          "lineNumber": 74
+        },
+        {
+          "caller": "label",
+          "callee": "name",
+          "lineNumber": 75
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "UnimplementedError",
+          "lineNumber": 96
+        },
+        {
+          "caller": "playbackStarted",
+          "callee": "UnimplementedError",
+          "lineNumber": 97
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "UnimplementedError",
+          "lineNumber": 99
+        },
+        {
+          "caller": "subStreams",
+          "callee": "UnimplementedError",
+          "lineNumber": 104
+        },
+        {
+          "caller": "audioStreams",
+          "callee": "UnimplementedError",
+          "lineNumber": 105
+        },
+        {
+          "caller": "resolvedStartPosition",
+          "callee": "startDuration",
+          "lineNumber": 116
+        },
+        {
+          "caller": "updateUserData",
+          "callee": "UnimplementedError",
+          "lineNumber": 121
+        },
+        {
+          "caller": "setSubtitle",
+          "callee": "UnimplementedError",
+          "lineNumber": 123
+        },
+        {
+          "caller": "setAudio",
+          "callee": "UnimplementedError",
+          "lineNumber": 124
+        },
+        {
+          "caller": "setQualityOption",
+          "callee": "UnimplementedError",
+          "lineNumber": 125
+        },
+        {
+          "caller": "updatePlaybackQueue",
+          "callee": "UnimplementedError",
+          "lineNumber": 127
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "nextItem",
+          "lineNumber": 129
+        },
+        {
+          "caller": "previousVideo",
+          "callee": "previousItem",
+          "lineNumber": 130
+        },
+        {
+          "caller": "copyWith",
+          "callee": "UnimplementedError",
+          "lineNumber": 132
+        },
+        {
+          "caller": "api",
+          "callee": "read",
+          "lineNumber": 162
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "read",
+          "lineNumber": 165
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "pause",
+          "lineNumber": 165
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "read",
+          "lineNumber": 166
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "update",
+          "lineNumber": 166
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "copyWith",
+          "lineNumber": 166
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "read",
+          "lineNumber": 167
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "createPlaybackModel",
+          "lineNumber": 168
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "_createOfflinePlaybackModel",
+          "lineNumber": 173
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "read",
+          "lineNumber": 176
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "getSyncedItem",
+          "lineNumber": 176
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "advanceFromCurrentTo",
+          "lineNumber": 180
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "updatePlaybackQueue",
+          "lineNumber": 181
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "read",
+          "lineNumber": 182
+        },
+        {
+          "caller": "loadNewVideo",
+          "callee": "loadPlaybackItem",
+          "lineNumber": 182
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "read",
+          "lineNumber": 188
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "pause",
+          "lineNumber": 188
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "read",
+          "lineNumber": 189
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "update",
+          "lineNumber": 189
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "copyWith",
+          "lineNumber": 189
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "read",
+          "lineNumber": 190
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "createPlaybackModel",
+          "lineNumber": 194
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "timeout",
+          "lineNumber": 199
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "Duration",
+          "lineNumber": 199
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "_createOfflinePlaybackModel",
+          "lineNumber": 207
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "read",
+          "lineNumber": 210
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "getSyncedItem",
+          "lineNumber": 210
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "read",
+          "lineNumber": 215
+        },
+        {
+          "caller": "loadTVChannel",
+          "callee": "loadPlaybackItem",
+          "lineNumber": 215
+        },
+        {
+          "caller": "_createOfflinePlaybackModel",
+          "callee": "exists",
+          "lineNumber": 226
+        },
+        {
+          "caller": "_createOfflinePlaybackModel",
+          "callee": "read",
+          "lineNumber": 228
+        },
+        {
+          "caller": "_createOfflinePlaybackModel",
+          "callee": "getSiblings",
+          "lineNumber": 228
+        },
+        {
+          "caller": "_createOfflinePlaybackModel",
+          "callee": "where",
+          "lineNumber": 230
+        },
+        {
+          "caller": "_createOfflinePlaybackModel",
+          "callee": "existsSync",
+          "lineNumber": 230
+        },
+        {
+          "caller": "_createOfflinePlaybackModel",
+          "callee": "toList",
+          "lineNumber": 230
+        },
+        {
+          "caller": "_createOfflinePlaybackModel",
+          "callee": "map",
+          "lineNumber": 231
+        },
+        {
+          "caller": "_createOfflinePlaybackModel",
+          "callee": "OfflinePlaybackModel",
+          "lineNumber": 233
+        },
+        {
+          "caller": "_createOfflinePlaybackModel",
+          "callee": "Media",
+          "lineNumber": 238
+        },
+        {
+          "caller": "_createOfflinePlaybackModel",
+          "callee": "toList",
+          "lineNumber": 239
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "read",
+          "lineNumber": 259
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "collectQueue",
+          "lineNumber": 262
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "switch",
+          "lineNumber": 265
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "whereType",
+          "lineNumber": 266
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "toList",
+          "lineNumber": 266
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 272
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "read",
+          "lineNumber": 280
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "getSyncedItem",
+          "lineNumber": 280
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "read",
+          "lineNumber": 292
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "_createOfflinePlaybackModel",
+          "lineNumber": 295
+        },
+        {
+          "caller": "getOfflineModel",
+          "callee": "_createOfflinePlaybackModel",
+          "lineNumber": 308
+        },
+        {
+          "caller": "getServerModel",
+          "callee": "_createServerPlaybackModel",
+          "lineNumber": 316
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "showPlaybackTypeSelection",
+          "lineNumber": 327
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "switch",
+          "lineNumber": 334
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "getServerModel",
+          "lineNumber": 335
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "getOfflineModel",
+          "lineNumber": 336
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "getOfflineModel",
+          "lineNumber": 342
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "getServerModel",
+          "lineNumber": 345
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "getOfflineModel",
+          "lineNumber": 345
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "log",
+          "lineNumber": 347
+        },
+        {
+          "caller": "createPlaybackModel",
+          "callee": "toString",
+          "lineNumber": 347
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "read",
+          "lineNumber": 362
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "read",
+          "lineNumber": 366
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "selectPlaybackBitrate",
+          "lineNumber": 367
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "read",
+          "lineNumber": 368
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "getVideoQualityOptions",
+          "lineNumber": 373
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "VideoQualitySettings",
+          "lineNumber": 374
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "selectAudioStream",
+          "lineNumber": 381
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "read",
+          "lineNumber": 382
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "select",
+          "lineNumber": 382
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "selectSubStream",
+          "lineNumber": 387
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "read",
+          "lineNumber": 388
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "select",
+          "lineNumber": 388
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "read",
+          "lineNumber": 395
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "select",
+          "lineNumber": 395
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "itemsItemIdPlaybackInfoPost",
+          "lineNumber": 398
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "PlaybackInfoDto",
+          "lineNumber": 400
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "read",
+          "lineNumber": 406
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "fromMediaStreamsList",
+          "lineNumber": 428
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "copyWith",
+          "lineNumber": 428
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "mediaSegmentsGet",
+          "lineNumber": 433
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "getTrickPlay",
+          "lineNumber": 435
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "isValidVideoUrl",
+          "lineNumber": 440
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "TvPlaybackModel",
+          "lineNumber": 443
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "Media",
+          "lineNumber": 451
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "read",
+          "lineNumber": 460
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "buildServerUrl",
+          "lineNumber": 471
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "DirectPlaybackModel",
+          "lineNumber": 477
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "Media",
+          "lineNumber": 486
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "TranscodePlaybackModel",
+          "lineNumber": 491
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "Media",
+          "lineNumber": 500
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "buildServerUrl",
+          "lineNumber": 500
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "log",
+          "lineNumber": 507
+        },
+        {
+          "caller": "_createServerPlaybackModel",
+          "callee": "toString",
+          "lineNumber": 507
+        },
+        {
+          "caller": "isValidVideoUrl",
+          "callee": "tryParse",
+          "lineNumber": 513
+        },
+        {
+          "caller": "collectQueue",
+          "callee": "fetchEpisodesFromSeries",
+          "lineNumber": 522
+        },
+        {
+          "caller": "fetchEpisodesFromSeries",
+          "callee": "showsSeriesIdEpisodesGet",
+          "lineNumber": 531
+        },
+        {
+          "caller": "fetchEpisodesFromSeries",
+          "callee": "Response",
+          "lineNumber": 543
+        },
+        {
+          "caller": "fetchEpisodesFromSeries",
+          "callee": "fromBaseDto",
+          "lineNumber": 543
+        },
+        {
+          "caller": "fetchEpisodesFromSeries",
+          "callee": "toList",
+          "lineNumber": 543
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "read",
+          "lineNumber": 553
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "read",
+          "lineNumber": 556
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "select",
+          "lineNumber": 556
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "selectAudioStream",
+          "lineNumber": 558
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "read",
+          "lineNumber": 559
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "select",
+          "lineNumber": 559
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "selectSubStream",
+          "lineNumber": 563
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "read",
+          "lineNumber": 564
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "select",
+          "lineNumber": 564
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "itemsItemIdPlaybackInfoPost",
+          "lineNumber": 569
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "PlaybackInfoDto",
+          "lineNumber": 571
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "read",
+          "lineNumber": 579
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "fromMediaStreamsList",
+          "lineNumber": 590
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "copyWith",
+          "lineNumber": 590
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "read",
+          "lineNumber": 603
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "buildServerUrl",
+          "lineNumber": 614
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "isValidVideoUrl",
+          "lineNumber": 620
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "DirectPlaybackModel",
+          "lineNumber": 622
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "Media",
+          "lineNumber": 630
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "TranscodePlaybackModel",
+          "lineNumber": 635
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "Media",
+          "lineNumber": 643
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "buildServerUrl",
+          "lineNumber": 643
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "read",
+          "lineNumber": 650
+        },
+        {
+          "caller": "shouldReload",
+          "callee": "loadPlaybackItem",
+          "lineNumber": 650
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 37,
+        "functionCount": 34,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "lib/models/playback/playback_options_dialogue.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 72,
+      "functions": [
+        {
+          "name": "showPlaybackTypeSelection",
+          "startLine": 9,
+          "endLine": 12,
+          "params": [
+            "context",
+            "options"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 35,
+          "endLine": 35,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PlaybackDialogue",
+          "startLine": 29,
+          "endLine": 78,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "options",
+            "onClose"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "showPlaybackTypeSelection",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "PlaybackDialogue",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "showPlaybackTypeSelection",
+          "callee": "showDialog",
+          "lineNumber": 15
+        },
+        {
+          "caller": "showPlaybackTypeSelection",
+          "callee": "PlaybackDialogue",
+          "lineNumber": 18
+        },
+        {
+          "caller": "showPlaybackTypeSelection",
+          "callee": "of",
+          "lineNumber": 22
+        },
+        {
+          "caller": "showPlaybackTypeSelection",
+          "callee": "pop",
+          "lineNumber": 22
+        },
+        {
+          "caller": "build",
+          "callee": "Dialog",
+          "lineNumber": 36
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 37
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 41
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "add",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 45
+        },
+        {
+          "caller": "build",
+          "callee": "Divider",
+          "lineNumber": 48
+        },
+        {
+          "caller": "build",
+          "callee": "mapIndexed",
+          "lineNumber": 49
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 50
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 51
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 52
+        },
+        {
+          "caller": "build",
+          "callee": "onClose",
+          "lineNumber": 55
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 59
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "name",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/playback/playback_queue_source.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 297,
+      "nonEmptyLines": 252,
+      "functions": [
+        {
+          "name": "supportsRefill",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "fetchQueue",
+          "startLine": 21,
+          "endLine": 21,
+          "params": [
+            "read",
+            "limit",
+            "startIndex"
+          ]
+        },
+        {
+          "name": "supportsRefill",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "fetchQueue",
+          "startLine": 36,
+          "endLine": 36,
+          "params": [
+            "read",
+            "limit",
+            "startIndex"
+          ]
+        },
+        {
+          "name": "supportsRefill",
+          "startLine": 70,
+          "endLine": 70,
+          "params": []
+        },
+        {
+          "name": "fetchQueue",
+          "startLine": 73,
+          "endLine": 73,
+          "params": [
+            "read",
+            "limit",
+            "startIndex"
+          ]
+        },
+        {
+          "name": "supportsRefill",
+          "startLine": 105,
+          "endLine": 105,
+          "params": []
+        },
+        {
+          "name": "fetchQueue",
+          "startLine": 108,
+          "endLine": 108,
+          "params": [
+            "read",
+            "limit",
+            "startIndex"
+          ]
+        },
+        {
+          "name": "supportsRefill",
+          "startLine": 136,
+          "endLine": 136,
+          "params": []
+        },
+        {
+          "name": "fetchQueue",
+          "startLine": 141,
+          "endLine": 141,
+          "params": [
+            "read",
+            "limit",
+            "startIndex"
+          ]
+        },
+        {
+          "name": "fetchQueue",
+          "startLine": 186,
+          "endLine": 186,
+          "params": [
+            "read",
+            "limit",
+            "startIndex"
+          ]
+        },
+        {
+          "name": "fetchQueue",
+          "startLine": 205,
+          "endLine": 205,
+          "params": [
+            "read",
+            "limit",
+            "startIndex"
+          ]
+        },
+        {
+          "name": "fetchQueue",
+          "startLine": 224,
+          "endLine": 224,
+          "params": [
+            "read",
+            "limit",
+            "startIndex"
+          ]
+        },
+        {
+          "name": "supportsRefill",
+          "startLine": 249,
+          "endLine": 249,
+          "params": []
+        },
+        {
+          "name": "fetchQueue",
+          "startLine": 252,
+          "endLine": 252,
+          "params": [
+            "read",
+            "limit",
+            "startIndex"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PlaybackQueueSource",
+          "startLine": 14,
+          "endLine": 22,
+          "methods": [
+            "supportsRefill",
+            "fetchQueue"
+          ],
+          "properties": [
+            "limit"
+          ]
+        },
+        {
+          "name": "ArtistLatestTracksQueueSource",
+          "startLine": 24,
+          "endLine": 59,
+          "methods": [
+            "supportsRefill",
+            "fetchQueue"
+          ],
+          "properties": [
+            "artistId"
+          ]
+        },
+        {
+          "name": "ArtistFavoriteQueueSource",
+          "startLine": 61,
+          "endLine": 94,
+          "methods": [
+            "supportsRefill",
+            "fetchQueue"
+          ],
+          "properties": [
+            "artistId"
+          ]
+        },
+        {
+          "name": "ArtistCatalogQueueSource",
+          "startLine": 96,
+          "endLine": 128,
+          "methods": [
+            "supportsRefill",
+            "fetchQueue"
+          ],
+          "properties": [
+            "artistId"
+          ]
+        },
+        {
+          "name": "PlaylistAudioQueueSource",
+          "startLine": 130,
+          "endLine": 175,
+          "methods": [
+            "supportsRefill",
+            "fetchQueue"
+          ],
+          "properties": [
+            "playlistId",
+            "shuffle"
+          ]
+        },
+        {
+          "name": "AlbumInstantMixQueueSource",
+          "startLine": 177,
+          "endLine": 194,
+          "methods": [
+            "fetchQueue"
+          ],
+          "properties": [
+            "albumId"
+          ]
+        },
+        {
+          "name": "ArtistInstantMixQueueSource",
+          "startLine": 196,
+          "endLine": 213,
+          "methods": [
+            "fetchQueue"
+          ],
+          "properties": [
+            "artistId"
+          ]
+        },
+        {
+          "name": "AudioInstantMixQueueSource",
+          "startLine": 215,
+          "endLine": 232,
+          "methods": [
+            "fetchQueue"
+          ],
+          "properties": [
+            "audioId"
+          ]
+        },
+        {
+          "name": "LibraryMusicQueueSource",
+          "startLine": 234,
+          "endLine": 297,
+          "methods": [
+            "supportsRefill",
+            "fetchQueue"
+          ],
+          "properties": [
+            "libraryState",
+            "parentId",
+            "recursive",
+            "shuffle"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "supportsRefill",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "fetchQueue",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "PlaybackQueueSource",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "supportsRefill",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "fetchQueue",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "ArtistLatestTracksQueueSource",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "supportsRefill",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "fetchQueue",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "ArtistFavoriteQueueSource",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "supportsRefill",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "fetchQueue",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "ArtistCatalogQueueSource",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "supportsRefill",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "fetchQueue",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "PlaylistAudioQueueSource",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "fetchQueue",
+          "line": 186,
+          "isDefault": false
+        },
+        {
+          "name": "AlbumInstantMixQueueSource",
+          "line": 177,
+          "isDefault": false
+        },
+        {
+          "name": "fetchQueue",
+          "line": 205,
+          "isDefault": false
+        },
+        {
+          "name": "ArtistInstantMixQueueSource",
+          "line": 196,
+          "isDefault": false
+        },
+        {
+          "name": "fetchQueue",
+          "line": 224,
+          "isDefault": false
+        },
+        {
+          "name": "AudioInstantMixQueueSource",
+          "line": 215,
+          "isDefault": false
+        },
+        {
+          "name": "supportsRefill",
+          "line": 249,
+          "isDefault": false
+        },
+        {
+          "name": "fetchQueue",
+          "line": 252,
+          "isDefault": false
+        },
+        {
+          "name": "LibraryMusicQueueSource",
+          "line": 234,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchQueue",
+          "callee": "read",
+          "lineNumber": 37
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "itemsGet",
+          "lineNumber": 37
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "whereType",
+          "lineNumber": 57
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "toList",
+          "lineNumber": 57
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "read",
+          "lineNumber": 74
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "itemsGet",
+          "lineNumber": 74
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "whereType",
+          "lineNumber": 92
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "toList",
+          "lineNumber": 92
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "read",
+          "lineNumber": 109
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "itemsGet",
+          "lineNumber": 109
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "whereType",
+          "lineNumber": 126
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "toList",
+          "lineNumber": 126
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "read",
+          "lineNumber": 144
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "itemsGet",
+          "lineNumber": 144
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "read",
+          "lineNumber": 156
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "playlistsPlaylistIdItemsGet",
+          "lineNumber": 156
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "whereType",
+          "lineNumber": 173
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "toList",
+          "lineNumber": 173
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "read",
+          "lineNumber": 187
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "albumInstantMixGet",
+          "lineNumber": 187
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "whereType",
+          "lineNumber": 192
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "toList",
+          "lineNumber": 192
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "read",
+          "lineNumber": 206
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "artistInstantMixGet",
+          "lineNumber": 206
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "whereType",
+          "lineNumber": 211
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "toList",
+          "lineNumber": 211
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "read",
+          "lineNumber": 225
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "audioInstantMixGet",
+          "lineNumber": 225
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "whereType",
+          "lineNumber": 230
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "toList",
+          "lineNumber": 230
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "forEach",
+          "lineNumber": 258
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "read",
+          "lineNumber": 261
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "itemsGet",
+          "lineNumber": 261
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "map",
+          "lineNumber": 273
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "toList",
+          "lineNumber": 273
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "whereType",
+          "lineNumber": 292
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "toList",
+          "lineNumber": 292
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "whereType",
+          "lineNumber": 295
+        },
+        {
+          "caller": "fetchQueue",
+          "callee": "toList",
+          "lineNumber": 295
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 24,
+        "functionCount": 15,
+        "classCount": 9
+      }
+    },
+    {
+      "path": "lib/models/playback/playback_queue_state.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 333,
+      "nonEmptyLines": 292,
+      "classes": [
+        {
+          "name": "AudioQueueSection",
+          "startLine": 7,
+          "endLine": 10,
+          "methods": [],
+          "properties": [
+            "nextUp",
+            "existing"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AudioQueueSection",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PlaybackQueueState.fromQueue",
+          "callee": "PlaybackQueueState",
+          "lineNumber": 39
+        },
+        {
+          "caller": "PlaybackQueueState.fromQueue",
+          "callee": "_shuffled",
+          "lineNumber": 42
+        },
+        {
+          "caller": "PlaybackQueueState.fromQueue",
+          "callee": "Random",
+          "lineNumber": 42
+        },
+        {
+          "caller": "PlaybackQueueState.fromQueue",
+          "callee": "PlaybackQueueState",
+          "lineNumber": 43
+        },
+        {
+          "caller": "_shuffled",
+          "callee": "indexWhere",
+          "lineNumber": 57
+        },
+        {
+          "caller": "_shuffled",
+          "callee": "shuffle",
+          "lineNumber": 60
+        },
+        {
+          "caller": "_nextInQueue",
+          "callee": "indexWhere",
+          "lineNumber": 67
+        },
+        {
+          "caller": "nextItem",
+          "callee": "indexWhere",
+          "lineNumber": 76
+        },
+        {
+          "caller": "nextItem",
+          "callee": "_nextInQueue",
+          "lineNumber": 80
+        },
+        {
+          "caller": "nextItem",
+          "callee": "_nextInQueue",
+          "lineNumber": 83
+        },
+        {
+          "caller": "previousItem",
+          "callee": "indexWhere",
+          "lineNumber": 88
+        },
+        {
+          "caller": "_remainingNextUpQueue",
+          "callee": "sublist",
+          "lineNumber": 96
+        },
+        {
+          "caller": "_queueAfterMainAnchor",
+          "callee": "indexWhere",
+          "lineNumber": 102
+        },
+        {
+          "caller": "_queueAfterMainAnchor",
+          "callee": "sublist",
+          "lineNumber": 104
+        },
+        {
+          "caller": "advanceTo",
+          "callee": "indexWhere",
+          "lineNumber": 143
+        },
+        {
+          "caller": "advanceTo",
+          "callee": "copyWith",
+          "lineNumber": 145
+        },
+        {
+          "caller": "advanceTo",
+          "callee": "from",
+          "lineNumber": 146
+        },
+        {
+          "caller": "advanceTo",
+          "callee": "any",
+          "lineNumber": 149
+        },
+        {
+          "caller": "advanceTo",
+          "callee": "any",
+          "lineNumber": 155
+        },
+        {
+          "caller": "advanceTo",
+          "callee": "copyWith",
+          "lineNumber": 159
+        },
+        {
+          "caller": "addToNextUp",
+          "callee": "copyWith",
+          "lineNumber": 167
+        },
+        {
+          "caller": "appendToQueue",
+          "callee": "map",
+          "lineNumber": 174
+        },
+        {
+          "caller": "appendToQueue",
+          "callee": "map",
+          "lineNumber": 175
+        },
+        {
+          "caller": "appendToQueue",
+          "callee": "where",
+          "lineNumber": 177
+        },
+        {
+          "caller": "appendToQueue",
+          "callee": "contains",
+          "lineNumber": 177
+        },
+        {
+          "caller": "appendToQueue",
+          "callee": "toList",
+          "lineNumber": 177
+        },
+        {
+          "caller": "appendToQueue",
+          "callee": "copyWith",
+          "lineNumber": 188
+        },
+        {
+          "caller": "clearNextUp",
+          "callee": "copyWith",
+          "lineNumber": 196
+        },
+        {
+          "caller": "jumpToItem",
+          "callee": "indexWhere",
+          "lineNumber": 200
+        },
+        {
+          "caller": "jumpToItem",
+          "callee": "copyWith",
+          "lineNumber": 202
+        },
+        {
+          "caller": "jumpToItem",
+          "callee": "sublist",
+          "lineNumber": 203
+        },
+        {
+          "caller": "jumpToItem",
+          "callee": "copyWith",
+          "lineNumber": 208
+        },
+        {
+          "caller": "jumpToItem",
+          "callee": "_remainingNextUpQueue",
+          "lineNumber": 209
+        },
+        {
+          "caller": "queueAheadForPrefetch",
+          "callee": "_remainingNextUpQueue",
+          "lineNumber": 217
+        },
+        {
+          "caller": "queueAheadForPrefetch",
+          "callee": "_queueAfterMainAnchor",
+          "lineNumber": 218
+        },
+        {
+          "caller": "withRepeatMode",
+          "callee": "copyWith",
+          "lineNumber": 222
+        },
+        {
+          "caller": "withShuffleEnabled",
+          "callee": "copyWith",
+          "lineNumber": 227
+        },
+        {
+          "caller": "withShuffleEnabled",
+          "callee": "copyWith",
+          "lineNumber": 230
+        },
+        {
+          "caller": "withShuffleEnabled",
+          "callee": "_shuffled",
+          "lineNumber": 232
+        },
+        {
+          "caller": "withShuffleEnabled",
+          "callee": "Random",
+          "lineNumber": 232
+        },
+        {
+          "caller": "removeItemById",
+          "callee": "indexWhere",
+          "lineNumber": 238
+        },
+        {
+          "caller": "removeItemById",
+          "callee": "copyWith",
+          "lineNumber": 240
+        },
+        {
+          "caller": "removeItemById",
+          "callee": "from",
+          "lineNumber": 240
+        },
+        {
+          "caller": "removeItemById",
+          "callee": "indexWhere",
+          "lineNumber": 242
+        },
+        {
+          "caller": "removeItemById",
+          "callee": "copyWith",
+          "lineNumber": 247
+        },
+        {
+          "caller": "removeItemById",
+          "callee": "copyWith",
+          "lineNumber": 249
+        },
+        {
+          "caller": "reorderSection",
+          "callee": "copyWith",
+          "lineNumber": 255
+        },
+        {
+          "caller": "removeSectionItem",
+          "callee": "copyWith",
+          "lineNumber": 261
+        },
+        {
+          "caller": "removeSectionItem",
+          "callee": "from",
+          "lineNumber": 261
+        },
+        {
+          "caller": "removeSectionItem",
+          "callee": "removeItemById",
+          "lineNumber": 264
+        },
+        {
+          "caller": "nextUpStartInDisplay",
+          "callee": "nextUpCountInDisplay",
+          "lineNumber": 268
+        },
+        {
+          "caller": "nextUpCountInDisplay",
+          "callee": "_remainingNextUpQueue",
+          "lineNumber": 274
+        },
+        {
+          "caller": "queueForDisplay",
+          "callee": "_remainingNextUpQueue",
+          "lineNumber": 288
+        },
+        {
+          "caller": "queueForDisplay",
+          "callee": "indexWhere",
+          "lineNumber": 290
+        },
+        {
+          "caller": "queueForDisplay",
+          "callee": "sublist",
+          "lineNumber": 298
+        },
+        {
+          "caller": "queueForDisplay",
+          "callee": "_queueAfterAnchor",
+          "lineNumber": 298
+        },
+        {
+          "caller": "queueForDisplay",
+          "callee": "sublist",
+          "lineNumber": 299
+        },
+        {
+          "caller": "_queueAfterAnchor",
+          "callee": "_queueAfterMainAnchor",
+          "lineNumber": 311
+        },
+        {
+          "caller": "copyWith",
+          "callee": "PlaybackQueueState",
+          "lineNumber": 323
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/playback/transcode_playback_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 166,
+      "nonEmptyLines": 148,
+      "functions": [
+        {
+          "name": "TranscodePlaybackModel",
+          "startLine": 21,
+          "endLine": 33,
+          "params": [
+            "item",
+            "media",
+            "playbackInfo",
+            "mediaStreams",
+            "mediaSegments",
+            "chapters",
+            "trickPlay",
+            "queue",
+            "playbackQueue",
+            "queueSource",
+            "bitRateOptions"
+          ]
+        },
+        {
+          "name": "subStreams",
+          "startLine": 36,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "itemsInQueue",
+          "startLine": 38,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "setSubtitle",
+          "startLine": 42,
+          "endLine": 42,
+          "params": [
+            "model",
+            "player"
+          ]
+        },
+        {
+          "name": "audioStreams",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "setAudio",
+          "startLine": 51,
+          "endLine": 51,
+          "params": [
+            "model",
+            "player"
+          ]
+        },
+        {
+          "name": "setQualityOption",
+          "startLine": 57,
+          "endLine": 57,
+          "params": [
+            "map"
+          ]
+        },
+        {
+          "name": "playbackStarted",
+          "startLine": 60,
+          "endLine": 60,
+          "params": [
+            "position",
+            "ref"
+          ]
+        },
+        {
+          "name": "playbackStopped",
+          "startLine": 82,
+          "endLine": 82,
+          "params": [
+            "position",
+            "totalDuration",
+            "ref"
+          ]
+        },
+        {
+          "name": "updatePlaybackPosition",
+          "startLine": 98,
+          "endLine": 98,
+          "params": [
+            "position",
+            "isPlaying",
+            "ref"
+          ]
+        },
+        {
+          "name": "updateUserData",
+          "startLine": 121,
+          "endLine": 121,
+          "params": [
+            "userData"
+          ]
+        },
+        {
+          "name": "updatePlaybackQueue",
+          "startLine": 130,
+          "endLine": 130,
+          "params": [
+            "newQueue"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 135,
+          "endLine": 135,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 138,
+          "endLine": 151,
+          "params": [
+            "item",
+            "media",
+            "lastPosition",
+            "playbackInfo",
+            "mediaStreams",
+            "mediaSegments",
+            "chapters",
+            "trickPlay",
+            "queue",
+            "playbackQueue",
+            "queueSource",
+            "bitRateOptions"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TranscodePlaybackModel",
+          "startLine": 20,
+          "endLine": 166,
+          "methods": [
+            "TranscodePlaybackModel",
+            "subStreams",
+            "itemsInQueue",
+            "setSubtitle",
+            "audioStreams",
+            "setAudio",
+            "setQualityOption",
+            "playbackStarted",
+            "playbackStopped",
+            "updatePlaybackPosition",
+            "updateUserData",
+            "updatePlaybackQueue",
+            "toString",
+            "copyWith"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TranscodePlaybackModel",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "subStreams",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "itemsInQueue",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "setSubtitle",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "audioStreams",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "setAudio",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "setQualityOption",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "playbackStarted",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "playbackStopped",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "updatePlaybackPosition",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "updateUserData",
+          "line": 121,
+          "isDefault": false
+        },
+        {
+          "name": "updatePlaybackQueue",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 135,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "TranscodePlaybackModel",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "subStreams",
+          "callee": "no",
+          "lineNumber": 36
+        },
+        {
+          "caller": "itemsInQueue",
+          "callee": "mapIndexed",
+          "lineNumber": 39
+        },
+        {
+          "caller": "itemsInQueue",
+          "callee": "QueueItem",
+          "lineNumber": 39
+        },
+        {
+          "caller": "itemsInQueue",
+          "callee": "toList",
+          "lineNumber": 39
+        },
+        {
+          "caller": "setSubtitle",
+          "callee": "setSubtitleTrack",
+          "lineNumber": 43
+        },
+        {
+          "caller": "setSubtitle",
+          "callee": "copyWith",
+          "lineNumber": 44
+        },
+        {
+          "caller": "audioStreams",
+          "callee": "no",
+          "lineNumber": 48
+        },
+        {
+          "caller": "setAudio",
+          "callee": "setAudioTrack",
+          "lineNumber": 52
+        },
+        {
+          "caller": "setAudio",
+          "callee": "copyWith",
+          "lineNumber": 53
+        },
+        {
+          "caller": "setQualityOption",
+          "callee": "copyWith",
+          "lineNumber": 57
+        },
+        {
+          "caller": "playbackStarted",
+          "callee": "read",
+          "lineNumber": 61
+        },
+        {
+          "caller": "playbackStarted",
+          "callee": "sessionsPlayingPost",
+          "lineNumber": 61
+        },
+        {
+          "caller": "playbackStarted",
+          "callee": "PlaybackStartInfo",
+          "lineNumber": 62
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "resolvedStopPosition",
+          "lineNumber": 83
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "read",
+          "lineNumber": 85
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "sessionsPlayingStoppedPost",
+          "lineNumber": 85
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "PlaybackStopInfo",
+          "lineNumber": 86
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "read",
+          "lineNumber": 99
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "sessionsPlayingProgressPost",
+          "lineNumber": 100
+        },
+        {
+          "caller": "updatePlaybackPosition",
+          "callee": "PlaybackProgressInfo",
+          "lineNumber": 101
+        },
+        {
+          "caller": "updateUserData",
+          "callee": "copyWith",
+          "lineNumber": 122
+        },
+        {
+          "caller": "updateUserData",
+          "callee": "copyWith",
+          "lineNumber": 123
+        },
+        {
+          "caller": "updatePlaybackQueue",
+          "callee": "copyWith",
+          "lineNumber": 131
+        },
+        {
+          "caller": "copyWith",
+          "callee": "TranscodePlaybackModel",
+          "lineNumber": 152
+        },
+        {
+          "caller": "copyWith",
+          "callee": "media",
+          "lineNumber": 154
+        },
+        {
+          "caller": "copyWith",
+          "callee": "mediaStreams",
+          "lineNumber": 156
+        },
+        {
+          "caller": "copyWith",
+          "callee": "mediaSegments",
+          "lineNumber": 157
+        },
+        {
+          "caller": "copyWith",
+          "callee": "chapters",
+          "lineNumber": 158
+        },
+        {
+          "caller": "copyWith",
+          "callee": "trickPlay",
+          "lineNumber": 159
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/playback/tv_playback_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 350,
+      "nonEmptyLines": 297,
+      "functions": [
+        {
+          "name": "playingProgram",
+          "startLine": 37,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "item",
+          "startLine": 40,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "TvPlaybackModel",
+          "startLine": 45,
+          "endLine": 57,
+          "params": [
+            "channel",
+            "playbackInfo",
+            "item",
+            "position",
+            "duration",
+            "currentProgram",
+            "isNativePlayerBackend",
+            "media",
+            "queue",
+            "playbackQueue",
+            "queueSource"
+          ]
+        },
+        {
+          "name": "startTracking",
+          "startLine": 59,
+          "endLine": 59,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "stopTracking",
+          "startLine": 66,
+          "endLine": 66,
+          "params": []
+        },
+        {
+          "name": "dispose",
+          "startLine": 73,
+          "endLine": 73,
+          "params": []
+        },
+        {
+          "name": "_stopTimers",
+          "startLine": 77,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "_tick",
+          "startLine": 85,
+          "endLine": 85,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "_isProgramValid",
+          "startLine": 115,
+          "endLine": 115,
+          "params": [
+            "program",
+            "now"
+          ]
+        },
+        {
+          "name": "_switchProgram",
+          "startLine": 119,
+          "endLine": 119,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "_sendNativeGuideUpdate",
+          "startLine": 168,
+          "endLine": 174,
+          "params": [
+            "ref",
+            "prog",
+            "channelWithPrograms",
+            "tempState",
+            "isNativePlayerBackend"
+          ]
+        },
+        {
+          "name": "_scheduleRefreshAt",
+          "startLine": 237,
+          "endLine": 237,
+          "params": [
+            "at",
+            "ref"
+          ]
+        },
+        {
+          "name": "updatePlaybackPosition",
+          "startLine": 255,
+          "endLine": 255,
+          "params": [
+            "position",
+            "isPlaying",
+            "ref"
+          ]
+        },
+        {
+          "name": "playbackStarted",
+          "startLine": 260,
+          "endLine": 260,
+          "params": [
+            "position",
+            "ref"
+          ]
+        },
+        {
+          "name": "playbackStopped",
+          "startLine": 283,
+          "endLine": 283,
+          "params": [
+            "position",
+            "totalDuration",
+            "ref"
+          ]
+        },
+        {
+          "name": "subStreams",
+          "startLine": 297,
+          "endLine": 297,
+          "params": []
+        },
+        {
+          "name": "audioStreams",
+          "startLine": 300,
+          "endLine": 300,
+          "params": []
+        },
+        {
+          "name": "updateUserData",
+          "startLine": 303,
+          "endLine": 303,
+          "params": [
+            "userData"
+          ]
+        },
+        {
+          "name": "setAudio",
+          "startLine": 312,
+          "endLine": 312,
+          "params": [
+            "model",
+            "player"
+          ]
+        },
+        {
+          "name": "setQualityOption",
+          "startLine": 315,
+          "endLine": 315,
+          "params": [
+            "map"
+          ]
+        },
+        {
+          "name": "setSubtitle",
+          "startLine": 318,
+          "endLine": 318,
+          "params": [
+            "model",
+            "player"
+          ]
+        },
+        {
+          "name": "updatePlaybackQueue",
+          "startLine": 321,
+          "endLine": 321,
+          "params": [
+            "newQueue"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 324,
+          "endLine": 336,
+          "params": [
+            "channel",
+            "currentProgram",
+            "isNativePlayerBackend",
+            "playbackInfo",
+            "item",
+            "position",
+            "duration",
+            "media",
+            "queue",
+            "playbackQueue",
+            "queueSource"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TvPlaybackModel",
+          "startLine": 24,
+          "endLine": 350,
+          "methods": [
+            "playingProgram",
+            "item",
+            "TvPlaybackModel",
+            "startTracking",
+            "stopTracking",
+            "dispose",
+            "_stopTimers",
+            "_tick",
+            "_isProgramValid",
+            "_switchProgram",
+            "_sendNativeGuideUpdate",
+            "_scheduleRefreshAt",
+            "updatePlaybackPosition",
+            "playbackStarted",
+            "playbackStopped",
+            "subStreams",
+            "audioStreams",
+            "updateUserData",
+            "setAudio",
+            "setQualityOption",
+            "setSubtitle",
+            "updatePlaybackQueue",
+            "copyWith"
+          ],
+          "properties": [
+            "_refreshTimer",
+            "_tickTimer",
+            "_lastScheduledAt",
+            "_lastGuideProgId",
+            "_isSwitching",
+            "channel",
+            "isNativePlayerBackend",
+            "currentProgram",
+            "position",
+            "duration"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "playingProgram",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "item",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "TvPlaybackModel",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "startTracking",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "stopTracking",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "updatePlaybackPosition",
+          "line": 255,
+          "isDefault": false
+        },
+        {
+          "name": "playbackStarted",
+          "line": 260,
+          "isDefault": false
+        },
+        {
+          "name": "playbackStopped",
+          "line": 283,
+          "isDefault": false
+        },
+        {
+          "name": "subStreams",
+          "line": 297,
+          "isDefault": false
+        },
+        {
+          "name": "audioStreams",
+          "line": 300,
+          "isDefault": false
+        },
+        {
+          "name": "updateUserData",
+          "line": 303,
+          "isDefault": false
+        },
+        {
+          "name": "setAudio",
+          "line": 312,
+          "isDefault": false
+        },
+        {
+          "name": "setQualityOption",
+          "line": 315,
+          "isDefault": false
+        },
+        {
+          "name": "setSubtitle",
+          "line": 318,
+          "isDefault": false
+        },
+        {
+          "name": "updatePlaybackQueue",
+          "line": 321,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 324,
+          "isDefault": false
+        },
+        {
+          "name": "TvPlaybackModel",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "startTracking",
+          "callee": "_stopTimers",
+          "lineNumber": 60
+        },
+        {
+          "caller": "startTracking",
+          "callee": "_switchProgram",
+          "lineNumber": 61
+        },
+        {
+          "caller": "startTracking",
+          "callee": "periodic",
+          "lineNumber": 63
+        },
+        {
+          "caller": "startTracking",
+          "callee": "Duration",
+          "lineNumber": 63
+        },
+        {
+          "caller": "startTracking",
+          "callee": "_tick",
+          "lineNumber": 63
+        },
+        {
+          "caller": "stopTracking",
+          "callee": "_stopTimers",
+          "lineNumber": 67
+        },
+        {
+          "caller": "dispose",
+          "callee": "stopTracking",
+          "lineNumber": 74
+        },
+        {
+          "caller": "_tick",
+          "callee": "read",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_tick",
+          "callee": "_stopTimers",
+          "lineNumber": 88
+        },
+        {
+          "caller": "_tick",
+          "callee": "read",
+          "lineNumber": 93
+        },
+        {
+          "caller": "_tick",
+          "callee": "now",
+          "lineNumber": 97
+        },
+        {
+          "caller": "_tick",
+          "callee": "_isProgramValid",
+          "lineNumber": 99
+        },
+        {
+          "caller": "_tick",
+          "callee": "_switchProgram",
+          "lineNumber": 100
+        },
+        {
+          "caller": "_tick",
+          "callee": "isBefore",
+          "lineNumber": 106
+        },
+        {
+          "caller": "_tick",
+          "callee": "difference",
+          "lineNumber": 106
+        },
+        {
+          "caller": "_tick",
+          "callee": "difference",
+          "lineNumber": 107
+        },
+        {
+          "caller": "_tick",
+          "callee": "read",
+          "lineNumber": 109
+        },
+        {
+          "caller": "_tick",
+          "callee": "update",
+          "lineNumber": 109
+        },
+        {
+          "caller": "_tick",
+          "callee": "copyWith",
+          "lineNumber": 109
+        },
+        {
+          "caller": "_isProgramValid",
+          "callee": "isAfter",
+          "lineNumber": 116
+        },
+        {
+          "caller": "_isProgramValid",
+          "callee": "isBefore",
+          "lineNumber": 116
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "read",
+          "lineNumber": 123
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "read",
+          "lineNumber": 128
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "fetchDashboard",
+          "lineNumber": 128
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 130
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "read",
+          "lineNumber": 131
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "fetchPrograms",
+          "lineNumber": 131
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "copyChannelWith",
+          "lineNumber": 132
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "now",
+          "lineNumber": 134
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "isBefore",
+          "lineNumber": 139
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "difference",
+          "lineNumber": 139
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "difference",
+          "lineNumber": 140
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "read",
+          "lineNumber": 143
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "_stopTimers",
+          "lineNumber": 145
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "copyWith",
+          "lineNumber": 149
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "read",
+          "lineNumber": 156
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "update",
+          "lineNumber": 156
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "isAfter",
+          "lineNumber": 158
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "_scheduleRefreshAt",
+          "lineNumber": 159
+        },
+        {
+          "caller": "_switchProgram",
+          "callee": "_sendNativeGuideUpdate",
+          "lineNumber": 162
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "read",
+          "lineNumber": 183
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "GuideProgram",
+          "lineNumber": 186
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "subLabel",
+          "lineNumber": 194
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "TVGuideModel",
+          "lineNumber": 198
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "map",
+          "lineNumber": 200
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "GuideChannel",
+          "lineNumber": 203
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "map",
+          "lineNumber": 209
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "GuideProgram",
+          "lineNumber": 209
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "subLabel",
+          "lineNumber": 217
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "toList",
+          "lineNumber": 219
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "toList",
+          "lineNumber": 224
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "log",
+          "lineNumber": 230
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "VideoPlayerApi",
+          "lineNumber": 231
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "sendTVGuideModel",
+          "lineNumber": 231
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "log",
+          "lineNumber": 233
+        },
+        {
+          "caller": "_sendNativeGuideUpdate",
+          "callee": "toString",
+          "lineNumber": 233
+        },
+        {
+          "caller": "_scheduleRefreshAt",
+          "callee": "isAtSameMomentAs",
+          "lineNumber": 238
+        },
+        {
+          "caller": "_scheduleRefreshAt",
+          "callee": "now",
+          "lineNumber": 245
+        },
+        {
+          "caller": "_scheduleRefreshAt",
+          "callee": "isBefore",
+          "lineNumber": 246
+        },
+        {
+          "caller": "_scheduleRefreshAt",
+          "callee": "Duration",
+          "lineNumber": 246
+        },
+        {
+          "caller": "_scheduleRefreshAt",
+          "callee": "difference",
+          "lineNumber": 246
+        },
+        {
+          "caller": "_scheduleRefreshAt",
+          "callee": "Duration",
+          "lineNumber": 246
+        },
+        {
+          "caller": "_scheduleRefreshAt",
+          "callee": "Timer",
+          "lineNumber": 248
+        },
+        {
+          "caller": "_scheduleRefreshAt",
+          "callee": "_switchProgram",
+          "lineNumber": 250
+        },
+        {
+          "caller": "playbackStarted",
+          "callee": "startTracking",
+          "lineNumber": 262
+        },
+        {
+          "caller": "playbackStarted",
+          "callee": "read",
+          "lineNumber": 264
+        },
+        {
+          "caller": "playbackStarted",
+          "callee": "sessionsPlayingPost",
+          "lineNumber": 264
+        },
+        {
+          "caller": "playbackStarted",
+          "callee": "PlaybackStartInfo",
+          "lineNumber": 265
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "stopTracking",
+          "lineNumber": 284
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "read",
+          "lineNumber": 286
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "sessionsPlayingStoppedPost",
+          "lineNumber": 286
+        },
+        {
+          "caller": "playbackStopped",
+          "callee": "PlaybackStopInfo",
+          "lineNumber": 287
+        },
+        {
+          "caller": "updateUserData",
+          "callee": "copyWith",
+          "lineNumber": 304
+        },
+        {
+          "caller": "updateUserData",
+          "callee": "copyWith",
+          "lineNumber": 305
+        },
+        {
+          "caller": "updatePlaybackQueue",
+          "callee": "copyWith",
+          "lineNumber": 321
+        },
+        {
+          "caller": "copyWith",
+          "callee": "TvPlaybackModel",
+          "lineNumber": 337
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 18,
+        "functionCount": 23,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/recommended_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 84,
+      "nonEmptyLines": 68,
+      "callGraph": [
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 44
+        },
+        {
+          "caller": "copyWith",
+          "callee": "RecommendedModel",
+          "lineNumber": 70
+        },
+        {
+          "caller": "RecommendedModel",
+          "callee": "RecommendedModel",
+          "lineNumber": 78
+        },
+        {
+          "caller": "RecommendedModel",
+          "callee": "Other",
+          "lineNumber": 79
+        },
+        {
+          "caller": "RecommendedModel",
+          "callee": "fromBaseDto",
+          "lineNumber": 80
+        },
+        {
+          "caller": "RecommendedModel",
+          "callee": "toList",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/models/search_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "SearchModel",
+          "startLine": 8,
+          "endLine": 13,
+          "params": [
+            "loading",
+            "searchQuery",
+            "resultCount",
+            "results"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 15,
+          "endLine": 20,
+          "params": [
+            "loading",
+            "searchQuery",
+            "resultCount",
+            "results"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SearchModel",
+          "startLine": 3,
+          "endLine": 28,
+          "methods": [
+            "SearchModel",
+            "copyWith"
+          ],
+          "properties": [
+            "loading",
+            "searchQuery",
+            "resultCount",
+            "results"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SearchModel",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "SearchModel",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "SearchModel",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/seerr/seerr_dashboard_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 292,
+      "nonEmptyLines": 267,
+      "functions": [
+        {
+          "name": "fromRaw",
+          "startLine": 22,
+          "endLine": 22,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "label",
+          "startLine": 35,
+          "endLine": 35,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "fromRaw",
+          "startLine": 67,
+          "endLine": 67,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "label",
+          "startLine": 82,
+          "endLine": 82,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 152,
+          "endLine": 168,
+          "params": [
+            "id",
+            "type",
+            "tmdbId",
+            "jellyfinItemId",
+            "title",
+            "overview",
+            "images",
+            "mediaStatus",
+            "requestStatus",
+            "seasons",
+            "seasonStatuses",
+            "mediaInfo",
+            "releaseYear",
+            "requestedBy",
+            "requestedSeasons"
+          ]
+        },
+        {
+          "name": "hasDisplayStatus",
+          "startLine": 188,
+          "endLine": 188,
+          "params": []
+        },
+        {
+          "name": "displayStatusLabel",
+          "startLine": 190,
+          "endLine": 190,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "displayStatusColor",
+          "startLine": 192,
+          "endLine": 192,
+          "params": []
+        },
+        {
+          "name": "itemBaseModel",
+          "startLine": 194,
+          "endLine": 194,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 273,
+          "endLine": 281,
+          "params": [
+            "recentlyAdded",
+            "recentRequests",
+            "trending",
+            "popularMovies",
+            "popularSeries",
+            "expectedMovies",
+            "expectedSeries"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SeerrRequestStatus",
+          "startLine": 14,
+          "endLine": 22,
+          "methods": [],
+          "properties": [
+            "unknown",
+            "pending",
+            "approved",
+            "declined",
+            "failed",
+            "SeerrRequestStatus"
+          ]
+        },
+        {
+          "name": "SeerrMediaStatus",
+          "startLine": 58,
+          "endLine": 67,
+          "methods": [],
+          "properties": [
+            "unknown",
+            "pending",
+            "processing",
+            "partiallyAvailable",
+            "available",
+            "blacklisted",
+            "SeerrMediaStatus"
+          ]
+        },
+        {
+          "name": "SeerrDashboardRequestMeta",
+          "startLine": 107,
+          "endLine": 115,
+          "methods": [],
+          "properties": [
+            "status",
+            "is4k"
+          ]
+        },
+        {
+          "name": "SeerrDashboardPosterModel",
+          "startLine": 117,
+          "endLine": 242,
+          "methods": [
+            "copyWith",
+            "hasDisplayStatus",
+            "displayStatusLabel",
+            "displayStatusColor",
+            "itemBaseModel"
+          ],
+          "properties": [
+            "id",
+            "type",
+            "tmdbId",
+            "jellyfinItemId",
+            "title",
+            "overview",
+            "images",
+            "mediaStatus",
+            "requestStatus",
+            "seasons",
+            "seasonStatuses",
+            "mediaInfo",
+            "releaseYear",
+            "requestedBy",
+            "requestedSeasons"
+          ]
+        },
+        {
+          "name": "SeerrDashboardRequestItem",
+          "startLine": 244,
+          "endLine": 252,
+          "methods": [],
+          "properties": [
+            "poster",
+            "meta"
+          ]
+        },
+        {
+          "name": "SeerrDashboardModel",
+          "startLine": 254,
+          "endLine": 292,
+          "methods": [
+            "copyWith"
+          ],
+          "properties": [
+            "recentlyAdded",
+            "recentRequests",
+            "trending",
+            "popularMovies",
+            "popularSeries",
+            "expectedMovies",
+            "expectedSeries"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SeerrRequestStatus",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "fromRaw",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "SeerrMediaStatus",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "fromRaw",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "SeerrDashboardRequestMeta",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 152,
+          "isDefault": false
+        },
+        {
+          "name": "hasDisplayStatus",
+          "line": 188,
+          "isDefault": false
+        },
+        {
+          "name": "displayStatusLabel",
+          "line": 190,
+          "isDefault": false
+        },
+        {
+          "name": "displayStatusColor",
+          "line": 192,
+          "isDefault": false
+        },
+        {
+          "name": "itemBaseModel",
+          "line": 194,
+          "isDefault": false
+        },
+        {
+          "name": "SeerrDashboardPosterModel",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "SeerrDashboardRequestItem",
+          "line": 244,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 273,
+          "isDefault": false
+        },
+        {
+          "name": "SeerrDashboardModel",
+          "line": 254,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fromRaw",
+          "callee": "switch",
+          "lineNumber": 23
+        },
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 36
+        },
+        {
+          "caller": "fromRaw",
+          "callee": "switch",
+          "lineNumber": 68
+        },
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 83
+        },
+        {
+          "caller": "copyWith",
+          "callee": "SeerrDashboardPosterModel",
+          "lineNumber": 169
+        },
+        {
+          "caller": "displayStatusLabel",
+          "callee": "label",
+          "lineNumber": 190
+        },
+        {
+          "caller": "itemBaseModel",
+          "callee": "SeriesModel",
+          "lineNumber": 200
+        },
+        {
+          "caller": "itemBaseModel",
+          "callee": "OverviewModel",
+          "lineNumber": 207
+        },
+        {
+          "caller": "itemBaseModel",
+          "callee": "UserData",
+          "lineNumber": 212
+        },
+        {
+          "caller": "itemBaseModel",
+          "callee": "MovieModel",
+          "lineNumber": 218
+        },
+        {
+          "caller": "itemBaseModel",
+          "callee": "now",
+          "lineNumber": 223
+        },
+        {
+          "caller": "itemBaseModel",
+          "callee": "MediaStreamsModel",
+          "lineNumber": 227
+        },
+        {
+          "caller": "itemBaseModel",
+          "callee": "OverviewModel",
+          "lineNumber": 228
+        },
+        {
+          "caller": "itemBaseModel",
+          "callee": "UserData",
+          "lineNumber": 233
+        },
+        {
+          "caller": "copyWith",
+          "callee": "SeerrDashboardModel",
+          "lineNumber": 282
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 16,
+        "functionCount": 10,
+        "classCount": 6
+      }
+    }
+  ]
+}

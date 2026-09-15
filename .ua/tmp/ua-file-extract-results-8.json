@@ -1,0 +1,585 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 3,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "windows/runner/resource.h",
+      "language": "c",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "windows/runner/win32_window.cpp",
+      "language": "cpp",
+      "fileCategory": "code",
+      "totalLines": 288,
+      "nonEmptyLines": 234,
+      "functions": [
+        {
+          "name": "Scale",
+          "startLine": 36,
+          "endLine": 38,
+          "params": [
+            "source",
+            "scale_factor"
+          ]
+        },
+        {
+          "name": "EnableFullDpiSupportIfAvailable",
+          "startLine": 42,
+          "endLine": 54,
+          "params": [
+            "hwnd"
+          ]
+        },
+        {
+          "name": "~WindowClassRegistrar",
+          "startLine": 61,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "WindowClassRegistrar",
+          "startLine": 80,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "UnregisterWindowClass",
+          "startLine": 109,
+          "endLine": 112,
+          "params": []
+        },
+        {
+          "name": "Win32Window",
+          "startLine": 114,
+          "endLine": 116,
+          "params": []
+        },
+        {
+          "name": "~Win32Window",
+          "startLine": 118,
+          "endLine": 121,
+          "params": []
+        },
+        {
+          "name": "Create",
+          "startLine": 123,
+          "endLine": 150,
+          "params": [
+            "title",
+            "origin",
+            "size"
+          ]
+        },
+        {
+          "name": "Show",
+          "startLine": 152,
+          "endLine": 154,
+          "params": []
+        },
+        {
+          "name": "Win32Window::WndProc",
+          "startLine": 157,
+          "endLine": 174,
+          "params": [
+            "window",
+            "message",
+            "wparam",
+            "lparam"
+          ]
+        },
+        {
+          "name": "MessageHandler",
+          "startLine": 176,
+          "endLine": 222,
+          "params": [
+            "hwnd",
+            "message",
+            "wparam",
+            "lparam"
+          ]
+        },
+        {
+          "name": "Destroy",
+          "startLine": 224,
+          "endLine": 234,
+          "params": []
+        },
+        {
+          "name": "SetChildContent",
+          "startLine": 241,
+          "endLine": 250,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "GetClientArea",
+          "startLine": 252,
+          "endLine": 256,
+          "params": []
+        },
+        {
+          "name": "GetHandle",
+          "startLine": 258,
+          "endLine": 260,
+          "params": []
+        },
+        {
+          "name": "SetQuitOnClose",
+          "startLine": 262,
+          "endLine": 264,
+          "params": [
+            "quit_on_close"
+          ]
+        },
+        {
+          "name": "OnCreate",
+          "startLine": 266,
+          "endLine": 269,
+          "params": []
+        },
+        {
+          "name": "OnDestroy",
+          "startLine": 271,
+          "endLine": 273,
+          "params": []
+        },
+        {
+          "name": "UpdateTheme",
+          "startLine": 275,
+          "endLine": 288,
+          "params": [
+            "window"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "WindowClassRegistrar",
+          "startLine": 59,
+          "endLine": 85,
+          "methods": [
+            "~WindowClassRegistrar",
+            "UnregisterWindowClass",
+            "WindowClassRegistrar"
+          ],
+          "properties": [
+            "GetWindowClass",
+            "instance_",
+            "class_registered_"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Scale",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "EnableFullDpiSupportIfAvailable",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "~WindowClassRegistrar",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "UnregisterWindowClass",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "WindowClassRegistrar",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "UnregisterWindowClass",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "Win32Window",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "~Win32Window",
+          "line": 118,
+          "isDefault": false
+        },
+        {
+          "name": "Create",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "Show",
+          "line": 152,
+          "isDefault": false
+        },
+        {
+          "name": "Win32Window::WndProc",
+          "line": 157,
+          "isDefault": false
+        },
+        {
+          "name": "MessageHandler",
+          "line": 176,
+          "isDefault": false
+        },
+        {
+          "name": "Destroy",
+          "line": 224,
+          "isDefault": false
+        },
+        {
+          "name": "SetChildContent",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "GetClientArea",
+          "line": 252,
+          "isDefault": false
+        },
+        {
+          "name": "GetHandle",
+          "line": 258,
+          "isDefault": false
+        },
+        {
+          "name": "SetQuitOnClose",
+          "line": 262,
+          "isDefault": false
+        },
+        {
+          "name": "OnCreate",
+          "line": 266,
+          "isDefault": false
+        },
+        {
+          "name": "OnDestroy",
+          "line": 271,
+          "isDefault": false
+        },
+        {
+          "name": "UpdateTheme",
+          "line": 275,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Scale",
+          "callee": "static_cast<int>",
+          "lineNumber": 37
+        },
+        {
+          "caller": "EnableFullDpiSupportIfAvailable",
+          "callee": "LoadLibraryA",
+          "lineNumber": 43
+        },
+        {
+          "caller": "EnableFullDpiSupportIfAvailable",
+          "callee": "reinterpret_cast<EnableNonClientDpiScaling*>",
+          "lineNumber": 48
+        },
+        {
+          "caller": "EnableFullDpiSupportIfAvailable",
+          "callee": "GetProcAddress",
+          "lineNumber": 49
+        },
+        {
+          "caller": "EnableFullDpiSupportIfAvailable",
+          "callee": "enable_non_client_dpi_scaling",
+          "lineNumber": 51
+        },
+        {
+          "caller": "EnableFullDpiSupportIfAvailable",
+          "callee": "FreeLibrary",
+          "lineNumber": 53
+        },
+        {
+          "caller": "UnregisterWindowClass",
+          "callee": "UnregisterClass",
+          "lineNumber": 110
+        },
+        {
+          "caller": "~Win32Window",
+          "callee": "Destroy",
+          "lineNumber": 120
+        },
+        {
+          "caller": "Create",
+          "callee": "Destroy",
+          "lineNumber": 126
+        },
+        {
+          "caller": "Create",
+          "callee": "GetWindowClass",
+          "lineNumber": 129
+        },
+        {
+          "caller": "Create",
+          "callee": "WindowClassRegistrar::GetInstance",
+          "lineNumber": 129
+        },
+        {
+          "caller": "Create",
+          "callee": "static_cast<LONG>",
+          "lineNumber": 131
+        },
+        {
+          "caller": "Create",
+          "callee": "static_cast<LONG>",
+          "lineNumber": 132
+        },
+        {
+          "caller": "Create",
+          "callee": "MonitorFromPoint",
+          "lineNumber": 133
+        },
+        {
+          "caller": "Create",
+          "callee": "FlutterDesktopGetDpiForMonitor",
+          "lineNumber": 134
+        },
+        {
+          "caller": "Create",
+          "callee": "CreateWindow",
+          "lineNumber": 137
+        },
+        {
+          "caller": "Create",
+          "callee": "c_str",
+          "lineNumber": 138
+        },
+        {
+          "caller": "Create",
+          "callee": "Scale",
+          "lineNumber": 139
+        },
+        {
+          "caller": "Create",
+          "callee": "Scale",
+          "lineNumber": 139
+        },
+        {
+          "caller": "Create",
+          "callee": "Scale",
+          "lineNumber": 140
+        },
+        {
+          "caller": "Create",
+          "callee": "Scale",
+          "lineNumber": 140
+        },
+        {
+          "caller": "Create",
+          "callee": "GetModuleHandle",
+          "lineNumber": 141
+        },
+        {
+          "caller": "Create",
+          "callee": "UpdateTheme",
+          "lineNumber": 147
+        },
+        {
+          "caller": "Create",
+          "callee": "OnCreate",
+          "lineNumber": 149
+        },
+        {
+          "caller": "Show",
+          "callee": "ShowWindow",
+          "lineNumber": 153
+        },
+        {
+          "caller": "Win32Window::WndProc",
+          "callee": "reinterpret_cast<CREATESTRUCT*>",
+          "lineNumber": 162
+        },
+        {
+          "caller": "Win32Window::WndProc",
+          "callee": "SetWindowLongPtr",
+          "lineNumber": 163
+        },
+        {
+          "caller": "Win32Window::WndProc",
+          "callee": "reinterpret_cast<LONG_PTR>",
+          "lineNumber": 164
+        },
+        {
+          "caller": "Win32Window::WndProc",
+          "callee": "static_cast<Win32Window*>",
+          "lineNumber": 166
+        },
+        {
+          "caller": "Win32Window::WndProc",
+          "callee": "EnableFullDpiSupportIfAvailable",
+          "lineNumber": 167
+        },
+        {
+          "caller": "Win32Window::WndProc",
+          "callee": "GetThisFromHandle",
+          "lineNumber": 169
+        },
+        {
+          "caller": "Win32Window::WndProc",
+          "callee": "MessageHandler",
+          "lineNumber": 170
+        },
+        {
+          "caller": "Win32Window::WndProc",
+          "callee": "DefWindowProc",
+          "lineNumber": 173
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "Destroy",
+          "lineNumber": 184
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "PostQuitMessage",
+          "lineNumber": 186
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "reinterpret_cast<RECT*>",
+          "lineNumber": 191
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "SetWindowPos",
+          "lineNumber": 195
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "GetClientArea",
+          "lineNumber": 201
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "MoveWindow",
+          "lineNumber": 204
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "SetFocus",
+          "lineNumber": 212
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "UpdateTheme",
+          "lineNumber": 217
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "DefWindowProc",
+          "lineNumber": 221
+        },
+        {
+          "caller": "Destroy",
+          "callee": "OnDestroy",
+          "lineNumber": 225
+        },
+        {
+          "caller": "Destroy",
+          "callee": "DestroyWindow",
+          "lineNumber": 228
+        },
+        {
+          "caller": "Destroy",
+          "callee": "UnregisterWindowClass",
+          "lineNumber": 232
+        },
+        {
+          "caller": "Destroy",
+          "callee": "WindowClassRegistrar::GetInstance",
+          "lineNumber": 232
+        },
+        {
+          "caller": "SetChildContent",
+          "callee": "SetParent",
+          "lineNumber": 243
+        },
+        {
+          "caller": "SetChildContent",
+          "callee": "GetClientArea",
+          "lineNumber": 244
+        },
+        {
+          "caller": "SetChildContent",
+          "callee": "MoveWindow",
+          "lineNumber": 246
+        },
+        {
+          "caller": "SetChildContent",
+          "callee": "SetFocus",
+          "lineNumber": 249
+        },
+        {
+          "caller": "GetClientArea",
+          "callee": "GetClientRect",
+          "lineNumber": 254
+        },
+        {
+          "caller": "UpdateTheme",
+          "callee": "RegGetValue",
+          "lineNumber": 278
+        },
+        {
+          "caller": "UpdateTheme",
+          "callee": "DwmSetWindowAttribute",
+          "lineNumber": 285
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 20,
+        "functionCount": 19,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "windows/runner/win32_window.h",
+      "language": "c",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 79,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

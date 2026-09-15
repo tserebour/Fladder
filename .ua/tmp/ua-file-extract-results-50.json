@@ -1,0 +1,233 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 2,
+  "filesSkipped": [
+    "web/sqlite3.wasm",
+    "windows/CMakeLists.txt",
+    "windows/flutter/CMakeLists.txt",
+    "windows/flutter/generated_plugins.cmake",
+    "windows/runner/CMakeLists.txt",
+    "windows/runner/Runner.rc",
+    "windows/runner/runner.exe.manifest",
+    "windows/windows_setup.iss"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 2,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 2,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "windows/flutter/generated_plugin_registrant.cc",
+      "language": "cpp",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "RegisterPlugins",
+          "startLine": 26,
+          "endLine": 59,
+          "params": [
+            "registry"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RegisterPlugins",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RegisterPlugins",
+          "callee": "ConnectivityPlusWindowsPluginRegisterWithRegistrar",
+          "lineNumber": 27
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 28
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "DesktopDropPluginRegisterWithRegistrar",
+          "lineNumber": 29
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 30
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "DesktopMultiWindowPluginRegisterWithRegistrar",
+          "lineNumber": 31
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 32
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "DynamicColorPluginCApiRegisterWithRegistrar",
+          "lineNumber": 33
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 34
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "FvpPluginCApiRegisterWithRegistrar",
+          "lineNumber": 35
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 36
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "LocalAuthPluginRegisterWithRegistrar",
+          "lineNumber": 37
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 38
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "MediaKitLibsWindowsVideoPluginCApiRegisterWithRegistrar",
+          "lineNumber": 39
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 40
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "MediaKitVideoPluginCApiRegisterWithRegistrar",
+          "lineNumber": 41
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 42
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "PermissionHandlerWindowsPluginRegisterWithRegistrar",
+          "lineNumber": 43
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 44
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "ScreenBrightnessWindowsPluginRegisterWithRegistrar",
+          "lineNumber": 45
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 46
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "ScreenRetrieverWindowsPluginCApiRegisterWithRegistrar",
+          "lineNumber": 47
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 48
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "SharePlusWindowsPluginCApiRegisterWithRegistrar",
+          "lineNumber": 49
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 50
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "Sqlite3FlutterLibsPluginRegisterWithRegistrar",
+          "lineNumber": 51
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 52
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "UrlLauncherWindowsRegisterWithRegistrar",
+          "lineNumber": 53
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 54
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "VolumeControllerPluginCApiRegisterWithRegistrar",
+          "lineNumber": 55
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 56
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "WindowManagerPluginRegisterWithRegistrar",
+          "lineNumber": 57
+        },
+        {
+          "caller": "RegisterPlugins",
+          "callee": "GetRegistrarForPlugin",
+          "lineNumber": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "windows/flutter/generated_plugin_registrant.h",
+      "language": "c",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

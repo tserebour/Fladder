@@ -90,6 +90,21 @@ set_target_properties(${BINARY_NAME}
 # them to the application.
 include(flutter/generated_plugins.cmake)
 
+# Workaround: fvp's FindMDK.cmake puts an unquoted -Wl,-rpath-link, path
+# in INTERFACE_LINK_LIBRARIES, which breaks builds in paths with spaces.
+# Move it to INTERFACE_LINK_OPTIONS where CMake handles quoting correctly.
+if(TARGET mdk)
+  get_target_property(_mdk_rpath mdk INTERFACE_LINK_LIBRARIES)
+  message(STATUS "WORKAROUND: mdk INTERFACE_LINK_LIBRARIES = ${_mdk_rpath}")
+  if(_mdk_rpath MATCHES "^-Wl,-rpath-link,")
+    string(REGEX REPLACE "^-Wl,-rpath-link," "" _mdk_rpath_dir "${_mdk_rpath}")
+    message(STATUS "WORKAROUND: Moving rpath-link to INTERFACE_LINK_OPTIONS: ${_mdk_rpath_dir}")
+    set_target_properties(mdk PROPERTIES INTERFACE_LINK_LIBRARIES "")
+    set_target_properties(mdk PROPERTIES INTERFACE_LINK_OPTIONS "-Wl,-rpath-link,${_mdk_rpath_dir}")
+  endif()
+else()
+  message(STATUS "WORKAROUND: mdk target does NOT exist after plugins include")
+endif()
 
 # === Installation ===
 # By default, "installing" just makes a relocatable bundle in the build

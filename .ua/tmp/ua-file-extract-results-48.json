@@ -1,0 +1,3570 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [
+    "linux/CMakeLists.txt",
+    "linux/flutter/CMakeLists.txt",
+    "linux/flutter/generated_plugins.cmake",
+    "macos/Flutter/Flutter-Debug.xcconfig",
+    "macos/Flutter/Flutter-Release.xcconfig",
+    "macos/Podfile",
+    "macos/Runner.xcodeproj/project.pbxproj",
+    "macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+    "macos/Runner.xcodeproj/xcshareddata/xcschemes/development.xcscheme",
+    "macos/Runner.xcodeproj/xcshareddata/xcschemes/production.xcscheme",
+    "macos/Runner.xcworkspace/contents.xcworkspacedata",
+    "macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+    "macos/Runner/Base.lproj/MainMenu.xib",
+    "macos/Runner/Configs/AppInfo.xcconfig",
+    "macos/Runner/Configs/Debug.xcconfig",
+    "macos/Runner/Configs/Release.xcconfig"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 9,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 7,
+      "failed": 0,
+      "skipped": 2
+    }
+  },
+  "results": [
+    {
+      "path": "lib/wrappers/players/lib_mdk.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 301,
+      "nonEmptyLines": 262,
+      "functions": [
+        {
+          "name": "stateStream",
+          "startLine": 29,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "init",
+          "startLine": 32,
+          "endLine": 32,
+          "params": [
+            "settings"
+          ]
+        },
+        {
+          "name": "dispose",
+          "startLine": 64,
+          "endLine": 64,
+          "params": []
+        },
+        {
+          "name": "loadVideo",
+          "startLine": 71,
+          "endLine": 71,
+          "params": [
+            "url",
+            "play",
+            "startPosition"
+          ]
+        },
+        {
+          "name": "setState",
+          "startLine": 100,
+          "endLine": 100,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "updateState",
+          "startLine": 105,
+          "endLine": 105,
+          "params": []
+        },
+        {
+          "name": "calculateBufferedDuration",
+          "startLine": 118,
+          "endLine": 118,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "open",
+          "startLine": 130,
+          "endLine": 130,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "pause",
+          "startLine": 137,
+          "endLine": 137,
+          "params": []
+        },
+        {
+          "name": "play",
+          "startLine": 143,
+          "endLine": 143,
+          "params": []
+        },
+        {
+          "name": "playOrPause",
+          "startLine": 149,
+          "endLine": 149,
+          "params": []
+        },
+        {
+          "name": "seek",
+          "startLine": 159,
+          "endLine": 159,
+          "params": [
+            "position"
+          ]
+        },
+        {
+          "name": "setAudioTrack",
+          "startLine": 162,
+          "endLine": 162,
+          "params": [
+            "model",
+            "playbackModel"
+          ]
+        },
+        {
+          "name": "setSpeed",
+          "startLine": 177,
+          "endLine": 177,
+          "params": [
+            "speed"
+          ]
+        },
+        {
+          "name": "setSubtitleTrack",
+          "startLine": 180,
+          "endLine": 180,
+          "params": [
+            "model",
+            "playbackModel"
+          ]
+        },
+        {
+          "name": "takeScreenshot",
+          "startLine": 205,
+          "endLine": 205,
+          "params": []
+        },
+        {
+          "name": "stop",
+          "startLine": 222,
+          "endLine": 222,
+          "params": []
+        },
+        {
+          "name": "videoWidget",
+          "startLine": 225,
+          "endLine": 228,
+          "params": [
+            "key",
+            "fit"
+          ]
+        },
+        {
+          "name": "subtitles",
+          "startLine": 263,
+          "endLine": 263,
+          "params": [
+            "showOverlay",
+            "controlsKey"
+          ]
+        },
+        {
+          "name": "applySubtitleSettings",
+          "startLine": 266,
+          "endLine": 266,
+          "params": [
+            "settings"
+          ]
+        },
+        {
+          "name": "_colorToMdkRgba",
+          "startLine": 287,
+          "endLine": 287,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "setVolume",
+          "startLine": 297,
+          "endLine": 297,
+          "params": [
+            "volume"
+          ]
+        },
+        {
+          "name": "loop",
+          "startLine": 300,
+          "endLine": 300,
+          "params": [
+            "loop"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LibMDK",
+          "startLine": 20,
+          "endLine": 301,
+          "methods": [
+            "stateStream",
+            "init",
+            "dispose",
+            "loadVideo",
+            "setState",
+            "updateState",
+            "calculateBufferedDuration",
+            "open",
+            "pause",
+            "play",
+            "playOrPause",
+            "seek",
+            "setAudioTrack",
+            "setSpeed",
+            "setSubtitleTrack",
+            "takeScreenshot",
+            "stop",
+            "videoWidget",
+            "subtitles",
+            "applySubtitleSettings",
+            "_colorToMdkRgba",
+            "setVolume",
+            "loop"
+          ],
+          "properties": [
+            "_controller",
+            "player",
+            "externalSubEnabled",
+            "_stateController"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "stateStream",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "init",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "loadVideo",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "setState",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "updateState",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "calculateBufferedDuration",
+          "line": 118,
+          "isDefault": false
+        },
+        {
+          "name": "open",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "pause",
+          "line": 137,
+          "isDefault": false
+        },
+        {
+          "name": "play",
+          "line": 143,
+          "isDefault": false
+        },
+        {
+          "name": "playOrPause",
+          "line": 149,
+          "isDefault": false
+        },
+        {
+          "name": "seek",
+          "line": 159,
+          "isDefault": false
+        },
+        {
+          "name": "setAudioTrack",
+          "line": 162,
+          "isDefault": false
+        },
+        {
+          "name": "setSpeed",
+          "line": 177,
+          "isDefault": false
+        },
+        {
+          "name": "setSubtitleTrack",
+          "line": 180,
+          "isDefault": false
+        },
+        {
+          "name": "takeScreenshot",
+          "line": 205,
+          "isDefault": false
+        },
+        {
+          "name": "stop",
+          "line": 222,
+          "isDefault": false
+        },
+        {
+          "name": "videoWidget",
+          "line": 225,
+          "isDefault": false
+        },
+        {
+          "name": "subtitles",
+          "line": 263,
+          "isDefault": false
+        },
+        {
+          "name": "applySubtitleSettings",
+          "line": 266,
+          "isDefault": false
+        },
+        {
+          "name": "setVolume",
+          "line": 297,
+          "isDefault": false
+        },
+        {
+          "name": "loop",
+          "line": 300,
+          "isDefault": false
+        },
+        {
+          "name": "LibMDK",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "dispose",
+          "lineNumber": 33
+        },
+        {
+          "caller": "init",
+          "callee": "registerWith",
+          "lineNumber": 54
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "isValidUrl",
+          "lineNumber": 74
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "networkUrl",
+          "lineNumber": 76
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "file",
+          "lineNumber": 78
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "File",
+          "lineNumber": 78
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "updateState",
+          "lineNumber": 82
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "Duration",
+          "lineNumber": 92
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "Duration",
+          "lineNumber": 93
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "setState",
+          "lineNumber": 95
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "update",
+          "lineNumber": 95
+        },
+        {
+          "caller": "setState",
+          "callee": "add",
+          "lineNumber": 102
+        },
+        {
+          "caller": "updateState",
+          "callee": "setState",
+          "lineNumber": 106
+        },
+        {
+          "caller": "updateState",
+          "callee": "update",
+          "lineNumber": 106
+        },
+        {
+          "caller": "updateState",
+          "callee": "calculateBufferedDuration",
+          "lineNumber": 114
+        },
+        {
+          "caller": "calculateBufferedDuration",
+          "callee": "fold",
+          "lineNumber": 124
+        },
+        {
+          "caller": "open",
+          "callee": "of",
+          "lineNumber": 130
+        },
+        {
+          "caller": "open",
+          "callee": "push",
+          "lineNumber": 130
+        },
+        {
+          "caller": "open",
+          "callee": "MaterialPageRoute",
+          "lineNumber": 131
+        },
+        {
+          "caller": "open",
+          "callee": "video_screen",
+          "lineNumber": 132
+        },
+        {
+          "caller": "pause",
+          "callee": "updateState",
+          "lineNumber": 139
+        },
+        {
+          "caller": "play",
+          "callee": "updateState",
+          "lineNumber": 145
+        },
+        {
+          "caller": "playOrPause",
+          "callee": "pause",
+          "lineNumber": 152
+        },
+        {
+          "caller": "playOrPause",
+          "callee": "play",
+          "lineNumber": 154
+        },
+        {
+          "caller": "setAudioTrack",
+          "callee": "no",
+          "lineNumber": 164
+        },
+        {
+          "caller": "setSubtitleTrack",
+          "callee": "no",
+          "lineNumber": 182
+        },
+        {
+          "caller": "takeScreenshot",
+          "callee": "fromBytes",
+          "lineNumber": 212
+        },
+        {
+          "caller": "takeScreenshot",
+          "callee": "encodePng",
+          "lineNumber": 215
+        },
+        {
+          "caller": "stop",
+          "callee": "dispose",
+          "lineNumber": 222
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "Container",
+          "lineNumber": 231
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "LayoutBuilder",
+          "lineNumber": 234
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "Stack",
+          "lineNumber": 235
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "FittedBox",
+          "lineNumber": 238
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "ValueListenableBuilder",
+          "lineNumber": 241
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "ValueNotifier",
+          "lineNumber": 242
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "VideoPlayerValue",
+          "lineNumber": 242
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "SizedBox",
+          "lineNumber": 246
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "SizedBox",
+          "lineNumber": 247
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "AspectRatio",
+          "lineNumber": 249
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "VideoPlayer",
+          "lineNumber": 251
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 269
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "toStringAsFixed",
+          "lineNumber": 269
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 270
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 271
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "_colorToMdkRgba",
+          "lineNumber": 271
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 272
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "_colorToMdkRgba",
+          "lineNumber": 272
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 273
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "toStringAsFixed",
+          "lineNumber": 273
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 274
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "_colorToMdkRgba",
+          "lineNumber": 274
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 275
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 276
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "round",
+          "lineNumber": 276
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "toString",
+          "lineNumber": 276
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 279
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 280
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 282
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "toStringAsFixed",
+          "lineNumber": 282
+        },
+        {
+          "caller": "applySubtitleSettings",
+          "callee": "setProperty",
+          "lineNumber": 283
+        },
+        {
+          "caller": "_colorToMdkRgba",
+          "callee": "round",
+          "lineNumber": 288
+        },
+        {
+          "caller": "_colorToMdkRgba",
+          "callee": "round",
+          "lineNumber": 289
+        },
+        {
+          "caller": "_colorToMdkRgba",
+          "callee": "round",
+          "lineNumber": 290
+        },
+        {
+          "caller": "_colorToMdkRgba",
+          "callee": "round",
+          "lineNumber": 291
+        },
+        {
+          "caller": "_colorToMdkRgba",
+          "callee": "toRadixString",
+          "lineNumber": 293
+        },
+        {
+          "caller": "_colorToMdkRgba",
+          "callee": "padLeft",
+          "lineNumber": 293
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 23,
+        "functionCount": 23,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/wrappers/players/lib_mpv.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 707,
+      "nonEmptyLines": 605,
+      "functions": [
+        {
+          "name": "stateStream",
+          "startLine": 34,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "playPauseFadeDuration",
+          "startLine": 50,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "setMusicPlaybackMode",
+          "startLine": 56,
+          "endLine": 56,
+          "params": [
+            "enabled"
+          ]
+        },
+        {
+          "name": "setupAudioSession",
+          "startLine": 62,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "updateSettings",
+          "startLine": 67,
+          "endLine": 67,
+          "params": [
+            "settings"
+          ]
+        },
+        {
+          "name": "init",
+          "startLine": 72,
+          "endLine": 72,
+          "params": [
+            "settings"
+          ]
+        },
+        {
+          "name": "dispose",
+          "startLine": 118,
+          "endLine": 118,
+          "params": []
+        },
+        {
+          "name": "setState",
+          "startLine": 133,
+          "endLine": 133,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "_cancelPlayerStreams",
+          "startLine": 141,
+          "endLine": 141,
+          "params": []
+        },
+        {
+          "name": "_setupPlayerStreams",
+          "startLine": 148,
+          "endLine": 148,
+          "params": [
+            "player"
+          ]
+        },
+        {
+          "name": "crossfadeToUrl",
+          "startLine": 165,
+          "endLine": 165,
+          "params": [
+            "url",
+            "startPosition",
+            "replayGainDb"
+          ]
+        },
+        {
+          "name": "loadVideo",
+          "startLine": 251,
+          "endLine": 251,
+          "params": [
+            "url",
+            "play",
+            "startPosition"
+          ]
+        },
+        {
+          "name": "applyReplayGainForItem",
+          "startLine": 314,
+          "endLine": 314,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "_replayGainVolumeOffsetDb",
+          "startLine": 325,
+          "endLine": 325,
+          "params": []
+        },
+        {
+          "name": "_applyReplayGainSettings",
+          "startLine": 329,
+          "endLine": 329,
+          "params": [
+            "trackGainDb",
+            "targetPlayer"
+          ]
+        },
+        {
+          "name": "setStartPosition",
+          "startLine": 371,
+          "endLine": 371,
+          "params": [
+            "position"
+          ]
+        },
+        {
+          "name": "_finishedLoading",
+          "startLine": 380,
+          "endLine": 380,
+          "params": []
+        },
+        {
+          "name": "open",
+          "startLine": 387,
+          "endLine": 387,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "subTracks",
+          "startLine": 393,
+          "endLine": 393,
+          "params": []
+        },
+        {
+          "name": "subtitleTrack",
+          "startLine": 394,
+          "endLine": 394,
+          "params": []
+        },
+        {
+          "name": "audioTracks",
+          "startLine": 396,
+          "endLine": 396,
+          "params": []
+        },
+        {
+          "name": "audioTrack",
+          "startLine": 397,
+          "endLine": 397,
+          "params": []
+        },
+        {
+          "name": "_startPlaybackFade",
+          "startLine": 399,
+          "endLine": 399,
+          "params": [
+            "fadingIn"
+          ]
+        },
+        {
+          "name": "pause",
+          "startLine": 442,
+          "endLine": 442,
+          "params": []
+        },
+        {
+          "name": "play",
+          "startLine": 450,
+          "endLine": 450,
+          "params": []
+        },
+        {
+          "name": "playOrPause",
+          "startLine": 458,
+          "endLine": 458,
+          "params": []
+        },
+        {
+          "name": "seek",
+          "startLine": 467,
+          "endLine": 467,
+          "params": [
+            "position"
+          ]
+        },
+        {
+          "name": "_awaitTrack",
+          "startLine": 471,
+          "endLine": 471,
+          "params": [
+            "index",
+            "count"
+          ]
+        },
+        {
+          "name": "setAudioTrack",
+          "startLine": 480,
+          "endLine": 480,
+          "params": [
+            "model",
+            "playbackModel"
+          ]
+        },
+        {
+          "name": "setSpeed",
+          "startLine": 498,
+          "endLine": 498,
+          "params": [
+            "speed"
+          ]
+        },
+        {
+          "name": "setSubtitleTrack",
+          "startLine": 501,
+          "endLine": 501,
+          "params": [
+            "model",
+            "playbackModel"
+          ]
+        },
+        {
+          "name": "addToPlaylist",
+          "startLine": 522,
+          "endLine": 522,
+          "params": [
+            "url"
+          ]
+        },
+        {
+          "name": "removeFromPlaylist",
+          "startLine": 525,
+          "endLine": 525,
+          "params": [
+            "index"
+          ]
+        },
+        {
+          "name": "playerNext",
+          "startLine": 528,
+          "endLine": 528,
+          "params": []
+        },
+        {
+          "name": "playerPrevious",
+          "startLine": 531,
+          "endLine": 531,
+          "params": []
+        },
+        {
+          "name": "playlistIndexStream",
+          "startLine": 534,
+          "endLine": 534,
+          "params": []
+        },
+        {
+          "name": "stop",
+          "startLine": 537,
+          "endLine": 537,
+          "params": []
+        },
+        {
+          "name": "takeScreenshot",
+          "startLine": 543,
+          "endLine": 543,
+          "params": []
+        },
+        {
+          "name": "videoWidget",
+          "startLine": 548,
+          "endLine": 551,
+          "params": [
+            "key",
+            "fit"
+          ]
+        },
+        {
+          "name": "subtitles",
+          "startLine": 565,
+          "endLine": 568,
+          "params": [
+            "showOverlay",
+            "controlsKey"
+          ]
+        },
+        {
+          "name": "setVolume",
+          "startLine": 579,
+          "endLine": 579,
+          "params": [
+            "volume"
+          ]
+        },
+        {
+          "name": "loop",
+          "startLine": 586,
+          "endLine": 586,
+          "params": [
+            "loop"
+          ]
+        },
+        {
+          "name": "createState",
+          "startLine": 613,
+          "endLine": 613,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 625,
+          "endLine": 625,
+          "params": []
+        },
+        {
+          "name": "dispose",
+          "startLine": 639,
+          "endLine": 639,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 645,
+          "endLine": 645,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "_measureMenuHeight",
+          "startLine": 693,
+          "endLine": 693,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "LibMPV",
+          "startLine": 27,
+          "endLine": 597,
+          "methods": [
+            "stateStream",
+            "playPauseFadeDuration",
+            "setMusicPlaybackMode",
+            "setupAudioSession",
+            "updateSettings",
+            "init",
+            "dispose",
+            "setState",
+            "_cancelPlayerStreams",
+            "_setupPlayerStreams",
+            "crossfadeToUrl",
+            "loadVideo",
+            "applyReplayGainForItem",
+            "_replayGainVolumeOffsetDb",
+            "_applyReplayGainSettings",
+            "setStartPosition",
+            "_finishedLoading",
+            "open",
+            "subTracks",
+            "subtitleTrack",
+            "audioTracks",
+            "audioTrack",
+            "_startPlaybackFade",
+            "pause",
+            "play",
+            "playOrPause",
+            "seek",
+            "_awaitTrack",
+            "setAudioTrack",
+            "setSpeed",
+            "setSubtitleTrack",
+            "addToPlaylist",
+            "removeFromPlaylist",
+            "playerNext",
+            "playerPrevious",
+            "playlistIndexStream",
+            "stop",
+            "takeScreenshot",
+            "videoWidget",
+            "subtitles",
+            "setVolume",
+            "loop"
+          ],
+          "properties": [
+            "_player",
+            "_controller",
+            "_currentSubtitleCodec",
+            "_stateController",
+            "_onCompleted",
+            "_replayGainFallbackLogged",
+            "_settings",
+            "_retryTimer",
+            "_firstLoadAttempt",
+            "_maxRetryDuration",
+            "_currentRetryDuration",
+            "_loadCompleter",
+            "_playerStreamSubs",
+            "_preferredVolume",
+            "_crossfadeGeneration",
+            "_fadeTimer",
+            "_audioSession",
+            "_musicPaused",
+            "_musicPlaybackMode"
+          ]
+        },
+        {
+          "name": "_VideoSubtitles",
+          "startLine": 599,
+          "endLine": 614,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "controller",
+            "showOverlay",
+            "controlsKey",
+            "currentSubtitleCodec"
+          ]
+        },
+        {
+          "name": "_VideoSubtitlesState",
+          "startLine": 616,
+          "endLine": 707,
+          "methods": [
+            "initState",
+            "dispose",
+            "build",
+            "_measureMenuHeight"
+          ],
+          "properties": [
+            "subtitle",
+            "_cachedSubtitleText",
+            "_lastSubtitleList",
+            "subscription",
+            "_cachedMenuHeight"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "stateStream",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "playPauseFadeDuration",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "setMusicPlaybackMode",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "setupAudioSession",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "updateSettings",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "init",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 118,
+          "isDefault": false
+        },
+        {
+          "name": "setState",
+          "line": 133,
+          "isDefault": false
+        },
+        {
+          "name": "crossfadeToUrl",
+          "line": 165,
+          "isDefault": false
+        },
+        {
+          "name": "loadVideo",
+          "line": 251,
+          "isDefault": false
+        },
+        {
+          "name": "applyReplayGainForItem",
+          "line": 314,
+          "isDefault": false
+        },
+        {
+          "name": "setStartPosition",
+          "line": 371,
+          "isDefault": false
+        },
+        {
+          "name": "open",
+          "line": 387,
+          "isDefault": false
+        },
+        {
+          "name": "subTracks",
+          "line": 393,
+          "isDefault": false
+        },
+        {
+          "name": "subtitleTrack",
+          "line": 394,
+          "isDefault": false
+        },
+        {
+          "name": "audioTracks",
+          "line": 396,
+          "isDefault": false
+        },
+        {
+          "name": "audioTrack",
+          "line": 397,
+          "isDefault": false
+        },
+        {
+          "name": "pause",
+          "line": 442,
+          "isDefault": false
+        },
+        {
+          "name": "play",
+          "line": 450,
+          "isDefault": false
+        },
+        {
+          "name": "playOrPause",
+          "line": 458,
+          "isDefault": false
+        },
+        {
+          "name": "seek",
+          "line": 467,
+          "isDefault": false
+        },
+        {
+          "name": "setAudioTrack",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "setSpeed",
+          "line": 498,
+          "isDefault": false
+        },
+        {
+          "name": "setSubtitleTrack",
+          "line": 501,
+          "isDefault": false
+        },
+        {
+          "name": "addToPlaylist",
+          "line": 522,
+          "isDefault": false
+        },
+        {
+          "name": "removeFromPlaylist",
+          "line": 525,
+          "isDefault": false
+        },
+        {
+          "name": "playerNext",
+          "line": 528,
+          "isDefault": false
+        },
+        {
+          "name": "playerPrevious",
+          "line": 531,
+          "isDefault": false
+        },
+        {
+          "name": "playlistIndexStream",
+          "line": 534,
+          "isDefault": false
+        },
+        {
+          "name": "stop",
+          "line": 537,
+          "isDefault": false
+        },
+        {
+          "name": "takeScreenshot",
+          "line": 543,
+          "isDefault": false
+        },
+        {
+          "name": "videoWidget",
+          "line": 548,
+          "isDefault": false
+        },
+        {
+          "name": "subtitles",
+          "line": 565,
+          "isDefault": false
+        },
+        {
+          "name": "setVolume",
+          "line": 579,
+          "isDefault": false
+        },
+        {
+          "name": "loop",
+          "line": 586,
+          "isDefault": false
+        },
+        {
+          "name": "LibMPV",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "createState",
+          "line": 613,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 625,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 639,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 645,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "playPauseFadeDuration",
+          "callee": "Duration",
+          "lineNumber": 50
+        },
+        {
+          "caller": "setMusicPlaybackMode",
+          "callee": "setState",
+          "lineNumber": 59
+        },
+        {
+          "caller": "setupAudioSession",
+          "callee": "AudioSessionConfiguration",
+          "lineNumber": 64
+        },
+        {
+          "caller": "init",
+          "callee": "dispose",
+          "lineNumber": 74
+        },
+        {
+          "caller": "init",
+          "callee": "ensureInitialized",
+          "lineNumber": 76
+        },
+        {
+          "caller": "init",
+          "callee": "Player",
+          "lineNumber": 78
+        },
+        {
+          "caller": "init",
+          "callee": "PlayerConfiguration",
+          "lineNumber": 79
+        },
+        {
+          "caller": "init",
+          "callee": "VideoController",
+          "lineNumber": 88
+        },
+        {
+          "caller": "init",
+          "callee": "VideoControllerConfiguration",
+          "lineNumber": 90
+        },
+        {
+          "caller": "init",
+          "callee": "_setupPlayerStreams",
+          "lineNumber": 94
+        },
+        {
+          "caller": "init",
+          "callee": "setProperty",
+          "lineNumber": 99
+        },
+        {
+          "caller": "init",
+          "callee": "setProperty",
+          "lineNumber": 100
+        },
+        {
+          "caller": "init",
+          "callee": "setProperty",
+          "lineNumber": 101
+        },
+        {
+          "caller": "init",
+          "callee": "setProperty",
+          "lineNumber": 102
+        },
+        {
+          "caller": "init",
+          "callee": "setProperty",
+          "lineNumber": 103
+        },
+        {
+          "caller": "init",
+          "callee": "setProperty",
+          "lineNumber": 104
+        },
+        {
+          "caller": "init",
+          "callee": "setProperty",
+          "lineNumber": 105
+        },
+        {
+          "caller": "init",
+          "callee": "setProperty",
+          "lineNumber": 108
+        },
+        {
+          "caller": "init",
+          "callee": "setupAudioSession",
+          "lineNumber": 111
+        },
+        {
+          "caller": "init",
+          "callee": "_applyReplayGainSettings",
+          "lineNumber": 114
+        },
+        {
+          "caller": "dispose",
+          "callee": "unawaited",
+          "lineNumber": 119
+        },
+        {
+          "caller": "dispose",
+          "callee": "_cancelPlayerStreams",
+          "lineNumber": 123
+        },
+        {
+          "caller": "setState",
+          "callee": "update",
+          "lineNumber": 134
+        },
+        {
+          "caller": "setState",
+          "callee": "add",
+          "lineNumber": 138
+        },
+        {
+          "caller": "_cancelPlayerStreams",
+          "callee": "cancel",
+          "lineNumber": 143
+        },
+        {
+          "caller": "_cancelPlayerStreams",
+          "callee": "clear",
+          "lineNumber": 145
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "addAll",
+          "lineNumber": 149
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "listen",
+          "lineNumber": 150
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "setState",
+          "lineNumber": 151
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "update",
+          "lineNumber": 151
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "listen",
+          "lineNumber": 153
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "setState",
+          "lineNumber": 153
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "update",
+          "lineNumber": 153
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "listen",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "setState",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "update",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "listen",
+          "lineNumber": 155
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "setState",
+          "lineNumber": 155
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "update",
+          "lineNumber": 155
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "listen",
+          "lineNumber": 156
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "setState",
+          "lineNumber": 157
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "update",
+          "lineNumber": 157
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "listen",
+          "lineNumber": 159
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "setState",
+          "lineNumber": 159
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "update",
+          "lineNumber": 159
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "listen",
+          "lineNumber": 160
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "setState",
+          "lineNumber": 160
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "update",
+          "lineNumber": 160
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "listen",
+          "lineNumber": 161
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "setState",
+          "lineNumber": 161
+        },
+        {
+          "caller": "_setupPlayerStreams",
+          "callee": "update",
+          "lineNumber": 161
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "_applyReplayGainSettings",
+          "lineNumber": 167
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "loadVideo",
+          "lineNumber": 168
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "loadVideo",
+          "lineNumber": 174
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "max",
+          "lineNumber": 179
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "Player",
+          "lineNumber": 181
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "PlayerConfiguration",
+          "lineNumber": 182
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "setProperty",
+          "lineNumber": 192
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "setProperty",
+          "lineNumber": 193
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "setProperty",
+          "lineNumber": 195
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "setProperty",
+          "lineNumber": 197
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "_applyReplayGainSettings",
+          "lineNumber": 200
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "setVolume",
+          "lineNumber": 203
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "open",
+          "lineNumber": 204
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "Media",
+          "lineNumber": 204
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "clamp",
+          "lineNumber": 207
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "setVolume",
+          "lineNumber": 216
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "setVolume",
+          "lineNumber": 217
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "delayed",
+          "lineNumber": 218
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "Duration",
+          "lineNumber": 218
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "stop",
+          "lineNumber": 222
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "dispose",
+          "lineNumber": 223
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "_cancelPlayerStreams",
+          "lineNumber": 227
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "_setupPlayerStreams",
+          "lineNumber": 230
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "stop",
+          "lineNumber": 236
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "dispose",
+          "lineNumber": 237
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "setState",
+          "lineNumber": 239
+        },
+        {
+          "caller": "crossfadeToUrl",
+          "callee": "update",
+          "lineNumber": 239
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "Completer",
+          "lineNumber": 252
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "now",
+          "lineNumber": 253
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "setStartPosition",
+          "lineNumber": 255
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "Media",
+          "lineNumber": 257
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "RestartableTimer",
+          "lineNumber": 262
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "delayed",
+          "lineNumber": 265
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "Duration",
+          "lineNumber": 265
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "now",
+          "lineNumber": 266
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "isAfter",
+          "lineNumber": 266
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "add",
+          "lineNumber": 266
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "log",
+          "lineNumber": 267
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "log",
+          "lineNumber": 271
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "setStartPosition",
+          "lineNumber": 272
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "Media",
+          "lineNumber": 273
+        },
+        {
+          "caller": "onReady",
+          "callee": "_finishedLoading",
+          "lineNumber": 286
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "listen",
+          "lineNumber": 291
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "onReady",
+          "lineNumber": 293
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "listen",
+          "lineNumber": 296
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "onReady",
+          "lineNumber": 297
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "then",
+          "lineNumber": 301
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "setState",
+          "lineNumber": 309
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "update",
+          "lineNumber": 309
+        },
+        {
+          "caller": "applyReplayGainForItem",
+          "callee": "clamp",
+          "lineNumber": 319
+        },
+        {
+          "caller": "applyReplayGainForItem",
+          "callee": "toDouble",
+          "lineNumber": 319
+        },
+        {
+          "caller": "applyReplayGainForItem",
+          "callee": "_applyReplayGainSettings",
+          "lineNumber": 322
+        },
+        {
+          "caller": "_applyReplayGainSettings",
+          "callee": "setProperty",
+          "lineNumber": 339
+        },
+        {
+          "caller": "_applyReplayGainSettings",
+          "callee": "clampReplayGainDb",
+          "lineNumber": 346
+        },
+        {
+          "caller": "_applyReplayGainSettings",
+          "callee": "adjustedReplayGainDb",
+          "lineNumber": 347
+        },
+        {
+          "caller": "_applyReplayGainSettings",
+          "callee": "setProperty",
+          "lineNumber": 350
+        },
+        {
+          "caller": "_applyReplayGainSettings",
+          "callee": "setProperty",
+          "lineNumber": 351
+        },
+        {
+          "caller": "_applyReplayGainSettings",
+          "callee": "setProperty",
+          "lineNumber": 352
+        },
+        {
+          "caller": "_applyReplayGainSettings",
+          "callee": "setProperty",
+          "lineNumber": 353
+        },
+        {
+          "caller": "_applyReplayGainSettings",
+          "callee": "setProperty",
+          "lineNumber": 354
+        },
+        {
+          "caller": "_applyReplayGainSettings",
+          "callee": "log",
+          "lineNumber": 358
+        },
+        {
+          "caller": "_applyReplayGainSettings",
+          "callee": "setProperty",
+          "lineNumber": 364
+        },
+        {
+          "caller": "_applyReplayGainSettings",
+          "callee": "log",
+          "lineNumber": 366
+        },
+        {
+          "caller": "setStartPosition",
+          "callee": "setProperty",
+          "lineNumber": 373
+        },
+        {
+          "caller": "open",
+          "callee": "of",
+          "lineNumber": 387
+        },
+        {
+          "caller": "open",
+          "callee": "push",
+          "lineNumber": 387
+        },
+        {
+          "caller": "open",
+          "callee": "MaterialPageRoute",
+          "lineNumber": 388
+        },
+        {
+          "caller": "open",
+          "callee": "video_screen",
+          "lineNumber": 389
+        },
+        {
+          "caller": "subtitleTrack",
+          "callee": "no",
+          "lineNumber": 394
+        },
+        {
+          "caller": "audioTrack",
+          "callee": "no",
+          "lineNumber": 397
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "play",
+          "lineNumber": 407
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "pause",
+          "lineNumber": 409
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "play",
+          "lineNumber": 418
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "periodic",
+          "lineNumber": 420
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "Duration",
+          "lineNumber": 420
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "cancel",
+          "lineNumber": 423
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "clamp",
+          "lineNumber": 427
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "setVolume",
+          "lineNumber": 428
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "cancel",
+          "lineNumber": 429
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "clamp",
+          "lineNumber": 431
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "setVolume",
+          "lineNumber": 432
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "cancel",
+          "lineNumber": 434
+        },
+        {
+          "caller": "_startPlaybackFade",
+          "callee": "pause",
+          "lineNumber": 435
+        },
+        {
+          "caller": "pause",
+          "callee": "setState",
+          "lineNumber": 444
+        },
+        {
+          "caller": "pause",
+          "callee": "update",
+          "lineNumber": 444
+        },
+        {
+          "caller": "pause",
+          "callee": "unawaited",
+          "lineNumber": 445
+        },
+        {
+          "caller": "pause",
+          "callee": "_startPlaybackFade",
+          "lineNumber": 446
+        },
+        {
+          "caller": "play",
+          "callee": "setState",
+          "lineNumber": 452
+        },
+        {
+          "caller": "play",
+          "callee": "update",
+          "lineNumber": 452
+        },
+        {
+          "caller": "play",
+          "callee": "unawaited",
+          "lineNumber": 453
+        },
+        {
+          "caller": "play",
+          "callee": "_startPlaybackFade",
+          "lineNumber": 454
+        },
+        {
+          "caller": "playOrPause",
+          "callee": "pause",
+          "lineNumber": 460
+        },
+        {
+          "caller": "playOrPause",
+          "callee": "play",
+          "lineNumber": 462
+        },
+        {
+          "caller": "_awaitTrack",
+          "callee": "count",
+          "lineNumber": 473
+        },
+        {
+          "caller": "_awaitTrack",
+          "callee": "firstWhere",
+          "lineNumber": 475
+        },
+        {
+          "caller": "_awaitTrack",
+          "callee": "count",
+          "lineNumber": 475
+        },
+        {
+          "caller": "_awaitTrack",
+          "callee": "timeout",
+          "lineNumber": 476
+        },
+        {
+          "caller": "_awaitTrack",
+          "callee": "Duration",
+          "lineNumber": 476
+        },
+        {
+          "caller": "setAudioTrack",
+          "callee": "no",
+          "lineNumber": 483
+        },
+        {
+          "caller": "setAudioTrack",
+          "callee": "no",
+          "lineNumber": 484
+        },
+        {
+          "caller": "setAudioTrack",
+          "callee": "_awaitTrack",
+          "lineNumber": 487
+        },
+        {
+          "caller": "setAudioTrack",
+          "callee": "getRange",
+          "lineNumber": 488
+        },
+        {
+          "caller": "setAudioTrack",
+          "callee": "toList",
+          "lineNumber": 488
+        },
+        {
+          "caller": "setAudioTrack",
+          "callee": "elementAtOrNull",
+          "lineNumber": 489
+        },
+        {
+          "caller": "setSubtitleTrack",
+          "callee": "no",
+          "lineNumber": 504
+        },
+        {
+          "caller": "setSubtitleTrack",
+          "callee": "no",
+          "lineNumber": 505
+        },
+        {
+          "caller": "setSubtitleTrack",
+          "callee": "indexWhere",
+          "lineNumber": 509
+        },
+        {
+          "caller": "setSubtitleTrack",
+          "callee": "_awaitTrack",
+          "lineNumber": 510
+        },
+        {
+          "caller": "setSubtitleTrack",
+          "callee": "getRange",
+          "lineNumber": 511
+        },
+        {
+          "caller": "setSubtitleTrack",
+          "callee": "toList",
+          "lineNumber": 511
+        },
+        {
+          "caller": "setSubtitleTrack",
+          "callee": "elementAtOrNull",
+          "lineNumber": 512
+        },
+        {
+          "caller": "setSubtitleTrack",
+          "callee": "uri",
+          "lineNumber": 514
+        },
+        {
+          "caller": "addToPlaylist",
+          "callee": "Media",
+          "lineNumber": 522
+        },
+        {
+          "caller": "playlistIndexStream",
+          "callee": "map",
+          "lineNumber": 534
+        },
+        {
+          "caller": "playlistIndexStream",
+          "callee": "Stream",
+          "lineNumber": 534
+        },
+        {
+          "caller": "stop",
+          "callee": "unawaited",
+          "lineNumber": 538
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "Video",
+          "lineNumber": 554
+        },
+        {
+          "caller": "videoWidget",
+          "callee": "SubtitleViewConfiguration",
+          "lineNumber": 560
+        },
+        {
+          "caller": "subtitles",
+          "callee": "_VideoSubtitles",
+          "lineNumber": 570
+        },
+        {
+          "caller": "setVolume",
+          "callee": "clamp",
+          "lineNumber": 581
+        },
+        {
+          "caller": "loop",
+          "callee": "listen",
+          "lineNumber": 588
+        },
+        {
+          "caller": "createState",
+          "callee": "_VideoSubtitlesState",
+          "lineNumber": 613
+        },
+        {
+          "caller": "initState",
+          "callee": "listen",
+          "lineNumber": 628
+        },
+        {
+          "caller": "initState",
+          "callee": "setState",
+          "lineNumber": 630
+        },
+        {
+          "caller": "build",
+          "callee": "_measureMenuHeight",
+          "lineNumber": 646
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 648
+        },
+        {
+          "caller": "build",
+          "callee": "paddingOf",
+          "lineNumber": 649
+        },
+        {
+          "caller": "build",
+          "callee": "ListEquality",
+          "lineNumber": 651
+        },
+        {
+          "caller": "build",
+          "callee": "equals",
+          "lineNumber": 651
+        },
+        {
+          "caller": "build",
+          "callee": "where",
+          "lineNumber": 653
+        },
+        {
+          "caller": "build",
+          "callee": "trim",
+          "lineNumber": 653
+        },
+        {
+          "caller": "build",
+          "callee": "map",
+          "lineNumber": 653
+        },
+        {
+          "caller": "build",
+          "callee": "trim",
+          "lineNumber": 653
+        },
+        {
+          "caller": "build",
+          "callee": "join",
+          "lineNumber": 653
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 667
+        },
+        {
+          "caller": "build",
+          "callee": "toLowerCase",
+          "lineNumber": 669
+        },
+        {
+          "caller": "build",
+          "callee": "contains",
+          "lineNumber": 670
+        },
+        {
+          "caller": "build",
+          "callee": "contains",
+          "lineNumber": 670
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 672
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 675
+        },
+        {
+          "caller": "build",
+          "callee": "calculateOffset",
+          "lineNumber": 678
+        },
+        {
+          "caller": "build",
+          "callee": "sizeOf",
+          "lineNumber": 681
+        },
+        {
+          "caller": "build",
+          "callee": "SubtitleText",
+          "lineNumber": 685
+        },
+        {
+          "caller": "_measureMenuHeight",
+          "callee": "addPostFrameCallback",
+          "lineNumber": 694
+        },
+        {
+          "caller": "_measureMenuHeight",
+          "callee": "setState",
+          "lineNumber": 701
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 40,
+        "functionCount": 47,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/wrappers/players/native_player.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 219,
+      "nonEmptyLines": 192,
+      "callGraph": [
+        {
+          "caller": "dispose",
+          "callee": "disposeActivity",
+          "lineNumber": 26
+        },
+        {
+          "caller": "init",
+          "callee": "setUp",
+          "lineNumber": 30
+        },
+        {
+          "caller": "loop",
+          "callee": "setLooping",
+          "lineNumber": 34
+        },
+        {
+          "caller": "loadVideo",
+          "callee": "open",
+          "lineNumber": 39
+        },
+        {
+          "caller": "open",
+          "callee": "launchActivity",
+          "lineNumber": 44
+        },
+        {
+          "caller": "pause",
+          "callee": "pause",
+          "lineNumber": 49
+        },
+        {
+          "caller": "pause",
+          "callee": "update",
+          "lineNumber": 50
+        },
+        {
+          "caller": "pause",
+          "callee": "add",
+          "lineNumber": 51
+        },
+        {
+          "caller": "play",
+          "callee": "play",
+          "lineNumber": 56
+        },
+        {
+          "caller": "play",
+          "callee": "update",
+          "lineNumber": 57
+        },
+        {
+          "caller": "play",
+          "callee": "add",
+          "lineNumber": 58
+        },
+        {
+          "caller": "playOrPause",
+          "callee": "pause",
+          "lineNumber": 64
+        },
+        {
+          "caller": "playOrPause",
+          "callee": "play",
+          "lineNumber": 66
+        },
+        {
+          "caller": "seek",
+          "callee": "seekTo",
+          "lineNumber": 72
+        },
+        {
+          "caller": "setVolume",
+          "callee": "setVolume",
+          "lineNumber": 90
+        },
+        {
+          "caller": "stop",
+          "callee": "stop",
+          "lineNumber": 96
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "update",
+          "lineNumber": 112
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "Duration",
+          "lineNumber": 114
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "Duration",
+          "lineNumber": 115
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "add",
+          "lineNumber": 118
+        },
+        {
+          "caller": "sendTVGuideModel",
+          "callee": "sendTVGuideModel",
+          "lineNumber": 127
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/wrappers/players/player_states.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 74,
+      "nonEmptyLines": 69,
+      "functions": [
+        {
+          "name": "PlayerState",
+          "startLine": 11,
+          "endLine": 20,
+          "params": [
+            "playing",
+            "completed",
+            "position",
+            "duration",
+            "volume",
+            "rate",
+            "buffering",
+            "buffer"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 22,
+          "endLine": 31,
+          "params": [
+            "playing",
+            "completed",
+            "buffering",
+            "position",
+            "duration",
+            "volume",
+            "rate",
+            "buffer"
+          ]
+        },
+        {
+          "name": "bindToState",
+          "startLine": 65,
+          "endLine": 65,
+          "params": [
+            "state"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PlayerState",
+          "startLine": 1,
+          "endLine": 42,
+          "methods": [
+            "PlayerState",
+            "update"
+          ],
+          "properties": [
+            "playing",
+            "completed",
+            "position",
+            "duration",
+            "volume",
+            "rate",
+            "buffering",
+            "buffer"
+          ]
+        },
+        {
+          "name": "PlayerStream",
+          "startLine": 44,
+          "endLine": 74,
+          "methods": [
+            "bindToState"
+          ],
+          "properties": [
+            "playing",
+            "completed",
+            "position",
+            "duration",
+            "volume",
+            "rate",
+            "buffering",
+            "buffer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PlayerState",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "PlayerState",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "bindToState",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "PlayerStream",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "bindToState",
+          "callee": "listen",
+          "lineNumber": 66
+        },
+        {
+          "caller": "bindToState",
+          "callee": "update",
+          "lineNumber": 66
+        },
+        {
+          "caller": "bindToState",
+          "callee": "listen",
+          "lineNumber": 67
+        },
+        {
+          "caller": "bindToState",
+          "callee": "update",
+          "lineNumber": 67
+        },
+        {
+          "caller": "bindToState",
+          "callee": "listen",
+          "lineNumber": 68
+        },
+        {
+          "caller": "bindToState",
+          "callee": "update",
+          "lineNumber": 68
+        },
+        {
+          "caller": "bindToState",
+          "callee": "listen",
+          "lineNumber": 69
+        },
+        {
+          "caller": "bindToState",
+          "callee": "update",
+          "lineNumber": 69
+        },
+        {
+          "caller": "bindToState",
+          "callee": "listen",
+          "lineNumber": 70
+        },
+        {
+          "caller": "bindToState",
+          "callee": "update",
+          "lineNumber": 70
+        },
+        {
+          "caller": "bindToState",
+          "callee": "listen",
+          "lineNumber": 71
+        },
+        {
+          "caller": "bindToState",
+          "callee": "update",
+          "lineNumber": 71
+        },
+        {
+          "caller": "bindToState",
+          "callee": "listen",
+          "lineNumber": 72
+        },
+        {
+          "caller": "bindToState",
+          "callee": "update",
+          "lineNumber": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 3,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "macos/Flutter/GeneratedPluginRegistrant.swift",
+      "language": "swift",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "RegisterGeneratedPlugins",
+          "startLine": 37,
+          "endLine": 66,
+          "params": [
+            "registry"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RegisterGeneratedPlugins",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "AudioServicePlugin.register",
+          "lineNumber": 38
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 38
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "AudioSessionPlugin.register",
+          "lineNumber": 39
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 39
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "ConnectivityPlusPlugin.register",
+          "lineNumber": 40
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 40
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "DesktopDropPlugin.register",
+          "lineNumber": 41
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 41
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "FlutterMultiWindowPlugin.register",
+          "lineNumber": 42
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 42
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "DynamicColorPlugin.register",
+          "lineNumber": 43
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 43
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "FilePickerPlugin.register",
+          "lineNumber": 44
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 44
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "FlutterLocalNotificationsPlugin.register",
+          "lineNumber": 45
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 45
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "FvpPlugin.register",
+          "lineNumber": 46
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 46
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "JustAudioPlugin.register",
+          "lineNumber": 47
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 47
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "LocalAuthPlugin.register",
+          "lineNumber": 48
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 48
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "MacOSWindowUtilsPlugin.register",
+          "lineNumber": 49
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 49
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "MediaKitLibsMacosVideoPlugin.register",
+          "lineNumber": 50
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 50
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "MediaKitVideoPlugin.register",
+          "lineNumber": 51
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 51
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "FPPPackageInfoPlusPlugin.register",
+          "lineNumber": 52
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 52
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "PathProviderPlugin.register",
+          "lineNumber": 53
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 53
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "ScreenBrightnessMacosPlugin.register",
+          "lineNumber": 54
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 54
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "ScreenRetrieverMacosPlugin.register",
+          "lineNumber": 55
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 55
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "SharePlusMacosPlugin.register",
+          "lineNumber": 56
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 56
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "SharedPreferencesPlugin.register",
+          "lineNumber": 57
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 57
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "SqflitePlugin.register",
+          "lineNumber": 58
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 58
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "Sqlite3FlutterLibsPlugin.register",
+          "lineNumber": 59
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 59
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "UrlLauncherPlugin.register",
+          "lineNumber": 60
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 60
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "FVPVideoPlayerPlugin.register",
+          "lineNumber": 61
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 61
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "VolumeControllerPlugin.register",
+          "lineNumber": 62
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 62
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "WakelockPlusMacosPlugin.register",
+          "lineNumber": 63
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 63
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "WebViewFlutterPlugin.register",
+          "lineNumber": 64
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 64
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "WindowManagerPlugin.register",
+          "lineNumber": 65
+        },
+        {
+          "caller": "RegisterGeneratedPlugins",
+          "callee": "registrar",
+          "lineNumber": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "macos/Runner/AppDelegate.swift",
+      "language": "swift",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 44,
+      "functions": [
+        {
+          "name": "applicationDidFinishLaunching",
+          "startLine": 8,
+          "endLine": 19,
+          "params": [
+            "notification"
+          ]
+        },
+        {
+          "name": "applicationDockMenu",
+          "startLine": 21,
+          "endLine": 39,
+          "params": [
+            "sender"
+          ]
+        },
+        {
+          "name": "handleNewWindowAction",
+          "startLine": 42,
+          "endLine": 44,
+          "params": [
+            "sender"
+          ]
+        },
+        {
+          "name": "handleNewInstanceAction",
+          "startLine": 46,
+          "endLine": 48,
+          "params": [
+            "sender"
+          ]
+        },
+        {
+          "name": "applicationShouldTerminateAfterLastWindowClosed",
+          "startLine": 50,
+          "endLine": 52,
+          "params": [
+            "sender"
+          ]
+        },
+        {
+          "name": "applicationSupportsSecureRestorableState",
+          "startLine": 54,
+          "endLine": 56,
+          "params": [
+            "app"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AppDelegate",
+          "startLine": 4,
+          "endLine": 57,
+          "methods": [
+            "applicationDidFinishLaunching",
+            "applicationDockMenu",
+            "handleNewWindowAction",
+            "handleNewInstanceAction",
+            "applicationShouldTerminateAfterLastWindowClosed",
+            "applicationSupportsSecureRestorableState"
+          ],
+          "properties": [
+            "appMenuApi"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "appMenuApi",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "applicationDidFinishLaunching",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "applicationDockMenu",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "handleNewWindowAction",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "handleNewInstanceAction",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "applicationShouldTerminateAfterLastWindowClosed",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "applicationSupportsSecureRestorableState",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "AppDelegate",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "applicationDidFinishLaunching",
+          "callee": "DirectoryBookmarkSetup.setUp",
+          "lineNumber": 11
+        },
+        {
+          "caller": "applicationDidFinishLaunching",
+          "callee": "DirectoryBookmarkImplementation",
+          "lineNumber": 13
+        },
+        {
+          "caller": "applicationDidFinishLaunching",
+          "callee": "ApplicationMenu",
+          "lineNumber": 16
+        },
+        {
+          "caller": "applicationDidFinishLaunching",
+          "callee": "super.applicationDidFinishLaunching",
+          "lineNumber": 18
+        },
+        {
+          "caller": "applicationDockMenu",
+          "callee": "NSMenu",
+          "lineNumber": 22
+        },
+        {
+          "caller": "applicationDockMenu",
+          "callee": "NSMenuItem",
+          "lineNumber": 24
+        },
+        {
+          "caller": "applicationDockMenu",
+          "callee": "handleNewWindowAction",
+          "lineNumber": 26
+        },
+        {
+          "caller": "applicationDockMenu",
+          "callee": "addItem",
+          "lineNumber": 29
+        },
+        {
+          "caller": "applicationDockMenu",
+          "callee": "NSMenuItem",
+          "lineNumber": 31
+        },
+        {
+          "caller": "applicationDockMenu",
+          "callee": "handleNewInstanceAction",
+          "lineNumber": 33
+        },
+        {
+          "caller": "applicationDockMenu",
+          "callee": "addItem",
+          "lineNumber": 36
+        },
+        {
+          "caller": "handleNewWindowAction",
+          "callee": "openNewWindow",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handleNewWindowAction",
+          "callee": "print",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handleNewInstanceAction",
+          "callee": "newInstance",
+          "lineNumber": 47
+        },
+        {
+          "caller": "handleNewInstanceAction",
+          "callee": "print",
+          "lineNumber": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "macos/Runner/ApplicationMenu.g.swift",
+      "language": "swift",
+      "fileCategory": "code",
+      "totalLines": 99,
+      "nonEmptyLines": 87,
+      "functions": [
+        {
+          "name": "createConnectionError",
+          "startLine": 14,
+          "endLine": 16,
+          "params": [
+            "channelName"
+          ]
+        },
+        {
+          "name": "isNullish",
+          "startLine": 18,
+          "endLine": 20,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "nilOrValue",
+          "startLine": 22,
+          "endLine": 25,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "reader",
+          "startLine": 35,
+          "endLine": 37,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "writer",
+          "startLine": 39,
+          "endLine": 41,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "openNewWindow",
+          "startLine": 50,
+          "endLine": 50,
+          "params": [
+            "completion"
+          ]
+        },
+        {
+          "name": "newInstance",
+          "startLine": 51,
+          "endLine": 51,
+          "params": [
+            "completion"
+          ]
+        },
+        {
+          "name": "ApplicationMenu.init",
+          "startLine": 56,
+          "endLine": 59,
+          "params": [
+            "binaryMessenger",
+            "messageChannelSuffix"
+          ]
+        },
+        {
+          "name": "openNewWindow",
+          "startLine": 63,
+          "endLine": 80,
+          "params": [
+            "completion"
+          ]
+        },
+        {
+          "name": "newInstance",
+          "startLine": 81,
+          "endLine": 98,
+          "params": [
+            "completion"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ApplicationMenuPigeonCodecReader",
+          "startLine": 28,
+          "endLine": 29,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "ApplicationMenuPigeonCodecWriter",
+          "startLine": 31,
+          "endLine": 32,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "ApplicationMenuPigeonCodecReaderWriter",
+          "startLine": 34,
+          "endLine": 42,
+          "methods": [
+            "reader",
+            "writer"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ApplicationMenuPigeonCodec",
+          "startLine": 44,
+          "endLine": 46,
+          "methods": [],
+          "properties": [
+            "shared"
+          ]
+        },
+        {
+          "name": "ApplicationMenuProtocol",
+          "startLine": 49,
+          "endLine": 52,
+          "methods": [
+            "openNewWindow",
+            "newInstance"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ApplicationMenu",
+          "startLine": 53,
+          "endLine": 99,
+          "methods": [
+            "init",
+            "openNewWindow",
+            "newInstance"
+          ],
+          "properties": [
+            "binaryMessenger",
+            "messageChannelSuffix",
+            "codec"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "shared",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "ApplicationMenuPigeonCodec",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "openNewWindow",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "newInstance",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "ApplicationMenuProtocol",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "ApplicationMenu.init",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "codec",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "openNewWindow",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "newInstance",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "ApplicationMenu",
+          "line": 53,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createConnectionError",
+          "callee": "PigeonError",
+          "lineNumber": 15
+        },
+        {
+          "caller": "reader",
+          "callee": "ApplicationMenuPigeonCodecReader",
+          "lineNumber": 36
+        },
+        {
+          "caller": "writer",
+          "callee": "ApplicationMenuPigeonCodecWriter",
+          "lineNumber": 40
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "FlutterBasicMessageChannel",
+          "lineNumber": 65
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "sendMessage",
+          "lineNumber": 66
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "completion",
+          "lineNumber": 68
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "createConnectionError",
+          "lineNumber": 68
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "listResponse",
+          "lineNumber": 72
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "nilOrValue",
+          "lineNumber": 73
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "listResponse",
+          "lineNumber": 73
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "nilOrValue",
+          "lineNumber": 74
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "listResponse",
+          "lineNumber": 74
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "completion",
+          "lineNumber": 75
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "PigeonError",
+          "lineNumber": 75
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "completion",
+          "lineNumber": 77
+        },
+        {
+          "caller": "newInstance",
+          "callee": "FlutterBasicMessageChannel",
+          "lineNumber": 83
+        },
+        {
+          "caller": "newInstance",
+          "callee": "sendMessage",
+          "lineNumber": 84
+        },
+        {
+          "caller": "newInstance",
+          "callee": "completion",
+          "lineNumber": 86
+        },
+        {
+          "caller": "newInstance",
+          "callee": "createConnectionError",
+          "lineNumber": 86
+        },
+        {
+          "caller": "newInstance",
+          "callee": "listResponse",
+          "lineNumber": 90
+        },
+        {
+          "caller": "newInstance",
+          "callee": "nilOrValue",
+          "lineNumber": 91
+        },
+        {
+          "caller": "newInstance",
+          "callee": "listResponse",
+          "lineNumber": 91
+        },
+        {
+          "caller": "newInstance",
+          "callee": "nilOrValue",
+          "lineNumber": 92
+        },
+        {
+          "caller": "newInstance",
+          "callee": "listResponse",
+          "lineNumber": 92
+        },
+        {
+          "caller": "newInstance",
+          "callee": "completion",
+          "lineNumber": 93
+        },
+        {
+          "caller": "newInstance",
+          "callee": "PigeonError",
+          "lineNumber": 93
+        },
+        {
+          "caller": "newInstance",
+          "callee": "completion",
+          "lineNumber": 95
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 10,
+        "classCount": 6
+      }
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 68,
+      "nonEmptyLines": 68,
+      "sections": [
+        {
+          "heading": "images",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "info",
+          "level": 1,
+          "line": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "macos/Runner/Assets.xcassets/Contents.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "sections": [
+        {
+          "heading": "info",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    }
+  ]
+}

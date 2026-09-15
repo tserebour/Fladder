@@ -1,0 +1,3329 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 9,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 9,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/VideoPlayerActivity.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "onCreate",
+          "startLine": 23,
+          "endLine": 41,
+          "params": [
+            "savedInstanceState"
+          ]
+        },
+        {
+          "name": "onPause",
+          "startLine": 43,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "VideoPlayerScreen",
+          "startLine": 49,
+          "endLine": 64,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "VideoPlayerActivity",
+          "startLine": 22,
+          "endLine": 47,
+          "methods": [
+            "onCreate",
+            "onPause"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "onCreate",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "onPause",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "VideoPlayerActivity",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "VideoPlayerScreen",
+          "line": 49,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "onCreate",
+          "callee": "enableEdgeToEdge",
+          "lineNumber": 25
+        },
+        {
+          "caller": "onCreate",
+          "callee": "onCreate",
+          "lineNumber": 26
+        },
+        {
+          "caller": "onCreate",
+          "callee": "setFlags",
+          "lineNumber": 29
+        },
+        {
+          "caller": "onCreate",
+          "callee": "setFormat",
+          "lineNumber": 34
+        },
+        {
+          "caller": "onCreate",
+          "callee": "setContent",
+          "lineNumber": 36
+        },
+        {
+          "caller": "onCreate",
+          "callee": "VideoPlayerTheme",
+          "lineNumber": 37
+        },
+        {
+          "caller": "onCreate",
+          "callee": "VideoPlayerScreen",
+          "lineNumber": 38
+        },
+        {
+          "caller": "onPause",
+          "callee": "onPause",
+          "lineNumber": 44
+        },
+        {
+          "caller": "onPause",
+          "callee": "pause",
+          "lineNumber": 45
+        },
+        {
+          "caller": "VideoPlayerScreen",
+          "callee": "leanBackEnabled",
+          "lineNumber": 53
+        },
+        {
+          "caller": "VideoPlayerScreen",
+          "callee": "ScreenSaver",
+          "lineNumber": 54
+        },
+        {
+          "caller": "VideoPlayerScreen",
+          "callee": "ExoPlayer",
+          "lineNumber": 55
+        },
+        {
+          "caller": "VideoPlayerScreen",
+          "callee": "ScaledContent",
+          "lineNumber": 56
+        },
+        {
+          "caller": "VideoPlayerScreen",
+          "callee": "CustomVideoControls",
+          "lineNumber": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/controls/ProgressBar.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 730,
+      "nonEmptyLines": 670,
+      "functions": [
+        {
+          "name": "ProgressBar",
+          "startLine": 85,
+          "endLine": 110,
+          "params": [
+            "modifier",
+            "player",
+            "bottomControlFocusRequester",
+            "onUserInteraction"
+          ]
+        },
+        {
+          "name": "TVProgressBar",
+          "startLine": 112,
+          "endLine": 244,
+          "params": [
+            "modifier",
+            "player",
+            "tvGuide",
+            "bottomControlFocusRequester",
+            "onUserInteraction"
+          ]
+        },
+        {
+          "name": "StandardProgressBar",
+          "startLine": 246,
+          "endLine": 369,
+          "params": [
+            "modifier",
+            "player",
+            "bottomControlFocusRequester",
+            "onUserInteraction"
+          ]
+        },
+        {
+          "name": "VideoLabel",
+          "startLine": 371,
+          "endLine": 393,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "SimpleProgressBar",
+          "startLine": 395,
+          "endLine": 720,
+          "params": [
+            "player",
+            "playFocusRequester",
+            "onUserInteraction",
+            "tempPosition",
+            "scrubbingTimeLine",
+            "duration",
+            "position",
+            "onTempPosChanged",
+            "onScrubbingChanged"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ProgressBar",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "TVProgressBar",
+          "line": 112,
+          "isDefault": false
+        },
+        {
+          "name": "StandardProgressBar",
+          "line": 246,
+          "isDefault": false
+        },
+        {
+          "name": "SimpleProgressBar",
+          "line": 395,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ProgressBar",
+          "callee": "collectAsState",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ProgressBar",
+          "callee": "let",
+          "lineNumber": 94
+        },
+        {
+          "caller": "ProgressBar",
+          "callee": "TVProgressBar",
+          "lineNumber": 95
+        },
+        {
+          "caller": "ProgressBar",
+          "callee": "run",
+          "lineNumber": 102
+        },
+        {
+          "caller": "ProgressBar",
+          "callee": "StandardProgressBar",
+          "lineNumber": 103
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "collectAsState",
+          "lineNumber": 120
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "remember",
+          "lineNumber": 123
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 123
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "remember",
+          "lineNumber": 124
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 124
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "LaunchedEffect",
+          "lineNumber": 126
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "currentTimeMillis",
+          "lineNumber": 129
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "delay",
+          "lineNumber": 136
+        },
+        {
+          "caller": "calculatedDateFromLong",
+          "callee": "ofEpochMilli",
+          "lineNumber": 142
+        },
+        {
+          "caller": "calculatedDateFromLong",
+          "callee": "systemDefault",
+          "lineNumber": 143
+        },
+        {
+          "caller": "calculatedDateFromLong",
+          "callee": "format",
+          "lineNumber": 144
+        },
+        {
+          "caller": "calculatedDateFromLong",
+          "callee": "withZone",
+          "lineNumber": 144
+        },
+        {
+          "caller": "calculatedDateFromLong",
+          "callee": "getInstance",
+          "lineNumber": 148
+        },
+        {
+          "caller": "calculatedDateFromLong",
+          "callee": "SimpleDateFormat",
+          "lineNumber": 151
+        },
+        {
+          "caller": "calculatedDateFromLong",
+          "callee": "getDefault",
+          "lineNumber": 153
+        },
+        {
+          "caller": "calculatedDateFromLong",
+          "callee": "format",
+          "lineNumber": 156
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "Column",
+          "lineNumber": 160
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "spacedBy",
+          "lineNumber": 161
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "Row",
+          "lineNumber": 163
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "spacedBy",
+          "lineNumber": 164
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "let",
+          "lineNumber": 167
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "Translate",
+          "lineNumber": 168
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "endsAt",
+          "lineNumber": 169
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "calculatedDateFromLong",
+          "lineNumber": 169
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "joinToString",
+          "lineNumber": 172
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "filterNot",
+          "lineNumber": 172
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "listOf",
+          "lineNumber": 172
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "isBlank",
+          "lineNumber": 175
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "isNotBlank",
+          "lineNumber": 176
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "Text",
+          "lineNumber": 177
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "copy",
+          "lineNumber": 179
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "weight",
+          "lineNumber": 183
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "VideoLabel",
+          "lineNumber": 190
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "VideoLabel",
+          "lineNumber": 191
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "Row",
+          "lineNumber": 194
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "spacedBy",
+          "lineNumber": 195
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "fillMaxWidth",
+          "lineNumber": 200
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "copy",
+          "lineNumber": 202
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "measureTextWidth",
+          "lineNumber": 206
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "formatTime",
+          "lineNumber": 206
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "Text",
+          "lineNumber": 208
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "formatTime",
+          "lineNumber": 209
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "widthIn",
+          "lineNumber": 211
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "SimpleProgressBar",
+          "lineNumber": 216
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "Text",
+          "lineNumber": 229
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "formatTime",
+          "lineNumber": 230
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "fastCoerceIn",
+          "lineNumber": 231
+        },
+        {
+          "caller": "TVProgressBar",
+          "callee": "widthIn",
+          "lineNumber": 238
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "collectAsState",
+          "lineNumber": 253
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "collectAsState",
+          "lineNumber": 254
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "collectAsState",
+          "lineNumber": 256
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "remember",
+          "lineNumber": 258
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 258
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "remember",
+          "lineNumber": 259
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "mutableStateOf",
+          "lineNumber": 259
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "collectAsState",
+          "lineNumber": 261
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "remember",
+          "lineNumber": 263
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "derivedStateOf",
+          "lineNumber": 264
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "Column",
+          "lineNumber": 273
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "spacedBy",
+          "lineNumber": 274
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "collectAsState",
+          "lineNumber": 276
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "FilmstripTrickPlayOverlay",
+          "lineNumber": 278
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "align",
+          "lineNumber": 279
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "padding",
+          "lineNumber": 279
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "height",
+          "lineNumber": 279
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "fillMaxWidth",
+          "lineNumber": 279
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "Row",
+          "lineNumber": 287
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "spacedBy",
+          "lineNumber": 288
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "Translate",
+          "lineNumber": 291
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "endsAt",
+          "lineNumber": 291
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "listOf",
+          "lineNumber": 292
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "joinToString",
+          "lineNumber": 297
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "filterNot",
+          "lineNumber": 297
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "isNullOrBlank",
+          "lineNumber": 297
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "isNotBlank",
+          "lineNumber": 299
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "Text",
+          "lineNumber": 300
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "copy",
+          "lineNumber": 302
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "weight",
+          "lineNumber": 306
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "VideoLabel",
+          "lineNumber": 313
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "VideoLabel",
+          "lineNumber": 314
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "Row",
+          "lineNumber": 316
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "spacedBy",
+          "lineNumber": 317
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "fillMaxWidth",
+          "lineNumber": 322
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "copy",
+          "lineNumber": 324
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "measureTextWidth",
+          "lineNumber": 329
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "formatTime",
+          "lineNumber": 329
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "Text",
+          "lineNumber": 331
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "formatTime",
+          "lineNumber": 332
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "widthIn",
+          "lineNumber": 334
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "SimpleProgressBar",
+          "lineNumber": 339
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "Text",
+          "lineNumber": 354
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "formatTime",
+          "lineNumber": 355
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "fastCoerceIn",
+          "lineNumber": 356
+        },
+        {
+          "caller": "StandardProgressBar",
+          "callee": "widthIn",
+          "lineNumber": 363
+        },
+        {
+          "caller": "VideoLabel",
+          "callee": "isNullOrBlank",
+          "lineNumber": 373
+        },
+        {
+          "caller": "VideoLabel",
+          "callee": "Box",
+          "lineNumber": 375
+        },
+        {
+          "caller": "VideoLabel",
+          "callee": "padding",
+          "lineNumber": 376
+        },
+        {
+          "caller": "VideoLabel",
+          "callee": "wrapContentSize",
+          "lineNumber": 376
+        },
+        {
+          "caller": "VideoLabel",
+          "callee": "background",
+          "lineNumber": 376
+        },
+        {
+          "caller": "VideoLabel",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 379
+        },
+        {
+          "caller": "VideoLabel",
+          "callee": "Text",
+          "lineNumber": 385
+        },
+        {
+          "caller": "VideoLabel",
+          "callee": "copy",
+          "lineNumber": 387
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "collectAsState",
+          "lineNumber": 407
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "remember",
+          "lineNumber": 409
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "mutableIntStateOf",
+          "lineNumber": 409
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "collectAsState",
+          "lineNumber": 410
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "collectAsState",
+          "lineNumber": 411
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 416
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "remember",
+          "lineNumber": 418
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "mutableStateOf",
+          "lineNumber": 418
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "remember",
+          "lineNumber": 420
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 420
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "remember",
+          "lineNumber": 422
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "derivedStateOf",
+          "lineNumber": 428
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toFloat",
+          "lineNumber": 431
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toFloat",
+          "lineNumber": 431
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toFloat",
+          "lineNumber": 433
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toFloat",
+          "lineNumber": 433
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "Box",
+          "lineNumber": 438
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "pointerInput",
+          "lineNumber": 439
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "pointerInput",
+          "lineNumber": 439
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "heightIn",
+          "lineNumber": 439
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onGloballyPositioned",
+          "lineNumber": 439
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "weight",
+          "lineNumber": 439
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "detectTapGestures",
+          "lineNumber": 448
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onUserInteraction",
+          "lineNumber": 449
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toFloat",
+          "lineNumber": 450
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDouble",
+          "lineNumber": 452
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "seekTo",
+          "lineNumber": 453
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toLong",
+          "lineNumber": 453
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "detectDragGestures",
+          "lineNumber": 457
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onScrubbingChanged",
+          "lineNumber": 459
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onUserInteraction",
+          "lineNumber": 460
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onTempPosChanged",
+          "lineNumber": 461
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onUserInteraction",
+          "lineNumber": 464
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "consume",
+          "lineNumber": 465
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toFloat",
+          "lineNumber": 466
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toLong",
+          "lineNumber": 468
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDouble",
+          "lineNumber": 468
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onTempPosChanged",
+          "lineNumber": 470
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onScrubbingChanged",
+          "lineNumber": 475
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "seekTo",
+          "lineNumber": 476
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onScrubbingChanged",
+          "lineNumber": 479
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "Box",
+          "lineNumber": 485
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "background",
+          "lineNumber": 486
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "height",
+          "lineNumber": 486
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "fillMaxWidth",
+          "lineNumber": 486
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "focusable",
+          "lineNumber": 486
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "copy",
+          "lineNumber": 491
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "animateColorAsState",
+          "lineNumber": 498
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "Box",
+          "lineNumber": 502
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "background",
+          "lineNumber": 503
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "padding",
+          "lineNumber": 503
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "fillMaxWidth",
+          "lineNumber": 503
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "fillMaxHeight",
+          "lineNumber": 503
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "focusable",
+          "lineNumber": 503
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDuration",
+          "lineNumber": 517
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "forEach",
+          "lineNumber": 518
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "max",
+          "lineNumber": 519
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDouble",
+          "lineNumber": 521
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDuration",
+          "lineNumber": 521
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "max",
+          "lineNumber": 524
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDouble",
+          "lineNumber": 526
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDuration",
+          "lineNumber": 526
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "coerceAtLeast",
+          "lineNumber": 529
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDouble",
+          "lineNumber": 529
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toFloat",
+          "lineNumber": 533
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "coerceAtLeast",
+          "lineNumber": 535
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toFloat",
+          "lineNumber": 535
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "with",
+          "lineNumber": 537
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDp",
+          "lineNumber": 537
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "Box",
+          "lineNumber": 538
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "background",
+          "lineNumber": 539
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "height",
+          "lineNumber": 539
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "width",
+          "lineNumber": 539
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "graphicsLayer",
+          "lineNumber": 539
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "focusable",
+          "lineNumber": 539
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toPx",
+          "lineNumber": 543
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "copy",
+          "lineNumber": 548
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 549
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "listOf",
+          "lineNumber": 556
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "forEach",
+          "lineNumber": 557
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDouble",
+          "lineNumber": 558
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDuration",
+          "lineNumber": 558
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDouble",
+          "lineNumber": 560
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "max",
+          "lineNumber": 561
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "coerceAtLeast",
+          "lineNumber": 566
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toDouble",
+          "lineNumber": 566
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toFloat",
+          "lineNumber": 567
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "animateDpAsState",
+          "lineNumber": 569
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "Box",
+          "lineNumber": 574
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "background",
+          "lineNumber": 575
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "height",
+          "lineNumber": 575
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "width",
+          "lineNumber": 575
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "graphicsLayer",
+          "lineNumber": 575
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "focusable",
+          "lineNumber": 575
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "padding",
+          "lineNumber": 575
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "align",
+          "lineNumber": 575
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "copy",
+          "lineNumber": 585
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "copy",
+          "lineNumber": 587
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "animateDpAsState",
+          "lineNumber": 594
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "remember",
+          "lineNumber": 600
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "mutableIntStateOf",
+          "lineNumber": 600
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "remember",
+          "lineNumber": 601
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 601
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "remember",
+          "lineNumber": 604
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 604
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "currentTimeMillis",
+          "lineNumber": 604
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "LaunchedEffect",
+          "lineNumber": 607
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "delay",
+          "lineNumber": 608
+        },
+        {
+          "caller": "updateLastInteraction",
+          "callee": "currentTimeMillis",
+          "lineNumber": 613
+        },
+        {
+          "caller": "scrubSpeedResult",
+          "callee": "coerceIn",
+          "lineNumber": 619
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "Box",
+          "lineNumber": 625
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "height",
+          "lineNumber": 626
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "width",
+          "lineNumber": 626
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "background",
+          "lineNumber": 626
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "graphicsLayer",
+          "lineNumber": 626
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onKeyEvent",
+          "lineNumber": 626
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "focusable",
+          "lineNumber": 626
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onFocusChanged",
+          "lineNumber": 626
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onScrubbingChanged",
+          "lineNumber": 630
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onTempPosChanged",
+          "lineNumber": 632
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onUserInteraction",
+          "lineNumber": 639
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "requestFocus",
+          "lineNumber": 643
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onScrubbingChanged",
+          "lineNumber": 644
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onTempPosChanged",
+          "lineNumber": 656
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onScrubbingChanged",
+          "lineNumber": 657
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "pause",
+          "lineNumber": 658
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "max",
+          "lineNumber": 660
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "scrubSpeedResult",
+          "lineNumber": 662
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onTempPosChanged",
+          "lineNumber": 664
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "updateLastInteraction",
+          "lineNumber": 665
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onTempPosChanged",
+          "lineNumber": 677
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onScrubbingChanged",
+          "lineNumber": 678
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "pause",
+          "lineNumber": 679
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "min",
+          "lineNumber": 681
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "takeIf",
+          "lineNumber": 681
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "scrubSpeedResult",
+          "lineNumber": 682
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onTempPosChanged",
+          "lineNumber": 683
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "updateLastInteraction",
+          "lineNumber": 684
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "seekTo",
+          "lineNumber": 690
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "play",
+          "lineNumber": 691
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onScrubbingChanged",
+          "lineNumber": 692
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "onScrubbingChanged",
+          "lineNumber": 699
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "play",
+          "lineNumber": 700
+        },
+        {
+          "caller": "SimpleProgressBar",
+          "callee": "toPx",
+          "lineNumber": 710
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/dialogs/AudioSelection.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 101,
+      "functions": [
+        {
+          "name": "AudioPicker",
+          "startLine": 26,
+          "endLine": 114,
+          "params": [
+            "player",
+            "onDismissRequest"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AudioPicker",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AudioPicker",
+          "callee": "collectAsState",
+          "lineNumber": 32
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "collectAsState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "emptyList",
+          "lineNumber": 33
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "collectAsState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "emptyList",
+          "lineNumber": 34
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "isEmpty",
+          "lineNumber": 36
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "remember",
+          "lineNumber": 38
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "FocusRequester",
+          "lineNumber": 38
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "remember",
+          "lineNumber": 39
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "associateWith",
+          "lineNumber": 40
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "FocusRequester",
+          "lineNumber": 40
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "rememberLazyListState",
+          "lineNumber": 43
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "LaunchedEffect",
+          "lineNumber": 45
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "requestFocus",
+          "lineNumber": 47
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "indexOfFirst",
+          "lineNumber": 51
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "toLong",
+          "lineNumber": 51
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "requestFocus",
+          "lineNumber": 54
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "scrollToItem",
+          "lineNumber": 61
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "requestFocus",
+          "lineNumber": 62
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "CustomModalBottomSheet",
+          "lineNumber": 65
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "LazyColumn",
+          "lineNumber": 69
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "padding",
+          "lineNumber": 71
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "fillMaxWidth",
+          "lineNumber": 71
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "item",
+          "lineNumber": 75
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "TrackButton",
+          "lineNumber": 77
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "focusRequester",
+          "lineNumber": 78
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "fillMaxWidth",
+          "lineNumber": 78
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "setAudioTrackIndex",
+          "lineNumber": 82
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "clearAudioTrack",
+          "lineNumber": 83
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "Translate",
+          "lineNumber": 87
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "Text",
+          "lineNumber": 88
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "forEachIndexed",
+          "lineNumber": 93
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "elementAtOrNull",
+          "lineNumber": 94
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "toInt",
+          "lineNumber": 95
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "item",
+          "lineNumber": 97
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "TrackButton",
+          "lineNumber": 98
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "focusRequester",
+          "lineNumber": 99
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "fillMaxWidth",
+          "lineNumber": 99
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "let",
+          "lineNumber": 103
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "setAudioTrackIndex",
+          "lineNumber": 103
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "toInt",
+          "lineNumber": 103
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "setInternalAudioTrack",
+          "lineNumber": 104
+        },
+        {
+          "caller": "AudioPicker",
+          "callee": "Text",
+          "lineNumber": 108
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/guide/GuideOverlay.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 312,
+      "nonEmptyLines": 281,
+      "functions": [
+        {
+          "name": "GuideOverlay",
+          "startLine": 55,
+          "endLine": 243,
+          "params": [
+            "modifier",
+            "overlay"
+          ]
+        },
+        {
+          "name": "GuideRows",
+          "startLine": 245,
+          "endLine": 312,
+          "params": [
+            "modifier",
+            "currentChannel",
+            "channels",
+            "startDate",
+            "endDate",
+            "horizontalScrollState",
+            "focusRequesters",
+            "listState",
+            "now",
+            "onProgramSelected"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "GuideOverlay",
+          "line": 55,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GuideOverlay",
+          "callee": "collectAsState",
+          "lineNumber": 60
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "remember",
+          "lineNumber": 61
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "mutableStateOf",
+          "lineNumber": 61
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "emptyList",
+          "lineNumber": 61
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "collectAsState",
+          "lineNumber": 62
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "BackHandler",
+          "lineNumber": 64
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "remember",
+          "lineNumber": 72
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "FocusRequester",
+          "lineNumber": 72
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "remember",
+          "lineNumber": 76
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 76
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "currentTimeMillis",
+          "lineNumber": 76
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "collectAsState",
+          "lineNumber": 78
+        },
+        {
+          "caller": "loadChannel",
+          "callee": "loadProgram",
+          "lineNumber": 82
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "LaunchedEffect",
+          "lineNumber": 87
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "currentTimeMillis",
+          "lineNumber": 89
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "delay",
+          "lineNumber": 90
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "remember",
+          "lineNumber": 95
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "mutableStateOf",
+          "lineNumber": 95
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "remember",
+          "lineNumber": 97
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "derivedStateOf",
+          "lineNumber": 98
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "remember",
+          "lineNumber": 103
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "mutableStateOf",
+          "lineNumber": 103
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "firstOrNull",
+          "lineNumber": 103
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "remember",
+          "lineNumber": 105
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "mutableStateOf",
+          "lineNumber": 105
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "remember",
+          "lineNumber": 106
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "mutableStateOf",
+          "lineNumber": 106
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "remember",
+          "lineNumber": 107
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "mutableStateOf",
+          "lineNumber": 107
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "rememberScrollState",
+          "lineNumber": 109
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "rememberLazyListState",
+          "lineNumber": 110
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "remember",
+          "lineNumber": 112
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "flatMap",
+          "lineNumber": 113
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "remember",
+          "lineNumber": 116
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "associateWith",
+          "lineNumber": 117
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "FocusRequester",
+          "lineNumber": 117
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "LaunchedEffect",
+          "lineNumber": 120
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "let",
+          "lineNumber": 122
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "firstOrNull",
+          "lineNumber": 122
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "delay",
+          "lineNumber": 123
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "requestFocus",
+          "lineNumber": 124
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "captureFocus",
+          "lineNumber": 125
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "LaunchedEffect",
+          "lineNumber": 130
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "delay",
+          "lineNumber": 134
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "with",
+          "lineNumber": 136
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "toPx",
+          "lineNumber": 136
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "toFloat",
+          "lineNumber": 138
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "coerceAtLeast",
+          "lineNumber": 139
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "toInt",
+          "lineNumber": 139
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "coerceIn",
+          "lineNumber": 142
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "indexOfFirst",
+          "lineNumber": 144
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "animateScrollTo",
+          "lineNumber": 146
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "animateScrollToItem",
+          "lineNumber": 147
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "Box",
+          "lineNumber": 151
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "conditional",
+          "lineNumber": 152
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "focusRequester",
+          "lineNumber": 152
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "background",
+          "lineNumber": 152
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "fillMaxSize",
+          "lineNumber": 152
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "keyEvent",
+          "lineNumber": 157
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "Column",
+          "lineNumber": 172
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "visible",
+          "lineNumber": 173
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "fillMaxSize",
+          "lineNumber": 173
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "GuideDetailView",
+          "lineNumber": 177
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "align",
+          "lineNumber": 178
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "Box",
+          "lineNumber": 183
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "fillMaxWidth",
+          "lineNumber": 184
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "weight",
+          "lineNumber": 184
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "GuideRows",
+          "lineNumber": 188
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "fillMaxSize",
+          "lineNumber": 189
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "animateFloatAsState",
+          "lineNumber": 210
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "Box",
+          "lineNumber": 215
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "align",
+          "lineNumber": 216
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "fillMaxSize",
+          "lineNumber": 216
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "overlay",
+          "lineNumber": 220
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "ChannelSwitchConfirmDialog",
+          "lineNumber": 223
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "let",
+          "lineNumber": 228
+        },
+        {
+          "caller": "GuideOverlay",
+          "callee": "loadChannel",
+          "lineNumber": 229
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "currentTimeMillis",
+          "lineNumber": 255
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "remember",
+          "lineNumber": 258
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "toDuration",
+          "lineNumber": 259
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "toFloat",
+          "lineNumber": 261
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "Box",
+          "lineNumber": 263
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "LazyColumn",
+          "lineNumber": 264
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "fillMaxSize",
+          "lineNumber": 265
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "stickyHeader",
+          "lineNumber": 268
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "Row",
+          "lineNumber": 269
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "background",
+          "lineNumber": 270
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "fillMaxWidth",
+          "lineNumber": 270
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "height",
+          "lineNumber": 270
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "Spacer",
+          "lineNumber": 275
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "width",
+          "lineNumber": 275
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "Box",
+          "lineNumber": 276
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "horizontalScroll",
+          "lineNumber": 277
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "weight",
+          "lineNumber": 277
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "TimeLine",
+          "lineNumber": 281
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "width",
+          "lineNumber": 282
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "itemsIndexed",
+          "lineNumber": 290
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "GuideRow",
+          "lineNumber": 291
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "fillMaxWidth",
+          "lineNumber": 292
+        },
+        {
+          "caller": "GuideRows",
+          "callee": "NowIndicator",
+          "lineNumber": 304
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/fake/FakeHelperObjects.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 68,
+      "classes": [
+        {
+          "name": "FakeHelperObjects",
+          "startLine": 11,
+          "endLine": 75,
+          "methods": [],
+          "properties": [
+            "POSTER_URL",
+            "CHANNEL_LOGO",
+            "tvGuide",
+            "startDate",
+            "channels"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "tvGuide",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "startDate",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "channels",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "FakeHelperObjects",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/objects/VideoPlayerObject.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 108,
+      "nonEmptyLines": 89,
+      "functions": [
+        {
+          "name": "setSubtitleTrackIndex",
+          "startLine": 63,
+          "endLine": 68,
+          "params": [
+            "value",
+            "init"
+          ]
+        },
+        {
+          "name": "setAudioTrackIndex",
+          "startLine": 70,
+          "endLine": 75,
+          "params": [
+            "value",
+            "init"
+          ]
+        },
+        {
+          "name": "setPlaybackState",
+          "startLine": 90,
+          "endLine": 95,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "toggleGuideVisibility",
+          "startLine": 103,
+          "endLine": 105,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "VideoPlayerObject",
+          "startLine": 17,
+          "endLine": 108,
+          "methods": [
+            "setSubtitleTrackIndex",
+            "setAudioTrackIndex",
+            "setPlaybackState",
+            "toggleGuideVisibility"
+          ],
+          "properties": [
+            "implementation",
+            "_currentState",
+            "videoPlayerState",
+            "buffering",
+            "position",
+            "duration",
+            "playing",
+            "chapters",
+            "nextUpVideo",
+            "endTime",
+            "currentSubtitleTrackIndex",
+            "currentAudioTrackIndex",
+            "exoAudioTracks",
+            "exoSubTracks",
+            "subtitleTracks",
+            "audioTracks",
+            "hasSubtracks",
+            "hasAudioTracks",
+            "videoPlayerListener",
+            "videoPlayerControls",
+            "tvGuide",
+            "guideVisible",
+            "currentActivity"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "implementation",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "videoPlayerState",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "buffering",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "position",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "duration",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "playing",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "chapters",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "nextUpVideo",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "endTime",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "currentSubtitleTrackIndex",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "currentAudioTrackIndex",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "exoAudioTracks",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "exoSubTracks",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "setSubtitleTrackIndex",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "setAudioTrackIndex",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "subtitleTracks",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "audioTracks",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "hasSubtracks",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "hasAudioTracks",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "setPlaybackState",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "videoPlayerListener",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "videoPlayerControls",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "tvGuide",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "guideVisible",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "toggleGuideVisibility",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "currentActivity",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "VideoPlayerObject",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "setSubtitleTrackIndex",
+          "callee": "swapSubtitleTrack",
+          "lineNumber": 66
+        },
+        {
+          "caller": "setSubtitleTrackIndex",
+          "callee": "toLong",
+          "lineNumber": 66
+        },
+        {
+          "caller": "setAudioTrackIndex",
+          "callee": "swapAudioTrack",
+          "lineNumber": 73
+        },
+        {
+          "caller": "setAudioTrackIndex",
+          "callee": "toLong",
+          "lineNumber": 73
+        },
+        {
+          "caller": "setPlaybackState",
+          "callee": "onPlaybackStateChanged",
+          "lineNumber": 92
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 27,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/player/ExoPlayer.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 313,
+      "nonEmptyLines": 283,
+      "functions": [
+        {
+          "name": "ExoPlayer",
+          "startLine": 62,
+          "endLine": 313,
+          "params": [
+            "controls"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ExoPlayer",
+          "line": 62,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ExoPlayer",
+          "callee": "apply",
+          "lineNumber": 72
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "DefaultExtractorsFactory",
+          "lineNumber": 72
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "getSystemService",
+          "lineNumber": 73
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setTsExtractorTimestampSearchBytes",
+          "lineNumber": 74
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setConstantBitrateSeekingEnabled",
+          "lineNumber": 80
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setConstantBitrateSeekingAlwaysEnabled",
+          "lineNumber": 81
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "remember",
+          "lineNumber": 84
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "Factory",
+          "lineNumber": 85
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "Factory",
+          "lineNumber": 85
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "build",
+          "lineNumber": 88
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setContentType",
+          "lineNumber": 88
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setUsage",
+          "lineNumber": 88
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "Builder",
+          "lineNumber": 88
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setEnableDecoderFallback",
+          "lineNumber": 93
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setExtensionRendererMode",
+          "lineNumber": 93
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "DefaultRenderersFactory",
+          "lineNumber": 93
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "apply",
+          "lineNumber": 97
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "DefaultTrackSelector",
+          "lineNumber": 97
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setParameters",
+          "lineNumber": 98
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "apply",
+          "lineNumber": 98
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "buildUponParameters",
+          "lineNumber": 98
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setAudioOffloadPreferences",
+          "lineNumber": 99
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "build",
+          "lineNumber": 100
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "apply",
+          "lineNumber": 100
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "buildUpon",
+          "lineNumber": 100
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setAudioOffloadMode",
+          "lineNumber": 101
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setTunnelingEnabled",
+          "lineNumber": 104
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setAllowInvalidateSelectionsOnRendererCapabilitiesChange",
+          "lineNumber": 105
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "remember",
+          "lineNumber": 109
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "buildWithAssSupport",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setVideoScalingMode",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setPauseAtEndOfMediaItems",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setHandleAudioBecomingNoisy",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setAudioAttributes",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setMediaSourceFactory",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "setTrackSelector",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "Builder",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "DefaultMediaSourceFactory",
+          "lineNumber": 112
+        },
+        {
+          "caller": "updatePlaybackState",
+          "callee": "setPlaybackState",
+          "lineNumber": 126
+        },
+        {
+          "caller": "updatePlaybackState",
+          "callee": "PlaybackState",
+          "lineNumber": 127
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "LaunchedEffect",
+          "lineNumber": 139
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "updatePlaybackState",
+          "lineNumber": 141
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "delay",
+          "lineNumber": 142
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "DisposableEffect",
+          "lineNumber": 148
+        },
+        {
+          "caller": "onIsPlayingChanged",
+          "callee": "let",
+          "lineNumber": 151
+        },
+        {
+          "caller": "onIsPlayingChanged",
+          "callee": "addFlags",
+          "lineNumber": 153
+        },
+        {
+          "caller": "onIsPlayingChanged",
+          "callee": "clearFlags",
+          "lineNumber": 155
+        },
+        {
+          "caller": "onIsPlayingChanged",
+          "callee": "onIsPlayingChanged",
+          "lineNumber": 158
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "setPlaybackState",
+          "lineNumber": 162
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "PlaybackState",
+          "lineNumber": 163
+        },
+        {
+          "caller": "onEvents",
+          "callee": "onEvents",
+          "lineNumber": 176
+        },
+        {
+          "caller": "onEvents",
+          "callee": "updatePlaybackState",
+          "lineNumber": 177
+        },
+        {
+          "caller": "onTracksChanged",
+          "callee": "onTracksChanged",
+          "lineNumber": 181
+        },
+        {
+          "caller": "onTracksChanged",
+          "callee": "getSubtitleTracks",
+          "lineNumber": 182
+        },
+        {
+          "caller": "onTracksChanged",
+          "callee": "getAudioTracks",
+          "lineNumber": 183
+        },
+        {
+          "caller": "onTracksChanged",
+          "callee": "isEmpty",
+          "lineNumber": 187
+        },
+        {
+          "caller": "onTracksChanged",
+          "callee": "isEmpty",
+          "lineNumber": 187
+        },
+        {
+          "caller": "onTracksChanged",
+          "callee": "postDelayed",
+          "lineNumber": 192
+        },
+        {
+          "caller": "onTracksChanged",
+          "callee": "Handler",
+          "lineNumber": 192
+        },
+        {
+          "caller": "onTracksChanged",
+          "callee": "getMainLooper",
+          "lineNumber": 192
+        },
+        {
+          "caller": "onTracksChanged",
+          "callee": "let",
+          "lineNumber": 193
+        },
+        {
+          "caller": "onTracksChanged",
+          "callee": "properlySetSubAndAudioTracks",
+          "lineNumber": 194
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "addListener",
+          "lineNumber": 203
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "onDispose",
+          "lineNumber": 204
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "removeListener",
+          "lineNumber": 205
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "DisposableEffect",
+          "lineNumber": 209
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "init",
+          "lineNumber": 210
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "onDispose",
+          "lineNumber": 211
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "onStop",
+          "lineNumber": 212
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "init",
+          "lineNumber": 215
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "release",
+          "lineNumber": 216
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "collectAsState",
+          "lineNumber": 220
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "emptyList",
+          "lineNumber": 220
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "collectAsState",
+          "lineNumber": 221
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "collectAsState",
+          "lineNumber": 222
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "collectAsState",
+          "lineNumber": 224
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "collectAsState",
+          "lineNumber": 225
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "AndroidView",
+          "lineNumber": 229
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "conditional",
+          "lineNumber": 230
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "background",
+          "lineNumber": 230
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "fillMaxSize",
+          "lineNumber": 230
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "displayCutoutPadding",
+          "lineNumber": 234
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "apply",
+          "lineNumber": 237
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "PlayerView",
+          "lineNumber": 237
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "LayoutParams",
+          "lineNumber": 241
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "apply",
+          "lineNumber": 246
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "setStyle",
+          "lineNumber": 247
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "CaptionStyleCompat",
+          "lineNumber": 248
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "let",
+          "lineNumber": 261
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "apply",
+          "lineNumber": 262
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "setApplyEmbeddedFontSizes",
+          "lineNumber": 263
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "coerceIn",
+          "lineNumber": 266
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "toFloat",
+          "lineNumber": 266
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "setFractionalTextSize",
+          "lineNumber": 267
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "setBottomPaddingFraction",
+          "lineNumber": 269
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "coerceIn",
+          "lineNumber": 270
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "toFloat",
+          "lineNumber": 270
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "setStyle",
+          "lineNumber": 273
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "CaptionStyleCompat",
+          "lineNumber": 274
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "toInt",
+          "lineNumber": 275
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "toInt",
+          "lineNumber": 276
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "toInt",
+          "lineNumber": 279
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "CompositionLocalProvider",
+          "lineNumber": 288
+        },
+        {
+          "caller": "createPlayer",
+          "callee": "controls",
+          "lineNumber": 289
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "AllowedOrientations",
+          "lineNumber": 293
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "GuideOverlay",
+          "lineNumber": 297
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "fillMaxSize",
+          "lineNumber": 298
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "createPlayer",
+          "lineNumber": 300
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "NextUpOverlay",
+          "lineNumber": 304
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "fillMaxSize",
+          "lineNumber": 305
+        },
+        {
+          "caller": "ExoPlayer",
+          "callee": "createPlayer",
+          "lineNumber": 308
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/AllowedOrientations.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 45,
+      "functions": [
+        {
+          "name": "AllowedOrientations",
+          "startLine": 9,
+          "endLine": 28,
+          "params": [
+            "allowed",
+            "content"
+          ]
+        },
+        {
+          "name": "toRequestedOrientation",
+          "startLine": 30,
+          "endLine": 60,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AllowedOrientations",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AllowedOrientations",
+          "callee": "DisposableEffect",
+          "lineNumber": 16
+        },
+        {
+          "caller": "AllowedOrientations",
+          "callee": "toRequestedOrientation",
+          "lineNumber": 19
+        },
+        {
+          "caller": "AllowedOrientations",
+          "callee": "onDispose",
+          "lineNumber": 22
+        },
+        {
+          "caller": "AllowedOrientations",
+          "callee": "let",
+          "lineNumber": 23
+        },
+        {
+          "caller": "AllowedOrientations",
+          "callee": "content",
+          "lineNumber": 27
+        },
+        {
+          "caller": "toRequestedOrientation",
+          "callee": "contains",
+          "lineNumber": 31
+        },
+        {
+          "caller": "toRequestedOrientation",
+          "callee": "contains",
+          "lineNumber": 32
+        },
+        {
+          "caller": "toRequestedOrientation",
+          "callee": "contains",
+          "lineNumber": 33
+        },
+        {
+          "caller": "toRequestedOrientation",
+          "callee": "contains",
+          "lineNumber": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/ScaledContent.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "ScaledContent",
+          "startLine": 8,
+          "endLine": 23,
+          "params": [
+            "scale",
+            "fontScale",
+            "content"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ScaledContent",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ScaledContent",
+          "callee": "CompositionLocalProvider",
+          "lineNumber": 15
+        },
+        {
+          "caller": "ScaledContent",
+          "callee": "Density",
+          "lineNumber": 16
+        },
+        {
+          "caller": "ScaledContent",
+          "callee": "content",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 2,
+  "filesSkipped": [
+    ".dockerignore"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 2,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 2
+    }
+  },
+  "results": [
+    {
+      "path": "Dockerfile",
+      "language": "dockerfile",
+      "fileCategory": "infra",
+      "totalLines": 18,
+      "nonEmptyLines": 13,
+      "services": [
+        {
+          "name": "nginx",
+          "image": "nginx:alpine",
+          "ports": [
+            80
+          ],
+          "startLine": 1,
+          "endLine": 19
+        }
+      ],
+      "steps": [
+        {
+          "name": "FROM nginx:alpine",
+          "startLine": 1,
+          "endLine": 1
+        },
+        {
+          "name": "EXPOSE 80",
+          "startLine": 3,
+          "endLine": 3
+        },
+        {
+          "name": "ENV BASE_URL=\"\"",
+          "startLine": 5,
+          "endLine": 5
+        },
+        {
+          "name": "ENV SEERR_BASE_URL=\"\"",
+          "startLine": 6,
+          "endLine": 6
+        },
+        {
+          "name": "ENV SEERR_HEADER=\"null\"",
+          "startLine": 7,
+          "endLine": 7
+        },
+        {
+          "name": "ENV FLADDER_WEBPATH=\"/\"",
+          "startLine": 8,
+          "endLine": 8
+        },
+        {
+          "name": "COPY build/web /usr/share/nginx/html",
+          "startLine": 10,
+          "endLine": 10
+        },
+        {
+          "name": "COPY docker-entrypoint.sh /docker-entrypoint.sh",
+          "startLine": 11,
+          "endLine": 11
+        },
+        {
+          "name": "RUN mkdir -p /usr/share/nginx/html/assets/config && \\",
+          "startLine": 13,
+          "endLine": 13
+        },
+        {
+          "name": "CMD [\"/docker-entrypoint.sh\"]",
+          "startLine": 18,
+          "endLine": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "serviceCount": 1,
+        "stepCount": 10
+      }
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "fileCategory": "infra",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "services",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    }
+  ]
+}

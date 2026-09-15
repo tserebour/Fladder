@@ -1,0 +1,1447 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 12,
+  "filesSkipped": [
+    "android/app/src/main/res/drawable-night-v21/launch_background.xml",
+    "android/app/src/main/res/drawable-night/launch_background.xml",
+    "android/app/src/main/res/drawable-v21/launch_background.xml",
+    "android/app/src/main/res/drawable/launch_background.xml",
+    "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "android/app/src/main/res/mipmap-anydpi-v26/launcher_icon.xml",
+    "android/app/src/main/res/values-night-v31/styles.xml",
+    "android/app/src/main/res/values-night/styles.xml",
+    "android/app/src/main/res/values-v31/styles.xml",
+    "android/app/src/main/res/values/colors.xml",
+    "android/app/src/main/res/values/styles.xml",
+    "android/app/src/main/res/xml/wallpaper_file_paths.xml",
+    "android/app/src/production/res/mipmap-anydpi-v26/ic_launcher.xml"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 12,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 12,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/Capitalize.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/DateHelpers.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "toEpochMillis",
+          "startLine": 8,
+          "endLine": 11,
+          "params": [
+            "zone"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "toEpochMillis",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toEpochMillis",
+          "callee": "systemDefault",
+          "lineNumber": 9
+        },
+        {
+          "caller": "toEpochMillis",
+          "callee": "toEpochMilli",
+          "lineNumber": 10
+        },
+        {
+          "caller": "toEpochMillis",
+          "callee": "toInstant",
+          "lineNumber": 10
+        },
+        {
+          "caller": "toEpochMillis",
+          "callee": "atZone",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/FormatTime.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "formatTime",
+          "startLine": 9,
+          "endLine": 17,
+          "params": [
+            "ms"
+          ]
+        },
+        {
+          "name": "formatTimeHMS",
+          "startLine": 19,
+          "endLine": 28,
+          "params": [
+            "ms"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "formatTime",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "formatTimeHMS",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "formatTime",
+          "callee": "format",
+          "lineNumber": 16
+        },
+        {
+          "caller": "formatTimeHMS",
+          "callee": "format",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/KeyHandler.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 41,
+      "functions": [
+        {
+          "name": "keyEvent",
+          "startLine": 29,
+          "endLine": 44,
+          "params": [
+            "additionalKeys",
+            "onKeyEvent"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "keyEvent",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "keyEvent",
+          "callee": "emptySet",
+          "lineNumber": 31
+        },
+        {
+          "caller": "keyEvent",
+          "callee": "onKeyEvent",
+          "lineNumber": 35
+        },
+        {
+          "caller": "keyEvent",
+          "callee": "contains",
+          "lineNumber": 38
+        },
+        {
+          "caller": "keyEvent",
+          "callee": "onKeyEvent",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/LeanBackCheck.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "leanBackEnabled",
+          "startLine": 8,
+          "endLine": 16,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "leanBackEnabled",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "leanBackEnabled",
+          "callee": "hasSystemFeature",
+          "lineNumber": 10
+        },
+        {
+          "caller": "leanBackEnabled",
+          "callee": "getSystemService",
+          "lineNumber": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/Mappers.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/Modifiers.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 141,
+      "nonEmptyLines": 131,
+      "functions": [
+        {
+          "name": "highlightOnFocus",
+          "startLine": 31,
+          "endLine": 76,
+          "params": [
+            "color",
+            "width",
+            "shape",
+            "useClip"
+          ]
+        },
+        {
+          "name": "defaultSelected",
+          "startLine": 83,
+          "endLine": 90,
+          "params": [
+            "defaultSelected"
+          ]
+        },
+        {
+          "name": "conditional",
+          "startLine": 95,
+          "endLine": 105,
+          "params": [
+            "condition",
+            "modifier"
+          ]
+        },
+        {
+          "name": "visible",
+          "startLine": 107,
+          "endLine": 128,
+          "params": [
+            "visible"
+          ]
+        },
+        {
+          "name": "offsetByPercent",
+          "startLine": 131,
+          "endLine": 141,
+          "params": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "highlightOnFocus",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "defaultSelected",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "conditional",
+          "line": 95,
+          "isDefault": false
+        },
+        {
+          "name": "visible",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "offsetByPercent",
+          "line": 131,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "highlightOnFocus",
+          "callee": "copy",
+          "lineNumber": 32
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 34
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "composed",
+          "lineNumber": 36
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "remember",
+          "lineNumber": 37
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "mutableStateOf",
+          "lineNumber": 37
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "remember",
+          "lineNumber": 38
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "border",
+          "lineNumber": 40
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "background",
+          "lineNumber": 40
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "copy",
+          "lineNumber": 42
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "copy",
+          "lineNumber": 46
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "border",
+          "lineNumber": 50
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "background",
+          "lineNumber": 50
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "clip",
+          "lineNumber": 50
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "copy",
+          "lineNumber": 53
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "copy",
+          "lineNumber": 58
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "background",
+          "lineNumber": 62
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "clip",
+          "lineNumber": 62
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "copy",
+          "lineNumber": 65
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "then",
+          "lineNumber": 71
+        },
+        {
+          "caller": "highlightOnFocus",
+          "callee": "onFocusChanged",
+          "lineNumber": 71
+        },
+        {
+          "caller": "defaultSelected",
+          "callee": "remember",
+          "lineNumber": 85
+        },
+        {
+          "caller": "defaultSelected",
+          "callee": "FocusRequester",
+          "lineNumber": 85
+        },
+        {
+          "caller": "defaultSelected",
+          "callee": "LaunchedEffect",
+          "lineNumber": 86
+        },
+        {
+          "caller": "defaultSelected",
+          "callee": "requestFocus",
+          "lineNumber": 87
+        },
+        {
+          "caller": "defaultSelected",
+          "callee": "focusRequester",
+          "lineNumber": 89
+        },
+        {
+          "caller": "conditional",
+          "callee": "then",
+          "lineNumber": 101
+        },
+        {
+          "caller": "conditional",
+          "callee": "modifier",
+          "lineNumber": 101
+        },
+        {
+          "caller": "visible",
+          "callee": "animateFloatAsState",
+          "lineNumber": 111
+        },
+        {
+          "caller": "visible",
+          "callee": "then",
+          "lineNumber": 116
+        },
+        {
+          "caller": "visible",
+          "callee": "graphicsLayer",
+          "lineNumber": 116
+        },
+        {
+          "caller": "visible",
+          "callee": "size",
+          "lineNumber": 122
+        },
+        {
+          "caller": "offsetByPercent",
+          "callee": "then",
+          "lineNumber": 131
+        },
+        {
+          "caller": "offsetByPercent",
+          "callee": "layout",
+          "lineNumber": 132
+        },
+        {
+          "caller": "offsetByPercent",
+          "callee": "measure",
+          "lineNumber": 133
+        },
+        {
+          "caller": "offsetByPercent",
+          "callee": "layout",
+          "lineNumber": 134
+        },
+        {
+          "caller": "offsetByPercent",
+          "callee": "placeRelative",
+          "lineNumber": 135
+        },
+        {
+          "caller": "offsetByPercent",
+          "callee": "toInt",
+          "lineNumber": 136
+        },
+        {
+          "caller": "offsetByPercent",
+          "callee": "toInt",
+          "lineNumber": 137
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/TestPlaybackData.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 109,
+      "nonEmptyLines": 107,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/TextWidth.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "measureTextWidth",
+          "startLine": 9,
+          "endLine": 14,
+          "params": [
+            "text",
+            "style"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "measureTextWidth",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "measureTextWidth",
+          "callee": "rememberTextMeasurer",
+          "lineNumber": 11
+        },
+        {
+          "caller": "measureTextWidth",
+          "callee": "measure",
+          "lineNumber": 12
+        },
+        {
+          "caller": "measureTextWidth",
+          "callee": "with",
+          "lineNumber": 13
+        },
+        {
+          "caller": "measureTextWidth",
+          "callee": "toDp",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/utility/TrackHelper.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 168,
+      "nonEmptyLines": 145,
+      "functions": [
+        {
+          "name": "getAudioTracks",
+          "startLine": 18,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "setInternalAudioTrack",
+          "startLine": 46,
+          "endLine": 70,
+          "params": [
+            "audioTrack"
+          ]
+        },
+        {
+          "name": "clearAudioTrack",
+          "startLine": 73,
+          "endLine": 84,
+          "params": [
+            "disable"
+          ]
+        },
+        {
+          "name": "getSubtitleTracks",
+          "startLine": 87,
+          "endLine": 112,
+          "params": []
+        },
+        {
+          "name": "clearSubtitleTrack",
+          "startLine": 115,
+          "endLine": 126,
+          "params": []
+        },
+        {
+          "name": "enableSubtitles",
+          "startLine": 129,
+          "endLine": 139,
+          "params": [
+            "language"
+          ]
+        },
+        {
+          "name": "setInternalSubtitleTrack",
+          "startLine": 142,
+          "endLine": 168,
+          "params": [
+            "subtitleTrack"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "InternalTrack",
+          "startLine": 10,
+          "endLine": 15,
+          "methods": [],
+          "properties": [
+            "rendererIndex",
+            "groupIndex",
+            "trackIndex",
+            "label"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "InternalTrack",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "getAudioTracks",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "setInternalAudioTrack",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "clearAudioTrack",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "getSubtitleTracks",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "clearSubtitleTrack",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "enableSubtitles",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "setInternalSubtitleTrack",
+          "line": 142,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getAudioTracks",
+          "callee": "emptyList",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getAudioTracks",
+          "callee": "emptyList",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getAudioTracks",
+          "callee": "mutableListOf",
+          "lineNumber": 21
+        },
+        {
+          "caller": "getAudioTracks",
+          "callee": "getRendererType",
+          "lineNumber": 24
+        },
+        {
+          "caller": "getAudioTracks",
+          "callee": "getTrackGroups",
+          "lineNumber": 26
+        },
+        {
+          "caller": "getAudioTracks",
+          "callee": "getFormat",
+          "lineNumber": 30
+        },
+        {
+          "caller": "getAudioTracks",
+          "callee": "add",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getAudioTracks",
+          "callee": "InternalTrack",
+          "lineNumber": 32
+        },
+        {
+          "caller": "setInternalAudioTrack",
+          "callee": "getTrackGroups",
+          "lineNumber": 50
+        },
+        {
+          "caller": "setInternalAudioTrack",
+          "callee": "TrackSelectionOverride",
+          "lineNumber": 54
+        },
+        {
+          "caller": "setInternalAudioTrack",
+          "callee": "setParameters",
+          "lineNumber": 56
+        },
+        {
+          "caller": "setInternalAudioTrack",
+          "callee": "build",
+          "lineNumber": 57
+        },
+        {
+          "caller": "setInternalAudioTrack",
+          "callee": "setTrackTypeDisabled",
+          "lineNumber": 57
+        },
+        {
+          "caller": "setInternalAudioTrack",
+          "callee": "setRendererDisabled",
+          "lineNumber": 57
+        },
+        {
+          "caller": "setInternalAudioTrack",
+          "callee": "buildUponParameters",
+          "lineNumber": 57
+        },
+        {
+          "caller": "setInternalAudioTrack",
+          "callee": "build",
+          "lineNumber": 63
+        },
+        {
+          "caller": "setInternalAudioTrack",
+          "callee": "setOverrideForType",
+          "lineNumber": 63
+        },
+        {
+          "caller": "setInternalAudioTrack",
+          "callee": "buildUpon",
+          "lineNumber": 63
+        },
+        {
+          "caller": "setInternalAudioTrack",
+          "callee": "printStackTrace",
+          "lineNumber": 68
+        },
+        {
+          "caller": "clearAudioTrack",
+          "callee": "setParameters",
+          "lineNumber": 75
+        },
+        {
+          "caller": "clearAudioTrack",
+          "callee": "build",
+          "lineNumber": 76
+        },
+        {
+          "caller": "clearAudioTrack",
+          "callee": "setTrackTypeDisabled",
+          "lineNumber": 76
+        },
+        {
+          "caller": "clearAudioTrack",
+          "callee": "setRendererDisabled",
+          "lineNumber": 76
+        },
+        {
+          "caller": "clearAudioTrack",
+          "callee": "buildUponParameters",
+          "lineNumber": 76
+        },
+        {
+          "caller": "clearAudioTrack",
+          "callee": "build",
+          "lineNumber": 82
+        },
+        {
+          "caller": "clearAudioTrack",
+          "callee": "buildUpon",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getSubtitleTracks",
+          "callee": "emptyList",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getSubtitleTracks",
+          "callee": "emptyList",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getSubtitleTracks",
+          "callee": "mutableListOf",
+          "lineNumber": 90
+        },
+        {
+          "caller": "getSubtitleTracks",
+          "callee": "getRendererType",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getSubtitleTracks",
+          "callee": "getTrackGroups",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getSubtitleTracks",
+          "callee": "getFormat",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getSubtitleTracks",
+          "callee": "add",
+          "lineNumber": 100
+        },
+        {
+          "caller": "getSubtitleTracks",
+          "callee": "InternalTrack",
+          "lineNumber": 101
+        },
+        {
+          "caller": "clearSubtitleTrack",
+          "callee": "build",
+          "lineNumber": 117
+        },
+        {
+          "caller": "clearSubtitleTrack",
+          "callee": "setTrackTypeDisabled",
+          "lineNumber": 117
+        },
+        {
+          "caller": "clearSubtitleTrack",
+          "callee": "setPreferredTextLanguage",
+          "lineNumber": 117
+        },
+        {
+          "caller": "clearSubtitleTrack",
+          "callee": "setRendererDisabled",
+          "lineNumber": 117
+        },
+        {
+          "caller": "clearSubtitleTrack",
+          "callee": "buildUponParameters",
+          "lineNumber": 117
+        },
+        {
+          "caller": "clearSubtitleTrack",
+          "callee": "setParameters",
+          "lineNumber": 122
+        },
+        {
+          "caller": "clearSubtitleTrack",
+          "callee": "build",
+          "lineNumber": 124
+        },
+        {
+          "caller": "clearSubtitleTrack",
+          "callee": "buildUpon",
+          "lineNumber": 124
+        },
+        {
+          "caller": "enableSubtitles",
+          "callee": "build",
+          "lineNumber": 131
+        },
+        {
+          "caller": "enableSubtitles",
+          "callee": "setPreferredTextLanguage",
+          "lineNumber": 131
+        },
+        {
+          "caller": "enableSubtitles",
+          "callee": "setTrackTypeDisabled",
+          "lineNumber": 131
+        },
+        {
+          "caller": "enableSubtitles",
+          "callee": "buildUponParameters",
+          "lineNumber": 131
+        },
+        {
+          "caller": "enableSubtitles",
+          "callee": "setParameters",
+          "lineNumber": 135
+        },
+        {
+          "caller": "enableSubtitles",
+          "callee": "build",
+          "lineNumber": 137
+        },
+        {
+          "caller": "enableSubtitles",
+          "callee": "buildUpon",
+          "lineNumber": 137
+        },
+        {
+          "caller": "setInternalSubtitleTrack",
+          "callee": "enableSubtitles",
+          "lineNumber": 145
+        },
+        {
+          "caller": "setInternalSubtitleTrack",
+          "callee": "getTrackGroups",
+          "lineNumber": 148
+        },
+        {
+          "caller": "setInternalSubtitleTrack",
+          "callee": "TrackSelectionOverride",
+          "lineNumber": 152
+        },
+        {
+          "caller": "setInternalSubtitleTrack",
+          "callee": "setParameters",
+          "lineNumber": 154
+        },
+        {
+          "caller": "setInternalSubtitleTrack",
+          "callee": "build",
+          "lineNumber": 155
+        },
+        {
+          "caller": "setInternalSubtitleTrack",
+          "callee": "setRendererDisabled",
+          "lineNumber": 155
+        },
+        {
+          "caller": "setInternalSubtitleTrack",
+          "callee": "buildUponParameters",
+          "lineNumber": 155
+        },
+        {
+          "caller": "setInternalSubtitleTrack",
+          "callee": "build",
+          "lineNumber": 161
+        },
+        {
+          "caller": "setInternalSubtitleTrack",
+          "callee": "setOverrideForType",
+          "lineNumber": 161
+        },
+        {
+          "caller": "setInternalSubtitleTrack",
+          "callee": "buildUpon",
+          "lineNumber": 161
+        },
+        {
+          "caller": "setInternalSubtitleTrack",
+          "callee": "printStackTrace",
+          "lineNumber": 166
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/wallpaper/WallpaperApi.g.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 86,
+      "functions": [
+        {
+          "name": "wrapResult",
+          "startLine": 20,
+          "endLine": 22,
+          "params": [
+            "result"
+          ]
+        },
+        {
+          "name": "wrapError",
+          "startLine": 24,
+          "endLine": 38,
+          "params": [
+            "exception"
+          ]
+        },
+        {
+          "name": "readValueOfType",
+          "startLine": 42,
+          "endLine": 44,
+          "params": [
+            "type",
+            "buffer"
+          ]
+        },
+        {
+          "name": "writeValue",
+          "startLine": 46,
+          "endLine": 48,
+          "params": [
+            "stream",
+            "value"
+          ]
+        },
+        {
+          "name": "openWallpaperPopup",
+          "startLine": 54,
+          "endLine": 54,
+          "params": [
+            "filePath",
+            "callback"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "WallpaperApiPigeonUtils",
+          "startLine": 18,
+          "endLine": 39,
+          "methods": [
+            "wrapResult",
+            "wrapError"
+          ],
+          "properties": []
+        },
+        {
+          "name": "WallpaperApiPigeonCodec",
+          "startLine": 41,
+          "endLine": 49,
+          "methods": [
+            "readValueOfType",
+            "writeValue"
+          ],
+          "properties": []
+        },
+        {
+          "name": "WallpaperApi",
+          "startLine": 53,
+          "endLine": 97,
+          "methods": [
+            "openWallpaperPopup"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "wrapResult",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "wrapError",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "readValueOfType",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "writeValue",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "openWallpaperPopup",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "WallpaperApi",
+          "line": 53,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "wrapResult",
+          "callee": "listOf",
+          "lineNumber": 21
+        },
+        {
+          "caller": "wrapError",
+          "callee": "listOf",
+          "lineNumber": 26
+        },
+        {
+          "caller": "wrapError",
+          "callee": "listOf",
+          "lineNumber": 32
+        },
+        {
+          "caller": "wrapError",
+          "callee": "toString",
+          "lineNumber": 34
+        },
+        {
+          "caller": "wrapError",
+          "callee": "getStackTraceString",
+          "lineNumber": 35
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValueOfType",
+          "lineNumber": 43
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 47
+        },
+        {
+          "caller": "setUp",
+          "callee": "isNotEmpty",
+          "lineNumber": 70
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 71
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 72
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 78
+        },
+        {
+          "caller": "setUp",
+          "callee": "openWallpaperPopup",
+          "lineNumber": 81
+        },
+        {
+          "caller": "setUp",
+          "callee": "exceptionOrNull",
+          "lineNumber": 82
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 84
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 84
+        },
+        {
+          "caller": "setUp",
+          "callee": "getOrNull",
+          "lineNumber": 86
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 87
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapResult",
+          "lineNumber": 87
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 92
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl_jknaapen/fladder/api/LocalNetworkPermissionPigeon.g.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 70,
+      "functions": [
+        {
+          "name": "wrapResult",
+          "startLine": 17,
+          "endLine": 19,
+          "params": [
+            "result"
+          ]
+        },
+        {
+          "name": "wrapError",
+          "startLine": 21,
+          "endLine": 35,
+          "params": [
+            "exception"
+          ]
+        },
+        {
+          "name": "readValueOfType",
+          "startLine": 38,
+          "endLine": 40,
+          "params": [
+            "type",
+            "buffer"
+          ]
+        },
+        {
+          "name": "writeValue",
+          "startLine": 41,
+          "endLine": 43,
+          "params": [
+            "stream",
+            "value"
+          ]
+        },
+        {
+          "name": "getAndroidSdkInt",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "LocalNetworkPermissionPigeonPigeonUtils",
+          "startLine": 15,
+          "endLine": 36,
+          "methods": [
+            "wrapResult",
+            "wrapError"
+          ],
+          "properties": []
+        },
+        {
+          "name": "LocalNetworkPermissionPigeonPigeonCodec",
+          "startLine": 37,
+          "endLine": 44,
+          "methods": [
+            "readValueOfType",
+            "writeValue"
+          ],
+          "properties": []
+        },
+        {
+          "name": "LocalNetworkPermissionPigeon",
+          "startLine": 47,
+          "endLine": 76,
+          "methods": [
+            "getAndroidSdkInt"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "wrapResult",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "wrapError",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "readValueOfType",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "writeValue",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "getAndroidSdkInt",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "LocalNetworkPermissionPigeon",
+          "line": 47,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "wrapResult",
+          "callee": "listOf",
+          "lineNumber": 18
+        },
+        {
+          "caller": "wrapError",
+          "callee": "listOf",
+          "lineNumber": 23
+        },
+        {
+          "caller": "wrapError",
+          "callee": "listOf",
+          "lineNumber": 29
+        },
+        {
+          "caller": "wrapError",
+          "callee": "toString",
+          "lineNumber": 31
+        },
+        {
+          "caller": "wrapError",
+          "callee": "getStackTraceString",
+          "lineNumber": 32
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValueOfType",
+          "lineNumber": 39
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 42
+        },
+        {
+          "caller": "setUp",
+          "callee": "isNotEmpty",
+          "lineNumber": 58
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 59
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 60
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 62
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 64
+        },
+        {
+          "caller": "setUp",
+          "callee": "getAndroidSdkInt",
+          "lineNumber": 64
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 66
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 68
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 3
+      }
+    }
+  ]
+}

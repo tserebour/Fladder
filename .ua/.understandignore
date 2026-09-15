@@ -1,0 +1,118 @@
+# .understandignore — patterns for files/dirs to exclude from analysis
+# Syntax: same as .gitignore (globs, # comments, ! negation, trailing / for dirs)
+# Lines below are suggestions — uncomment to activate.
+# Use ! prefix to force-include something excluded by defaults.
+#
+# Built-in defaults (always excluded unless negated):
+#   node_modules/, .git/, dist/, build/, obj/, *.lock, *.min.js, etc.
+#
+
+# --- From .gitignore (uncomment to exclude) ---
+
+# *.class
+# *.pyc
+# *.swp
+# .DS_Store
+# .atom/
+# .build/
+# .dmg_temp/
+# .buildlog/
+# .history
+# .svn/
+# migrate_working_dir/
+# *.iml
+# *.ipr
+# *.iws
+# **/doc/api/
+# **/ios/Flutter/.last_build_id
+# .dart_tool/
+# .flutter-plugins
+# .flutter-plugins-dependencies
+# .packages
+# .pub-cache/
+# .pub/
+# /build/
+# app.*.symbols
+# app.*.map.json
+# /android/app/debug
+# /android/app/profile
+# /android/app/release
+# **/android/**/gradle-wrapper.jar
+# .gradle/
+# **/android/captures/
+# **/android/gradlew
+# **/android/gradlew.bat
+# **/android/**/GeneratedPluginRegistrant.java
+# **/android/key.properties
+# *.jks
+# local.properties
+# **/.cxx/
+# .fvm/
+# /AppDir/
+# /AppDirassets/
+# /AppDiricons/
+# /appimage-build/
+# *.AppImage
+# *.AppImage.zsync
+# .flatpak-builder
+# *.afdesign~lock~
+# *.afphoto~lock~
+# Output
+# lib/l10n/generated
+# android/build/reports/problems/
+
+# --- Detected directories (uncomment to exclude) ---
+
+# scripts/
+# test/
+
+# --- Test file patterns (uncomment to exclude) ---
+
+# JS / TS
+# *.test.*
+# *.spec.*
+# *.snap
+# C# / .NET
+# **/*Tests.cs
+# **/*Test.cs
+# **/*Fixture.cs
+# **/*.Tests.csproj
+# Java / Kotlin
+# **/src/test/**
+# **/*Test.java
+# **/*IT.java
+# **/*Spec.kt
+# Go
+# **/*_test.go
+# C++
+# **/*_test.cc
+# **/*_test.cpp
+# **/*_test.cxx
+# **/*Test.cc
+# **/*Test.cpp
+# **/*_unittest.cc
+# **/*_unittest.cpp
+# **/*_browsertest.cc
+# **/*_benchmark.cc
+# **/*Benchmark.cpp
+# Python
+# **/test_*.py
+# **/*_test.py
+# **/tests.py
+# **/conftest.py
+# Rust
+# **/tests.rs
+# **/test_*.rs
+# **/*_test.rs
+# **/bench_*.rs
+# **/*_bench.rs
+# Ruby
+# **/*_spec.rb
+# **/*_test.rb
+# **/test_*.rb
+# **/spec_helper.rb
+# **/test_helper.rb
+# **/rails_helper.rb
+# Swift
+# **/Tests/**/*.swift
+# **/Specs/**/*.swift

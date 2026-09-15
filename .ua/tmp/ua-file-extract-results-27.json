@@ -1,0 +1,4266 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "lib/providers/control_panel/control_dashboard_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "api",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "refreshDashboard",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "restartServer",
+          "startLine": 35,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "shutdownServer",
+          "startLine": 40,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "refreshLibrary",
+          "startLine": 45,
+          "endLine": 45,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ControlDashboard",
+          "startLine": 12,
+          "endLine": 48,
+          "methods": [
+            "api",
+            "build",
+            "refreshDashboard",
+            "restartServer",
+            "shutdownServer",
+            "refreshLibrary"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ControlDashboardModel",
+          "startLine": 51,
+          "endLine": 60,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "api",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "refreshDashboard",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "restartServer",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "shutdownServer",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "refreshLibrary",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "ControlDashboard",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "ControlDashboardModel",
+          "line": 51,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "api",
+          "callee": "read",
+          "lineNumber": 13
+        },
+        {
+          "caller": "build",
+          "callee": "ControlDashboardModel",
+          "lineNumber": 17
+        },
+        {
+          "caller": "refreshDashboard",
+          "callee": "systemInfoGet",
+          "lineNumber": 21
+        },
+        {
+          "caller": "refreshDashboard",
+          "callee": "systemInfoCounts",
+          "lineNumber": 22
+        },
+        {
+          "caller": "refreshDashboard",
+          "callee": "getStorage",
+          "lineNumber": 23
+        },
+        {
+          "caller": "refreshDashboard",
+          "callee": "ControlDashboardModel",
+          "lineNumber": 25
+        },
+        {
+          "caller": "restartServer",
+          "callee": "systemRestartPost",
+          "lineNumber": 36
+        },
+        {
+          "caller": "restartServer",
+          "callee": "copyWith",
+          "lineNumber": 37
+        },
+        {
+          "caller": "shutdownServer",
+          "callee": "systemShutdownPost",
+          "lineNumber": 41
+        },
+        {
+          "caller": "shutdownServer",
+          "callee": "copyWith",
+          "lineNumber": 42
+        },
+        {
+          "caller": "refreshLibrary",
+          "callee": "libraryRefreshPost",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 6,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_dashboard_provider.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 389,
+      "nonEmptyLines": 357,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "serverName",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "serverVersion",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "webVersion",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "isShuttingDown",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "itemCounts",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "storagePaths",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$ControlDashboardModel",
+          "startLine": 16,
+          "endLine": 36,
+          "methods": [
+            "serverName",
+            "serverVersion",
+            "webVersion",
+            "isShuttingDown",
+            "itemCounts",
+            "storagePaths",
+            "copyWith",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "serverName",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "serverVersion",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "webVersion",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "isShuttingDown",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "itemCounts",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "storagePaths",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$ControlDashboardModelCopyWithImpl",
+          "lineNumber": 29
+        },
+        {
+          "caller": "_ControlDashboardModel",
+          "callee": "_ControlDashboardModel",
+          "lineNumber": 149
+        },
+        {
+          "caller": "_ControlDashboardModel",
+          "callee": "$default",
+          "lineNumber": 150
+        },
+        {
+          "caller": "_ControlDashboardModel",
+          "callee": "StateError",
+          "lineNumber": 152
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_ControlDashboardModel",
+          "lineNumber": 174
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 175
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_ControlDashboardModel",
+          "lineNumber": 207
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 208
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 211
+        },
+        {
+          "caller": "when",
+          "callee": "_ControlDashboardModel",
+          "lineNumber": 241
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 242
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 245
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_ControlDashboardModel",
+          "lineNumber": 274
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 275
+        },
+        {
+          "caller": "call",
+          "callee": "__$ControlDashboardModelCopyWithImpl",
+          "lineNumber": 343
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 360
+        },
+        {
+          "caller": "call",
+          "callee": "_ControlDashboardModel",
+          "lineNumber": 360
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_dashboard_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "_$controlDashboardHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_device_discovery_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "discoverDevices",
+          "startLine": 24,
+          "endLine": 24,
+          "params": [
+            "onDiscover"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ControlDeviceDiscoveryModel",
+          "startLine": 12,
+          "endLine": 17,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "ControlDeviceDiscovery",
+          "startLine": 20,
+          "endLine": 41,
+          "methods": [
+            "build",
+            "discoverDevices"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ControlDeviceDiscoveryModel",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "discoverDevices",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "ControlDeviceDiscovery",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "ControlDeviceDiscoveryModel",
+          "lineNumber": 22
+        },
+        {
+          "caller": "discoverDevices",
+          "callee": "copyWith",
+          "lineNumber": 25
+        },
+        {
+          "caller": "discoverDevices",
+          "callee": "onDiscover",
+          "lineNumber": 28
+        },
+        {
+          "caller": "discoverDevices",
+          "callee": "copyWith",
+          "lineNumber": 29
+        },
+        {
+          "caller": "discoverDevices",
+          "callee": "log",
+          "lineNumber": 34
+        },
+        {
+          "caller": "discoverDevices",
+          "callee": "copyWith",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_device_discovery_provider.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 306,
+      "nonEmptyLines": 274,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "isLoading",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "devices",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 24,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$ControlDeviceDiscoveryModel",
+          "startLine": 16,
+          "endLine": 33,
+          "methods": [
+            "isLoading",
+            "devices",
+            "copyWith",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "isLoading",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "devices",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$ControlDeviceDiscoveryModelCopyWithImpl",
+          "lineNumber": 25
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 61
+        },
+        {
+          "caller": "call",
+          "callee": "copyWith",
+          "lineNumber": 61
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "_ControlDeviceDiscoveryModel",
+          "lineNumber": 95
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "$default",
+          "lineNumber": 96
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "orElse",
+          "lineNumber": 98
+        },
+        {
+          "caller": "map",
+          "callee": "_ControlDeviceDiscoveryModel",
+          "lineNumber": 121
+        },
+        {
+          "caller": "map",
+          "callee": "$default",
+          "lineNumber": 122
+        },
+        {
+          "caller": "map",
+          "callee": "StateError",
+          "lineNumber": 124
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_ControlDeviceDiscoveryModel",
+          "lineNumber": 146
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 147
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_ControlDeviceDiscoveryModel",
+          "lineNumber": 172
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 173
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 175
+        },
+        {
+          "caller": "when",
+          "callee": "_ControlDeviceDiscoveryModel",
+          "lineNumber": 198
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 199
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 201
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_ControlDeviceDiscoveryModel",
+          "lineNumber": 223
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 224
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 293
+        },
+        {
+          "caller": "call",
+          "callee": "_ControlDeviceDiscoveryModel",
+          "lineNumber": 293
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_device_discovery_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "_$controlDeviceDiscoveryHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_libraries_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 274,
+      "nonEmptyLines": 250,
+      "functions": [
+        {
+          "name": "api",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "fetchInfo",
+          "startLine": 24,
+          "endLine": 24,
+          "params": [
+            "clearSelected"
+          ]
+        },
+        {
+          "name": "selectLibrary",
+          "startLine": 49,
+          "endLine": 49,
+          "params": [
+            "library"
+          ]
+        },
+        {
+          "name": "deleteLibrary",
+          "startLine": 61,
+          "endLine": 61,
+          "params": [
+            "library"
+          ]
+        },
+        {
+          "name": "updateLibraryLocations",
+          "startLine": 69,
+          "endLine": 69,
+          "params": [
+            "libraryId",
+            "locations"
+          ]
+        },
+        {
+          "name": "updateSelectedLibraryOptions",
+          "startLine": 92,
+          "endLine": 92,
+          "params": [
+            "options"
+          ]
+        },
+        {
+          "name": "updateNewFolder",
+          "startLine": 116,
+          "endLine": 116,
+          "params": [
+            "folder"
+          ]
+        },
+        {
+          "name": "commitLibraryOptions",
+          "startLine": 123,
+          "endLine": 126,
+          "params": [
+            "libraryId",
+            "options"
+          ]
+        },
+        {
+          "name": "createNewLibrary",
+          "startLine": 155,
+          "endLine": 155,
+          "params": []
+        },
+        {
+          "name": "updateNewLibraryType",
+          "startLine": 165,
+          "endLine": 165,
+          "params": [
+            "selectedType"
+          ]
+        },
+        {
+          "name": "isSaveAble",
+          "startLine": 230,
+          "endLine": 230,
+          "params": []
+        },
+        {
+          "name": "currentCollectionType",
+          "startLine": 251,
+          "endLine": 251,
+          "params": []
+        },
+        {
+          "name": "_fromCollectionOptions",
+          "startLine": 254,
+          "endLine": 254,
+          "params": [
+            "options"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ControlLibraries",
+          "startLine": 18,
+          "endLine": 214,
+          "methods": [
+            "api",
+            "build",
+            "fetchInfo",
+            "selectLibrary",
+            "deleteLibrary",
+            "updateLibraryLocations",
+            "updateSelectedLibraryOptions",
+            "updateNewFolder",
+            "commitLibraryOptions",
+            "createNewLibrary",
+            "updateNewLibraryType"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ControlLibrariesModel",
+          "startLine": 217,
+          "endLine": 274,
+          "methods": [
+            "isSaveAble",
+            "currentCollectionType",
+            "_fromCollectionOptions"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "api",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "fetchInfo",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "selectLibrary",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "deleteLibrary",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "updateLibraryLocations",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "updateSelectedLibraryOptions",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "updateNewFolder",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "commitLibraryOptions",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "createNewLibrary",
+          "line": 155,
+          "isDefault": false
+        },
+        {
+          "name": "updateNewLibraryType",
+          "line": 165,
+          "isDefault": false
+        },
+        {
+          "name": "ControlLibraries",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "isSaveAble",
+          "line": 230,
+          "isDefault": false
+        },
+        {
+          "name": "currentCollectionType",
+          "line": 251,
+          "isDefault": false
+        },
+        {
+          "name": "ControlLibrariesModel",
+          "line": 217,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "api",
+          "callee": "read",
+          "lineNumber": 19
+        },
+        {
+          "caller": "build",
+          "callee": "ControlLibrariesModel",
+          "lineNumber": 22
+        },
+        {
+          "caller": "fetchInfo",
+          "callee": "localizationCulturesGet",
+          "lineNumber": 25
+        },
+        {
+          "caller": "fetchInfo",
+          "callee": "localizationCountriesGet",
+          "lineNumber": 26
+        },
+        {
+          "caller": "fetchInfo",
+          "callee": "libraryVirtualFoldersGet",
+          "lineNumber": 27
+        },
+        {
+          "caller": "fetchInfo",
+          "callee": "map",
+          "lineNumber": 29
+        },
+        {
+          "caller": "fetchInfo",
+          "callee": "fromVirtualFolder",
+          "lineNumber": 29
+        },
+        {
+          "caller": "fetchInfo",
+          "callee": "toList",
+          "lineNumber": 33
+        },
+        {
+          "caller": "fetchInfo",
+          "callee": "copyWith",
+          "lineNumber": 34
+        },
+        {
+          "caller": "fetchInfo",
+          "callee": "copyWith",
+          "lineNumber": 40
+        },
+        {
+          "caller": "fetchInfo",
+          "callee": "selectLibrary",
+          "lineNumber": 45
+        },
+        {
+          "caller": "selectLibrary",
+          "callee": "libraryVirtualFoldersGet",
+          "lineNumber": 50
+        },
+        {
+          "caller": "selectLibrary",
+          "callee": "librariesAvailableOptionsGet",
+          "lineNumber": 51
+        },
+        {
+          "caller": "selectLibrary",
+          "callee": "copyWith",
+          "lineNumber": 53
+        },
+        {
+          "caller": "deleteLibrary",
+          "callee": "log",
+          "lineNumber": 63
+        },
+        {
+          "caller": "deleteLibrary",
+          "callee": "userViewsViewIdDelete",
+          "lineNumber": 66
+        },
+        {
+          "caller": "updateLibraryLocations",
+          "callee": "copyWith",
+          "lineNumber": 71
+        },
+        {
+          "caller": "updateLibraryLocations",
+          "callee": "copyWith",
+          "lineNumber": 72
+        },
+        {
+          "caller": "updateLibraryLocations",
+          "callee": "firstWhere",
+          "lineNumber": 79
+        },
+        {
+          "caller": "updateLibraryLocations",
+          "callee": "copyWith",
+          "lineNumber": 80
+        },
+        {
+          "caller": "updateLibraryLocations",
+          "callee": "map",
+          "lineNumber": 81
+        },
+        {
+          "caller": "updateLibraryLocations",
+          "callee": "copyWith",
+          "lineNumber": 83
+        },
+        {
+          "caller": "updateLibraryLocations",
+          "callee": "toList",
+          "lineNumber": 88
+        },
+        {
+          "caller": "updateSelectedLibraryOptions",
+          "callee": "copyWith",
+          "lineNumber": 94
+        },
+        {
+          "caller": "updateSelectedLibraryOptions",
+          "callee": "copyWith",
+          "lineNumber": 95
+        },
+        {
+          "caller": "updateSelectedLibraryOptions",
+          "callee": "copyWith",
+          "lineNumber": 104
+        },
+        {
+          "caller": "updateSelectedLibraryOptions",
+          "callee": "map",
+          "lineNumber": 105
+        },
+        {
+          "caller": "updateSelectedLibraryOptions",
+          "callee": "copyWith",
+          "lineNumber": 107
+        },
+        {
+          "caller": "updateSelectedLibraryOptions",
+          "callee": "toList",
+          "lineNumber": 112
+        },
+        {
+          "caller": "updateNewFolder",
+          "callee": "copyWith",
+          "lineNumber": 118
+        },
+        {
+          "caller": "commitLibraryOptions",
+          "callee": "virtualFoldersPost",
+          "lineNumber": 129
+        },
+        {
+          "caller": "commitLibraryOptions",
+          "callee": "copyWith",
+          "lineNumber": 134
+        },
+        {
+          "caller": "commitLibraryOptions",
+          "callee": "fetchInfo",
+          "lineNumber": 137
+        },
+        {
+          "caller": "commitLibraryOptions",
+          "callee": "virtualFoldersUpdate",
+          "lineNumber": 144
+        },
+        {
+          "caller": "createNewLibrary",
+          "callee": "copyWith",
+          "lineNumber": 156
+        },
+        {
+          "caller": "createNewLibrary",
+          "callee": "jelly",
+          "lineNumber": 157
+        },
+        {
+          "caller": "createNewLibrary",
+          "callee": "LibraryOptions",
+          "lineNumber": 158
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "librariesAvailableOptionsGet",
+          "lineNumber": 167
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "switch",
+          "lineNumber": 168
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "copyWith",
+          "lineNumber": 184
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "copyWith",
+          "lineNumber": 185
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "toList",
+          "lineNumber": 188
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "toList",
+          "lineNumber": 189
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "map",
+          "lineNumber": 191
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "map",
+          "lineNumber": 194
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "TypeOptions",
+          "lineNumber": 198
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "toList",
+          "lineNumber": 201
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "toList",
+          "lineNumber": 202
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "toList",
+          "lineNumber": 203
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "toList",
+          "lineNumber": 205
+        },
+        {
+          "caller": "updateNewLibraryType",
+          "callee": "toList",
+          "lineNumber": 208
+        },
+        {
+          "caller": "currentCollectionType",
+          "callee": "_fromCollectionOptions",
+          "lineNumber": 252
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 14,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_libraries_provider.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 486,
+      "nonEmptyLines": 448,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "availableLibraries",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "selectedLibrary",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "newVirtualFolder",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "cultures",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "countries",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "virtualFolders",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "availableOptions",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 29,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "debugFillProperties",
+          "startLine": 34,
+          "endLine": 34,
+          "params": [
+            "properties"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 47,
+          "endLine": 47,
+          "params": [
+            "minLevel"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$ControlLibrariesModel",
+          "startLine": 16,
+          "endLine": 50,
+          "methods": [
+            "availableLibraries",
+            "selectedLibrary",
+            "newVirtualFolder",
+            "cultures",
+            "countries",
+            "virtualFolders",
+            "availableOptions",
+            "copyWith",
+            "debugFillProperties",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "availableLibraries",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "selectedLibrary",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "newVirtualFolder",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "cultures",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "countries",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "virtualFolders",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "availableOptions",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "debugFillProperties",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 47,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$ControlLibrariesModelCopyWithImpl",
+          "lineNumber": 30
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 36
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 37
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 38
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 39
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 40
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 41
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 42
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 43
+        },
+        {
+          "caller": "_ControlLibrariesModel",
+          "callee": "_ControlLibrariesModel",
+          "lineNumber": 169
+        },
+        {
+          "caller": "_ControlLibrariesModel",
+          "callee": "$default",
+          "lineNumber": 170
+        },
+        {
+          "caller": "_ControlLibrariesModel",
+          "callee": "StateError",
+          "lineNumber": 172
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_ControlLibrariesModel",
+          "lineNumber": 194
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 195
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_ControlLibrariesModel",
+          "lineNumber": 228
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 229
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 238
+        },
+        {
+          "caller": "when",
+          "callee": "_ControlLibrariesModel",
+          "lineNumber": 269
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 270
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 279
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_ControlLibrariesModel",
+          "lineNumber": 309
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 310
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 398
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 399
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 400
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 401
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 402
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 403
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 404
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 405
+        },
+        {
+          "caller": "call",
+          "callee": "__$ControlLibrariesModelCopyWithImpl",
+          "lineNumber": 435
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 453
+        },
+        {
+          "caller": "call",
+          "callee": "_ControlLibrariesModel",
+          "lineNumber": 453
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_libraries_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "_$controlLibrariesHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_livetv_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 51,
+      "functions": [
+        {
+          "name": "api",
+          "startLine": 14,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "loadConfiguration",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "addTunerHost",
+          "startLine": 32,
+          "endLine": 32,
+          "params": [
+            "tunerHost"
+          ]
+        },
+        {
+          "name": "updateTunerHost",
+          "startLine": 36,
+          "endLine": 36,
+          "params": [
+            "oldTunerHost",
+            "newTunerHost"
+          ]
+        },
+        {
+          "name": "deleteTunerHost",
+          "startLine": 40,
+          "endLine": 40,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "addListingProvider",
+          "startLine": 44,
+          "endLine": 44,
+          "params": [
+            "provider"
+          ]
+        },
+        {
+          "name": "updateListingProvider",
+          "startLine": 48,
+          "endLine": 49,
+          "params": [
+            "oldProvider",
+            "newProvider"
+          ]
+        },
+        {
+          "name": "deleteListingProvider",
+          "startLine": 53,
+          "endLine": 53,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ControlLiveTv",
+          "startLine": 13,
+          "endLine": 56,
+          "methods": [
+            "api",
+            "build",
+            "loadConfiguration",
+            "addTunerHost",
+            "updateTunerHost",
+            "deleteTunerHost",
+            "addListingProvider",
+            "updateListingProvider",
+            "deleteListingProvider"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ControlLiveTvModel",
+          "startLine": 59,
+          "endLine": 63,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "api",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "loadConfiguration",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "addTunerHost",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "updateTunerHost",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "deleteTunerHost",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "addListingProvider",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "updateListingProvider",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "deleteListingProvider",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "ControlLiveTv",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "ControlLiveTvModel",
+          "line": 59,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "api",
+          "callee": "read",
+          "lineNumber": 14
+        },
+        {
+          "caller": "build",
+          "callee": "ControlLiveTvModel",
+          "lineNumber": 18
+        },
+        {
+          "caller": "loadConfiguration",
+          "callee": "getLiveTvConfiguration",
+          "lineNumber": 23
+        },
+        {
+          "caller": "loadConfiguration",
+          "callee": "copyWith",
+          "lineNumber": 24
+        },
+        {
+          "caller": "addTunerHost",
+          "callee": "addTunerHost",
+          "lineNumber": 33
+        },
+        {
+          "caller": "updateTunerHost",
+          "callee": "addTunerHost",
+          "lineNumber": 37
+        },
+        {
+          "caller": "updateTunerHost",
+          "callee": "copyWith",
+          "lineNumber": 37
+        },
+        {
+          "caller": "deleteTunerHost",
+          "callee": "deleteTunerHost",
+          "lineNumber": 41
+        },
+        {
+          "caller": "addListingProvider",
+          "callee": "addListingProvider",
+          "lineNumber": 45
+        },
+        {
+          "caller": "updateListingProvider",
+          "callee": "addListingProvider",
+          "lineNumber": 50
+        },
+        {
+          "caller": "updateListingProvider",
+          "callee": "copyWith",
+          "lineNumber": 50
+        },
+        {
+          "caller": "deleteListingProvider",
+          "callee": "deleteListingProvider",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 9,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_livetv_provider.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 280,
+      "nonEmptyLines": 248,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "liveTvOptions",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$ControlLiveTvModel",
+          "startLine": 16,
+          "endLine": 31,
+          "methods": [
+            "liveTvOptions",
+            "copyWith",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "liveTvOptions",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$ControlLiveTvModelCopyWithImpl",
+          "lineNumber": 24
+        },
+        {
+          "caller": "_ControlLiveTvModel",
+          "callee": "_ControlLiveTvModel",
+          "lineNumber": 113
+        },
+        {
+          "caller": "_ControlLiveTvModel",
+          "callee": "$default",
+          "lineNumber": 114
+        },
+        {
+          "caller": "_ControlLiveTvModel",
+          "callee": "StateError",
+          "lineNumber": 116
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_ControlLiveTvModel",
+          "lineNumber": 138
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 139
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_ControlLiveTvModel",
+          "lineNumber": 164
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 165
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 167
+        },
+        {
+          "caller": "when",
+          "callee": "_ControlLiveTvModel",
+          "lineNumber": 190
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 191
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 193
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_ControlLiveTvModel",
+          "lineNumber": 215
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 216
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 271
+        },
+        {
+          "caller": "call",
+          "callee": "_ControlLiveTvModel",
+          "lineNumber": 271
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_livetv_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "_$controlLiveTvHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_server_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 73,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "api",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "update",
+          "startLine": 22,
+          "endLine": 22,
+          "params": [
+            "newModel"
+          ]
+        },
+        {
+          "name": "save",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "fetchSettings",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "updateInfo",
+          "startLine": 44,
+          "endLine": 44,
+          "params": [
+            "newModel"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ControlServer",
+          "startLine": 12,
+          "endLine": 59,
+          "methods": [
+            "api",
+            "build",
+            "update",
+            "save",
+            "fetchSettings",
+            "updateInfo"
+          ],
+          "properties": [
+            "saveConfig"
+          ]
+        },
+        {
+          "name": "ControlServerModel",
+          "startLine": 62,
+          "endLine": 73,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "api",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "save",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "fetchSettings",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "updateInfo",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "ControlServer",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "ControlServerModel",
+          "line": 62,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "api",
+          "callee": "read",
+          "lineNumber": 13
+        },
+        {
+          "caller": "build",
+          "callee": "ControlServerModel",
+          "lineNumber": 19
+        },
+        {
+          "caller": "save",
+          "callee": "updateInfo",
+          "lineNumber": 27
+        },
+        {
+          "caller": "fetchSettings",
+          "callee": "systemConfigurationGet",
+          "lineNumber": 31
+        },
+        {
+          "caller": "fetchSettings",
+          "callee": "localizationOptions",
+          "lineNumber": 32
+        },
+        {
+          "caller": "fetchSettings",
+          "callee": "copyWith",
+          "lineNumber": 33
+        },
+        {
+          "caller": "updateInfo",
+          "callee": "Exception",
+          "lineNumber": 46
+        },
+        {
+          "caller": "updateInfo",
+          "callee": "systemConfigurationPost",
+          "lineNumber": 48
+        },
+        {
+          "caller": "updateInfo",
+          "callee": "copyWith",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 6,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_server_provider.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 462,
+      "nonEmptyLines": 429,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "name",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "language",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "availableLanguages",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "cachePath",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "metaDataPath",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "quickConnectEnabled",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "maxConcurrentLibraryScan",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "maxImageDecodingThreads",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 35,
+          "endLine": 35,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$ControlServerModel",
+          "startLine": 16,
+          "endLine": 38,
+          "methods": [
+            "name",
+            "language",
+            "availableLanguages",
+            "cachePath",
+            "metaDataPath",
+            "quickConnectEnabled",
+            "maxConcurrentLibraryScan",
+            "maxImageDecodingThreads",
+            "copyWith",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "name",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "language",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "availableLanguages",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "cachePath",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "metaDataPath",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "quickConnectEnabled",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "maxConcurrentLibraryScan",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "maxImageDecodingThreads",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$ControlServerModelCopyWithImpl",
+          "lineNumber": 31
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 79
+        },
+        {
+          "caller": "call",
+          "callee": "copyWith",
+          "lineNumber": 79
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "_ControlServerModel",
+          "lineNumber": 137
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "$default",
+          "lineNumber": 138
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "orElse",
+          "lineNumber": 140
+        },
+        {
+          "caller": "map",
+          "callee": "_ControlServerModel",
+          "lineNumber": 163
+        },
+        {
+          "caller": "map",
+          "callee": "$default",
+          "lineNumber": 164
+        },
+        {
+          "caller": "map",
+          "callee": "StateError",
+          "lineNumber": 166
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_ControlServerModel",
+          "lineNumber": 188
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 189
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_ControlServerModel",
+          "lineNumber": 223
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 224
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 234
+        },
+        {
+          "caller": "when",
+          "callee": "_ControlServerModel",
+          "lineNumber": 266
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 267
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 277
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_ControlServerModel",
+          "lineNumber": 308
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 309
+        },
+        {
+          "caller": "call",
+          "callee": "__$ControlServerModelCopyWithImpl",
+          "lineNumber": 406
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 425
+        },
+        {
+          "caller": "call",
+          "callee": "_ControlServerModel",
+          "lineNumber": 425
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_server_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "_$controlServerHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_tuner_edit_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 193,
+      "nonEmptyLines": 164,
+      "classes": [
+        {
+          "name": "TunerType",
+          "startLine": 11,
+          "endLine": 12,
+          "methods": [],
+          "properties": [
+            "m3u"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TunerType",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fromString",
+          "callee": "firstWhere",
+          "lineNumber": 22
+        },
+        {
+          "caller": "EPGProviderType",
+          "callee": "firstWhere",
+          "lineNumber": 37
+        },
+        {
+          "caller": "build",
+          "callee": "ControlTunerEditModel",
+          "lineNumber": 50
+        },
+        {
+          "caller": "build",
+          "callee": "round",
+          "lineNumber": 56
+        },
+        {
+          "caller": "build",
+          "callee": "fromString",
+          "lineNumber": 58
+        },
+        {
+          "caller": "updateUrl",
+          "callee": "copyWith",
+          "lineNumber": 72
+        },
+        {
+          "caller": "updateFriendlyName",
+          "callee": "copyWith",
+          "lineNumber": 76
+        },
+        {
+          "caller": "updateUserAgent",
+          "callee": "copyWith",
+          "lineNumber": 80
+        },
+        {
+          "caller": "updateTunerCount",
+          "callee": "tryParse",
+          "lineNumber": 84
+        },
+        {
+          "caller": "updateTunerCount",
+          "callee": "copyWith",
+          "lineNumber": 85
+        },
+        {
+          "caller": "updateFallbackBitrate",
+          "callee": "tryParse",
+          "lineNumber": 89
+        },
+        {
+          "caller": "updateFallbackBitrate",
+          "callee": "copyWith",
+          "lineNumber": 90
+        },
+        {
+          "caller": "updateType",
+          "callee": "copyWith",
+          "lineNumber": 94
+        },
+        {
+          "caller": "updateAllowFmp4Container",
+          "callee": "copyWith",
+          "lineNumber": 98
+        },
+        {
+          "caller": "updateAllowStreamSharing",
+          "callee": "copyWith",
+          "lineNumber": 102
+        },
+        {
+          "caller": "updateEnableStreamLooping",
+          "callee": "copyWith",
+          "lineNumber": 106
+        },
+        {
+          "caller": "updateIgnoreDts",
+          "callee": "copyWith",
+          "lineNumber": 110
+        },
+        {
+          "caller": "updateReadAtNativeFramerate",
+          "callee": "copyWith",
+          "lineNumber": 114
+        },
+        {
+          "caller": "updateImportFavoritesOnly",
+          "callee": "copyWith",
+          "lineNumber": 118
+        },
+        {
+          "caller": "updateAllowHWTranscoding",
+          "callee": "copyWith",
+          "lineNumber": 122
+        },
+        {
+          "caller": "discoverDevices",
+          "callee": "copyWith",
+          "lineNumber": 126
+        },
+        {
+          "caller": "discoverDevices",
+          "callee": "discoverTuners",
+          "lineNumber": 128
+        },
+        {
+          "caller": "discoverDevices",
+          "callee": "copyWith",
+          "lineNumber": 129
+        },
+        {
+          "caller": "discoverDevices",
+          "callee": "copyWith",
+          "lineNumber": 132
+        },
+        {
+          "caller": "discoverDevices",
+          "callee": "toString",
+          "lineNumber": 134
+        },
+        {
+          "caller": "addDiscoveredDevice",
+          "callee": "copyWith",
+          "lineNumber": 141
+        },
+        {
+          "caller": "addDiscoveredDevice",
+          "callee": "fromString",
+          "lineNumber": 144
+        },
+        {
+          "caller": "buildTunerHostInfo",
+          "callee": "TunerHostInfo",
+          "lineNumber": 153
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_tuner_edit_provider.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 660,
+      "nonEmptyLines": 628,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "url",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "friendlyName",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "userAgent",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "tunerCount",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "fallbackBitrateMbps",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "selectedType",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "allowFmp4Container",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "allowStreamSharing",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "enableStreamLooping",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "ignoreDts",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "readAtNativeFramerate",
+          "startLine": 27,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "importFavoritesOnly",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "allowHWTranscoding",
+          "startLine": 29,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "isEditMode",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "isDiscovering",
+          "startLine": 31,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "tunerId",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "discoveryError",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 39,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 44,
+          "endLine": 44,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$ControlTunerEditModel",
+          "startLine": 16,
+          "endLine": 47,
+          "methods": [
+            "url",
+            "friendlyName",
+            "userAgent",
+            "tunerCount",
+            "fallbackBitrateMbps",
+            "selectedType",
+            "allowFmp4Container",
+            "allowStreamSharing",
+            "enableStreamLooping",
+            "ignoreDts",
+            "readAtNativeFramerate",
+            "importFavoritesOnly",
+            "allowHWTranscoding",
+            "isEditMode",
+            "isDiscovering",
+            "tunerId",
+            "discoveryError",
+            "copyWith",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "url",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "friendlyName",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "userAgent",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "tunerCount",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "fallbackBitrateMbps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "selectedType",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "allowFmp4Container",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "allowStreamSharing",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "enableStreamLooping",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "ignoreDts",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "readAtNativeFramerate",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "importFavoritesOnly",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "allowHWTranscoding",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "isEditMode",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "isDiscovering",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "tunerId",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "discoveryError",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$ControlTunerEditModelCopyWithImpl",
+          "lineNumber": 40
+        },
+        {
+          "caller": "_ControlTunerEditModel",
+          "callee": "_ControlTunerEditModel",
+          "lineNumber": 226
+        },
+        {
+          "caller": "_ControlTunerEditModel",
+          "callee": "$default",
+          "lineNumber": 227
+        },
+        {
+          "caller": "_ControlTunerEditModel",
+          "callee": "StateError",
+          "lineNumber": 229
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_ControlTunerEditModel",
+          "lineNumber": 251
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 252
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_ControlTunerEditModel",
+          "lineNumber": 295
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 296
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 315
+        },
+        {
+          "caller": "when",
+          "callee": "_ControlTunerEditModel",
+          "lineNumber": 356
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 357
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 376
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_ControlTunerEditModel",
+          "lineNumber": 416
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 417
+        },
+        {
+          "caller": "call",
+          "callee": "__$ControlTunerEditModelCopyWithImpl",
+          "lineNumber": 559
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 587
+        },
+        {
+          "caller": "call",
+          "callee": "_ControlTunerEditModel",
+          "lineNumber": 587
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 20,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_tuner_edit_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 179,
+      "nonEmptyLines": 150,
+      "functions": [
+        {
+          "name": "_$controlTunerEditHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "_SystemHash._",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "combine",
+          "startLine": 15,
+          "endLine": 15,
+          "params": [
+            "hash",
+            "value"
+          ]
+        },
+        {
+          "name": "finish",
+          "startLine": 23,
+          "endLine": 23,
+          "params": [
+            "hash"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 36,
+          "endLine": 38,
+          "params": [
+            "initialTuner"
+          ]
+        },
+        {
+          "name": "call",
+          "startLine": 51,
+          "endLine": 53,
+          "params": [
+            "initialTuner"
+          ]
+        },
+        {
+          "name": "getProviderOverride",
+          "startLine": 60,
+          "endLine": 62,
+          "params": [
+            "provider"
+          ]
+        },
+        {
+          "name": "dependencies",
+          "startLine": 71,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "allTransitiveDependencies",
+          "startLine": 76,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "name",
+          "startLine": 80,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "ControlTunerEditProvider",
+          "startLine": 87,
+          "endLine": 101,
+          "params": [
+            "initialTuner"
+          ]
+        },
+        {
+          "name": "ControlTunerEditProvider._internal",
+          "startLine": 103,
+          "endLine": 111,
+          "params": [
+            "_createNotifier",
+            "name",
+            "dependencies",
+            "allTransitiveDependencies",
+            "debugGetCreateSourceHash",
+            "from",
+            "initialTuner"
+          ]
+        },
+        {
+          "name": "runNotifierBuild",
+          "startLine": 116,
+          "endLine": 118,
+          "params": [
+            "notifier"
+          ]
+        },
+        {
+          "name": "overrideWith",
+          "startLine": 125,
+          "endLine": 125,
+          "params": [
+            "create"
+          ]
+        },
+        {
+          "name": "createElement",
+          "startLine": 141,
+          "endLine": 142,
+          "params": []
+        },
+        {
+          "name": "hashCode",
+          "startLine": 153,
+          "endLine": 153,
+          "params": []
+        },
+        {
+          "name": "initialTuner",
+          "startLine": 166,
+          "endLine": 166,
+          "params": []
+        },
+        {
+          "name": "_ControlTunerEditProviderElement",
+          "startLine": 172,
+          "endLine": 172,
+          "params": [
+            "provider"
+          ]
+        },
+        {
+          "name": "initialTuner",
+          "startLine": 175,
+          "endLine": 175,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_SystemHash",
+          "startLine": 12,
+          "endLine": 30,
+          "methods": [
+            "_SystemHash._",
+            "combine",
+            "finish"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_$ControlTunerEdit",
+          "startLine": 32,
+          "endLine": 39,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "initialTuner"
+          ]
+        },
+        {
+          "name": "ControlTunerEditFamily",
+          "startLine": 46,
+          "endLine": 81,
+          "methods": [
+            "call",
+            "getProviderOverride",
+            "dependencies",
+            "allTransitiveDependencies",
+            "name"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ControlTunerEditProvider",
+          "startLine": 84,
+          "endLine": 159,
+          "methods": [
+            "ControlTunerEditProvider",
+            "ControlTunerEditProvider._internal",
+            "runNotifierBuild",
+            "overrideWith",
+            "createElement",
+            "hashCode"
+          ],
+          "properties": [
+            "initialTuner"
+          ]
+        },
+        {
+          "name": "ControlTunerEditRef",
+          "startLine": 163,
+          "endLine": 167,
+          "methods": [
+            "initialTuner"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_ControlTunerEditProviderElement",
+          "startLine": 169,
+          "endLine": 177,
+          "methods": [
+            "_ControlTunerEditProviderElement",
+            "initialTuner"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "combine",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "finish",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "call",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "getProviderOverride",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "dependencies",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "allTransitiveDependencies",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "name",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "ControlTunerEditFamily",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "ControlTunerEditProvider",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "ControlTunerEditProvider._internal",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "runNotifierBuild",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "overrideWith",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "createElement",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 153,
+          "isDefault": false
+        },
+        {
+          "name": "ControlTunerEditProvider",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "initialTuner",
+          "line": 166,
+          "isDefault": false
+        },
+        {
+          "name": "ControlTunerEditRef",
+          "line": 163,
+          "isDefault": false
+        },
+        {
+          "name": "initialTuner",
+          "line": 175,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "call",
+          "callee": "ControlTunerEditProvider",
+          "lineNumber": 54
+        },
+        {
+          "caller": "getProviderOverride",
+          "callee": "call",
+          "lineNumber": 63
+        },
+        {
+          "caller": "runNotifierBuild",
+          "callee": "build",
+          "lineNumber": 119
+        },
+        {
+          "caller": "overrideWith",
+          "callee": "ProviderOverride",
+          "lineNumber": 126
+        },
+        {
+          "caller": "overrideWith",
+          "callee": "_internal",
+          "lineNumber": 128
+        },
+        {
+          "caller": "createElement",
+          "callee": "_ControlTunerEditProviderElement",
+          "lineNumber": 143
+        },
+        {
+          "caller": "hashCode",
+          "callee": "combine",
+          "lineNumber": 154
+        },
+        {
+          "caller": "hashCode",
+          "callee": "combine",
+          "lineNumber": 155
+        },
+        {
+          "caller": "hashCode",
+          "callee": "finish",
+          "lineNumber": 157
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 19,
+        "classCount": 6
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_users_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 107,
+      "nonEmptyLines": 94,
+      "functions": [
+        {
+          "name": "api",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "fetchUsers",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "updateSelectedUserPolicy",
+          "startLine": 28,
+          "endLine": 28,
+          "params": [
+            "policy"
+          ]
+        },
+        {
+          "name": "saveUserPolicy",
+          "startLine": 35,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "startEditingUser",
+          "startLine": 41,
+          "endLine": 41,
+          "params": [
+            "user"
+          ]
+        },
+        {
+          "name": "fetchSpecificUser",
+          "startLine": 45,
+          "endLine": 45,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "startLine": 69,
+          "endLine": 69,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "setUserPassword",
+          "startLine": 74,
+          "endLine": 79,
+          "params": [
+            "userId",
+            "current",
+            "newPassword",
+            "confirmPassword"
+          ]
+        },
+        {
+          "name": "resetUserPassword",
+          "startLine": 89,
+          "endLine": 89,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ControlUsers",
+          "startLine": 15,
+          "endLine": 95,
+          "methods": [
+            "api",
+            "build",
+            "fetchUsers",
+            "updateSelectedUserPolicy",
+            "saveUserPolicy",
+            "startEditingUser",
+            "fetchSpecificUser",
+            "deleteUser",
+            "setUserPassword",
+            "resetUserPassword"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ControlUsersModel",
+          "startLine": 98,
+          "endLine": 107,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "api",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "fetchUsers",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "updateSelectedUserPolicy",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "saveUserPolicy",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "startEditingUser",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "fetchSpecificUser",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "deleteUser",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "setUserPassword",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "resetUserPassword",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "ControlUsers",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "ControlUsersModel",
+          "line": 98,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "api",
+          "callee": "read",
+          "lineNumber": 16
+        },
+        {
+          "caller": "build",
+          "callee": "ControlUsersModel",
+          "lineNumber": 20
+        },
+        {
+          "caller": "fetchUsers",
+          "callee": "getAllUsers",
+          "lineNumber": 24
+        },
+        {
+          "caller": "fetchUsers",
+          "callee": "copyWith",
+          "lineNumber": 25
+        },
+        {
+          "caller": "updateSelectedUserPolicy",
+          "callee": "copyWith",
+          "lineNumber": 30
+        },
+        {
+          "caller": "saveUserPolicy",
+          "callee": "setUserPolicy",
+          "lineNumber": 37
+        },
+        {
+          "caller": "startEditingUser",
+          "callee": "copyWith",
+          "lineNumber": 42
+        },
+        {
+          "caller": "fetchSpecificUser",
+          "callee": "getAllUsers",
+          "lineNumber": 47
+        },
+        {
+          "caller": "fetchSpecificUser",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 49
+        },
+        {
+          "caller": "fetchSpecificUser",
+          "callee": "getAllDevices",
+          "lineNumber": 50
+        },
+        {
+          "caller": "fetchSpecificUser",
+          "callee": "getParentalRatings",
+          "lineNumber": 51
+        },
+        {
+          "caller": "fetchSpecificUser",
+          "callee": "libraryVirtualFoldersGet",
+          "lineNumber": 52
+        },
+        {
+          "caller": "fetchSpecificUser",
+          "callee": "map",
+          "lineNumber": 54
+        },
+        {
+          "caller": "fetchSpecificUser",
+          "callee": "fromVirtualFolder",
+          "lineNumber": 54
+        },
+        {
+          "caller": "fetchSpecificUser",
+          "callee": "toList",
+          "lineNumber": 58
+        },
+        {
+          "caller": "fetchSpecificUser",
+          "callee": "copyWith",
+          "lineNumber": 59
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "deleteUser",
+          "lineNumber": 70
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "fetchUsers",
+          "lineNumber": 71
+        },
+        {
+          "caller": "setUserPassword",
+          "callee": "setNewPassword",
+          "lineNumber": 80
+        },
+        {
+          "caller": "resetUserPassword",
+          "callee": "resetPassword",
+          "lineNumber": 90
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 10,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_users_provider.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 454,
+      "nonEmptyLines": 413,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "users",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "views",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "selectedUser",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "editingPolicy",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "availableDevices",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "parentalRatings",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$ControlUsersModel",
+          "startLine": 16,
+          "endLine": 36,
+          "methods": [
+            "users",
+            "views",
+            "selectedUser",
+            "editingPolicy",
+            "availableDevices",
+            "parentalRatings",
+            "copyWith",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "users",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "views",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "selectedUser",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "editingPolicy",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "availableDevices",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "parentalRatings",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$ControlUsersModelCopyWithImpl",
+          "lineNumber": 29
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 113
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 113
+        },
+        {
+          "caller": "_ControlUsersModel",
+          "callee": "_ControlUsersModel",
+          "lineNumber": 165
+        },
+        {
+          "caller": "_ControlUsersModel",
+          "callee": "$default",
+          "lineNumber": 166
+        },
+        {
+          "caller": "_ControlUsersModel",
+          "callee": "StateError",
+          "lineNumber": 168
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_ControlUsersModel",
+          "lineNumber": 190
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 191
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_ControlUsersModel",
+          "lineNumber": 223
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 224
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 227
+        },
+        {
+          "caller": "when",
+          "callee": "_ControlUsersModel",
+          "lineNumber": 257
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 258
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 261
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_ControlUsersModel",
+          "lineNumber": 290
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 291
+        },
+        {
+          "caller": "call",
+          "callee": "__$ControlUsersModelCopyWithImpl",
+          "lineNumber": 394
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 411
+        },
+        {
+          "caller": "call",
+          "callee": "_ControlUsersModel",
+          "lineNumber": 411
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 449
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 449
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_users_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "_$controlUsersHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/crash_log_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 124,
+      "nonEmptyLines": 102,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "_initializeLogFile",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "_loadLogsFromFile",
+          "startLine": 53,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "_saveLogsToFile",
+          "startLine": 70,
+          "endLine": 70,
+          "params": []
+        },
+        {
+          "name": "clearLogs",
+          "startLine": 82,
+          "endLine": 82,
+          "params": []
+        },
+        {
+          "name": "_scheduleSave",
+          "startLine": 90,
+          "endLine": 90,
+          "params": []
+        },
+        {
+          "name": "logPrint",
+          "startLine": 97,
+          "endLine": 97,
+          "params": [
+            "rec"
+          ]
+        },
+        {
+          "name": "logFile",
+          "startLine": 112,
+          "endLine": 112,
+          "params": [
+            "details"
+          ]
+        },
+        {
+          "name": "dispose",
+          "startLine": 120,
+          "endLine": 120,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CrashLogNotifier",
+          "startLine": 15,
+          "endLine": 124,
+          "methods": [
+            "init",
+            "_initializeLogFile",
+            "_loadLogsFromFile",
+            "_saveLogsToFile",
+            "clearLogs",
+            "_scheduleSave",
+            "logPrint",
+            "logFile",
+            "dispose"
+          ],
+          "properties": [
+            "logger",
+            "maxLength",
+            "logFilePath",
+            "_debounceTimer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "init",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "clearLogs",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "logPrint",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "logFile",
+          "line": 112,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 120,
+          "isDefault": false
+        },
+        {
+          "name": "CrashLogNotifier",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CrashLogNotifier",
+          "callee": "init",
+          "lineNumber": 17
+        },
+        {
+          "caller": "init",
+          "callee": "listen",
+          "lineNumber": 29
+        },
+        {
+          "caller": "init",
+          "callee": "logFile",
+          "lineNumber": 31
+        },
+        {
+          "caller": "init",
+          "callee": "logFile",
+          "lineNumber": 34
+        },
+        {
+          "caller": "init",
+          "callee": "FlutterErrorDetails",
+          "lineNumber": 34
+        },
+        {
+          "caller": "init",
+          "callee": "_initializeLogFile",
+          "lineNumber": 43
+        },
+        {
+          "caller": "init",
+          "callee": "_loadLogsFromFile",
+          "lineNumber": 44
+        },
+        {
+          "caller": "_initializeLogFile",
+          "callee": "getApplicationCacheDirectory",
+          "lineNumber": 49
+        },
+        {
+          "caller": "_loadLogsFromFile",
+          "callee": "File",
+          "lineNumber": 57
+        },
+        {
+          "caller": "_loadLogsFromFile",
+          "callee": "exists",
+          "lineNumber": 58
+        },
+        {
+          "caller": "_loadLogsFromFile",
+          "callee": "readAsString",
+          "lineNumber": 60
+        },
+        {
+          "caller": "_loadLogsFromFile",
+          "callee": "jsonDecode",
+          "lineNumber": 63
+        },
+        {
+          "caller": "_loadLogsFromFile",
+          "callee": "map",
+          "lineNumber": 64
+        },
+        {
+          "caller": "_loadLogsFromFile",
+          "callee": "fromJson",
+          "lineNumber": 64
+        },
+        {
+          "caller": "_loadLogsFromFile",
+          "callee": "toList",
+          "lineNumber": 64
+        },
+        {
+          "caller": "_loadLogsFromFile",
+          "callee": "print",
+          "lineNumber": 66
+        },
+        {
+          "caller": "_saveLogsToFile",
+          "callee": "File",
+          "lineNumber": 74
+        },
+        {
+          "caller": "_saveLogsToFile",
+          "callee": "map",
+          "lineNumber": 75
+        },
+        {
+          "caller": "_saveLogsToFile",
+          "callee": "toJson",
+          "lineNumber": 75
+        },
+        {
+          "caller": "_saveLogsToFile",
+          "callee": "toList",
+          "lineNumber": 75
+        },
+        {
+          "caller": "_saveLogsToFile",
+          "callee": "writeAsString",
+          "lineNumber": 76
+        },
+        {
+          "caller": "_saveLogsToFile",
+          "callee": "jsonEncode",
+          "lineNumber": 76
+        },
+        {
+          "caller": "_saveLogsToFile",
+          "callee": "print",
+          "lineNumber": 78
+        },
+        {
+          "caller": "clearLogs",
+          "callee": "_saveLogsToFile",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_scheduleSave",
+          "callee": "Timer",
+          "lineNumber": 92
+        },
+        {
+          "caller": "_scheduleSave",
+          "callee": "_saveLogsToFile",
+          "lineNumber": 93
+        },
+        {
+          "caller": "logPrint",
+          "callee": "print",
+          "lineNumber": 99
+        },
+        {
+          "caller": "logPrint",
+          "callee": "fromLogRecord",
+          "lineNumber": 102
+        },
+        {
+          "caller": "logPrint",
+          "callee": "sublist",
+          "lineNumber": 104
+        },
+        {
+          "caller": "logPrint",
+          "callee": "_scheduleSave",
+          "lineNumber": 107
+        },
+        {
+          "caller": "logFile",
+          "callee": "severe",
+          "lineNumber": 113
+        },
+        {
+          "caller": "logFile",
+          "callee": "print",
+          "lineNumber": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/cultures_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "_fetch",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Cultures",
+          "startLine": 9,
+          "endLine": 24,
+          "methods": [
+            "build",
+            "_fetch"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "Cultures",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "_fetch",
+          "lineNumber": 12
+        },
+        {
+          "caller": "_fetch",
+          "callee": "read",
+          "lineNumber": 17
+        },
+        {
+          "caller": "_fetch",
+          "callee": "localizationCulturesGet",
+          "lineNumber": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/cultures_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "_$culturesHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/dashboard_mode_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

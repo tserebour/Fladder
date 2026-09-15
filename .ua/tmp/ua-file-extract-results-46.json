@@ -1,0 +1,5927 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "lib/widgets/pop_up/delete_file.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 40,
+      "functions": [
+        {
+          "name": "showDeleteDialog",
+          "startLine": 12,
+          "endLine": 12,
+          "params": [
+            "context",
+            "item",
+            "ref"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "showDeleteDialog",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "showDeleteDialog",
+          "callee": "showDialog",
+          "lineNumber": 14
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "AlertDialog",
+          "lineNumber": 17
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "Text",
+          "lineNumber": 18
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "deleteItem",
+          "lineNumber": 18
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "label",
+          "lineNumber": 18
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "Text",
+          "lineNumber": 19
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "deleteFileFromSystem",
+          "lineNumber": 20
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "ElevatedButton",
+          "lineNumber": 24
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "of",
+          "lineNumber": 24
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "pop",
+          "lineNumber": 24
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "Text",
+          "lineNumber": 24
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "FilledButtonAwait",
+          "lineNumber": 25
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "styleFrom",
+          "lineNumber": 26
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "of",
+          "lineNumber": 27
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "of",
+          "lineNumber": 28
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "of",
+          "lineNumber": 29
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "read",
+          "lineNumber": 32
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "deleteItem",
+          "lineNumber": 32
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "of",
+          "lineNumber": 33
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "pop",
+          "lineNumber": 33
+        },
+        {
+          "caller": "showDeleteDialog",
+          "callee": "Text",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/widgets/shared/adaptive_color.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 92,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 29,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "dispose",
+          "startLine": 36,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "didChangeAppLifecycleState",
+          "startLine": 42,
+          "endLine": 42,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "_fetchColors",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 81,
+          "endLine": 81,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdaptiveColor",
+          "startLine": 14,
+          "endLine": 20,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "child"
+          ]
+        },
+        {
+          "name": "AdaptiveColorState",
+          "startLine": 22,
+          "endLine": 110,
+          "methods": [
+            "initState",
+            "dispose",
+            "didChangeAppLifecycleState",
+            "_fetchColors",
+            "build"
+          ],
+          "properties": [
+            "_light",
+            "_dark",
+            "_corePalette"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "AdaptiveColor",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "didChangeAppLifecycleState",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "AdaptiveColorState",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "AdaptiveColorState",
+          "lineNumber": 19
+        },
+        {
+          "caller": "initState",
+          "callee": "addObserver",
+          "lineNumber": 31
+        },
+        {
+          "caller": "initState",
+          "callee": "_fetchColors",
+          "lineNumber": 32
+        },
+        {
+          "caller": "dispose",
+          "callee": "removeObserver",
+          "lineNumber": 37
+        },
+        {
+          "caller": "didChangeAppLifecycleState",
+          "callee": "_fetchColors",
+          "lineNumber": 44
+        },
+        {
+          "caller": "_fetchColors",
+          "callee": "getCorePalette",
+          "lineNumber": 50
+        },
+        {
+          "caller": "_fetchColors",
+          "callee": "setState",
+          "lineNumber": 56
+        },
+        {
+          "caller": "_fetchColors",
+          "callee": "toColorScheme",
+          "lineNumber": 57
+        },
+        {
+          "caller": "_fetchColors",
+          "callee": "toColorScheme",
+          "lineNumber": 58
+        },
+        {
+          "caller": "_fetchColors",
+          "callee": "debugPrint",
+          "lineNumber": 63
+        },
+        {
+          "caller": "_fetchColors",
+          "callee": "getAccentColor",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_fetchColors",
+          "callee": "setState",
+          "lineNumber": 69
+        },
+        {
+          "caller": "_fetchColors",
+          "callee": "fromSeed",
+          "lineNumber": 70
+        },
+        {
+          "caller": "_fetchColors",
+          "callee": "fromSeed",
+          "lineNumber": 71
+        },
+        {
+          "caller": "_fetchColors",
+          "callee": "debugPrint",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 83
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 83
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 84
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 84
+        },
+        {
+          "caller": "build",
+          "callee": "defaultScheme",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build",
+          "callee": "defaultScheme",
+          "lineNumber": 87
+        },
+        {
+          "caller": "build",
+          "callee": "theme",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build",
+          "callee": "theme",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build",
+          "callee": "theme",
+          "lineNumber": 94
+        },
+        {
+          "caller": "build",
+          "callee": "theme",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "applyChineseFontToTheme",
+          "lineNumber": 100
+        },
+        {
+          "caller": "build",
+          "callee": "applyChineseFontToDarkTheme",
+          "lineNumber": 102
+        },
+        {
+          "caller": "build",
+          "callee": "ThemesData",
+          "lineNumber": 104
+        },
+        {
+          "caller": "build",
+          "callee": "child",
+          "lineNumber": 107
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/widgets/shared/adaptive_date_picker.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 54,
+      "functions": [
+        {
+          "name": "showAdaptiveDatePicker",
+          "startLine": 4,
+          "endLine": 7,
+          "params": [
+            "context",
+            "initialDateTime"
+          ]
+        },
+        {
+          "name": "_buildCupertinoDatePicker",
+          "startLine": 22,
+          "endLine": 25,
+          "params": [
+            "context",
+            "initialDateTime"
+          ]
+        },
+        {
+          "name": "_buildMaterialDatePicker",
+          "startLine": 46,
+          "endLine": 49,
+          "params": [
+            "context",
+            "initialDateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "showAdaptiveDatePicker",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "showAdaptiveDatePicker",
+          "callee": "of",
+          "lineNumber": 8
+        },
+        {
+          "caller": "showAdaptiveDatePicker",
+          "callee": "_buildCupertinoDatePicker",
+          "lineNumber": 10
+        },
+        {
+          "caller": "showAdaptiveDatePicker",
+          "callee": "_buildMaterialDatePicker",
+          "lineNumber": 15
+        },
+        {
+          "caller": "_buildCupertinoDatePicker",
+          "callee": "showModalBottomSheet",
+          "lineNumber": 27
+        },
+        {
+          "caller": "_buildCupertinoDatePicker",
+          "callee": "Container",
+          "lineNumber": 30
+        },
+        {
+          "caller": "_buildCupertinoDatePicker",
+          "callee": "of",
+          "lineNumber": 31
+        },
+        {
+          "caller": "_buildCupertinoDatePicker",
+          "callee": "copyWith",
+          "lineNumber": 31
+        },
+        {
+          "caller": "_buildCupertinoDatePicker",
+          "callee": "of",
+          "lineNumber": 32
+        },
+        {
+          "caller": "_buildCupertinoDatePicker",
+          "callee": "CupertinoDatePicker",
+          "lineNumber": 33
+        },
+        {
+          "caller": "_buildMaterialDatePicker",
+          "callee": "showDatePicker",
+          "lineNumber": 50
+        },
+        {
+          "caller": "_buildMaterialDatePicker",
+          "callee": "now",
+          "lineNumber": 52
+        },
+        {
+          "caller": "_buildMaterialDatePicker",
+          "callee": "DateTime",
+          "lineNumber": 53
+        },
+        {
+          "caller": "_buildMaterialDatePicker",
+          "callee": "DateTime",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/widgets/shared/adaptive_range_input.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 156,
+      "nonEmptyLines": 134,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 34,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 42,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "didUpdateWidget",
+          "startLine": 49,
+          "endLine": 49,
+          "params": [
+            "oldWidget"
+          ]
+        },
+        {
+          "name": "dispose",
+          "startLine": 60,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 67,
+          "endLine": 67,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "_buildField",
+          "startLine": 100,
+          "endLine": 100,
+          "params": [
+            "controller",
+            "isStart"
+          ]
+        },
+        {
+          "name": "_commitValues",
+          "startLine": 116,
+          "endLine": 116,
+          "params": []
+        },
+        {
+          "name": "_formatValue",
+          "startLine": 145,
+          "endLine": 145,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "_parseValue",
+          "startLine": 151,
+          "endLine": 151,
+          "params": [
+            "raw"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdaptiveRangeInput",
+          "startLine": 9,
+          "endLine": 35,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "min",
+            "max",
+            "start",
+            "end",
+            "divisions",
+            "labels",
+            "wholeNumbers",
+            "allowEmpty",
+            "onChanged"
+          ]
+        },
+        {
+          "name": "_AdaptiveRangeInputState",
+          "startLine": 37,
+          "endLine": 156,
+          "methods": [
+            "initState",
+            "didUpdateWidget",
+            "dispose",
+            "build",
+            "_buildField",
+            "_commitValues",
+            "_formatValue",
+            "_parseValue"
+          ],
+          "properties": [
+            "_startController",
+            "_endController"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "AdaptiveRangeInput",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "didUpdateWidget",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 67,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_AdaptiveRangeInputState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "initState",
+          "callee": "TextEditingController",
+          "lineNumber": 44
+        },
+        {
+          "caller": "initState",
+          "callee": "_formatValue",
+          "lineNumber": 44
+        },
+        {
+          "caller": "initState",
+          "callee": "TextEditingController",
+          "lineNumber": 45
+        },
+        {
+          "caller": "initState",
+          "callee": "_formatValue",
+          "lineNumber": 45
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "_formatValue",
+          "lineNumber": 52
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "_formatValue",
+          "lineNumber": 55
+        },
+        {
+          "caller": "dispose",
+          "callee": "dispose",
+          "lineNumber": 61
+        },
+        {
+          "caller": "dispose",
+          "callee": "dispose",
+          "lineNumber": 62
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 68
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 73
+        },
+        {
+          "caller": "build",
+          "callee": "RangeSlider",
+          "lineNumber": 75
+        },
+        {
+          "caller": "build",
+          "callee": "RangeValues",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "onChanged",
+          "lineNumber": 83
+        },
+        {
+          "caller": "build",
+          "callee": "onChanged",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build",
+          "callee": "Expanded",
+          "lineNumber": 94
+        },
+        {
+          "caller": "build",
+          "callee": "_buildField",
+          "lineNumber": 94
+        },
+        {
+          "caller": "build",
+          "callee": "Expanded",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "_buildField",
+          "lineNumber": 95
+        },
+        {
+          "caller": "_buildField",
+          "callee": "OutlinedTextField",
+          "lineNumber": 101
+        },
+        {
+          "caller": "_buildField",
+          "callee": "TextInputType",
+          "lineNumber": 104
+        },
+        {
+          "caller": "_buildField",
+          "callee": "TextInputType",
+          "lineNumber": 105
+        },
+        {
+          "caller": "_buildField",
+          "callee": "allow",
+          "lineNumber": 107
+        },
+        {
+          "caller": "_buildField",
+          "callee": "RegExp",
+          "lineNumber": 108
+        },
+        {
+          "caller": "_buildField",
+          "callee": "RegExp",
+          "lineNumber": 108
+        },
+        {
+          "caller": "_buildField",
+          "callee": "capitalize",
+          "lineNumber": 111
+        },
+        {
+          "caller": "_buildField",
+          "callee": "capitalize",
+          "lineNumber": 111
+        },
+        {
+          "caller": "_buildField",
+          "callee": "_commitValues",
+          "lineNumber": 112
+        },
+        {
+          "caller": "_commitValues",
+          "callee": "_parseValue",
+          "lineNumber": 117
+        },
+        {
+          "caller": "_commitValues",
+          "callee": "_parseValue",
+          "lineNumber": 118
+        },
+        {
+          "caller": "_commitValues",
+          "callee": "_formatValue",
+          "lineNumber": 135
+        },
+        {
+          "caller": "_commitValues",
+          "callee": "_formatValue",
+          "lineNumber": 136
+        },
+        {
+          "caller": "_commitValues",
+          "callee": "_formatValue",
+          "lineNumber": 138
+        },
+        {
+          "caller": "_commitValues",
+          "callee": "_formatValue",
+          "lineNumber": 139
+        },
+        {
+          "caller": "_commitValues",
+          "callee": "onChanged",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_formatValue",
+          "callee": "round",
+          "lineNumber": 148
+        },
+        {
+          "caller": "_formatValue",
+          "callee": "toString",
+          "lineNumber": 148
+        },
+        {
+          "caller": "_formatValue",
+          "callee": "toStringAsFixed",
+          "lineNumber": 148
+        },
+        {
+          "caller": "_parseValue",
+          "callee": "replaceAll",
+          "lineNumber": 152
+        },
+        {
+          "caller": "_parseValue",
+          "callee": "trim",
+          "lineNumber": 153
+        },
+        {
+          "caller": "_parseValue",
+          "callee": "tryParse",
+          "lineNumber": 154
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 9,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/widgets/shared/alert_content.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 19,
+          "endLine": 19,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ActionContent",
+          "startLine": 3,
+          "endLine": 48,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "title",
+            "child",
+            "actions",
+            "showDividers",
+            "padding"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ActionContent",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 20
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 21
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 22
+        },
+        {
+          "caller": "build",
+          "callee": "Divider",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 33
+        },
+        {
+          "caller": "build",
+          "callee": "Divider",
+          "lineNumber": 36
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/widgets/shared/ambient_blur.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 266,
+      "nonEmptyLines": 225,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 34,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "didUpdateWidget",
+          "startLine": 65,
+          "endLine": 65,
+          "params": [
+            "oldWidget"
+          ]
+        },
+        {
+          "name": "dispose",
+          "startLine": 76,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "_captureAndBlur",
+          "startLine": 83,
+          "endLine": 83,
+          "params": [
+            "isFirst"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 156,
+          "endLine": 156,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "_RoundedRectVignettePainter",
+          "startLine": 214,
+          "endLine": 219,
+          "params": [
+            "color",
+            "cornerRadius",
+            "feather",
+            "margin"
+          ]
+        },
+        {
+          "name": "paint",
+          "startLine": 222,
+          "endLine": 222,
+          "params": [
+            "canvas",
+            "size"
+          ]
+        },
+        {
+          "name": "shouldRepaint",
+          "startLine": 260,
+          "endLine": 260,
+          "params": [
+            "oldDelegate"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AmbientBlur",
+          "startLine": 6,
+          "endLine": 35,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "child",
+            "sigmaX",
+            "sigmaY",
+            "duration",
+            "downscaleFactor",
+            "opacity",
+            "vignetteColor",
+            "vignetteCornerRadius",
+            "vignetteFeather",
+            "vignetteMargin"
+          ]
+        },
+        {
+          "name": "_AmbientBlurState",
+          "startLine": 37,
+          "endLine": 206,
+          "methods": [
+            "initState",
+            "didUpdateWidget",
+            "dispose",
+            "_captureAndBlur",
+            "build"
+          ],
+          "properties": [
+            "_blendController",
+            "_boundaryKey",
+            "_oldImage",
+            "_currentImage",
+            "_isCapturing"
+          ]
+        },
+        {
+          "name": "_RoundedRectVignettePainter",
+          "startLine": 208,
+          "endLine": 266,
+          "methods": [
+            "_RoundedRectVignettePainter",
+            "paint",
+            "shouldRepaint"
+          ],
+          "properties": [
+            "color",
+            "cornerRadius",
+            "feather",
+            "margin"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "AmbientBlur",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "didUpdateWidget",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 156,
+          "isDefault": false
+        },
+        {
+          "name": "paint",
+          "line": 222,
+          "isDefault": false
+        },
+        {
+          "name": "shouldRepaint",
+          "line": 260,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_AmbientBlurState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "initState",
+          "callee": "AnimationController",
+          "lineNumber": 50
+        },
+        {
+          "caller": "initState",
+          "callee": "addStatusListener",
+          "lineNumber": 55
+        },
+        {
+          "caller": "initState",
+          "callee": "_captureAndBlur",
+          "lineNumber": 57
+        },
+        {
+          "caller": "initState",
+          "callee": "addPostFrameCallback",
+          "lineNumber": 61
+        },
+        {
+          "caller": "initState",
+          "callee": "_captureAndBlur",
+          "lineNumber": 61
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "forward",
+          "lineNumber": 70
+        },
+        {
+          "caller": "dispose",
+          "callee": "dispose",
+          "lineNumber": 77
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "of",
+          "lineNumber": 94
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "toImage",
+          "lineNumber": 97
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "PictureRecorder",
+          "lineNumber": 102
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "Canvas",
+          "lineNumber": 103
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "Paint",
+          "lineNumber": 104
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "blur",
+          "lineNumber": 105
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "drawImage",
+          "lineNumber": 111
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "endRecording",
+          "lineNumber": 112
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "toImage",
+          "lineNumber": 114
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "dispose",
+          "lineNumber": 120
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "setState",
+          "lineNumber": 124
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "addPostFrameCallback",
+          "lineNumber": 136
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "dispose",
+          "lineNumber": 137
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "forward",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "debugPrint",
+          "lineNumber": 144
+        },
+        {
+          "caller": "_captureAndBlur",
+          "callee": "forward",
+          "lineNumber": 147
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 159
+        },
+        {
+          "caller": "build",
+          "callee": "ColorFiltered",
+          "lineNumber": 162
+        },
+        {
+          "caller": "build",
+          "callee": "RepaintBoundary",
+          "lineNumber": 164
+        },
+        {
+          "caller": "build",
+          "callee": "fill",
+          "lineNumber": 167
+        },
+        {
+          "caller": "build",
+          "callee": "Opacity",
+          "lineNumber": 168
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 170
+        },
+        {
+          "caller": "build",
+          "callee": "RawImage",
+          "lineNumber": 174
+        },
+        {
+          "caller": "build",
+          "callee": "FadeTransition",
+          "lineNumber": 179
+        },
+        {
+          "caller": "build",
+          "callee": "RawImage",
+          "lineNumber": 181
+        },
+        {
+          "caller": "build",
+          "callee": "fill",
+          "lineNumber": 187
+        },
+        {
+          "caller": "build",
+          "callee": "RepaintBoundary",
+          "lineNumber": 188
+        },
+        {
+          "caller": "build",
+          "callee": "CustomPaint",
+          "lineNumber": 189
+        },
+        {
+          "caller": "build",
+          "callee": "_RoundedRectVignettePainter",
+          "lineNumber": 190
+        },
+        {
+          "caller": "build",
+          "callee": "withAlpha",
+          "lineNumber": 191
+        },
+        {
+          "caller": "paint",
+          "callee": "save",
+          "lineNumber": 223
+        },
+        {
+          "caller": "paint",
+          "callee": "clipRect",
+          "lineNumber": 225
+        },
+        {
+          "caller": "paint",
+          "callee": "fromLTWH",
+          "lineNumber": 225
+        },
+        {
+          "caller": "paint",
+          "callee": "Paint",
+          "lineNumber": 227
+        },
+        {
+          "caller": "paint",
+          "callee": "blur",
+          "lineNumber": 232
+        },
+        {
+          "caller": "paint",
+          "callee": "fromLTWH",
+          "lineNumber": 235
+        },
+        {
+          "caller": "paint",
+          "callee": "fromRectAndRadius",
+          "lineNumber": 243
+        },
+        {
+          "caller": "paint",
+          "callee": "circular",
+          "lineNumber": 245
+        },
+        {
+          "caller": "paint",
+          "callee": "fromLTWH",
+          "lineNumber": 248
+        },
+        {
+          "caller": "paint",
+          "callee": "inflate",
+          "lineNumber": 248
+        },
+        {
+          "caller": "paint",
+          "callee": "fromRectAndRadius",
+          "lineNumber": 249
+        },
+        {
+          "caller": "paint",
+          "callee": "drawDRRect",
+          "lineNumber": 251
+        },
+        {
+          "caller": "paint",
+          "callee": "drawRect",
+          "lineNumber": 253
+        },
+        {
+          "caller": "paint",
+          "callee": "fromLTWH",
+          "lineNumber": 253
+        },
+        {
+          "caller": "paint",
+          "callee": "restore",
+          "lineNumber": 256
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 9,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/widgets/shared/animated_icon.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 82,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "didUpdateWidget",
+          "startLine": 34,
+          "endLine": 34,
+          "params": [
+            "oldWidget"
+          ]
+        },
+        {
+          "name": "_animateIconChange",
+          "startLine": 41,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 62,
+          "endLine": 62,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AnimatedVisibilityIcon",
+          "startLine": 5,
+          "endLine": 25,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "isFilled",
+            "filledIcon",
+            "filledColor",
+            "outlinedIcon",
+            "outlinedColor",
+            "displayDuration"
+          ]
+        },
+        {
+          "name": "AnimatedVisibilityIconState",
+          "startLine": 27,
+          "endLine": 92,
+          "methods": [
+            "didUpdateWidget",
+            "_animateIconChange",
+            "build"
+          ],
+          "properties": [
+            "_isVisible",
+            "_currentFilledState",
+            "timer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "AnimatedVisibilityIcon",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "didUpdateWidget",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "AnimatedVisibilityIconState",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "AnimatedVisibilityIconState",
+          "lineNumber": 24
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "_animateIconChange",
+          "lineNumber": 37
+        },
+        {
+          "caller": "_animateIconChange",
+          "callee": "setState",
+          "lineNumber": 43
+        },
+        {
+          "caller": "_animateIconChange",
+          "callee": "periodic",
+          "lineNumber": 48
+        },
+        {
+          "caller": "_animateIconChange",
+          "callee": "setState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "_animateIconChange",
+          "callee": "cancel",
+          "lineNumber": 56
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedScale",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedOpacity",
+          "lineNumber": 67
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 69
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedSwitcher",
+          "lineNumber": 70
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 71
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedContainer",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 73
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 78
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 79
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/widgets/shared/animated_visibility.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 16,
+          "endLine": 16,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AnimatedVisibility",
+          "startLine": 3,
+          "endLine": 29,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "child",
+            "visible",
+            "hiddenHeight",
+            "duration"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "AnimatedVisibility",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "AnimatedOpacity",
+          "lineNumber": 17
+        },
+        {
+          "caller": "build",
+          "callee": "IgnorePointer",
+          "lineNumber": 20
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/widgets/shared/back_intent_dpad.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 15,
+          "endLine": 15,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BackIntentDpad",
+          "startLine": 10,
+          "endLine": 49,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "child"
+          ]
+        },
+        {
+          "name": "BackIntent",
+          "startLine": 51,
+          "endLine": 53,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "BackIntentDpad",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "BackIntent",
+          "line": 51,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 16
+        },
+        {
+          "caller": "build",
+          "callee": "Listener",
+          "lineNumber": 19
+        },
+        {
+          "caller": "build",
+          "callee": "isEditableTextFocused",
+          "lineNumber": 22
+        },
+        {
+          "caller": "build",
+          "callee": "maybePop",
+          "lineNumber": 23
+        },
+        {
+          "caller": "build",
+          "callee": "Focus",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "isEditableTextFocused",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "maybePop",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/widgets/shared/background_item_image.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/widgets/shared/bottom_menu_bar.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 120,
+      "nonEmptyLines": 110,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 29,
+          "endLine": 29,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BottomMenuBar",
+          "startLine": 13,
+          "endLine": 120,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "actions",
+            "fabAction",
+            "combined",
+            "extended",
+            "sticky"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "BottomMenuBar",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 30
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 31
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 31
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 36
+        },
+        {
+          "caller": "build",
+          "callee": "floatingPlayerHeight",
+          "lineNumber": 41
+        },
+        {
+          "caller": "build",
+          "callee": "Theme",
+          "lineNumber": 44
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 45
+        },
+        {
+          "caller": "build",
+          "callee": "FloatingActionButtonThemeData",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "add",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "adaptivePadding",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "add",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "only",
+          "lineNumber": 59
+        },
+        {
+          "caller": "build",
+          "callee": "IntrinsicHeight",
+          "lineNumber": 61
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 62
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 68
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedOpacity",
+          "lineNumber": 69
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 70
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedContainer",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 73
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 75
+        },
+        {
+          "caller": "build",
+          "callee": "all",
+          "lineNumber": 78
+        },
+        {
+          "caller": "build",
+          "callee": "withAlpha",
+          "lineNumber": 79
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 83
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build",
+          "callee": "SingleChildScrollView",
+          "lineNumber": 87
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedFadeSize",
+          "lineNumber": 89
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 93
+        },
+        {
+          "caller": "build",
+          "callee": "map",
+          "lineNumber": 94
+        },
+        {
+          "caller": "build",
+          "callee": "toButton",
+          "lineNumber": 94
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "ValueKey",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "square",
+          "lineNumber": 101
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 111
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 112
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/widgets/shared/button_group.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 127,
+      "nonEmptyLines": 116,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 20,
+          "endLine": 20,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 77,
+          "endLine": 77,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ExpressiveButtonGroup",
+          "startLine": 5,
+          "endLine": 58,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "options",
+            "selectedValues",
+            "onSelected",
+            "multiSelection"
+          ]
+        },
+        {
+          "name": "ExpressiveButton",
+          "startLine": 60,
+          "endLine": 113,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "isSelected",
+            "label",
+            "icon",
+            "onPressed",
+            "onLongPress"
+          ]
+        },
+        {
+          "name": "ButtonGroupOption",
+          "startLine": 115,
+          "endLine": 127,
+          "methods": [],
+          "properties": [
+            "value",
+            "icon",
+            "selected",
+            "child"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "ExpressiveButtonGroup",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "ExpressiveButton",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "ButtonGroupOption",
+          "line": 115,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 21
+        },
+        {
+          "caller": "build",
+          "callee": "generate",
+          "lineNumber": 25
+        },
+        {
+          "caller": "build",
+          "callee": "contains",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "PositionProvider",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "ExpressiveButton",
+          "lineNumber": 37
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "remove",
+          "lineNumber": 44
+        },
+        {
+          "caller": "build",
+          "callee": "add",
+          "lineNumber": 44
+        },
+        {
+          "caller": "build",
+          "callee": "onSelected",
+          "lineNumber": 50
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 78
+        },
+        {
+          "caller": "build",
+          "callee": "horizontal",
+          "lineNumber": 79
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 81
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 82
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 84
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 84
+        },
+        {
+          "caller": "build",
+          "callee": "icon",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build",
+          "callee": "ButtonStyle",
+          "lineNumber": 87
+        },
+        {
+          "caller": "build",
+          "callee": "WidgetStatePropertyAll",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "RoundedRectangleBorder",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "WidgetStatePropertyAll",
+          "lineNumber": 89
+        },
+        {
+          "caller": "build",
+          "callee": "WidgetStatePropertyAll",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 92
+        },
+        {
+          "caller": "build",
+          "callee": "WidgetStatePropertyAll",
+          "lineNumber": 93
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 94
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "WidgetStatePropertyAll",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "resolveWith",
+          "lineNumber": 98
+        },
+        {
+          "caller": "build",
+          "callee": "BorderSide",
+          "lineNumber": 98
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 101
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 102
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 103
+        },
+        {
+          "caller": "build",
+          "callee": "contains",
+          "lineNumber": 103
+        },
+        {
+          "caller": "build",
+          "callee": "WidgetStatePropertyAll",
+          "lineNumber": 105
+        },
+        {
+          "caller": "build",
+          "callee": "all",
+          "lineNumber": 105
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/widgets/shared/clickable_text.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 60,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "_textWidget",
+          "startLine": 30,
+          "endLine": 30,
+          "params": [
+            "showDecoration"
+          ]
+        },
+        {
+          "name": "_buildClickable",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 62,
+          "endLine": 62,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ClickableText",
+          "startLine": 7,
+          "endLine": 25,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "text",
+            "opacity",
+            "maxLines",
+            "overflow",
+            "style",
+            "onTap"
+          ]
+        },
+        {
+          "name": "_ClickableTextState",
+          "startLine": 27,
+          "endLine": 68,
+          "methods": [
+            "_textWidget",
+            "_buildClickable",
+            "build"
+          ],
+          "properties": [
+            "hovering"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "ClickableText",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 62,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_ClickableTextState",
+          "lineNumber": 24
+        },
+        {
+          "caller": "_textWidget",
+          "callee": "of",
+          "lineNumber": 32
+        },
+        {
+          "caller": "_textWidget",
+          "callee": "of",
+          "lineNumber": 32
+        },
+        {
+          "caller": "_textWidget",
+          "callee": "withValues",
+          "lineNumber": 32
+        },
+        {
+          "caller": "_textWidget",
+          "callee": "Text",
+          "lineNumber": 35
+        },
+        {
+          "caller": "_buildClickable",
+          "callee": "MouseRegion",
+          "lineNumber": 50
+        },
+        {
+          "caller": "_buildClickable",
+          "callee": "setState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "_buildClickable",
+          "callee": "setState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "_buildClickable",
+          "callee": "GestureDetector",
+          "lineNumber": 54
+        },
+        {
+          "caller": "_buildClickable",
+          "callee": "Tooltip",
+          "lineNumber": 56
+        },
+        {
+          "caller": "_buildClickable",
+          "callee": "_textWidget",
+          "lineNumber": 56
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "_textWidget",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "_buildClickable",
+          "lineNumber": 66
+        },
+        {
+          "caller": "build",
+          "callee": "_textWidget",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/widgets/shared/custom_shader_mask.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 49,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "_loadImage",
+          "startLine": 23,
+          "endLine": 23,
+          "params": [
+            "assetPath"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 34,
+          "endLine": 34,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CustomShaderMask",
+          "startLine": 6,
+          "endLine": 12,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "child"
+          ]
+        },
+        {
+          "name": "CustomShaderMaskState",
+          "startLine": 14,
+          "endLine": 60,
+          "methods": [
+            "initState",
+            "_loadImage",
+            "build"
+          ],
+          "properties": [
+            "gradientImage"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "CustomShaderMask",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "CustomShaderMaskState",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "CustomShaderMaskState",
+          "lineNumber": 11
+        },
+        {
+          "caller": "initState",
+          "callee": "_loadImage",
+          "lineNumber": 20
+        },
+        {
+          "caller": "_loadImage",
+          "callee": "load",
+          "lineNumber": 24
+        },
+        {
+          "caller": "_loadImage",
+          "callee": "asUint8List",
+          "lineNumber": 25
+        },
+        {
+          "caller": "_loadImage",
+          "callee": "instantiateImageCodec",
+          "lineNumber": 26
+        },
+        {
+          "caller": "_loadImage",
+          "callee": "getNextFrame",
+          "lineNumber": 27
+        },
+        {
+          "caller": "_loadImage",
+          "callee": "setState",
+          "lineNumber": 28
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 36
+        },
+        {
+          "caller": "build",
+          "callee": "ShaderMask",
+          "lineNumber": 39
+        },
+        {
+          "caller": "build",
+          "callee": "toDouble",
+          "lineNumber": 41
+        },
+        {
+          "caller": "build",
+          "callee": "toDouble",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "diagonal3Values",
+          "lineNumber": 47
+        },
+        {
+          "caller": "build",
+          "callee": "ImageShader",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/widgets/shared/custom_tooltip.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 130,
+      "nonEmptyLines": 115,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "_showTooltip",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "_hideTooltip",
+          "startLine": 43,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "_createOverlayEntry",
+          "startLine": 49,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 103,
+          "endLine": 103,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "dispose",
+          "startLine": 125,
+          "endLine": 125,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CustomTooltip",
+          "startLine": 5,
+          "endLine": 23,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "child",
+            "tooltipContent",
+            "offset",
+            "position",
+            "showDelay"
+          ]
+        },
+        {
+          "name": "TooltipPosition",
+          "startLine": 25,
+          "endLine": 25,
+          "methods": [],
+          "properties": [
+            "top",
+            "bottom",
+            "left",
+            "right"
+          ]
+        },
+        {
+          "name": "CustomTooltipState",
+          "startLine": 27,
+          "endLine": 130,
+          "methods": [
+            "_showTooltip",
+            "_hideTooltip",
+            "_createOverlayEntry",
+            "build",
+            "dispose"
+          ],
+          "properties": [
+            "_overlayEntry",
+            "_tooltipTimer",
+            "_tooltipKey"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "CustomTooltip",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipPosition",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "CustomTooltipState",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "CustomTooltipState",
+          "lineNumber": 22
+        },
+        {
+          "caller": "_showTooltip",
+          "callee": "Timer",
+          "lineNumber": 35
+        },
+        {
+          "caller": "_showTooltip",
+          "callee": "_createOverlayEntry",
+          "lineNumber": 37
+        },
+        {
+          "caller": "_showTooltip",
+          "callee": "of",
+          "lineNumber": 38
+        },
+        {
+          "caller": "_showTooltip",
+          "callee": "insert",
+          "lineNumber": 38
+        },
+        {
+          "caller": "_createOverlayEntry",
+          "callee": "findRenderObject",
+          "lineNumber": 50
+        },
+        {
+          "caller": "_createOverlayEntry",
+          "callee": "localToGlobal",
+          "lineNumber": 51
+        },
+        {
+          "caller": "_createOverlayEntry",
+          "callee": "OverlayEntry",
+          "lineNumber": 54
+        },
+        {
+          "caller": "_createOverlayEntry",
+          "callee": "Offset",
+          "lineNumber": 63
+        },
+        {
+          "caller": "_createOverlayEntry",
+          "callee": "Offset",
+          "lineNumber": 69
+        },
+        {
+          "caller": "_createOverlayEntry",
+          "callee": "Offset",
+          "lineNumber": 75
+        },
+        {
+          "caller": "_createOverlayEntry",
+          "callee": "Offset",
+          "lineNumber": 81
+        },
+        {
+          "caller": "_createOverlayEntry",
+          "callee": "Positioned",
+          "lineNumber": 88
+        },
+        {
+          "caller": "_createOverlayEntry",
+          "callee": "Material",
+          "lineNumber": 91
+        },
+        {
+          "caller": "_createOverlayEntry",
+          "callee": "SizedBox",
+          "lineNumber": 97
+        },
+        {
+          "caller": "build",
+          "callee": "MouseRegion",
+          "lineNumber": 105
+        },
+        {
+          "caller": "build",
+          "callee": "_showTooltip",
+          "lineNumber": 106
+        },
+        {
+          "caller": "build",
+          "callee": "_hideTooltip",
+          "lineNumber": 107
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 108
+        },
+        {
+          "caller": "build",
+          "callee": "Positioned",
+          "lineNumber": 111
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 114
+        },
+        {
+          "caller": "dispose",
+          "callee": "_hideTooltip",
+          "lineNumber": 127
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/widgets/shared/elevated_icon.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 71,
+      "functions": [
+        {
+          "name": "getBackIcon",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 30,
+          "endLine": 30,
+          "params": [
+            "context",
+            "ref"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 56,
+          "endLine": 56,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ElevatedIconButton",
+          "startLine": 23,
+          "endLine": 40,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "onPressed",
+            "icon",
+            "color"
+          ]
+        },
+        {
+          "name": "ElevatedIconButtonLabel",
+          "startLine": 42,
+          "endLine": 77,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "onPressed",
+            "label",
+            "icon",
+            "color"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getBackIcon",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "ElevatedIconButton",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "ElevatedIconButtonLabel",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getBackIcon",
+          "callee": "of",
+          "lineNumber": 11
+        },
+        {
+          "caller": "build",
+          "callee": "IconButton",
+          "lineNumber": 31
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 33
+        },
+        {
+          "caller": "build",
+          "callee": "WidgetStatePropertyAll",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 37
+        },
+        {
+          "caller": "build",
+          "callee": "Tooltip",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "ConstrainedBox",
+          "lineNumber": 59
+        },
+        {
+          "caller": "build",
+          "callee": "BoxConstraints",
+          "lineNumber": 60
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 61
+        },
+        {
+          "caller": "build",
+          "callee": "ElevatedIconButton",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 65
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 3,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/widgets/shared/ensure_visible.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 33,
+      "functions": [
+        {
+          "name": "ensureVisible",
+          "startLine": 5,
+          "endLine": 10,
+          "params": [
+            "duration",
+            "alignment",
+            "curve",
+            "onlyNearest"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "EnsureVisibleHelper",
+          "startLine": 4,
+          "endLine": 35,
+          "methods": [
+            "ensureVisible"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ensureVisible",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "EnsureVisibleHelper",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ensureVisible",
+          "callee": "maybeOf",
+          "lineNumber": 11
+        },
+        {
+          "caller": "ensureVisible",
+          "callee": "value",
+          "lineNumber": 12
+        },
+        {
+          "caller": "ensureVisible",
+          "callee": "findRenderObject",
+          "lineNumber": 14
+        },
+        {
+          "caller": "ensureVisible",
+          "callee": "of",
+          "lineNumber": 16
+        },
+        {
+          "caller": "ensureVisible",
+          "callee": "getOffsetToReveal",
+          "lineNumber": 18
+        },
+        {
+          "caller": "ensureVisible",
+          "callee": "animateTo",
+          "lineNumber": 19
+        },
+        {
+          "caller": "ensureVisible",
+          "callee": "clamp",
+          "lineNumber": 20
+        },
+        {
+          "caller": "ensureVisible",
+          "callee": "ensureVisible",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/widgets/shared/enum_selection.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 165,
+      "nonEmptyLines": 156,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 28,
+          "endLine": 28,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 142,
+          "endLine": 142,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "EnumBox",
+          "startLine": 10,
+          "endLine": 126,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "current",
+            "currentWidget",
+            "autoFocus",
+            "itemBuilder",
+            "onFocusChanged"
+          ]
+        },
+        {
+          "name": "EnumSelection",
+          "startLine": 128,
+          "endLine": 165,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "label",
+            "current",
+            "currentWidget",
+            "itemBuilder"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "EnumBox",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 142,
+          "isDefault": false
+        },
+        {
+          "name": "EnumSelection",
+          "line": 128,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "symmetric",
+          "lineNumber": 30
+        },
+        {
+          "caller": "build",
+          "callee": "itemBuilder",
+          "lineNumber": 31
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "Material",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 48
+        },
+        {
+          "caller": "build",
+          "callee": "merge",
+          "lineNumber": 50
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 59
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 61
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 69
+        },
+        {
+          "caller": "build",
+          "callee": "horizontal",
+          "lineNumber": 70
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 77
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 78
+        },
+        {
+          "caller": "build",
+          "callee": "withAlpha",
+          "lineNumber": 78
+        },
+        {
+          "caller": "build",
+          "callee": "all",
+          "lineNumber": 80
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 81
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "ensureVisible",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "showBottomSheetPill",
+          "lineNumber": 100
+        },
+        {
+          "caller": "build",
+          "callee": "ListView",
+          "lineNumber": 102
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 106
+        },
+        {
+          "caller": "build",
+          "callee": "map",
+          "lineNumber": 107
+        },
+        {
+          "caller": "build",
+          "callee": "toListItem",
+          "lineNumber": 108
+        },
+        {
+          "caller": "build",
+          "callee": "PopupMenuButton",
+          "lineNumber": 115
+        },
+        {
+          "caller": "build",
+          "callee": "RoundedRectangleBorder",
+          "lineNumber": 117
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 117
+        },
+        {
+          "caller": "build",
+          "callee": "map",
+          "lineNumber": 119
+        },
+        {
+          "caller": "build",
+          "callee": "toPopupMenuItem",
+          "lineNumber": 119
+        },
+        {
+          "caller": "build",
+          "callee": "toList",
+          "lineNumber": 119
+        },
+        {
+          "caller": "build",
+          "callee": "Material",
+          "lineNumber": 143
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 145
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 146
+        },
+        {
+          "caller": "build",
+          "callee": "Wrap",
+          "lineNumber": 148
+        },
+        {
+          "caller": "build",
+          "callee": "merge",
+          "lineNumber": 155
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 156
+        },
+        {
+          "caller": "build",
+          "callee": "EnumBox",
+          "lineNumber": 159
+        },
+        {
+          "caller": "build",
+          "callee": "toList",
+          "lineNumber": 160
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/widgets/shared/filled_button_await.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 94,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 37,
+          "endLine": 37,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FilledButtonAwait",
+          "startLine": 8,
+          "endLine": 31,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "onPressed",
+            "style",
+            "child",
+            "_tonal"
+          ]
+        },
+        {
+          "name": "FilledButtonAwaitState",
+          "startLine": 33,
+          "endLine": 103,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "loading"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "FilledButtonAwait",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "FilledButtonAwaitState",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "FilledButtonAwaitState",
+          "lineNumber": 30
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "tonal",
+          "lineNumber": 41
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "log",
+          "lineNumber": 50
+        },
+        {
+          "caller": "build",
+          "callee": "toString",
+          "lineNumber": 50
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedFadeSize",
+          "lineNumber": 55
+        },
+        {
+          "caller": "build",
+          "callee": "Opacity",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 60
+        },
+        {
+          "caller": "build",
+          "callee": "CircularProgressIndicator",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "FilledButton",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 77
+        },
+        {
+          "caller": "build",
+          "callee": "log",
+          "lineNumber": 81
+        },
+        {
+          "caller": "build",
+          "callee": "toString",
+          "lineNumber": 81
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 83
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedFadeSize",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build",
+          "callee": "Opacity",
+          "lineNumber": 89
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build",
+          "callee": "CircularProgressIndicator",
+          "lineNumber": 94
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/widgets/shared/fladder_scrollbar.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 18,
+          "endLine": 18,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FladderScrollbar",
+          "startLine": 6,
+          "endLine": 40,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "controller",
+            "child",
+            "visible"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "FladderScrollbar",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "FlexibleScrollbar",
+          "lineNumber": 20
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedContainer",
+          "lineNumber": 25
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 28
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 31
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/widgets/shared/fladder_slider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 274,
+      "nonEmptyLines": 244,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 40,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 53,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "didUpdateWidget",
+          "startLine": 61,
+          "endLine": 61,
+          "params": [
+            "oldWidget"
+          ]
+        },
+        {
+          "name": "dispose",
+          "startLine": 82,
+          "endLine": 82,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 88,
+          "endLine": 88,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "normalize",
+          "startLine": 225,
+          "endLine": 225,
+          "params": [
+            "min",
+            "max",
+            "value"
+          ]
+        },
+        {
+          "name": "_handleDpadKey",
+          "startLine": 229,
+          "endLine": 229,
+          "params": [
+            "node",
+            "event"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FladderSlider",
+          "startLine": 9,
+          "endLine": 41,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "value",
+            "min",
+            "max",
+            "divisions",
+            "thumbWidth",
+            "activeTrackColor",
+            "inactiveTrackColor",
+            "showThumb",
+            "animation",
+            "onChanged",
+            "onChangeStart",
+            "onChangeEnd"
+          ]
+        },
+        {
+          "name": "FladderSliderState",
+          "startLine": 43,
+          "endLine": 274,
+          "methods": [
+            "initState",
+            "didUpdateWidget",
+            "dispose",
+            "build",
+            "normalize",
+            "_handleDpadKey"
+          ],
+          "properties": [
+            "_controller",
+            "_animation",
+            "_currentValue",
+            "hovering",
+            "dragging",
+            "_dpadKeyActive"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "FladderSlider",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "didUpdateWidget",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "normalize",
+          "line": 225,
+          "isDefault": false
+        },
+        {
+          "name": "FladderSliderState",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "FladderSliderState",
+          "lineNumber": 40
+        },
+        {
+          "caller": "initState",
+          "callee": "AnimationController",
+          "lineNumber": 56
+        },
+        {
+          "caller": "initState",
+          "callee": "Tween",
+          "lineNumber": 57
+        },
+        {
+          "caller": "initState",
+          "callee": "animate",
+          "lineNumber": 57
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "round",
+          "lineNumber": 69
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "setState",
+          "lineNumber": 72
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "Tween",
+          "lineNumber": 76
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "animate",
+          "lineNumber": 76
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "forward",
+          "lineNumber": 77
+        },
+        {
+          "caller": "dispose",
+          "callee": "dispose",
+          "lineNumber": 83
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 89
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 91
+        },
+        {
+          "caller": "calculateChange",
+          "callee": "clamp",
+          "lineNumber": 94
+        },
+        {
+          "caller": "calculateChange",
+          "callee": "round",
+          "lineNumber": 99
+        },
+        {
+          "caller": "calculateChange",
+          "callee": "setState",
+          "lineNumber": 102
+        },
+        {
+          "caller": "calculateChange",
+          "callee": "clamp",
+          "lineNumber": 103
+        },
+        {
+          "caller": "calculateChange",
+          "callee": "roundTo",
+          "lineNumber": 106
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 109
+        },
+        {
+          "caller": "build",
+          "callee": "LayoutBuilder",
+          "lineNumber": 112
+        },
+        {
+          "caller": "build",
+          "callee": "GestureDetector",
+          "lineNumber": 118
+        },
+        {
+          "caller": "build",
+          "callee": "calculateChange",
+          "lineNumber": 119
+        },
+        {
+          "caller": "build",
+          "callee": "calculateChange",
+          "lineNumber": 120
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 122
+        },
+        {
+          "caller": "build",
+          "callee": "calculateChange",
+          "lineNumber": 125
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 128
+        },
+        {
+          "caller": "build",
+          "callee": "calculateChange",
+          "lineNumber": 131
+        },
+        {
+          "caller": "build",
+          "callee": "calculateChange",
+          "lineNumber": 134
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 135
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedBuilder",
+          "lineNumber": 137
+        },
+        {
+          "caller": "build",
+          "callee": "normalize",
+          "lineNumber": 140
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 141
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 145
+        },
+        {
+          "caller": "build",
+          "callee": "GappedContainerShape",
+          "lineNumber": 148
+        },
+        {
+          "caller": "build",
+          "callee": "generate",
+          "lineNumber": 155
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 159
+        },
+        {
+          "caller": "build",
+          "callee": "Positioned",
+          "lineNumber": 161
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 163
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 166
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 168
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 169
+        },
+        {
+          "caller": "build",
+          "callee": "Positioned",
+          "lineNumber": 178
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 181
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 182
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedContainer",
+          "lineNumber": 184
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 185
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 188
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 190
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 191
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 192
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 204
+        },
+        {
+          "caller": "_handleDpadKey",
+          "callee": "clamp",
+          "lineNumber": 261
+        },
+        {
+          "caller": "_handleDpadKey",
+          "callee": "round",
+          "lineNumber": 264
+        },
+        {
+          "caller": "_handleDpadKey",
+          "callee": "setState",
+          "lineNumber": 267
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/widgets/shared/focus_row.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 188,
+      "nonEmptyLines": 162,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 29,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "_ownsNode",
+          "startLine": 38,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 43,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "dispose",
+          "startLine": 52,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "_handleFocusManagerChange",
+          "startLine": 58,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "_clearOnVertical",
+          "startLine": 65,
+          "endLine": 65,
+          "params": []
+        },
+        {
+          "name": "_focusFirstChild",
+          "startLine": 70,
+          "endLine": 70,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 103,
+          "endLine": 103,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "_childNodes",
+          "startLine": 125,
+          "endLine": 125,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "_RowFocusPolicy",
+          "startLine": 134,
+          "endLine": 134,
+          "params": [
+            "onVertical",
+            "groupNode",
+            "escapeToNavBar"
+          ]
+        },
+        {
+          "name": "inDirection",
+          "startLine": 137,
+          "endLine": 137,
+          "params": [
+            "currentNode",
+            "direction"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FocusRow",
+          "startLine": 8,
+          "endLine": 30,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "child",
+            "ensureVisibleAlignment",
+            "focusNode",
+            "traversalPolicy",
+            "escapeToNavBar",
+            "onGroupFocused",
+            "onFocusChange"
+          ]
+        },
+        {
+          "name": "_FocusRowState",
+          "startLine": 32,
+          "endLine": 123,
+          "methods": [
+            "_ownsNode",
+            "initState",
+            "dispose",
+            "_handleFocusManagerChange",
+            "_clearOnVertical",
+            "_focusFirstChild",
+            "build"
+          ],
+          "properties": [
+            "_groupNode",
+            "_lastChild",
+            "_clearedByVertical",
+            "_focusManagerListener"
+          ]
+        },
+        {
+          "name": "_RowFocusPolicy",
+          "startLine": 129,
+          "endLine": 188,
+          "methods": [
+            "_RowFocusPolicy",
+            "inDirection"
+          ],
+          "properties": [
+            "onVertical",
+            "groupNode",
+            "escapeToNavBar"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "FocusRow",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "inDirection",
+          "line": 137,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_FocusRowState",
+          "lineNumber": 29
+        },
+        {
+          "caller": "initState",
+          "callee": "FocusNode",
+          "lineNumber": 45
+        },
+        {
+          "caller": "initState",
+          "callee": "addListener",
+          "lineNumber": 48
+        },
+        {
+          "caller": "dispose",
+          "callee": "removeListener",
+          "lineNumber": 53
+        },
+        {
+          "caller": "dispose",
+          "callee": "dispose",
+          "lineNumber": 54
+        },
+        {
+          "caller": "_handleFocusManagerChange",
+          "callee": "contains",
+          "lineNumber": 60
+        },
+        {
+          "caller": "_focusFirstChild",
+          "callee": "addPostFrameCallback",
+          "lineNumber": 71
+        },
+        {
+          "caller": "_focusFirstChild",
+          "callee": "_childNodes",
+          "lineNumber": 73
+        },
+        {
+          "caller": "_focusFirstChild",
+          "callee": "requestFocus",
+          "lineNumber": 93
+        },
+        {
+          "caller": "build",
+          "callee": "FocusTraversalGroup",
+          "lineNumber": 104
+        },
+        {
+          "caller": "build",
+          "callee": "_RowFocusPolicy",
+          "lineNumber": 106
+        },
+        {
+          "caller": "build",
+          "callee": "Focus",
+          "lineNumber": 111
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 115
+        },
+        {
+          "caller": "build",
+          "callee": "_focusFirstChild",
+          "lineNumber": 116
+        },
+        {
+          "caller": "_childNodes",
+          "callee": "where",
+          "lineNumber": 126
+        },
+        {
+          "caller": "_childNodes",
+          "callee": "toList",
+          "lineNumber": 126
+        },
+        {
+          "caller": "_childNodes",
+          "callee": "compareTo",
+          "lineNumber": 127
+        },
+        {
+          "caller": "inDirection",
+          "callee": "of",
+          "lineNumber": 138
+        },
+        {
+          "caller": "inDirection",
+          "callee": "where",
+          "lineNumber": 143
+        },
+        {
+          "caller": "inDirection",
+          "callee": "toList",
+          "lineNumber": 143
+        },
+        {
+          "caller": "inDirection",
+          "callee": "compareTo",
+          "lineNumber": 144
+        },
+        {
+          "caller": "inDirection",
+          "callee": "indexOf",
+          "lineNumber": 147
+        },
+        {
+          "caller": "inDirection",
+          "callee": "requestFocus",
+          "lineNumber": 153
+        },
+        {
+          "caller": "inDirection",
+          "callee": "cb",
+          "lineNumber": 158
+        },
+        {
+          "caller": "inDirection",
+          "callee": "requestFocus",
+          "lineNumber": 164
+        },
+        {
+          "caller": "inDirection",
+          "callee": "cb",
+          "lineNumber": 169
+        },
+        {
+          "caller": "inDirection",
+          "callee": "requestFocus",
+          "lineNumber": 181
+        },
+        {
+          "caller": "inDirection",
+          "callee": "focusInDirection",
+          "lineNumber": 183
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 11,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/widgets/shared/grid_focus_traveler.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 151,
+      "nonEmptyLines": 132,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 27,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 35,
+          "endLine": 35,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "_childNodes",
+          "startLine": 77,
+          "endLine": 77,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "GridFocusTravelerPolicy",
+          "startLine": 90,
+          "endLine": 94,
+          "params": [
+            "crossAxisCount",
+            "onChanged",
+            "navBarNode"
+          ]
+        },
+        {
+          "name": "inDirection",
+          "startLine": 97,
+          "endLine": 97,
+          "params": [
+            "currentNode",
+            "direction"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "GridFocusTraveler",
+          "startLine": 10,
+          "endLine": 28,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "currentIndex",
+            "itemCount",
+            "crossAxisCount",
+            "itemBuilder",
+            "gridDelegate"
+          ]
+        },
+        {
+          "name": "_GridFocusTravelerState",
+          "startLine": 30,
+          "endLine": 75,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "selectedIndex",
+            "_initializedFocus"
+          ]
+        },
+        {
+          "name": "GridFocusTravelerPolicy",
+          "startLine": 85,
+          "endLine": 151,
+          "methods": [
+            "GridFocusTravelerPolicy",
+            "inDirection"
+          ],
+          "properties": [
+            "crossAxisCount",
+            "onChanged",
+            "navBarNode"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "GridFocusTraveler",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "GridFocusTravelerPolicy",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "inDirection",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "GridFocusTravelerPolicy",
+          "line": 85,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_GridFocusTravelerState",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "FocusTraversalGroup",
+          "lineNumber": 36
+        },
+        {
+          "caller": "build",
+          "callee": "GridFocusTravelerPolicy",
+          "lineNumber": 37
+        },
+        {
+          "caller": "build",
+          "callee": "Builder",
+          "lineNumber": 44
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "addPostFrameCallback",
+          "lineNumber": 47
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 48
+        },
+        {
+          "caller": "build",
+          "callee": "_childNodes",
+          "lineNumber": 49
+        },
+        {
+          "caller": "build",
+          "callee": "requestFocus",
+          "lineNumber": 51
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "build",
+          "callee": "builder",
+          "lineNumber": 60
+        },
+        {
+          "caller": "build",
+          "callee": "FocusProvider",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "Builder",
+          "lineNumber": 65
+        },
+        {
+          "caller": "build",
+          "callee": "itemBuilder",
+          "lineNumber": 66
+        },
+        {
+          "caller": "_childNodes",
+          "callee": "where",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_childNodes",
+          "callee": "toList",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_childNodes",
+          "callee": "compareTo",
+          "lineNumber": 80
+        },
+        {
+          "caller": "_childNodes",
+          "callee": "compareTo",
+          "lineNumber": 81
+        },
+        {
+          "caller": "inDirection",
+          "callee": "_childNodes",
+          "lineNumber": 103
+        },
+        {
+          "caller": "inDirection",
+          "callee": "indexOf",
+          "lineNumber": 105
+        },
+        {
+          "caller": "inDirection",
+          "callee": "ceil",
+          "lineNumber": 113
+        },
+        {
+          "caller": "inDirection",
+          "callee": "requestFocus",
+          "lineNumber": 138
+        },
+        {
+          "caller": "inDirection",
+          "callee": "onChanged",
+          "lineNumber": 139
+        },
+        {
+          "caller": "inDirection",
+          "callee": "requestFocus",
+          "lineNumber": 145
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/widgets/shared/hide_on_scroll.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 140,
+      "nonEmptyLines": 116,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 44,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "dispose",
+          "startLine": 50,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "didUpdateWidget",
+          "startLine": 59,
+          "endLine": 59,
+          "params": [
+            "oldWidget"
+          ]
+        },
+        {
+          "name": "_onScroll",
+          "startLine": 68,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 116,
+          "endLine": 116,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "HideOnScroll",
+          "startLine": 7,
+          "endLine": 33,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "child",
+            "controller",
+            "height",
+            "visibleBuilder",
+            "duration",
+            "canHide",
+            "forceHide",
+            "scrollThreshold"
+          ]
+        },
+        {
+          "name": "_HideOnScrollState",
+          "startLine": 35,
+          "endLine": 140,
+          "methods": [
+            "initState",
+            "dispose",
+            "didUpdateWidget",
+            "_onScroll",
+            "build"
+          ],
+          "properties": [
+            "scrollController",
+            "isVisible",
+            "_lastOffset",
+            "_accumulatedDelta",
+            "_isInitialized"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "HideOnScroll",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "didUpdateWidget",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 116,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_HideOnScrollState",
+          "lineNumber": 32
+        },
+        {
+          "caller": "initState",
+          "callee": "addListener",
+          "lineNumber": 46
+        },
+        {
+          "caller": "dispose",
+          "callee": "removeListener",
+          "lineNumber": 51
+        },
+        {
+          "caller": "dispose",
+          "callee": "dispose",
+          "lineNumber": 53
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "removeListener",
+          "lineNumber": 62
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "ScrollController",
+          "lineNumber": 63
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "addListener",
+          "lineNumber": 64
+        },
+        {
+          "caller": "_onScroll",
+          "callee": "setState",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_onScroll",
+          "callee": "setState",
+          "lineNumber": 111
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 118
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 121
+        },
+        {
+          "caller": "build",
+          "callee": "viewSizeOf",
+          "lineNumber": 123
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedAlign",
+          "lineNumber": 127
+        },
+        {
+          "caller": "build",
+          "callee": "Alignment",
+          "lineNumber": 128
+        },
+        {
+          "caller": "build",
+          "callee": "Wrap",
+          "lineNumber": 135
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/widgets/shared/horizontal_list.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 560,
+      "nonEmptyLines": 496,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 60,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 77,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "didUpdateWidget",
+          "startLine": 83,
+          "endLine": 83,
+          "params": [
+            "oldWidget"
+          ]
+        },
+        {
+          "name": "dispose",
+          "startLine": 93,
+          "endLine": 93,
+          "params": []
+        },
+        {
+          "name": "_measureFirstItem",
+          "startLine": 98,
+          "endLine": 98,
+          "params": []
+        },
+        {
+          "name": "_durationForInterval",
+          "startLine": 120,
+          "endLine": 120,
+          "params": [
+            "intervalMillis"
+          ]
+        },
+        {
+          "name": "_cumulativeOffset",
+          "startLine": 134,
+          "endLine": 134,
+          "params": [
+            "index"
+          ]
+        },
+        {
+          "name": "_scrollToPosition",
+          "startLine": 146,
+          "endLine": 146,
+          "params": [
+            "index",
+            "duration",
+            "instant"
+          ]
+        },
+        {
+          "name": "_scrollToStart",
+          "startLine": 187,
+          "endLine": 187,
+          "params": []
+        },
+        {
+          "name": "_scrollToEnd",
+          "startLine": 195,
+          "endLine": 195,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 205,
+          "endLine": 205,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "_getCorrectIndexForNode",
+          "startLine": 395,
+          "endLine": 395,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "_firstFullyVisibleNode",
+          "startLine": 430,
+          "endLine": 433,
+          "params": [
+            "context",
+            "nodes"
+          ]
+        },
+        {
+          "name": "_nodeForItemIndex",
+          "startLine": 464,
+          "endLine": 464,
+          "params": [
+            "context",
+            "nodes",
+            "index"
+          ]
+        },
+        {
+          "name": "_nodesInRow",
+          "startLine": 475,
+          "endLine": 475,
+          "params": [
+            "parentNode"
+          ]
+        },
+        {
+          "name": "HorizontalRailFocus",
+          "startLine": 488,
+          "endLine": 493,
+          "params": [
+            "parentNode",
+            "onFocused",
+            "scrollController",
+            "firstItemWidth"
+          ]
+        },
+        {
+          "name": "inDirection",
+          "startLine": 496,
+          "endLine": 496,
+          "params": [
+            "currentNode",
+            "direction"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "HorizontalList",
+          "startLine": 19,
+          "endLine": 61,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "autoFocus",
+            "label",
+            "titleActions",
+            "titleActionsPosition",
+            "onLabelClick",
+            "subtext",
+            "items",
+            "startIndex",
+            "itemBuilder",
+            "onFocused",
+            "scrollToEnd",
+            "contentPadding",
+            "dominantRatio",
+            "height",
+            "shrinkWrap",
+            "itemWidthBuilder",
+            "onFocusChange"
+          ]
+        },
+        {
+          "name": "_HorizontalListState",
+          "startLine": 63,
+          "endLine": 428,
+          "methods": [
+            "initState",
+            "didUpdateWidget",
+            "dispose",
+            "_measureFirstItem",
+            "_durationForInterval",
+            "_cumulativeOffset",
+            "_scrollToPosition",
+            "_scrollToStart",
+            "_scrollToEnd",
+            "build",
+            "_getCorrectIndexForNode"
+          ],
+          "properties": [
+            "parentNode",
+            "lastFocused",
+            "_firstItemKey",
+            "_listViewKey",
+            "_scrollController",
+            "contentPadding",
+            "contentWidth",
+            "_firstItemWidth",
+            "hasFocus",
+            "_scrollAnimation",
+            "scrollMinDuration",
+            "scrollMaxDuration"
+          ]
+        },
+        {
+          "name": "HorizontalRailFocus",
+          "startLine": 480,
+          "endLine": 560,
+          "methods": [
+            "HorizontalRailFocus",
+            "inDirection"
+          ],
+          "properties": [
+            "parentNode",
+            "onFocused",
+            "scrollController",
+            "firstItemWidth",
+            "_lastMoveTime",
+            "_lastDirection"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "HorizontalList",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "didUpdateWidget",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 205,
+          "isDefault": false
+        },
+        {
+          "name": "HorizontalRailFocus",
+          "line": 488,
+          "isDefault": false
+        },
+        {
+          "name": "inDirection",
+          "line": 496,
+          "isDefault": false
+        },
+        {
+          "name": "HorizontalRailFocus",
+          "line": 480,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_HorizontalListState",
+          "lineNumber": 60
+        },
+        {
+          "caller": "initState",
+          "callee": "_measureFirstItem",
+          "lineNumber": 79
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "addPostFrameCallback",
+          "lineNumber": 86
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "_measureFirstItem",
+          "lineNumber": 87
+        },
+        {
+          "caller": "_measureFirstItem",
+          "callee": "addPostFrameCallback",
+          "lineNumber": 100
+        },
+        {
+          "caller": "_measureFirstItem",
+          "callee": "findRenderObject",
+          "lineNumber": 103
+        },
+        {
+          "caller": "_measureFirstItem",
+          "callee": "_scrollToPosition",
+          "lineNumber": 105
+        },
+        {
+          "caller": "_measureFirstItem",
+          "callee": "autoFocusOf",
+          "lineNumber": 108
+        },
+        {
+          "caller": "_measureFirstItem",
+          "callee": "inputDeviceOf",
+          "lineNumber": 109
+        },
+        {
+          "caller": "_measureFirstItem",
+          "callee": "_nodesInRow",
+          "lineNumber": 110
+        },
+        {
+          "caller": "_measureFirstItem",
+          "callee": "_nodeForItemIndex",
+          "lineNumber": 111
+        },
+        {
+          "caller": "_durationForInterval",
+          "callee": "clamp",
+          "lineNumber": 126
+        },
+        {
+          "caller": "_durationForInterval",
+          "callee": "round",
+          "lineNumber": 130
+        },
+        {
+          "caller": "_durationForInterval",
+          "callee": "Duration",
+          "lineNumber": 131
+        },
+        {
+          "caller": "_cumulativeOffset",
+          "callee": "widthBuilder",
+          "lineNumber": 141
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "_cumulativeOffset",
+          "lineNumber": 149
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "clamp",
+          "lineNumber": 149
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "jumpTo",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "toDouble",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "AnimationController",
+          "lineNumber": 158
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "Tween",
+          "lineNumber": 165
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "toDouble",
+          "lineNumber": 167
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "CurvedAnimation",
+          "lineNumber": 170
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "addListener",
+          "lineNumber": 175
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "jumpTo",
+          "lineNumber": 177
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "evaluate",
+          "lineNumber": 177
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "forward",
+          "lineNumber": 181
+        },
+        {
+          "caller": "_scrollToPosition",
+          "callee": "dispose",
+          "lineNumber": 184
+        },
+        {
+          "caller": "_scrollToStart",
+          "callee": "animateTo",
+          "lineNumber": 188
+        },
+        {
+          "caller": "_scrollToStart",
+          "callee": "Duration",
+          "lineNumber": 190
+        },
+        {
+          "caller": "_scrollToEnd",
+          "callee": "animateTo",
+          "lineNumber": 197
+        },
+        {
+          "caller": "_scrollToEnd",
+          "callee": "min",
+          "lineNumber": 198
+        },
+        {
+          "caller": "_scrollToEnd",
+          "callee": "Duration",
+          "lineNumber": 199
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 206
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 207
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 209
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 212
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 213
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 217
+        },
+        {
+          "caller": "build",
+          "callee": "ExcludeFocus",
+          "lineNumber": 218
+        },
+        {
+          "caller": "build",
+          "callee": "StickyHeaderText",
+          "lineNumber": 219
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 221
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 226
+        },
+        {
+          "caller": "build",
+          "callee": "ExcludeFocus",
+          "lineNumber": 227
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 228
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 230
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 231
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 231
+        },
+        {
+          "caller": "build",
+          "callee": "ExcludeFocus",
+          "lineNumber": 241
+        },
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 242
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 244
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 245
+        },
+        {
+          "caller": "build",
+          "callee": "GestureDetector",
+          "lineNumber": 249
+        },
+        {
+          "caller": "build",
+          "callee": "_scrollToStart",
+          "lineNumber": 250
+        },
+        {
+          "caller": "build",
+          "callee": "IconButton",
+          "lineNumber": 251
+        },
+        {
+          "caller": "build",
+          "callee": "animateTo",
+          "lineNumber": 253
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 254
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 255
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 258
+        },
+        {
+          "caller": "build",
+          "callee": "IconButton",
+          "lineNumber": 264
+        },
+        {
+          "caller": "build",
+          "callee": "_scrollToPosition",
+          "lineNumber": 266
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 267
+        },
+        {
+          "caller": "build",
+          "callee": "GestureDetector",
+          "lineNumber": 272
+        },
+        {
+          "caller": "build",
+          "callee": "_scrollToEnd",
+          "lineNumber": 273
+        },
+        {
+          "caller": "build",
+          "callee": "IconButton",
+          "lineNumber": 274
+        },
+        {
+          "caller": "build",
+          "callee": "animateTo",
+          "lineNumber": 276
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 277
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 278
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 281
+        },
+        {
+          "caller": "build",
+          "callee": "addPadding",
+          "lineNumber": 290
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 290
+        },
+        {
+          "caller": "build",
+          "callee": "RepaintBoundary",
+          "lineNumber": 294
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 295
+        },
+        {
+          "caller": "build",
+          "callee": "FocusRow",
+          "lineNumber": 302
+        },
+        {
+          "caller": "build",
+          "callee": "HorizontalRailFocus",
+          "lineNumber": 304
+        },
+        {
+          "caller": "build",
+          "callee": "_getCorrectIndexForNode",
+          "lineNumber": 310
+        },
+        {
+          "caller": "build",
+          "callee": "_durationForInterval",
+          "lineNumber": 313
+        },
+        {
+          "caller": "build",
+          "callee": "_scrollToPosition",
+          "lineNumber": 314
+        },
+        {
+          "caller": "build",
+          "callee": "_nodesInRow",
+          "lineNumber": 322
+        },
+        {
+          "caller": "build",
+          "callee": "contains",
+          "lineNumber": 323
+        },
+        {
+          "caller": "build",
+          "callee": "_firstFullyVisibleNode",
+          "lineNumber": 325
+        },
+        {
+          "caller": "build",
+          "callee": "_getCorrectIndexForNode",
+          "lineNumber": 329
+        },
+        {
+          "caller": "build",
+          "callee": "ensureVisible",
+          "lineNumber": 336
+        },
+        {
+          "caller": "build",
+          "callee": "requestFocus",
+          "lineNumber": 338
+        },
+        {
+          "caller": "build",
+          "callee": "_nodesInRow",
+          "lineNumber": 345
+        },
+        {
+          "caller": "build",
+          "callee": "contains",
+          "lineNumber": 347
+        },
+        {
+          "caller": "build",
+          "callee": "_firstFullyVisibleNode",
+          "lineNumber": 347
+        },
+        {
+          "caller": "build",
+          "callee": "_getCorrectIndexForNode",
+          "lineNumber": 351
+        },
+        {
+          "caller": "build",
+          "callee": "ensureVisible",
+          "lineNumber": 355
+        },
+        {
+          "caller": "build",
+          "callee": "requestFocus",
+          "lineNumber": 357
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 360
+        },
+        {
+          "caller": "build",
+          "callee": "poster",
+          "lineNumber": 362
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 363
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 363
+        },
+        {
+          "caller": "build",
+          "callee": "pow",
+          "lineNumber": 364
+        },
+        {
+          "caller": "build",
+          "callee": "separated",
+          "lineNumber": 366
+        },
+        {
+          "caller": "build",
+          "callee": "PosterPlaceHolder",
+          "lineNumber": 374
+        },
+        {
+          "caller": "build",
+          "callee": "poster",
+          "lineNumber": 376
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 378
+        },
+        {
+          "caller": "build",
+          "callee": "itemBuilder",
+          "lineNumber": 380
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 382
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 383
+        },
+        {
+          "caller": "_getCorrectIndexForNode",
+          "callee": "findRenderObject",
+          "lineNumber": 401
+        },
+        {
+          "caller": "_getCorrectIndexForNode",
+          "callee": "findRenderObject",
+          "lineNumber": 402
+        },
+        {
+          "caller": "_getCorrectIndexForNode",
+          "callee": "of",
+          "lineNumber": 405
+        },
+        {
+          "caller": "_getCorrectIndexForNode",
+          "callee": "localToGlobal",
+          "lineNumber": 406
+        },
+        {
+          "caller": "_getCorrectIndexForNode",
+          "callee": "localToGlobal",
+          "lineNumber": 407
+        },
+        {
+          "caller": "_getCorrectIndexForNode",
+          "callee": "Offset",
+          "lineNumber": 407
+        },
+        {
+          "caller": "_getCorrectIndexForNode",
+          "callee": "clamp",
+          "lineNumber": 424
+        },
+        {
+          "caller": "_firstFullyVisibleNode",
+          "callee": "of",
+          "lineNumber": 435
+        },
+        {
+          "caller": "_firstFullyVisibleNode",
+          "callee": "of",
+          "lineNumber": 437
+        },
+        {
+          "caller": "_firstFullyVisibleNode",
+          "callee": "findRenderObject",
+          "lineNumber": 439
+        },
+        {
+          "caller": "_firstFullyVisibleNode",
+          "callee": "localToGlobal",
+          "lineNumber": 445
+        },
+        {
+          "caller": "_firstFullyVisibleNode",
+          "callee": "localToGlobal",
+          "lineNumber": 446
+        },
+        {
+          "caller": "_firstFullyVisibleNode",
+          "callee": "bottomRight",
+          "lineNumber": 446
+        },
+        {
+          "caller": "_firstFullyVisibleNode",
+          "callee": "fromPoints",
+          "lineNumber": 448
+        },
+        {
+          "caller": "_nodeForItemIndex",
+          "callee": "clamp",
+          "lineNumber": 468
+        },
+        {
+          "caller": "_nodeForItemIndex",
+          "callee": "of",
+          "lineNumber": 469
+        },
+        {
+          "caller": "_nodesInRow",
+          "callee": "where",
+          "lineNumber": 476
+        },
+        {
+          "caller": "_nodesInRow",
+          "callee": "toList",
+          "lineNumber": 476
+        },
+        {
+          "caller": "_nodesInRow",
+          "callee": "compareTo",
+          "lineNumber": 477
+        },
+        {
+          "caller": "inDirection",
+          "callee": "of",
+          "lineNumber": 497
+        },
+        {
+          "caller": "inDirection",
+          "callee": "_nodesInRow",
+          "lineNumber": 499
+        },
+        {
+          "caller": "inDirection",
+          "callee": "indexOf",
+          "lineNumber": 500
+        },
+        {
+          "caller": "inDirection",
+          "callee": "jumpTo",
+          "lineNumber": 508
+        },
+        {
+          "caller": "inDirection",
+          "callee": "requestFocus",
+          "lineNumber": 515
+        },
+        {
+          "caller": "inDirection",
+          "callee": "now",
+          "lineNumber": 523
+        },
+        {
+          "caller": "inDirection",
+          "callee": "difference",
+          "lineNumber": 526
+        },
+        {
+          "caller": "inDirection",
+          "callee": "requestFocus",
+          "lineNumber": 530
+        },
+        {
+          "caller": "inDirection",
+          "callee": "onFocused",
+          "lineNumber": 531
+        },
+        {
+          "caller": "inDirection",
+          "callee": "now",
+          "lineNumber": 538
+        },
+        {
+          "caller": "inDirection",
+          "callee": "difference",
+          "lineNumber": 541
+        },
+        {
+          "caller": "inDirection",
+          "callee": "requestFocus",
+          "lineNumber": 545
+        },
+        {
+          "caller": "inDirection",
+          "callee": "onFocused",
+          "lineNumber": 546
+        },
+        {
+          "caller": "inDirection",
+          "callee": "requestFocus",
+          "lineNumber": 550
+        },
+        {
+          "caller": "inDirection",
+          "callee": "requestFocus",
+          "lineNumber": 557
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 17,
+        "classCount": 3
+      }
+    }
+  ]
+}

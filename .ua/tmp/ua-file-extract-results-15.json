@@ -1,0 +1,7676 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 16,
+  "filesSkipped": [
+    ".fvmrc",
+    ".gitmodules",
+    ".metadata",
+    "Dockerfile-rootless",
+    "android/app/build.gradle",
+    "android/app/src/debug/AndroidManifest.xml",
+    "android/app/src/development/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "android/app/src/development/res/values/colors.xml",
+    "android/app/src/main/AndroidManifest.xml"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 16,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 13,
+      "failed": 0,
+      "skipped": 3
+    }
+  },
+  "results": [
+    {
+      "path": ".github/DISCUSSION_TEMPLATE/ideas.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 40,
+      "nonEmptyLines": 40,
+      "sections": [
+        {
+          "heading": "title",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "labels",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "body",
+          "level": 1,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug-report.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 72,
+      "nonEmptyLines": 72,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "title",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "type",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "body",
+          "level": 1,
+          "line": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 5,
+      "nonEmptyLines": 5,
+      "sections": [
+        {
+          "heading": "blank_issues_enabled",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "contact_links",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/api/BatteryOptimizationPigeon.g.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 113,
+      "nonEmptyLines": 102,
+      "functions": [
+        {
+          "name": "wrapResult",
+          "startLine": 18,
+          "endLine": 20,
+          "params": [
+            "result"
+          ]
+        },
+        {
+          "name": "wrapError",
+          "startLine": 22,
+          "endLine": 36,
+          "params": [
+            "exception"
+          ]
+        },
+        {
+          "name": "readValueOfType",
+          "startLine": 40,
+          "endLine": 42,
+          "params": [
+            "type",
+            "buffer"
+          ]
+        },
+        {
+          "name": "writeValue",
+          "startLine": 44,
+          "endLine": 46,
+          "params": [
+            "stream",
+            "value"
+          ]
+        },
+        {
+          "name": "isIgnoringBatteryOptimizations",
+          "startLine": 52,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "openBatteryOptimizationSettings",
+          "startLine": 55,
+          "endLine": 55,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BatteryOptimizationPigeonPigeonUtils",
+          "startLine": 16,
+          "endLine": 37,
+          "methods": [
+            "wrapResult",
+            "wrapError"
+          ],
+          "properties": []
+        },
+        {
+          "name": "BatteryOptimizationPigeonPigeonCodec",
+          "startLine": 39,
+          "endLine": 47,
+          "methods": [
+            "readValueOfType",
+            "writeValue"
+          ],
+          "properties": []
+        },
+        {
+          "name": "BatteryOptimizationPigeon",
+          "startLine": 50,
+          "endLine": 113,
+          "methods": [
+            "isIgnoringBatteryOptimizations",
+            "openBatteryOptimizationSettings"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "wrapResult",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "wrapError",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "readValueOfType",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "writeValue",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "isIgnoringBatteryOptimizations",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "openBatteryOptimizationSettings",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "BatteryOptimizationPigeon",
+          "line": 50,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "wrapResult",
+          "callee": "listOf",
+          "lineNumber": 19
+        },
+        {
+          "caller": "wrapError",
+          "callee": "listOf",
+          "lineNumber": 24
+        },
+        {
+          "caller": "wrapError",
+          "callee": "listOf",
+          "lineNumber": 30
+        },
+        {
+          "caller": "wrapError",
+          "callee": "toString",
+          "lineNumber": 32
+        },
+        {
+          "caller": "wrapError",
+          "callee": "getStackTraceString",
+          "lineNumber": 33
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValueOfType",
+          "lineNumber": 41
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 45
+        },
+        {
+          "caller": "setUp",
+          "callee": "isNotEmpty",
+          "lineNumber": 71
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 72
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 73
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 79
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 81
+        },
+        {
+          "caller": "setUp",
+          "callee": "isIgnoringBatteryOptimizations",
+          "lineNumber": 81
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 83
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 85
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 88
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 91
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 92
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 98
+        },
+        {
+          "caller": "setUp",
+          "callee": "openBatteryOptimizationSettings",
+          "lineNumber": 100
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 101
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 103
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 105
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 108
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/api/PlayerSettingsHelper.g.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 313,
+      "nonEmptyLines": 292,
+      "functions": [
+        {
+          "name": "wrapResult",
+          "startLine": 17,
+          "endLine": 19,
+          "params": [
+            "result"
+          ]
+        },
+        {
+          "name": "wrapError",
+          "startLine": 21,
+          "endLine": 35,
+          "params": [
+            "exception"
+          ]
+        },
+        {
+          "name": "deepEquals",
+          "startLine": 36,
+          "endLine": 64,
+          "params": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "toList",
+          "startLine": 179,
+          "endLine": 192,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 193,
+          "endLine": 200,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 202,
+          "endLine": 202,
+          "params": []
+        },
+        {
+          "name": "readValueOfType",
+          "startLine": 205,
+          "endLine": 244,
+          "params": [
+            "type",
+            "buffer"
+          ]
+        },
+        {
+          "name": "writeValue",
+          "startLine": 245,
+          "endLine": 277,
+          "params": [
+            "stream",
+            "value"
+          ]
+        },
+        {
+          "name": "sendPlayerSettings",
+          "startLine": 282,
+          "endLine": 282,
+          "params": [
+            "playerSettings"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PlayerSettingsHelperPigeonUtils",
+          "startLine": 15,
+          "endLine": 66,
+          "methods": [
+            "wrapResult",
+            "wrapError",
+            "deepEquals"
+          ],
+          "properties": []
+        },
+        {
+          "name": "Screensaver",
+          "startLine": 68,
+          "endLine": 80,
+          "methods": [],
+          "properties": [
+            "raw"
+          ]
+        },
+        {
+          "name": "VideoPlayerFit",
+          "startLine": 82,
+          "endLine": 96,
+          "methods": [],
+          "properties": [
+            "raw"
+          ]
+        },
+        {
+          "name": "PlayerOrientations",
+          "startLine": 98,
+          "endLine": 109,
+          "methods": [],
+          "properties": [
+            "raw"
+          ]
+        },
+        {
+          "name": "AutoNextType",
+          "startLine": 111,
+          "endLine": 121,
+          "methods": [],
+          "properties": [
+            "raw"
+          ]
+        },
+        {
+          "name": "SegmentType",
+          "startLine": 123,
+          "endLine": 135,
+          "methods": [],
+          "properties": [
+            "raw"
+          ]
+        },
+        {
+          "name": "SegmentSkip",
+          "startLine": 137,
+          "endLine": 148,
+          "methods": [],
+          "properties": [
+            "raw"
+          ]
+        },
+        {
+          "name": "PlayerSettings",
+          "startLine": 151,
+          "endLine": 203,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "enableTunneling",
+            "skipTypes",
+            "themeColor",
+            "skipForward",
+            "skipBackward",
+            "autoNextType",
+            "acceptedOrientations",
+            "fillScreen",
+            "videoFit",
+            "screensaver"
+          ]
+        },
+        {
+          "name": "PlayerSettingsHelperPigeonCodec",
+          "startLine": 204,
+          "endLine": 278,
+          "methods": [
+            "readValueOfType",
+            "writeValue"
+          ],
+          "properties": []
+        },
+        {
+          "name": "PlayerSettingsPigeon",
+          "startLine": 281,
+          "endLine": 313,
+          "methods": [
+            "sendPlayerSettings"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "wrapResult",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "wrapError",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "deepEquals",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "Screensaver",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "VideoPlayerFit",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "PlayerOrientations",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "AutoNextType",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "SegmentType",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "SegmentSkip",
+          "line": 137,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 179,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 193,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 202,
+          "isDefault": false
+        },
+        {
+          "name": "PlayerSettings",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "readValueOfType",
+          "line": 205,
+          "isDefault": false
+        },
+        {
+          "name": "writeValue",
+          "line": 245,
+          "isDefault": false
+        },
+        {
+          "name": "sendPlayerSettings",
+          "line": 282,
+          "isDefault": false
+        },
+        {
+          "name": "PlayerSettingsPigeon",
+          "line": 281,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "wrapResult",
+          "callee": "listOf",
+          "lineNumber": 18
+        },
+        {
+          "caller": "wrapError",
+          "callee": "listOf",
+          "lineNumber": 23
+        },
+        {
+          "caller": "wrapError",
+          "callee": "listOf",
+          "lineNumber": 29
+        },
+        {
+          "caller": "wrapError",
+          "callee": "toString",
+          "lineNumber": 31
+        },
+        {
+          "caller": "wrapError",
+          "callee": "getStackTraceString",
+          "lineNumber": 32
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "contentEquals",
+          "lineNumber": 38
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "contentEquals",
+          "lineNumber": 41
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "contentEquals",
+          "lineNumber": 44
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "contentEquals",
+          "lineNumber": 47
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "all",
+          "lineNumber": 51
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "deepEquals",
+          "lineNumber": 51
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "all",
+          "lineNumber": 55
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "deepEquals",
+          "lineNumber": 55
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "all",
+          "lineNumber": 58
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "contains",
+          "lineNumber": 59
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "deepEquals",
+          "lineNumber": 60
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "firstOrNull",
+          "lineNumber": 77
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "values",
+          "lineNumber": 77
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "firstOrNull",
+          "lineNumber": 93
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "values",
+          "lineNumber": 93
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "firstOrNull",
+          "lineNumber": 106
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "values",
+          "lineNumber": 106
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "firstOrNull",
+          "lineNumber": 118
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "values",
+          "lineNumber": 118
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "firstOrNull",
+          "lineNumber": 132
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "values",
+          "lineNumber": 132
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "firstOrNull",
+          "lineNumber": 145
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "values",
+          "lineNumber": 145
+        },
+        {
+          "caller": "fromList",
+          "callee": "PlayerSettings",
+          "lineNumber": 176
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 180
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 200
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 200
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 200
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 202
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 202
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 207
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 208
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 208
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "ofRaw",
+          "lineNumber": 209
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toInt",
+          "lineNumber": 209
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 212
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 213
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 213
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "ofRaw",
+          "lineNumber": 214
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toInt",
+          "lineNumber": 214
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 217
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 218
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 218
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "ofRaw",
+          "lineNumber": 219
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toInt",
+          "lineNumber": 219
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 222
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 223
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 223
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "ofRaw",
+          "lineNumber": 224
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toInt",
+          "lineNumber": 224
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 227
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 228
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 228
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "ofRaw",
+          "lineNumber": 229
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toInt",
+          "lineNumber": 229
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 232
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 233
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 233
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "ofRaw",
+          "lineNumber": 234
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toInt",
+          "lineNumber": 234
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 237
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 238
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 238
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 239
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValueOfType",
+          "lineNumber": 242
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 248
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 249
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toLong",
+          "lineNumber": 249
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 252
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 253
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toLong",
+          "lineNumber": 253
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 256
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 257
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toLong",
+          "lineNumber": 257
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 260
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 261
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toLong",
+          "lineNumber": 261
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 264
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 265
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toLong",
+          "lineNumber": 265
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 268
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 269
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toLong",
+          "lineNumber": 269
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 272
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 273
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 273
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 275
+        },
+        {
+          "caller": "setUp",
+          "callee": "isNotEmpty",
+          "lineNumber": 292
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 293
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 294
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 296
+        },
+        {
+          "caller": "setUp",
+          "callee": "sendPlayerSettings",
+          "lineNumber": 300
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 301
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 303
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 305
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 308
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 17,
+        "functionCount": 9,
+        "classCount": 10
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/api/TranslationsPigeon.g.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 337,
+      "nonEmptyLines": 333,
+      "functions": [
+        {
+          "name": "createConnectionError",
+          "startLine": 17,
+          "endLine": 18,
+          "params": [
+            "channelName"
+          ]
+        },
+        {
+          "name": "readValueOfType",
+          "startLine": 21,
+          "endLine": 23,
+          "params": [
+            "type",
+            "buffer"
+          ]
+        },
+        {
+          "name": "writeValue",
+          "startLine": 24,
+          "endLine": 26,
+          "params": [
+            "stream",
+            "value"
+          ]
+        },
+        {
+          "name": "next",
+          "startLine": 37,
+          "endLine": 56,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "nextVideo",
+          "startLine": 57,
+          "endLine": 76,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "close",
+          "startLine": 77,
+          "endLine": 96,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "skip",
+          "startLine": 97,
+          "endLine": 116,
+          "params": [
+            "nameArg",
+            "callback"
+          ]
+        },
+        {
+          "name": "subtitles",
+          "startLine": 117,
+          "endLine": 136,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "off",
+          "startLine": 137,
+          "endLine": 156,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "chapters",
+          "startLine": 157,
+          "endLine": 176,
+          "params": [
+            "countArg",
+            "callback"
+          ]
+        },
+        {
+          "name": "nextUpInSeconds",
+          "startLine": 177,
+          "endLine": 196,
+          "params": [
+            "secondsArg",
+            "callback"
+          ]
+        },
+        {
+          "name": "hoursAndMinutes",
+          "startLine": 197,
+          "endLine": 216,
+          "params": [
+            "timeArg",
+            "callback"
+          ]
+        },
+        {
+          "name": "endsAt",
+          "startLine": 217,
+          "endLine": 236,
+          "params": [
+            "timeArg",
+            "callback"
+          ]
+        },
+        {
+          "name": "switchChannel",
+          "startLine": 237,
+          "endLine": 256,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "switchChannelDesc",
+          "startLine": 257,
+          "endLine": 276,
+          "params": [
+            "programNameArg",
+            "channelNameArg",
+            "callback"
+          ]
+        },
+        {
+          "name": "watch",
+          "startLine": 277,
+          "endLine": 296,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "now",
+          "startLine": 297,
+          "endLine": 316,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "decline",
+          "startLine": 317,
+          "endLine": 336,
+          "params": [
+            "callback"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TranslationsPigeonPigeonUtils",
+          "startLine": 15,
+          "endLine": 19,
+          "methods": [
+            "createConnectionError"
+          ],
+          "properties": []
+        },
+        {
+          "name": "TranslationsPigeonPigeonCodec",
+          "startLine": 20,
+          "endLine": 27,
+          "methods": [
+            "readValueOfType",
+            "writeValue"
+          ],
+          "properties": []
+        },
+        {
+          "name": "TranslationsPigeon",
+          "startLine": 30,
+          "endLine": 337,
+          "methods": [
+            "next",
+            "nextVideo",
+            "close",
+            "skip",
+            "subtitles",
+            "off",
+            "chapters",
+            "nextUpInSeconds",
+            "hoursAndMinutes",
+            "endsAt",
+            "switchChannel",
+            "switchChannelDesc",
+            "watch",
+            "now",
+            "decline"
+          ],
+          "properties": [
+            "binaryMessenger",
+            "messageChannelSuffix"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createConnectionError",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "readValueOfType",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "writeValue",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "next",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "nextVideo",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "close",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "skip",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "subtitles",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "off",
+          "line": 137,
+          "isDefault": false
+        },
+        {
+          "name": "chapters",
+          "line": 157,
+          "isDefault": false
+        },
+        {
+          "name": "nextUpInSeconds",
+          "line": 177,
+          "isDefault": false
+        },
+        {
+          "name": "hoursAndMinutes",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "endsAt",
+          "line": 217,
+          "isDefault": false
+        },
+        {
+          "name": "switchChannel",
+          "line": 237,
+          "isDefault": false
+        },
+        {
+          "name": "switchChannelDesc",
+          "line": 257,
+          "isDefault": false
+        },
+        {
+          "name": "watch",
+          "line": 277,
+          "isDefault": false
+        },
+        {
+          "name": "now",
+          "line": 297,
+          "isDefault": false
+        },
+        {
+          "name": "decline",
+          "line": 317,
+          "isDefault": false
+        },
+        {
+          "name": "TranslationsPigeon",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createConnectionError",
+          "callee": "FlutterError",
+          "lineNumber": 18
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValueOfType",
+          "lineNumber": 22
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 25
+        },
+        {
+          "caller": "next",
+          "callee": "isNotEmpty",
+          "lineNumber": 39
+        },
+        {
+          "caller": "next",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 41
+        },
+        {
+          "caller": "next",
+          "callee": "send",
+          "lineNumber": 42
+        },
+        {
+          "caller": "next",
+          "callee": "callback",
+          "lineNumber": 45
+        },
+        {
+          "caller": "next",
+          "callee": "failure",
+          "lineNumber": 45
+        },
+        {
+          "caller": "next",
+          "callee": "FlutterError",
+          "lineNumber": 45
+        },
+        {
+          "caller": "next",
+          "callee": "callback",
+          "lineNumber": 47
+        },
+        {
+          "caller": "next",
+          "callee": "failure",
+          "lineNumber": 47
+        },
+        {
+          "caller": "next",
+          "callee": "FlutterError",
+          "lineNumber": 47
+        },
+        {
+          "caller": "next",
+          "callee": "callback",
+          "lineNumber": 50
+        },
+        {
+          "caller": "next",
+          "callee": "success",
+          "lineNumber": 50
+        },
+        {
+          "caller": "next",
+          "callee": "callback",
+          "lineNumber": 53
+        },
+        {
+          "caller": "next",
+          "callee": "failure",
+          "lineNumber": 53
+        },
+        {
+          "caller": "next",
+          "callee": "createConnectionError",
+          "lineNumber": 53
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "isNotEmpty",
+          "lineNumber": 59
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 61
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "send",
+          "lineNumber": 62
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "callback",
+          "lineNumber": 65
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "failure",
+          "lineNumber": 65
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "FlutterError",
+          "lineNumber": 65
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "callback",
+          "lineNumber": 67
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "failure",
+          "lineNumber": 67
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "FlutterError",
+          "lineNumber": 67
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "callback",
+          "lineNumber": 70
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "success",
+          "lineNumber": 70
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "callback",
+          "lineNumber": 73
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "failure",
+          "lineNumber": 73
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "createConnectionError",
+          "lineNumber": 73
+        },
+        {
+          "caller": "close",
+          "callee": "isNotEmpty",
+          "lineNumber": 79
+        },
+        {
+          "caller": "close",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 81
+        },
+        {
+          "caller": "close",
+          "callee": "send",
+          "lineNumber": 82
+        },
+        {
+          "caller": "close",
+          "callee": "callback",
+          "lineNumber": 85
+        },
+        {
+          "caller": "close",
+          "callee": "failure",
+          "lineNumber": 85
+        },
+        {
+          "caller": "close",
+          "callee": "FlutterError",
+          "lineNumber": 85
+        },
+        {
+          "caller": "close",
+          "callee": "callback",
+          "lineNumber": 87
+        },
+        {
+          "caller": "close",
+          "callee": "failure",
+          "lineNumber": 87
+        },
+        {
+          "caller": "close",
+          "callee": "FlutterError",
+          "lineNumber": 87
+        },
+        {
+          "caller": "close",
+          "callee": "callback",
+          "lineNumber": 90
+        },
+        {
+          "caller": "close",
+          "callee": "success",
+          "lineNumber": 90
+        },
+        {
+          "caller": "close",
+          "callee": "callback",
+          "lineNumber": 93
+        },
+        {
+          "caller": "close",
+          "callee": "failure",
+          "lineNumber": 93
+        },
+        {
+          "caller": "close",
+          "callee": "createConnectionError",
+          "lineNumber": 93
+        },
+        {
+          "caller": "skip",
+          "callee": "isNotEmpty",
+          "lineNumber": 99
+        },
+        {
+          "caller": "skip",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 101
+        },
+        {
+          "caller": "skip",
+          "callee": "send",
+          "lineNumber": 102
+        },
+        {
+          "caller": "skip",
+          "callee": "listOf",
+          "lineNumber": 102
+        },
+        {
+          "caller": "skip",
+          "callee": "callback",
+          "lineNumber": 105
+        },
+        {
+          "caller": "skip",
+          "callee": "failure",
+          "lineNumber": 105
+        },
+        {
+          "caller": "skip",
+          "callee": "FlutterError",
+          "lineNumber": 105
+        },
+        {
+          "caller": "skip",
+          "callee": "callback",
+          "lineNumber": 107
+        },
+        {
+          "caller": "skip",
+          "callee": "failure",
+          "lineNumber": 107
+        },
+        {
+          "caller": "skip",
+          "callee": "FlutterError",
+          "lineNumber": 107
+        },
+        {
+          "caller": "skip",
+          "callee": "callback",
+          "lineNumber": 110
+        },
+        {
+          "caller": "skip",
+          "callee": "success",
+          "lineNumber": 110
+        },
+        {
+          "caller": "skip",
+          "callee": "callback",
+          "lineNumber": 113
+        },
+        {
+          "caller": "skip",
+          "callee": "failure",
+          "lineNumber": 113
+        },
+        {
+          "caller": "skip",
+          "callee": "createConnectionError",
+          "lineNumber": 113
+        },
+        {
+          "caller": "subtitles",
+          "callee": "isNotEmpty",
+          "lineNumber": 119
+        },
+        {
+          "caller": "subtitles",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 121
+        },
+        {
+          "caller": "subtitles",
+          "callee": "send",
+          "lineNumber": 122
+        },
+        {
+          "caller": "subtitles",
+          "callee": "callback",
+          "lineNumber": 125
+        },
+        {
+          "caller": "subtitles",
+          "callee": "failure",
+          "lineNumber": 125
+        },
+        {
+          "caller": "subtitles",
+          "callee": "FlutterError",
+          "lineNumber": 125
+        },
+        {
+          "caller": "subtitles",
+          "callee": "callback",
+          "lineNumber": 127
+        },
+        {
+          "caller": "subtitles",
+          "callee": "failure",
+          "lineNumber": 127
+        },
+        {
+          "caller": "subtitles",
+          "callee": "FlutterError",
+          "lineNumber": 127
+        },
+        {
+          "caller": "subtitles",
+          "callee": "callback",
+          "lineNumber": 130
+        },
+        {
+          "caller": "subtitles",
+          "callee": "success",
+          "lineNumber": 130
+        },
+        {
+          "caller": "subtitles",
+          "callee": "callback",
+          "lineNumber": 133
+        },
+        {
+          "caller": "subtitles",
+          "callee": "failure",
+          "lineNumber": 133
+        },
+        {
+          "caller": "subtitles",
+          "callee": "createConnectionError",
+          "lineNumber": 133
+        },
+        {
+          "caller": "off",
+          "callee": "isNotEmpty",
+          "lineNumber": 139
+        },
+        {
+          "caller": "off",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 141
+        },
+        {
+          "caller": "off",
+          "callee": "send",
+          "lineNumber": 142
+        },
+        {
+          "caller": "off",
+          "callee": "callback",
+          "lineNumber": 145
+        },
+        {
+          "caller": "off",
+          "callee": "failure",
+          "lineNumber": 145
+        },
+        {
+          "caller": "off",
+          "callee": "FlutterError",
+          "lineNumber": 145
+        },
+        {
+          "caller": "off",
+          "callee": "callback",
+          "lineNumber": 147
+        },
+        {
+          "caller": "off",
+          "callee": "failure",
+          "lineNumber": 147
+        },
+        {
+          "caller": "off",
+          "callee": "FlutterError",
+          "lineNumber": 147
+        },
+        {
+          "caller": "off",
+          "callee": "callback",
+          "lineNumber": 150
+        },
+        {
+          "caller": "off",
+          "callee": "success",
+          "lineNumber": 150
+        },
+        {
+          "caller": "off",
+          "callee": "callback",
+          "lineNumber": 153
+        },
+        {
+          "caller": "off",
+          "callee": "failure",
+          "lineNumber": 153
+        },
+        {
+          "caller": "off",
+          "callee": "createConnectionError",
+          "lineNumber": 153
+        },
+        {
+          "caller": "chapters",
+          "callee": "isNotEmpty",
+          "lineNumber": 159
+        },
+        {
+          "caller": "chapters",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 161
+        },
+        {
+          "caller": "chapters",
+          "callee": "send",
+          "lineNumber": 162
+        },
+        {
+          "caller": "chapters",
+          "callee": "listOf",
+          "lineNumber": 162
+        },
+        {
+          "caller": "chapters",
+          "callee": "callback",
+          "lineNumber": 165
+        },
+        {
+          "caller": "chapters",
+          "callee": "failure",
+          "lineNumber": 165
+        },
+        {
+          "caller": "chapters",
+          "callee": "FlutterError",
+          "lineNumber": 165
+        },
+        {
+          "caller": "chapters",
+          "callee": "callback",
+          "lineNumber": 167
+        },
+        {
+          "caller": "chapters",
+          "callee": "failure",
+          "lineNumber": 167
+        },
+        {
+          "caller": "chapters",
+          "callee": "FlutterError",
+          "lineNumber": 167
+        },
+        {
+          "caller": "chapters",
+          "callee": "callback",
+          "lineNumber": 170
+        },
+        {
+          "caller": "chapters",
+          "callee": "success",
+          "lineNumber": 170
+        },
+        {
+          "caller": "chapters",
+          "callee": "callback",
+          "lineNumber": 173
+        },
+        {
+          "caller": "chapters",
+          "callee": "failure",
+          "lineNumber": 173
+        },
+        {
+          "caller": "chapters",
+          "callee": "createConnectionError",
+          "lineNumber": 173
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "isNotEmpty",
+          "lineNumber": 179
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 181
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "send",
+          "lineNumber": 182
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "listOf",
+          "lineNumber": 182
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "callback",
+          "lineNumber": 185
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "failure",
+          "lineNumber": 185
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "FlutterError",
+          "lineNumber": 185
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "callback",
+          "lineNumber": 187
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "failure",
+          "lineNumber": 187
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "FlutterError",
+          "lineNumber": 187
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "callback",
+          "lineNumber": 190
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "success",
+          "lineNumber": 190
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "callback",
+          "lineNumber": 193
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "failure",
+          "lineNumber": 193
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "createConnectionError",
+          "lineNumber": 193
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "isNotEmpty",
+          "lineNumber": 199
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 201
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "send",
+          "lineNumber": 202
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "listOf",
+          "lineNumber": 202
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "callback",
+          "lineNumber": 205
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "failure",
+          "lineNumber": 205
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "FlutterError",
+          "lineNumber": 205
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "callback",
+          "lineNumber": 207
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "failure",
+          "lineNumber": 207
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "FlutterError",
+          "lineNumber": 207
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "callback",
+          "lineNumber": 210
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "success",
+          "lineNumber": 210
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "callback",
+          "lineNumber": 213
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "failure",
+          "lineNumber": 213
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "createConnectionError",
+          "lineNumber": 213
+        },
+        {
+          "caller": "endsAt",
+          "callee": "isNotEmpty",
+          "lineNumber": 219
+        },
+        {
+          "caller": "endsAt",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 221
+        },
+        {
+          "caller": "endsAt",
+          "callee": "send",
+          "lineNumber": 222
+        },
+        {
+          "caller": "endsAt",
+          "callee": "listOf",
+          "lineNumber": 222
+        },
+        {
+          "caller": "endsAt",
+          "callee": "callback",
+          "lineNumber": 225
+        },
+        {
+          "caller": "endsAt",
+          "callee": "failure",
+          "lineNumber": 225
+        },
+        {
+          "caller": "endsAt",
+          "callee": "FlutterError",
+          "lineNumber": 225
+        },
+        {
+          "caller": "endsAt",
+          "callee": "callback",
+          "lineNumber": 227
+        },
+        {
+          "caller": "endsAt",
+          "callee": "failure",
+          "lineNumber": 227
+        },
+        {
+          "caller": "endsAt",
+          "callee": "FlutterError",
+          "lineNumber": 227
+        },
+        {
+          "caller": "endsAt",
+          "callee": "callback",
+          "lineNumber": 230
+        },
+        {
+          "caller": "endsAt",
+          "callee": "success",
+          "lineNumber": 230
+        },
+        {
+          "caller": "endsAt",
+          "callee": "callback",
+          "lineNumber": 233
+        },
+        {
+          "caller": "endsAt",
+          "callee": "failure",
+          "lineNumber": 233
+        },
+        {
+          "caller": "endsAt",
+          "callee": "createConnectionError",
+          "lineNumber": 233
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "isNotEmpty",
+          "lineNumber": 239
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 241
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "send",
+          "lineNumber": 242
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "callback",
+          "lineNumber": 245
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "failure",
+          "lineNumber": 245
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "FlutterError",
+          "lineNumber": 245
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "callback",
+          "lineNumber": 247
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "failure",
+          "lineNumber": 247
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "FlutterError",
+          "lineNumber": 247
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "callback",
+          "lineNumber": 250
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "success",
+          "lineNumber": 250
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "callback",
+          "lineNumber": 253
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "failure",
+          "lineNumber": 253
+        },
+        {
+          "caller": "switchChannel",
+          "callee": "createConnectionError",
+          "lineNumber": 253
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "isNotEmpty",
+          "lineNumber": 259
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 261
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "send",
+          "lineNumber": 262
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "listOf",
+          "lineNumber": 262
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "callback",
+          "lineNumber": 265
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "failure",
+          "lineNumber": 265
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "FlutterError",
+          "lineNumber": 265
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "callback",
+          "lineNumber": 267
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "failure",
+          "lineNumber": 267
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "FlutterError",
+          "lineNumber": 267
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "callback",
+          "lineNumber": 270
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "success",
+          "lineNumber": 270
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "callback",
+          "lineNumber": 273
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "failure",
+          "lineNumber": 273
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "createConnectionError",
+          "lineNumber": 273
+        },
+        {
+          "caller": "watch",
+          "callee": "isNotEmpty",
+          "lineNumber": 279
+        },
+        {
+          "caller": "watch",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 281
+        },
+        {
+          "caller": "watch",
+          "callee": "send",
+          "lineNumber": 282
+        },
+        {
+          "caller": "watch",
+          "callee": "callback",
+          "lineNumber": 285
+        },
+        {
+          "caller": "watch",
+          "callee": "failure",
+          "lineNumber": 285
+        },
+        {
+          "caller": "watch",
+          "callee": "FlutterError",
+          "lineNumber": 285
+        },
+        {
+          "caller": "watch",
+          "callee": "callback",
+          "lineNumber": 287
+        },
+        {
+          "caller": "watch",
+          "callee": "failure",
+          "lineNumber": 287
+        },
+        {
+          "caller": "watch",
+          "callee": "FlutterError",
+          "lineNumber": 287
+        },
+        {
+          "caller": "watch",
+          "callee": "callback",
+          "lineNumber": 290
+        },
+        {
+          "caller": "watch",
+          "callee": "success",
+          "lineNumber": 290
+        },
+        {
+          "caller": "watch",
+          "callee": "callback",
+          "lineNumber": 293
+        },
+        {
+          "caller": "watch",
+          "callee": "failure",
+          "lineNumber": 293
+        },
+        {
+          "caller": "watch",
+          "callee": "createConnectionError",
+          "lineNumber": 293
+        },
+        {
+          "caller": "now",
+          "callee": "isNotEmpty",
+          "lineNumber": 299
+        },
+        {
+          "caller": "now",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 301
+        },
+        {
+          "caller": "now",
+          "callee": "send",
+          "lineNumber": 302
+        },
+        {
+          "caller": "now",
+          "callee": "callback",
+          "lineNumber": 305
+        },
+        {
+          "caller": "now",
+          "callee": "failure",
+          "lineNumber": 305
+        },
+        {
+          "caller": "now",
+          "callee": "FlutterError",
+          "lineNumber": 305
+        },
+        {
+          "caller": "now",
+          "callee": "callback",
+          "lineNumber": 307
+        },
+        {
+          "caller": "now",
+          "callee": "failure",
+          "lineNumber": 307
+        },
+        {
+          "caller": "now",
+          "callee": "FlutterError",
+          "lineNumber": 307
+        },
+        {
+          "caller": "now",
+          "callee": "callback",
+          "lineNumber": 310
+        },
+        {
+          "caller": "now",
+          "callee": "success",
+          "lineNumber": 310
+        },
+        {
+          "caller": "now",
+          "callee": "callback",
+          "lineNumber": 313
+        },
+        {
+          "caller": "now",
+          "callee": "failure",
+          "lineNumber": 313
+        },
+        {
+          "caller": "now",
+          "callee": "createConnectionError",
+          "lineNumber": 313
+        },
+        {
+          "caller": "decline",
+          "callee": "isNotEmpty",
+          "lineNumber": 319
+        },
+        {
+          "caller": "decline",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 321
+        },
+        {
+          "caller": "decline",
+          "callee": "send",
+          "lineNumber": 322
+        },
+        {
+          "caller": "decline",
+          "callee": "callback",
+          "lineNumber": 325
+        },
+        {
+          "caller": "decline",
+          "callee": "failure",
+          "lineNumber": 325
+        },
+        {
+          "caller": "decline",
+          "callee": "FlutterError",
+          "lineNumber": 325
+        },
+        {
+          "caller": "decline",
+          "callee": "callback",
+          "lineNumber": 327
+        },
+        {
+          "caller": "decline",
+          "callee": "failure",
+          "lineNumber": 327
+        },
+        {
+          "caller": "decline",
+          "callee": "FlutterError",
+          "lineNumber": 327
+        },
+        {
+          "caller": "decline",
+          "callee": "callback",
+          "lineNumber": 330
+        },
+        {
+          "caller": "decline",
+          "callee": "success",
+          "lineNumber": 330
+        },
+        {
+          "caller": "decline",
+          "callee": "callback",
+          "lineNumber": 333
+        },
+        {
+          "caller": "decline",
+          "callee": "failure",
+          "lineNumber": 333
+        },
+        {
+          "caller": "decline",
+          "callee": "createConnectionError",
+          "lineNumber": 333
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 18,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/api/VideoPlayerHelper.g.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 1312,
+      "nonEmptyLines": 1269,
+      "functions": [
+        {
+          "name": "createConnectionError",
+          "startLine": 17,
+          "endLine": 18,
+          "params": [
+            "channelName"
+          ]
+        },
+        {
+          "name": "wrapResult",
+          "startLine": 20,
+          "endLine": 22,
+          "params": [
+            "result"
+          ]
+        },
+        {
+          "name": "wrapError",
+          "startLine": 24,
+          "endLine": 38,
+          "params": [
+            "exception"
+          ]
+        },
+        {
+          "name": "deepEquals",
+          "startLine": 39,
+          "endLine": 67,
+          "params": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "toList",
+          "startLine": 131,
+          "endLine": 140,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 141,
+          "endLine": 148,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 150,
+          "endLine": 150,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 166,
+          "endLine": 171,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 172,
+          "endLine": 179,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 181,
+          "endLine": 181,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 221,
+          "endLine": 238,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 239,
+          "endLine": 246,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 248,
+          "endLine": 248,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 268,
+          "endLine": 275,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 276,
+          "endLine": 283,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 285,
+          "endLine": 285,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 309,
+          "endLine": 318,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 319,
+          "endLine": 326,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 328,
+          "endLine": 328,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 352,
+          "endLine": 361,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 362,
+          "endLine": 369,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 371,
+          "endLine": 371,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 389,
+          "endLine": 395,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 396,
+          "endLine": 403,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 405,
+          "endLine": 405,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 431,
+          "endLine": 441,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 442,
+          "endLine": 449,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 451,
+          "endLine": 451,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 465,
+          "endLine": 469,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 470,
+          "endLine": 477,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 479,
+          "endLine": 479,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 505,
+          "endLine": 515,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 516,
+          "endLine": 523,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 525,
+          "endLine": 525,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 553,
+          "endLine": 564,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 565,
+          "endLine": 572,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 574,
+          "endLine": 574,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 594,
+          "endLine": 601,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 602,
+          "endLine": 609,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 611,
+          "endLine": 611,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 633,
+          "endLine": 641,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 642,
+          "endLine": 649,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 651,
+          "endLine": 651,
+          "params": []
+        },
+        {
+          "name": "toList",
+          "startLine": 679,
+          "endLine": 690,
+          "params": []
+        },
+        {
+          "name": "equals",
+          "startLine": 691,
+          "endLine": 698,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 700,
+          "endLine": 700,
+          "params": []
+        },
+        {
+          "name": "readValueOfType",
+          "startLine": 703,
+          "endLine": 787,
+          "params": [
+            "type",
+            "buffer"
+          ]
+        },
+        {
+          "name": "writeValue",
+          "startLine": 788,
+          "endLine": 856,
+          "params": [
+            "stream",
+            "value"
+          ]
+        },
+        {
+          "name": "launchActivity",
+          "startLine": 862,
+          "endLine": 862,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "disposeActivity",
+          "startLine": 863,
+          "endLine": 863,
+          "params": []
+        },
+        {
+          "name": "isLeanBackEnabled",
+          "startLine": 864,
+          "endLine": 864,
+          "params": []
+        },
+        {
+          "name": "sendPlayableModel",
+          "startLine": 929,
+          "endLine": 929,
+          "params": [
+            "playableData",
+            "callback"
+          ]
+        },
+        {
+          "name": "sendTVGuideModel",
+          "startLine": 930,
+          "endLine": 930,
+          "params": [
+            "guide",
+            "callback"
+          ]
+        },
+        {
+          "name": "open",
+          "startLine": 931,
+          "endLine": 931,
+          "params": [
+            "url",
+            "play",
+            "callback"
+          ]
+        },
+        {
+          "name": "setLooping",
+          "startLine": 932,
+          "endLine": 932,
+          "params": [
+            "looping"
+          ]
+        },
+        {
+          "name": "setVolume",
+          "startLine": 934,
+          "endLine": 934,
+          "params": [
+            "volume"
+          ]
+        },
+        {
+          "name": "setPlaybackSpeed",
+          "startLine": 936,
+          "endLine": 936,
+          "params": [
+            "speed"
+          ]
+        },
+        {
+          "name": "play",
+          "startLine": 937,
+          "endLine": 937,
+          "params": []
+        },
+        {
+          "name": "pause",
+          "startLine": 939,
+          "endLine": 939,
+          "params": []
+        },
+        {
+          "name": "seekTo",
+          "startLine": 941,
+          "endLine": 941,
+          "params": [
+            "position"
+          ]
+        },
+        {
+          "name": "stop",
+          "startLine": 942,
+          "endLine": 942,
+          "params": []
+        },
+        {
+          "name": "setSubtitleSettings",
+          "startLine": 943,
+          "endLine": 943,
+          "params": [
+            "settings"
+          ]
+        },
+        {
+          "name": "onPlaybackStateChanged",
+          "startLine": 1164,
+          "endLine": 1180,
+          "params": [
+            "stateArg",
+            "callback"
+          ]
+        },
+        {
+          "name": "loadNextVideo",
+          "startLine": 1190,
+          "endLine": 1206,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "loadPreviousVideo",
+          "startLine": 1207,
+          "endLine": 1223,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "onStop",
+          "startLine": 1224,
+          "endLine": 1240,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "swapSubtitleTrack",
+          "startLine": 1241,
+          "endLine": 1257,
+          "params": [
+            "valueArg",
+            "callback"
+          ]
+        },
+        {
+          "name": "swapAudioTrack",
+          "startLine": 1258,
+          "endLine": 1274,
+          "params": [
+            "valueArg",
+            "callback"
+          ]
+        },
+        {
+          "name": "loadProgram",
+          "startLine": 1275,
+          "endLine": 1291,
+          "params": [
+            "selectionArg",
+            "callback"
+          ]
+        },
+        {
+          "name": "fetchProgramsForChannel",
+          "startLine": 1292,
+          "endLine": 1311,
+          "params": [
+            "channelIdArg",
+            "callback"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "VideoPlayerHelperPigeonUtils",
+          "startLine": 15,
+          "endLine": 69,
+          "methods": [
+            "createConnectionError",
+            "wrapResult",
+            "wrapError",
+            "deepEquals"
+          ],
+          "properties": []
+        },
+        {
+          "name": "FlutterError",
+          "startLine": 77,
+          "endLine": 81,
+          "methods": [],
+          "properties": [
+            "code",
+            "message",
+            "details"
+          ]
+        },
+        {
+          "name": "PlaybackType",
+          "startLine": 83,
+          "endLine": 94,
+          "methods": [],
+          "properties": [
+            "raw"
+          ]
+        },
+        {
+          "name": "MediaSegmentType",
+          "startLine": 96,
+          "endLine": 108,
+          "methods": [],
+          "properties": [
+            "raw"
+          ]
+        },
+        {
+          "name": "SimpleItemModel",
+          "startLine": 111,
+          "endLine": 151,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "id",
+            "title",
+            "subTitle",
+            "overview",
+            "logoUrl",
+            "primaryPoster"
+          ]
+        },
+        {
+          "name": "MediaInfo",
+          "startLine": 154,
+          "endLine": 182,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "playbackType",
+            "videoInformation"
+          ]
+        },
+        {
+          "name": "PlayableData",
+          "startLine": 185,
+          "endLine": 249,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "currentItem",
+            "description",
+            "startPosition",
+            "defaultAudioTrack",
+            "audioTracks",
+            "defaultSubtrack",
+            "subtitleTracks",
+            "trickPlayModel",
+            "chapters",
+            "segments",
+            "previousVideo",
+            "nextVideo",
+            "mediaInfo",
+            "url"
+          ]
+        },
+        {
+          "name": "MediaSegment",
+          "startLine": 252,
+          "endLine": 286,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "type",
+            "name",
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "AudioTrack",
+          "startLine": 289,
+          "endLine": 329,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "name",
+            "languageCode",
+            "codec",
+            "index",
+            "external",
+            "url"
+          ]
+        },
+        {
+          "name": "SubtitleTrack",
+          "startLine": 332,
+          "endLine": 372,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "name",
+            "languageCode",
+            "codec",
+            "index",
+            "external",
+            "url"
+          ]
+        },
+        {
+          "name": "Chapter",
+          "startLine": 375,
+          "endLine": 406,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "name",
+            "url",
+            "time"
+          ]
+        },
+        {
+          "name": "TrickPlayModel",
+          "startLine": 409,
+          "endLine": 452,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "width",
+            "height",
+            "tileWidth",
+            "tileHeight",
+            "thumbnailCount",
+            "interval",
+            "images"
+          ]
+        },
+        {
+          "name": "StartResult",
+          "startLine": 455,
+          "endLine": 480,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "resultValue"
+          ]
+        },
+        {
+          "name": "PlaybackState",
+          "startLine": 483,
+          "endLine": 526,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "position",
+            "buffered",
+            "duration",
+            "playing",
+            "buffering",
+            "completed",
+            "failed"
+          ]
+        },
+        {
+          "name": "SubtitleSettings",
+          "startLine": 529,
+          "endLine": 575,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "fontSize",
+            "fontWeight",
+            "verticalOffset",
+            "color",
+            "outlineColor",
+            "outlineSize",
+            "backgroundColor",
+            "shadow"
+          ]
+        },
+        {
+          "name": "TVGuideModel",
+          "startLine": 578,
+          "endLine": 612,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "channels",
+            "startMs",
+            "endMs",
+            "currentProgram"
+          ]
+        },
+        {
+          "name": "GuideChannel",
+          "startLine": 615,
+          "endLine": 652,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "channelId",
+            "name",
+            "logoUrl",
+            "programs",
+            "programsLoaded"
+          ]
+        },
+        {
+          "name": "GuideProgram",
+          "startLine": 655,
+          "endLine": 701,
+          "methods": [
+            "toList",
+            "equals",
+            "hashCode"
+          ],
+          "properties": [
+            "id",
+            "channelId",
+            "name",
+            "startMs",
+            "endMs",
+            "primaryPoster",
+            "overview",
+            "subTitle"
+          ]
+        },
+        {
+          "name": "VideoPlayerHelperPigeonCodec",
+          "startLine": 702,
+          "endLine": 857,
+          "methods": [
+            "readValueOfType",
+            "writeValue"
+          ],
+          "properties": []
+        },
+        {
+          "name": "NativeVideoActivity",
+          "startLine": 861,
+          "endLine": 926,
+          "methods": [
+            "launchActivity",
+            "disposeActivity",
+            "isLeanBackEnabled"
+          ],
+          "properties": []
+        },
+        {
+          "name": "VideoPlayerApi",
+          "startLine": 928,
+          "endLine": 1155,
+          "methods": [
+            "sendPlayableModel",
+            "sendTVGuideModel",
+            "open",
+            "setLooping",
+            "setVolume",
+            "setPlaybackSpeed",
+            "play",
+            "pause",
+            "seekTo",
+            "stop",
+            "setSubtitleSettings"
+          ],
+          "properties": []
+        },
+        {
+          "name": "VideoPlayerListenerCallback",
+          "startLine": 1157,
+          "endLine": 1181,
+          "methods": [
+            "onPlaybackStateChanged"
+          ],
+          "properties": [
+            "binaryMessenger",
+            "messageChannelSuffix"
+          ]
+        },
+        {
+          "name": "VideoPlayerControlsCallback",
+          "startLine": 1183,
+          "endLine": 1312,
+          "methods": [
+            "loadNextVideo",
+            "loadPreviousVideo",
+            "onStop",
+            "swapSubtitleTrack",
+            "swapAudioTrack",
+            "loadProgram",
+            "fetchProgramsForChannel"
+          ],
+          "properties": [
+            "binaryMessenger",
+            "messageChannelSuffix"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createConnectionError",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "wrapResult",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "wrapError",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "deepEquals",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "FlutterError",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "PlaybackType",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "MediaSegmentType",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 131,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 150,
+          "isDefault": false
+        },
+        {
+          "name": "SimpleItemModel",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 166,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 172,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 181,
+          "isDefault": false
+        },
+        {
+          "name": "MediaInfo",
+          "line": 154,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 221,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 239,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 248,
+          "isDefault": false
+        },
+        {
+          "name": "PlayableData",
+          "line": 185,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 268,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 276,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 285,
+          "isDefault": false
+        },
+        {
+          "name": "MediaSegment",
+          "line": 252,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 309,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 319,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 328,
+          "isDefault": false
+        },
+        {
+          "name": "AudioTrack",
+          "line": 289,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 352,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 362,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 371,
+          "isDefault": false
+        },
+        {
+          "name": "SubtitleTrack",
+          "line": 332,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 389,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 396,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 405,
+          "isDefault": false
+        },
+        {
+          "name": "Chapter",
+          "line": 375,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 431,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 442,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 451,
+          "isDefault": false
+        },
+        {
+          "name": "TrickPlayModel",
+          "line": 409,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 465,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 470,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 479,
+          "isDefault": false
+        },
+        {
+          "name": "StartResult",
+          "line": 455,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 505,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 516,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 525,
+          "isDefault": false
+        },
+        {
+          "name": "PlaybackState",
+          "line": 483,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 553,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 565,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 574,
+          "isDefault": false
+        },
+        {
+          "name": "SubtitleSettings",
+          "line": 529,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 594,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 602,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 611,
+          "isDefault": false
+        },
+        {
+          "name": "TVGuideModel",
+          "line": 578,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 633,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 642,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 651,
+          "isDefault": false
+        },
+        {
+          "name": "GuideChannel",
+          "line": 615,
+          "isDefault": false
+        },
+        {
+          "name": "toList",
+          "line": 679,
+          "isDefault": false
+        },
+        {
+          "name": "equals",
+          "line": 691,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 700,
+          "isDefault": false
+        },
+        {
+          "name": "GuideProgram",
+          "line": 655,
+          "isDefault": false
+        },
+        {
+          "name": "readValueOfType",
+          "line": 703,
+          "isDefault": false
+        },
+        {
+          "name": "writeValue",
+          "line": 788,
+          "isDefault": false
+        },
+        {
+          "name": "launchActivity",
+          "line": 862,
+          "isDefault": false
+        },
+        {
+          "name": "disposeActivity",
+          "line": 863,
+          "isDefault": false
+        },
+        {
+          "name": "isLeanBackEnabled",
+          "line": 864,
+          "isDefault": false
+        },
+        {
+          "name": "NativeVideoActivity",
+          "line": 861,
+          "isDefault": false
+        },
+        {
+          "name": "sendPlayableModel",
+          "line": 929,
+          "isDefault": false
+        },
+        {
+          "name": "sendTVGuideModel",
+          "line": 930,
+          "isDefault": false
+        },
+        {
+          "name": "open",
+          "line": 931,
+          "isDefault": false
+        },
+        {
+          "name": "setLooping",
+          "line": 932,
+          "isDefault": false
+        },
+        {
+          "name": "setVolume",
+          "line": 934,
+          "isDefault": false
+        },
+        {
+          "name": "setPlaybackSpeed",
+          "line": 936,
+          "isDefault": false
+        },
+        {
+          "name": "play",
+          "line": 937,
+          "isDefault": false
+        },
+        {
+          "name": "pause",
+          "line": 939,
+          "isDefault": false
+        },
+        {
+          "name": "seekTo",
+          "line": 941,
+          "isDefault": false
+        },
+        {
+          "name": "stop",
+          "line": 942,
+          "isDefault": false
+        },
+        {
+          "name": "setSubtitleSettings",
+          "line": 943,
+          "isDefault": false
+        },
+        {
+          "name": "VideoPlayerApi",
+          "line": 928,
+          "isDefault": false
+        },
+        {
+          "name": "onPlaybackStateChanged",
+          "line": 1164,
+          "isDefault": false
+        },
+        {
+          "name": "VideoPlayerListenerCallback",
+          "line": 1157,
+          "isDefault": false
+        },
+        {
+          "name": "loadNextVideo",
+          "line": 1190,
+          "isDefault": false
+        },
+        {
+          "name": "loadPreviousVideo",
+          "line": 1207,
+          "isDefault": false
+        },
+        {
+          "name": "onStop",
+          "line": 1224,
+          "isDefault": false
+        },
+        {
+          "name": "swapSubtitleTrack",
+          "line": 1241,
+          "isDefault": false
+        },
+        {
+          "name": "swapAudioTrack",
+          "line": 1258,
+          "isDefault": false
+        },
+        {
+          "name": "loadProgram",
+          "line": 1275,
+          "isDefault": false
+        },
+        {
+          "name": "fetchProgramsForChannel",
+          "line": 1292,
+          "isDefault": false
+        },
+        {
+          "name": "VideoPlayerControlsCallback",
+          "line": 1183,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createConnectionError",
+          "callee": "FlutterError",
+          "lineNumber": 18
+        },
+        {
+          "caller": "wrapResult",
+          "callee": "listOf",
+          "lineNumber": 21
+        },
+        {
+          "caller": "wrapError",
+          "callee": "listOf",
+          "lineNumber": 26
+        },
+        {
+          "caller": "wrapError",
+          "callee": "listOf",
+          "lineNumber": 32
+        },
+        {
+          "caller": "wrapError",
+          "callee": "toString",
+          "lineNumber": 34
+        },
+        {
+          "caller": "wrapError",
+          "callee": "getStackTraceString",
+          "lineNumber": 35
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "contentEquals",
+          "lineNumber": 41
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "contentEquals",
+          "lineNumber": 44
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "contentEquals",
+          "lineNumber": 47
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "contentEquals",
+          "lineNumber": 50
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "all",
+          "lineNumber": 54
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "deepEquals",
+          "lineNumber": 54
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "all",
+          "lineNumber": 58
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "deepEquals",
+          "lineNumber": 58
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "all",
+          "lineNumber": 61
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "contains",
+          "lineNumber": 62
+        },
+        {
+          "caller": "deepEquals",
+          "callee": "deepEquals",
+          "lineNumber": 63
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "firstOrNull",
+          "lineNumber": 91
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "values",
+          "lineNumber": 91
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "firstOrNull",
+          "lineNumber": 105
+        },
+        {
+          "caller": "ofRaw",
+          "callee": "values",
+          "lineNumber": 105
+        },
+        {
+          "caller": "fromList",
+          "callee": "SimpleItemModel",
+          "lineNumber": 128
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 132
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 148
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 148
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 148
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 150
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 150
+        },
+        {
+          "caller": "fromList",
+          "callee": "MediaInfo",
+          "lineNumber": 163
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 167
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 179
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 179
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 179
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 181
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 181
+        },
+        {
+          "caller": "fromList",
+          "callee": "PlayableData",
+          "lineNumber": 218
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 222
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 246
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 246
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 246
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 248
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 248
+        },
+        {
+          "caller": "fromList",
+          "callee": "MediaSegment",
+          "lineNumber": 265
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 269
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 283
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 283
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 283
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 285
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 285
+        },
+        {
+          "caller": "fromList",
+          "callee": "AudioTrack",
+          "lineNumber": 306
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 310
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 326
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 326
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 326
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 328
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 328
+        },
+        {
+          "caller": "fromList",
+          "callee": "SubtitleTrack",
+          "lineNumber": 349
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 353
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 369
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 369
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 369
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 371
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 371
+        },
+        {
+          "caller": "fromList",
+          "callee": "Chapter",
+          "lineNumber": 386
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 390
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 403
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 403
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 403
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 405
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 405
+        },
+        {
+          "caller": "fromList",
+          "callee": "TrickPlayModel",
+          "lineNumber": 428
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 432
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 449
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 449
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 449
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 451
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 451
+        },
+        {
+          "caller": "fromList",
+          "callee": "StartResult",
+          "lineNumber": 462
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 466
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 477
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 477
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 477
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 479
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 479
+        },
+        {
+          "caller": "fromList",
+          "callee": "PlaybackState",
+          "lineNumber": 502
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 506
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 523
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 523
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 523
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 525
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 525
+        },
+        {
+          "caller": "fromList",
+          "callee": "SubtitleSettings",
+          "lineNumber": 550
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 554
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 572
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 572
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 572
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 574
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 574
+        },
+        {
+          "caller": "fromList",
+          "callee": "TVGuideModel",
+          "lineNumber": 591
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 595
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 609
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 609
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 609
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 611
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 611
+        },
+        {
+          "caller": "fromList",
+          "callee": "GuideChannel",
+          "lineNumber": 630
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 634
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 649
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 649
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 649
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 651
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 651
+        },
+        {
+          "caller": "fromList",
+          "callee": "GuideProgram",
+          "lineNumber": 676
+        },
+        {
+          "caller": "toList",
+          "callee": "listOf",
+          "lineNumber": 680
+        },
+        {
+          "caller": "equals",
+          "callee": "deepEquals",
+          "lineNumber": 698
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 698
+        },
+        {
+          "caller": "equals",
+          "callee": "toList",
+          "lineNumber": 698
+        },
+        {
+          "caller": "hashCode",
+          "callee": "hashCode",
+          "lineNumber": 700
+        },
+        {
+          "caller": "hashCode",
+          "callee": "toList",
+          "lineNumber": 700
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 705
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 706
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 706
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "ofRaw",
+          "lineNumber": 707
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toInt",
+          "lineNumber": 707
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 710
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 711
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 711
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "ofRaw",
+          "lineNumber": 712
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toInt",
+          "lineNumber": 712
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 715
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 716
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 716
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 717
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 720
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 721
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 721
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 722
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 725
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 726
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 726
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 727
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 730
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 731
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 731
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 732
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 735
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 736
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 736
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 737
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 740
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 741
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 741
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 742
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 745
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 746
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 746
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 747
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 750
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 751
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 751
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 752
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 755
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 756
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 756
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 757
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 760
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 761
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 761
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 762
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 765
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 766
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 766
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 767
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 770
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 771
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 771
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 772
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 775
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 776
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 776
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 777
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "toByte",
+          "lineNumber": 780
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "let",
+          "lineNumber": 781
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValue",
+          "lineNumber": 781
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "fromList",
+          "lineNumber": 782
+        },
+        {
+          "caller": "readValueOfType",
+          "callee": "readValueOfType",
+          "lineNumber": 785
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 791
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 792
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toLong",
+          "lineNumber": 792
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 795
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 796
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toLong",
+          "lineNumber": 796
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 799
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 800
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 800
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 803
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 804
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 804
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 807
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 808
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 808
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 811
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 812
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 812
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 815
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 816
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 816
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 819
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 820
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 820
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 823
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 824
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 824
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 827
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 828
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 828
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 831
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 832
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 832
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 835
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 836
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 836
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 839
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 840
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 840
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 843
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 844
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 844
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 847
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 848
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 848
+        },
+        {
+          "caller": "writeValue",
+          "callee": "write",
+          "lineNumber": 851
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 852
+        },
+        {
+          "caller": "writeValue",
+          "callee": "toList",
+          "lineNumber": 852
+        },
+        {
+          "caller": "writeValue",
+          "callee": "writeValue",
+          "lineNumber": 854
+        },
+        {
+          "caller": "setUp",
+          "callee": "isNotEmpty",
+          "lineNumber": 874
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 875
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 876
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 878
+        },
+        {
+          "caller": "setUp",
+          "callee": "launchActivity",
+          "lineNumber": 879
+        },
+        {
+          "caller": "setUp",
+          "callee": "exceptionOrNull",
+          "lineNumber": 880
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 882
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 882
+        },
+        {
+          "caller": "setUp",
+          "callee": "getOrNull",
+          "lineNumber": 884
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 885
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapResult",
+          "lineNumber": 885
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 890
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 893
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 894
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 896
+        },
+        {
+          "caller": "setUp",
+          "callee": "disposeActivity",
+          "lineNumber": 898
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 899
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 901
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 903
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 906
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 909
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 910
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 912
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 914
+        },
+        {
+          "caller": "setUp",
+          "callee": "isLeanBackEnabled",
+          "lineNumber": 914
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 916
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 918
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 921
+        },
+        {
+          "caller": "setUp",
+          "callee": "isNotEmpty",
+          "lineNumber": 953
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 954
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 955
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 957
+        },
+        {
+          "caller": "setUp",
+          "callee": "sendPlayableModel",
+          "lineNumber": 960
+        },
+        {
+          "caller": "setUp",
+          "callee": "exceptionOrNull",
+          "lineNumber": 961
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 963
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 963
+        },
+        {
+          "caller": "setUp",
+          "callee": "getOrNull",
+          "lineNumber": 965
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 966
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapResult",
+          "lineNumber": 966
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 971
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 974
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 975
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 977
+        },
+        {
+          "caller": "setUp",
+          "callee": "sendTVGuideModel",
+          "lineNumber": 980
+        },
+        {
+          "caller": "setUp",
+          "callee": "exceptionOrNull",
+          "lineNumber": 981
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 983
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 983
+        },
+        {
+          "caller": "setUp",
+          "callee": "getOrNull",
+          "lineNumber": 985
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 986
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapResult",
+          "lineNumber": 986
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 991
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 994
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 995
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 997
+        },
+        {
+          "caller": "setUp",
+          "callee": "open",
+          "lineNumber": 1001
+        },
+        {
+          "caller": "setUp",
+          "callee": "exceptionOrNull",
+          "lineNumber": 1002
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 1004
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 1004
+        },
+        {
+          "caller": "setUp",
+          "callee": "getOrNull",
+          "lineNumber": 1006
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 1007
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapResult",
+          "lineNumber": 1007
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1012
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 1015
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1016
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1018
+        },
+        {
+          "caller": "setUp",
+          "callee": "setLooping",
+          "lineNumber": 1022
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 1023
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 1025
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 1027
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1030
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 1033
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1034
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1036
+        },
+        {
+          "caller": "setUp",
+          "callee": "setVolume",
+          "lineNumber": 1040
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 1041
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 1043
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 1045
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1048
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 1051
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1052
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1054
+        },
+        {
+          "caller": "setUp",
+          "callee": "setPlaybackSpeed",
+          "lineNumber": 1058
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 1059
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 1061
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 1063
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1066
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 1069
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1070
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1072
+        },
+        {
+          "caller": "setUp",
+          "callee": "play",
+          "lineNumber": 1074
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 1075
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 1077
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 1079
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1082
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 1085
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1086
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1088
+        },
+        {
+          "caller": "setUp",
+          "callee": "pause",
+          "lineNumber": 1090
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 1091
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 1093
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 1095
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1098
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 1101
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1102
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1104
+        },
+        {
+          "caller": "setUp",
+          "callee": "seekTo",
+          "lineNumber": 1108
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 1109
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 1111
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 1113
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1116
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 1119
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1120
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1122
+        },
+        {
+          "caller": "setUp",
+          "callee": "stop",
+          "lineNumber": 1124
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 1125
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 1127
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 1129
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1132
+        },
+        {
+          "caller": "setUp",
+          "callee": "run",
+          "lineNumber": 1135
+        },
+        {
+          "caller": "setUp",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1136
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1138
+        },
+        {
+          "caller": "setUp",
+          "callee": "setSubtitleSettings",
+          "lineNumber": 1142
+        },
+        {
+          "caller": "setUp",
+          "callee": "listOf",
+          "lineNumber": 1143
+        },
+        {
+          "caller": "setUp",
+          "callee": "wrapError",
+          "lineNumber": 1145
+        },
+        {
+          "caller": "setUp",
+          "callee": "reply",
+          "lineNumber": 1147
+        },
+        {
+          "caller": "setUp",
+          "callee": "setMessageHandler",
+          "lineNumber": 1150
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "isNotEmpty",
+          "lineNumber": 1166
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1168
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "send",
+          "lineNumber": 1169
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "listOf",
+          "lineNumber": 1169
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "callback",
+          "lineNumber": 1172
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "failure",
+          "lineNumber": 1172
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "FlutterError",
+          "lineNumber": 1172
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "callback",
+          "lineNumber": 1174
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "success",
+          "lineNumber": 1174
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "callback",
+          "lineNumber": 1177
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "failure",
+          "lineNumber": 1177
+        },
+        {
+          "caller": "onPlaybackStateChanged",
+          "callee": "createConnectionError",
+          "lineNumber": 1177
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "isNotEmpty",
+          "lineNumber": 1192
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1194
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "send",
+          "lineNumber": 1195
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "callback",
+          "lineNumber": 1198
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "failure",
+          "lineNumber": 1198
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "FlutterError",
+          "lineNumber": 1198
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "callback",
+          "lineNumber": 1200
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "success",
+          "lineNumber": 1200
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "callback",
+          "lineNumber": 1203
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "failure",
+          "lineNumber": 1203
+        },
+        {
+          "caller": "loadNextVideo",
+          "callee": "createConnectionError",
+          "lineNumber": 1203
+        },
+        {
+          "caller": "loadPreviousVideo",
+          "callee": "isNotEmpty",
+          "lineNumber": 1209
+        },
+        {
+          "caller": "loadPreviousVideo",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1211
+        },
+        {
+          "caller": "loadPreviousVideo",
+          "callee": "send",
+          "lineNumber": 1212
+        },
+        {
+          "caller": "loadPreviousVideo",
+          "callee": "callback",
+          "lineNumber": 1215
+        },
+        {
+          "caller": "loadPreviousVideo",
+          "callee": "failure",
+          "lineNumber": 1215
+        },
+        {
+          "caller": "loadPreviousVideo",
+          "callee": "FlutterError",
+          "lineNumber": 1215
+        },
+        {
+          "caller": "loadPreviousVideo",
+          "callee": "callback",
+          "lineNumber": 1217
+        },
+        {
+          "caller": "loadPreviousVideo",
+          "callee": "success",
+          "lineNumber": 1217
+        },
+        {
+          "caller": "loadPreviousVideo",
+          "callee": "callback",
+          "lineNumber": 1220
+        },
+        {
+          "caller": "loadPreviousVideo",
+          "callee": "failure",
+          "lineNumber": 1220
+        },
+        {
+          "caller": "loadPreviousVideo",
+          "callee": "createConnectionError",
+          "lineNumber": 1220
+        },
+        {
+          "caller": "onStop",
+          "callee": "isNotEmpty",
+          "lineNumber": 1226
+        },
+        {
+          "caller": "onStop",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1228
+        },
+        {
+          "caller": "onStop",
+          "callee": "send",
+          "lineNumber": 1229
+        },
+        {
+          "caller": "onStop",
+          "callee": "callback",
+          "lineNumber": 1232
+        },
+        {
+          "caller": "onStop",
+          "callee": "failure",
+          "lineNumber": 1232
+        },
+        {
+          "caller": "onStop",
+          "callee": "FlutterError",
+          "lineNumber": 1232
+        },
+        {
+          "caller": "onStop",
+          "callee": "callback",
+          "lineNumber": 1234
+        },
+        {
+          "caller": "onStop",
+          "callee": "success",
+          "lineNumber": 1234
+        },
+        {
+          "caller": "onStop",
+          "callee": "callback",
+          "lineNumber": 1237
+        },
+        {
+          "caller": "onStop",
+          "callee": "failure",
+          "lineNumber": 1237
+        },
+        {
+          "caller": "onStop",
+          "callee": "createConnectionError",
+          "lineNumber": 1237
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "isNotEmpty",
+          "lineNumber": 1243
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1245
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "send",
+          "lineNumber": 1246
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "listOf",
+          "lineNumber": 1246
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "callback",
+          "lineNumber": 1249
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "failure",
+          "lineNumber": 1249
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "FlutterError",
+          "lineNumber": 1249
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "callback",
+          "lineNumber": 1251
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "success",
+          "lineNumber": 1251
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "callback",
+          "lineNumber": 1254
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "failure",
+          "lineNumber": 1254
+        },
+        {
+          "caller": "swapSubtitleTrack",
+          "callee": "createConnectionError",
+          "lineNumber": 1254
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "isNotEmpty",
+          "lineNumber": 1260
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1262
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "send",
+          "lineNumber": 1263
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "listOf",
+          "lineNumber": 1263
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "callback",
+          "lineNumber": 1266
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "failure",
+          "lineNumber": 1266
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "FlutterError",
+          "lineNumber": 1266
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "callback",
+          "lineNumber": 1268
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "success",
+          "lineNumber": 1268
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "callback",
+          "lineNumber": 1271
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "failure",
+          "lineNumber": 1271
+        },
+        {
+          "caller": "swapAudioTrack",
+          "callee": "createConnectionError",
+          "lineNumber": 1271
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "isNotEmpty",
+          "lineNumber": 1277
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1279
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "send",
+          "lineNumber": 1280
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "listOf",
+          "lineNumber": 1280
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "callback",
+          "lineNumber": 1283
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "failure",
+          "lineNumber": 1283
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "FlutterError",
+          "lineNumber": 1283
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "callback",
+          "lineNumber": 1285
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "success",
+          "lineNumber": 1285
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "callback",
+          "lineNumber": 1288
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "failure",
+          "lineNumber": 1288
+        },
+        {
+          "caller": "loadProgram",
+          "callee": "createConnectionError",
+          "lineNumber": 1288
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "isNotEmpty",
+          "lineNumber": 1294
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "BasicMessageChannel",
+          "lineNumber": 1296
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "send",
+          "lineNumber": 1297
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "listOf",
+          "lineNumber": 1297
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "callback",
+          "lineNumber": 1300
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "failure",
+          "lineNumber": 1300
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "FlutterError",
+          "lineNumber": 1300
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "callback",
+          "lineNumber": 1302
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "failure",
+          "lineNumber": 1302
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "FlutterError",
+          "lineNumber": 1302
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "callback",
+          "lineNumber": 1305
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "success",
+          "lineNumber": 1305
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "callback",
+          "lineNumber": 1308
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "failure",
+          "lineNumber": 1308
+        },
+        {
+          "caller": "fetchProgramsForChannel",
+          "callee": "createConnectionError",
+          "lineNumber": 1308
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 91,
+        "functionCount": 70,
+        "classCount": 23
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/controls/SeekOverlay.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 74,
+      "functions": [
+        {
+          "name": "SeekOverlay",
+          "startLine": 32,
+          "endLine": 80,
+          "params": [
+            "modifier",
+            "value"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SeekOverlay",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SeekOverlay",
+          "callee": "rememberInfiniteTransition",
+          "lineNumber": 38
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "animateFloat",
+          "lineNumber": 40
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "infiniteRepeatable",
+          "lineNumber": 43
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "tween",
+          "lineNumber": 44
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "Box",
+          "lineNumber": 51
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "padding",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "background",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "wrapContentSize",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "visible",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "align",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "copy",
+          "lineNumber": 57
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "Icon",
+          "lineNumber": 63
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "rotate",
+          "lineNumber": 65
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "scale",
+          "lineNumber": 65
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "size",
+          "lineNumber": 65
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "Text",
+          "lineNumber": 73
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "toString",
+          "lineNumber": 74
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "toDuration",
+          "lineNumber": 74
+        },
+        {
+          "caller": "SeekOverlay",
+          "callee": "align",
+          "lineNumber": 75
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/controls/TrickplayOverlay.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 212,
+      "nonEmptyLines": 188,
+      "functions": [
+        {
+          "name": "FilmstripTrickPlayOverlay",
+          "startLine": 37,
+          "endLine": 144,
+          "params": [
+            "modifier",
+            "currentPosition",
+            "trickPlayModel",
+            "thumbnailsToShowOnEachSide"
+          ]
+        },
+        {
+          "name": "Thumbnail",
+          "startLine": 146,
+          "endLine": 192,
+          "params": [
+            "modifier",
+            "trickPlayModel",
+            "tileUrl",
+            "offset"
+          ]
+        },
+        {
+          "name": "getThumbnailDetailsForIndex",
+          "startLine": 198,
+          "endLine": 212,
+          "params": [
+            "index"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ThumbnailData",
+          "startLine": 35,
+          "endLine": 35,
+          "methods": [],
+          "properties": [
+            "tileUrl",
+            "offset"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FilmstripTrickPlayOverlay",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "LaunchedEffect",
+          "lineNumber": 49
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "forEach",
+          "lineNumber": 50
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "build",
+          "lineNumber": 51
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "data",
+          "lineNumber": 51
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "Builder",
+          "lineNumber": 51
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "enqueue",
+          "lineNumber": 54
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "remember",
+          "lineNumber": 58
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "coerceIn",
+          "lineNumber": 59
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "toInt",
+          "lineNumber": 59
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "toInt",
+          "lineNumber": 61
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "getThumbnailDetailsForIndex",
+          "lineNumber": 63
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "emptyList",
+          "lineNumber": 64
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "mutableSetOf",
+          "lineNumber": 66
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "mutableListOf",
+          "lineNumber": 67
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "mutableListOf",
+          "lineNumber": 68
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "let",
+          "lineNumber": 72
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "getThumbnailDetailsForIndex",
+          "lineNumber": 72
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "add",
+          "lineNumber": 73
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "add",
+          "lineNumber": 73
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "let",
+          "lineNumber": 80
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "getThumbnailDetailsForIndex",
+          "lineNumber": 80
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "add",
+          "lineNumber": 81
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "add",
+          "lineNumber": 81
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "let",
+          "lineNumber": 89
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "getThumbnailDetailsForIndex",
+          "lineNumber": 89
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "add",
+          "lineNumber": 90
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "add",
+          "lineNumber": 91
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "let",
+          "lineNumber": 101
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "getThumbnailDetailsForIndex",
+          "lineNumber": 101
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "add",
+          "lineNumber": 102
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "add",
+          "lineNumber": 103
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "reversed",
+          "lineNumber": 111
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "getThumbnailDetailsForIndex",
+          "lineNumber": 114
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "toInt",
+          "lineNumber": 115
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "Row",
+          "lineNumber": 118
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "forEach",
+          "lineNumber": 122
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "Thumbnail",
+          "lineNumber": 127
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "graphicsLayer",
+          "lineNumber": 128
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "scale",
+          "lineNumber": 128
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "padding",
+          "lineNumber": 128
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "padding",
+          "lineNumber": 128
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "fillMaxHeight",
+          "lineNumber": 128
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "zIndex",
+          "lineNumber": 128
+        },
+        {
+          "caller": "FilmstripTrickPlayOverlay",
+          "callee": "weight",
+          "lineNumber": 128
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "rememberAsyncImagePainter",
+          "lineNumber": 154
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "build",
+          "lineNumber": 155
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "data",
+          "lineNumber": 155
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "Builder",
+          "lineNumber": 155
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "collectAsState",
+          "lineNumber": 159
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "toFloat",
+          "lineNumber": 160
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "Box",
+          "lineNumber": 162
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "clip",
+          "lineNumber": 163
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "aspectRatio",
+          "lineNumber": 163
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "toFloat",
+          "lineNumber": 164
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 166
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "asImageBitmap",
+          "lineNumber": 171
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "toBitmap",
+          "lineNumber": 171
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "toFloat",
+          "lineNumber": 173
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "roundToInt",
+          "lineNumber": 175
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "roundToInt",
+          "lineNumber": 176
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "roundToInt",
+          "lineNumber": 177
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "roundToInt",
+          "lineNumber": 178
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "Canvas",
+          "lineNumber": 179
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "matchParentSize",
+          "lineNumber": 179
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "drawImage",
+          "lineNumber": 180
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "IntOffset",
+          "lineNumber": 182
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "IntSize",
+          "lineNumber": 183
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "IntSize",
+          "lineNumber": 184
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "toInt",
+          "lineNumber": 184
+        },
+        {
+          "caller": "Thumbnail",
+          "callee": "toInt",
+          "lineNumber": 184
+        },
+        {
+          "caller": "getThumbnailDetailsForIndex",
+          "callee": "coerceIn",
+          "lineNumber": 199
+        },
+        {
+          "caller": "getThumbnailDetailsForIndex",
+          "callee": "toInt",
+          "lineNumber": 199
+        },
+        {
+          "caller": "getThumbnailDetailsForIndex",
+          "callee": "coerceIn",
+          "lineNumber": 200
+        },
+        {
+          "caller": "getThumbnailDetailsForIndex",
+          "callee": "getOrNull",
+          "lineNumber": 201
+        },
+        {
+          "caller": "getThumbnailDetailsForIndex",
+          "callee": "Pair",
+          "lineNumber": 206
+        },
+        {
+          "caller": "getThumbnailDetailsForIndex",
+          "callee": "toDouble",
+          "lineNumber": 207
+        },
+        {
+          "caller": "getThumbnailDetailsForIndex",
+          "callee": "toDouble",
+          "lineNumber": 208
+        },
+        {
+          "caller": "getThumbnailDetailsForIndex",
+          "callee": "ThumbnailData",
+          "lineNumber": 211
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/dialogs/CustomModalBottomSheet.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 71,
+      "nonEmptyLines": 67,
+      "functions": [
+        {
+          "name": "CustomModalBottomSheet",
+          "startLine": 24,
+          "endLine": 71,
+          "params": [
+            "onDismissRequest",
+            "maxWidth",
+            "content"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CustomModalBottomSheet",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "rememberModalBottomSheetState",
+          "lineNumber": 31
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "LaunchedEffect",
+          "lineNumber": 39
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "expand",
+          "lineNumber": 40
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "ModalBottomSheet",
+          "lineNumber": 43
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "WindowInsets",
+          "lineNumber": 47
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "Box",
+          "lineNumber": 51
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "navigationBarsPadding",
+          "lineNumber": 52
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "background",
+          "lineNumber": 52
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "displayCutoutPadding",
+          "lineNumber": 52
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "fillMaxWidth",
+          "lineNumber": 52
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 56
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "linearGradient",
+          "lineNumber": 57
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "listOf",
+          "lineNumber": 58
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "copy",
+          "lineNumber": 59
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "copy",
+          "lineNumber": 60
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "Offset",
+          "lineNumber": 62
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "Offset",
+          "lineNumber": 63
+        },
+        {
+          "caller": "CustomModalBottomSheet",
+          "callee": "content",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/guide/ChannelSwitchConfirmDialog.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "ChannelSwitchConfirmDialog",
+          "startLine": 15,
+          "endLine": 59,
+          "params": [
+            "show",
+            "channel",
+            "program",
+            "onConfirm",
+            "onDismiss"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChannelSwitchConfirmDialog",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "Translate",
+          "lineNumber": 24
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "Translate",
+          "lineNumber": 25
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "AlertDialog",
+          "lineNumber": 26
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "Translate",
+          "lineNumber": 29
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "Text",
+          "lineNumber": 30
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "Translate",
+          "lineNumber": 34
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "switchChannelDesc",
+          "lineNumber": 35
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "Text",
+          "lineNumber": 41
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "Button",
+          "lineNumber": 45
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "Text",
+          "lineNumber": 46
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "TextButton",
+          "lineNumber": 50
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "Text",
+          "lineNumber": 51
+        },
+        {
+          "caller": "ChannelSwitchConfirmDialog",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/guide/GuideDetailView.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 97,
+      "functions": [
+        {
+          "name": "GuideDetailView",
+          "startLine": 25,
+          "endLine": 100,
+          "params": [
+            "modifier",
+            "currentChannel",
+            "activeProgram"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "GuideDetailView",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GuideDetailView",
+          "callee": "Column",
+          "lineNumber": 31
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "padding",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "fillMaxHeight",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "fillMaxWidth",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "background",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "spacedBy",
+          "lineNumber": 40
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "let",
+          "lineNumber": 42
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "let",
+          "lineNumber": 43
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "Text",
+          "lineNumber": 44
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "copy",
+          "lineNumber": 46
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "HorizontalDivider",
+          "lineNumber": 50
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "Row",
+          "lineNumber": 52
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "Text",
+          "lineNumber": 56
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "copy",
+          "lineNumber": 58
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "lowercase",
+          "lineNumber": 62
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "lowercase",
+          "lineNumber": 62
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "let",
+          "lineNumber": 63
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "Text",
+          "lineNumber": 64
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "copy",
+          "lineNumber": 66
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "Row",
+          "lineNumber": 74
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "weight",
+          "lineNumber": 75
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "spacedBy",
+          "lineNumber": 76
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "let",
+          "lineNumber": 78
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "AsyncImage",
+          "lineNumber": 79
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "clip",
+          "lineNumber": 82
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "height",
+          "lineNumber": 82
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "RoundedCornerShape",
+          "lineNumber": 84
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "let",
+          "lineNumber": 87
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "Text",
+          "lineNumber": 88
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "copy",
+          "lineNumber": 90
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "run",
+          "lineNumber": 96
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "Spacer",
+          "lineNumber": 97
+        },
+        {
+          "caller": "GuideDetailView",
+          "callee": "weight",
+          "lineNumber": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/guide/GuideUtility.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "GuideConstants",
+          "startLine": 5,
+          "endLine": 10,
+          "methods": [],
+          "properties": [
+            "CHANNEL_HEIGHT",
+            "CHANNEL_WIDTH",
+            "WIDTH_PER_MINUTE",
+            "TIME_LINE_HEIGHT"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CHANNEL_HEIGHT",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "CHANNEL_WIDTH",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "WIDTH_PER_MINUTE",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "TIME_LINE_HEIGHT",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "GuideConstants",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/guide/NowIndicator.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 91,
+      "nonEmptyLines": 86,
+      "functions": [
+        {
+          "name": "NowIndicator",
+          "startLine": 33,
+          "endLine": 91,
+          "params": [
+            "modifier",
+            "now",
+            "startDate",
+            "endDate",
+            "horizontalScrollState",
+            "totalWidth"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NowIndicator",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NowIndicator",
+          "callee": "remember",
+          "lineNumber": 45
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "derivedStateOf",
+          "lineNumber": 46
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "with",
+          "lineNumber": 48
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "toDp",
+          "lineNumber": 48
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "toFloat",
+          "lineNumber": 49
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "toDouble",
+          "lineNumber": 49
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "coerceIn",
+          "lineNumber": 51
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "Row",
+          "lineNumber": 53
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "fillMaxSize",
+          "lineNumber": 54
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "Spacer",
+          "lineNumber": 56
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "width",
+          "lineNumber": 56
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "Box",
+          "lineNumber": 57
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "clipToBounds",
+          "lineNumber": 58
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "fillMaxHeight",
+          "lineNumber": 58
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "width",
+          "lineNumber": 58
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "Box",
+          "lineNumber": 63
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "background",
+          "lineNumber": 64
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "wrapContentSize",
+          "lineNumber": 64
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "align",
+          "lineNumber": 64
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "offset",
+          "lineNumber": 64
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "SimpleDateFormat",
+          "lineNumber": 73
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "getDefault",
+          "lineNumber": 73
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "getDefault",
+          "lineNumber": 74
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "Text",
+          "lineNumber": 75
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "format",
+          "lineNumber": 76
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "Date",
+          "lineNumber": 76
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "padding",
+          "lineNumber": 77
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "Box",
+          "lineNumber": 82
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "background",
+          "lineNumber": 83
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "width",
+          "lineNumber": 83
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "fillMaxHeight",
+          "lineNumber": 83
+        },
+        {
+          "caller": "NowIndicator",
+          "callee": "offset",
+          "lineNumber": 83
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/guide/Timeline.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 62,
+      "functions": [
+        {
+          "name": "TimeLine",
+          "startLine": 25,
+          "endLine": 64,
+          "params": [
+            "modifier",
+            "startDate",
+            "endDate"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TimeLine",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "TimeLine",
+          "callee": "Row",
+          "lineNumber": 31
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "height",
+          "lineNumber": 32
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "toDuration",
+          "lineNumber": 36
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "SimpleDateFormat",
+          "lineNumber": 38
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "getDefault",
+          "lineNumber": 38
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "getDefault",
+          "lineNumber": 39
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "Date",
+          "lineNumber": 42
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "Row",
+          "lineNumber": 43
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "fillMaxHeight",
+          "lineNumber": 44
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "width",
+          "lineNumber": 44
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "toFloat",
+          "lineNumber": 45
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "spacedBy",
+          "lineNumber": 47
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "VerticalDivider",
+          "lineNumber": 53
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "Text",
+          "lineNumber": 54
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "padding",
+          "lineNumber": 55
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "format",
+          "lineNumber": 56
+        },
+        {
+          "caller": "TimeLine",
+          "callee": "copy",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/objects/Translations.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "Translate",
+          "startLine": 18,
+          "endLine": 37,
+          "params": [
+            "callback",
+            "key",
+            "content"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TranslationsMessenger",
+          "startLine": 14,
+          "endLine": 16,
+          "methods": [],
+          "properties": [
+            "translation"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "translation",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "TranslationsMessenger",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "Translate",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Translate",
+          "callee": "remember",
+          "lineNumber": 24
+        },
+        {
+          "caller": "Translate",
+          "callee": "mutableStateOf",
+          "lineNumber": 24
+        },
+        {
+          "caller": "Translate",
+          "callee": "LaunchedEffect",
+          "lineNumber": 26
+        },
+        {
+          "caller": "Translate",
+          "callee": "callback",
+          "lineNumber": 28
+        },
+        {
+          "caller": "Translate",
+          "callee": "getOrNull",
+          "lineNumber": 29
+        },
+        {
+          "caller": "Translate",
+          "callee": "println",
+          "lineNumber": 32
+        },
+        {
+          "caller": "Translate",
+          "callee": "content",
+          "lineNumber": 36
+        },
+        {
+          "caller": "Translate",
+          "callee": "orEmpty",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

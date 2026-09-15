@@ -1,0 +1,509 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 5,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 5,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "windows/runner/flutter_window.cpp",
+      "language": "cpp",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "FlutterWindow",
+          "startLine": 8,
+          "endLine": 9,
+          "params": [
+            "project"
+          ]
+        },
+        {
+          "name": "~FlutterWindow",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "OnCreate",
+          "startLine": 13,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "OnDestroy",
+          "startLine": 50,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "MessageHandler",
+          "startLine": 58,
+          "endLine": 79,
+          "params": [
+            "hwnd",
+            "message",
+            "wparam",
+            "lparam"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FlutterWindow",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "~FlutterWindow",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "OnCreate",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "OnDestroy",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "MessageHandler",
+          "line": 58,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnCreate",
+          "callee": "Win32Window::OnCreate",
+          "lineNumber": 14
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "GetClientArea",
+          "lineNumber": 18
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "std::make_unique<flutter::FlutterViewController>",
+          "lineNumber": 22
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "engine",
+          "lineNumber": 25
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "view",
+          "lineNumber": 25
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "RegisterPlugins",
+          "lineNumber": 28
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "engine",
+          "lineNumber": 28
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "DesktopMultiWindowSetWindowCreatedCallback",
+          "lineNumber": 29
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "reinterpret_cast<flutter::FlutterViewController *>",
+          "lineNumber": 31
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "engine",
+          "lineNumber": 32
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "RegisterPlugins",
+          "lineNumber": 33
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "SetChildContent",
+          "lineNumber": 36
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "GetNativeWindow",
+          "lineNumber": 36
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "view",
+          "lineNumber": 36
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "SetNextFrameCallback",
+          "lineNumber": 38
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "engine",
+          "lineNumber": 38
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "Show",
+          "lineNumber": 39
+        },
+        {
+          "caller": "OnCreate",
+          "callee": "ForceRedraw",
+          "lineNumber": 45
+        },
+        {
+          "caller": "OnDestroy",
+          "callee": "Win32Window::OnDestroy",
+          "lineNumber": 55
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "HandleTopLevelWindowProc",
+          "lineNumber": 65
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "ReloadSystemFonts",
+          "lineNumber": 74
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "engine",
+          "lineNumber": 74
+        },
+        {
+          "caller": "MessageHandler",
+          "callee": "Win32Window::MessageHandler",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "windows/runner/flutter_window.h",
+      "language": "c",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 25,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "windows/runner/main.cpp",
+      "language": "cpp",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "wWinMain",
+          "startLine": 8,
+          "endLine": 43,
+          "params": [
+            "instance",
+            "HINSTANCE",
+            "show_command"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "wWinMain",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "wWinMain",
+          "callee": "::AttachConsole",
+          "lineNumber": 12
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "::IsDebuggerPresent",
+          "lineNumber": 12
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "CreateAndAttachConsole",
+          "lineNumber": 13
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "::CoInitializeEx",
+          "lineNumber": 18
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "GetCommandLineArguments",
+          "lineNumber": 23
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "set_dart_entrypoint_arguments",
+          "lineNumber": 25
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "std::move",
+          "lineNumber": 25
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "Create",
+          "lineNumber": 30
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "SetQuitOnClose",
+          "lineNumber": 33
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "::GetMessage",
+          "lineNumber": 36
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "::TranslateMessage",
+          "lineNumber": 37
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "::DispatchMessage",
+          "lineNumber": 38
+        },
+        {
+          "caller": "wWinMain",
+          "callee": "::CoUninitialize",
+          "lineNumber": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "windows/runner/utils.cpp",
+      "language": "cpp",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 56,
+      "functions": [
+        {
+          "name": "CreateAndAttachConsole",
+          "startLine": 10,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "GetCommandLineArguments",
+          "startLine": 24,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "Utf8FromUtf16",
+          "startLine": 44,
+          "endLine": 65,
+          "params": [
+            "utf16_string"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CreateAndAttachConsole",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "GetCommandLineArguments",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "Utf8FromUtf16",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CreateAndAttachConsole",
+          "callee": "::AllocConsole",
+          "lineNumber": 11
+        },
+        {
+          "caller": "CreateAndAttachConsole",
+          "callee": "freopen_s",
+          "lineNumber": 13
+        },
+        {
+          "caller": "CreateAndAttachConsole",
+          "callee": "_dup2",
+          "lineNumber": 14
+        },
+        {
+          "caller": "CreateAndAttachConsole",
+          "callee": "_fileno",
+          "lineNumber": 14
+        },
+        {
+          "caller": "CreateAndAttachConsole",
+          "callee": "freopen_s",
+          "lineNumber": 16
+        },
+        {
+          "caller": "CreateAndAttachConsole",
+          "callee": "_dup2",
+          "lineNumber": 17
+        },
+        {
+          "caller": "CreateAndAttachConsole",
+          "callee": "_fileno",
+          "lineNumber": 17
+        },
+        {
+          "caller": "CreateAndAttachConsole",
+          "callee": "std::ios::sync_with_stdio",
+          "lineNumber": 19
+        },
+        {
+          "caller": "CreateAndAttachConsole",
+          "callee": "FlutterDesktopResyncOutputStreams",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GetCommandLineArguments",
+          "callee": "::CommandLineToArgvW",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GetCommandLineArguments",
+          "callee": "::GetCommandLineW",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GetCommandLineArguments",
+          "callee": "std::vector<std::string>",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GetCommandLineArguments",
+          "callee": "push_back",
+          "lineNumber": 36
+        },
+        {
+          "caller": "GetCommandLineArguments",
+          "callee": "Utf8FromUtf16",
+          "lineNumber": 36
+        },
+        {
+          "caller": "GetCommandLineArguments",
+          "callee": "::LocalFree",
+          "lineNumber": 39
+        },
+        {
+          "caller": "Utf8FromUtf16",
+          "callee": "std::string",
+          "lineNumber": 46
+        },
+        {
+          "caller": "Utf8FromUtf16",
+          "callee": "::WideCharToMultiByte",
+          "lineNumber": 48
+        },
+        {
+          "caller": "Utf8FromUtf16",
+          "callee": "wcslen",
+          "lineNumber": 52
+        },
+        {
+          "caller": "Utf8FromUtf16",
+          "callee": "max_size",
+          "lineNumber": 54
+        },
+        {
+          "caller": "Utf8FromUtf16",
+          "callee": "resize",
+          "lineNumber": 57
+        },
+        {
+          "caller": "Utf8FromUtf16",
+          "callee": "::WideCharToMultiByte",
+          "lineNumber": 58
+        },
+        {
+          "caller": "Utf8FromUtf16",
+          "callee": "data",
+          "lineNumber": 60
+        },
+        {
+          "caller": "Utf8FromUtf16",
+          "callee": "std::string",
+          "lineNumber": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "windows/runner/utils.h",
+      "language": "c",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

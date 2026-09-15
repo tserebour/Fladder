@@ -1,0 +1,5582 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "lib/providers/dashboard_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 138,
+      "nonEmptyLines": 117,
+      "functions": [
+        {
+          "name": "DashboardNotifier",
+          "startLine": 19,
+          "endLine": 19,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "fetchNextUpAndResume",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "clear",
+          "startLine": 135,
+          "endLine": 135,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardNotifier",
+          "startLine": 18,
+          "endLine": 138,
+          "methods": [
+            "DashboardNotifier",
+            "fetchNextUpAndResume",
+            "clear"
+          ],
+          "properties": [
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardNotifier",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "fetchNextUpAndResume",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "clear",
+          "line": 135,
+          "isDefault": false
+        },
+        {
+          "name": "DashboardNotifier",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "copyWith",
+          "lineNumber": 27
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "read",
+          "lineNumber": 29
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "select",
+          "lineNumber": 29
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "map",
+          "lineNumber": 29
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toSet",
+          "lineNumber": 29
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toList",
+          "lineNumber": 29
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toList",
+          "lineNumber": 38
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "containsAny",
+          "lineNumber": 51
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "liveTvChannelsGet",
+          "lineNumber": 52
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "fromBaseDto",
+          "lineNumber": 55
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toList",
+          "lineNumber": 56
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "wait",
+          "lineNumber": 59
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "map",
+          "lineNumber": 60
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "read",
+          "lineNumber": 62
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "fetchProgramsForChannel",
+          "lineNumber": 62
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "copyChannelWith",
+          "lineNumber": 63
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "copyWith",
+          "lineNumber": 70
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "copyWith",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "containsAny",
+          "lineNumber": 75
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "usersUserIdItemsResumeGet",
+          "lineNumber": 76
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toList",
+          "lineNumber": 78
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "copyWith",
+          "lineNumber": 84
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "fromBaseDto",
+          "lineNumber": 85
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toList",
+          "lineNumber": 85
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "contains",
+          "lineNumber": 89
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "usersUserIdItemsResumeGet",
+          "lineNumber": 90
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toList",
+          "lineNumber": 92
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "copyWith",
+          "lineNumber": 98
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "fromBaseDto",
+          "lineNumber": 99
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toList",
+          "lineNumber": 99
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "contains",
+          "lineNumber": 103
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "usersUserIdItemsResumeGet",
+          "lineNumber": 104
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toList",
+          "lineNumber": 106
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "copyWith",
+          "lineNumber": 112
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "fromBaseDto",
+          "lineNumber": 113
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toList",
+          "lineNumber": 113
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "showsNextUpGet",
+          "lineNumber": 117
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "now",
+          "lineNumber": 118
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "subtract",
+          "lineNumber": 118
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "read",
+          "lineNumber": 119
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "select",
+          "lineNumber": 119
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "Duration",
+          "lineNumber": 119
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toList",
+          "lineNumber": 120
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "fromBaseDto",
+          "lineNumber": 127
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "toList",
+          "lineNumber": 129
+        },
+        {
+          "caller": "fetchNextUpAndResume",
+          "callee": "copyWith",
+          "lineNumber": 132
+        },
+        {
+          "caller": "clear",
+          "callee": "HomeModel",
+          "lineNumber": 136
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/directory_browser_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 83,
+      "nonEmptyLines": 76,
+      "functions": [
+        {
+          "name": "api",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "fetchFolders",
+          "startLine": 18,
+          "endLine": 18,
+          "params": [
+            "parent"
+          ]
+        },
+        {
+          "name": "moveToRoot",
+          "startLine": 58,
+          "endLine": 58,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DirectoryBrowser",
+          "startLine": 12,
+          "endLine": 73,
+          "methods": [
+            "api",
+            "build",
+            "fetchFolders",
+            "moveToRoot"
+          ],
+          "properties": []
+        },
+        {
+          "name": "DirectoryBrowserModel",
+          "startLine": 76,
+          "endLine": 83,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "api",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "fetchFolders",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "moveToRoot",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "DirectoryBrowser",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "DirectoryBrowserModel",
+          "line": 76,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "api",
+          "callee": "read",
+          "lineNumber": 13
+        },
+        {
+          "caller": "build",
+          "callee": "DirectoryBrowserModel",
+          "lineNumber": 16
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "copyWith",
+          "lineNumber": 19
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "defaultDirectoryGet",
+          "lineNumber": 23
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "getDriveLocations",
+          "lineNumber": 25
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "copyWith",
+          "lineNumber": 26
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "toList",
+          "lineNumber": 29
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "parentPathGet",
+          "lineNumber": 33
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "getDriveLocations",
+          "lineNumber": 35
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "copyWith",
+          "lineNumber": 36
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "toList",
+          "lineNumber": 39
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "directoryContentsGet",
+          "lineNumber": 43
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "copyWith",
+          "lineNumber": 44
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "replaceAll",
+          "lineNumber": 45
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "toList",
+          "lineNumber": 47
+        },
+        {
+          "caller": "fetchFolders",
+          "callee": "copyWith",
+          "lineNumber": 53
+        },
+        {
+          "caller": "moveToRoot",
+          "callee": "copyWith",
+          "lineNumber": 59
+        },
+        {
+          "caller": "moveToRoot",
+          "callee": "getDriveLocations",
+          "lineNumber": 61
+        },
+        {
+          "caller": "moveToRoot",
+          "callee": "copyWith",
+          "lineNumber": 62
+        },
+        {
+          "caller": "moveToRoot",
+          "callee": "toList",
+          "lineNumber": 65
+        },
+        {
+          "caller": "moveToRoot",
+          "callee": "copyWith",
+          "lineNumber": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 4,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/directory_browser_provider.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 350,
+      "nonEmptyLines": 317,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "parentFolder",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "currentPath",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "paths",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "loading",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 31,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$DirectoryBrowserModel",
+          "startLine": 16,
+          "endLine": 34,
+          "methods": [
+            "parentFolder",
+            "currentPath",
+            "paths",
+            "loading",
+            "copyWith",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "parentFolder",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "currentPath",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "paths",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "loading",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$DirectoryBrowserModelCopyWithImpl",
+          "lineNumber": 27
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_DirectoryBrowserModel",
+          "lineNumber": 160
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 161
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_DirectoryBrowserModel",
+          "lineNumber": 188
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 189
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 192
+        },
+        {
+          "caller": "when",
+          "callee": "_DirectoryBrowserModel",
+          "lineNumber": 217
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 218
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 221
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_DirectoryBrowserModel",
+          "lineNumber": 245
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 246
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 329
+        },
+        {
+          "caller": "call",
+          "callee": "_DirectoryBrowserModel",
+          "lineNumber": 329
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/directory_browser_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "_$directoryBrowserHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/discovery_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 120,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "DiscoveryInfo.fromMap",
+          "startLine": 108,
+          "endLine": 108,
+          "params": [
+            "map"
+          ]
+        },
+        {
+          "name": "DiscoveryInfo.fromJson",
+          "startLine": 109,
+          "endLine": 109,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 119,
+          "endLine": 119,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ServerDiscovery",
+          "startLine": 17,
+          "endLine": 88,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "discoveryMessage",
+            "discoveryPort",
+            "maxServerCount",
+            "timeOut",
+            "api"
+          ]
+        },
+        {
+          "name": "DiscoveryInfo",
+          "startLine": 91,
+          "endLine": 120,
+          "methods": [
+            "DiscoveryInfo.fromMap",
+            "DiscoveryInfo.fromJson",
+            "hashCode"
+          ],
+          "properties": [
+            "id",
+            "name",
+            "address",
+            "endPointAddress"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "ServerDiscovery",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "DiscoveryInfo.fromMap",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "DiscoveryInfo.fromJson",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 119,
+          "isDefault": false
+        },
+        {
+          "name": "DiscoveryInfo",
+          "line": 91,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "StreamController",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "checkLocalNetworkPermission",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "LocalNetworkPermissionDeniedException",
+          "lineNumber": 30
+        },
+        {
+          "caller": "build",
+          "callee": "bind",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "send",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "encode",
+          "lineNumber": 39
+        },
+        {
+          "caller": "build",
+          "callee": "InternetAddress",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "Timer",
+          "lineNumber": 47
+        },
+        {
+          "caller": "build",
+          "callee": "add",
+          "lineNumber": 50
+        },
+        {
+          "caller": "build",
+          "callee": "close",
+          "lineNumber": 52
+        },
+        {
+          "caller": "build",
+          "callee": "close",
+          "lineNumber": 53
+        },
+        {
+          "caller": "build",
+          "callee": "listen",
+          "lineNumber": 56
+        },
+        {
+          "caller": "build",
+          "callee": "receive",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "decode",
+          "lineNumber": 61
+        },
+        {
+          "caller": "build",
+          "callee": "jsonDecode",
+          "lineNumber": 62
+        },
+        {
+          "caller": "build",
+          "callee": "fromMap",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "add",
+          "lineNumber": 66
+        },
+        {
+          "caller": "build",
+          "callee": "add",
+          "lineNumber": 67
+        },
+        {
+          "caller": "build",
+          "callee": "log",
+          "lineNumber": 70
+        },
+        {
+          "caller": "build",
+          "callee": "cancel",
+          "lineNumber": 71
+        },
+        {
+          "caller": "build",
+          "callee": "close",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "close",
+          "lineNumber": 73
+        },
+        {
+          "caller": "build",
+          "callee": "onDispose",
+          "lineNumber": 82
+        },
+        {
+          "caller": "build",
+          "callee": "cancel",
+          "lineNumber": 83
+        },
+        {
+          "caller": "build",
+          "callee": "close",
+          "lineNumber": 84
+        },
+        {
+          "caller": "build",
+          "callee": "close",
+          "lineNumber": 85
+        },
+        {
+          "caller": "DiscoveryInfo.fromMap",
+          "callee": "fromMap",
+          "lineNumber": 108
+        },
+        {
+          "caller": "DiscoveryInfo.fromJson",
+          "callee": "fromJson",
+          "lineNumber": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 4,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/discovery_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "_$serverDiscoveryHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/discovery_provider.mapper.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 64,
+      "functions": [
+        {
+          "name": "DiscoveryInfoMapper._",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "ensureInitialized",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "_$id",
+          "startLine": 23,
+          "endLine": 23,
+          "params": [
+            "v"
+          ]
+        },
+        {
+          "name": "_$name",
+          "startLine": 26,
+          "endLine": 26,
+          "params": [
+            "v"
+          ]
+        },
+        {
+          "name": "_$address",
+          "startLine": 29,
+          "endLine": 29,
+          "params": [
+            "v"
+          ]
+        },
+        {
+          "name": "_$endPointAddress",
+          "startLine": 32,
+          "endLine": 32,
+          "params": [
+            "v"
+          ]
+        },
+        {
+          "name": "_instantiate",
+          "startLine": 46,
+          "endLine": 46,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "fromMap",
+          "startLine": 57,
+          "endLine": 57,
+          "params": [
+            "map"
+          ]
+        },
+        {
+          "name": "fromJson",
+          "startLine": 61,
+          "endLine": 61,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "toJson",
+          "startLine": 67,
+          "endLine": 67,
+          "params": []
+        },
+        {
+          "name": "toMap",
+          "startLine": 72,
+          "endLine": 72,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DiscoveryInfoMapper",
+          "startLine": 9,
+          "endLine": 64,
+          "methods": [
+            "DiscoveryInfoMapper._",
+            "ensureInitialized",
+            "_$id",
+            "_$name",
+            "_$address",
+            "_$endPointAddress",
+            "_instantiate",
+            "fromMap",
+            "fromJson"
+          ],
+          "properties": [
+            "_instance",
+            "id",
+            "fields",
+            "ignoreNull",
+            "instantiate"
+          ]
+        },
+        {
+          "name": "DiscoveryInfoMappable",
+          "startLine": 66,
+          "endLine": 76,
+          "methods": [
+            "toJson",
+            "toMap"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DiscoveryInfoMapper._",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "ensureInitialized",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "fromMap",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "fromJson",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "DiscoveryInfoMapper",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "toJson",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "toMap",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "DiscoveryInfoMappable",
+          "line": 66,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ensureInitialized",
+          "callee": "use",
+          "lineNumber": 15
+        },
+        {
+          "caller": "ensureInitialized",
+          "callee": "_",
+          "lineNumber": 15
+        },
+        {
+          "caller": "_instantiate",
+          "callee": "DiscoveryInfo",
+          "lineNumber": 47
+        },
+        {
+          "caller": "_instantiate",
+          "callee": "dec",
+          "lineNumber": 48
+        },
+        {
+          "caller": "_instantiate",
+          "callee": "dec",
+          "lineNumber": 49
+        },
+        {
+          "caller": "_instantiate",
+          "callee": "dec",
+          "lineNumber": 50
+        },
+        {
+          "caller": "_instantiate",
+          "callee": "dec",
+          "lineNumber": 51
+        },
+        {
+          "caller": "fromMap",
+          "callee": "ensureInitialized",
+          "lineNumber": 58
+        },
+        {
+          "caller": "fromMap",
+          "callee": "decodeMap",
+          "lineNumber": 58
+        },
+        {
+          "caller": "fromJson",
+          "callee": "ensureInitialized",
+          "lineNumber": 62
+        },
+        {
+          "caller": "fromJson",
+          "callee": "decodeJson",
+          "lineNumber": 62
+        },
+        {
+          "caller": "toJson",
+          "callee": "ensureInitialized",
+          "lineNumber": 68
+        },
+        {
+          "caller": "toJson",
+          "callee": "encodeJson",
+          "lineNumber": 69
+        },
+        {
+          "caller": "toMap",
+          "callee": "ensureInitialized",
+          "lineNumber": 73
+        },
+        {
+          "caller": "toMap",
+          "callee": "encodeMap",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 11,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/edit_item_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 251,
+      "nonEmptyLines": 227,
+      "functions": [
+        {
+          "name": "EditItemNotifier",
+          "startLine": 17,
+          "endLine": 17,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "getFields",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "advancedFields",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "fetchInformation",
+          "startLine": 26,
+          "endLine": 26,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "fetchRemoteImages",
+          "startLine": 64,
+          "endLine": 64,
+          "params": [
+            "type"
+          ]
+        },
+        {
+          "name": "updateField",
+          "startLine": 85,
+          "endLine": 85,
+          "params": [
+            "field"
+          ]
+        },
+        {
+          "name": "resetChanged",
+          "startLine": 98,
+          "endLine": 98,
+          "params": []
+        },
+        {
+          "name": "saveInformation",
+          "startLine": 104,
+          "endLine": 104,
+          "params": [
+            "options"
+          ]
+        },
+        {
+          "name": "uploadImage",
+          "startLine": 151,
+          "endLine": 151,
+          "params": [
+            "imageModel"
+          ]
+        },
+        {
+          "name": "_setImage",
+          "startLine": 162,
+          "endLine": 162,
+          "params": [
+            "imageModel"
+          ]
+        },
+        {
+          "name": "selectImage",
+          "startLine": 173,
+          "endLine": 173,
+          "params": [
+            "type",
+            "image"
+          ]
+        },
+        {
+          "name": "setIncludeImages",
+          "startLine": 193,
+          "endLine": 193,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "addCustomImages",
+          "startLine": 195,
+          "endLine": 195,
+          "params": [
+            "type",
+            "list"
+          ]
+        },
+        {
+          "name": "deleteImage",
+          "startLine": 224,
+          "endLine": 224,
+          "params": [
+            "type",
+            "image"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "EditItemNotifier",
+          "startLine": 16,
+          "endLine": 251,
+          "methods": [
+            "EditItemNotifier",
+            "getFields",
+            "advancedFields",
+            "fetchInformation",
+            "fetchRemoteImages",
+            "updateField",
+            "resetChanged",
+            "saveInformation",
+            "uploadImage",
+            "_setImage",
+            "selectImage",
+            "setIncludeImages",
+            "addCustomImages",
+            "deleteImage"
+          ],
+          "properties": [
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "EditItemNotifier",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "getFields",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "advancedFields",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "fetchInformation",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "fetchRemoteImages",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "updateField",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "resetChanged",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "saveInformation",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "uploadImage",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "selectImage",
+          "line": 173,
+          "isDefault": false
+        },
+        {
+          "name": "setIncludeImages",
+          "line": 193,
+          "isDefault": false
+        },
+        {
+          "name": "addCustomImages",
+          "line": 195,
+          "isDefault": false
+        },
+        {
+          "name": "deleteImage",
+          "line": 224,
+          "isDefault": false
+        },
+        {
+          "name": "EditItemNotifier",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getFields",
+          "callee": "editAbleFields",
+          "lineNumber": 23
+        },
+        {
+          "caller": "advancedFields",
+          "callee": "editAdvancedAbleFields",
+          "lineNumber": 24
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "ItemEditingModel",
+          "lineNumber": 27
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 28
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "itemsItemIdImagesGet",
+          "lineNumber": 33
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "copyWith",
+          "lineNumber": 35
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "jsonDecode",
+          "lineNumber": 37
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "jsonDecode",
+          "lineNumber": 38
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "copyWith",
+          "lineNumber": 39
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "map",
+          "lineNumber": 42
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "fromImage",
+          "lineNumber": 42
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "toList",
+          "lineNumber": 43
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "copyWith",
+          "lineNumber": 45
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "map",
+          "lineNumber": 48
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "fromImage",
+          "lineNumber": 48
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "toList",
+          "lineNumber": 49
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "copyWith",
+          "lineNumber": 51
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "map",
+          "lineNumber": 54
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "fromImage",
+          "lineNumber": 54
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "toList",
+          "lineNumber": 55
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "itemsItemIdMetadataEditorGet",
+          "lineNumber": 58
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "copyWith",
+          "lineNumber": 59
+        },
+        {
+          "caller": "fetchRemoteImages",
+          "callee": "itemsItemIdRemoteImagesGet",
+          "lineNumber": 67
+        },
+        {
+          "caller": "fetchRemoteImages",
+          "callee": "map",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchRemoteImages",
+          "callee": "fromDto",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchRemoteImages",
+          "callee": "toList",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchRemoteImages",
+          "callee": "copyWith",
+          "lineNumber": 75
+        },
+        {
+          "caller": "fetchRemoteImages",
+          "callee": "copyWith",
+          "lineNumber": 75
+        },
+        {
+          "caller": "fetchRemoteImages",
+          "callee": "copyWith",
+          "lineNumber": 77
+        },
+        {
+          "caller": "fetchRemoteImages",
+          "callee": "copyWith",
+          "lineNumber": 77
+        },
+        {
+          "caller": "fetchRemoteImages",
+          "callee": "copyWith",
+          "lineNumber": 80
+        },
+        {
+          "caller": "fetchRemoteImages",
+          "callee": "copyWith",
+          "lineNumber": 80
+        },
+        {
+          "caller": "updateField",
+          "callee": "addEntries",
+          "lineNumber": 90
+        },
+        {
+          "caller": "updateField",
+          "callee": "copyWith",
+          "lineNumber": 93
+        },
+        {
+          "caller": "resetChanged",
+          "callee": "copyWith",
+          "lineNumber": 99
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "copyWith",
+          "lineNumber": 109
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "contains",
+          "lineNumber": 111
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "itemsItemIdPost",
+          "lineNumber": 113
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "fromJson",
+          "lineNumber": 115
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "contains",
+          "lineNumber": 120
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "setImage",
+          "lineNumber": 121
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "contains",
+          "lineNumber": 127
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "setImage",
+          "lineNumber": 128
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "contains",
+          "lineNumber": 135
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "setImage",
+          "lineNumber": 136
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 143
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "copyWith",
+          "lineNumber": 145
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "success",
+          "lineNumber": 147
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "failure",
+          "lineNumber": 148
+        },
+        {
+          "caller": "saveInformation",
+          "callee": "ApiError",
+          "lineNumber": 148
+        },
+        {
+          "caller": "uploadImage",
+          "callee": "itemIdImagesImageTypePost",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_setImage",
+          "callee": "itemsItemIdRemoteImagesDownloadPost",
+          "lineNumber": 166
+        },
+        {
+          "caller": "selectImage",
+          "callee": "copyWith",
+          "lineNumber": 176
+        },
+        {
+          "caller": "selectImage",
+          "callee": "copyWith",
+          "lineNumber": 177
+        },
+        {
+          "caller": "selectImage",
+          "callee": "copyWith",
+          "lineNumber": 179
+        },
+        {
+          "caller": "selectImage",
+          "callee": "copyWith",
+          "lineNumber": 179
+        },
+        {
+          "caller": "selectImage",
+          "callee": "copyWith",
+          "lineNumber": 182
+        },
+        {
+          "caller": "selectImage",
+          "callee": "copyWith",
+          "lineNumber": 183
+        },
+        {
+          "caller": "selectImage",
+          "callee": "contains",
+          "lineNumber": 184
+        },
+        {
+          "caller": "selectImage",
+          "callee": "of",
+          "lineNumber": 185
+        },
+        {
+          "caller": "setIncludeImages",
+          "callee": "copyWith",
+          "lineNumber": 193
+        },
+        {
+          "caller": "addCustomImages",
+          "callee": "copyWith",
+          "lineNumber": 198
+        },
+        {
+          "caller": "addCustomImages",
+          "callee": "copyWith",
+          "lineNumber": 199
+        },
+        {
+          "caller": "addCustomImages",
+          "callee": "copyWith",
+          "lineNumber": 206
+        },
+        {
+          "caller": "addCustomImages",
+          "callee": "copyWith",
+          "lineNumber": 207
+        },
+        {
+          "caller": "addCustomImages",
+          "callee": "copyWith",
+          "lineNumber": 214
+        },
+        {
+          "caller": "addCustomImages",
+          "callee": "copyWith",
+          "lineNumber": 215
+        },
+        {
+          "caller": "deleteImage",
+          "callee": "itemsItemIdImagesImageTypeDelete",
+          "lineNumber": 227
+        },
+        {
+          "caller": "deleteImage",
+          "callee": "copyWith",
+          "lineNumber": 234
+        },
+        {
+          "caller": "deleteImage",
+          "callee": "copyWith",
+          "lineNumber": 236
+        },
+        {
+          "caller": "deleteImage",
+          "callee": "copyWith",
+          "lineNumber": 239
+        },
+        {
+          "caller": "deleteImage",
+          "callee": "copyWith",
+          "lineNumber": 240
+        },
+        {
+          "caller": "deleteImage",
+          "callee": "copyWith",
+          "lineNumber": 243
+        },
+        {
+          "caller": "deleteImage",
+          "callee": "copyWith",
+          "lineNumber": 245
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 14,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/favourites_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 87,
+      "functions": [
+        {
+          "name": "FavouritesNotifier",
+          "startLine": 17,
+          "endLine": 17,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "fetchFavourites",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "_fetchMoviesAndSeries",
+          "startLine": 35,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "_loadLibrary",
+          "startLine": 49,
+          "endLine": 49,
+          "params": [
+            "viewModel"
+          ]
+        },
+        {
+          "name": "fetchTypes",
+          "startLine": 66,
+          "endLine": 66,
+          "params": [
+            "id",
+            "includeItemTypes"
+          ]
+        },
+        {
+          "name": "_fetchPeople",
+          "startLine": 86,
+          "endLine": 86,
+          "params": []
+        },
+        {
+          "name": "setSearch",
+          "startLine": 95,
+          "endLine": 95,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "clear",
+          "startLine": 99,
+          "endLine": 99,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "FavouritesNotifier",
+          "startLine": 16,
+          "endLine": 102,
+          "methods": [
+            "FavouritesNotifier",
+            "fetchFavourites",
+            "_fetchMoviesAndSeries",
+            "_loadLibrary",
+            "fetchTypes",
+            "_fetchPeople",
+            "setSearch",
+            "clear"
+          ],
+          "properties": [
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FavouritesNotifier",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "fetchFavourites",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "fetchTypes",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "setSearch",
+          "line": 95,
+          "isDefault": false
+        },
+        {
+          "name": "clear",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "FavouritesNotifier",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchFavourites",
+          "callee": "copyWith",
+          "lineNumber": 27
+        },
+        {
+          "caller": "fetchFavourites",
+          "callee": "_fetchMoviesAndSeries",
+          "lineNumber": 28
+        },
+        {
+          "caller": "fetchFavourites",
+          "callee": "_fetchPeople",
+          "lineNumber": 29
+        },
+        {
+          "caller": "fetchFavourites",
+          "callee": "copyWith",
+          "lineNumber": 31
+        },
+        {
+          "caller": "_fetchMoviesAndSeries",
+          "callee": "read",
+          "lineNumber": 36
+        },
+        {
+          "caller": "_fetchMoviesAndSeries",
+          "callee": "wait",
+          "lineNumber": 38
+        },
+        {
+          "caller": "_fetchMoviesAndSeries",
+          "callee": "map",
+          "lineNumber": 38
+        },
+        {
+          "caller": "_fetchMoviesAndSeries",
+          "callee": "_loadLibrary",
+          "lineNumber": 38
+        },
+        {
+          "caller": "_fetchMoviesAndSeries",
+          "callee": "copyWith",
+          "lineNumber": 40
+        },
+        {
+          "caller": "_fetchMoviesAndSeries",
+          "callee": "expand",
+          "lineNumber": 42
+        },
+        {
+          "caller": "_fetchMoviesAndSeries",
+          "callee": "where",
+          "lineNumber": 43
+        },
+        {
+          "caller": "_fetchMoviesAndSeries",
+          "callee": "cast",
+          "lineNumber": 44
+        },
+        {
+          "caller": "_fetchMoviesAndSeries",
+          "callee": "toList",
+          "lineNumber": 45
+        },
+        {
+          "caller": "_loadLibrary",
+          "callee": "map",
+          "lineNumber": 61
+        },
+        {
+          "caller": "_loadLibrary",
+          "callee": "fetchTypes",
+          "lineNumber": 61
+        },
+        {
+          "caller": "_loadLibrary",
+          "callee": "toList",
+          "lineNumber": 61
+        },
+        {
+          "caller": "_loadLibrary",
+          "callee": "wait",
+          "lineNumber": 62
+        },
+        {
+          "caller": "_loadLibrary",
+          "callee": "expand",
+          "lineNumber": 63
+        },
+        {
+          "caller": "_loadLibrary",
+          "callee": "toList",
+          "lineNumber": 63
+        },
+        {
+          "caller": "fetchTypes",
+          "callee": "itemsGet",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_fetchPeople",
+          "callee": "personsGet",
+          "lineNumber": 87
+        },
+        {
+          "caller": "_fetchPeople",
+          "callee": "copyWith",
+          "lineNumber": 91
+        },
+        {
+          "caller": "setSearch",
+          "callee": "copyWith",
+          "lineNumber": 96
+        },
+        {
+          "caller": "clear",
+          "callee": "FavouritesModel",
+          "lineNumber": 100
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/home_preferences_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 143,
+      "nonEmptyLines": 119,
+      "callGraph": [
+        {
+          "caller": "setOrderedLibraryIds",
+          "callee": "copyWith",
+          "lineNumber": 74
+        },
+        {
+          "caller": "setLatestItemsExcludes",
+          "callee": "copyWith",
+          "lineNumber": 78
+        },
+        {
+          "caller": "setHidePlayedInLatest",
+          "callee": "copyWith",
+          "lineNumber": 82
+        },
+        {
+          "caller": "setGroupedFolders",
+          "callee": "copyWith",
+          "lineNumber": 86
+        },
+        {
+          "caller": "save",
+          "callee": "_saveLibraryPreferences",
+          "lineNumber": 91
+        },
+        {
+          "caller": "save",
+          "callee": "read",
+          "lineNumber": 92
+        },
+        {
+          "caller": "save",
+          "callee": "updateInformation",
+          "lineNumber": 92
+        },
+        {
+          "caller": "save",
+          "callee": "read",
+          "lineNumber": 93
+        },
+        {
+          "caller": "save",
+          "callee": "fetchViews",
+          "lineNumber": 93
+        },
+        {
+          "caller": "save",
+          "callee": "success",
+          "lineNumber": 94
+        },
+        {
+          "caller": "save",
+          "callee": "failure",
+          "lineNumber": 96
+        },
+        {
+          "caller": "save",
+          "callee": "ApiError",
+          "lineNumber": 96
+        },
+        {
+          "caller": "save",
+          "callee": "toString",
+          "lineNumber": 96
+        },
+        {
+          "caller": "_saveLibraryPreferences",
+          "callee": "read",
+          "lineNumber": 114
+        },
+        {
+          "caller": "_saveLibraryPreferences",
+          "callee": "copyWith",
+          "lineNumber": 118
+        },
+        {
+          "caller": "_saveLibraryPreferences",
+          "callee": "updateUserConfiguration",
+          "lineNumber": 124
+        },
+        {
+          "caller": "_isGroupableFolder",
+          "callee": "contains",
+          "lineNumber": 137
+        },
+        {
+          "caller": "revert",
+          "callee": "load",
+          "lineNumber": 141
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/image_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 123,
+      "nonEmptyLines": 111,
+      "functions": [
+        {
+          "name": "ImageNotifier",
+          "startLine": 16,
+          "endLine": 18,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "currentServerUrl",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "getUserImageUrl",
+          "startLine": 24,
+          "endLine": 24,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "getItemsImageUrl",
+          "startLine": 29,
+          "endLine": 33,
+          "params": [
+            "itemId",
+            "type",
+            "maxHeight",
+            "maxWidth",
+            "quality"
+          ]
+        },
+        {
+          "name": "getItemsOrigImageUrl",
+          "startLine": 52,
+          "endLine": 52,
+          "params": [
+            "itemId",
+            "type"
+          ]
+        },
+        {
+          "name": "getBackdropOrigImage",
+          "startLine": 62,
+          "endLine": 66,
+          "params": [
+            "itemId",
+            "index",
+            "hash"
+          ]
+        },
+        {
+          "name": "getBackdropImage",
+          "startLine": 80,
+          "endLine": 87,
+          "params": [
+            "itemId",
+            "index",
+            "hash",
+            "maxHeight",
+            "maxWidth",
+            "quality"
+          ]
+        },
+        {
+          "name": "getChapterUrl",
+          "startLine": 104,
+          "endLine": 108,
+          "params": [
+            "itemId",
+            "index",
+            "type",
+            "maxHeight",
+            "maxWidth",
+            "quality"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ImageNotifier",
+          "startLine": 14,
+          "endLine": 123,
+          "methods": [
+            "ImageNotifier",
+            "currentServerUrl",
+            "getUserImageUrl",
+            "getItemsImageUrl",
+            "getItemsOrigImageUrl",
+            "getBackdropOrigImage",
+            "getBackdropImage",
+            "getChapterUrl"
+          ],
+          "properties": [
+            "ref"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ImageNotifier",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "currentServerUrl",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "getUserImageUrl",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "getItemsImageUrl",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "getItemsOrigImageUrl",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "getBackdropOrigImage",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "getBackdropImage",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "getChapterUrl",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "ImageNotifier",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "currentServerUrl",
+          "callee": "read",
+          "lineNumber": 21
+        },
+        {
+          "caller": "getUserImageUrl",
+          "callee": "buildServerUrl",
+          "lineNumber": 26
+        },
+        {
+          "caller": "getItemsImageUrl",
+          "callee": "buildServerUrl",
+          "lineNumber": 38
+        },
+        {
+          "caller": "getItemsImageUrl",
+          "callee": "toString",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getItemsImageUrl",
+          "callee": "toString",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getItemsImageUrl",
+          "callee": "toString",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getItemsOrigImageUrl",
+          "callee": "buildServerUrl",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getBackdropOrigImage",
+          "callee": "buildServerUrl",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getBackdropOrigImage",
+          "callee": "toString",
+          "lineNumber": 70
+        },
+        {
+          "caller": "getBackdropImage",
+          "callee": "buildServerUrl",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getBackdropImage",
+          "callee": "toString",
+          "lineNumber": 91
+        },
+        {
+          "caller": "getBackdropImage",
+          "callee": "toString",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getBackdropImage",
+          "callee": "toString",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getBackdropImage",
+          "callee": "toString",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getChapterUrl",
+          "callee": "buildServerUrl",
+          "lineNumber": 110
+        },
+        {
+          "caller": "getChapterUrl",
+          "callee": "toString",
+          "lineNumber": 112
+        },
+        {
+          "caller": "getChapterUrl",
+          "callee": "toString",
+          "lineNumber": 114
+        },
+        {
+          "caller": "getChapterUrl",
+          "callee": "toString",
+          "lineNumber": 115
+        },
+        {
+          "caller": "getChapterUrl",
+          "callee": "toString",
+          "lineNumber": 116
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/incognito_mode_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/items/album_details_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 152,
+      "nonEmptyLines": 132,
+      "functions": [
+        {
+          "name": "AlbumDetailsNotifier",
+          "startLine": 22,
+          "endLine": 22,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "fetchDetails",
+          "startLine": 27,
+          "endLine": 27,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "fetchTracks",
+          "startLine": 52,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "fetchArtistRelated",
+          "startLine": 90,
+          "endLine": 90,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AlbumDetailsNotifier",
+          "startLine": 21,
+          "endLine": 152,
+          "methods": [
+            "AlbumDetailsNotifier",
+            "fetchDetails",
+            "fetchTracks",
+            "fetchArtistRelated"
+          ],
+          "properties": [
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AlbumDetailsNotifier",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "fetchDetails",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "fetchTracks",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "fetchArtistRelated",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "AlbumDetailsNotifier",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchDetails",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 32
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "copyWith",
+          "lineNumber": 38
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "fetchTracks",
+          "lineNumber": 47
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "fetchArtistRelated",
+          "lineNumber": 48
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "read",
+          "lineNumber": 54
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "read",
+          "lineNumber": 55
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "getChildren",
+          "lineNumber": 55
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "map",
+          "lineNumber": 56
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "whereType",
+          "lineNumber": 57
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "toList",
+          "lineNumber": 58
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "itemsGet",
+          "lineNumber": 64
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "whereType",
+          "lineNumber": 80
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "toList",
+          "lineNumber": 80
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "log",
+          "lineNumber": 85
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "read",
+          "lineNumber": 92
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "read",
+          "lineNumber": 96
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "getChildren",
+          "lineNumber": 96
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "map",
+          "lineNumber": 97
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "whereType",
+          "lineNumber": 98
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "where",
+          "lineNumber": 99
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "toList",
+          "lineNumber": 100
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "itemsGet",
+          "lineNumber": 110
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "whereType",
+          "lineNumber": 123
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "where",
+          "lineNumber": 123
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "toList",
+          "lineNumber": 123
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "itemsGet",
+          "lineNumber": 125
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "whereType",
+          "lineNumber": 139
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "where",
+          "lineNumber": 139
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "toList",
+          "lineNumber": 139
+        },
+        {
+          "caller": "fetchArtistRelated",
+          "callee": "log",
+          "lineNumber": 148
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/items/artist_details_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 291,
+      "nonEmptyLines": 261,
+      "functions": [
+        {
+          "name": "ArtistDetailsNotifier",
+          "startLine": 23,
+          "endLine": 23,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "fetchDetails",
+          "startLine": 28,
+          "endLine": 28,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "fetchAlbums",
+          "startLine": 67,
+          "endLine": 67,
+          "params": []
+        },
+        {
+          "name": "fetchFavoriteTracks",
+          "startLine": 114,
+          "endLine": 114,
+          "params": []
+        },
+        {
+          "name": "fetchTracks",
+          "startLine": 155,
+          "endLine": 155,
+          "params": [
+            "limit"
+          ]
+        },
+        {
+          "name": "fetchArtistAlbums",
+          "startLine": 180,
+          "endLine": 180,
+          "params": [
+            "artistId"
+          ]
+        },
+        {
+          "name": "fetchArtistLatestTracks",
+          "startLine": 205,
+          "endLine": 209,
+          "params": [
+            "api",
+            "artistId",
+            "limit"
+          ]
+        },
+        {
+          "name": "fetchSimilarArtists",
+          "startLine": 255,
+          "endLine": 255,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ArtistDetailsNotifier",
+          "startLine": 22,
+          "endLine": 291,
+          "methods": [
+            "ArtistDetailsNotifier",
+            "fetchDetails",
+            "fetchAlbums",
+            "fetchFavoriteTracks",
+            "fetchTracks",
+            "fetchArtistAlbums",
+            "fetchArtistLatestTracks",
+            "fetchSimilarArtists"
+          ],
+          "properties": [
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ArtistDetailsNotifier",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "fetchDetails",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "fetchAlbums",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "fetchFavoriteTracks",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "fetchTracks",
+          "line": 155,
+          "isDefault": false
+        },
+        {
+          "name": "fetchArtistAlbums",
+          "line": 180,
+          "isDefault": false
+        },
+        {
+          "name": "fetchArtistLatestTracks",
+          "line": 205,
+          "isDefault": false
+        },
+        {
+          "name": "fetchSimilarArtists",
+          "line": 255,
+          "isDefault": false
+        },
+        {
+          "name": "ArtistDetailsNotifier",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchDetails",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 33
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "ArtistModel",
+          "lineNumber": 40
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "fetchTracks",
+          "lineNumber": 60
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "fetchAlbums",
+          "lineNumber": 61
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "fetchSimilarArtists",
+          "lineNumber": 62
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "fetchFavoriteTracks",
+          "lineNumber": 63
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "read",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "read",
+          "lineNumber": 70
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "getChildren",
+          "lineNumber": 70
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "map",
+          "lineNumber": 71
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "whereType",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "toList",
+          "lineNumber": 73
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "fetchArtistAlbums",
+          "lineNumber": 80
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "itemsGet",
+          "lineNumber": 82
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "whereType",
+          "lineNumber": 92
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "where",
+          "lineNumber": 93
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "map",
+          "lineNumber": 94
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "toSet",
+          "lineNumber": 95
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "map",
+          "lineNumber": 100
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "copyWith",
+          "lineNumber": 101
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "contains",
+          "lineNumber": 102
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "toList",
+          "lineNumber": 105
+        },
+        {
+          "caller": "fetchAlbums",
+          "callee": "log",
+          "lineNumber": 109
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "read",
+          "lineNumber": 116
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "read",
+          "lineNumber": 117
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "getSyncedItem",
+          "lineNumber": 117
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "read",
+          "lineNumber": 120
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "getNestedChildren",
+          "lineNumber": 120
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "map",
+          "lineNumber": 121
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "whereType",
+          "lineNumber": 122
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "where",
+          "lineNumber": 123
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "toList",
+          "lineNumber": 124
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "itemsGet",
+          "lineNumber": 131
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "whereType",
+          "lineNumber": 146
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "toList",
+          "lineNumber": 146
+        },
+        {
+          "caller": "fetchFavoriteTracks",
+          "callee": "log",
+          "lineNumber": 150
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "read",
+          "lineNumber": 157
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "read",
+          "lineNumber": 158
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "getSyncedItem",
+          "lineNumber": 158
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "read",
+          "lineNumber": 161
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "getNestedChildren",
+          "lineNumber": 161
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "map",
+          "lineNumber": 162
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "whereType",
+          "lineNumber": 163
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "take",
+          "lineNumber": 164
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "toList",
+          "lineNumber": 165
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "fetchArtistLatestTracks",
+          "lineNumber": 172
+        },
+        {
+          "caller": "fetchTracks",
+          "callee": "log",
+          "lineNumber": 175
+        },
+        {
+          "caller": "fetchArtistAlbums",
+          "callee": "itemsGet",
+          "lineNumber": 181
+        },
+        {
+          "caller": "fetchArtistAlbums",
+          "callee": "whereType",
+          "lineNumber": 202
+        },
+        {
+          "caller": "fetchArtistAlbums",
+          "callee": "toList",
+          "lineNumber": 202
+        },
+        {
+          "caller": "fetchArtistLatestTracks",
+          "callee": "itemsGet",
+          "lineNumber": 210
+        },
+        {
+          "caller": "fetchArtistLatestTracks",
+          "callee": "fetchArtistAlbums",
+          "lineNumber": 230
+        },
+        {
+          "caller": "fetchArtistLatestTracks",
+          "callee": "itemsGet",
+          "lineNumber": 232
+        },
+        {
+          "caller": "fetchArtistLatestTracks",
+          "callee": "map",
+          "lineNumber": 233
+        },
+        {
+          "caller": "fetchArtistLatestTracks",
+          "callee": "toList",
+          "lineNumber": 233
+        },
+        {
+          "caller": "fetchArtistLatestTracks",
+          "callee": "whereType",
+          "lineNumber": 249
+        },
+        {
+          "caller": "fetchArtistLatestTracks",
+          "callee": "toList",
+          "lineNumber": 249
+        },
+        {
+          "caller": "fetchArtistLatestTracks",
+          "callee": "whereType",
+          "lineNumber": 252
+        },
+        {
+          "caller": "fetchArtistLatestTracks",
+          "callee": "toList",
+          "lineNumber": 252
+        },
+        {
+          "caller": "fetchSimilarArtists",
+          "callee": "read",
+          "lineNumber": 257
+        },
+        {
+          "caller": "fetchSimilarArtists",
+          "callee": "itemsItemIdSimilarGet",
+          "lineNumber": 262
+        },
+        {
+          "caller": "fetchSimilarArtists",
+          "callee": "fromBaseDto",
+          "lineNumber": 264
+        },
+        {
+          "caller": "fetchSimilarArtists",
+          "callee": "whereType",
+          "lineNumber": 264
+        },
+        {
+          "caller": "fetchSimilarArtists",
+          "callee": "toList",
+          "lineNumber": 264
+        },
+        {
+          "caller": "fetchSimilarArtists",
+          "callee": "ArtistModel",
+          "lineNumber": 267
+        },
+        {
+          "caller": "fetchSimilarArtists",
+          "callee": "log",
+          "lineNumber": 287
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/items/book_details_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 149,
+      "nonEmptyLines": 119,
+      "functions": [
+        {
+          "name": "BookProviderModel",
+          "startLine": 19,
+          "endLine": 22,
+          "params": [
+            "chapters",
+            "parentModel"
+          ]
+        },
+        {
+          "name": "book",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "cover",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "allBooks",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "collectionPlayed",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "nextUp",
+          "startLine": 43,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "nextChapter",
+          "startLine": 50,
+          "endLine": 50,
+          "params": [
+            "currentBook"
+          ]
+        },
+        {
+          "name": "previousChapter",
+          "startLine": 62,
+          "endLine": 62,
+          "params": [
+            "currentBook"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 74,
+          "endLine": 77,
+          "params": [
+            "chapters",
+            "parentModel"
+          ]
+        },
+        {
+          "name": "BookDetailsProviderNotifier",
+          "startLine": 91,
+          "endLine": 91,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "fetchDetails",
+          "startLine": 99,
+          "endLine": 99,
+          "params": [
+            "book"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BookProviderModel",
+          "startLine": 16,
+          "endLine": 83,
+          "methods": [
+            "BookProviderModel",
+            "book",
+            "cover",
+            "allBooks",
+            "collectionPlayed",
+            "nextUp",
+            "nextChapter",
+            "previousChapter",
+            "copyWith"
+          ],
+          "properties": [
+            "chapters",
+            "parentModel"
+          ]
+        },
+        {
+          "name": "BookDetailsProviderNotifier",
+          "startLine": 90,
+          "endLine": 149,
+          "methods": [
+            "BookDetailsProviderNotifier",
+            "fetchDetails"
+          ],
+          "properties": [
+            "ref",
+            "savedDirectory",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BookProviderModel",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "book",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "cover",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "allBooks",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "collectionPlayed",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "nextUp",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "nextChapter",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "previousChapter",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "BookProviderModel",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "BookDetailsProviderNotifier",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "fetchDetails",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "BookDetailsProviderNotifier",
+          "line": 90,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "allBooks",
+          "callee": "toList",
+          "lineNumber": 29
+        },
+        {
+          "caller": "nextUp",
+          "callee": "lastWhereOrNull",
+          "lineNumber": 45
+        },
+        {
+          "caller": "nextUp",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 46
+        },
+        {
+          "caller": "nextChapter",
+          "callee": "indexOf",
+          "lineNumber": 53
+        },
+        {
+          "caller": "previousChapter",
+          "callee": "indexOf",
+          "lineNumber": 65
+        },
+        {
+          "caller": "copyWith",
+          "callee": "BookProviderModel",
+          "lineNumber": 78
+        },
+        {
+          "caller": "copyWith",
+          "callee": "call",
+          "lineNumber": 80
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "copyWith",
+          "lineNumber": 100
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 105
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 106
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "usersUserIdViewsGet",
+          "lineNumber": 109
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "itemsGet",
+          "lineNumber": 117
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "copyWith",
+          "lineNumber": 142
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "whereType",
+          "lineNumber": 144
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "toList",
+          "lineNumber": 144
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 11,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/items/channel_details_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "api",
+          "startLine": 12,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 15,
+          "endLine": 15,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "fetchDetails",
+          "startLine": 19,
+          "endLine": 19,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChannelDetails",
+          "startLine": 11,
+          "endLine": 34,
+          "methods": [
+            "api",
+            "build",
+            "fetchDetails"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "api",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "fetchDetails",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ChannelDetails",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "api",
+          "callee": "read",
+          "lineNumber": 12
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 20
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "liveTvChannelPrograms",
+          "lineNumber": 25
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "now",
+          "lineNumber": 27
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "fromBaseDto",
+          "lineNumber": 31
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "toList",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/items/channel_details_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 176,
+      "nonEmptyLines": 147,
+      "functions": [
+        {
+          "name": "_$channelDetailsHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "_SystemHash._",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "combine",
+          "startLine": 15,
+          "endLine": 15,
+          "params": [
+            "hash",
+            "value"
+          ]
+        },
+        {
+          "name": "finish",
+          "startLine": 23,
+          "endLine": 23,
+          "params": [
+            "hash"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 36,
+          "endLine": 38,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "call",
+          "startLine": 51,
+          "endLine": 53,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "getProviderOverride",
+          "startLine": 60,
+          "endLine": 62,
+          "params": [
+            "provider"
+          ]
+        },
+        {
+          "name": "dependencies",
+          "startLine": 71,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "allTransitiveDependencies",
+          "startLine": 76,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "name",
+          "startLine": 80,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "ChannelDetailsProvider",
+          "startLine": 87,
+          "endLine": 101,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "ChannelDetailsProvider._internal",
+          "startLine": 103,
+          "endLine": 111,
+          "params": [
+            "_createNotifier",
+            "name",
+            "dependencies",
+            "allTransitiveDependencies",
+            "debugGetCreateSourceHash",
+            "from",
+            "id"
+          ]
+        },
+        {
+          "name": "runNotifierBuild",
+          "startLine": 116,
+          "endLine": 118,
+          "params": [
+            "notifier"
+          ]
+        },
+        {
+          "name": "overrideWith",
+          "startLine": 125,
+          "endLine": 125,
+          "params": [
+            "create"
+          ]
+        },
+        {
+          "name": "createElement",
+          "startLine": 141,
+          "endLine": 142,
+          "params": []
+        },
+        {
+          "name": "hashCode",
+          "startLine": 152,
+          "endLine": 152,
+          "params": []
+        },
+        {
+          "name": "id",
+          "startLine": 164,
+          "endLine": 164,
+          "params": []
+        },
+        {
+          "name": "_ChannelDetailsProviderElement",
+          "startLine": 170,
+          "endLine": 170,
+          "params": [
+            "provider"
+          ]
+        },
+        {
+          "name": "id",
+          "startLine": 173,
+          "endLine": 173,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_SystemHash",
+          "startLine": 12,
+          "endLine": 30,
+          "methods": [
+            "_SystemHash._",
+            "combine",
+            "finish"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_$ChannelDetails",
+          "startLine": 32,
+          "endLine": 39,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "id"
+          ]
+        },
+        {
+          "name": "ChannelDetailsFamily",
+          "startLine": 46,
+          "endLine": 81,
+          "methods": [
+            "call",
+            "getProviderOverride",
+            "dependencies",
+            "allTransitiveDependencies",
+            "name"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ChannelDetailsProvider",
+          "startLine": 84,
+          "endLine": 158,
+          "methods": [
+            "ChannelDetailsProvider",
+            "ChannelDetailsProvider._internal",
+            "runNotifierBuild",
+            "overrideWith",
+            "createElement",
+            "hashCode"
+          ],
+          "properties": [
+            "id"
+          ]
+        },
+        {
+          "name": "ChannelDetailsRef",
+          "startLine": 162,
+          "endLine": 165,
+          "methods": [
+            "id"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_ChannelDetailsProviderElement",
+          "startLine": 167,
+          "endLine": 174,
+          "methods": [
+            "_ChannelDetailsProviderElement",
+            "id"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "combine",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "finish",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "call",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "getProviderOverride",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "dependencies",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "allTransitiveDependencies",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "name",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "ChannelDetailsFamily",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "ChannelDetailsProvider",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "ChannelDetailsProvider._internal",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "runNotifierBuild",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "overrideWith",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "createElement",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 152,
+          "isDefault": false
+        },
+        {
+          "name": "ChannelDetailsProvider",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "id",
+          "line": 164,
+          "isDefault": false
+        },
+        {
+          "name": "ChannelDetailsRef",
+          "line": 162,
+          "isDefault": false
+        },
+        {
+          "name": "id",
+          "line": 173,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "call",
+          "callee": "ChannelDetailsProvider",
+          "lineNumber": 54
+        },
+        {
+          "caller": "getProviderOverride",
+          "callee": "call",
+          "lineNumber": 63
+        },
+        {
+          "caller": "runNotifierBuild",
+          "callee": "build",
+          "lineNumber": 119
+        },
+        {
+          "caller": "overrideWith",
+          "callee": "ProviderOverride",
+          "lineNumber": 126
+        },
+        {
+          "caller": "overrideWith",
+          "callee": "_internal",
+          "lineNumber": 128
+        },
+        {
+          "caller": "createElement",
+          "callee": "_ChannelDetailsProviderElement",
+          "lineNumber": 143
+        },
+        {
+          "caller": "hashCode",
+          "callee": "combine",
+          "lineNumber": 153
+        },
+        {
+          "caller": "hashCode",
+          "callee": "combine",
+          "lineNumber": 154
+        },
+        {
+          "caller": "hashCode",
+          "callee": "finish",
+          "lineNumber": 156
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 19,
+        "classCount": 6
+      }
+    },
+    {
+      "path": "lib/providers/items/episode_details_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 98,
+      "nonEmptyLines": 84,
+      "functions": [
+        {
+          "name": "EpisodeDetailModel",
+          "startLine": 18,
+          "endLine": 23,
+          "params": [
+            "series",
+            "episodes",
+            "episode",
+            "guestActors"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 25,
+          "endLine": 30,
+          "params": [
+            "series",
+            "episodes",
+            "episode",
+            "guestActors"
+          ]
+        },
+        {
+          "name": "EpisodeDetailsProvider",
+          "startLine": 46,
+          "endLine": 46,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "fetchDetails",
+          "startLine": 52,
+          "endLine": 52,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "_tryToCreateOfflineState",
+          "startLine": 75,
+          "endLine": 75,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "updateEpisode",
+          "startLine": 95,
+          "endLine": 95,
+          "params": [
+            "episode"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "EpisodeDetailModel",
+          "startLine": 13,
+          "endLine": 38,
+          "methods": [
+            "EpisodeDetailModel",
+            "copyWith"
+          ],
+          "properties": [
+            "series",
+            "episodes",
+            "episode",
+            "guestActors"
+          ]
+        },
+        {
+          "name": "EpisodeDetailsProvider",
+          "startLine": 45,
+          "endLine": 98,
+          "methods": [
+            "EpisodeDetailsProvider",
+            "fetchDetails",
+            "_tryToCreateOfflineState",
+            "updateEpisode"
+          ],
+          "properties": [
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "EpisodeDetailModel",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "EpisodeDetailModel",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "EpisodeDetailsProvider",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "fetchDetails",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "updateEpisode",
+          "line": 95,
+          "isDefault": false
+        },
+        {
+          "name": "EpisodeDetailsProvider",
+          "line": 45,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "EpisodeDetailModel",
+          "lineNumber": 31
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 54
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "showsSeriesIdEpisodesGet",
+          "lineNumber": 56
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 60
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "copyWith",
+          "lineNumber": 62
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "episodesFromDto",
+          "lineNumber": 64
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "_tryToCreateOfflineState",
+          "lineNumber": 70
+        },
+        {
+          "caller": "_tryToCreateOfflineState",
+          "callee": "read",
+          "lineNumber": 76
+        },
+        {
+          "caller": "_tryToCreateOfflineState",
+          "callee": "getSyncedItem",
+          "lineNumber": 77
+        },
+        {
+          "caller": "_tryToCreateOfflineState",
+          "callee": "getSyncedItem",
+          "lineNumber": 79
+        },
+        {
+          "caller": "_tryToCreateOfflineState",
+          "callee": "getNestedChildren",
+          "lineNumber": 83
+        },
+        {
+          "caller": "_tryToCreateOfflineState",
+          "callee": "map",
+          "lineNumber": 84
+        },
+        {
+          "caller": "_tryToCreateOfflineState",
+          "callee": "whereType",
+          "lineNumber": 85
+        },
+        {
+          "caller": "_tryToCreateOfflineState",
+          "callee": "toList",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_tryToCreateOfflineState",
+          "callee": "copyWith",
+          "lineNumber": 87
+        },
+        {
+          "caller": "_tryToCreateOfflineState",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 89
+        },
+        {
+          "caller": "updateEpisode",
+          "callee": "copyWith",
+          "lineNumber": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/items/folder_details_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "FolderDetailsNotifier",
+          "startLine": 14,
+          "endLine": 14,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "fetchDetails",
+          "startLine": 20,
+          "endLine": 20,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FolderDetailsNotifier",
+          "startLine": 13,
+          "endLine": 42,
+          "methods": [
+            "FolderDetailsNotifier",
+            "fetchDetails"
+          ],
+          "properties": [
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FolderDetailsNotifier",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "fetchDetails",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "FolderDetailsNotifier",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchDetails",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 22
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "itemsGet",
+          "lineNumber": 29
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "where",
+          "lineNumber": 39
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "toList",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/items/identify_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 134,
+      "nonEmptyLines": 118,
+      "functions": [
+        {
+          "name": "IdentifyModel",
+          "startLine": 23,
+          "endLine": 32,
+          "params": [
+            "item",
+            "searchString",
+            "externalIds",
+            "keys",
+            "results",
+            "year",
+            "replaceAllImages",
+            "processing"
+          ]
+        },
+        {
+          "name": "body",
+          "startLine": 34,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 43,
+          "endLine": 52,
+          "params": [
+            "item",
+            "searchString",
+            "externalIds",
+            "keys",
+            "results",
+            "year",
+            "replaceAllImages",
+            "processing"
+          ]
+        },
+        {
+          "name": "IdentifyNotifier",
+          "startLine": 75,
+          "endLine": 75,
+          "params": [
+            "ref",
+            "id"
+          ]
+        },
+        {
+          "name": "fetchInformation",
+          "startLine": 82,
+          "endLine": 82,
+          "params": []
+        },
+        {
+          "name": "update",
+          "startLine": 97,
+          "endLine": 97,
+          "params": [
+            "cb"
+          ]
+        },
+        {
+          "name": "clearFields",
+          "startLine": 99,
+          "endLine": 99,
+          "params": []
+        },
+        {
+          "name": "updateKey",
+          "startLine": 107,
+          "endLine": 107,
+          "params": [
+            "map"
+          ]
+        },
+        {
+          "name": "remoteSearch",
+          "startLine": 111,
+          "endLine": 111,
+          "params": []
+        },
+        {
+          "name": "setIdentity",
+          "startLine": 126,
+          "endLine": 126,
+          "params": [
+            "result"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IdentifyModel",
+          "startLine": 14,
+          "endLine": 64,
+          "methods": [
+            "IdentifyModel",
+            "body",
+            "copyWith"
+          ],
+          "properties": [
+            "item",
+            "searchString",
+            "externalIds",
+            "keys",
+            "results",
+            "year",
+            "replaceAllImages",
+            "processing"
+          ]
+        },
+        {
+          "name": "IdentifyNotifier",
+          "startLine": 74,
+          "endLine": 134,
+          "methods": [
+            "IdentifyNotifier",
+            "fetchInformation",
+            "update",
+            "clearFields",
+            "updateKey",
+            "remoteSearch",
+            "setIdentity"
+          ],
+          "properties": [
+            "id",
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IdentifyModel",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "body",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "IdentifyModel",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "IdentifyNotifier",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "fetchInformation",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "clearFields",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "updateKey",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "remoteSearch",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "setIdentity",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "IdentifyNotifier",
+          "line": 74,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "IdentifyModel",
+          "lineNumber": 53
+        },
+        {
+          "caller": "copyWith",
+          "callee": "item",
+          "lineNumber": 54
+        },
+        {
+          "caller": "copyWith",
+          "callee": "year",
+          "lineNumber": 59
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "copyWith",
+          "lineNumber": 83
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 84
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "itemsItemIdExternalIdInfosGet",
+          "lineNumber": 86
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "copyWith",
+          "lineNumber": 87
+        },
+        {
+          "caller": "fetchInformation",
+          "callee": "copyWith",
+          "lineNumber": 94
+        },
+        {
+          "caller": "update",
+          "callee": "cb",
+          "lineNumber": 97
+        },
+        {
+          "caller": "clearFields",
+          "callee": "copyWith",
+          "lineNumber": 100
+        },
+        {
+          "caller": "updateKey",
+          "callee": "copyWith",
+          "lineNumber": 108
+        },
+        {
+          "caller": "remoteSearch",
+          "callee": "copyWith",
+          "lineNumber": 113
+        },
+        {
+          "caller": "remoteSearch",
+          "callee": "itemsRemoteSearchSeriesPost",
+          "lineNumber": 117
+        },
+        {
+          "caller": "remoteSearch",
+          "callee": "fromJson",
+          "lineNumber": 117
+        },
+        {
+          "caller": "remoteSearch",
+          "callee": "itemsRemoteSearchMoviePost",
+          "lineNumber": 120
+        },
+        {
+          "caller": "remoteSearch",
+          "callee": "fromJson",
+          "lineNumber": 120
+        },
+        {
+          "caller": "remoteSearch",
+          "callee": "copyWith",
+          "lineNumber": 122
+        },
+        {
+          "caller": "setIdentity",
+          "callee": "copyWith",
+          "lineNumber": 128
+        },
+        {
+          "caller": "setIdentity",
+          "callee": "itemsRemoteSearchApplyItemIdPost",
+          "lineNumber": 129
+        },
+        {
+          "caller": "setIdentity",
+          "callee": "fromJson",
+          "lineNumber": 130
+        },
+        {
+          "caller": "setIdentity",
+          "callee": "toJson",
+          "lineNumber": 130
+        },
+        {
+          "caller": "setIdentity",
+          "callee": "copyWith",
+          "lineNumber": 131
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 10,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/items/information_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 39,
+      "functions": [
+        {
+          "name": "InformationProviderModel",
+          "startLine": 12,
+          "endLine": 15,
+          "params": [
+            "model",
+            "loading"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "model",
+            "loading"
+          ]
+        },
+        {
+          "name": "InformationNotifier",
+          "startLine": 34,
+          "endLine": 34,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "getItemInformation",
+          "startLine": 40,
+          "endLine": 40,
+          "params": [
+            "item"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "InformationProviderModel",
+          "startLine": 9,
+          "endLine": 26,
+          "methods": [
+            "InformationProviderModel",
+            "copyWith"
+          ],
+          "properties": [
+            "model",
+            "loading"
+          ]
+        },
+        {
+          "name": "InformationNotifier",
+          "startLine": 33,
+          "endLine": 47,
+          "methods": [
+            "InformationNotifier",
+            "getItemInformation"
+          ],
+          "properties": [
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "InformationProviderModel",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "InformationProviderModel",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "InformationNotifier",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "getItemInformation",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "InformationNotifier",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "InformationProviderModel",
+          "lineNumber": 21
+        },
+        {
+          "caller": "getItemInformation",
+          "callee": "copyWith",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getItemInformation",
+          "callee": "usersUserIdItemsItemIdGetBaseItem",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getItemInformation",
+          "callee": "delayed",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getItemInformation",
+          "callee": "Duration",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getItemInformation",
+          "callee": "copyWith",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getItemInformation",
+          "callee": "fromResponse",
+          "lineNumber": 44
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 4,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/items/item_details_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "ItemDetailsNotifier",
+          "startLine": 11,
+          "endLine": 11,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "fetchDetails",
+          "startLine": 17,
+          "endLine": 17,
+          "params": [
+            "itemId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ItemDetailsNotifier",
+          "startLine": 10,
+          "endLine": 22,
+          "methods": [
+            "ItemDetailsNotifier",
+            "fetchDetails"
+          ],
+          "properties": [
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ItemDetailsNotifier",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "fetchDetails",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "ItemDetailsNotifier",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchDetails",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/items/movies_details_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 86,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 28,
+          "endLine": 28,
+          "params": [
+            "arg"
+          ]
+        },
+        {
+          "name": "fetchDetails",
+          "startLine": 30,
+          "endLine": 30,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "setMediaStreamHelper",
+          "startLine": 97,
+          "endLine": 97,
+          "params": [
+            "changed"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MovieDetails",
+          "startLine": 24,
+          "endLine": 100,
+          "methods": [
+            "build",
+            "fetchDetails",
+            "setMediaStreamHelper"
+          ],
+          "properties": [
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "fetchDetails",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "setMediaStreamHelper",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "MovieDetails",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchDetails",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 36
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "copyWith",
+          "lineNumber": 38
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "itemsItemIdSpecialFeaturesGet",
+          "lineNumber": 48
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "log",
+          "lineNumber": 51
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "read",
+          "lineNumber": 55
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "relatedContent",
+          "lineNumber": 55
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "specialFeaturesFromDto",
+          "lineNumber": 57
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "toList",
+          "lineNumber": 57
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "read",
+          "lineNumber": 64
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "read",
+          "lineNumber": 68
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "discoverRelatedMovies",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "discoverRecommendedMovies",
+          "lineNumber": 70
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "fetchDashboardPosterFromIds",
+          "lineNumber": 71
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "read",
+          "lineNumber": 77
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "select",
+          "lineNumber": 77
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "copyWith",
+          "lineNumber": 83
+        },
+        {
+          "caller": "fetchDetails",
+          "callee": "copyWith",
+          "lineNumber": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/items/movies_details_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 176,
+      "nonEmptyLines": 147,
+      "functions": [
+        {
+          "name": "_$movieDetailsHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "_SystemHash._",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "combine",
+          "startLine": 15,
+          "endLine": 15,
+          "params": [
+            "hash",
+            "value"
+          ]
+        },
+        {
+          "name": "finish",
+          "startLine": 23,
+          "endLine": 23,
+          "params": [
+            "hash"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 36,
+          "endLine": 38,
+          "params": [
+            "arg"
+          ]
+        },
+        {
+          "name": "call",
+          "startLine": 51,
+          "endLine": 53,
+          "params": [
+            "arg"
+          ]
+        },
+        {
+          "name": "getProviderOverride",
+          "startLine": 60,
+          "endLine": 62,
+          "params": [
+            "provider"
+          ]
+        },
+        {
+          "name": "dependencies",
+          "startLine": 71,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "allTransitiveDependencies",
+          "startLine": 76,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "name",
+          "startLine": 80,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "MovieDetailsProvider",
+          "startLine": 87,
+          "endLine": 101,
+          "params": [
+            "arg"
+          ]
+        },
+        {
+          "name": "MovieDetailsProvider._internal",
+          "startLine": 103,
+          "endLine": 111,
+          "params": [
+            "_createNotifier",
+            "name",
+            "dependencies",
+            "allTransitiveDependencies",
+            "debugGetCreateSourceHash",
+            "from",
+            "arg"
+          ]
+        },
+        {
+          "name": "runNotifierBuild",
+          "startLine": 116,
+          "endLine": 118,
+          "params": [
+            "notifier"
+          ]
+        },
+        {
+          "name": "overrideWith",
+          "startLine": 125,
+          "endLine": 125,
+          "params": [
+            "create"
+          ]
+        },
+        {
+          "name": "createElement",
+          "startLine": 141,
+          "endLine": 142,
+          "params": []
+        },
+        {
+          "name": "hashCode",
+          "startLine": 152,
+          "endLine": 152,
+          "params": []
+        },
+        {
+          "name": "arg",
+          "startLine": 164,
+          "endLine": 164,
+          "params": []
+        },
+        {
+          "name": "_MovieDetailsProviderElement",
+          "startLine": 170,
+          "endLine": 170,
+          "params": [
+            "provider"
+          ]
+        },
+        {
+          "name": "arg",
+          "startLine": 173,
+          "endLine": 173,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_SystemHash",
+          "startLine": 12,
+          "endLine": 30,
+          "methods": [
+            "_SystemHash._",
+            "combine",
+            "finish"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_$MovieDetails",
+          "startLine": 32,
+          "endLine": 39,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "arg"
+          ]
+        },
+        {
+          "name": "MovieDetailsFamily",
+          "startLine": 46,
+          "endLine": 81,
+          "methods": [
+            "call",
+            "getProviderOverride",
+            "dependencies",
+            "allTransitiveDependencies",
+            "name"
+          ],
+          "properties": []
+        },
+        {
+          "name": "MovieDetailsProvider",
+          "startLine": 84,
+          "endLine": 158,
+          "methods": [
+            "MovieDetailsProvider",
+            "MovieDetailsProvider._internal",
+            "runNotifierBuild",
+            "overrideWith",
+            "createElement",
+            "hashCode"
+          ],
+          "properties": [
+            "arg"
+          ]
+        },
+        {
+          "name": "MovieDetailsRef",
+          "startLine": 162,
+          "endLine": 165,
+          "methods": [
+            "arg"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_MovieDetailsProviderElement",
+          "startLine": 167,
+          "endLine": 174,
+          "methods": [
+            "_MovieDetailsProviderElement",
+            "arg"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "combine",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "finish",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "call",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "getProviderOverride",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "dependencies",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "allTransitiveDependencies",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "name",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "MovieDetailsFamily",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "MovieDetailsProvider",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "MovieDetailsProvider._internal",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "runNotifierBuild",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "overrideWith",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "createElement",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 152,
+          "isDefault": false
+        },
+        {
+          "name": "MovieDetailsProvider",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "arg",
+          "line": 164,
+          "isDefault": false
+        },
+        {
+          "name": "MovieDetailsRef",
+          "line": 162,
+          "isDefault": false
+        },
+        {
+          "name": "arg",
+          "line": 173,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "call",
+          "callee": "MovieDetailsProvider",
+          "lineNumber": 54
+        },
+        {
+          "caller": "getProviderOverride",
+          "callee": "call",
+          "lineNumber": 63
+        },
+        {
+          "caller": "runNotifierBuild",
+          "callee": "build",
+          "lineNumber": 119
+        },
+        {
+          "caller": "overrideWith",
+          "callee": "ProviderOverride",
+          "lineNumber": 126
+        },
+        {
+          "caller": "overrideWith",
+          "callee": "_internal",
+          "lineNumber": 128
+        },
+        {
+          "caller": "createElement",
+          "callee": "_MovieDetailsProviderElement",
+          "lineNumber": 143
+        },
+        {
+          "caller": "hashCode",
+          "callee": "combine",
+          "lineNumber": 153
+        },
+        {
+          "caller": "hashCode",
+          "callee": "combine",
+          "lineNumber": 154
+        },
+        {
+          "caller": "hashCode",
+          "callee": "finish",
+          "lineNumber": 156
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 19,
+        "classCount": 6
+      }
+    },
+    {
+      "path": "lib/providers/items/person_details_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 148,
+      "nonEmptyLines": 123,
+      "functions": [
+        {
+          "name": "PersonDetailsNotifier",
+          "startLine": 23,
+          "endLine": 23,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "fetchPerson",
+          "startLine": 30,
+          "endLine": 30,
+          "params": [
+            "person"
+          ]
+        },
+        {
+          "name": "fetchMovies",
+          "startLine": 41,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "_tmdbPersonId",
+          "startLine": 79,
+          "endLine": 79,
+          "params": []
+        },
+        {
+          "name": "fetchSeerrCredits",
+          "startLine": 91,
+          "endLine": 91,
+          "params": []
+        },
+        {
+          "name": "_posterReleaseYear",
+          "startLine": 135,
+          "endLine": 135,
+          "params": [
+            "poster"
+          ]
+        },
+        {
+          "name": "_sortPostersByNewestFirst",
+          "startLine": 141,
+          "endLine": 141,
+          "params": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PersonDetailsNotifier",
+          "startLine": 22,
+          "endLine": 148,
+          "methods": [
+            "PersonDetailsNotifier",
+            "fetchPerson",
+            "fetchMovies",
+            "_tmdbPersonId",
+            "fetchSeerrCredits",
+            "_posterReleaseYear",
+            "_sortPostersByNewestFirst"
+          ],
+          "properties": [
+            "ref",
+            "api",
+            "seerrApi"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PersonDetailsNotifier",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "fetchPerson",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "fetchMovies",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "fetchSeerrCredits",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "PersonDetailsNotifier",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchPerson",
+          "callee": "usersUserIdItemsItemIdGet",
+          "lineNumber": 31
+        },
+        {
+          "caller": "fetchPerson",
+          "callee": "fetchMovies",
+          "lineNumber": 35
+        },
+        {
+          "caller": "fetchMovies",
+          "callee": "itemsGet",
+          "lineNumber": 42
+        },
+        {
+          "caller": "fetchMovies",
+          "callee": "itemsGet",
+          "lineNumber": 56
+        },
+        {
+          "caller": "fetchMovies",
+          "callee": "whereType",
+          "lineNumber": 71
+        },
+        {
+          "caller": "fetchMovies",
+          "callee": "toList",
+          "lineNumber": 71
+        },
+        {
+          "caller": "fetchMovies",
+          "callee": "whereType",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchMovies",
+          "callee": "toList",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchMovies",
+          "callee": "fetchSeerrCredits",
+          "lineNumber": 75
+        },
+        {
+          "caller": "_tmdbPersonId",
+          "callee": "toInt",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_tmdbPersonId",
+          "callee": "tryParse",
+          "lineNumber": 87
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "read",
+          "lineNumber": 94
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "_tmdbPersonId",
+          "lineNumber": 100
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "personCombinedCredits",
+          "lineNumber": 106
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "where",
+          "lineNumber": 119
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "map",
+          "lineNumber": 120
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "posterFromPersonCredit",
+          "lineNumber": 120
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "whereType",
+          "lineNumber": 121
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "toList",
+          "lineNumber": 122
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "sort",
+          "lineNumber": 124
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "where",
+          "lineNumber": 127
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "add",
+          "lineNumber": 127
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "toList",
+          "lineNumber": 127
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "where",
+          "lineNumber": 130
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "toList",
+          "lineNumber": 130
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "where",
+          "lineNumber": 131
+        },
+        {
+          "caller": "fetchSeerrCredits",
+          "callee": "toList",
+          "lineNumber": 131
+        },
+        {
+          "caller": "_posterReleaseYear",
+          "callee": "tryParse",
+          "lineNumber": 138
+        },
+        {
+          "caller": "_sortPostersByNewestFirst",
+          "callee": "_posterReleaseYear",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_sortPostersByNewestFirst",
+          "callee": "_posterReleaseYear",
+          "lineNumber": 143
+        },
+        {
+          "caller": "_sortPostersByNewestFirst",
+          "callee": "compareTo",
+          "lineNumber": 144
+        },
+        {
+          "caller": "_sortPostersByNewestFirst",
+          "callee": "compareTo",
+          "lineNumber": 146
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    }
+  ]
+}

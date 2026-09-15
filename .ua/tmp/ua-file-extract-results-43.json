@@ -1,0 +1,7112 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "lib/util/focus_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 245,
+      "nonEmptyLines": 221,
+      "functions": [
+        {
+          "name": "of",
+          "startLine": 29,
+          "endLine": 29,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "autoFocusOf",
+          "startLine": 34,
+          "endLine": 34,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "updateShouldNotify",
+          "startLine": 40,
+          "endLine": 40,
+          "params": [
+            "oldWidget"
+          ]
+        },
+        {
+          "name": "createState",
+          "startLine": 82,
+          "endLine": 82,
+          "params": []
+        },
+        {
+          "name": "_handleKey",
+          "startLine": 94,
+          "endLine": 94,
+          "params": [
+            "node",
+            "event"
+          ]
+        },
+        {
+          "name": "_startLongPressTimer",
+          "startLine": 122,
+          "endLine": 122,
+          "params": []
+        },
+        {
+          "name": "_cancelLongPressTimer",
+          "startLine": 132,
+          "endLine": 132,
+          "params": []
+        },
+        {
+          "name": "_resetKeyState",
+          "startLine": 137,
+          "endLine": 137,
+          "params": []
+        },
+        {
+          "name": "dispose",
+          "startLine": 144,
+          "endLine": 144,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 156,
+          "endLine": 156,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 168,
+          "endLine": 168,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FocusProvider",
+          "startLine": 18,
+          "endLine": 43,
+          "methods": [
+            "of",
+            "autoFocusOf",
+            "updateShouldNotify"
+          ],
+          "properties": [
+            "hasFocus",
+            "autoFocus"
+          ]
+        },
+        {
+          "name": "FocusButton",
+          "startLine": 45,
+          "endLine": 83,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "child",
+            "autoFocus",
+            "focusNode",
+            "focusedOverlays",
+            "overlays",
+            "onHover",
+            "onTap",
+            "onLongPress",
+            "onSecondaryTapDown",
+            "darkOverlay",
+            "visualizeFocus",
+            "forceFocusOutline",
+            "onFocusChanged",
+            "borderRadius",
+            "onKeyEvent"
+          ]
+        },
+        {
+          "name": "FocusButtonState",
+          "startLine": 85,
+          "endLine": 245,
+          "methods": [
+            "_handleKey",
+            "_startLongPressTimer",
+            "_cancelLongPressTimer",
+            "_resetKeyState",
+            "dispose",
+            "initState",
+            "build"
+          ],
+          "properties": [
+            "focusNode",
+            "onHover",
+            "_longPressTimer",
+            "_longPressTriggered",
+            "_keyDownActive"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "of",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "autoFocusOf",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "updateShouldNotify",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "FocusProvider",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "createState",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "FocusButton",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 144,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 156,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 168,
+          "isDefault": false
+        },
+        {
+          "name": "FocusButtonState",
+          "line": 85,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "of",
+          "callee": "dependOnInheritedWidgetOfExactType",
+          "lineNumber": 30
+        },
+        {
+          "caller": "autoFocusOf",
+          "callee": "dependOnInheritedWidgetOfExactType",
+          "lineNumber": 35
+        },
+        {
+          "caller": "createState",
+          "callee": "FocusButtonState",
+          "lineNumber": 82
+        },
+        {
+          "caller": "_handleKey",
+          "callee": "contains",
+          "lineNumber": 102
+        },
+        {
+          "caller": "_handleKey",
+          "callee": "_startLongPressTimer",
+          "lineNumber": 106
+        },
+        {
+          "caller": "_handleKey",
+          "callee": "_resetKeyState",
+          "lineNumber": 110
+        },
+        {
+          "caller": "_handleKey",
+          "callee": "_cancelLongPressTimer",
+          "lineNumber": 114
+        },
+        {
+          "caller": "_startLongPressTimer",
+          "callee": "Timer",
+          "lineNumber": 125
+        },
+        {
+          "caller": "_startLongPressTimer",
+          "callee": "_resetKeyState",
+          "lineNumber": 128
+        },
+        {
+          "caller": "_resetKeyState",
+          "callee": "_cancelLongPressTimer",
+          "lineNumber": 138
+        },
+        {
+          "caller": "dispose",
+          "callee": "_resetKeyState",
+          "lineNumber": 145
+        },
+        {
+          "caller": "dispose",
+          "callee": "dispose",
+          "lineNumber": 150
+        },
+        {
+          "caller": "initState",
+          "callee": "addPostFrameCallback",
+          "lineNumber": 159
+        },
+        {
+          "caller": "initState",
+          "callee": "requestFocus",
+          "lineNumber": 162
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 170
+        },
+        {
+          "caller": "build",
+          "callee": "MouseRegion",
+          "lineNumber": 172
+        },
+        {
+          "caller": "build",
+          "callee": "Focus",
+          "lineNumber": 182
+        },
+        {
+          "caller": "build",
+          "callee": "ExcludeFocus",
+          "lineNumber": 195
+        },
+        {
+          "caller": "build",
+          "callee": "ValueListenableBuilder",
+          "lineNumber": 196
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedContainer",
+          "lineNumber": 200
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 201
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 204
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 207
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 210
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 210
+        },
+        {
+          "caller": "build",
+          "callee": "all",
+          "lineNumber": 213
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 215
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 215
+        },
+        {
+          "caller": "build",
+          "callee": "FlatButton",
+          "lineNumber": 219
+        },
+        {
+          "caller": "build",
+          "callee": "fill",
+          "lineNumber": 227
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedOpacity",
+          "lineNumber": 228
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 230
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 231
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 11,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/util/grouping.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "groupByName",
+          "startLine": 3,
+          "endLine": 3,
+          "params": [
+            "items"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "groupByName",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "groupByName",
+          "callee": "replaceAll",
+          "lineNumber": 6
+        },
+        {
+          "caller": "groupByName",
+          "callee": "toUpperCase",
+          "lineNumber": 6
+        },
+        {
+          "caller": "groupByName",
+          "callee": "containsKey",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/util/humanize_duration.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 105,
+      "nonEmptyLines": 96,
+      "functions": [
+        {
+          "name": "humanize",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "humanizeSmall",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "simpleTime",
+          "startLine": 34,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "toLogicalDuration",
+          "startLine": 38,
+          "endLine": 38,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "dateInDays",
+          "startLine": 59,
+          "endLine": 59,
+          "params": [
+            "l10n"
+          ]
+        },
+        {
+          "name": "timeAgo",
+          "startLine": 74,
+          "endLine": 74,
+          "params": [
+            "context",
+            "reference"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DurationExtensions",
+          "startLine": 8,
+          "endLine": 56,
+          "methods": [
+            "humanize",
+            "humanizeSmall",
+            "simpleTime",
+            "toLogicalDuration"
+          ],
+          "properties": []
+        },
+        {
+          "name": "DateTimeExtension",
+          "startLine": 58,
+          "endLine": 105,
+          "methods": [
+            "dateInDays",
+            "timeAgo"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "humanize",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "humanizeSmall",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "simpleTime",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "toLogicalDuration",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "DurationExtensions",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "dateInDays",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "timeAgo",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "DateTimeExtension",
+          "line": 58,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "humanize",
+          "callee": "toString",
+          "lineNumber": 12
+        },
+        {
+          "caller": "humanize",
+          "callee": "padLeft",
+          "lineNumber": 13
+        },
+        {
+          "caller": "humanize",
+          "callee": "padLeft",
+          "lineNumber": 17
+        },
+        {
+          "caller": "humanize",
+          "callee": "map",
+          "lineNumber": 19
+        },
+        {
+          "caller": "humanize",
+          "callee": "join",
+          "lineNumber": 19
+        },
+        {
+          "caller": "humanizeSmall",
+          "callee": "toString",
+          "lineNumber": 27
+        },
+        {
+          "caller": "humanizeSmall",
+          "callee": "padLeft",
+          "lineNumber": 27
+        },
+        {
+          "caller": "humanizeSmall",
+          "callee": "padLeft",
+          "lineNumber": 28
+        },
+        {
+          "caller": "humanizeSmall",
+          "callee": "map",
+          "lineNumber": 30
+        },
+        {
+          "caller": "humanizeSmall",
+          "callee": "join",
+          "lineNumber": 30
+        },
+        {
+          "caller": "simpleTime",
+          "callee": "toString",
+          "lineNumber": 35
+        },
+        {
+          "caller": "simpleTime",
+          "callee": "split",
+          "lineNumber": 35
+        },
+        {
+          "caller": "simpleTime",
+          "callee": "padLeft",
+          "lineNumber": 35
+        },
+        {
+          "caller": "toLogicalDuration",
+          "callee": "add",
+          "lineNumber": 44
+        },
+        {
+          "caller": "toLogicalDuration",
+          "callee": "hours",
+          "lineNumber": 44
+        },
+        {
+          "caller": "toLogicalDuration",
+          "callee": "remainder",
+          "lineNumber": 46
+        },
+        {
+          "caller": "toLogicalDuration",
+          "callee": "remainder",
+          "lineNumber": 47
+        },
+        {
+          "caller": "toLogicalDuration",
+          "callee": "add",
+          "lineNumber": 48
+        },
+        {
+          "caller": "toLogicalDuration",
+          "callee": "minutes",
+          "lineNumber": 48
+        },
+        {
+          "caller": "toLogicalDuration",
+          "callee": "remainder",
+          "lineNumber": 50
+        },
+        {
+          "caller": "toLogicalDuration",
+          "callee": "remainder",
+          "lineNumber": 51
+        },
+        {
+          "caller": "toLogicalDuration",
+          "callee": "add",
+          "lineNumber": 52
+        },
+        {
+          "caller": "toLogicalDuration",
+          "callee": "seconds",
+          "lineNumber": 52
+        },
+        {
+          "caller": "toLogicalDuration",
+          "callee": "join",
+          "lineNumber": 54
+        },
+        {
+          "caller": "dateInDays",
+          "callee": "now",
+          "lineNumber": 62
+        },
+        {
+          "caller": "dateInDays",
+          "callee": "difference",
+          "lineNumber": 63
+        },
+        {
+          "caller": "dateInDays",
+          "callee": "airsIn",
+          "lineNumber": 68
+        },
+        {
+          "caller": "dateInDays",
+          "callee": "days",
+          "lineNumber": 68
+        },
+        {
+          "caller": "dateInDays",
+          "callee": "toLowerCase",
+          "lineNumber": 68
+        },
+        {
+          "caller": "dateInDays",
+          "callee": "yMMMEd",
+          "lineNumber": 70
+        },
+        {
+          "caller": "dateInDays",
+          "callee": "format",
+          "lineNumber": 70
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "now",
+          "lineNumber": 76
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "difference",
+          "lineNumber": 77
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "timeAgo",
+          "lineNumber": 80
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "seconds",
+          "lineNumber": 80
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "toLowerCase",
+          "lineNumber": 80
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "timeAgo",
+          "lineNumber": 84
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "minutes",
+          "lineNumber": 84
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "toLowerCase",
+          "lineNumber": 84
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "timeAgo",
+          "lineNumber": 88
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "hours",
+          "lineNumber": 88
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "toLowerCase",
+          "lineNumber": 88
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "timeAgo",
+          "lineNumber": 92
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "days",
+          "lineNumber": 92
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "toLowerCase",
+          "lineNumber": 92
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "floor",
+          "lineNumber": 95
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "timeAgo",
+          "lineNumber": 96
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "weeks",
+          "lineNumber": 96
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "toLowerCase",
+          "lineNumber": 96
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "floor",
+          "lineNumber": 99
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "timeAgo",
+          "lineNumber": 100
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "months",
+          "lineNumber": 100
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "toLowerCase",
+          "lineNumber": 100
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "floor",
+          "lineNumber": 102
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "timeAgo",
+          "lineNumber": 103
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "years",
+          "lineNumber": 103
+        },
+        {
+          "caller": "timeAgo",
+          "callee": "toLowerCase",
+          "lineNumber": 103
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 6,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/input_detector.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 90,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "_startListeningToKeyboard",
+          "startLine": 38,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "dispose",
+          "startLine": 43,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "_handleKeyPress",
+          "startLine": 48,
+          "endLine": 48,
+          "params": [
+            "event"
+          ]
+        },
+        {
+          "name": "_handlePointerEvent",
+          "startLine": 69,
+          "endLine": 69,
+          "params": [
+            "event"
+          ]
+        },
+        {
+          "name": "_updateInputDevice",
+          "startLine": 79,
+          "endLine": 79,
+          "params": [
+            "device"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 91,
+          "endLine": 91,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "InputDetector",
+          "startLine": 9,
+          "endLine": 23,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "isDesktop",
+            "htpcMode",
+            "child"
+          ]
+        },
+        {
+          "name": "_InputDetectorState",
+          "startLine": 25,
+          "endLine": 103,
+          "methods": [
+            "initState",
+            "_startListeningToKeyboard",
+            "dispose",
+            "_handleKeyPress",
+            "_handlePointerEvent",
+            "_updateInputDevice",
+            "build"
+          ],
+          "properties": [
+            "_currentInput"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "InputDetector",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 91,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_InputDetectorState",
+          "lineNumber": 22
+        },
+        {
+          "caller": "initState",
+          "callee": "_startListeningToKeyboard",
+          "lineNumber": 35
+        },
+        {
+          "caller": "_startListeningToKeyboard",
+          "callee": "addHandler",
+          "lineNumber": 39
+        },
+        {
+          "caller": "dispose",
+          "callee": "removeHandler",
+          "lineNumber": 44
+        },
+        {
+          "caller": "_handleKeyPress",
+          "callee": "isEditableTextFocused",
+          "lineNumber": 50
+        },
+        {
+          "caller": "_handleKeyPress",
+          "callee": "_updateInputDevice",
+          "lineNumber": 63
+        },
+        {
+          "caller": "_handlePointerEvent",
+          "callee": "_updateInputDevice",
+          "lineNumber": 72
+        },
+        {
+          "caller": "_handlePointerEvent",
+          "callee": "_updateInputDevice",
+          "lineNumber": 74
+        },
+        {
+          "caller": "_updateInputDevice",
+          "callee": "setState",
+          "lineNumber": 84
+        },
+        {
+          "caller": "build",
+          "callee": "Listener",
+          "lineNumber": 92
+        },
+        {
+          "caller": "build",
+          "callee": "IgnorePointer",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "Builder",
+          "lineNumber": 97
+        },
+        {
+          "caller": "build",
+          "callee": "child",
+          "lineNumber": 98
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 8,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/input_handler.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 175,
+      "nonEmptyLines": 153,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "_handleHardwareKey",
+          "startLine": 37,
+          "endLine": 37,
+          "params": [
+            "event"
+          ]
+        },
+        {
+          "name": "_registerHardwareKeyboard",
+          "startLine": 51,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "_unregisterHardwareKeyboard",
+          "startLine": 59,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 72,
+          "endLine": 72,
+          "params": []
+        },
+        {
+          "name": "dispose",
+          "startLine": 80,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 87,
+          "endLine": 87,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "_onKey",
+          "startLine": 116,
+          "endLine": 116,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "_onHardwareKey",
+          "startLine": 125,
+          "endLine": 125,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "_handleLogicalKey",
+          "startLine": 135,
+          "endLine": 140,
+          "params": [
+            "logicalKey",
+            "isDown",
+            "isRepeat",
+            "isUp"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "InputHandler",
+          "startLine": 10,
+          "endLine": 31,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "autoFocus",
+            "listenRawKeyboard",
+            "ignoreWhenTextFieldFocused",
+            "onKeyEvent",
+            "keyMapResult",
+            "keyMap",
+            "child"
+          ]
+        },
+        {
+          "name": "_InputHandlerState",
+          "startLine": 33,
+          "endLine": 175,
+          "methods": [
+            "_handleHardwareKey",
+            "_registerHardwareKeyboard",
+            "_unregisterHardwareKeyboard",
+            "initState",
+            "dispose",
+            "build",
+            "_onKey",
+            "_onHardwareKey",
+            "_handleLogicalKey"
+          ],
+          "properties": [
+            "_hardwareListening",
+            "focusNode",
+            "pressedModifier"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "InputHandler",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 87,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_InputHandlerState",
+          "lineNumber": 30
+        },
+        {
+          "caller": "_handleHardwareKey",
+          "callee": "toList",
+          "lineNumber": 38
+        },
+        {
+          "caller": "_handleHardwareKey",
+          "callee": "isEditableTextFocused",
+          "lineNumber": 40
+        },
+        {
+          "caller": "_handleHardwareKey",
+          "callee": "_onHardwareKey",
+          "lineNumber": 43
+        },
+        {
+          "caller": "_registerHardwareKeyboard",
+          "callee": "add",
+          "lineNumber": 52
+        },
+        {
+          "caller": "_registerHardwareKeyboard",
+          "callee": "addHandler",
+          "lineNumber": 54
+        },
+        {
+          "caller": "_unregisterHardwareKeyboard",
+          "callee": "remove",
+          "lineNumber": 60
+        },
+        {
+          "caller": "_unregisterHardwareKeyboard",
+          "callee": "removeHandler",
+          "lineNumber": 62
+        },
+        {
+          "caller": "initState",
+          "callee": "_registerHardwareKeyboard",
+          "lineNumber": 75
+        },
+        {
+          "caller": "dispose",
+          "callee": "_unregisterHardwareKeyboard",
+          "lineNumber": 81
+        },
+        {
+          "caller": "dispose",
+          "callee": "dispose",
+          "lineNumber": 82
+        },
+        {
+          "caller": "build",
+          "callee": "Focus",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build",
+          "callee": "isEditableTextFocused",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 97
+        },
+        {
+          "caller": "build",
+          "callee": "requestFocus",
+          "lineNumber": 99
+        },
+        {
+          "caller": "build",
+          "callee": "_onKey",
+          "lineNumber": 109
+        },
+        {
+          "caller": "_onKey",
+          "callee": "_handleLogicalKey",
+          "lineNumber": 117
+        },
+        {
+          "caller": "_onHardwareKey",
+          "callee": "_handleLogicalKey",
+          "lineNumber": 127
+        },
+        {
+          "caller": "_handleLogicalKey",
+          "callee": "toList",
+          "lineNumber": 143
+        },
+        {
+          "caller": "_handleLogicalKey",
+          "callee": "contains",
+          "lineNumber": 145
+        },
+        {
+          "caller": "_handleLogicalKey",
+          "callee": "modifierMatches",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_handleLogicalKey",
+          "callee": "modifierMatches",
+          "lineNumber": 158
+        },
+        {
+          "caller": "_handleLogicalKey",
+          "callee": "contains",
+          "lineNumber": 169
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 10,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/item_base_model/item_base_model_extensions.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 620,
+      "nonEmptyLines": 587,
+      "functions": [
+        {
+          "name": "groupedItems",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "getMostCommonType",
+          "startLine": 61,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "getMostCommonAspectRatio",
+          "startLine": 73,
+          "endLine": 73,
+          "params": [
+            "tolerance"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ItemBaseModelsBooleans",
+          "startLine": 47,
+          "endLine": 92,
+          "methods": [
+            "groupedItems",
+            "getMostCommonType",
+            "getMostCommonAspectRatio"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ItemActions",
+          "startLine": 94,
+          "endLine": 116,
+          "methods": [],
+          "properties": [
+            "play",
+            "showLyrics",
+            "addToQueue",
+            "instantMix",
+            "openShow",
+            "openParent",
+            "details",
+            "showAlbum",
+            "playFromStart",
+            "addCollection",
+            "addPlaylist",
+            "markPlayed",
+            "markUnplayed",
+            "setFavorite",
+            "refreshMetaData",
+            "editMetaData",
+            "mediaInfo",
+            "identify",
+            "download",
+            "setAsWallpaper",
+            "share"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "groupedItems",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "getMostCommonType",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "getMostCommonAspectRatio",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "ItemBaseModelsBooleans",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "ItemActions",
+          "line": 94,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "groupedItems",
+          "callee": "containsKey",
+          "lineNumber": 52
+        },
+        {
+          "caller": "getMostCommonType",
+          "callee": "reduce",
+          "lineNumber": 70
+        },
+        {
+          "caller": "getMostCommonAspectRatio",
+          "callee": "round",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getMostCommonAspectRatio",
+          "callee": "putIfAbsent",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getMostCommonAspectRatio",
+          "callee": "add",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getMostCommonAspectRatio",
+          "callee": "reduce",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getMostCommonAspectRatio",
+          "callee": "reduce",
+          "lineNumber": 89
+        },
+        {
+          "caller": "showDetailsMenu",
+          "callee": "fromLTRB",
+          "lineNumber": 120
+        },
+        {
+          "caller": "showDetailsMenu",
+          "callee": "showMenu",
+          "lineNumber": 121
+        },
+        {
+          "caller": "showDetailsMenu",
+          "callee": "generateActions",
+          "lineNumber": 124
+        },
+        {
+          "caller": "showDetailsMenu",
+          "callee": "popupMenuItems",
+          "lineNumber": 127
+        },
+        {
+          "caller": "_showTrackLyricsPopupWithTimeline",
+          "callee": "showDialog",
+          "lineNumber": 563
+        },
+        {
+          "caller": "_showTrackLyricsPopupWithTimeline",
+          "callee": "AlertDialog",
+          "lineNumber": 566
+        },
+        {
+          "caller": "_showTrackLyricsPopupWithTimeline",
+          "callee": "Text",
+          "lineNumber": 567
+        },
+        {
+          "caller": "_showTrackLyricsPopupWithTimeline",
+          "callee": "SizedBox",
+          "lineNumber": 568
+        },
+        {
+          "caller": "_showTrackLyricsPopupWithTimeline",
+          "callee": "_buildLyricsTimelineList",
+          "lineNumber": 570
+        },
+        {
+          "caller": "_showTrackLyricsPopupWithTimeline",
+          "callee": "TextButton",
+          "lineNumber": 573
+        },
+        {
+          "caller": "_showTrackLyricsPopupWithTimeline",
+          "callee": "of",
+          "lineNumber": 574
+        },
+        {
+          "caller": "_showTrackLyricsPopupWithTimeline",
+          "callee": "pop",
+          "lineNumber": 574
+        },
+        {
+          "caller": "_showTrackLyricsPopupWithTimeline",
+          "callee": "Text",
+          "lineNumber": 575
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "Text",
+          "lineNumber": 585
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "of",
+          "lineNumber": 587
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "of",
+          "lineNumber": 587
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "Scrollbar",
+          "lineNumber": 591
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "separated",
+          "lineNumber": 593
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "SizedBox",
+          "lineNumber": 596
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "Row",
+          "lineNumber": 600
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "generate",
+          "lineNumber": 602
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "Icon",
+          "lineNumber": 604
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "of",
+          "lineNumber": 607
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "SelectableText",
+          "lineNumber": 613
+        },
+        {
+          "caller": "_buildLyricsTimelineList",
+          "callee": "of",
+          "lineNumber": 615
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 3,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/item_base_model/play_item_helpers.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 980,
+      "nonEmptyLines": 852,
+      "functions": [
+        {
+          "name": "play",
+          "startLine": 45,
+          "endLine": 51,
+          "params": [
+            "context",
+            "ref",
+            "currentPage",
+            "provider",
+            "parentContext"
+          ]
+        },
+        {
+          "name": "play",
+          "startLine": 80,
+          "endLine": 86,
+          "params": [
+            "context",
+            "ref",
+            "currentPage",
+            "provider",
+            "parentContext"
+          ]
+        },
+        {
+          "name": "play",
+          "startLine": 135,
+          "endLine": 141,
+          "params": [
+            "context",
+            "ref",
+            "currentPage",
+            "provider",
+            "parentContext"
+          ]
+        },
+        {
+          "name": "play",
+          "startLine": 185,
+          "endLine": 190,
+          "params": [
+            "context",
+            "ref",
+            "startPosition",
+            "showPlaybackOption"
+          ]
+        },
+        {
+          "name": "play",
+          "startLine": 229,
+          "endLine": 234,
+          "params": [
+            "context",
+            "ref",
+            "startPosition",
+            "showPlaybackOption"
+          ]
+        },
+        {
+          "name": "playLatestTracks",
+          "startLine": 274,
+          "endLine": 281,
+          "params": [
+            "context",
+            "ref",
+            "startTrack",
+            "startPosition",
+            "showPlaybackOption",
+            "shuffleEnabled"
+          ]
+        },
+        {
+          "name": "play",
+          "startLine": 333,
+          "endLine": 338,
+          "params": [
+            "context",
+            "ref",
+            "startPosition",
+            "showPlaybackOption"
+          ]
+        },
+        {
+          "name": "play",
+          "startLine": 371,
+          "endLine": 376,
+          "params": [
+            "context",
+            "ref",
+            "startPosition",
+            "showPlaybackOption"
+          ]
+        },
+        {
+          "name": "playInstantMix",
+          "startLine": 413,
+          "endLine": 418,
+          "params": [
+            "context",
+            "ref",
+            "startPosition",
+            "showPlaybackOption"
+          ]
+        },
+        {
+          "name": "addToQueue",
+          "startLine": 431,
+          "endLine": 431,
+          "params": [
+            "context",
+            "ref"
+          ]
+        },
+        {
+          "name": "playInstantMix",
+          "startLine": 449,
+          "endLine": 454,
+          "params": [
+            "context",
+            "ref",
+            "startPosition",
+            "showPlaybackOption"
+          ]
+        },
+        {
+          "name": "playInstantMix",
+          "startLine": 469,
+          "endLine": 474,
+          "params": [
+            "context",
+            "ref",
+            "startPosition",
+            "showPlaybackOption"
+          ]
+        },
+        {
+          "name": "addToQueue",
+          "startLine": 489,
+          "endLine": 489,
+          "params": [
+            "context",
+            "ref"
+          ]
+        },
+        {
+          "name": "addToQueue",
+          "startLine": 499,
+          "endLine": 499,
+          "params": [
+            "context",
+            "ref"
+          ]
+        },
+        {
+          "name": "_fetchAlbumQueue",
+          "startLine": 518,
+          "endLine": 518,
+          "params": [
+            "album",
+            "ref"
+          ]
+        },
+        {
+          "name": "_fetchAudioTrackQueue",
+          "startLine": 535,
+          "endLine": 535,
+          "params": [
+            "audio",
+            "ref"
+          ]
+        },
+        {
+          "name": "_playInstantMix",
+          "startLine": 561,
+          "endLine": 567,
+          "params": [
+            "context",
+            "ref",
+            "queueSource",
+            "startPosition",
+            "showPlaybackOption"
+          ]
+        },
+        {
+          "name": "play",
+          "startLine": 603,
+          "endLine": 608,
+          "params": [
+            "context",
+            "ref",
+            "startPosition",
+            "showPlaybackOption"
+          ]
+        },
+        {
+          "name": "_default",
+          "startLine": 625,
+          "endLine": 631,
+          "params": [
+            "context",
+            "itemModel",
+            "ref",
+            "startPosition",
+            "showPlaybackOption"
+          ]
+        },
+        {
+          "name": "playLibraryItems",
+          "startLine": 665,
+          "endLine": 665,
+          "params": [
+            "context",
+            "ref",
+            "shuffle"
+          ]
+        },
+        {
+          "name": "playMusicItems",
+          "startLine": 722,
+          "endLine": 722,
+          "params": [
+            "context",
+            "ref",
+            "shuffle"
+          ]
+        },
+        {
+          "name": "_showLoadingIndicator",
+          "startLine": 806,
+          "endLine": 806,
+          "params": [
+            "context",
+            "item",
+            "op"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 821,
+          "endLine": 821,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "_playVideo",
+          "startLine": 919,
+          "endLine": 927,
+          "params": [
+            "context",
+            "current",
+            "startPosition",
+            "queue",
+            "ref",
+            "onPlayerExit",
+            "cancelOperation"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BookBaseModelExtension",
+          "startLine": 44,
+          "endLine": 77,
+          "methods": [
+            "play"
+          ],
+          "properties": []
+        },
+        {
+          "name": "PhotoAlbumExtension",
+          "startLine": 79,
+          "endLine": 132,
+          "methods": [
+            "play"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ChannelModelExtension",
+          "startLine": 134,
+          "endLine": 182,
+          "methods": [
+            "play"
+          ],
+          "properties": []
+        },
+        {
+          "name": "AudioModelAudioPlayback",
+          "startLine": 184,
+          "endLine": 226,
+          "methods": [
+            "play"
+          ],
+          "properties": []
+        },
+        {
+          "name": "PlayQueueSource",
+          "startLine": 228,
+          "endLine": 271,
+          "methods": [
+            "play"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ArtistModelLatestTracksPlayback",
+          "startLine": 273,
+          "endLine": 330,
+          "methods": [
+            "playLatestTracks"
+          ],
+          "properties": []
+        },
+        {
+          "name": "AudioModelListPlayback",
+          "startLine": 332,
+          "endLine": 368,
+          "methods": [
+            "play"
+          ],
+          "properties": []
+        },
+        {
+          "name": "AlbumModelInstantMixPlayback",
+          "startLine": 370,
+          "endLine": 446,
+          "methods": [
+            "play",
+            "playInstantMix",
+            "addToQueue"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ArtistModelInstantMixPlayback",
+          "startLine": 448,
+          "endLine": 466,
+          "methods": [
+            "playInstantMix"
+          ],
+          "properties": []
+        },
+        {
+          "name": "AudioModelInstantMixPlayback",
+          "startLine": 468,
+          "endLine": 486,
+          "methods": [
+            "playInstantMix"
+          ],
+          "properties": []
+        },
+        {
+          "name": "AudioModelAddToQueue",
+          "startLine": 488,
+          "endLine": 496,
+          "methods": [
+            "addToQueue"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ArtistModelAddToQueue",
+          "startLine": 498,
+          "endLine": 516,
+          "methods": [
+            "addToQueue"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ItemBaseModelExtensions",
+          "startLine": 602,
+          "endLine": 662,
+          "methods": [
+            "play",
+            "_default"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ItemBaseModelsBooleans",
+          "startLine": 664,
+          "endLine": 804,
+          "methods": [
+            "playLibraryItems",
+            "playMusicItems"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_LoadIndicatorCancelable",
+          "startLine": 815,
+          "endLine": 917,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "item",
+            "op"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "play",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "BookBaseModelExtension",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "play",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "PhotoAlbumExtension",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "play",
+          "line": 135,
+          "isDefault": false
+        },
+        {
+          "name": "ChannelModelExtension",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "play",
+          "line": 185,
+          "isDefault": false
+        },
+        {
+          "name": "AudioModelAudioPlayback",
+          "line": 184,
+          "isDefault": false
+        },
+        {
+          "name": "play",
+          "line": 229,
+          "isDefault": false
+        },
+        {
+          "name": "PlayQueueSource",
+          "line": 228,
+          "isDefault": false
+        },
+        {
+          "name": "playLatestTracks",
+          "line": 274,
+          "isDefault": false
+        },
+        {
+          "name": "ArtistModelLatestTracksPlayback",
+          "line": 273,
+          "isDefault": false
+        },
+        {
+          "name": "play",
+          "line": 333,
+          "isDefault": false
+        },
+        {
+          "name": "AudioModelListPlayback",
+          "line": 332,
+          "isDefault": false
+        },
+        {
+          "name": "play",
+          "line": 371,
+          "isDefault": false
+        },
+        {
+          "name": "playInstantMix",
+          "line": 413,
+          "isDefault": false
+        },
+        {
+          "name": "addToQueue",
+          "line": 431,
+          "isDefault": false
+        },
+        {
+          "name": "AlbumModelInstantMixPlayback",
+          "line": 370,
+          "isDefault": false
+        },
+        {
+          "name": "playInstantMix",
+          "line": 449,
+          "isDefault": false
+        },
+        {
+          "name": "ArtistModelInstantMixPlayback",
+          "line": 448,
+          "isDefault": false
+        },
+        {
+          "name": "playInstantMix",
+          "line": 469,
+          "isDefault": false
+        },
+        {
+          "name": "AudioModelInstantMixPlayback",
+          "line": 468,
+          "isDefault": false
+        },
+        {
+          "name": "addToQueue",
+          "line": 489,
+          "isDefault": false
+        },
+        {
+          "name": "AudioModelAddToQueue",
+          "line": 488,
+          "isDefault": false
+        },
+        {
+          "name": "addToQueue",
+          "line": 499,
+          "isDefault": false
+        },
+        {
+          "name": "ArtistModelAddToQueue",
+          "line": 498,
+          "isDefault": false
+        },
+        {
+          "name": "play",
+          "line": 603,
+          "isDefault": false
+        },
+        {
+          "name": "ItemBaseModelExtensions",
+          "line": 602,
+          "isDefault": false
+        },
+        {
+          "name": "playLibraryItems",
+          "line": 665,
+          "isDefault": false
+        },
+        {
+          "name": "playMusicItems",
+          "line": 722,
+          "isDefault": false
+        },
+        {
+          "name": "ItemBaseModelsBooleans",
+          "line": 664,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 821,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "play",
+          "callee": "show",
+          "lineNumber": 53
+        },
+        {
+          "caller": "play",
+          "callee": "bookDetailsProvider",
+          "lineNumber": 62
+        },
+        {
+          "caller": "play",
+          "callee": "watch",
+          "lineNumber": 63
+        },
+        {
+          "caller": "play",
+          "callee": "bookDetailsProvider",
+          "lineNumber": 63
+        },
+        {
+          "caller": "play",
+          "callee": "fetchDetails",
+          "lineNumber": 63
+        },
+        {
+          "caller": "play",
+          "callee": "read",
+          "lineNumber": 66
+        },
+        {
+          "caller": "play",
+          "callee": "fetchBook",
+          "lineNumber": 66
+        },
+        {
+          "caller": "play",
+          "callee": "openBookViewer",
+          "lineNumber": 67
+        },
+        {
+          "caller": "play",
+          "callee": "refreshData",
+          "lineNumber": 74
+        },
+        {
+          "caller": "play",
+          "callee": "read",
+          "lineNumber": 90
+        },
+        {
+          "caller": "play",
+          "callee": "fromFuture",
+          "lineNumber": 91
+        },
+        {
+          "caller": "play",
+          "callee": "itemsGet",
+          "lineNumber": 91
+        },
+        {
+          "caller": "play",
+          "callee": "map",
+          "lineNumber": 93
+        },
+        {
+          "caller": "play",
+          "callee": "expand",
+          "lineNumber": 93
+        },
+        {
+          "caller": "play",
+          "callee": "toList",
+          "lineNumber": 93
+        },
+        {
+          "caller": "play",
+          "callee": "_showLoadingIndicator",
+          "lineNumber": 96
+        },
+        {
+          "caller": "play",
+          "callee": "valueOrCancellation",
+          "lineNumber": 98
+        },
+        {
+          "caller": "play",
+          "callee": "of",
+          "lineNumber": 102
+        },
+        {
+          "caller": "play",
+          "callee": "pop",
+          "lineNumber": 102
+        },
+        {
+          "caller": "play",
+          "callee": "log",
+          "lineNumber": 104
+        },
+        {
+          "caller": "play",
+          "callee": "show",
+          "lineNumber": 106
+        },
+        {
+          "caller": "play",
+          "callee": "whereType",
+          "lineNumber": 111
+        },
+        {
+          "caller": "play",
+          "callee": "of",
+          "lineNumber": 114
+        },
+        {
+          "caller": "play",
+          "callee": "pop",
+          "lineNumber": 114
+        },
+        {
+          "caller": "play",
+          "callee": "log",
+          "lineNumber": 116
+        },
+        {
+          "caller": "play",
+          "callee": "pushRoute",
+          "lineNumber": 123
+        },
+        {
+          "caller": "play",
+          "callee": "PhotoViewerRoute",
+          "lineNumber": 123
+        },
+        {
+          "caller": "play",
+          "callee": "toList",
+          "lineNumber": 124
+        },
+        {
+          "caller": "play",
+          "callee": "refreshData",
+          "lineNumber": 128
+        },
+        {
+          "caller": "play",
+          "callee": "fromFuture",
+          "lineNumber": 144
+        },
+        {
+          "caller": "play",
+          "callee": "read",
+          "lineNumber": 144
+        },
+        {
+          "caller": "play",
+          "callee": "createPlaybackModel",
+          "lineNumber": 144
+        },
+        {
+          "caller": "play",
+          "callee": "_showLoadingIndicator",
+          "lineNumber": 152
+        },
+        {
+          "caller": "play",
+          "callee": "valueOrCancellation",
+          "lineNumber": 154
+        },
+        {
+          "caller": "play",
+          "callee": "of",
+          "lineNumber": 159
+        },
+        {
+          "caller": "play",
+          "callee": "pop",
+          "lineNumber": 159
+        },
+        {
+          "caller": "play",
+          "callee": "log",
+          "lineNumber": 161
+        },
+        {
+          "caller": "play",
+          "callee": "show",
+          "lineNumber": 163
+        },
+        {
+          "caller": "play",
+          "callee": "_playVideo",
+          "lineNumber": 172
+        },
+        {
+          "caller": "play",
+          "callee": "copyWith",
+          "lineNumber": 175
+        },
+        {
+          "caller": "play",
+          "callee": "_fetchAudioTrackQueue",
+          "lineNumber": 194
+        },
+        {
+          "caller": "play",
+          "callee": "show",
+          "lineNumber": 196
+        },
+        {
+          "caller": "play",
+          "callee": "indexWhere",
+          "lineNumber": 200
+        },
+        {
+          "caller": "play",
+          "callee": "clamp",
+          "lineNumber": 200
+        },
+        {
+          "caller": "play",
+          "callee": "fromFuture",
+          "lineNumber": 201
+        },
+        {
+          "caller": "play",
+          "callee": "read",
+          "lineNumber": 201
+        },
+        {
+          "caller": "play",
+          "callee": "createPlaybackModel",
+          "lineNumber": 201
+        },
+        {
+          "caller": "play",
+          "callee": "valueOrCancellation",
+          "lineNumber": 209
+        },
+        {
+          "caller": "play",
+          "callee": "show",
+          "lineNumber": 212
+        },
+        {
+          "caller": "play",
+          "callee": "startDuration",
+          "lineNumber": 217
+        },
+        {
+          "caller": "play",
+          "callee": "read",
+          "lineNumber": 219
+        },
+        {
+          "caller": "play",
+          "callee": "loadAudioPlaybackItem",
+          "lineNumber": 219
+        },
+        {
+          "caller": "play",
+          "callee": "fetchQueue",
+          "lineNumber": 238
+        },
+        {
+          "caller": "play",
+          "callee": "show",
+          "lineNumber": 240
+        },
+        {
+          "caller": "play",
+          "callee": "fromFuture",
+          "lineNumber": 244
+        },
+        {
+          "caller": "play",
+          "callee": "read",
+          "lineNumber": 244
+        },
+        {
+          "caller": "play",
+          "callee": "createPlaybackModel",
+          "lineNumber": 244
+        },
+        {
+          "caller": "play",
+          "callee": "valueOrCancellation",
+          "lineNumber": 253
+        },
+        {
+          "caller": "play",
+          "callee": "show",
+          "lineNumber": 256
+        },
+        {
+          "caller": "play",
+          "callee": "indexWhere",
+          "lineNumber": 261
+        },
+        {
+          "caller": "play",
+          "callee": "clamp",
+          "lineNumber": 261
+        },
+        {
+          "caller": "play",
+          "callee": "startDuration",
+          "lineNumber": 262
+        },
+        {
+          "caller": "play",
+          "callee": "read",
+          "lineNumber": 264
+        },
+        {
+          "caller": "play",
+          "callee": "loadAudioPlaybackItem",
+          "lineNumber": 264
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "read",
+          "lineNumber": 286
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "update",
+          "lineNumber": 286
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "copyWith",
+          "lineNumber": 286
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "ArtistCatalogQueueSource",
+          "lineNumber": 289
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "fetchQueue",
+          "lineNumber": 290
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "show",
+          "lineNumber": 293
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 298
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "Random",
+          "lineNumber": 300
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "nextInt",
+          "lineNumber": 300
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "indexWhere",
+          "lineNumber": 302
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "clamp",
+          "lineNumber": 302
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "fromFuture",
+          "lineNumber": 304
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "read",
+          "lineNumber": 304
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "createPlaybackModel",
+          "lineNumber": 304
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "valueOrCancellation",
+          "lineNumber": 313
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "show",
+          "lineNumber": 316
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "startDuration",
+          "lineNumber": 321
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "read",
+          "lineNumber": 323
+        },
+        {
+          "caller": "playLatestTracks",
+          "callee": "loadAudioPlaybackItem",
+          "lineNumber": 323
+        },
+        {
+          "caller": "play",
+          "callee": "cast",
+          "lineNumber": 341
+        },
+        {
+          "caller": "play",
+          "callee": "toList",
+          "lineNumber": 341
+        },
+        {
+          "caller": "play",
+          "callee": "fromFuture",
+          "lineNumber": 343
+        },
+        {
+          "caller": "play",
+          "callee": "read",
+          "lineNumber": 343
+        },
+        {
+          "caller": "play",
+          "callee": "createPlaybackModel",
+          "lineNumber": 343
+        },
+        {
+          "caller": "play",
+          "callee": "valueOrCancellation",
+          "lineNumber": 351
+        },
+        {
+          "caller": "play",
+          "callee": "show",
+          "lineNumber": 354
+        },
+        {
+          "caller": "play",
+          "callee": "startDuration",
+          "lineNumber": 359
+        },
+        {
+          "caller": "play",
+          "callee": "read",
+          "lineNumber": 361
+        },
+        {
+          "caller": "play",
+          "callee": "loadAudioPlaybackItem",
+          "lineNumber": 361
+        },
+        {
+          "caller": "play",
+          "callee": "_fetchAlbumQueue",
+          "lineNumber": 380
+        },
+        {
+          "caller": "play",
+          "callee": "show",
+          "lineNumber": 382
+        },
+        {
+          "caller": "play",
+          "callee": "fromFuture",
+          "lineNumber": 386
+        },
+        {
+          "caller": "play",
+          "callee": "read",
+          "lineNumber": 386
+        },
+        {
+          "caller": "play",
+          "callee": "createPlaybackModel",
+          "lineNumber": 386
+        },
+        {
+          "caller": "play",
+          "callee": "valueOrCancellation",
+          "lineNumber": 394
+        },
+        {
+          "caller": "play",
+          "callee": "show",
+          "lineNumber": 397
+        },
+        {
+          "caller": "play",
+          "callee": "indexWhere",
+          "lineNumber": 402
+        },
+        {
+          "caller": "play",
+          "callee": "clamp",
+          "lineNumber": 402
+        },
+        {
+          "caller": "play",
+          "callee": "startDuration",
+          "lineNumber": 403
+        },
+        {
+          "caller": "play",
+          "callee": "read",
+          "lineNumber": 405
+        },
+        {
+          "caller": "play",
+          "callee": "loadAudioPlaybackItem",
+          "lineNumber": 405
+        },
+        {
+          "caller": "playInstantMix",
+          "callee": "_playInstantMix",
+          "lineNumber": 422
+        },
+        {
+          "caller": "playInstantMix",
+          "callee": "AlbumInstantMixQueueSource",
+          "lineNumber": 425
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "_fetchAlbumQueue",
+          "lineNumber": 435
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "show",
+          "lineNumber": 437
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "read",
+          "lineNumber": 441
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "addToTemporaryQueue",
+          "lineNumber": 441
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "show",
+          "lineNumber": 443
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "addedToQueue",
+          "lineNumber": 443
+        },
+        {
+          "caller": "playInstantMix",
+          "callee": "_playInstantMix",
+          "lineNumber": 458
+        },
+        {
+          "caller": "playInstantMix",
+          "callee": "ArtistInstantMixQueueSource",
+          "lineNumber": 461
+        },
+        {
+          "caller": "playInstantMix",
+          "callee": "_playInstantMix",
+          "lineNumber": 478
+        },
+        {
+          "caller": "playInstantMix",
+          "callee": "AudioInstantMixQueueSource",
+          "lineNumber": 481
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "read",
+          "lineNumber": 493
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "addToTemporaryQueue",
+          "lineNumber": 493
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "show",
+          "lineNumber": 494
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "addedToQueue",
+          "lineNumber": 494
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "ArtistCatalogQueueSource",
+          "lineNumber": 503
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "fetchQueue",
+          "lineNumber": 504
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "show",
+          "lineNumber": 507
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "read",
+          "lineNumber": 511
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "addToTemporaryQueue",
+          "lineNumber": 511
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "show",
+          "lineNumber": 513
+        },
+        {
+          "caller": "addToQueue",
+          "callee": "addedToQueue",
+          "lineNumber": 513
+        },
+        {
+          "caller": "_fetchAlbumQueue",
+          "callee": "read",
+          "lineNumber": 519
+        },
+        {
+          "caller": "_fetchAlbumQueue",
+          "callee": "itemsGet",
+          "lineNumber": 519
+        },
+        {
+          "caller": "_fetchAlbumQueue",
+          "callee": "whereType",
+          "lineNumber": 531
+        },
+        {
+          "caller": "_fetchAlbumQueue",
+          "callee": "toList",
+          "lineNumber": 531
+        },
+        {
+          "caller": "_fetchAudioTrackQueue",
+          "callee": "read",
+          "lineNumber": 541
+        },
+        {
+          "caller": "_fetchAudioTrackQueue",
+          "callee": "itemsGet",
+          "lineNumber": 541
+        },
+        {
+          "caller": "_fetchAudioTrackQueue",
+          "callee": "whereType",
+          "lineNumber": 553
+        },
+        {
+          "caller": "_fetchAudioTrackQueue",
+          "callee": "toList",
+          "lineNumber": 553
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "fetchQueue",
+          "lineNumber": 568
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "show",
+          "lineNumber": 570
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "fromFuture",
+          "lineNumber": 574
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "read",
+          "lineNumber": 574
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "createPlaybackModel",
+          "lineNumber": 574
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "valueOrCancellation",
+          "lineNumber": 583
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "show",
+          "lineNumber": 586
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "indexWhere",
+          "lineNumber": 591
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "clamp",
+          "lineNumber": 591
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "startDuration",
+          "lineNumber": 592
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "read",
+          "lineNumber": 594
+        },
+        {
+          "caller": "_playInstantMix",
+          "callee": "loadAudioPlaybackItem",
+          "lineNumber": 594
+        },
+        {
+          "caller": "play",
+          "callee": "switch",
+          "lineNumber": 609
+        },
+        {
+          "caller": "play",
+          "callee": "play",
+          "lineNumber": 610
+        },
+        {
+          "caller": "play",
+          "callee": "play",
+          "lineNumber": 611
+        },
+        {
+          "caller": "play",
+          "callee": "play",
+          "lineNumber": 612
+        },
+        {
+          "caller": "play",
+          "callee": "playLatestTracks",
+          "lineNumber": 613
+        },
+        {
+          "caller": "play",
+          "callee": "play",
+          "lineNumber": 614
+        },
+        {
+          "caller": "play",
+          "callee": "play",
+          "lineNumber": 620
+        },
+        {
+          "caller": "play",
+          "callee": "play",
+          "lineNumber": 621
+        },
+        {
+          "caller": "play",
+          "callee": "_default",
+          "lineNumber": 622
+        },
+        {
+          "caller": "_default",
+          "callee": "fromFuture",
+          "lineNumber": 634
+        },
+        {
+          "caller": "_default",
+          "callee": "read",
+          "lineNumber": 634
+        },
+        {
+          "caller": "_default",
+          "callee": "createPlaybackModel",
+          "lineNumber": 634
+        },
+        {
+          "caller": "_default",
+          "callee": "_showLoadingIndicator",
+          "lineNumber": 641
+        },
+        {
+          "caller": "_default",
+          "callee": "valueOrCancellation",
+          "lineNumber": 643
+        },
+        {
+          "caller": "_default",
+          "callee": "of",
+          "lineNumber": 647
+        },
+        {
+          "caller": "_default",
+          "callee": "pop",
+          "lineNumber": 647
+        },
+        {
+          "caller": "_default",
+          "callee": "log",
+          "lineNumber": 649
+        },
+        {
+          "caller": "_default",
+          "callee": "show",
+          "lineNumber": 652
+        },
+        {
+          "caller": "_default",
+          "callee": "startDuration",
+          "lineNumber": 658
+        },
+        {
+          "caller": "_default",
+          "callee": "_playVideo",
+          "lineNumber": 660
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "fromFuture",
+          "lineNumber": 668
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "Future",
+          "lineNumber": 668
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "wait",
+          "lineNumber": 669
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "map",
+          "lineNumber": 669
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "read",
+          "lineNumber": 672
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "fetchEpisodeFromShow",
+          "lineNumber": 672
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "expand",
+          "lineNumber": 679
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "toList",
+          "lineNumber": 679
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "where",
+          "lineNumber": 679
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "toList",
+          "lineNumber": 679
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "uniqueBy",
+          "lineNumber": 679
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "shuffle",
+          "lineNumber": 684
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "read",
+          "lineNumber": 687
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "createPlaybackModel",
+          "lineNumber": 687
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "_showLoadingIndicator",
+          "lineNumber": 696
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "valueOrCancellation",
+          "lineNumber": 698
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "of",
+          "lineNumber": 702
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "pop",
+          "lineNumber": 702
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "log",
+          "lineNumber": 704
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "show",
+          "lineNumber": 706
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "_playVideo",
+          "lineNumber": 715
+        },
+        {
+          "caller": "playLibraryItems",
+          "callee": "maybeOf",
+          "lineNumber": 717
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "fromFuture",
+          "lineNumber": 725
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "Future",
+          "lineNumber": 725
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "wait",
+          "lineNumber": 726
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "map",
+          "lineNumber": 726
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "_fetchAlbumQueue",
+          "lineNumber": 731
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "ArtistCatalogQueueSource",
+          "lineNumber": 733
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "fetchQueue",
+          "lineNumber": 733
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "expand",
+          "lineNumber": 740
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "whereType",
+          "lineNumber": 740
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "cast",
+          "lineNumber": 740
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "toList",
+          "lineNumber": 740
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "uniqueBy",
+          "lineNumber": 740
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "shuffle",
+          "lineNumber": 745
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "read",
+          "lineNumber": 748
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "createPlaybackModel",
+          "lineNumber": 748
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "_showLoadingIndicator",
+          "lineNumber": 757
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "valueOrCancellation",
+          "lineNumber": 759
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "of",
+          "lineNumber": 763
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "pop",
+          "lineNumber": 763
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "log",
+          "lineNumber": 765
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "show",
+          "lineNumber": 767
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "of",
+          "lineNumber": 777
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "pop",
+          "lineNumber": 777
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "log",
+          "lineNumber": 779
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "show",
+          "lineNumber": 781
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "indexWhere",
+          "lineNumber": 786
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "clamp",
+          "lineNumber": 786
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "startDuration",
+          "lineNumber": 787
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "of",
+          "lineNumber": 790
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "pop",
+          "lineNumber": 790
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "read",
+          "lineNumber": 793
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "loadAudioPlaybackItem",
+          "lineNumber": 793
+        },
+        {
+          "caller": "playMusicItems",
+          "callee": "maybeOf",
+          "lineNumber": 801
+        },
+        {
+          "caller": "_showLoadingIndicator",
+          "callee": "showDialog",
+          "lineNumber": 807
+        },
+        {
+          "caller": "_showLoadingIndicator",
+          "callee": "_LoadIndicatorCancelable",
+          "lineNumber": 811
+        },
+        {
+          "caller": "build",
+          "callee": "BorderRadius",
+          "lineNumber": 822
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 822
+        },
+        {
+          "caller": "build",
+          "callee": "Dialog",
+          "lineNumber": 824
+        },
+        {
+          "caller": "build",
+          "callee": "BoxConstraints",
+          "lineNumber": 825
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 829
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 830
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 831
+        },
+        {
+          "caller": "build",
+          "callee": "Expanded",
+          "lineNumber": 836
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 837
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 841
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 842
+        },
+        {
+          "caller": "build",
+          "callee": "AspectRatio",
+          "lineNumber": 846
+        },
+        {
+          "caller": "build",
+          "callee": "SquareProgressIndicator",
+          "lineNumber": 848
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 849
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 852
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 853
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 854
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 855
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 857
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 859
+        },
+        {
+          "caller": "build",
+          "callee": "all",
+          "lineNumber": 861
+        },
+        {
+          "caller": "build",
+          "callee": "withAlpha",
+          "lineNumber": 861
+        },
+        {
+          "caller": "build",
+          "callee": "FladderImage",
+          "lineNumber": 864
+        },
+        {
+          "caller": "build",
+          "callee": "SquareProgressIndicator",
+          "lineNumber": 875
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 876
+        },
+        {
+          "caller": "build",
+          "callee": "Expanded",
+          "lineNumber": 878
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 879
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 885
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 887
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 890
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 892
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 901
+        },
+        {
+          "caller": "build",
+          "callee": "IconButton",
+          "lineNumber": 902
+        },
+        {
+          "caller": "build",
+          "callee": "cancel",
+          "lineNumber": 906
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 908
+        },
+        {
+          "caller": "build",
+          "callee": "pop",
+          "lineNumber": 908
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 910
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "of",
+          "lineNumber": 931
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "pop",
+          "lineNumber": 931
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "log",
+          "lineNumber": 933
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "show",
+          "lineNumber": 935
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "startDuration",
+          "lineNumber": 942
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "read",
+          "lineNumber": 944
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "loadPlaybackItem",
+          "lineNumber": 944
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "of",
+          "lineNumber": 952
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "pop",
+          "lineNumber": 952
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "log",
+          "lineNumber": 954
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "show",
+          "lineNumber": 956
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "of",
+          "lineNumber": 964
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "pop",
+          "lineNumber": 964
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "read",
+          "lineNumber": 969
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "openPlayer",
+          "lineNumber": 969
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "of",
+          "lineNumber": 970
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "closeFullScreen",
+          "lineNumber": 971
+        },
+        {
+          "caller": "_playVideo",
+          "callee": "refreshData",
+          "lineNumber": 976
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 32,
+        "functionCount": 24,
+        "classCount": 15
+      }
+    },
+    {
+      "path": "lib/util/item_base_model/play_playlist_helpers.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 336,
+      "nonEmptyLines": 283,
+      "functions": [
+        {
+          "name": "_playPlaylistVideos",
+          "startLine": 192,
+          "endLine": 192,
+          "params": [
+            "context",
+            "ref",
+            "playlistId"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "read",
+          "lineNumber": 145
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "init",
+          "lineNumber": 145
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "fromFuture",
+          "lineNumber": 147
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "Future",
+          "lineNumber": 147
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "PlaylistAudioQueueSource",
+          "lineNumber": 148
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "fetchQueue",
+          "lineNumber": 153
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "read",
+          "lineNumber": 159
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "createPlaybackModel",
+          "lineNumber": 159
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "_showLoadingIndicator",
+          "lineNumber": 169
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "valueOrCancellation",
+          "lineNumber": 171
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "of",
+          "lineNumber": 175
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "pop",
+          "lineNumber": 175
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "show",
+          "lineNumber": 181
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "indexWhere",
+          "lineNumber": 187
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "clamp",
+          "lineNumber": 187
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "startDuration",
+          "lineNumber": 188
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "read",
+          "lineNumber": 189
+        },
+        {
+          "caller": "_playPlaylistMusic",
+          "callee": "loadAudioPlaybackItem",
+          "lineNumber": 189
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "fromFuture",
+          "lineNumber": 240
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "Future",
+          "lineNumber": 240
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "_fetchPlaylistItems",
+          "lineNumber": 241
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "_classifyPlaylistItems",
+          "lineNumber": 242
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "_showLoadingIndicator",
+          "lineNumber": 245
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "valueOrCancellation",
+          "lineNumber": 247
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "of",
+          "lineNumber": 251
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "pop",
+          "lineNumber": 251
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "show",
+          "lineNumber": 257
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "pushRoute",
+          "lineNumber": 263
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "PhotoViewerRoute",
+          "lineNumber": 263
+        },
+        {
+          "caller": "_playPlaylistGallery",
+          "callee": "refreshData",
+          "lineNumber": 264
+        },
+        {
+          "caller": "_classifyPlaylistItems",
+          "callee": "_PlaylistClassification",
+          "lineNumber": 286
+        },
+        {
+          "caller": "_classifyPlaylistItems",
+          "callee": "where",
+          "lineNumber": 287
+        },
+        {
+          "caller": "_classifyPlaylistItems",
+          "callee": "contains",
+          "lineNumber": 287
+        },
+        {
+          "caller": "_classifyPlaylistItems",
+          "callee": "toList",
+          "lineNumber": 287
+        },
+        {
+          "caller": "_classifyPlaylistItems",
+          "callee": "where",
+          "lineNumber": 288
+        },
+        {
+          "caller": "_classifyPlaylistItems",
+          "callee": "contains",
+          "lineNumber": 288
+        },
+        {
+          "caller": "_classifyPlaylistItems",
+          "callee": "toList",
+          "lineNumber": 288
+        },
+        {
+          "caller": "_classifyPlaylistItems",
+          "callee": "whereType",
+          "lineNumber": 289
+        },
+        {
+          "caller": "_classifyPlaylistItems",
+          "callee": "toList",
+          "lineNumber": 289
+        },
+        {
+          "caller": "_fetchPlaylistItems",
+          "callee": "min",
+          "lineNumber": 302
+        },
+        {
+          "caller": "_fetchPlaylistItems",
+          "callee": "read",
+          "lineNumber": 303
+        },
+        {
+          "caller": "_fetchPlaylistItems",
+          "callee": "playlistsPlaylistIdItemsGet",
+          "lineNumber": 303
+        },
+        {
+          "caller": "_fetchPlaylistItems",
+          "callee": "addAll",
+          "lineNumber": 322
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/util/jelly_id.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/util/jellyfin_extension.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 61,
+      "functions": [
+        {
+          "name": "itemIdImagesImageTypePost",
+          "startLine": 12,
+          "endLine": 16,
+          "params": [
+            "type",
+            "itemId",
+            "data"
+          ]
+        },
+        {
+          "name": "label",
+          "startLine": 35,
+          "endLine": 35,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "label",
+          "startLine": 46,
+          "endLine": 46,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "matchesLanguageCode",
+          "startLine": 59,
+          "endLine": 59,
+          "params": [
+            "languageCode"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "JellyApiExtension",
+          "startLine": 11,
+          "endLine": 32,
+          "methods": [
+            "itemIdImagesImageTypePost"
+          ],
+          "properties": []
+        },
+        {
+          "name": "SyncPlayUserAccessTypeExtension",
+          "startLine": 34,
+          "endLine": 43,
+          "methods": [
+            "label"
+          ],
+          "properties": []
+        },
+        {
+          "name": "SubtitlePlaybackModeExtension",
+          "startLine": 45,
+          "endLine": 56,
+          "methods": [
+            "label"
+          ],
+          "properties": []
+        },
+        {
+          "name": "CultureDtoExtension",
+          "startLine": 58,
+          "endLine": 68,
+          "methods": [
+            "matchesLanguageCode"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "itemIdImagesImageTypePost",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "JellyApiExtension",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "SyncPlayUserAccessTypeExtension",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "SubtitlePlaybackModeExtension",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "matchesLanguageCode",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "CultureDtoExtension",
+          "line": 58,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "itemIdImagesImageTypePost",
+          "callee": "parse",
+          "lineNumber": 18
+        },
+        {
+          "caller": "itemIdImagesImageTypePost",
+          "callee": "send",
+          "lineNumber": 19
+        },
+        {
+          "caller": "itemIdImagesImageTypePost",
+          "callee": "Request",
+          "lineNumber": 20
+        },
+        {
+          "caller": "itemIdImagesImageTypePost",
+          "callee": "base64Encode",
+          "lineNumber": 24
+        },
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 36
+        },
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 47
+        },
+        {
+          "caller": "matchesLanguageCode",
+          "callee": "toLowerCase",
+          "lineNumber": 61
+        },
+        {
+          "caller": "matchesLanguageCode",
+          "callee": "toLowerCase",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 4,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "lib/util/list_extensions.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 120,
+      "nonEmptyLines": 102,
+      "functions": [
+        {
+          "name": "reorderInPlace",
+          "startLine": 4,
+          "endLine": 4,
+          "params": [
+            "oldIndex",
+            "newIndex"
+          ]
+        },
+        {
+          "name": "reordered",
+          "startLine": 14,
+          "endLine": 14,
+          "params": [
+            "oldIndex",
+            "newIndex"
+          ]
+        },
+        {
+          "name": "replace",
+          "startLine": 20,
+          "endLine": 20,
+          "params": [
+            "entry"
+          ]
+        },
+        {
+          "name": "toggle",
+          "startLine": 28,
+          "endLine": 28,
+          "params": [
+            "entry"
+          ]
+        },
+        {
+          "name": "containsAny",
+          "startLine": 37,
+          "endLine": 37,
+          "params": [
+            "entries"
+          ]
+        },
+        {
+          "name": "toggleUnique",
+          "startLine": 46,
+          "endLine": 46,
+          "params": [
+            "entry"
+          ]
+        },
+        {
+          "name": "random",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "uniqueBy",
+          "startLine": 54,
+          "endLine": 54,
+          "params": [
+            "keySelector"
+          ]
+        },
+        {
+          "name": "mapWithLast",
+          "startLine": 67,
+          "endLine": 67,
+          "params": [
+            "mapper"
+          ]
+        },
+        {
+          "name": "chunk",
+          "startLine": 71,
+          "endLine": 71,
+          "params": [
+            "size"
+          ]
+        },
+        {
+          "name": "nextOrNull",
+          "startLine": 89,
+          "endLine": 89,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "previousOrNull",
+          "startLine": 97,
+          "endLine": 97,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "nextWhereOrNull",
+          "startLine": 105,
+          "endLine": 105,
+          "params": [
+            "test"
+          ]
+        },
+        {
+          "name": "previousWhereOrNull",
+          "startLine": 113,
+          "endLine": 113,
+          "params": [
+            "test"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ListExtensions",
+          "startLine": 3,
+          "endLine": 120,
+          "methods": [
+            "reorderInPlace",
+            "reordered",
+            "replace",
+            "toggle",
+            "containsAny",
+            "toggleUnique",
+            "random",
+            "uniqueBy",
+            "mapWithLast",
+            "chunk",
+            "nextOrNull",
+            "previousOrNull",
+            "nextWhereOrNull",
+            "previousWhereOrNull"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "reorderInPlace",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "reordered",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "replace",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "toggle",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "containsAny",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "toggleUnique",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "random",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "uniqueBy",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "mapWithLast",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "chunk",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "nextOrNull",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "previousOrNull",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "nextWhereOrNull",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "previousWhereOrNull",
+          "line": 113,
+          "isDefault": false
+        },
+        {
+          "name": "ListExtensions",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "reorderInPlace",
+          "callee": "removeAt",
+          "lineNumber": 9
+        },
+        {
+          "caller": "reorderInPlace",
+          "callee": "clamp",
+          "lineNumber": 10
+        },
+        {
+          "caller": "reorderInPlace",
+          "callee": "insert",
+          "lineNumber": 11
+        },
+        {
+          "caller": "reordered",
+          "callee": "toList",
+          "lineNumber": 15
+        },
+        {
+          "caller": "reordered",
+          "callee": "reorderInPlace",
+          "lineNumber": 16
+        },
+        {
+          "caller": "replace",
+          "callee": "toList",
+          "lineNumber": 21
+        },
+        {
+          "caller": "replace",
+          "callee": "indexOf",
+          "lineNumber": 22
+        },
+        {
+          "caller": "replace",
+          "callee": "removeAt",
+          "lineNumber": 23
+        },
+        {
+          "caller": "replace",
+          "callee": "insert",
+          "lineNumber": 24
+        },
+        {
+          "caller": "toggle",
+          "callee": "toList",
+          "lineNumber": 29
+        },
+        {
+          "caller": "toggle",
+          "callee": "contains",
+          "lineNumber": 30
+        },
+        {
+          "caller": "containsAny",
+          "callee": "contains",
+          "lineNumber": 39
+        },
+        {
+          "caller": "toggleUnique",
+          "callee": "toggle",
+          "lineNumber": 46
+        },
+        {
+          "caller": "toggleUnique",
+          "callee": "toSet",
+          "lineNumber": 46
+        },
+        {
+          "caller": "toggleUnique",
+          "callee": "toList",
+          "lineNumber": 46
+        },
+        {
+          "caller": "random",
+          "callee": "shuffle",
+          "lineNumber": 50
+        },
+        {
+          "caller": "uniqueBy",
+          "callee": "keySelector",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uniqueBy",
+          "callee": "containsKey",
+          "lineNumber": 59
+        },
+        {
+          "caller": "uniqueBy",
+          "callee": "toList",
+          "lineNumber": 64
+        },
+        {
+          "caller": "mapWithLast",
+          "callee": "mapIndexed",
+          "lineNumber": 68
+        },
+        {
+          "caller": "mapWithLast",
+          "callee": "mapper",
+          "lineNumber": 68
+        },
+        {
+          "caller": "mapWithLast",
+          "callee": "toList",
+          "lineNumber": 68
+        },
+        {
+          "caller": "chunk",
+          "callee": "ArgumentError",
+          "lineNumber": 73
+        },
+        {
+          "caller": "chunk",
+          "callee": "moveNext",
+          "lineNumber": 77
+        },
+        {
+          "caller": "chunk",
+          "callee": "moveNext",
+          "lineNumber": 80
+        },
+        {
+          "caller": "chunk",
+          "callee": "add",
+          "lineNumber": 83
+        },
+        {
+          "caller": "nextOrNull",
+          "callee": "indexOf",
+          "lineNumber": 90
+        },
+        {
+          "caller": "nextOrNull",
+          "callee": "elementAtOrNull",
+          "lineNumber": 94
+        },
+        {
+          "caller": "previousOrNull",
+          "callee": "indexOf",
+          "lineNumber": 98
+        },
+        {
+          "caller": "previousOrNull",
+          "callee": "elementAtOrNull",
+          "lineNumber": 102
+        },
+        {
+          "caller": "nextWhereOrNull",
+          "callee": "indexWhere",
+          "lineNumber": 106
+        },
+        {
+          "caller": "nextWhereOrNull",
+          "callee": "test",
+          "lineNumber": 106
+        },
+        {
+          "caller": "nextWhereOrNull",
+          "callee": "elementAtOrNull",
+          "lineNumber": 110
+        },
+        {
+          "caller": "previousWhereOrNull",
+          "callee": "indexWhere",
+          "lineNumber": 114
+        },
+        {
+          "caller": "previousWhereOrNull",
+          "callee": "test",
+          "lineNumber": 114
+        },
+        {
+          "caller": "previousWhereOrNull",
+          "callee": "elementAtOrNull",
+          "lineNumber": 118
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/list_padding.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "addInBetween",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "widget"
+          ]
+        },
+        {
+          "name": "addInBetweenIndexed",
+          "startLine": 18,
+          "endLine": 18,
+          "params": [
+            "widgetBuilder"
+          ]
+        },
+        {
+          "name": "addPadding",
+          "startLine": 30,
+          "endLine": 30,
+          "params": [
+            "padding"
+          ]
+        },
+        {
+          "name": "addSize",
+          "startLine": 45,
+          "endLine": 45,
+          "params": [
+            "width",
+            "height"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ListExtensions",
+          "startLine": 5,
+          "endLine": 55,
+          "methods": [
+            "addInBetween",
+            "addInBetweenIndexed",
+            "addPadding",
+            "addSize"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "addInBetween",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "addInBetweenIndexed",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "addPadding",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "addSize",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "ListExtensions",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "addInBetween",
+          "callee": "mapIndexed",
+          "lineNumber": 7
+        },
+        {
+          "caller": "addInBetween",
+          "callee": "expand",
+          "lineNumber": 15
+        },
+        {
+          "caller": "addInBetween",
+          "callee": "toList",
+          "lineNumber": 15
+        },
+        {
+          "caller": "addInBetweenIndexed",
+          "callee": "mapIndexed",
+          "lineNumber": 19
+        },
+        {
+          "caller": "addInBetweenIndexed",
+          "callee": "widgetBuilder",
+          "lineNumber": 22
+        },
+        {
+          "caller": "addInBetweenIndexed",
+          "callee": "expand",
+          "lineNumber": 27
+        },
+        {
+          "caller": "addInBetweenIndexed",
+          "callee": "toList",
+          "lineNumber": 27
+        },
+        {
+          "caller": "addPadding",
+          "callee": "map",
+          "lineNumber": 31
+        },
+        {
+          "caller": "addPadding",
+          "callee": "Padding",
+          "lineNumber": 33
+        },
+        {
+          "caller": "addPadding",
+          "callee": "copyWith",
+          "lineNumber": 34
+        },
+        {
+          "caller": "addPadding",
+          "callee": "toList",
+          "lineNumber": 42
+        },
+        {
+          "caller": "addSize",
+          "callee": "map",
+          "lineNumber": 46
+        },
+        {
+          "caller": "addSize",
+          "callee": "SizedBox",
+          "lineNumber": 48
+        },
+        {
+          "caller": "addSize",
+          "callee": "toList",
+          "lineNumber": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/localization_helper.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 132,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "localized",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "createState",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "didUpdateWidget",
+          "startLine": 38,
+          "endLine": 38,
+          "params": [
+            "oldWidget"
+          ]
+        },
+        {
+          "name": "updateLanguageContext",
+          "startLine": 45,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 58,
+          "endLine": 58,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "toDisplayCode",
+          "startLine": 62,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "_TranslationsMessgener",
+          "startLine": 83,
+          "endLine": 83,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "chapters",
+          "startLine": 88,
+          "endLine": 88,
+          "params": [
+            "count"
+          ]
+        },
+        {
+          "name": "close",
+          "startLine": 91,
+          "endLine": 91,
+          "params": []
+        },
+        {
+          "name": "endsAt",
+          "startLine": 94,
+          "endLine": 94,
+          "params": [
+            "time"
+          ]
+        },
+        {
+          "name": "next",
+          "startLine": 97,
+          "endLine": 97,
+          "params": []
+        },
+        {
+          "name": "nextUpInSeconds",
+          "startLine": 100,
+          "endLine": 100,
+          "params": [
+            "seconds"
+          ]
+        },
+        {
+          "name": "nextVideo",
+          "startLine": 103,
+          "endLine": 103,
+          "params": []
+        },
+        {
+          "name": "off",
+          "startLine": 106,
+          "endLine": 106,
+          "params": []
+        },
+        {
+          "name": "skip",
+          "startLine": 109,
+          "endLine": 109,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "subtitles",
+          "startLine": 112,
+          "endLine": 112,
+          "params": []
+        },
+        {
+          "name": "hoursAndMinutes",
+          "startLine": 115,
+          "endLine": 115,
+          "params": [
+            "time"
+          ]
+        },
+        {
+          "name": "decline",
+          "startLine": 118,
+          "endLine": 118,
+          "params": []
+        },
+        {
+          "name": "now",
+          "startLine": 121,
+          "endLine": 121,
+          "params": []
+        },
+        {
+          "name": "switchChannel",
+          "startLine": 124,
+          "endLine": 124,
+          "params": []
+        },
+        {
+          "name": "switchChannelDesc",
+          "startLine": 127,
+          "endLine": 127,
+          "params": [
+            "programName",
+            "channelName"
+          ]
+        },
+        {
+          "name": "watch",
+          "startLine": 131,
+          "endLine": 131,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BuildContextExtension",
+          "startLine": 12,
+          "endLine": 14,
+          "methods": [
+            "localized"
+          ],
+          "properties": []
+        },
+        {
+          "name": "LocalizationContextWrapper",
+          "startLine": 16,
+          "endLine": 27,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "child",
+            "currentLocale"
+          ]
+        },
+        {
+          "name": "_LocalizationContextWrapperState",
+          "startLine": 29,
+          "endLine": 59,
+          "methods": [
+            "initState",
+            "didUpdateWidget",
+            "updateLanguageContext",
+            "build"
+          ],
+          "properties": [
+            "_messenger"
+          ]
+        },
+        {
+          "name": "LocaleDisplayCodeExtension",
+          "startLine": 61,
+          "endLine": 80,
+          "methods": [
+            "toDisplayCode"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_TranslationsMessgener",
+          "startLine": 82,
+          "endLine": 132,
+          "methods": [
+            "_TranslationsMessgener",
+            "chapters",
+            "close",
+            "endsAt",
+            "next",
+            "nextUpInSeconds",
+            "nextVideo",
+            "off",
+            "skip",
+            "subtitles",
+            "hoursAndMinutes",
+            "decline",
+            "now",
+            "switchChannel",
+            "switchChannelDesc",
+            "watch"
+          ],
+          "properties": [
+            "context"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "localized",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "BuildContextExtension",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "createState",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "LocalizationContextWrapper",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "didUpdateWidget",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "updateLanguageContext",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "toDisplayCode",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "LocaleDisplayCodeExtension",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "chapters",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "close",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "endsAt",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "next",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "nextUpInSeconds",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "nextVideo",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "off",
+          "line": 106,
+          "isDefault": false
+        },
+        {
+          "name": "skip",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "subtitles",
+          "line": 112,
+          "isDefault": false
+        },
+        {
+          "name": "hoursAndMinutes",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "decline",
+          "line": 118,
+          "isDefault": false
+        },
+        {
+          "name": "now",
+          "line": 121,
+          "isDefault": false
+        },
+        {
+          "name": "switchChannel",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "switchChannelDesc",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "watch",
+          "line": 131,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "localized",
+          "callee": "of",
+          "lineNumber": 13
+        },
+        {
+          "caller": "createState",
+          "callee": "_LocalizationContextWrapperState",
+          "lineNumber": 26
+        },
+        {
+          "caller": "initState",
+          "callee": "updateLanguageContext",
+          "lineNumber": 34
+        },
+        {
+          "caller": "didUpdateWidget",
+          "callee": "updateLanguageContext",
+          "lineNumber": 41
+        },
+        {
+          "caller": "updateLanguageContext",
+          "callee": "_TranslationsMessgener",
+          "lineNumber": 47
+        },
+        {
+          "caller": "updateLanguageContext",
+          "callee": "setUp",
+          "lineNumber": 48
+        },
+        {
+          "caller": "updateLanguageContext",
+          "callee": "addPostFrameCallback",
+          "lineNumber": 51
+        },
+        {
+          "caller": "updateLanguageContext",
+          "callee": "read",
+          "lineNumber": 52
+        },
+        {
+          "caller": "updateLanguageContext",
+          "callee": "update",
+          "lineNumber": 52
+        },
+        {
+          "caller": "updateLanguageContext",
+          "callee": "read",
+          "lineNumber": 53
+        },
+        {
+          "caller": "updateLanguageContext",
+          "callee": "updateTranslations",
+          "lineNumber": 53
+        },
+        {
+          "caller": "toDisplayCode",
+          "callee": "StringBuffer",
+          "lineNumber": 63
+        },
+        {
+          "caller": "toDisplayCode",
+          "callee": "write",
+          "lineNumber": 65
+        },
+        {
+          "caller": "toDisplayCode",
+          "callee": "toLowerCase",
+          "lineNumber": 65
+        },
+        {
+          "caller": "toDisplayCode",
+          "callee": "write",
+          "lineNumber": 71
+        },
+        {
+          "caller": "toDisplayCode",
+          "callee": "toUpperCase",
+          "lineNumber": 71
+        },
+        {
+          "caller": "toDisplayCode",
+          "callee": "substring",
+          "lineNumber": 71
+        },
+        {
+          "caller": "toDisplayCode",
+          "callee": "toLowerCase",
+          "lineNumber": 71
+        },
+        {
+          "caller": "toDisplayCode",
+          "callee": "write",
+          "lineNumber": 75
+        },
+        {
+          "caller": "toDisplayCode",
+          "callee": "toUpperCase",
+          "lineNumber": 75
+        },
+        {
+          "caller": "toDisplayCode",
+          "callee": "toString",
+          "lineNumber": 78
+        },
+        {
+          "caller": "chapters",
+          "callee": "chapter",
+          "lineNumber": 88
+        },
+        {
+          "caller": "endsAt",
+          "callee": "endsAt",
+          "lineNumber": 94
+        },
+        {
+          "caller": "endsAt",
+          "callee": "parse",
+          "lineNumber": 94
+        },
+        {
+          "caller": "endsAt",
+          "callee": "toLocal",
+          "lineNumber": 94
+        },
+        {
+          "caller": "nextUpInSeconds",
+          "callee": "nextUpInCount",
+          "lineNumber": 100
+        },
+        {
+          "caller": "skip",
+          "callee": "skipButtonLabel",
+          "lineNumber": 109
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "formattedTime",
+          "lineNumber": 115
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "parse",
+          "lineNumber": 115
+        },
+        {
+          "caller": "hoursAndMinutes",
+          "callee": "toLocal",
+          "lineNumber": 115
+        },
+        {
+          "caller": "switchChannelDesc",
+          "callee": "switchChannelDesc",
+          "lineNumber": 128
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 25,
+        "functionCount": 23,
+        "classCount": 5
+      }
+    },
+    {
+      "path": "lib/util/macos_window_helpers.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "toggleMacTrafficLights",
+          "startLine": 9,
+          "endLine": 9,
+          "params": [
+            "enable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "toggleMacTrafficLights",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toggleMacTrafficLights",
+          "callee": "overrideStandardWindowButtonPosition",
+          "lineNumber": 22
+        },
+        {
+          "caller": "toggleMacTrafficLights",
+          "callee": "Offset",
+          "lineNumber": 24
+        },
+        {
+          "caller": "toggleMacTrafficLights",
+          "callee": "disableMiniaturizeButton",
+          "lineNumber": 29
+        },
+        {
+          "caller": "toggleMacTrafficLights",
+          "callee": "enableMiniaturizeButton",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/util/map_bool_helper.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 83,
+      "functions": [
+        {
+          "name": "toggleKey",
+          "startLine": 4,
+          "endLine": 4,
+          "params": [
+            "wantedKey"
+          ]
+        },
+        {
+          "name": "setKey",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "wantedKey",
+            "enable"
+          ]
+        },
+        {
+          "name": "setKeys",
+          "startLine": 12,
+          "endLine": 12,
+          "params": [
+            "wantedKey",
+            "enable"
+          ]
+        },
+        {
+          "name": "setAll",
+          "startLine": 20,
+          "endLine": 20,
+          "params": [
+            "toggle"
+          ]
+        },
+        {
+          "name": "included",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "notIncluded",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "enabledFirst",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "hasEnabled",
+          "startLine": 39,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "replaceMap",
+          "startLine": 42,
+          "endLine": 42,
+          "params": [
+            "oldMap",
+            "enabledOnly",
+            "comparison"
+          ]
+        },
+        {
+          "name": "sortByKey",
+          "startLine": 82,
+          "endLine": 82,
+          "params": [
+            "keySelector"
+          ]
+        },
+        {
+          "name": "setKey",
+          "startLine": 89,
+          "endLine": 89,
+          "params": [
+            "wantedKey",
+            "newValue"
+          ]
+        },
+        {
+          "name": "setKeys",
+          "startLine": 93,
+          "endLine": 93,
+          "params": [
+            "wantedKey",
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MapExtensions",
+          "startLine": 3,
+          "endLine": 86,
+          "methods": [
+            "toggleKey",
+            "setKey",
+            "setKeys",
+            "setAll",
+            "included",
+            "notIncluded",
+            "enabledFirst",
+            "hasEnabled",
+            "replaceMap",
+            "sortByKey"
+          ],
+          "properties": []
+        },
+        {
+          "name": "MapExtensionsGeneric",
+          "startLine": 88,
+          "endLine": 100,
+          "methods": [
+            "setKey",
+            "setKeys"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "toggleKey",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "setKey",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "setKeys",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "setAll",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "included",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "notIncluded",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "enabledFirst",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "hasEnabled",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "replaceMap",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "sortByKey",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "MapExtensions",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "setKey",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "setKeys",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "MapExtensionsGeneric",
+          "line": 88,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toggleKey",
+          "callee": "map",
+          "lineNumber": 5
+        },
+        {
+          "caller": "toggleKey",
+          "callee": "MapEntry",
+          "lineNumber": 5
+        },
+        {
+          "caller": "setKey",
+          "callee": "map",
+          "lineNumber": 9
+        },
+        {
+          "caller": "setKey",
+          "callee": "MapEntry",
+          "lineNumber": 9
+        },
+        {
+          "caller": "setKeys",
+          "callee": "map",
+          "lineNumber": 13
+        },
+        {
+          "caller": "setKeys",
+          "callee": "MapEntry",
+          "lineNumber": 13
+        },
+        {
+          "caller": "setKeys",
+          "callee": "setKey",
+          "lineNumber": 15
+        },
+        {
+          "caller": "setAll",
+          "callee": "map",
+          "lineNumber": 21
+        },
+        {
+          "caller": "setAll",
+          "callee": "MapEntry",
+          "lineNumber": 21
+        },
+        {
+          "caller": "included",
+          "callee": "where",
+          "lineNumber": 25
+        },
+        {
+          "caller": "included",
+          "callee": "map",
+          "lineNumber": 25
+        },
+        {
+          "caller": "included",
+          "callee": "toList",
+          "lineNumber": 25
+        },
+        {
+          "caller": "notIncluded",
+          "callee": "where",
+          "lineNumber": 29
+        },
+        {
+          "caller": "notIncluded",
+          "callee": "map",
+          "lineNumber": 29
+        },
+        {
+          "caller": "notIncluded",
+          "callee": "toList",
+          "lineNumber": 29
+        },
+        {
+          "caller": "hasEnabled",
+          "callee": "any",
+          "lineNumber": 39
+        },
+        {
+          "caller": "replaceMap",
+          "callee": "forEach",
+          "lineNumber": 48
+        },
+        {
+          "caller": "replaceMap",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 49
+        },
+        {
+          "caller": "replaceMap",
+          "callee": "comparison",
+          "lineNumber": 49
+        },
+        {
+          "caller": "replaceMap",
+          "callee": "forEach",
+          "lineNumber": 67
+        },
+        {
+          "caller": "sortByKey",
+          "callee": "toList",
+          "lineNumber": 83
+        },
+        {
+          "caller": "sortByKey",
+          "callee": "keySelector",
+          "lineNumber": 83
+        },
+        {
+          "caller": "sortByKey",
+          "callee": "compareTo",
+          "lineNumber": 83
+        },
+        {
+          "caller": "sortByKey",
+          "callee": "keySelector",
+          "lineNumber": 83
+        },
+        {
+          "caller": "setKey",
+          "callee": "map",
+          "lineNumber": 90
+        },
+        {
+          "caller": "setKey",
+          "callee": "MapEntry",
+          "lineNumber": 90
+        },
+        {
+          "caller": "setKeys",
+          "callee": "map",
+          "lineNumber": 94
+        },
+        {
+          "caller": "setKeys",
+          "callee": "MapEntry",
+          "lineNumber": 94
+        },
+        {
+          "caller": "setKeys",
+          "callee": "setKey",
+          "lineNumber": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 14,
+        "functionCount": 12,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/mouse_parking.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 15,
+          "endLine": 15,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MouseParking",
+          "startLine": 4,
+          "endLine": 10,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "onHover"
+          ]
+        },
+        {
+          "name": "_MouseParkingState",
+          "startLine": 12,
+          "endLine": 40,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "parked"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "MouseParking",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_MouseParkingState",
+          "lineNumber": 9
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 16
+        },
+        {
+          "caller": "build",
+          "callee": "MouseRegion",
+          "lineNumber": 19
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 20
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 21
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 24
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 25
+        },
+        {
+          "caller": "build",
+          "callee": "BorderRadius",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/notification_helpers.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 223,
+      "nonEmptyLines": 192,
+      "functions": [
+        {
+          "name": "buildDetailsDeepLink",
+          "startLine": 17,
+          "endLine": 17,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "buildSeerrDeepLink",
+          "startLine": 19,
+          "endLine": 19,
+          "params": [
+            "mediaType",
+            "tmdbId"
+          ]
+        },
+        {
+          "name": "replaceOrAppendLastSeen",
+          "startLine": 21,
+          "endLine": 21,
+          "params": [
+            "servers",
+            "saved"
+          ]
+        },
+        {
+          "name": "createSeerrClient",
+          "startLine": 27,
+          "endLine": 27,
+          "params": [
+            "credentials"
+          ]
+        },
+        {
+          "name": "fetchSeerrRequests",
+          "startLine": 43,
+          "endLine": 50,
+          "params": [
+            "seerrApi",
+            "seerrBase",
+            "lastUpdateCheck",
+            "debug",
+            "limit",
+            "seerrCredentials"
+          ]
+        },
+        {
+          "name": "fetchLatestItems",
+          "startLine": 75,
+          "endLine": 82,
+          "params": [
+            "baseUrl",
+            "userId",
+            "token",
+            "limit",
+            "includeHiddenViews",
+            "since"
+          ]
+        },
+        {
+          "name": "_WorkerAuthInterceptor",
+          "startLine": 191,
+          "endLine": 191,
+          "params": [
+            "token"
+          ]
+        },
+        {
+          "name": "intercept",
+          "startLine": 196,
+          "endLine": 196,
+          "params": [
+            "chain"
+          ]
+        },
+        {
+          "name": "_WorkerSeerrAuthInterceptor",
+          "startLine": 205,
+          "endLine": 205,
+          "params": [
+            "apiKey",
+            "cookie",
+            "customHeaders"
+          ]
+        },
+        {
+          "name": "intercept",
+          "startLine": 212,
+          "endLine": 212,
+          "params": [
+            "chain"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotificationHelpers",
+          "startLine": 16,
+          "endLine": 188,
+          "methods": [
+            "buildDetailsDeepLink",
+            "buildSeerrDeepLink",
+            "replaceOrAppendLastSeen",
+            "createSeerrClient",
+            "fetchSeerrRequests",
+            "fetchLatestItems"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_WorkerAuthInterceptor",
+          "startLine": 190,
+          "endLine": 202,
+          "methods": [
+            "_WorkerAuthInterceptor",
+            "intercept"
+          ],
+          "properties": [
+            "token"
+          ]
+        },
+        {
+          "name": "_WorkerSeerrAuthInterceptor",
+          "startLine": 204,
+          "endLine": 223,
+          "methods": [
+            "_WorkerSeerrAuthInterceptor",
+            "intercept"
+          ],
+          "properties": [
+            "apiKey",
+            "cookie",
+            "customHeaders"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "buildDetailsDeepLink",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "buildSeerrDeepLink",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "replaceOrAppendLastSeen",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "createSeerrClient",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "fetchSeerrRequests",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "fetchLatestItems",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "NotificationHelpers",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "intercept",
+          "line": 196,
+          "isDefault": false
+        },
+        {
+          "name": "intercept",
+          "line": 212,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildDetailsDeepLink",
+          "callee": "encodeComponent",
+          "lineNumber": 17
+        },
+        {
+          "caller": "replaceOrAppendLastSeen",
+          "callee": "any",
+          "lineNumber": 22
+        },
+        {
+          "caller": "replaceOrAppendLastSeen",
+          "callee": "map",
+          "lineNumber": 23
+        },
+        {
+          "caller": "replaceOrAppendLastSeen",
+          "callee": "toList",
+          "lineNumber": 23
+        },
+        {
+          "caller": "createSeerrClient",
+          "callee": "ChopperClient",
+          "lineNumber": 28
+        },
+        {
+          "caller": "createSeerrClient",
+          "callee": "parse",
+          "lineNumber": 29
+        },
+        {
+          "caller": "createSeerrClient",
+          "callee": "SeerrJsonConverter",
+          "lineNumber": 30
+        },
+        {
+          "caller": "createSeerrClient",
+          "callee": "_WorkerSeerrAuthInterceptor",
+          "lineNumber": 32
+        },
+        {
+          "caller": "createSeerrClient",
+          "callee": "trim",
+          "lineNumber": 33
+        },
+        {
+          "caller": "createSeerrClient",
+          "callee": "trim",
+          "lineNumber": 34
+        },
+        {
+          "caller": "createSeerrClient",
+          "callee": "HttpLoggingInterceptor",
+          "lineNumber": 36
+        },
+        {
+          "caller": "createSeerrClient",
+          "callee": "create",
+          "lineNumber": 40
+        },
+        {
+          "caller": "fetchSeerrRequests",
+          "callee": "getMe",
+          "lineNumber": 52
+        },
+        {
+          "caller": "fetchSeerrRequests",
+          "callee": "getRequests",
+          "lineNumber": 56
+        },
+        {
+          "caller": "fetchSeerrRequests",
+          "callee": "subtract",
+          "lineNumber": 60
+        },
+        {
+          "caller": "fetchSeerrRequests",
+          "callee": "Duration",
+          "lineNumber": 60
+        },
+        {
+          "caller": "fetchSeerrRequests",
+          "callee": "where",
+          "lineNumber": 62
+        },
+        {
+          "caller": "fetchSeerrRequests",
+          "callee": "isAfter",
+          "lineNumber": 66
+        },
+        {
+          "caller": "fetchSeerrRequests",
+          "callee": "toLocal",
+          "lineNumber": 66
+        },
+        {
+          "caller": "fetchSeerrRequests",
+          "callee": "toList",
+          "lineNumber": 67
+        },
+        {
+          "caller": "fetchSeerrRequests",
+          "callee": "log",
+          "lineNumber": 70
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "endsWith",
+          "lineNumber": 85
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "substring",
+          "lineNumber": 85
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "create",
+          "lineNumber": 88
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "parse",
+          "lineNumber": 89
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "_WorkerAuthInterceptor",
+          "lineNumber": 91
+        },
+        {
+          "caller": "latestGet",
+          "callee": "usersUserIdItemsLatestGet",
+          "lineNumber": 96
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "latestGet",
+          "lineNumber": 115
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "where",
+          "lineNumber": 119
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "isAfter",
+          "lineNumber": 122
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "toList",
+          "lineNumber": 123
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "userViewsGet",
+          "lineNumber": 126
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "log",
+          "lineNumber": 128
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "latestGet",
+          "lineNumber": 129
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "toList",
+          "lineNumber": 132
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "map",
+          "lineNumber": 136
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "whereType",
+          "lineNumber": 137
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "where",
+          "lineNumber": 138
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "toList",
+          "lineNumber": 139
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "latestGet",
+          "lineNumber": 142
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "toList",
+          "lineNumber": 145
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "ceil",
+          "lineNumber": 149
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "clamp",
+          "lineNumber": 149
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "latestGet",
+          "lineNumber": 154
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "addAll",
+          "lineNumber": 158
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "log",
+          "lineNumber": 160
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "containsKey",
+          "lineNumber": 167
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "toList",
+          "lineNumber": 170
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "fromMillisecondsSinceEpoch",
+          "lineNumber": 172
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "fromMillisecondsSinceEpoch",
+          "lineNumber": 173
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "compareTo",
+          "lineNumber": 174
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "toList",
+          "lineNumber": 176
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "where",
+          "lineNumber": 178
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "isAfter",
+          "lineNumber": 181
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "toList",
+          "lineNumber": 182
+        },
+        {
+          "caller": "fetchLatestItems",
+          "callee": "log",
+          "lineNumber": 184
+        },
+        {
+          "caller": "intercept",
+          "callee": "copyWith",
+          "lineNumber": 199
+        },
+        {
+          "caller": "intercept",
+          "callee": "proceed",
+          "lineNumber": 200
+        },
+        {
+          "caller": "intercept",
+          "callee": "addAll",
+          "lineNumber": 219
+        },
+        {
+          "caller": "intercept",
+          "callee": "copyWith",
+          "lineNumber": 220
+        },
+        {
+          "caller": "intercept",
+          "callee": "proceed",
+          "lineNumber": 221
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 10,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/util/num_extension.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "isInRange",
+          "startLine": 4,
+          "endLine": 4,
+          "params": [
+            "index",
+            "range"
+          ]
+        },
+        {
+          "name": "roundTo",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "places"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RangeNum",
+          "startLine": 3,
+          "endLine": 7,
+          "methods": [
+            "isInRange"
+          ],
+          "properties": []
+        },
+        {
+          "name": "DoubleExtension",
+          "startLine": 9,
+          "endLine": 14,
+          "methods": [
+            "roundTo"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "isInRange",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "RangeNum",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "roundTo",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "DoubleExtension",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "roundTo",
+          "callee": "pow",
+          "lineNumber": 11
+        },
+        {
+          "caller": "roundTo",
+          "callee": "round",
+          "lineNumber": 12
+        },
+        {
+          "caller": "roundTo",
+          "callee": "toDouble",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/option_dialogue.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "openMultiSelectOptions",
+          "startLine": 5,
+          "endLine": 14,
+          "params": [
+            "context",
+            "label",
+            "allowMultiSelection",
+            "forceAtleastOne",
+            "selected",
+            "items",
+            "onChanged",
+            "itemBuilder"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "openMultiSelectOptions",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "toSet",
+          "lineNumber": 15
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "showDialog",
+          "lineNumber": 16
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "StatefulBuilder",
+          "lineNumber": 18
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "AlertDialog",
+          "lineNumber": 19
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "Text",
+          "lineNumber": 20
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "SizedBox",
+          "lineNumber": 21
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "of",
+          "lineNumber": 22
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "ListView",
+          "lineNumber": 23
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "AlwaysScrollableScrollPhysics",
+          "lineNumber": 24
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "map",
+          "lineNumber": 26
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "contains",
+          "lineNumber": 27
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "itemBuilder",
+          "lineNumber": 28
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "setState",
+          "lineNumber": 32
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "remove",
+          "lineNumber": 36
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "add",
+          "lineNumber": 39
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "of",
+          "lineNumber": 45
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "indexOf",
+          "lineNumber": 47
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "compareTo",
+          "lineNumber": 47
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "indexOf",
+          "lineNumber": 47
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "toList",
+          "lineNumber": 49
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "toList",
+          "lineNumber": 52
+        },
+        {
+          "caller": "openMultiSelectOptions",
+          "callee": "toList",
+          "lineNumber": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/util/people_extension.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "guestActors",
+          "startLine": 5,
+          "endLine": 5,
+          "params": []
+        },
+        {
+          "name": "mainCast",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PeopleExtension",
+          "startLine": 4,
+          "endLine": 7,
+          "methods": [
+            "guestActors",
+            "mainCast"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "guestActors",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "mainCast",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "PeopleExtension",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "guestActors",
+          "callee": "where",
+          "lineNumber": 5
+        },
+        {
+          "caller": "guestActors",
+          "callee": "toList",
+          "lineNumber": 5
+        },
+        {
+          "caller": "mainCast",
+          "callee": "where",
+          "lineNumber": 6
+        },
+        {
+          "caller": "mainCast",
+          "callee": "toList",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/position_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 58,
+      "functions": [
+        {
+          "name": "of",
+          "startLine": 16,
+          "endLine": 16,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "updateShouldNotify",
+          "startLine": 22,
+          "endLine": 22,
+          "params": [
+            "oldWidget"
+          ]
+        },
+        {
+          "name": "withPositionProvider",
+          "startLine": 26,
+          "endLine": 26,
+          "params": [
+            "context",
+            "textDirection"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 56,
+          "endLine": 56,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PositionContext",
+          "startLine": 5,
+          "endLine": 5,
+          "methods": [],
+          "properties": [
+            "first",
+            "middle",
+            "last"
+          ]
+        },
+        {
+          "name": "PositionProvider",
+          "startLine": 7,
+          "endLine": 23,
+          "methods": [
+            "of",
+            "updateShouldNotify"
+          ],
+          "properties": [
+            "position"
+          ]
+        },
+        {
+          "name": "PositionProviderExtension",
+          "startLine": 25,
+          "endLine": 41,
+          "methods": [
+            "withPositionProvider"
+          ],
+          "properties": []
+        },
+        {
+          "name": "PositionRoundedClip",
+          "startLine": 43,
+          "endLine": 69,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "child",
+            "borderRadius",
+            "defaultRadius"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PositionContext",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "of",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "updateShouldNotify",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "PositionProvider",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "withPositionProvider",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "PositionProviderExtension",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "PositionRoundedClip",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "of",
+          "callee": "dependOnInheritedWidgetOfExactType",
+          "lineNumber": 17
+        },
+        {
+          "caller": "withPositionProvider",
+          "callee": "of",
+          "lineNumber": 27
+        },
+        {
+          "caller": "withPositionProvider",
+          "callee": "mapIndexed",
+          "lineNumber": 31
+        },
+        {
+          "caller": "withPositionProvider",
+          "callee": "PositionProvider",
+          "lineNumber": 32
+        },
+        {
+          "caller": "withPositionProvider",
+          "callee": "Builder",
+          "lineNumber": 36
+        },
+        {
+          "caller": "withPositionProvider",
+          "callee": "toList",
+          "lineNumber": 39
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "ClipRRect",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "only",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 4,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "lib/util/poster_defaults.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "gridRatio",
+          "startLine": 5,
+          "endLine": 5,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PosterDefaults",
+          "startLine": 1,
+          "endLine": 8,
+          "methods": [
+            "gridRatio"
+          ],
+          "properties": [
+            "size",
+            "ratio"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "gridRatio",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "PosterDefaults",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/refresh_state.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 35,
+      "functions": [
+        {
+          "name": "refresh",
+          "startLine": 14,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "maybeOf",
+          "startLine": 19,
+          "endLine": 19,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "of",
+          "startLine": 23,
+          "endLine": 23,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "updateShouldNotify",
+          "startLine": 29,
+          "endLine": 29,
+          "params": [
+            "oldWidget"
+          ]
+        },
+        {
+          "name": "refreshData",
+          "startLine": 35,
+          "endLine": 35,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RefreshState",
+          "startLine": 3,
+          "endLine": 32,
+          "methods": [
+            "refresh",
+            "maybeOf",
+            "of",
+            "updateShouldNotify"
+          ],
+          "properties": [
+            "refreshKey",
+            "refreshAble"
+          ]
+        },
+        {
+          "name": "RefreshContextExtension",
+          "startLine": 34,
+          "endLine": 42,
+          "methods": [
+            "refreshData"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "refresh",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "maybeOf",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "of",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "updateShouldNotify",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "RefreshState",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "refreshData",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "RefreshContextExtension",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "maybeOf",
+          "callee": "dependOnInheritedWidgetOfExactType",
+          "lineNumber": 20
+        },
+        {
+          "caller": "of",
+          "callee": "maybeOf",
+          "lineNumber": 24
+        },
+        {
+          "caller": "refreshData",
+          "callee": "delayed",
+          "lineNumber": 37
+        },
+        {
+          "caller": "refreshData",
+          "callee": "Duration",
+          "lineNumber": 37
+        },
+        {
+          "caller": "refreshData",
+          "callee": "maybeOf",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 5,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/resolution_checker.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "checkResolution",
+          "startLine": 34,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "shouldSetResolution",
+          "startLine": 43,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "dispose",
+          "startLine": 54,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 60,
+          "endLine": 60,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ResolutionChecker",
+          "startLine": 11,
+          "endLine": 17,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "child"
+          ]
+        },
+        {
+          "name": "_ResolutionCheckerState",
+          "startLine": 19,
+          "endLine": 63,
+          "methods": [
+            "initState",
+            "checkResolution",
+            "shouldSetResolution",
+            "dispose",
+            "build"
+          ],
+          "properties": [
+            "lastResolution",
+            "_timer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "ResolutionChecker",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "checkResolution",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "shouldSetResolution",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 60,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_ResolutionCheckerState",
+          "lineNumber": 16
+        },
+        {
+          "caller": "initState",
+          "callee": "addPostFrameCallback",
+          "lineNumber": 26
+        },
+        {
+          "caller": "initState",
+          "callee": "read",
+          "lineNumber": 27
+        },
+        {
+          "caller": "initState",
+          "callee": "getPrimaryDisplay",
+          "lineNumber": 28
+        },
+        {
+          "caller": "initState",
+          "callee": "periodic",
+          "lineNumber": 29
+        },
+        {
+          "caller": "initState",
+          "callee": "Duration",
+          "lineNumber": 29
+        },
+        {
+          "caller": "initState",
+          "callee": "checkResolution",
+          "lineNumber": 29
+        },
+        {
+          "caller": "checkResolution",
+          "callee": "getPrimaryDisplay",
+          "lineNumber": 36
+        },
+        {
+          "caller": "checkResolution",
+          "callee": "shouldSetResolution",
+          "lineNumber": 39
+        },
+        {
+          "caller": "shouldSetResolution",
+          "callee": "isFullScreen",
+          "lineNumber": 45
+        },
+        {
+          "caller": "shouldSetResolution",
+          "callee": "setFullScreen",
+          "lineNumber": 47
+        },
+        {
+          "caller": "shouldSetResolution",
+          "callee": "setFullScreen",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/router_extension.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "popBack",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "backButton",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RouterExtension",
+          "startLine": 6,
+          "endLine": 30,
+          "methods": [
+            "popBack",
+            "backButton"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "popBack",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "backButton",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "RouterExtension",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "popBack",
+          "callee": "back",
+          "lineNumber": 9
+        },
+        {
+          "caller": "popBack",
+          "callee": "maybePop",
+          "lineNumber": 12
+        },
+        {
+          "caller": "backButton",
+          "callee": "IconButton",
+          "lineNumber": 18
+        },
+        {
+          "caller": "backButton",
+          "callee": "BackButtonIcon",
+          "lineNumber": 20
+        },
+        {
+          "caller": "backButton",
+          "callee": "canPop",
+          "lineNumber": 22
+        },
+        {
+          "caller": "backButton",
+          "callee": "IconButton",
+          "lineNumber": 23
+        },
+        {
+          "caller": "backButton",
+          "callee": "BackButtonIcon",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    }
+  ]
+}

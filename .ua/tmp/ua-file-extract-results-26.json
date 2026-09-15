@@ -1,0 +1,6428 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "lib/models/syncing/sync_settings_model.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 288,
+      "nonEmptyLines": 256,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "items",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$SyncSettingsModel",
+          "startLine": 16,
+          "endLine": 31,
+          "methods": [
+            "items",
+            "copyWith",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "items",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$SyncSettingsModelCopyWithImpl",
+          "lineNumber": 24
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 57
+        },
+        {
+          "caller": "call",
+          "callee": "copyWith",
+          "lineNumber": 57
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "_SyncSettignsModel",
+          "lineNumber": 87
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "$default",
+          "lineNumber": 88
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "orElse",
+          "lineNumber": 90
+        },
+        {
+          "caller": "map",
+          "callee": "_SyncSettignsModel",
+          "lineNumber": 113
+        },
+        {
+          "caller": "map",
+          "callee": "$default",
+          "lineNumber": 114
+        },
+        {
+          "caller": "map",
+          "callee": "StateError",
+          "lineNumber": 116
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_SyncSettignsModel",
+          "lineNumber": 138
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 139
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_SyncSettignsModel",
+          "lineNumber": 164
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 165
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 167
+        },
+        {
+          "caller": "when",
+          "callee": "_SyncSettignsModel",
+          "lineNumber": 190
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 191
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 193
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_SyncSettignsModel",
+          "lineNumber": 215
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 216
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 279
+        },
+        {
+          "caller": "call",
+          "callee": "_SyncSettignsModel",
+          "lineNumber": 279
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/syncing/transcode_download_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 166,
+      "nonEmptyLines": 142,
+      "functions": [
+        {
+          "name": "fromDefaults",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "TranscodeDownloadModel.fromJson",
+          "startLine": 37,
+          "endLine": 37,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "curlHeaders",
+          "startLine": 39,
+          "endLine": 39,
+          "params": [
+            "duration",
+            "item"
+          ]
+        },
+        {
+          "name": "calculatedContentLength",
+          "startLine": 48,
+          "endLine": 48,
+          "params": [
+            "duration",
+            "item"
+          ]
+        },
+        {
+          "name": "deviceProfile",
+          "startLine": 57,
+          "endLine": 57,
+          "params": []
+        },
+        {
+          "name": "label",
+          "startLine": 83,
+          "endLine": 83,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TranscodeDownloadModel",
+          "startLine": 14,
+          "endLine": 89,
+          "methods": [
+            "fromDefaults",
+            "TranscodeDownloadModel.fromJson",
+            "curlHeaders",
+            "calculatedContentLength",
+            "deviceProfile",
+            "label"
+          ],
+          "properties": []
+        },
+        {
+          "name": "VideoCodec",
+          "startLine": 91,
+          "endLine": 97,
+          "methods": [],
+          "properties": [
+            "h264",
+            "h265",
+            "vp9",
+            "VideoCodec"
+          ]
+        },
+        {
+          "name": "AudioCodec",
+          "startLine": 106,
+          "endLine": 112,
+          "methods": [],
+          "properties": [
+            "aac",
+            "mp3",
+            "opus",
+            "AudioCodec"
+          ]
+        },
+        {
+          "name": "MaxHeight",
+          "startLine": 122,
+          "endLine": 129,
+          "methods": [],
+          "properties": [
+            "p480",
+            "p720",
+            "p1080",
+            "p1440",
+            "MaxHeight"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "fromDefaults",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "TranscodeDownloadModel.fromJson",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "curlHeaders",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "calculatedContentLength",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "deviceProfile",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "TranscodeDownloadModel",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "VideoCodec",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "AudioCodec",
+          "line": 106,
+          "isDefault": false
+        },
+        {
+          "name": "MaxHeight",
+          "line": 122,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fromDefaults",
+          "callee": "TranscodeDownloadModel",
+          "lineNumber": 27
+        },
+        {
+          "caller": "TranscodeDownloadModel.fromJson",
+          "callee": "_$TranscodeDownloadModelFromJson",
+          "lineNumber": 37
+        },
+        {
+          "caller": "curlHeaders",
+          "callee": "calculatedContentLength",
+          "lineNumber": 43
+        },
+        {
+          "caller": "curlHeaders",
+          "callee": "toString",
+          "lineNumber": 43
+        },
+        {
+          "caller": "calculatedContentLength",
+          "callee": "floor",
+          "lineNumber": 52
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "DeviceProfile",
+          "lineNumber": 57
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "DirectPlayProfile",
+          "lineNumber": 61
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "DirectPlayProfile",
+          "lineNumber": 62
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "TranscodingProfile",
+          "lineNumber": 65
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "toLowerCase",
+          "lineNumber": 66
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "toLowerCase",
+          "lineNumber": 67
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "toLowerCase",
+          "lineNumber": 71
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "SubtitleProfile",
+          "lineNumber": 76
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "SubtitleProfile",
+          "lineNumber": 77
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "SubtitleProfile",
+          "lineNumber": 78
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "SubtitleProfile",
+          "lineNumber": 79
+        },
+        {
+          "caller": "label",
+          "callee": "toUpperCase",
+          "lineNumber": 87
+        },
+        {
+          "caller": "label",
+          "callee": "toUpperCase",
+          "lineNumber": 87
+        },
+        {
+          "caller": "label",
+          "callee": "label",
+          "lineNumber": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 6,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "lib/models/syncing/transcode_download_model.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 392,
+      "nonEmptyLines": 359,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "enabled",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "videoCodec",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "audioCodec",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "maxHeight",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "container",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "maxBitrate",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "toJson",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 36,
+          "endLine": 36,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$TranscodeDownloadModel",
+          "startLine": 16,
+          "endLine": 39,
+          "methods": [
+            "enabled",
+            "videoCodec",
+            "audioCodec",
+            "maxHeight",
+            "container",
+            "maxBitrate",
+            "copyWith",
+            "toJson",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "enabled",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "videoCodec",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "audioCodec",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "maxHeight",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "container",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "maxBitrate",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "toJson",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$TranscodeDownloadModelCopyWithImpl",
+          "lineNumber": 29
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 76
+        },
+        {
+          "caller": "call",
+          "callee": "copyWith",
+          "lineNumber": 76
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "_TranscodeDownloadModel",
+          "lineNumber": 126
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "$default",
+          "lineNumber": 127
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "orElse",
+          "lineNumber": 129
+        },
+        {
+          "caller": "map",
+          "callee": "_TranscodeDownloadModel",
+          "lineNumber": 152
+        },
+        {
+          "caller": "map",
+          "callee": "$default",
+          "lineNumber": 153
+        },
+        {
+          "caller": "map",
+          "callee": "StateError",
+          "lineNumber": 155
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_TranscodeDownloadModel",
+          "lineNumber": 177
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 178
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_TranscodeDownloadModel",
+          "lineNumber": 205
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 206
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 209
+        },
+        {
+          "caller": "when",
+          "callee": "_TranscodeDownloadModel",
+          "lineNumber": 234
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 235
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 238
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_TranscodeDownloadModel",
+          "lineNumber": 267
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 268
+        },
+        {
+          "caller": "fromJson",
+          "callee": "_$TranscodeDownloadModelFromJson",
+          "lineNumber": 288
+        },
+        {
+          "caller": "Map",
+          "callee": "_$TranscodeDownloadModelToJson",
+          "lineNumber": 315
+        },
+        {
+          "caller": "call",
+          "callee": "__$TranscodeDownloadModelCopyWithImpl",
+          "lineNumber": 346
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 363
+        },
+        {
+          "caller": "call",
+          "callee": "_TranscodeDownloadModel",
+          "lineNumber": 363
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/syncing/transcode_download_model.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 67,
+      "functions": [
+        {
+          "name": "_$TranscodeDownloadModelFromJson",
+          "startLine": 9,
+          "endLine": 10,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "_$TranscodeDownloadModelToJson",
+          "startLine": 20,
+          "endLine": 21,
+          "params": [
+            "instance"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_$TranscodeDownloadModelFromJson",
+          "callee": "_TranscodeDownloadModel",
+          "lineNumber": 11
+        },
+        {
+          "caller": "_$TranscodeDownloadModelFromJson",
+          "callee": "$enumDecode",
+          "lineNumber": 13
+        },
+        {
+          "caller": "_$TranscodeDownloadModelFromJson",
+          "callee": "$enumDecode",
+          "lineNumber": 14
+        },
+        {
+          "caller": "_$TranscodeDownloadModelFromJson",
+          "callee": "$enumDecode",
+          "lineNumber": 15
+        },
+        {
+          "caller": "_$TranscodeDownloadModelFromJson",
+          "callee": "$enumDecode",
+          "lineNumber": 16
+        },
+        {
+          "caller": "_$TranscodeDownloadModelFromJson",
+          "callee": "$enumDecode",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/models/syncing/transcode_music_download_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 129,
+      "nonEmptyLines": 114,
+      "functions": [
+        {
+          "name": "copyWith",
+          "startLine": 21,
+          "endLine": 26,
+          "params": [
+            "enabled",
+            "audioCodec",
+            "maxBitrate",
+            "container"
+          ]
+        },
+        {
+          "name": "TranscodeMusicDownloadModel.fromJson",
+          "startLine": 35,
+          "endLine": 35,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "toJson",
+          "startLine": 44,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "curlHeaders",
+          "startLine": 53,
+          "endLine": 53,
+          "params": [
+            "duration",
+            "item"
+          ]
+        },
+        {
+          "name": "calculatedContentLength",
+          "startLine": 60,
+          "endLine": 60,
+          "params": [
+            "duration",
+            "item"
+          ]
+        },
+        {
+          "name": "deviceProfile",
+          "startLine": 69,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "label",
+          "startLine": 88,
+          "endLine": 88,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TranscodeMusicDownloadModel",
+          "startLine": 8,
+          "endLine": 94,
+          "methods": [
+            "copyWith",
+            "TranscodeMusicDownloadModel.fromJson",
+            "toJson",
+            "curlHeaders",
+            "calculatedContentLength",
+            "deviceProfile",
+            "label"
+          ],
+          "properties": [
+            "enabled",
+            "audioCodec",
+            "maxBitrate",
+            "container"
+          ]
+        },
+        {
+          "name": "MusicAudioCodec",
+          "startLine": 96,
+          "endLine": 102,
+          "methods": [],
+          "properties": [
+            "aac",
+            "mp3",
+            "opus",
+            "String"
+          ]
+        },
+        {
+          "name": "MusicContainer",
+          "startLine": 110,
+          "endLine": 116,
+          "methods": [],
+          "properties": [
+            "mp3",
+            "aac",
+            "opus",
+            "String"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "copyWith",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "TranscodeMusicDownloadModel.fromJson",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "toJson",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "curlHeaders",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "calculatedContentLength",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "deviceProfile",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "TranscodeMusicDownloadModel",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "MusicAudioCodec",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "MusicContainer",
+          "line": 110,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "TranscodeMusicDownloadModel",
+          "lineNumber": 27
+        },
+        {
+          "caller": "TranscodeMusicDownloadModel.fromJson",
+          "callee": "TranscodeMusicDownloadModel",
+          "lineNumber": 36
+        },
+        {
+          "caller": "TranscodeMusicDownloadModel.fromJson",
+          "callee": "byName",
+          "lineNumber": 38
+        },
+        {
+          "caller": "TranscodeMusicDownloadModel.fromJson",
+          "callee": "byName",
+          "lineNumber": 39
+        },
+        {
+          "caller": "TranscodeMusicDownloadModel.fromJson",
+          "callee": "byName",
+          "lineNumber": 40
+        },
+        {
+          "caller": "curlHeaders",
+          "callee": "calculatedContentLength",
+          "lineNumber": 57
+        },
+        {
+          "caller": "curlHeaders",
+          "callee": "toString",
+          "lineNumber": 57
+        },
+        {
+          "caller": "calculatedContentLength",
+          "callee": "floor",
+          "lineNumber": 66
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "DeviceProfile",
+          "lineNumber": 69
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "DirectPlayProfile",
+          "lineNumber": 73
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "TranscodingProfile",
+          "lineNumber": 76
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "toLowerCase",
+          "lineNumber": 77
+        },
+        {
+          "caller": "deviceProfile",
+          "callee": "toLowerCase",
+          "lineNumber": 78
+        },
+        {
+          "caller": "label",
+          "callee": "label",
+          "lineNumber": 92
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 7,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/models/trickplayer_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 177,
+      "nonEmptyLines": 139,
+      "functions": [
+        {
+          "name": "Bif",
+          "startLine": 11,
+          "endLine": 14,
+          "params": [
+            "version",
+            "widthResolutions"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 16,
+          "endLine": 19,
+          "params": [
+            "version",
+            "widthResolutions"
+          ]
+        },
+        {
+          "name": "toMap",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "Bif.fromMap",
+          "startLine": 33,
+          "endLine": 33,
+          "params": [
+            "map"
+          ]
+        },
+        {
+          "name": "toJson",
+          "startLine": 40,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "Bif.fromJson",
+          "startLine": 42,
+          "endLine": 42,
+          "params": [
+            "source"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 45,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "hashCode",
+          "startLine": 55,
+          "endLine": 55,
+          "params": []
+        },
+        {
+          "name": "trickPlayDecode",
+          "startLine": 62,
+          "endLine": 62,
+          "params": [
+            "array",
+            "width"
+          ]
+        },
+        {
+          "name": "Indexed8Array",
+          "startLine": 124,
+          "endLine": 126,
+          "params": [
+            "byteArray"
+          ]
+        },
+        {
+          "name": "read",
+          "startLine": 128,
+          "endLine": 128,
+          "params": []
+        },
+        {
+          "name": "addPosition",
+          "startLine": 132,
+          "endLine": 132,
+          "params": [
+            "amount"
+          ]
+        },
+        {
+          "name": "readInt32",
+          "startLine": 136,
+          "endLine": 136,
+          "params": []
+        },
+        {
+          "name": "getByteArray",
+          "startLine": 145,
+          "endLine": 145,
+          "params": []
+        },
+        {
+          "name": "limit",
+          "startLine": 149,
+          "endLine": 149,
+          "params": []
+        },
+        {
+          "name": "order",
+          "startLine": 153,
+          "endLine": 153,
+          "params": []
+        },
+        {
+          "name": "BifIndexEntry",
+          "startLine": 162,
+          "endLine": 162,
+          "params": [
+            "timestamp",
+            "offset"
+          ]
+        },
+        {
+          "name": "BifData",
+          "startLine": 171,
+          "endLine": 176,
+          "params": [
+            "bifVersion",
+            "bifImgCount",
+            "chapters",
+            "width"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Bif",
+          "startLine": 8,
+          "endLine": 56,
+          "methods": [
+            "Bif",
+            "copyWith",
+            "toMap",
+            "Bif.fromMap",
+            "toJson",
+            "Bif.fromJson",
+            "toString",
+            "hashCode"
+          ],
+          "properties": [
+            "version",
+            "widthResolutions"
+          ]
+        },
+        {
+          "name": "BifUtil",
+          "startLine": 58,
+          "endLine": 118,
+          "methods": [
+            "trickPlayDecode"
+          ],
+          "properties": [
+            "bifMagicNumbers"
+          ]
+        },
+        {
+          "name": "Indexed8Array",
+          "startLine": 120,
+          "endLine": 156,
+          "methods": [
+            "Indexed8Array",
+            "read",
+            "addPosition",
+            "readInt32",
+            "getByteArray",
+            "limit",
+            "order"
+          ],
+          "properties": [
+            "array",
+            "readIndex"
+          ]
+        },
+        {
+          "name": "BifIndexEntry",
+          "startLine": 158,
+          "endLine": 163,
+          "methods": [
+            "BifIndexEntry"
+          ],
+          "properties": [
+            "timestamp",
+            "offset"
+          ]
+        },
+        {
+          "name": "BifData",
+          "startLine": 165,
+          "endLine": 177,
+          "methods": [
+            "BifData"
+          ],
+          "properties": [
+            "bifVersion",
+            "bifImgCount",
+            "chapters",
+            "width"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Bif",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "toMap",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "Bif.fromMap",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "toJson",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "Bif.fromJson",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "Bif",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "trickPlayDecode",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "BifUtil",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "Indexed8Array",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "read",
+          "line": 128,
+          "isDefault": false
+        },
+        {
+          "name": "addPosition",
+          "line": 132,
+          "isDefault": false
+        },
+        {
+          "name": "readInt32",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "getByteArray",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "limit",
+          "line": 149,
+          "isDefault": false
+        },
+        {
+          "name": "order",
+          "line": 153,
+          "isDefault": false
+        },
+        {
+          "name": "Indexed8Array",
+          "line": 120,
+          "isDefault": false
+        },
+        {
+          "name": "BifIndexEntry",
+          "line": 162,
+          "isDefault": false
+        },
+        {
+          "name": "BifIndexEntry",
+          "line": 158,
+          "isDefault": false
+        },
+        {
+          "name": "BifData",
+          "line": 171,
+          "isDefault": false
+        },
+        {
+          "name": "BifData",
+          "line": 165,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "Bif",
+          "lineNumber": 20
+        },
+        {
+          "caller": "Bif.fromMap",
+          "callee": "Bif",
+          "lineNumber": 34
+        },
+        {
+          "caller": "toJson",
+          "callee": "encode",
+          "lineNumber": 40
+        },
+        {
+          "caller": "toJson",
+          "callee": "toMap",
+          "lineNumber": 40
+        },
+        {
+          "caller": "Bif.fromJson",
+          "callee": "fromMap",
+          "lineNumber": 42
+        },
+        {
+          "caller": "Bif.fromJson",
+          "callee": "decode",
+          "lineNumber": 42
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "Indexed8Array",
+          "lineNumber": 63
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "read",
+          "lineNumber": 66
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "print",
+          "lineNumber": 67
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "readInt32",
+          "lineNumber": 72
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "print",
+          "lineNumber": 74
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "print",
+          "lineNumber": 78
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "readInt32",
+          "lineNumber": 80
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "print",
+          "lineNumber": 82
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "print",
+          "lineNumber": 86
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "readInt32",
+          "lineNumber": 88
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "addPosition",
+          "lineNumber": 91
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "add",
+          "lineNumber": 95
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "BifIndexEntry",
+          "lineNumber": 95
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "readInt32",
+          "lineNumber": 95
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "readInt32",
+          "lineNumber": 95
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "limit",
+          "lineNumber": 103
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "sublistView",
+          "lineNumber": 105
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "view",
+          "lineNumber": 105
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "add",
+          "lineNumber": 107
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "Chapter",
+          "lineNumber": 108
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "Duration",
+          "lineNumber": 112
+        },
+        {
+          "caller": "trickPlayDecode",
+          "callee": "BifData",
+          "lineNumber": 116
+        },
+        {
+          "caller": "readInt32",
+          "callee": "read",
+          "lineNumber": 137
+        },
+        {
+          "caller": "readInt32",
+          "callee": "read",
+          "lineNumber": 138
+        },
+        {
+          "caller": "readInt32",
+          "callee": "read",
+          "lineNumber": 139
+        },
+        {
+          "caller": "readInt32",
+          "callee": "read",
+          "lineNumber": 140
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 23,
+        "functionCount": 18,
+        "classCount": 5
+      }
+    },
+    {
+      "path": "lib/models/video_stream_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 207,
+      "nonEmptyLines": 182,
+      "functions": [
+        {
+          "name": "name",
+          "startLine": 31,
+          "endLine": 31,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "VideoPlayback",
+          "startLine": 44,
+          "endLine": 49,
+          "params": [
+            "queue",
+            "currentItem",
+            "currentSyncedItem",
+            "currentStream"
+          ]
+        },
+        {
+          "name": "subStreams",
+          "startLine": 51,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "audioStreams",
+          "startLine": 52,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "previousVideo",
+          "startLine": 54,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "nextVideo",
+          "startLine": 62,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 70,
+          "endLine": 75,
+          "params": [
+            "queue",
+            "currentItem",
+            "currentSyncedItem",
+            "currentStream"
+          ]
+        },
+        {
+          "name": "clear",
+          "startLine": 84,
+          "endLine": 84,
+          "params": []
+        },
+        {
+          "name": "currentAudioStream",
+          "startLine": 106,
+          "endLine": 106,
+          "params": []
+        },
+        {
+          "name": "currentSubStream",
+          "startLine": 114,
+          "endLine": 114,
+          "params": []
+        },
+        {
+          "name": "VideoStream",
+          "startLine": 122,
+          "endLine": 134,
+          "params": [
+            "id",
+            "currentPosition",
+            "playbackType",
+            "playbackUrl",
+            "playSessionId",
+            "chapters",
+            "trickPlay",
+            "mediaSegments",
+            "audioStreamIndex",
+            "subtitleStreamIndex",
+            "mediaStreamsModel"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 136,
+          "endLine": 148,
+          "params": [
+            "id",
+            "currentPosition",
+            "playbackType",
+            "playbackUrl",
+            "playSessionId",
+            "chapters",
+            "trickPlay",
+            "mediaSegments",
+            "audioStreamIndex",
+            "subtitleStreamIndex",
+            "mediaStreamsModel"
+          ]
+        },
+        {
+          "name": "fromPlayBackInfo",
+          "startLine": 164,
+          "endLine": 164,
+          "params": [
+            "info",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PlaybackType",
+          "startLine": 18,
+          "endLine": 24,
+          "methods": [],
+          "properties": [
+            "directStream",
+            "offline",
+            "transcode",
+            "IconData"
+          ]
+        },
+        {
+          "name": "VideoPlayback",
+          "startLine": 39,
+          "endLine": 91,
+          "methods": [
+            "VideoPlayback",
+            "subStreams",
+            "audioStreams",
+            "previousVideo",
+            "nextVideo",
+            "copyWith",
+            "clear"
+          ],
+          "properties": [
+            "queue",
+            "currentItem",
+            "currentSyncedItem",
+            "currentStream"
+          ]
+        },
+        {
+          "name": "VideoStream",
+          "startLine": 93,
+          "endLine": 207,
+          "methods": [
+            "currentAudioStream",
+            "currentSubStream",
+            "VideoStream",
+            "copyWith",
+            "fromPlayBackInfo"
+          ],
+          "properties": [
+            "id",
+            "currentPosition",
+            "playbackType",
+            "playbackUrl",
+            "playSessionId",
+            "chapters",
+            "trickPlay",
+            "mediaSegments",
+            "audioStreamIndex",
+            "subtitleStreamIndex",
+            "mediaStreamsModel"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PlaybackType",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "name",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "VideoPlayback",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "subStreams",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "audioStreams",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "previousVideo",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "nextVideo",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "clear",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "VideoPlayback",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "currentAudioStream",
+          "line": 106,
+          "isDefault": false
+        },
+        {
+          "name": "currentSubStream",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "VideoStream",
+          "line": 122,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "fromPlayBackInfo",
+          "line": 164,
+          "isDefault": false
+        },
+        {
+          "name": "VideoStream",
+          "line": 93,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "name",
+          "callee": "switch",
+          "lineNumber": 31
+        },
+        {
+          "caller": "previousVideo",
+          "callee": "indexWhere",
+          "lineNumber": 55
+        },
+        {
+          "caller": "nextVideo",
+          "callee": "indexWhere",
+          "lineNumber": 63
+        },
+        {
+          "caller": "copyWith",
+          "callee": "VideoPlayback",
+          "lineNumber": 76
+        },
+        {
+          "caller": "clear",
+          "callee": "VideoPlayback",
+          "lineNumber": 85
+        },
+        {
+          "caller": "currentAudioStream",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 110
+        },
+        {
+          "caller": "currentSubStream",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 118
+        },
+        {
+          "caller": "copyWith",
+          "callee": "VideoStream",
+          "lineNumber": 149
+        },
+        {
+          "caller": "fromPlayBackInfo",
+          "callee": "read",
+          "lineNumber": 176
+        },
+        {
+          "caller": "fromPlayBackInfo",
+          "callee": "buildServerUrl",
+          "lineNumber": 187
+        },
+        {
+          "caller": "fromPlayBackInfo",
+          "callee": "buildServerUrl",
+          "lineNumber": 193
+        },
+        {
+          "caller": "fromPlayBackInfo",
+          "callee": "VideoStream",
+          "lineNumber": 199
+        },
+        {
+          "caller": "fromPlayBackInfo",
+          "callee": "fromMediaStreamsList",
+          "lineNumber": 204
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 16,
+        "functionCount": 13,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/models/view_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 231,
+      "nonEmptyLines": 217,
+      "functions": [
+        {
+          "name": "ViewModel",
+          "startLine": 36,
+          "endLine": 51,
+          "params": [
+            "name",
+            "id",
+            "serverId",
+            "dateCreated",
+            "canDelete",
+            "canDownload",
+            "parentId",
+            "collectionType",
+            "playAccess",
+            "recentlyAdded",
+            "imageData",
+            "childCount",
+            "path",
+            "refreshProgress"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 53,
+          "endLine": 67,
+          "params": [
+            "name",
+            "id",
+            "serverId",
+            "dateCreated",
+            "canDelete",
+            "canDownload",
+            "parentId",
+            "collectionType",
+            "playAccess",
+            "recentlyAdded",
+            "imageData",
+            "childCount",
+            "path"
+          ]
+        },
+        {
+          "name": "ViewModel.fromBodyDto",
+          "startLine": 85,
+          "endLine": 85,
+          "params": [
+            "item",
+            "ref"
+          ]
+        },
+        {
+          "name": "ViewModel.fromVirtualFolder",
+          "startLine": 103,
+          "endLine": 103,
+          "params": [
+            "item",
+            "ref"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 138,
+          "endLine": 138,
+          "params": []
+        },
+        {
+          "name": "navigateToView",
+          "startLine": 142,
+          "endLine": 142,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "createIcon",
+          "startLine": 158,
+          "endLine": 162,
+          "params": [
+            "context",
+            "selected",
+            "rounded"
+          ]
+        },
+        {
+          "name": "ViewModel.createEmpty",
+          "startLine": 182,
+          "endLine": 182,
+          "params": [
+            "id",
+            "collectionType"
+          ]
+        },
+        {
+          "name": "toNavigationButton",
+          "startLine": 199,
+          "endLine": 211,
+          "params": [
+            "selected",
+            "horizontal",
+            "expanded",
+            "action",
+            "label",
+            "onLongPress",
+            "onSecondaryTapDown",
+            "trailing",
+            "customIcon",
+            "selectedIcon",
+            "icon"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 228,
+          "endLine": 228,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ViewModel",
+          "startLine": 21,
+          "endLine": 231,
+          "methods": [
+            "ViewModel",
+            "copyWith",
+            "ViewModel.fromBodyDto",
+            "ViewModel.fromVirtualFolder",
+            "hashCode",
+            "navigateToView",
+            "createIcon",
+            "ViewModel.createEmpty",
+            "toNavigationButton",
+            "toString"
+          ],
+          "properties": [
+            "name",
+            "id",
+            "serverId",
+            "dateCreated",
+            "canDelete",
+            "canDownload",
+            "parentId",
+            "collectionType",
+            "playAccess",
+            "recentlyAdded",
+            "imageData",
+            "childCount",
+            "path",
+            "refreshProgress"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ViewModel",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "ViewModel.fromBodyDto",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "ViewModel.fromVirtualFolder",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "navigateToView",
+          "line": 142,
+          "isDefault": false
+        },
+        {
+          "name": "createIcon",
+          "line": 158,
+          "isDefault": false
+        },
+        {
+          "name": "ViewModel.createEmpty",
+          "line": 182,
+          "isDefault": false
+        },
+        {
+          "name": "toNavigationButton",
+          "line": 199,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 228,
+          "isDefault": false
+        },
+        {
+          "name": "ViewModel",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "ViewModel",
+          "lineNumber": 68
+        },
+        {
+          "caller": "ViewModel.fromBodyDto",
+          "callee": "ViewModel",
+          "lineNumber": 86
+        },
+        {
+          "caller": "ViewModel.fromBodyDto",
+          "callee": "now",
+          "lineNumber": 90
+        },
+        {
+          "caller": "ViewModel.fromBodyDto",
+          "callee": "fromBaseItem",
+          "lineNumber": 95
+        },
+        {
+          "caller": "ViewModel.fromVirtualFolder",
+          "callee": "ViewModel",
+          "lineNumber": 104
+        },
+        {
+          "caller": "ViewModel.fromVirtualFolder",
+          "callee": "now",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ViewModel.fromVirtualFolder",
+          "callee": "fromBaseItem",
+          "lineNumber": 114
+        },
+        {
+          "caller": "ViewModel.fromVirtualFolder",
+          "callee": "BaseItemDto",
+          "lineNumber": 115
+        },
+        {
+          "caller": "ViewModel.fromVirtualFolder",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 122
+        },
+        {
+          "caller": "ViewModel.fromVirtualFolder",
+          "callee": "toLowerCase",
+          "lineNumber": 122
+        },
+        {
+          "caller": "navigateToView",
+          "callee": "pushRoute",
+          "lineNumber": 144
+        },
+        {
+          "caller": "navigateToView",
+          "callee": "LiveTvRoute",
+          "lineNumber": 145
+        },
+        {
+          "caller": "navigateToView",
+          "callee": "pushRoute",
+          "lineNumber": 151
+        },
+        {
+          "caller": "navigateToView",
+          "callee": "LibrarySearchRoute",
+          "lineNumber": 152
+        },
+        {
+          "caller": "navigateToView",
+          "callee": "withFilter",
+          "lineNumber": 154
+        },
+        {
+          "caller": "createIcon",
+          "callee": "Container",
+          "lineNumber": 163
+        },
+        {
+          "caller": "createIcon",
+          "callee": "BoxDecoration",
+          "lineNumber": 164
+        },
+        {
+          "caller": "createIcon",
+          "callee": "square",
+          "lineNumber": 168
+        },
+        {
+          "caller": "createIcon",
+          "callee": "FladderImage",
+          "lineNumber": 170
+        },
+        {
+          "caller": "createIcon",
+          "callee": "Card",
+          "lineNumber": 172
+        },
+        {
+          "caller": "createIcon",
+          "callee": "Icon",
+          "lineNumber": 173
+        },
+        {
+          "caller": "ViewModel.createEmpty",
+          "callee": "ViewModel",
+          "lineNumber": 183
+        },
+        {
+          "caller": "ViewModel.createEmpty",
+          "callee": "now",
+          "lineNumber": 187
+        },
+        {
+          "caller": "toNavigationButton",
+          "callee": "NavigationButton",
+          "lineNumber": 212
+        },
+        {
+          "caller": "toNavigationButton",
+          "callee": "Icon",
+          "lineNumber": 222
+        },
+        {
+          "caller": "toNavigationButton",
+          "callee": "Icon",
+          "lineNumber": 223
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/models/views_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "ViewsModel",
+          "startLine": 8,
+          "endLine": 12,
+          "params": [
+            "loading",
+            "views",
+            "dashboardViews"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 14,
+          "endLine": 18,
+          "params": [
+            "loading",
+            "views",
+            "dashboardViews"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ViewsModel",
+          "startLine": 4,
+          "endLine": 24,
+          "methods": [
+            "ViewsModel",
+            "copyWith"
+          ],
+          "properties": [
+            "loading",
+            "views",
+            "dashboardViews"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ViewsModel",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "ViewsModel",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "ViewsModel",
+          "lineNumber": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/profiles/default_profile.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 40,
+      "functions": [
+        {
+          "name": "defaultProfile",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "player"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "defaultProfile",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "defaultProfile",
+          "callee": "DeviceProfile",
+          "lineNumber": 15
+        },
+        {
+          "caller": "defaultProfile",
+          "callee": "DirectPlayProfile",
+          "lineNumber": 20
+        },
+        {
+          "caller": "defaultProfile",
+          "callee": "DirectPlayProfile",
+          "lineNumber": 23
+        },
+        {
+          "caller": "defaultProfile",
+          "callee": "TranscodingProfile",
+          "lineNumber": 28
+        },
+        {
+          "caller": "defaultProfile",
+          "callee": "SubtitleProfile",
+          "lineNumber": 39
+        },
+        {
+          "caller": "defaultProfile",
+          "callee": "SubtitleProfile",
+          "lineNumber": 40
+        },
+        {
+          "caller": "defaultProfile",
+          "callee": "SubtitleProfile",
+          "lineNumber": 41
+        },
+        {
+          "caller": "defaultProfile",
+          "callee": "SubtitleProfile",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/profiles/web_profile.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 269,
+      "nonEmptyLines": 268,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/api_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 301,
+      "nonEmptyLines": 252,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 40,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "createJellyfinApiForAccount",
+          "startLine": 52,
+          "endLine": 52,
+          "params": [
+            "ref",
+            "baseUrl",
+            "headers"
+          ]
+        },
+        {
+          "name": "_TempJellyRequest",
+          "startLine": 63,
+          "endLine": 63,
+          "params": [
+            "baseUrl",
+            "headers"
+          ]
+        },
+        {
+          "name": "intercept",
+          "startLine": 69,
+          "endLine": 69,
+          "params": [
+            "chain"
+          ]
+        },
+        {
+          "name": "_isConnectionError",
+          "startLine": 79,
+          "endLine": 79,
+          "params": [
+            "e"
+          ]
+        },
+        {
+          "name": "JellyRequest",
+          "startLine": 84,
+          "endLine": 84,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "intercept",
+          "startLine": 89,
+          "endLine": 89,
+          "params": [
+            "chain"
+          ]
+        },
+        {
+          "name": "hasHttpScheme",
+          "startLine": 133,
+          "endLine": 133,
+          "params": [
+            "url"
+          ]
+        },
+        {
+          "name": "normalizeUrl",
+          "startLine": 138,
+          "endLine": 138,
+          "params": [
+            "url"
+          ]
+        },
+        {
+          "name": "_probeUrl",
+          "startLine": 159,
+          "endLine": 159,
+          "params": [
+            "baseUrl",
+            "endpoint"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "JellyApi",
+          "startLine": 38,
+          "endLine": 50,
+          "methods": [
+            "build"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_TempJellyRequest",
+          "startLine": 62,
+          "endLine": 75,
+          "methods": [
+            "_TempJellyRequest",
+            "intercept"
+          ],
+          "properties": [
+            "baseUrl",
+            "headers"
+          ]
+        },
+        {
+          "name": "JellyRequest",
+          "startLine": 83,
+          "endLine": 129,
+          "methods": [
+            "JellyRequest",
+            "intercept"
+          ],
+          "properties": [
+            "ref"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "JellyApi",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "createJellyfinApiForAccount",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "intercept",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "JellyRequest",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "intercept",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "JellyRequest",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "hasHttpScheme",
+          "line": 133,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeUrl",
+          "line": 138,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "JellyService",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "create",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "JellyRequest",
+          "lineNumber": 44
+        },
+        {
+          "caller": "build",
+          "callee": "JellyResponse",
+          "lineNumber": 45
+        },
+        {
+          "caller": "build",
+          "callee": "HttpLoggingInterceptor",
+          "lineNumber": 46
+        },
+        {
+          "caller": "createJellyfinApiForAccount",
+          "callee": "create",
+          "lineNumber": 53
+        },
+        {
+          "caller": "createJellyfinApiForAccount",
+          "callee": "_TempJellyRequest",
+          "lineNumber": 55
+        },
+        {
+          "caller": "createJellyfinApiForAccount",
+          "callee": "JellyResponse",
+          "lineNumber": 56
+        },
+        {
+          "caller": "createJellyfinApiForAccount",
+          "callee": "HttpLoggingInterceptor",
+          "lineNumber": 57
+        },
+        {
+          "caller": "intercept",
+          "callee": "HttpException",
+          "lineNumber": 70
+        },
+        {
+          "caller": "intercept",
+          "callee": "applyHeaders",
+          "lineNumber": 72
+        },
+        {
+          "caller": "intercept",
+          "callee": "copyWith",
+          "lineNumber": 72
+        },
+        {
+          "caller": "intercept",
+          "callee": "parse",
+          "lineNumber": 72
+        },
+        {
+          "caller": "intercept",
+          "callee": "proceed",
+          "lineNumber": 73
+        },
+        {
+          "caller": "intercept",
+          "callee": "read",
+          "lineNumber": 90
+        },
+        {
+          "caller": "intercept",
+          "callee": "waitForProbe",
+          "lineNumber": 91
+        },
+        {
+          "caller": "intercept",
+          "callee": "read",
+          "lineNumber": 92
+        },
+        {
+          "caller": "intercept",
+          "callee": "HttpException",
+          "lineNumber": 95
+        },
+        {
+          "caller": "intercept",
+          "callee": "read",
+          "lineNumber": 99
+        },
+        {
+          "caller": "intercept",
+          "callee": "read",
+          "lineNumber": 99
+        },
+        {
+          "caller": "intercept",
+          "callee": "UnimplementedError",
+          "lineNumber": 101
+        },
+        {
+          "caller": "intercept",
+          "callee": "header",
+          "lineNumber": 104
+        },
+        {
+          "caller": "intercept",
+          "callee": "proceed",
+          "lineNumber": 108
+        },
+        {
+          "caller": "intercept",
+          "callee": "applyHeaders",
+          "lineNumber": 109
+        },
+        {
+          "caller": "intercept",
+          "callee": "copyWith",
+          "lineNumber": 110
+        },
+        {
+          "caller": "intercept",
+          "callee": "parse",
+          "lineNumber": 110
+        },
+        {
+          "caller": "intercept",
+          "callee": "unawaited",
+          "lineNumber": 114
+        },
+        {
+          "caller": "intercept",
+          "callee": "checkConnectivity",
+          "lineNumber": 114
+        },
+        {
+          "caller": "intercept",
+          "callee": "_isConnectionError",
+          "lineNumber": 117
+        },
+        {
+          "caller": "intercept",
+          "callee": "unawaited",
+          "lineNumber": 118
+        },
+        {
+          "caller": "intercept",
+          "callee": "checkConnectivity",
+          "lineNumber": 118
+        },
+        {
+          "caller": "intercept",
+          "callee": "Duration",
+          "lineNumber": 122
+        },
+        {
+          "caller": "intercept",
+          "callee": "log",
+          "lineNumber": 123
+        },
+        {
+          "caller": "intercept",
+          "callee": "delayed",
+          "lineNumber": 124
+        },
+        {
+          "caller": "intercept",
+          "callee": "StateError",
+          "lineNumber": 127
+        },
+        {
+          "caller": "hasHttpScheme",
+          "callee": "toLowerCase",
+          "lineNumber": 134
+        },
+        {
+          "caller": "hasHttpScheme",
+          "callee": "startsWith",
+          "lineNumber": 135
+        },
+        {
+          "caller": "hasHttpScheme",
+          "callee": "startsWith",
+          "lineNumber": 135
+        },
+        {
+          "caller": "normalizeUrl",
+          "callee": "trim",
+          "lineNumber": 139
+        },
+        {
+          "caller": "normalizeUrl",
+          "callee": "hasHttpScheme",
+          "lineNumber": 142
+        },
+        {
+          "caller": "normalizeUrl",
+          "callee": "parse",
+          "lineNumber": 143
+        },
+        {
+          "caller": "normalizeUrl",
+          "callee": "any",
+          "lineNumber": 147
+        },
+        {
+          "caller": "normalizeUrl",
+          "callee": "toString",
+          "lineNumber": 149
+        },
+        {
+          "caller": "normalizeUrl",
+          "callee": "PunycodeCodec",
+          "lineNumber": 152
+        },
+        {
+          "caller": "normalizeUrl",
+          "callee": "encode",
+          "lineNumber": 152
+        },
+        {
+          "caller": "normalizeUrl",
+          "callee": "replace",
+          "lineNumber": 153
+        },
+        {
+          "caller": "normalizeUrl",
+          "callee": "toString",
+          "lineNumber": 153
+        },
+        {
+          "caller": "normalizeUrl",
+          "callee": "toString",
+          "lineNumber": 155
+        },
+        {
+          "caller": "_probeUrl",
+          "callee": "head",
+          "lineNumber": 161
+        },
+        {
+          "caller": "_probeUrl",
+          "callee": "parse",
+          "lineNumber": 161
+        },
+        {
+          "caller": "_probeUrl",
+          "callee": "timeout",
+          "lineNumber": 161
+        },
+        {
+          "caller": "_probeUrl",
+          "callee": "Duration",
+          "lineNumber": 161
+        },
+        {
+          "caller": "_probeUrl",
+          "callee": "log",
+          "lineNumber": 166
+        },
+        {
+          "caller": "probeSeerrUrl",
+          "callee": "_probeUrl",
+          "lineNumber": 172
+        },
+        {
+          "caller": "probeJellyfinUrl",
+          "callee": "_probeUrl",
+          "lineNumber": 175
+        },
+        {
+          "caller": "probeAndNormalizeUrl",
+          "callee": "hasHttpScheme",
+          "lineNumber": 184
+        },
+        {
+          "caller": "probeAndNormalizeUrl",
+          "callee": "normalizeUrl",
+          "lineNumber": 185
+        },
+        {
+          "caller": "probeAndNormalizeUrl",
+          "callee": "normalizeUrl",
+          "lineNumber": 186
+        },
+        {
+          "caller": "probeAndNormalizeUrl",
+          "callee": "probeFn",
+          "lineNumber": 187
+        },
+        {
+          "caller": "probeAndNormalizeUrl",
+          "callee": "probeFn",
+          "lineNumber": 188
+        },
+        {
+          "caller": "tryParseServerBaseUri",
+          "callee": "trim",
+          "lineNumber": 198
+        },
+        {
+          "caller": "tryParseServerBaseUri",
+          "callee": "tryParse",
+          "lineNumber": 201
+        },
+        {
+          "caller": "serverBaseUri",
+          "callee": "tryParseServerBaseUri",
+          "lineNumber": 206
+        },
+        {
+          "caller": "serverBaseUri",
+          "callee": "read",
+          "lineNumber": 206
+        },
+        {
+          "caller": "buildServerUriFromBase",
+          "callee": "tryParseServerBaseUri",
+          "lineNumber": 214
+        },
+        {
+          "caller": "buildServerUriFromBase",
+          "callee": "trim",
+          "lineNumber": 218
+        },
+        {
+          "caller": "buildServerUriFromBase",
+          "callee": "tryParse",
+          "lineNumber": 219
+        },
+        {
+          "caller": "buildServerUriFromBase",
+          "callee": "trim",
+          "lineNumber": 219
+        },
+        {
+          "caller": "buildServerUriFromBase",
+          "callee": "where",
+          "lineNumber": 226
+        },
+        {
+          "caller": "buildServerUriFromBase",
+          "callee": "toList",
+          "lineNumber": 226
+        },
+        {
+          "caller": "buildServerUriFromBase",
+          "callee": "where",
+          "lineNumber": 227
+        },
+        {
+          "caller": "buildServerUriFromBase",
+          "callee": "toList",
+          "lineNumber": 227
+        },
+        {
+          "caller": "buildServerUriFromBase",
+          "callee": "where",
+          "lineNumber": 228
+        },
+        {
+          "caller": "buildServerUriFromBase",
+          "callee": "toList",
+          "lineNumber": 228
+        },
+        {
+          "caller": "buildServerUriFromBase",
+          "callee": "Uri",
+          "lineNumber": 241
+        },
+        {
+          "caller": "buildServerUri",
+          "callee": "read",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildServerUri",
+          "callee": "buildServerUriFromBase",
+          "lineNumber": 260
+        },
+        {
+          "caller": "buildServerUrl",
+          "callee": "buildServerUri",
+          "lineNumber": 274
+        },
+        {
+          "caller": "intercept",
+          "callee": "proceed",
+          "lineNumber": 290
+        },
+        {
+          "caller": "intercept",
+          "callee": "log",
+          "lineNumber": 293
+        },
+        {
+          "caller": "intercept",
+          "callee": "toString",
+          "lineNumber": 293
+        },
+        {
+          "caller": "intercept",
+          "callee": "severe",
+          "lineNumber": 296
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 10,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/providers/api_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "_$jellyApiHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/arguments_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/audio_lyrics_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 362,
+      "nonEmptyLines": 305,
+      "functions": [
+        {
+          "name": "lines",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "hasLyrics",
+          "startLine": 35,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 37,
+          "endLine": 44,
+          "params": [
+            "itemId",
+            "rawLines",
+            "trackDuration",
+            "activeLineIndex",
+            "loading",
+            "autoFollow"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 56,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "isSyncedLyricPayload",
+          "startLine": 76,
+          "endLine": 76,
+          "params": [
+            "body"
+          ]
+        },
+        {
+          "name": "parseSyncedLines",
+          "startLine": 89,
+          "endLine": 89,
+          "params": [
+            "body"
+          ]
+        },
+        {
+          "name": "buildTimeline",
+          "startLine": 100,
+          "endLine": 103,
+          "params": [
+            "body",
+            "trackDuration"
+          ]
+        },
+        {
+          "name": "_parseLines",
+          "startLine": 111,
+          "endLine": 114,
+          "params": [
+            "lines",
+            "offsetMs"
+          ]
+        },
+        {
+          "name": "_parseLyricStart",
+          "startLine": 129,
+          "endLine": 129,
+          "params": [
+            "value",
+            "offsetMs"
+          ]
+        },
+        {
+          "name": "injectInstrumentalGaps",
+          "startLine": 139,
+          "endLine": 142,
+          "params": [
+            "lyrics",
+            "trackDuration"
+          ]
+        },
+        {
+          "name": "_addGapMarkers",
+          "startLine": 195,
+          "endLine": 200,
+          "params": [
+            "timeline",
+            "from",
+            "to",
+            "includeStart"
+          ]
+        },
+        {
+          "name": "AudioLyricsNotifier",
+          "startLine": 228,
+          "endLine": 228,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "loadForTrack",
+          "startLine": 234,
+          "endLine": 234,
+          "params": [
+            "itemId"
+          ]
+        },
+        {
+          "name": "updatePosition",
+          "startLine": 305,
+          "endLine": 305,
+          "params": [
+            "position"
+          ]
+        },
+        {
+          "name": "detachSync",
+          "startLine": 318,
+          "endLine": 318,
+          "params": []
+        },
+        {
+          "name": "returnToSync",
+          "startLine": 326,
+          "endLine": 326,
+          "params": []
+        },
+        {
+          "name": "clear",
+          "startLine": 334,
+          "endLine": 334,
+          "params": []
+        },
+        {
+          "name": "seekToLine",
+          "startLine": 338,
+          "endLine": 338,
+          "params": [
+            "line"
+          ]
+        },
+        {
+          "name": "_findActiveIndex",
+          "startLine": 343,
+          "endLine": 343,
+          "params": [
+            "position",
+            "lines"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AudioLyricsState",
+          "startLine": 11,
+          "endLine": 59,
+          "methods": [
+            "lines",
+            "hasLyrics",
+            "copyWith",
+            "toString"
+          ],
+          "properties": [
+            "itemId",
+            "rawLines",
+            "trackDuration",
+            "activeLineIndex",
+            "loading",
+            "autoFollow"
+          ]
+        },
+        {
+          "name": "SyncedLyricLine",
+          "startLine": 61,
+          "endLine": 71,
+          "methods": [],
+          "properties": [
+            "text",
+            "start",
+            "isInstrumentalGap"
+          ]
+        },
+        {
+          "name": "AudioLyricsTimelineBuilder",
+          "startLine": 73,
+          "endLine": 225,
+          "methods": [
+            "isSyncedLyricPayload",
+            "parseSyncedLines",
+            "buildTimeline",
+            "_parseLines",
+            "_parseLyricStart",
+            "injectInstrumentalGaps",
+            "_addGapMarkers"
+          ],
+          "properties": []
+        },
+        {
+          "name": "AudioLyricsNotifier",
+          "startLine": 227,
+          "endLine": 362,
+          "methods": [
+            "AudioLyricsNotifier",
+            "loadForTrack",
+            "updatePosition",
+            "detachSync",
+            "returnToSync",
+            "clear",
+            "seekToLine",
+            "_findActiveIndex"
+          ],
+          "properties": [
+            "ref",
+            "_cache"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "lines",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "hasLyrics",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "AudioLyricsState",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SyncedLyricLine",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "isSyncedLyricPayload",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "parseSyncedLines",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "buildTimeline",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "injectInstrumentalGaps",
+          "line": 139,
+          "isDefault": false
+        },
+        {
+          "name": "AudioLyricsTimelineBuilder",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "AudioLyricsNotifier",
+          "line": 228,
+          "isDefault": false
+        },
+        {
+          "name": "loadForTrack",
+          "line": 234,
+          "isDefault": false
+        },
+        {
+          "name": "updatePosition",
+          "line": 305,
+          "isDefault": false
+        },
+        {
+          "name": "detachSync",
+          "line": 318,
+          "isDefault": false
+        },
+        {
+          "name": "returnToSync",
+          "line": 326,
+          "isDefault": false
+        },
+        {
+          "name": "clear",
+          "line": 334,
+          "isDefault": false
+        },
+        {
+          "name": "seekToLine",
+          "line": 338,
+          "isDefault": false
+        },
+        {
+          "name": "AudioLyricsNotifier",
+          "line": 227,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "lines",
+          "callee": "injectInstrumentalGaps",
+          "lineNumber": 29
+        },
+        {
+          "caller": "copyWith",
+          "callee": "AudioLyricsState",
+          "lineNumber": 45
+        },
+        {
+          "caller": "isSyncedLyricPayload",
+          "callee": "any",
+          "lineNumber": 86
+        },
+        {
+          "caller": "isSyncedLyricPayload",
+          "callee": "trim",
+          "lineNumber": 86
+        },
+        {
+          "caller": "parseSyncedLines",
+          "callee": "isSyncedLyricPayload",
+          "lineNumber": 90
+        },
+        {
+          "caller": "parseSyncedLines",
+          "callee": "_parseLines",
+          "lineNumber": 94
+        },
+        {
+          "caller": "buildTimeline",
+          "callee": "parseSyncedLines",
+          "lineNumber": 104
+        },
+        {
+          "caller": "buildTimeline",
+          "callee": "injectInstrumentalGaps",
+          "lineNumber": 105
+        },
+        {
+          "caller": "_parseLines",
+          "callee": "map",
+          "lineNumber": 116
+        },
+        {
+          "caller": "_parseLines",
+          "callee": "SyncedLyricLine",
+          "lineNumber": 117
+        },
+        {
+          "caller": "_parseLines",
+          "callee": "trim",
+          "lineNumber": 118
+        },
+        {
+          "caller": "_parseLines",
+          "callee": "_parseLyricStart",
+          "lineNumber": 119
+        },
+        {
+          "caller": "_parseLines",
+          "callee": "where",
+          "lineNumber": 122
+        },
+        {
+          "caller": "_parseLines",
+          "callee": "toList",
+          "lineNumber": 123
+        },
+        {
+          "caller": "_parseLines",
+          "callee": "compareTo",
+          "lineNumber": 124
+        },
+        {
+          "caller": "_parseLyricStart",
+          "callee": "Duration",
+          "lineNumber": 134
+        },
+        {
+          "caller": "_parseLyricStart",
+          "callee": "Duration",
+          "lineNumber": 134
+        },
+        {
+          "caller": "_parseLyricStart",
+          "callee": "Duration",
+          "lineNumber": 135
+        },
+        {
+          "caller": "injectInstrumentalGaps",
+          "callee": "where",
+          "lineNumber": 147
+        },
+        {
+          "caller": "injectInstrumentalGaps",
+          "callee": "toList",
+          "lineNumber": 147
+        },
+        {
+          "caller": "injectInstrumentalGaps",
+          "callee": "compareTo",
+          "lineNumber": 148
+        },
+        {
+          "caller": "injectInstrumentalGaps",
+          "callee": "_addGapMarkers",
+          "lineNumber": 158
+        },
+        {
+          "caller": "injectInstrumentalGaps",
+          "callee": "add",
+          "lineNumber": 168
+        },
+        {
+          "caller": "injectInstrumentalGaps",
+          "callee": "_addGapMarkers",
+          "lineNumber": 175
+        },
+        {
+          "caller": "injectInstrumentalGaps",
+          "callee": "_addGapMarkers",
+          "lineNumber": 184
+        },
+        {
+          "caller": "injectInstrumentalGaps",
+          "callee": "sort",
+          "lineNumber": 191
+        },
+        {
+          "caller": "injectInstrumentalGaps",
+          "callee": "compareTo",
+          "lineNumber": 191
+        },
+        {
+          "caller": "_addGapMarkers",
+          "callee": "add",
+          "lineNumber": 207
+        },
+        {
+          "caller": "_addGapMarkers",
+          "callee": "SyncedLyricLine",
+          "lineNumber": 208
+        },
+        {
+          "caller": "_addGapMarkers",
+          "callee": "add",
+          "lineNumber": 217
+        },
+        {
+          "caller": "_addGapMarkers",
+          "callee": "SyncedLyricLine",
+          "lineNumber": 218
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "AudioLyricsState",
+          "lineNumber": 236
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "read",
+          "lineNumber": 245
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "injectInstrumentalGaps",
+          "lineNumber": 247
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "_findActiveIndex",
+          "lineNumber": 251
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "read",
+          "lineNumber": 252
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "AudioLyricsState",
+          "lineNumber": 255
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "AudioLyricsState",
+          "lineNumber": 266
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "read",
+          "lineNumber": 275
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "audioItemIdLyricsGet",
+          "lineNumber": 275
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "parseSyncedLines",
+          "lineNumber": 277
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "injectInstrumentalGaps",
+          "lineNumber": 278
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "AudioLyricsState",
+          "lineNumber": 281
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "_findActiveIndex",
+          "lineNumber": 293
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "read",
+          "lineNumber": 293
+        },
+        {
+          "caller": "loadForTrack",
+          "callee": "AudioLyricsState",
+          "lineNumber": 295
+        },
+        {
+          "caller": "updatePosition",
+          "callee": "_findActiveIndex",
+          "lineNumber": 310
+        },
+        {
+          "caller": "updatePosition",
+          "callee": "copyWith",
+          "lineNumber": 315
+        },
+        {
+          "caller": "detachSync",
+          "callee": "copyWith",
+          "lineNumber": 323
+        },
+        {
+          "caller": "returnToSync",
+          "callee": "copyWith",
+          "lineNumber": 331
+        },
+        {
+          "caller": "clear",
+          "callee": "AudioLyricsState",
+          "lineNumber": 335
+        },
+        {
+          "caller": "seekToLine",
+          "callee": "read",
+          "lineNumber": 339
+        },
+        {
+          "caller": "seekToLine",
+          "callee": "seek",
+          "lineNumber": 339
+        },
+        {
+          "caller": "seekToLine",
+          "callee": "updatePosition",
+          "lineNumber": 340
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 19,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "lib/providers/auth_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 259,
+      "nonEmptyLines": 227,
+      "functions": [
+        {
+          "name": "AuthNotifier",
+          "startLine": 35,
+          "endLine": 35,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "localContext",
+          "startLine": 41,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "initModel",
+          "startLine": 43,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "_fetchServerInfo",
+          "startLine": 62,
+          "endLine": 62,
+          "params": [
+            "url"
+          ]
+        },
+        {
+          "name": "getPublicUsers",
+          "startLine": 101,
+          "endLine": 101,
+          "params": []
+        },
+        {
+          "name": "authenticateUsingSecret",
+          "startLine": 124,
+          "endLine": 124,
+          "params": [
+            "secret"
+          ]
+        },
+        {
+          "name": "authenticateByName",
+          "startLine": 130,
+          "endLine": 130,
+          "params": [
+            "userName",
+            "password"
+          ]
+        },
+        {
+          "name": "_createAccountModel",
+          "startLine": 136,
+          "endLine": 136,
+          "params": [
+            "response"
+          ]
+        },
+        {
+          "name": "logOutUser",
+          "startLine": 167,
+          "endLine": 167,
+          "params": []
+        },
+        {
+          "name": "switchUser",
+          "startLine": 181,
+          "endLine": 181,
+          "params": []
+        },
+        {
+          "name": "clearAllProviders",
+          "startLine": 183,
+          "endLine": 183,
+          "params": []
+        },
+        {
+          "name": "setServer",
+          "startLine": 193,
+          "endLine": 193,
+          "params": [
+            "server"
+          ]
+        },
+        {
+          "name": "_hasLocalNetworkPermission",
+          "startLine": 206,
+          "endLine": 206,
+          "params": [
+            "url"
+          ]
+        },
+        {
+          "name": "getSavedAccounts",
+          "startLine": 210,
+          "endLine": 210,
+          "params": []
+        },
+        {
+          "name": "reOrderUsers",
+          "startLine": 215,
+          "endLine": 215,
+          "params": [
+            "oldIndex",
+            "newIndex"
+          ]
+        },
+        {
+          "name": "addNewUser",
+          "startLine": 222,
+          "endLine": 222,
+          "params": []
+        },
+        {
+          "name": "goUserSelect",
+          "startLine": 228,
+          "endLine": 228,
+          "params": []
+        },
+        {
+          "name": "_findSeerrUrlForServer",
+          "startLine": 235,
+          "endLine": 235,
+          "params": [
+            "serverId"
+          ]
+        },
+        {
+          "name": "setTempSeerrUrl",
+          "startLine": 252,
+          "endLine": 252,
+          "params": [
+            "url"
+          ]
+        },
+        {
+          "name": "setTempSeerrSessionCookie",
+          "startLine": 256,
+          "endLine": 256,
+          "params": [
+            "cookie"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthNotifier",
+          "startLine": 34,
+          "endLine": 259,
+          "methods": [
+            "AuthNotifier",
+            "localContext",
+            "initModel",
+            "_fetchServerInfo",
+            "getPublicUsers",
+            "authenticateUsingSecret",
+            "authenticateByName",
+            "_createAccountModel",
+            "logOutUser",
+            "switchUser",
+            "clearAllProviders",
+            "setServer",
+            "_hasLocalNetworkPermission",
+            "getSavedAccounts",
+            "reOrderUsers",
+            "addNewUser",
+            "goUserSelect",
+            "_findSeerrUrlForServer",
+            "setTempSeerrUrl",
+            "setTempSeerrSessionCookie"
+          ],
+          "properties": [
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuthNotifier",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "localContext",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "initModel",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "getPublicUsers",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "authenticateUsingSecret",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "authenticateByName",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "logOutUser",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "switchUser",
+          "line": 181,
+          "isDefault": false
+        },
+        {
+          "name": "clearAllProviders",
+          "line": 183,
+          "isDefault": false
+        },
+        {
+          "name": "setServer",
+          "line": 193,
+          "isDefault": false
+        },
+        {
+          "name": "getSavedAccounts",
+          "line": 210,
+          "isDefault": false
+        },
+        {
+          "name": "reOrderUsers",
+          "line": 215,
+          "isDefault": false
+        },
+        {
+          "name": "addNewUser",
+          "line": 222,
+          "isDefault": false
+        },
+        {
+          "name": "goUserSelect",
+          "line": 228,
+          "isDefault": false
+        },
+        {
+          "name": "setTempSeerrUrl",
+          "line": 252,
+          "isDefault": false
+        },
+        {
+          "name": "setTempSeerrSessionCookie",
+          "line": 256,
+          "isDefault": false
+        },
+        {
+          "name": "AuthNotifier",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "localContext",
+          "callee": "read",
+          "lineNumber": 41
+        },
+        {
+          "caller": "initModel",
+          "callee": "read",
+          "lineNumber": 44
+        },
+        {
+          "caller": "initModel",
+          "callee": "clear",
+          "lineNumber": 44
+        },
+        {
+          "caller": "initModel",
+          "callee": "read",
+          "lineNumber": 45
+        },
+        {
+          "caller": "initModel",
+          "callee": "getSavedAccounts",
+          "lineNumber": 45
+        },
+        {
+          "caller": "initModel",
+          "callee": "read",
+          "lineNumber": 46
+        },
+        {
+          "caller": "initModel",
+          "callee": "update",
+          "lineNumber": 46
+        },
+        {
+          "caller": "initModel",
+          "callee": "copyWith",
+          "lineNumber": 49
+        },
+        {
+          "caller": "initModel",
+          "callee": "setServer",
+          "lineNumber": 53
+        },
+        {
+          "caller": "initModel",
+          "callee": "copyWith",
+          "lineNumber": 56
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "createNewCredentials",
+          "lineNumber": 64
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "copyWith",
+          "lineNumber": 64
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "ServerLoginModel",
+          "lineNumber": 65
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "copyWith",
+          "lineNumber": 66
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "getPublicUsers",
+          "lineNumber": 70
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "quickConnectEnabled",
+          "lineNumber": 71
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "getBranding",
+          "lineNumber": 72
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "systemInfoPublicGet",
+          "lineNumber": 73
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "copyWith",
+          "lineNumber": 75
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "copyWith",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "copyWith",
+          "lineNumber": 79
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "_findSeerrUrlForServer",
+          "lineNumber": 90
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "setTempSeerrUrl",
+          "lineNumber": 91
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "copyWith",
+          "lineNumber": 93
+        },
+        {
+          "caller": "_fetchServerInfo",
+          "callee": "show",
+          "lineNumber": 97
+        },
+        {
+          "caller": "getPublicUsers",
+          "callee": "copyWith",
+          "lineNumber": 103
+        },
+        {
+          "caller": "getPublicUsers",
+          "callee": "usersPublicGet",
+          "lineNumber": 106
+        },
+        {
+          "caller": "getPublicUsers",
+          "callee": "copyWith",
+          "lineNumber": 109
+        },
+        {
+          "caller": "getPublicUsers",
+          "callee": "toList",
+          "lineNumber": 109
+        },
+        {
+          "caller": "getPublicUsers",
+          "callee": "copyWith",
+          "lineNumber": 111
+        },
+        {
+          "caller": "getPublicUsers",
+          "callee": "copyWith",
+          "lineNumber": 116
+        },
+        {
+          "caller": "getPublicUsers",
+          "callee": "copyWith",
+          "lineNumber": 120
+        },
+        {
+          "caller": "authenticateUsingSecret",
+          "callee": "clearAllProviders",
+          "lineNumber": 125
+        },
+        {
+          "caller": "authenticateUsingSecret",
+          "callee": "quickConnectAuthenticate",
+          "lineNumber": 126
+        },
+        {
+          "caller": "authenticateUsingSecret",
+          "callee": "_createAccountModel",
+          "lineNumber": 127
+        },
+        {
+          "caller": "authenticateByName",
+          "callee": "clearAllProviders",
+          "lineNumber": 131
+        },
+        {
+          "caller": "authenticateByName",
+          "callee": "usersAuthenticateByNamePost",
+          "lineNumber": 132
+        },
+        {
+          "caller": "authenticateByName",
+          "callee": "_createAccountModel",
+          "lineNumber": 133
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "Response",
+          "lineNumber": 138
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "systemInfoPublicGet",
+          "lineNumber": 140
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "copyWith",
+          "lineNumber": 141
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "read",
+          "lineNumber": 146
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "getUserImageUrl",
+          "lineNumber": 146
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "AccountModel",
+          "lineNumber": 147
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "now",
+          "lineNumber": 152
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "read",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "addAccount",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "read",
+          "lineNumber": 155
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "read",
+          "lineNumber": 156
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "getSavedAccounts",
+          "lineNumber": 156
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "copyWith",
+          "lineNumber": 158
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "Response",
+          "lineNumber": 162
+        },
+        {
+          "caller": "_createAccountModel",
+          "callee": "Response",
+          "lineNumber": 164
+        },
+        {
+          "caller": "logOutUser",
+          "callee": "read",
+          "lineNumber": 168
+        },
+        {
+          "caller": "logOutUser",
+          "callee": "copyWith",
+          "lineNumber": 169
+        },
+        {
+          "caller": "logOutUser",
+          "callee": "read",
+          "lineNumber": 170
+        },
+        {
+          "caller": "logOutUser",
+          "callee": "removeAccount",
+          "lineNumber": 170
+        },
+        {
+          "caller": "logOutUser",
+          "callee": "read",
+          "lineNumber": 173
+        },
+        {
+          "caller": "logOutUser",
+          "callee": "logout",
+          "lineNumber": 173
+        },
+        {
+          "caller": "logOutUser",
+          "callee": "clearAllProviders",
+          "lineNumber": 177
+        },
+        {
+          "caller": "switchUser",
+          "callee": "clearAllProviders",
+          "lineNumber": 181
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "read",
+          "lineNumber": 184
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "clear",
+          "lineNumber": 184
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "read",
+          "lineNumber": 185
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "clear",
+          "lineNumber": 185
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "read",
+          "lineNumber": 186
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "clear",
+          "lineNumber": 186
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "read",
+          "lineNumber": 187
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "clear",
+          "lineNumber": 187
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "read",
+          "lineNumber": 188
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "clear",
+          "lineNumber": 188
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "read",
+          "lineNumber": 189
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "clear",
+          "lineNumber": 189
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "read",
+          "lineNumber": 190
+        },
+        {
+          "caller": "clearAllProviders",
+          "callee": "clear",
+          "lineNumber": 190
+        },
+        {
+          "caller": "setServer",
+          "callee": "_hasLocalNetworkPermission",
+          "lineNumber": 195
+        },
+        {
+          "caller": "setServer",
+          "callee": "_fetchServerInfo",
+          "lineNumber": 196
+        },
+        {
+          "caller": "setServer",
+          "callee": "trim",
+          "lineNumber": 199
+        },
+        {
+          "caller": "setServer",
+          "callee": "_hasLocalNetworkPermission",
+          "lineNumber": 201
+        },
+        {
+          "caller": "setServer",
+          "callee": "probeAndNormalizeUrl",
+          "lineNumber": 202
+        },
+        {
+          "caller": "setServer",
+          "callee": "_fetchServerInfo",
+          "lineNumber": 203
+        },
+        {
+          "caller": "_hasLocalNetworkPermission",
+          "callee": "ensureLocalNetworkPermission",
+          "lineNumber": 207
+        },
+        {
+          "caller": "getSavedAccounts",
+          "callee": "copyWith",
+          "lineNumber": 211
+        },
+        {
+          "caller": "getSavedAccounts",
+          "callee": "read",
+          "lineNumber": 211
+        },
+        {
+          "caller": "getSavedAccounts",
+          "callee": "getAccounts",
+          "lineNumber": 211
+        },
+        {
+          "caller": "reOrderUsers",
+          "callee": "toList",
+          "lineNumber": 216
+        },
+        {
+          "caller": "reOrderUsers",
+          "callee": "reorderInPlace",
+          "lineNumber": 217
+        },
+        {
+          "caller": "reOrderUsers",
+          "callee": "copyWith",
+          "lineNumber": 218
+        },
+        {
+          "caller": "reOrderUsers",
+          "callee": "read",
+          "lineNumber": 219
+        },
+        {
+          "caller": "reOrderUsers",
+          "callee": "saveAccounts",
+          "lineNumber": 219
+        },
+        {
+          "caller": "addNewUser",
+          "callee": "copyWith",
+          "lineNumber": 223
+        },
+        {
+          "caller": "goUserSelect",
+          "callee": "copyWith",
+          "lineNumber": 229
+        },
+        {
+          "caller": "_findSeerrUrlForServer",
+          "callee": "where",
+          "lineNumber": 240
+        },
+        {
+          "caller": "_findSeerrUrlForServer",
+          "callee": "toList",
+          "lineNumber": 247
+        },
+        {
+          "caller": "_findSeerrUrlForServer",
+          "callee": "compareTo",
+          "lineNumber": 247
+        },
+        {
+          "caller": "setTempSeerrUrl",
+          "callee": "copyWith",
+          "lineNumber": 253
+        },
+        {
+          "caller": "setTempSeerrSessionCookie",
+          "callee": "copyWith",
+          "lineNumber": 257
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 17,
+        "functionCount": 20,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/book_viewer_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 189,
+      "nonEmptyLines": 156,
+      "functions": [
+        {
+          "name": "BookViewerModel",
+          "startLine": 22,
+          "endLine": 27,
+          "params": [
+            "book",
+            "loading",
+            "pages",
+            "currentPage"
+          ]
+        },
+        {
+          "name": "clampedCurrentPage",
+          "startLine": 29,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 31,
+          "endLine": 36,
+          "params": [
+            "book",
+            "loading",
+            "pages",
+            "currentPage"
+          ]
+        },
+        {
+          "name": "BookViewerNotifier",
+          "startLine": 51,
+          "endLine": 51,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "fetchBook",
+          "startLine": 59,
+          "endLine": 59,
+          "params": [
+            "book"
+          ]
+        },
+        {
+          "name": "_isImageFile",
+          "startLine": 104,
+          "endLine": 104,
+          "params": [
+            "filePath"
+          ]
+        },
+        {
+          "name": "updatePlayback",
+          "startLine": 110,
+          "endLine": 110,
+          "params": [
+            "page"
+          ]
+        },
+        {
+          "name": "_stopPlaybackOldState",
+          "startLine": 123,
+          "endLine": 123,
+          "params": [
+            "oldState"
+          ]
+        },
+        {
+          "name": "stopPlayback",
+          "startLine": 145,
+          "endLine": 145,
+          "params": []
+        },
+        {
+          "name": "_cleanUp",
+          "startLine": 167,
+          "endLine": 167,
+          "params": []
+        },
+        {
+          "name": "setPage",
+          "startLine": 184,
+          "endLine": 184,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "setBook",
+          "startLine": 186,
+          "endLine": 186,
+          "params": [
+            "book"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BookViewerModel",
+          "startLine": 17,
+          "endLine": 44,
+          "methods": [
+            "BookViewerModel",
+            "clampedCurrentPage",
+            "copyWith"
+          ],
+          "properties": [
+            "book",
+            "loading",
+            "pages",
+            "currentPage"
+          ]
+        },
+        {
+          "name": "BookViewerNotifier",
+          "startLine": 50,
+          "endLine": 189,
+          "methods": [
+            "BookViewerNotifier",
+            "fetchBook",
+            "_isImageFile",
+            "updatePlayback",
+            "_stopPlaybackOldState",
+            "stopPlayback",
+            "_cleanUp",
+            "setPage",
+            "setBook"
+          ],
+          "properties": [
+            "ref",
+            "savedDirectory",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BookViewerModel",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "clampedCurrentPage",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "BookViewerModel",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "BookViewerNotifier",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "fetchBook",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "updatePlayback",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "stopPlayback",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "setPage",
+          "line": 184,
+          "isDefault": false
+        },
+        {
+          "name": "setBook",
+          "line": 186,
+          "isDefault": false
+        },
+        {
+          "name": "BookViewerNotifier",
+          "line": 50,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clampedCurrentPage",
+          "callee": "clamp",
+          "lineNumber": 29
+        },
+        {
+          "caller": "copyWith",
+          "callee": "BookViewerModel",
+          "lineNumber": 37
+        },
+        {
+          "caller": "copyWith",
+          "callee": "call",
+          "lineNumber": 38
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "copyWith",
+          "lineNumber": 60
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "copyWith",
+          "lineNumber": 61
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "_stopPlaybackOldState",
+          "lineNumber": 64
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "itemsItemIdDownloadGet",
+          "lineNumber": 68
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "getTemporaryDirectory",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "Directory",
+          "lineNumber": 73
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "create",
+          "lineNumber": 74
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "File",
+          "lineNumber": 75
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "writeAsBytes",
+          "lineNumber": 76
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "InputFileStream",
+          "lineNumber": 78
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "ZipDecoder",
+          "lineNumber": 79
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "decodeStream",
+          "lineNumber": 79
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "_isImageFile",
+          "lineNumber": 84
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "OutputFileStream",
+          "lineNumber": 86
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "writeContent",
+          "lineNumber": 87
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "add",
+          "lineNumber": 88
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "close",
+          "lineNumber": 89
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "copyWith",
+          "lineNumber": 92
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "close",
+          "lineNumber": 93
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "delete",
+          "lineNumber": 94
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "log",
+          "lineNumber": 97
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "toString",
+          "lineNumber": 97
+        },
+        {
+          "caller": "fetchBook",
+          "callee": "copyWith",
+          "lineNumber": 98
+        },
+        {
+          "caller": "_isImageFile",
+          "callee": "toLowerCase",
+          "lineNumber": 106
+        },
+        {
+          "caller": "_isImageFile",
+          "callee": "split",
+          "lineNumber": 106
+        },
+        {
+          "caller": "_isImageFile",
+          "callee": "contains",
+          "lineNumber": 107
+        },
+        {
+          "caller": "updatePlayback",
+          "callee": "copyWith",
+          "lineNumber": 113
+        },
+        {
+          "caller": "updatePlayback",
+          "callee": "sessionsPlayingStoppedPost",
+          "lineNumber": 114
+        },
+        {
+          "caller": "updatePlayback",
+          "callee": "PlaybackStopInfo",
+          "lineNumber": 115
+        },
+        {
+          "caller": "_stopPlaybackOldState",
+          "callee": "read",
+          "lineNumber": 127
+        },
+        {
+          "caller": "_stopPlaybackOldState",
+          "callee": "markAsPlayed",
+          "lineNumber": 127
+        },
+        {
+          "caller": "_stopPlaybackOldState",
+          "callee": "sessionsPlayingStoppedPost",
+          "lineNumber": 130
+        },
+        {
+          "caller": "_stopPlaybackOldState",
+          "callee": "PlaybackStopInfo",
+          "lineNumber": 131
+        },
+        {
+          "caller": "_stopPlaybackOldState",
+          "callee": "read",
+          "lineNumber": 138
+        },
+        {
+          "caller": "_stopPlaybackOldState",
+          "callee": "markAsPlayed",
+          "lineNumber": 138
+        },
+        {
+          "caller": "_stopPlaybackOldState",
+          "callee": "_cleanUp",
+          "lineNumber": 141
+        },
+        {
+          "caller": "stopPlayback",
+          "callee": "read",
+          "lineNumber": 149
+        },
+        {
+          "caller": "stopPlayback",
+          "callee": "markAsPlayed",
+          "lineNumber": 149
+        },
+        {
+          "caller": "stopPlayback",
+          "callee": "sessionsPlayingStoppedPost",
+          "lineNumber": 152
+        },
+        {
+          "caller": "stopPlayback",
+          "callee": "PlaybackStopInfo",
+          "lineNumber": 153
+        },
+        {
+          "caller": "stopPlayback",
+          "callee": "read",
+          "lineNumber": 160
+        },
+        {
+          "caller": "stopPlayback",
+          "callee": "markAsPlayed",
+          "lineNumber": 160
+        },
+        {
+          "caller": "stopPlayback",
+          "callee": "_cleanUp",
+          "lineNumber": 163
+        },
+        {
+          "caller": "_cleanUp",
+          "callee": "File",
+          "lineNumber": 170
+        },
+        {
+          "caller": "_cleanUp",
+          "callee": "existsSync",
+          "lineNumber": 171
+        },
+        {
+          "caller": "_cleanUp",
+          "callee": "delete",
+          "lineNumber": 172
+        },
+        {
+          "caller": "_cleanUp",
+          "callee": "exists",
+          "lineNumber": 175
+        },
+        {
+          "caller": "_cleanUp",
+          "callee": "delete",
+          "lineNumber": 177
+        },
+        {
+          "caller": "_cleanUp",
+          "callee": "log",
+          "lineNumber": 180
+        },
+        {
+          "caller": "_cleanUp",
+          "callee": "toString",
+          "lineNumber": 180
+        },
+        {
+          "caller": "setPage",
+          "callee": "copyWith",
+          "lineNumber": 184
+        },
+        {
+          "caller": "setPage",
+          "callee": "toInt",
+          "lineNumber": 184
+        },
+        {
+          "caller": "setBook",
+          "callee": "copyWith",
+          "lineNumber": 186
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 12,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/collections_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 117,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "_CollectionSetModel",
+          "startLine": 17,
+          "endLine": 21,
+          "params": [
+            "isLoading",
+            "items",
+            "collections"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 23,
+          "endLine": 27,
+          "params": [
+            "isLoading",
+            "items",
+            "collections"
+          ]
+        },
+        {
+          "name": "BoxSetNotifier",
+          "startLine": 42,
+          "endLine": 42,
+          "params": [
+            "ref"
+          ]
+        },
+        {
+          "name": "setItems",
+          "startLine": 47,
+          "endLine": 47,
+          "params": [
+            "items"
+          ]
+        },
+        {
+          "name": "_init",
+          "startLine": 57,
+          "endLine": 57,
+          "params": []
+        },
+        {
+          "name": "toggleCollection",
+          "startLine": 86,
+          "endLine": 87,
+          "params": [
+            "boxSet",
+            "value",
+            "item"
+          ]
+        },
+        {
+          "name": "addToCollection",
+          "startLine": 98,
+          "endLine": 98,
+          "params": [
+            "boxSet",
+            "add"
+          ]
+        },
+        {
+          "name": "addToNewCollection",
+          "startLine": 111,
+          "endLine": 111,
+          "params": [
+            "name"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "_CollectionSetModel",
+          "startLine": 13,
+          "endLine": 34,
+          "methods": [
+            "_CollectionSetModel",
+            "copyWith"
+          ],
+          "properties": [
+            "isLoading",
+            "items",
+            "collections"
+          ]
+        },
+        {
+          "name": "BoxSetNotifier",
+          "startLine": 41,
+          "endLine": 117,
+          "methods": [
+            "BoxSetNotifier",
+            "setItems",
+            "_init",
+            "toggleCollection",
+            "addToCollection",
+            "addToNewCollection"
+          ],
+          "properties": [
+            "ref",
+            "api"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "copyWith",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "BoxSetNotifier",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "setItems",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "toggleCollection",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "addToCollection",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "addToNewCollection",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "BoxSetNotifier",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_CollectionSetModel",
+          "lineNumber": 28
+        },
+        {
+          "caller": "setItems",
+          "callee": "read",
+          "lineNumber": 48
+        },
+        {
+          "caller": "setItems",
+          "callee": "copyWith",
+          "lineNumber": 49
+        },
+        {
+          "caller": "setItems",
+          "callee": "fromIterables",
+          "lineNumber": 50
+        },
+        {
+          "caller": "setItems",
+          "callee": "generate",
+          "lineNumber": 50
+        },
+        {
+          "caller": "setItems",
+          "callee": "_init",
+          "lineNumber": 54
+        },
+        {
+          "caller": "_init",
+          "callee": "usersUserIdItemsGet",
+          "lineNumber": 58
+        },
+        {
+          "caller": "_init",
+          "callee": "fromBaseDto",
+          "lineNumber": 65
+        },
+        {
+          "caller": "_init",
+          "callee": "toList",
+          "lineNumber": 65
+        },
+        {
+          "caller": "_init",
+          "callee": "read",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_init",
+          "callee": "copyWith",
+          "lineNumber": 69
+        },
+        {
+          "caller": "_init",
+          "callee": "fromIterables",
+          "lineNumber": 70
+        },
+        {
+          "caller": "_init",
+          "callee": "generate",
+          "lineNumber": 70
+        },
+        {
+          "caller": "_init",
+          "callee": "usersUserIdItemsGet",
+          "lineNumber": 74
+        },
+        {
+          "caller": "_init",
+          "callee": "copyWith",
+          "lineNumber": 77
+        },
+        {
+          "caller": "_init",
+          "callee": "setKey",
+          "lineNumber": 79
+        },
+        {
+          "caller": "_init",
+          "callee": "contains",
+          "lineNumber": 79
+        },
+        {
+          "caller": "_init",
+          "callee": "copyWith",
+          "lineNumber": 83
+        },
+        {
+          "caller": "toggleCollection",
+          "callee": "collectionsCollectionIdItemsPost",
+          "lineNumber": 89
+        },
+        {
+          "caller": "toggleCollection",
+          "callee": "collectionsCollectionIdItemsDelete",
+          "lineNumber": 90
+        },
+        {
+          "caller": "toggleCollection",
+          "callee": "copyWith",
+          "lineNumber": 93
+        },
+        {
+          "caller": "toggleCollection",
+          "callee": "setKey",
+          "lineNumber": 93
+        },
+        {
+          "caller": "addToCollection",
+          "callee": "collectionsCollectionIdItemsPost",
+          "lineNumber": 100
+        },
+        {
+          "caller": "addToCollection",
+          "callee": "map",
+          "lineNumber": 101
+        },
+        {
+          "caller": "addToCollection",
+          "callee": "toList",
+          "lineNumber": 101
+        },
+        {
+          "caller": "addToCollection",
+          "callee": "collectionsCollectionIdItemsDelete",
+          "lineNumber": 102
+        },
+        {
+          "caller": "addToCollection",
+          "callee": "map",
+          "lineNumber": 103
+        },
+        {
+          "caller": "addToCollection",
+          "callee": "toList",
+          "lineNumber": 103
+        },
+        {
+          "caller": "addToCollection",
+          "callee": "copyWith",
+          "lineNumber": 106
+        },
+        {
+          "caller": "addToCollection",
+          "callee": "setKey",
+          "lineNumber": 106
+        },
+        {
+          "caller": "addToNewCollection",
+          "callee": "collectionsPost",
+          "lineNumber": 112
+        },
+        {
+          "caller": "addToNewCollection",
+          "callee": "map",
+          "lineNumber": 112
+        },
+        {
+          "caller": "addToNewCollection",
+          "callee": "toList",
+          "lineNumber": 112
+        },
+        {
+          "caller": "addToNewCollection",
+          "callee": "_init",
+          "lineNumber": 114
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 8,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/connectivity_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 190,
+      "nonEmptyLines": 155,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 47,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "checkConnectivity",
+          "startLine": 73,
+          "endLine": 73,
+          "params": [
+            "immediate"
+          ]
+        },
+        {
+          "name": "waitForProbe",
+          "startLine": 78,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "_handleHardwareChange",
+          "startLine": 80,
+          "endLine": 80,
+          "params": [
+            "results",
+            "immediate"
+          ]
+        },
+        {
+          "name": "_queueProbe",
+          "startLine": 94,
+          "endLine": 94,
+          "params": [
+            "candidateState",
+            "immediate"
+          ]
+        },
+        {
+          "name": "_probeReachability",
+          "startLine": 109,
+          "endLine": 109,
+          "params": [
+            "id",
+            "candidateState"
+          ]
+        },
+        {
+          "name": "_updateState",
+          "startLine": 153,
+          "endLine": 153,
+          "params": [
+            "newState",
+            "isLocal"
+          ]
+        },
+        {
+          "name": "_resolveProbe",
+          "startLine": 158,
+          "endLine": 158,
+          "params": []
+        },
+        {
+          "name": "_parseHardwareState",
+          "startLine": 165,
+          "endLine": 165,
+          "params": [
+            "results"
+          ]
+        },
+        {
+          "name": "fetchSystemInfoDynamic",
+          "startLine": 174,
+          "endLine": 174,
+          "params": [
+            "baseUrl"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ConnectionState",
+          "startLine": 17,
+          "endLine": 31,
+          "methods": [],
+          "properties": [
+            "offline",
+            "mobile",
+            "wifi",
+            "ethernet",
+            "offline",
+            "ConnectionState",
+            "ConnectionState",
+            "ConnectionState",
+            "ConnectionState"
+          ]
+        },
+        {
+          "name": "ConnectivityStatus",
+          "startLine": 41,
+          "endLine": 172,
+          "methods": [
+            "build",
+            "checkConnectivity",
+            "waitForProbe",
+            "_handleHardwareChange",
+            "_queueProbe",
+            "_probeReachability",
+            "_updateState",
+            "_resolveProbe",
+            "_parseHardwareState"
+          ],
+          "properties": [
+            "_debounceTimer",
+            "_probeId",
+            "_probeCompleter"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConnectionState",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "checkConnectivity",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "waitForProbe",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "ConnectivityStatus",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "fetchSystemInfoDynamic",
+          "line": 174,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "listen",
+          "lineNumber": 48
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 49
+        },
+        {
+          "caller": "build",
+          "callee": "checkConnectivity",
+          "lineNumber": 52
+        },
+        {
+          "caller": "build",
+          "callee": "Connectivity",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "listen",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "_handleHardwareChange",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "onDispose",
+          "lineNumber": 61
+        },
+        {
+          "caller": "build",
+          "callee": "cancel",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "_resolveProbe",
+          "lineNumber": 65
+        },
+        {
+          "caller": "build",
+          "callee": "checkConnectivity",
+          "lineNumber": 68
+        },
+        {
+          "caller": "checkConnectivity",
+          "callee": "Connectivity",
+          "lineNumber": 74
+        },
+        {
+          "caller": "checkConnectivity",
+          "callee": "checkConnectivity",
+          "lineNumber": 74
+        },
+        {
+          "caller": "checkConnectivity",
+          "callee": "_handleHardwareChange",
+          "lineNumber": 75
+        },
+        {
+          "caller": "_handleHardwareChange",
+          "callee": "_parseHardwareState",
+          "lineNumber": 81
+        },
+        {
+          "caller": "_handleHardwareChange",
+          "callee": "_resolveProbe",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_handleHardwareChange",
+          "callee": "_updateState",
+          "lineNumber": 87
+        },
+        {
+          "caller": "_handleHardwareChange",
+          "callee": "_queueProbe",
+          "lineNumber": 91
+        },
+        {
+          "caller": "_queueProbe",
+          "callee": "Completer",
+          "lineNumber": 97
+        },
+        {
+          "caller": "_queueProbe",
+          "callee": "unawaited",
+          "lineNumber": 100
+        },
+        {
+          "caller": "_queueProbe",
+          "callee": "_probeReachability",
+          "lineNumber": 100
+        },
+        {
+          "caller": "_queueProbe",
+          "callee": "Timer",
+          "lineNumber": 102
+        },
+        {
+          "caller": "_queueProbe",
+          "callee": "Duration",
+          "lineNumber": 103
+        },
+        {
+          "caller": "_queueProbe",
+          "callee": "unawaited",
+          "lineNumber": 104
+        },
+        {
+          "caller": "_queueProbe",
+          "callee": "_probeReachability",
+          "lineNumber": 104
+        },
+        {
+          "caller": "_probeReachability",
+          "callee": "read",
+          "lineNumber": 111
+        },
+        {
+          "caller": "_probeReachability",
+          "callee": "checkLocalNetworkPermission",
+          "lineNumber": 116
+        },
+        {
+          "caller": "_probeReachability",
+          "callee": "fetchSystemInfoDynamic",
+          "lineNumber": 118
+        },
+        {
+          "caller": "_probeReachability",
+          "callee": "normalizeUrl",
+          "lineNumber": 118
+        },
+        {
+          "caller": "_probeReachability",
+          "callee": "_updateState",
+          "lineNumber": 123
+        },
+        {
+          "caller": "_probeReachability",
+          "callee": "fetchSystemInfoDynamic",
+          "lineNumber": 133
+        },
+        {
+          "caller": "_probeReachability",
+          "callee": "normalizeUrl",
+          "lineNumber": 133
+        },
+        {
+          "caller": "_probeReachability",
+          "callee": "_updateState",
+          "lineNumber": 138
+        },
+        {
+          "caller": "_probeReachability",
+          "callee": "_updateState",
+          "lineNumber": 144
+        },
+        {
+          "caller": "_probeReachability",
+          "callee": "_resolveProbe",
+          "lineNumber": 148
+        },
+        {
+          "caller": "_updateState",
+          "callee": "read",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_parseHardwareState",
+          "callee": "contains",
+          "lineNumber": 166
+        },
+        {
+          "caller": "_parseHardwareState",
+          "callee": "contains",
+          "lineNumber": 167
+        },
+        {
+          "caller": "_parseHardwareState",
+          "callee": "contains",
+          "lineNumber": 168
+        },
+        {
+          "caller": "_parseHardwareState",
+          "callee": "contains",
+          "lineNumber": 169
+        },
+        {
+          "caller": "fetchSystemInfoDynamic",
+          "callee": "buildServerUriFromBase",
+          "lineNumber": 177
+        },
+        {
+          "caller": "fetchSystemInfoDynamic",
+          "callee": "get",
+          "lineNumber": 180
+        },
+        {
+          "caller": "fetchSystemInfoDynamic",
+          "callee": "timeout",
+          "lineNumber": 180
+        },
+        {
+          "caller": "fetchSystemInfoDynamic",
+          "callee": "Duration",
+          "lineNumber": 180
+        },
+        {
+          "caller": "fetchSystemInfoDynamic",
+          "callee": "fromJson",
+          "lineNumber": 183
+        },
+        {
+          "caller": "fetchSystemInfoDynamic",
+          "callee": "jsonDecode",
+          "lineNumber": 183
+        },
+        {
+          "caller": "fetchSystemInfoDynamic",
+          "callee": "log",
+          "lineNumber": 187
+        },
+        {
+          "caller": "fetchSystemInfoDynamic",
+          "callee": "toString",
+          "lineNumber": 187
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 10,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/providers/connectivity_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 18,
+      "functions": [
+        {
+          "name": "_$connectivityStatusHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_active_tasks_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 39,
+      "functions": [
+        {
+          "name": "api",
+          "startLine": 12,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "startTask",
+          "startLine": 33,
+          "endLine": 33,
+          "params": [
+            "taskId"
+          ]
+        },
+        {
+          "name": "stopTask",
+          "startLine": 34,
+          "endLine": 34,
+          "params": [
+            "taskId"
+          ]
+        },
+        {
+          "name": "fetchActiveTasks",
+          "startLine": 36,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "updateTaskTriggers",
+          "startLine": 41,
+          "endLine": 41,
+          "params": [
+            "taskId",
+            "triggers"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ControlActiveTasks",
+          "startLine": 11,
+          "endLine": 48,
+          "methods": [
+            "api",
+            "build",
+            "startTask",
+            "stopTask",
+            "fetchActiveTasks",
+            "updateTaskTriggers"
+          ],
+          "properties": [
+            "_refreshTimer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "api",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "startTask",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "stopTask",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "fetchActiveTasks",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "updateTaskTriggers",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "ControlActiveTasks",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "api",
+          "callee": "read",
+          "lineNumber": 12
+        },
+        {
+          "caller": "build",
+          "callee": "RestartableTimer",
+          "lineNumber": 19
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 19
+        },
+        {
+          "caller": "build",
+          "callee": "fetchActiveTasks",
+          "lineNumber": 20
+        },
+        {
+          "caller": "build",
+          "callee": "fetchActiveTasks",
+          "lineNumber": 23
+        },
+        {
+          "caller": "build",
+          "callee": "onDispose",
+          "lineNumber": 26
+        },
+        {
+          "caller": "startTask",
+          "callee": "startTask",
+          "lineNumber": 33
+        },
+        {
+          "caller": "stopTask",
+          "callee": "stopActiveTask",
+          "lineNumber": 34
+        },
+        {
+          "caller": "fetchActiveTasks",
+          "callee": "getActiveTasks",
+          "lineNumber": 37
+        },
+        {
+          "caller": "updateTaskTriggers",
+          "callee": "updateTaskTriggers",
+          "lineNumber": 42
+        },
+        {
+          "caller": "updateTaskTriggers",
+          "callee": "fetchActiveTasks",
+          "lineNumber": 44
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_active_tasks_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "_$controlActiveTasksHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_activity_provider.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 104,
+      "nonEmptyLines": 94,
+      "functions": [
+        {
+          "name": "api",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "fetchActivity",
+          "startLine": 39,
+          "endLine": 39,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ControlActivity",
+          "startLine": 17,
+          "endLine": 80,
+          "methods": [
+            "api",
+            "build",
+            "fetchActivity"
+          ],
+          "properties": [
+            "_refreshTimer"
+          ]
+        },
+        {
+          "name": "ControlActivityModel",
+          "startLine": 83,
+          "endLine": 95,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "ActivityPlayState",
+          "startLine": 98,
+          "endLine": 104,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "api",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "fetchActivity",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ControlActivity",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "ControlActivityModel",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "ActivityPlayState",
+          "line": 98,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "api",
+          "callee": "read",
+          "lineNumber": 20
+        },
+        {
+          "caller": "build",
+          "callee": "RestartableTimer",
+          "lineNumber": 25
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 25
+        },
+        {
+          "caller": "build",
+          "callee": "fetchActivity",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "fetchActivity",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "onDispose",
+          "lineNumber": 32
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "getActiveSessions",
+          "lineNumber": 40
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "now",
+          "lineNumber": 42
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "compareTo",
+          "lineNumber": 42
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "now",
+          "lineNumber": 42
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "wait",
+          "lineNumber": 45
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "map",
+          "lineNumber": 46
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "fromBaseDto",
+          "lineNumber": 49
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "getTrickPlay",
+          "lineNumber": 51
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "ControlActivityModel",
+          "lineNumber": 52
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "AccountModel",
+          "lineNumber": 54
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "read",
+          "lineNumber": 57
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "getUserImageUrl",
+          "lineNumber": 57
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "now",
+          "lineNumber": 58
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "createNewCredentials",
+          "lineNumber": 59
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "ActivityPlayState",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fetchActivity",
+          "callee": "Duration",
+          "lineNumber": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 3,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_activity_provider.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 865,
+      "nonEmptyLines": 791,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "user",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "deviceName",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "client",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "applicationVersion",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "activityType",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "nowPlayingItem",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "trickPlay",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "playState",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "lastActivityDate",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 31,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 36,
+          "endLine": 36,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$ControlActivityModel",
+          "startLine": 16,
+          "endLine": 39,
+          "methods": [
+            "user",
+            "deviceName",
+            "client",
+            "applicationVersion",
+            "activityType",
+            "nowPlayingItem",
+            "trickPlay",
+            "playState",
+            "lastActivityDate",
+            "copyWith",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "user",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "deviceName",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "client",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "applicationVersion",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "activityType",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "nowPlayingItem",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "trickPlay",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "playState",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "lastActivityDate",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$ControlActivityModelCopyWithImpl",
+          "lineNumber": 32
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 136
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 136
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 150
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 150
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 164
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 164
+        },
+        {
+          "caller": "_ControlActivityModel",
+          "callee": "_ControlActivityModel",
+          "lineNumber": 216
+        },
+        {
+          "caller": "_ControlActivityModel",
+          "callee": "$default",
+          "lineNumber": 217
+        },
+        {
+          "caller": "_ControlActivityModel",
+          "callee": "StateError",
+          "lineNumber": 219
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_ControlActivityModel",
+          "lineNumber": 241
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 242
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_ControlActivityModel",
+          "lineNumber": 277
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 278
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 289
+        },
+        {
+          "caller": "when",
+          "callee": "_ControlActivityModel",
+          "lineNumber": 322
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 323
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 334
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_ControlActivityModel",
+          "lineNumber": 366
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 367
+        },
+        {
+          "caller": "call",
+          "callee": "__$ControlActivityModelCopyWithImpl",
+          "lineNumber": 461
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 481
+        },
+        {
+          "caller": "call",
+          "callee": "_ControlActivityModel",
+          "lineNumber": 481
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 531
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 531
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 545
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 545
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 559
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 559
+        },
+        {
+          "caller": "_ActivityPlayState",
+          "callee": "_ActivityPlayState",
+          "lineNumber": 674
+        },
+        {
+          "caller": "_ActivityPlayState",
+          "callee": "$default",
+          "lineNumber": 675
+        },
+        {
+          "caller": "_ActivityPlayState",
+          "callee": "StateError",
+          "lineNumber": 677
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_ActivityPlayState",
+          "lineNumber": 699
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 700
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_ActivityPlayState",
+          "lineNumber": 727
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 728
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 731
+        },
+        {
+          "caller": "when",
+          "callee": "_ActivityPlayState",
+          "lineNumber": 756
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 757
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 760
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_ActivityPlayState",
+          "lineNumber": 784
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 785
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 848
+        },
+        {
+          "caller": "call",
+          "callee": "_ActivityPlayState",
+          "lineNumber": 848
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/providers/control_panel/control_activity_provider.g.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "_$controlActivityHash",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

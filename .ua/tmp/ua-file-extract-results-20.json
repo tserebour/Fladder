@@ -1,0 +1,2113 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [
+    "lib/l10n/app_jp.arb",
+    "lib/l10n/app_ko.arb",
+    "lib/l10n/app_mr.arb",
+    "lib/l10n/app_mt.arb",
+    "lib/l10n/app_nb.arb",
+    "lib/l10n/app_nl.arb",
+    "lib/l10n/app_pl.arb",
+    "lib/l10n/app_pt.arb",
+    "lib/l10n/app_pt_BR.arb",
+    "lib/l10n/app_ro.arb",
+    "lib/l10n/app_ru.arb",
+    "lib/l10n/app_sk.arb",
+    "lib/l10n/app_sv.arb",
+    "lib/l10n/app_ta.arb",
+    "lib/l10n/app_th.arb",
+    "lib/l10n/app_tr.arb",
+    "lib/l10n/app_uk.arb",
+    "lib/l10n/app_vi.arb",
+    "lib/l10n/app_zh.arb",
+    "lib/l10n/app_zh_Hant.arb"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 5,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 5,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "lib/localization_delegates.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 221,
+      "nonEmptyLines": 192,
+      "functions": [
+        {
+          "name": "isSupported",
+          "startLine": 25,
+          "endLine": 25,
+          "params": [
+            "locale"
+          ]
+        },
+        {
+          "name": "load",
+          "startLine": 31,
+          "endLine": 31,
+          "params": [
+            "locale"
+          ]
+        },
+        {
+          "name": "shouldReload",
+          "startLine": 111,
+          "endLine": 111,
+          "params": [
+            "old"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 114,
+          "endLine": 114,
+          "params": []
+        },
+        {
+          "name": "isSupported",
+          "startLine": 121,
+          "endLine": 121,
+          "params": [
+            "locale"
+          ]
+        },
+        {
+          "name": "load",
+          "startLine": 126,
+          "endLine": 126,
+          "params": [
+            "locale"
+          ]
+        },
+        {
+          "name": "shouldReload",
+          "startLine": 138,
+          "endLine": 138,
+          "params": [
+            "old"
+          ]
+        },
+        {
+          "name": "isSupported",
+          "startLine": 145,
+          "endLine": 145,
+          "params": [
+            "locale"
+          ]
+        },
+        {
+          "name": "load",
+          "startLine": 151,
+          "endLine": 151,
+          "params": [
+            "locale"
+          ]
+        },
+        {
+          "name": "shouldReload",
+          "startLine": 217,
+          "endLine": 217,
+          "params": [
+            "old"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 220,
+          "endLine": 220,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "FladderLocalizations",
+          "startLine": 12,
+          "endLine": 19,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "FladderMaterialLocalizationsDelegate",
+          "startLine": 21,
+          "endLine": 115,
+          "methods": [
+            "isSupported",
+            "load",
+            "shouldReload",
+            "toString"
+          ],
+          "properties": []
+        },
+        {
+          "name": "FladderWidgetsLocalizationsDelegate",
+          "startLine": 117,
+          "endLine": 139,
+          "methods": [
+            "isSupported",
+            "load",
+            "shouldReload"
+          ],
+          "properties": []
+        },
+        {
+          "name": "FladderCupertinoLocalizationsDelegate",
+          "startLine": 141,
+          "endLine": 221,
+          "methods": [
+            "isSupported",
+            "load",
+            "shouldReload",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FladderLocalizations",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "isSupported",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "load",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "shouldReload",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "FladderMaterialLocalizationsDelegate",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "isSupported",
+          "line": 121,
+          "isDefault": false
+        },
+        {
+          "name": "load",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "shouldReload",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "FladderWidgetsLocalizationsDelegate",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "isSupported",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "load",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "shouldReload",
+          "line": 217,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "FladderCupertinoLocalizationsDelegate",
+          "line": 141,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "load",
+          "callee": "contains",
+          "lineNumber": 33
+        },
+        {
+          "caller": "load",
+          "callee": "Locale",
+          "lineNumber": 34
+        },
+        {
+          "caller": "load",
+          "callee": "isSupported",
+          "lineNumber": 36
+        },
+        {
+          "caller": "load",
+          "callee": "putIfAbsent",
+          "lineNumber": 37
+        },
+        {
+          "caller": "load",
+          "callee": "loadDateIntlDataIfNotLoaded",
+          "lineNumber": 38
+        },
+        {
+          "caller": "load",
+          "callee": "canonicalizedLocale",
+          "lineNumber": 40
+        },
+        {
+          "caller": "load",
+          "callee": "toString",
+          "lineNumber": 40
+        },
+        {
+          "caller": "load",
+          "callee": "toString",
+          "lineNumber": 42
+        },
+        {
+          "caller": "load",
+          "callee": "localeExists",
+          "lineNumber": 54
+        },
+        {
+          "caller": "load",
+          "callee": "y",
+          "lineNumber": 55
+        },
+        {
+          "caller": "load",
+          "callee": "yMd",
+          "lineNumber": 56
+        },
+        {
+          "caller": "load",
+          "callee": "yMMMd",
+          "lineNumber": 57
+        },
+        {
+          "caller": "load",
+          "callee": "MMMEd",
+          "lineNumber": 58
+        },
+        {
+          "caller": "load",
+          "callee": "yMMMMEEEEd",
+          "lineNumber": 59
+        },
+        {
+          "caller": "load",
+          "callee": "yMMMM",
+          "lineNumber": 60
+        },
+        {
+          "caller": "load",
+          "callee": "MMMd",
+          "lineNumber": 61
+        },
+        {
+          "caller": "load",
+          "callee": "localeExists",
+          "lineNumber": 62
+        },
+        {
+          "caller": "load",
+          "callee": "y",
+          "lineNumber": 63
+        },
+        {
+          "caller": "load",
+          "callee": "yMd",
+          "lineNumber": 64
+        },
+        {
+          "caller": "load",
+          "callee": "yMMMd",
+          "lineNumber": 65
+        },
+        {
+          "caller": "load",
+          "callee": "MMMEd",
+          "lineNumber": 66
+        },
+        {
+          "caller": "load",
+          "callee": "yMMMMEEEEd",
+          "lineNumber": 67
+        },
+        {
+          "caller": "load",
+          "callee": "yMMMM",
+          "lineNumber": 68
+        },
+        {
+          "caller": "load",
+          "callee": "MMMd",
+          "lineNumber": 69
+        },
+        {
+          "caller": "load",
+          "callee": "y",
+          "lineNumber": 71
+        },
+        {
+          "caller": "load",
+          "callee": "yMd",
+          "lineNumber": 72
+        },
+        {
+          "caller": "load",
+          "callee": "yMMMd",
+          "lineNumber": 73
+        },
+        {
+          "caller": "load",
+          "callee": "MMMEd",
+          "lineNumber": 74
+        },
+        {
+          "caller": "load",
+          "callee": "yMMMMEEEEd",
+          "lineNumber": 75
+        },
+        {
+          "caller": "load",
+          "callee": "yMMMM",
+          "lineNumber": 76
+        },
+        {
+          "caller": "load",
+          "callee": "MMMd",
+          "lineNumber": 77
+        },
+        {
+          "caller": "load",
+          "callee": "localeExists",
+          "lineNumber": 82
+        },
+        {
+          "caller": "load",
+          "callee": "decimalPattern",
+          "lineNumber": 83
+        },
+        {
+          "caller": "load",
+          "callee": "NumberFormat",
+          "lineNumber": 84
+        },
+        {
+          "caller": "load",
+          "callee": "localeExists",
+          "lineNumber": 85
+        },
+        {
+          "caller": "load",
+          "callee": "decimalPattern",
+          "lineNumber": 86
+        },
+        {
+          "caller": "load",
+          "callee": "NumberFormat",
+          "lineNumber": 87
+        },
+        {
+          "caller": "load",
+          "callee": "decimalPattern",
+          "lineNumber": 89
+        },
+        {
+          "caller": "load",
+          "callee": "NumberFormat",
+          "lineNumber": 90
+        },
+        {
+          "caller": "load",
+          "callee": "SynchronousFuture",
+          "lineNumber": 93
+        },
+        {
+          "caller": "load",
+          "callee": "getMaterialTranslation",
+          "lineNumber": 94
+        },
+        {
+          "caller": "load",
+          "callee": "contains",
+          "lineNumber": 128
+        },
+        {
+          "caller": "load",
+          "callee": "Locale",
+          "lineNumber": 129
+        },
+        {
+          "caller": "load",
+          "callee": "isSupported",
+          "lineNumber": 131
+        },
+        {
+          "caller": "load",
+          "callee": "putIfAbsent",
+          "lineNumber": 132
+        },
+        {
+          "caller": "load",
+          "callee": "getWidgetsTranslation",
+          "lineNumber": 133
+        },
+        {
+          "caller": "load",
+          "callee": "contains",
+          "lineNumber": 153
+        },
+        {
+          "caller": "load",
+          "callee": "Locale",
+          "lineNumber": 154
+        },
+        {
+          "caller": "load",
+          "callee": "isSupported",
+          "lineNumber": 156
+        },
+        {
+          "caller": "load",
+          "callee": "putIfAbsent",
+          "lineNumber": 157
+        },
+        {
+          "caller": "load",
+          "callee": "loadDateIntlDataIfNotLoaded",
+          "lineNumber": 158
+        },
+        {
+          "caller": "load",
+          "callee": "canonicalizedLocale",
+          "lineNumber": 160
+        },
+        {
+          "caller": "load",
+          "callee": "toString",
+          "lineNumber": 160
+        },
+        {
+          "caller": "load",
+          "callee": "toString",
+          "lineNumber": 162
+        },
+        {
+          "caller": "loadFormats",
+          "callee": "y",
+          "lineNumber": 180
+        },
+        {
+          "caller": "loadFormats",
+          "callee": "d",
+          "lineNumber": 181
+        },
+        {
+          "caller": "loadFormats",
+          "callee": "E",
+          "lineNumber": 182
+        },
+        {
+          "caller": "loadFormats",
+          "callee": "MMMEd",
+          "lineNumber": 183
+        },
+        {
+          "caller": "loadFormats",
+          "callee": "DateFormat",
+          "lineNumber": 184
+        },
+        {
+          "caller": "loadFormats",
+          "callee": "m",
+          "lineNumber": 185
+        },
+        {
+          "caller": "loadFormats",
+          "callee": "DateFormat",
+          "lineNumber": 186
+        },
+        {
+          "caller": "loadFormats",
+          "callee": "s",
+          "lineNumber": 187
+        },
+        {
+          "caller": "loadFormats",
+          "callee": "decimalPattern",
+          "lineNumber": 188
+        },
+        {
+          "caller": "load",
+          "callee": "localeExists",
+          "lineNumber": 191
+        },
+        {
+          "caller": "load",
+          "callee": "loadFormats",
+          "lineNumber": 192
+        },
+        {
+          "caller": "load",
+          "callee": "localeExists",
+          "lineNumber": 193
+        },
+        {
+          "caller": "load",
+          "callee": "loadFormats",
+          "lineNumber": 194
+        },
+        {
+          "caller": "load",
+          "callee": "loadFormats",
+          "lineNumber": 196
+        },
+        {
+          "caller": "load",
+          "callee": "SynchronousFuture",
+          "lineNumber": 199
+        },
+        {
+          "caller": "load",
+          "callee": "getCupertinoTranslation",
+          "lineNumber": 200
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 11,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "lib/logic/application_menu.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "openNewWindow",
+          "startLine": 12,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "newInstance",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ApplicationMenuImp",
+          "startLine": 10,
+          "endLine": 34,
+          "methods": [
+            "openNewWindow",
+            "newInstance"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "openNewWindow",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "newInstance",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "ApplicationMenuImp",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "openNewWindow",
+          "callee": "create",
+          "lineNumber": 13
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "WindowConfiguration",
+          "lineNumber": 14
+        },
+        {
+          "caller": "openNewWindow",
+          "callee": "show",
+          "lineNumber": 20
+        },
+        {
+          "caller": "newInstance",
+          "callee": "start",
+          "lineNumber": 27
+        },
+        {
+          "caller": "newInstance",
+          "callee": "start",
+          "lineNumber": 29
+        },
+        {
+          "caller": "newInstance",
+          "callee": "start",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/main.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 133,
+      "nonEmptyLines": 120,
+      "functions": [
+        {
+          "name": "main",
+          "startLine": 26,
+          "endLine": 26,
+          "params": [
+            "args"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 51,
+          "endLine": 51,
+          "params": [
+            "context",
+            "ref"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 70,
+          "endLine": 70,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Main",
+          "startLine": 47,
+          "endLine": 60,
+          "methods": [
+            "build"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_FladderApp",
+          "startLine": 62,
+          "endLine": 133,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "autoRouter"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "main",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "Main",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 70,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "main",
+          "callee": "ensureInitialized",
+          "lineNumber": 27
+        },
+        {
+          "caller": "main",
+          "callee": "bootstrapApplication",
+          "lineNumber": 29
+        },
+        {
+          "caller": "main",
+          "callee": "runApp",
+          "lineNumber": 31
+        },
+        {
+          "caller": "main",
+          "callee": "ProviderScope",
+          "lineNumber": 32
+        },
+        {
+          "caller": "main",
+          "callee": "overrideWith",
+          "lineNumber": 34
+        },
+        {
+          "caller": "main",
+          "callee": "overrideWith",
+          "lineNumber": 35
+        },
+        {
+          "caller": "main",
+          "callee": "overrideWith",
+          "lineNumber": 36
+        },
+        {
+          "caller": "main",
+          "callee": "overrideWith",
+          "lineNumber": 37
+        },
+        {
+          "caller": "main",
+          "callee": "overrideWith",
+          "lineNumber": 38
+        },
+        {
+          "caller": "main",
+          "callee": "SyncNotifier",
+          "lineNumber": 38
+        },
+        {
+          "caller": "main",
+          "callee": "AdaptiveLayoutBuilder",
+          "lineNumber": 40
+        },
+        {
+          "caller": "main",
+          "callee": "Main",
+          "lineNumber": 41
+        },
+        {
+          "caller": "build",
+          "callee": "PlatformAppWrapper",
+          "lineNumber": 52
+        },
+        {
+          "caller": "build",
+          "callee": "_FladderApp",
+          "lineNumber": 54
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 71
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 71
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 73
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 73
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 75
+        },
+        {
+          "caller": "build",
+          "callee": "MaterialScrollBehavior",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "AdaptiveColor",
+          "lineNumber": 79
+        },
+        {
+          "caller": "build",
+          "callee": "ThemesData",
+          "lineNumber": 80
+        },
+        {
+          "caller": "build",
+          "callee": "router",
+          "lineNumber": 83
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 85
+        },
+        {
+          "caller": "build",
+          "callee": "toSet",
+          "lineNumber": 89
+        },
+        {
+          "caller": "build",
+          "callee": "Locale",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "contains",
+          "lineNumber": 97
+        },
+        {
+          "caller": "build",
+          "callee": "firstWhere",
+          "lineNumber": 100
+        },
+        {
+          "caller": "build",
+          "callee": "MediaQueryScaler",
+          "lineNumber": 107
+        },
+        {
+          "caller": "build",
+          "callee": "LocalizationContextWrapper",
+          "lineNumber": 108
+        },
+        {
+          "caller": "build",
+          "callee": "PipLifecycleController",
+          "lineNumber": 109
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 109
+        },
+        {
+          "caller": "build",
+          "callee": "read",
+          "lineNumber": 112
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 115
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 119
+        },
+        {
+          "caller": "build",
+          "callee": "config",
+          "lineNumber": 126
+        },
+        {
+          "caller": "build",
+          "callee": "deepLinkBuilder",
+          "lineNumber": 127
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/models/account_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 158,
+      "nonEmptyLines": 134,
+      "functions": [
+        {
+          "name": "AccountModel.fromJson",
+          "startLine": 52,
+          "endLine": 52,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "canDownload",
+          "startLine": 54,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "sameIdentity",
+          "startLine": 57,
+          "endLine": 57,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "fromJson",
+          "startLine": 68,
+          "endLine": 68,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "toJson",
+          "startLine": 79,
+          "endLine": 79,
+          "params": [
+            "object"
+          ]
+        },
+        {
+          "name": "UserSettings.fromJson",
+          "startLine": 91,
+          "endLine": 91,
+          "params": [
+            "json"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AccountModel",
+          "startLine": 21,
+          "endLine": 61,
+          "methods": [
+            "AccountModel.fromJson",
+            "canDownload",
+            "sameIdentity"
+          ],
+          "properties": []
+        },
+        {
+          "name": "CredentialsConverter",
+          "startLine": 64,
+          "endLine": 82,
+          "methods": [
+            "fromJson",
+            "toJson"
+          ],
+          "properties": []
+        },
+        {
+          "name": "UserSettings",
+          "startLine": 85,
+          "endLine": 92,
+          "methods": [
+            "UserSettings.fromJson"
+          ],
+          "properties": []
+        },
+        {
+          "name": "Authentication",
+          "startLine": 94,
+          "endLine": 95,
+          "methods": [],
+          "properties": [
+            "autoLogin"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AccountModel.fromJson",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "canDownload",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "sameIdentity",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "AccountModel",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "fromJson",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "toJson",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CredentialsConverter",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "UserSettings.fromJson",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "UserSettings",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "Authentication",
+          "line": 94,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AccountModel.fromJson",
+          "callee": "_$AccountModelFromJson",
+          "lineNumber": 52
+        },
+        {
+          "caller": "sameIdentity",
+          "callee": "identical",
+          "lineNumber": 58
+        },
+        {
+          "caller": "fromJson",
+          "callee": "fromJsonString",
+          "lineNumber": 70
+        },
+        {
+          "caller": "fromJson",
+          "callee": "fromJson",
+          "lineNumber": 73
+        },
+        {
+          "caller": "fromJson",
+          "callee": "ArgumentError",
+          "lineNumber": 75
+        },
+        {
+          "caller": "toJson",
+          "callee": "toJson",
+          "lineNumber": 80
+        },
+        {
+          "caller": "UserSettings.fromJson",
+          "callee": "_$UserSettingsFromJson",
+          "lineNumber": 91
+        },
+        {
+          "caller": "Set",
+          "callee": "toSet",
+          "lineNumber": 103
+        },
+        {
+          "caller": "Future",
+          "callee": "LocalAuthentication",
+          "lineNumber": 113
+        },
+        {
+          "caller": "Future",
+          "callee": "getAvailableBiometrics",
+          "lineNumber": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 6,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "lib/models/account_model.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 1267,
+      "nonEmptyLines": 1186,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "name",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "id",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "avatar",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "lastUsed",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "authMethod",
+          "startLine": 21,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "askForAuthOnLaunch",
+          "startLine": 22,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "localPin",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "credentials",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "seerrCredentials",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "latestItemsExcludes",
+          "startLine": 27,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "searchQueryHistory",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "quickConnectState",
+          "startLine": 29,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "libraryFilters",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "updateNotificationsEnabled",
+          "startLine": 31,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "seerrRequestsEnabled",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "includeHiddenViews",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "incognitoMode",
+          "startLine": 34,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "policy",
+          "startLine": 36,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "serverConfiguration",
+          "startLine": 38,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "userConfiguration",
+          "startLine": 40,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "hasPassword",
+          "startLine": 42,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "hasConfiguredPassword",
+          "startLine": 44,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "userSettings",
+          "startLine": 45,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 51,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "toJson",
+          "startLine": 55,
+          "endLine": 55,
+          "params": []
+        },
+        {
+          "name": "debugFillProperties",
+          "startLine": 58,
+          "endLine": 58,
+          "params": [
+            "properties"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 87,
+          "endLine": 87,
+          "params": [
+            "minLevel"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$AccountModel",
+          "startLine": 16,
+          "endLine": 90,
+          "methods": [
+            "name",
+            "id",
+            "avatar",
+            "lastUsed",
+            "authMethod",
+            "askForAuthOnLaunch",
+            "localPin",
+            "credentials",
+            "seerrCredentials",
+            "latestItemsExcludes",
+            "searchQueryHistory",
+            "quickConnectState",
+            "libraryFilters",
+            "updateNotificationsEnabled",
+            "seerrRequestsEnabled",
+            "includeHiddenViews",
+            "incognitoMode",
+            "policy",
+            "serverConfiguration",
+            "userConfiguration",
+            "hasPassword",
+            "hasConfiguredPassword",
+            "userSettings",
+            "copyWith",
+            "toJson",
+            "debugFillProperties",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "name",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "id",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "avatar",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "lastUsed",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "authMethod",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "askForAuthOnLaunch",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "localPin",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "credentials",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "seerrCredentials",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "latestItemsExcludes",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "searchQueryHistory",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "quickConnectState",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "libraryFilters",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "updateNotificationsEnabled",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "seerrRequestsEnabled",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "includeHiddenViews",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "incognitoMode",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "policy",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "serverConfiguration",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "userConfiguration",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "hasPassword",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "hasConfiguredPassword",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "userSettings",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "toJson",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "debugFillProperties",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 87,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "_$AccountModelCopyWithImpl",
+          "lineNumber": 52
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 60
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 61
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 62
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 63
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 64
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 65
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 66
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 67
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 68
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 69
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 70
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 71
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 72
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 73
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 74
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 75
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 76
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 77
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 78
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 79
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 80
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 81
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 82
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 83
+        },
+        {
+          "caller": "call",
+          "callee": "_$AccountModelCopyWithImpl",
+          "lineNumber": 128
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 162
+        },
+        {
+          "caller": "call",
+          "callee": "copyWith",
+          "lineNumber": 162
+        },
+        {
+          "caller": "$CredentialsModelCopyWith",
+          "callee": "_then",
+          "lineNumber": 264
+        },
+        {
+          "caller": "$CredentialsModelCopyWith",
+          "callee": "copyWith",
+          "lineNumber": 264
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 278
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 278
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 292
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 292
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "_AccountModel",
+          "lineNumber": 318
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "$default",
+          "lineNumber": 319
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "orElse",
+          "lineNumber": 321
+        },
+        {
+          "caller": "map",
+          "callee": "_AccountModel",
+          "lineNumber": 344
+        },
+        {
+          "caller": "map",
+          "callee": "$default",
+          "lineNumber": 345
+        },
+        {
+          "caller": "map",
+          "callee": "StateError",
+          "lineNumber": 347
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_AccountModel",
+          "lineNumber": 369
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 370
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_AccountModel",
+          "lineNumber": 419
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 420
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 445
+        },
+        {
+          "caller": "when",
+          "callee": "_AccountModel",
+          "lineNumber": 492
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 493
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 518
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_AccountModel",
+          "lineNumber": 564
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 565
+        },
+        {
+          "caller": "Map",
+          "callee": "_$AccountModelToJson",
+          "lineNumber": 719
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 727
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 728
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 729
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 730
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 731
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 732
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 733
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 734
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 735
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 736
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 737
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 738
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 739
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 740
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 741
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 742
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 743
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 744
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 745
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 746
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 747
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 748
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 749
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 750
+        },
+        {
+          "caller": "call",
+          "callee": "__$AccountModelCopyWithImpl",
+          "lineNumber": 799
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 833
+        },
+        {
+          "caller": "call",
+          "callee": "_AccountModel",
+          "lineNumber": 833
+        },
+        {
+          "caller": "$CredentialsModelCopyWith",
+          "callee": "_then",
+          "lineNumber": 935
+        },
+        {
+          "caller": "$CredentialsModelCopyWith",
+          "callee": "copyWith",
+          "lineNumber": 935
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 949
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 949
+        },
+        {
+          "caller": "get",
+          "callee": "_then",
+          "lineNumber": 963
+        },
+        {
+          "caller": "get",
+          "callee": "copyWith",
+          "lineNumber": 963
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 986
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 987
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 988
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 1019
+        },
+        {
+          "caller": "call",
+          "callee": "copyWith",
+          "lineNumber": 1019
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "_UserSettings",
+          "lineNumber": 1053
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "$default",
+          "lineNumber": 1054
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "orElse",
+          "lineNumber": 1056
+        },
+        {
+          "caller": "map",
+          "callee": "_UserSettings",
+          "lineNumber": 1079
+        },
+        {
+          "caller": "map",
+          "callee": "$default",
+          "lineNumber": 1080
+        },
+        {
+          "caller": "map",
+          "callee": "StateError",
+          "lineNumber": 1082
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_UserSettings",
+          "lineNumber": 1104
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 1105
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_UserSettings",
+          "lineNumber": 1130
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 1131
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 1133
+        },
+        {
+          "caller": "when",
+          "callee": "_UserSettings",
+          "lineNumber": 1156
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 1157
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 1159
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_UserSettings",
+          "lineNumber": 1181
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 1182
+        },
+        {
+          "caller": "Map",
+          "callee": "_$UserSettingsToJson",
+          "lineNumber": 1212
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 1220
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 1221
+        },
+        {
+          "caller": "debugFillProperties",
+          "callee": "DiagnosticsProperty",
+          "lineNumber": 1222
+        },
+        {
+          "caller": "call",
+          "callee": "_then",
+          "lineNumber": 1254
+        },
+        {
+          "caller": "call",
+          "callee": "_UserSettings",
+          "lineNumber": 1254
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 27,
+        "functionCount": 28,
+        "classCount": 1
+      }
+    }
+  ]
+}

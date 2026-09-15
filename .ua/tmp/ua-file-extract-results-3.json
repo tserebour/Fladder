@@ -1,0 +1,610 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 5,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 5,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/controls/ItemHeader.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "ItemHeader",
+          "startLine": 18,
+          "endLine": 55,
+          "params": [
+            "modifier",
+            "state"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ItemHeader",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ItemHeader",
+          "callee": "Box",
+          "lineNumber": 26
+        },
+        {
+          "caller": "ItemHeader",
+          "callee": "statusBarsPadding",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ItemHeader",
+          "callee": "fillMaxWidth",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ItemHeader",
+          "callee": "isNullOrBlank",
+          "lineNumber": 32
+        },
+        {
+          "caller": "ItemHeader",
+          "callee": "AsyncImage",
+          "lineNumber": 33
+        },
+        {
+          "caller": "ItemHeader",
+          "callee": "fillMaxWidth",
+          "lineNumber": 37
+        },
+        {
+          "caller": "ItemHeader",
+          "callee": "fillMaxHeight",
+          "lineNumber": 37
+        },
+        {
+          "caller": "ItemHeader",
+          "callee": "let",
+          "lineNumber": 42
+        },
+        {
+          "caller": "ItemHeader",
+          "callee": "Text",
+          "lineNumber": 43
+        },
+        {
+          "caller": "ItemHeader",
+          "callee": "copy",
+          "lineNumber": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/screensavers/ScreensaverDvd.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 140,
+      "nonEmptyLines": 124,
+      "functions": [
+        {
+          "name": "ScreensaverDvd",
+          "startLine": 35,
+          "endLine": 132,
+          "params": [
+            "modifier",
+            "velocityX",
+            "velocityY",
+            "logo"
+          ]
+        },
+        {
+          "name": "randomColor",
+          "startLine": 134,
+          "endLine": 140,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ScreensaverDvd",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "Text",
+          "lineNumber": 41
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "copy",
+          "lineNumber": 44
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "remember",
+          "lineNumber": 53
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "with",
+          "lineNumber": 54
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "Offset",
+          "lineNumber": 55
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "toPx",
+          "lineNumber": 55
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "toPx",
+          "lineNumber": 55
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "BoxWithConstraints",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "background",
+          "lineNumber": 60
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "fillMaxSize",
+          "lineNumber": 60
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "with",
+          "lineNumber": 64
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "toPx",
+          "lineNumber": 64
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "with",
+          "lineNumber": 65
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "toPx",
+          "lineNumber": 65
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "remember",
+          "lineNumber": 67
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "mutableStateOf",
+          "lineNumber": 67
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "Offset",
+          "lineNumber": 67
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "remember",
+          "lineNumber": 68
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "mutableStateOf",
+          "lineNumber": 68
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "remember",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "mutableStateOf",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "remember",
+          "lineNumber": 70
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "mutableStateOf",
+          "lineNumber": 70
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "LaunchedEffect",
+          "lineNumber": 72
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "takeIf",
+          "lineNumber": 77
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "copy",
+          "lineNumber": 90
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "copy",
+          "lineNumber": 94
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "copy",
+          "lineNumber": 100
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "copy",
+          "lineNumber": 104
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "Offset",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "randomColor",
+          "lineNumber": 111
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "delay",
+          "lineNumber": 114
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "Box",
+          "lineNumber": 118
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "onSizeChanged",
+          "lineNumber": 119
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "offset",
+          "lineNumber": 119
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "IntOffset",
+          "lineNumber": 120
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "roundToInt",
+          "lineNumber": 120
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "roundToInt",
+          "lineNumber": 120
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "logo",
+          "lineNumber": 123
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "CurrentTime",
+          "lineNumber": 126
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "align",
+          "lineNumber": 127
+        },
+        {
+          "caller": "ScreensaverDvd",
+          "callee": "padding",
+          "lineNumber": 127
+        },
+        {
+          "caller": "randomColor",
+          "callee": "Color",
+          "lineNumber": 135
+        },
+        {
+          "caller": "randomColor",
+          "callee": "nextInt",
+          "lineNumber": 136
+        },
+        {
+          "caller": "randomColor",
+          "callee": "nextInt",
+          "lineNumber": 137
+        },
+        {
+          "caller": "randomColor",
+          "callee": "nextInt",
+          "lineNumber": 138
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/screensavers/ScreensaverLogo.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 39,
+      "functions": [
+        {
+          "name": "ScreensaverLogo",
+          "startLine": 19,
+          "endLine": 41,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ScreensaverLogo",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ScreensaverLogo",
+          "callee": "Row",
+          "lineNumber": 21
+        },
+        {
+          "caller": "ScreensaverLogo",
+          "callee": "padding",
+          "lineNumber": 22
+        },
+        {
+          "caller": "ScreensaverLogo",
+          "callee": "background",
+          "lineNumber": 22
+        },
+        {
+          "caller": "ScreensaverLogo",
+          "callee": "fillMaxSize",
+          "lineNumber": 22
+        },
+        {
+          "caller": "ScreensaverLogo",
+          "callee": "spacedBy",
+          "lineNumber": 26
+        },
+        {
+          "caller": "ScreensaverLogo",
+          "callee": "collectAsState",
+          "lineNumber": 29
+        },
+        {
+          "caller": "ScreensaverLogo",
+          "callee": "let",
+          "lineNumber": 32
+        },
+        {
+          "caller": "ScreensaverLogo",
+          "callee": "ItemHeader",
+          "lineNumber": 33
+        },
+        {
+          "caller": "ScreensaverLogo",
+          "callee": "weight",
+          "lineNumber": 34
+        },
+        {
+          "caller": "ScreensaverLogo",
+          "callee": "CurrentTime",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/overlays/screensavers/ScreensaverTime.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "ScreensaverTime",
+          "startLine": 12,
+          "endLine": 22,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ScreensaverTime",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ScreensaverTime",
+          "callee": "Box",
+          "lineNumber": 14
+        },
+        {
+          "caller": "ScreensaverTime",
+          "callee": "background",
+          "lineNumber": 15
+        },
+        {
+          "caller": "ScreensaverTime",
+          "callee": "fillMaxSize",
+          "lineNumber": 15
+        },
+        {
+          "caller": "ScreensaverTime",
+          "callee": "CurrentTime",
+          "lineNumber": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "android/app/src/main/kotlin/nl/jknaapen/fladder/composables/shared/CurrentTime.kt",
+      "language": "kotlin",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 47,
+      "functions": [
+        {
+          "name": "CurrentTime",
+          "startLine": 22,
+          "endLine": 53,
+          "params": [
+            "modifier"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CurrentTime",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CurrentTime",
+          "callee": "remember",
+          "lineNumber": 26
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "mutableLongStateOf",
+          "lineNumber": 26
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "currentTimeMillis",
+          "lineNumber": 26
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "LaunchedEffect",
+          "lineNumber": 28
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "currentTimeMillis",
+          "lineNumber": 30
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "delay",
+          "lineNumber": 32
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "format",
+          "lineNumber": 36
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "apply",
+          "lineNumber": 36
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "SimpleDateFormat",
+          "lineNumber": 36
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "getDefault",
+          "lineNumber": 36
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "getTimeZone",
+          "lineNumber": 37
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "Date",
+          "lineNumber": 38
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "Translate",
+          "lineNumber": 40
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "hoursAndMinutes",
+          "lineNumber": 42
+        },
+        {
+          "caller": "CurrentTime",
+          "callee": "Text",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

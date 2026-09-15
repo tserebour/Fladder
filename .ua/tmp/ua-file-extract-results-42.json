@@ -1,0 +1,3062 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "lib/util/absorb_events.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AbsorbEvents",
+          "startLine": 4,
+          "endLine": 22,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "absorb",
+            "child"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "AbsorbEvents",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "GestureDetector",
+          "lineNumber": 12
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 16
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/adaptive_layout/adaptive_layout.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 326,
+      "nonEmptyLines": 272,
+      "functions": [
+        {
+          "name": "label",
+          "startLine": 39,
+          "endLine": 39,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "operator",
+          "startLine": 46,
+          "endLine": 46,
+          "params": [
+            "other"
+          ]
+        },
+        {
+          "name": "operator",
+          "startLine": 48,
+          "endLine": 48,
+          "params": [
+            "other"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "InputDevice",
+          "startLine": 25,
+          "endLine": 29,
+          "methods": [],
+          "properties": [
+            "touch",
+            "pointer",
+            "dPad"
+          ]
+        },
+        {
+          "name": "ViewSize",
+          "startLine": 31,
+          "endLine": 39,
+          "methods": [],
+          "properties": [
+            "phone",
+            "tablet",
+            "desktop",
+            "String"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "InputDevice",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "ViewSize",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "operator",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "operator",
+          "line": 48,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 39
+        },
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 58
+        },
+        {
+          "caller": "AdaptiveLayoutModel",
+          "callee": "dependOnInheritedWidgetOfExactType",
+          "lineNumber": 79
+        },
+        {
+          "caller": "AdaptiveLayout",
+          "callee": "dependOnInheritedWidgetOfExactType",
+          "lineNumber": 85
+        },
+        {
+          "caller": "ViewSize",
+          "callee": "maybeOf",
+          "lineNumber": 89
+        },
+        {
+          "caller": "PosterDefaults",
+          "callee": "maybeOf",
+          "lineNumber": 94
+        },
+        {
+          "caller": "ScrollController",
+          "callee": "maybeOf",
+          "lineNumber": 99
+        },
+        {
+          "caller": "ScrollController",
+          "callee": "ScrollController",
+          "lineNumber": 100
+        },
+        {
+          "caller": "isDesktop",
+          "callee": "maybeOf",
+          "lineNumber": 104
+        },
+        {
+          "caller": "adaptivePadding",
+          "callee": "paddingOf",
+          "lineNumber": 109
+        },
+        {
+          "caller": "adaptivePadding",
+          "callee": "of",
+          "lineNumber": 110
+        },
+        {
+          "caller": "adaptivePadding",
+          "callee": "only",
+          "lineNumber": 111
+        },
+        {
+          "caller": "adaptivePadding",
+          "callee": "of",
+          "lineNumber": 112
+        },
+        {
+          "caller": "adaptivePadding",
+          "callee": "resolve",
+          "lineNumber": 114
+        },
+        {
+          "caller": "adaptivePadding",
+          "callee": "only",
+          "lineNumber": 117
+        },
+        {
+          "caller": "layoutModeOf",
+          "callee": "maybeOf",
+          "lineNumber": 123
+        },
+        {
+          "caller": "viewSizeOf",
+          "callee": "maybeOf",
+          "lineNumber": 124
+        },
+        {
+          "caller": "inputDeviceOf",
+          "callee": "maybeOf",
+          "lineNumber": 126
+        },
+        {
+          "caller": "createState",
+          "callee": "_AdaptiveLayoutBuilderState",
+          "lineNumber": 144
+        },
+        {
+          "caller": "initState",
+          "callee": "addPostFrameCallback",
+          "lineNumber": 165
+        },
+        {
+          "caller": "initState",
+          "callee": "checkLeanBackMode",
+          "lineNumber": 166
+        },
+        {
+          "caller": "checkLeanBackMode",
+          "callee": "read",
+          "lineNumber": 171
+        },
+        {
+          "caller": "checkLeanBackMode",
+          "callee": "read",
+          "lineNumber": 172
+        },
+        {
+          "caller": "checkLeanBackMode",
+          "callee": "resolveLeanBackEnabled",
+          "lineNumber": 177
+        },
+        {
+          "caller": "checkLeanBackMode",
+          "callee": "read",
+          "lineNumber": 185
+        },
+        {
+          "caller": "checkLeanBackMode",
+          "callee": "update",
+          "lineNumber": 185
+        },
+        {
+          "caller": "checkLeanBackMode",
+          "callee": "copyWith",
+          "lineNumber": 185
+        },
+        {
+          "caller": "checkLeanBackMode",
+          "callee": "read",
+          "lineNumber": 189
+        },
+        {
+          "caller": "checkLeanBackMode",
+          "callee": "setForceLeanBackMode",
+          "lineNumber": 189
+        },
+        {
+          "caller": "didChangeDependencies",
+          "callee": "calculateLayout",
+          "lineNumber": 195
+        },
+        {
+          "caller": "didChangeDependencies",
+          "callee": "calculateSize",
+          "lineNumber": 196
+        },
+        {
+          "caller": "calculateLayout",
+          "callee": "of",
+          "lineNumber": 212
+        },
+        {
+          "caller": "calculateLayout",
+          "callee": "of",
+          "lineNumber": 212
+        },
+        {
+          "caller": "calculateSize",
+          "callee": "of",
+          "lineNumber": 221
+        },
+        {
+          "caller": "calculateSize",
+          "callee": "of",
+          "lineNumber": 221
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 231
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 235
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 235
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 237
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 237
+        },
+        {
+          "caller": "build",
+          "callee": "selectAvailableOrSmaller",
+          "lineNumber": 239
+        },
+        {
+          "caller": "build",
+          "callee": "selectAvailableOrSmaller",
+          "lineNumber": 240
+        },
+        {
+          "caller": "build",
+          "callee": "PosterDefaults",
+          "lineNumber": 242
+        },
+        {
+          "caller": "build",
+          "callee": "AdaptiveLayoutModel",
+          "lineNumber": 245
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 255
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 258
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 262
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 263
+        },
+        {
+          "caller": "build",
+          "callee": "ValueListenableBuilder",
+          "lineNumber": 279
+        },
+        {
+          "caller": "build",
+          "callee": "InputDetector",
+          "lineNumber": 282
+        },
+        {
+          "caller": "build",
+          "callee": "MediaQuery",
+          "lineNumber": 285
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 286
+        },
+        {
+          "caller": "build",
+          "callee": "only",
+          "lineNumber": 289
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 290
+        },
+        {
+          "caller": "build",
+          "callee": "max",
+          "lineNumber": 292
+        },
+        {
+          "caller": "build",
+          "callee": "only",
+          "lineNumber": 296
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 297
+        },
+        {
+          "caller": "build",
+          "callee": "AdaptiveLayout",
+          "lineNumber": 299
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 300
+        },
+        {
+          "caller": "build",
+          "callee": "Builder",
+          "lineNumber": 309
+        },
+        {
+          "caller": "build",
+          "callee": "ResolutionChecker",
+          "lineNumber": 311
+        },
+        {
+          "caller": "build",
+          "callee": "DebugBanner",
+          "lineNumber": 313
+        },
+        {
+          "caller": "build",
+          "callee": "child",
+          "lineNumber": 313
+        },
+        {
+          "caller": "build",
+          "callee": "child",
+          "lineNumber": 314
+        },
+        {
+          "caller": "build",
+          "callee": "DebugBanner",
+          "lineNumber": 317
+        },
+        {
+          "caller": "build",
+          "callee": "child",
+          "lineNumber": 317
+        },
+        {
+          "caller": "build",
+          "callee": "child",
+          "lineNumber": 318
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 3,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/adaptive_layout/adaptive_layout_model.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 105,
+      "nonEmptyLines": 94,
+      "functions": [
+        {
+          "name": "LayoutPoints",
+          "startLine": 11,
+          "endLine": 15,
+          "params": [
+            "start",
+            "end",
+            "type"
+          ]
+        },
+        {
+          "name": "copyWith",
+          "startLine": 17,
+          "endLine": 21,
+          "params": [
+            "start",
+            "end",
+            "type"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "hashCode",
+          "startLine": 39,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "copyWith",
+          "startLine": 68,
+          "endLine": 79,
+          "params": [
+            "viewSize",
+            "layoutMode",
+            "inputDevice",
+            "platform",
+            "isDesktop",
+            "posterDefaults",
+            "controller",
+            "sideBarWidth",
+            "topBarHeight",
+            "statusBarHeight"
+          ]
+        },
+        {
+          "name": "hashCode",
+          "startLine": 104,
+          "endLine": 104,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "LayoutPoints",
+          "startLine": 7,
+          "endLine": 40,
+          "methods": [
+            "LayoutPoints",
+            "copyWith",
+            "toString",
+            "hashCode"
+          ],
+          "properties": [
+            "start",
+            "end",
+            "type"
+          ]
+        },
+        {
+          "name": "AdaptiveLayoutModel",
+          "startLine": 43,
+          "endLine": 105,
+          "methods": [
+            "copyWith",
+            "hashCode"
+          ],
+          "properties": [
+            "viewSize",
+            "layoutMode",
+            "inputDevice",
+            "platform",
+            "isDesktop",
+            "posterDefaults",
+            "controller",
+            "sideBarWidth",
+            "topBarHeight",
+            "statusBarHeight"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LayoutPoints",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "LayoutPoints",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "copyWith",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "hashCode",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "AdaptiveLayoutModel",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyWith",
+          "callee": "LayoutPoints",
+          "lineNumber": 22
+        },
+        {
+          "caller": "copyWith",
+          "callee": "AdaptiveLayoutModel",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 6,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/application_info.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 39,
+      "functions": [
+        {
+          "name": "platformLabel",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "versionPlatformBuild",
+          "startLine": 43,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "versionAndPlatform",
+          "startLine": 45,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "toString",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ApplicationInfo",
+          "startLine": 22,
+          "endLine": 49,
+          "methods": [
+            "platformLabel",
+            "versionPlatformBuild",
+            "versionAndPlatform",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "platformLabel",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "versionPlatformBuild",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "versionAndPlatform",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "ApplicationInfo",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "platformLabel",
+          "callee": "capitalize",
+          "lineNumber": 34
+        },
+        {
+          "caller": "platformLabel",
+          "callee": "switch",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/application_info.freezed.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 209,
+      "nonEmptyLines": 189,
+      "functions": [
+        {
+          "name": "_$identity",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "name",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "version",
+          "startLine": 18,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "buildNumber",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "platform",
+          "startLine": 20,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "maybeMap",
+          "startLine": 38,
+          "endLine": 41,
+          "params": [
+            "$default",
+            "orElse"
+          ]
+        },
+        {
+          "name": "map",
+          "startLine": 65,
+          "endLine": 67,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "mapOrNull",
+          "startLine": 90,
+          "endLine": 92,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "maybeWhen",
+          "startLine": 115,
+          "endLine": 120,
+          "params": [
+            "$default",
+            "orElse"
+          ]
+        },
+        {
+          "name": "when",
+          "startLine": 145,
+          "endLine": 149,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "whenOrNull",
+          "startLine": 173,
+          "endLine": 177,
+          "params": [
+            "$default"
+          ]
+        },
+        {
+          "name": "_ApplicationInfo",
+          "startLine": 192,
+          "endLine": 197,
+          "params": [
+            "name",
+            "version",
+            "buildNumber",
+            "platform"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "_$ApplicationInfo",
+          "startLine": 16,
+          "endLine": 21,
+          "methods": [
+            "name",
+            "version",
+            "buildNumber",
+            "platform"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ApplicationInfoPatterns",
+          "startLine": 24,
+          "endLine": 187,
+          "methods": [
+            "maybeMap",
+            "map",
+            "mapOrNull",
+            "maybeWhen",
+            "when",
+            "whenOrNull"
+          ],
+          "properties": []
+        },
+        {
+          "name": "_ApplicationInfo",
+          "startLine": 191,
+          "endLine": 207,
+          "methods": [
+            "_ApplicationInfo"
+          ],
+          "properties": [
+            "name",
+            "version",
+            "buildNumber",
+            "platform"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "name",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "version",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "buildNumber",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "platform",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "maybeMap",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "map",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "mapOrNull",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "maybeWhen",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "when",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "whenOrNull",
+          "line": 173,
+          "isDefault": false
+        },
+        {
+          "name": "ApplicationInfoPatterns",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "maybeMap",
+          "callee": "_ApplicationInfo",
+          "lineNumber": 44
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "$default",
+          "lineNumber": 45
+        },
+        {
+          "caller": "maybeMap",
+          "callee": "orElse",
+          "lineNumber": 47
+        },
+        {
+          "caller": "map",
+          "callee": "_ApplicationInfo",
+          "lineNumber": 70
+        },
+        {
+          "caller": "map",
+          "callee": "$default",
+          "lineNumber": 71
+        },
+        {
+          "caller": "map",
+          "callee": "StateError",
+          "lineNumber": 73
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "_ApplicationInfo",
+          "lineNumber": 95
+        },
+        {
+          "caller": "mapOrNull",
+          "callee": "$default",
+          "lineNumber": 96
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "_ApplicationInfo",
+          "lineNumber": 123
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "$default",
+          "lineNumber": 124
+        },
+        {
+          "caller": "maybeWhen",
+          "callee": "orElse",
+          "lineNumber": 127
+        },
+        {
+          "caller": "when",
+          "callee": "_ApplicationInfo",
+          "lineNumber": 152
+        },
+        {
+          "caller": "when",
+          "callee": "$default",
+          "lineNumber": 153
+        },
+        {
+          "caller": "when",
+          "callee": "StateError",
+          "lineNumber": 156
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "_ApplicationInfo",
+          "lineNumber": 180
+        },
+        {
+          "caller": "whenOrNull",
+          "callee": "$default",
+          "lineNumber": 181
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 12,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/util/auth_service.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "authenticateUser",
+          "startLine": 16,
+          "endLine": 21,
+          "params": [
+            "context",
+            "user",
+            "stickyAuth",
+            "sensitiveTransaction"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthService",
+          "startLine": 15,
+          "endLine": 54,
+          "methods": [
+            "authenticateUser"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "authenticateUser",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "AuthService",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "authenticateUser",
+          "callee": "LocalAuthentication",
+          "lineNumber": 22
+        },
+        {
+          "caller": "authenticateUser",
+          "callee": "isDeviceSupported",
+          "lineNumber": 24
+        },
+        {
+          "caller": "authenticateUser",
+          "callee": "authenticate",
+          "lineNumber": 28
+        },
+        {
+          "caller": "authenticateUser",
+          "callee": "authenticateWithBiometrics",
+          "lineNumber": 30
+        },
+        {
+          "caller": "authenticateUser",
+          "callee": "AndroidAuthMessages",
+          "lineNumber": 32
+        },
+        {
+          "caller": "authenticateUser",
+          "callee": "IOSAuthMessages",
+          "lineNumber": 36
+        },
+        {
+          "caller": "authenticateUser",
+          "callee": "AuthenticationOptions",
+          "lineNumber": 40
+        },
+        {
+          "caller": "authenticateUser",
+          "callee": "debugPrint",
+          "lineNumber": 46
+        },
+        {
+          "caller": "authenticateUser",
+          "callee": "log",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/bitrate_formatting.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "audioBitrateFormat",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "videoBitrateFormat",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BitrateFormats",
+          "startLine": 3,
+          "endLine": 23,
+          "methods": [
+            "audioBitrateFormat",
+            "videoBitrateFormat"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "audioBitrateFormat",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "videoBitrateFormat",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "BitrateFormats",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "audioBitrateFormat",
+          "callee": "round",
+          "lineNumber": 7
+        },
+        {
+          "caller": "videoBitrateFormat",
+          "callee": "toStringAsFixed",
+          "lineNumber": 18
+        },
+        {
+          "caller": "videoBitrateFormat",
+          "callee": "round",
+          "lineNumber": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/bitrate_helper.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 105,
+      "nonEmptyLines": 85,
+      "classes": [
+        {
+          "name": "Bitrate",
+          "startLine": 10,
+          "endLine": 11,
+          "methods": [],
+          "properties": [
+            "original"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Bitrate",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 34
+        },
+        {
+          "caller": "label",
+          "callee": "toString",
+          "lineNumber": 37
+        },
+        {
+          "caller": "label",
+          "callee": "replaceFirst",
+          "lineNumber": 37
+        },
+        {
+          "caller": "label",
+          "callee": "replaceAll",
+          "lineNumber": 37
+        },
+        {
+          "caller": "label",
+          "callee": "toUpperCaseSplit",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "toDouble",
+          "lineNumber": 66
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "where",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "toSet",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "contains",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "where",
+          "lineNumber": 77
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "add",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "addAll",
+          "lineNumber": 85
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "where",
+          "lineNumber": 85
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "where",
+          "lineNumber": 90
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "toList",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "asMap",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "map",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "MapEntry",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "log",
+          "lineNumber": 102
+        },
+        {
+          "caller": "getVideoQualityOptions",
+          "callee": "toString",
+          "lineNumber": 102
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/box_fit_extension.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "label",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BoxFitExtension",
+          "startLine": 4,
+          "endLine": 16,
+          "methods": [
+            "label"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "label",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "BoxFitExtension",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/clipboard_helper.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "copyToClipboard",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "value",
+            "customMessage"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ClipboardHelper",
+          "startLine": 7,
+          "endLine": 17,
+          "methods": [
+            "copyToClipboard"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "copyToClipboard",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "ClipboardHelper",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "copyToClipboard",
+          "callee": "setData",
+          "lineNumber": 9
+        },
+        {
+          "caller": "copyToClipboard",
+          "callee": "ClipboardData",
+          "lineNumber": 9
+        },
+        {
+          "caller": "copyToClipboard",
+          "callee": "show",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/color_extensions.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "toColor",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "colorFromJson",
+          "startLine": 20,
+          "endLine": 20,
+          "params": [
+            "color"
+          ]
+        },
+        {
+          "name": "toMap",
+          "startLine": 41,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "label",
+          "startLine": 52,
+          "endLine": 52,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ColorHelper",
+          "startLine": 5,
+          "endLine": 18,
+          "methods": [
+            "toColor"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ColorExtensions",
+          "startLine": 40,
+          "endLine": 49,
+          "methods": [
+            "toMap"
+          ],
+          "properties": []
+        },
+        {
+          "name": "DynamicSchemeVariantExtension",
+          "startLine": 51,
+          "endLine": 63,
+          "methods": [
+            "label"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "toColor",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ColorHelper",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "colorFromJson",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "toMap",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "ColorExtensions",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "DynamicSchemeVariantExtension",
+          "line": 51,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toColor",
+          "callee": "codeUnitAt",
+          "lineNumber": 9
+        },
+        {
+          "caller": "toColor",
+          "callee": "abs",
+          "lineNumber": 12
+        },
+        {
+          "caller": "toColor",
+          "callee": "toDouble",
+          "lineNumber": 12
+        },
+        {
+          "caller": "toColor",
+          "callee": "fromAHSL",
+          "lineNumber": 16
+        },
+        {
+          "caller": "toColor",
+          "callee": "toColor",
+          "lineNumber": 16
+        },
+        {
+          "caller": "colorFromJson",
+          "callee": "from",
+          "lineNumber": 24
+        },
+        {
+          "caller": "colorFromJson",
+          "callee": "Color",
+          "lineNumber": 34
+        },
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 4,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/util/custom_cache_manager.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "classes": [
+        {
+          "name": "CustomCacheManager",
+          "startLine": 3,
+          "endLine": 13,
+          "methods": [],
+          "properties": [
+            "instance"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CustomCacheManager",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/custom_color_themes.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 77,
+      "classes": [
+        {
+          "name": "ColorThemes",
+          "startLine": 4,
+          "endLine": 5,
+          "methods": [],
+          "properties": [
+            "fladder"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ColorThemes",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/debouncer.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "Debouncer",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "duration"
+          ]
+        },
+        {
+          "name": "run",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "action"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Debouncer",
+          "startLine": 4,
+          "endLine": 14,
+          "methods": [
+            "Debouncer",
+            "run"
+          ],
+          "properties": [
+            "duration",
+            "_timer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Debouncer",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "run",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Debouncer",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "Timer",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/debug_banner.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DebugBanner",
+          "startLine": 8,
+          "endLine": 52,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "child"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "DebugBanner",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 14
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 14
+        },
+        {
+          "caller": "build",
+          "callee": "Directionality",
+          "lineNumber": 16
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 18
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 22
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedOpacity",
+          "lineNumber": 24
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "IgnorePointer",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 28
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 30
+        },
+        {
+          "caller": "build",
+          "callee": "RoundedRectangleBorder",
+          "lineNumber": 31
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 31
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 33
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/deep_link_helper.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 120,
+      "nonEmptyLines": 105,
+      "functions": [
+        {
+          "name": "deepLinkBuilder",
+          "startLine": 9,
+          "endLine": 9,
+          "params": [
+            "payload"
+          ]
+        },
+        {
+          "name": "AuthLinkData",
+          "startLine": 23,
+          "endLine": 28,
+          "params": [
+            "serverUrl",
+            "seerrUrl",
+            "userName",
+            "password"
+          ]
+        },
+        {
+          "name": "toJson",
+          "startLine": 30,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "AuthLinkData.fromJson",
+          "startLine": 37,
+          "endLine": 37,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "parse",
+          "startLine": 44,
+          "endLine": 44,
+          "params": [
+            "encoded"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 62,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "pageRouteInfoToPath",
+          "startLine": 107,
+          "endLine": 107,
+          "params": [
+            "route"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthLinkData",
+          "startLine": 17,
+          "endLine": 65,
+          "methods": [
+            "AuthLinkData",
+            "toJson",
+            "AuthLinkData.fromJson",
+            "parse",
+            "toString"
+          ],
+          "properties": [
+            "serverUrl",
+            "seerrUrl",
+            "userName",
+            "password"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "deepLinkBuilder",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "AuthLinkData",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "toJson",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "AuthLinkData.fromJson",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "parse",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "AuthLinkData",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "pageRouteInfoToPath",
+          "line": 107,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "deepLinkBuilder",
+          "callee": "payloadToRoute",
+          "lineNumber": 10
+        },
+        {
+          "caller": "deepLinkBuilder",
+          "callee": "path",
+          "lineNumber": 12
+        },
+        {
+          "caller": "deepLinkBuilder",
+          "callee": "pageRouteInfoToPath",
+          "lineNumber": 12
+        },
+        {
+          "caller": "AuthLinkData.fromJson",
+          "callee": "AuthLinkData",
+          "lineNumber": 37
+        },
+        {
+          "caller": "parse",
+          "callee": "replaceFirst",
+          "lineNumber": 45
+        },
+        {
+          "caller": "parse",
+          "callee": "RegExp",
+          "lineNumber": 45
+        },
+        {
+          "caller": "parse",
+          "callee": "padRight",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parse",
+          "callee": "decode",
+          "lineNumber": 51
+        },
+        {
+          "caller": "parse",
+          "callee": "decode",
+          "lineNumber": 52
+        },
+        {
+          "caller": "parse",
+          "callee": "jsonDecode",
+          "lineNumber": 53
+        },
+        {
+          "caller": "parse",
+          "callee": "fromJson",
+          "lineNumber": 54
+        },
+        {
+          "caller": "parse",
+          "callee": "log",
+          "lineNumber": 56
+        },
+        {
+          "caller": "encodeAuthLink",
+          "callee": "jsonEncode",
+          "lineNumber": 68
+        },
+        {
+          "caller": "encodeAuthLink",
+          "callee": "toJson",
+          "lineNumber": 68
+        },
+        {
+          "caller": "encodeAuthLink",
+          "callee": "encode",
+          "lineNumber": 69
+        },
+        {
+          "caller": "encodeAuthLink",
+          "callee": "encode",
+          "lineNumber": 70
+        },
+        {
+          "caller": "encodeAuthLink",
+          "callee": "replaceAll",
+          "lineNumber": 71
+        },
+        {
+          "caller": "buildAuthUrl",
+          "callee": "encodeAuthLink",
+          "lineNumber": 76
+        },
+        {
+          "caller": "payloadToRoute",
+          "callee": "contains",
+          "lineNumber": 83
+        },
+        {
+          "caller": "payloadToRoute",
+          "callee": "log",
+          "lineNumber": 86
+        },
+        {
+          "caller": "payloadToRoute",
+          "callee": "LoginRoute",
+          "lineNumber": 87
+        },
+        {
+          "caller": "payloadToRoute",
+          "callee": "LoginRoute",
+          "lineNumber": 89
+        },
+        {
+          "caller": "payloadToRoute",
+          "callee": "contains",
+          "lineNumber": 92
+        },
+        {
+          "caller": "payloadToRoute",
+          "callee": "tryParse",
+          "lineNumber": 96
+        },
+        {
+          "caller": "payloadToRoute",
+          "callee": "SeerrDetailsRoute",
+          "lineNumber": 97
+        },
+        {
+          "caller": "payloadToRoute",
+          "callee": "SeerrRoute",
+          "lineNumber": 99
+        },
+        {
+          "caller": "payloadToRoute",
+          "callee": "contains",
+          "lineNumber": 101
+        },
+        {
+          "caller": "payloadToRoute",
+          "callee": "DetailsRoute",
+          "lineNumber": 102
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/device_orientation_extension.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 11,
+      "functions": [
+        {
+          "name": "label",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DeviceOrientationExtension",
+          "startLine": 6,
+          "endLine": 13,
+          "methods": [
+            "label"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "label",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "DeviceOrientationExtension",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/duration_extensions.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "toRuntimeTicks",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "readAbleDuration",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "fromRuntimeTicks",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "runTimeDuration",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DurationExtensions",
+          "startLine": 3,
+          "endLine": 10,
+          "methods": [
+            "toRuntimeTicks",
+            "readAbleDuration"
+          ],
+          "properties": []
+        },
+        {
+          "name": "IntExtension",
+          "startLine": 12,
+          "endLine": 16,
+          "methods": [
+            "fromRuntimeTicks"
+          ],
+          "properties": []
+        },
+        {
+          "name": "BaseItemDtoExtension",
+          "startLine": 18,
+          "endLine": 23,
+          "methods": [
+            "runTimeDuration"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "toRuntimeTicks",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "readAbleDuration",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "DurationExtensions",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "fromRuntimeTicks",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "IntExtension",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "runTimeDuration",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "BaseItemDtoExtension",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "twoDigits",
+          "callee": "toString",
+          "lineNumber": 7
+        },
+        {
+          "caller": "twoDigits",
+          "callee": "padLeft",
+          "lineNumber": 7
+        },
+        {
+          "caller": "readAbleDuration",
+          "callee": "twoDigits",
+          "lineNumber": 8
+        },
+        {
+          "caller": "readAbleDuration",
+          "callee": "twoDigits",
+          "lineNumber": 8
+        },
+        {
+          "caller": "readAbleDuration",
+          "callee": "remainder",
+          "lineNumber": 8
+        },
+        {
+          "caller": "readAbleDuration",
+          "callee": "twoDigits",
+          "lineNumber": 8
+        },
+        {
+          "caller": "readAbleDuration",
+          "callee": "remainder",
+          "lineNumber": 8
+        },
+        {
+          "caller": "fromRuntimeTicks",
+          "callee": "Duration",
+          "lineNumber": 14
+        },
+        {
+          "caller": "runTimeDuration",
+          "callee": "Duration",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 4,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/util/extensions/day_of_week_extensions.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "isUnknown",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "isoWeekday",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "label",
+          "startLine": 22,
+          "endLine": 22,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "isUnknown",
+          "startLine": 31,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "isoWeekday",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "label",
+          "startLine": 44,
+          "endLine": 44,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DayOfWeekLocalization",
+          "startLine": 8,
+          "endLine": 28,
+          "methods": [
+            "isUnknown",
+            "isoWeekday",
+            "label"
+          ],
+          "properties": []
+        },
+        {
+          "name": "DynamicDayOfWeekLocalization",
+          "startLine": 30,
+          "endLine": 50,
+          "methods": [
+            "isUnknown",
+            "isoWeekday",
+            "label"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "isUnknown",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "isoWeekday",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "DayOfWeekLocalization",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "isUnknown",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "isoWeekday",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "DynamicDayOfWeekLocalization",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isoWeekday",
+          "callee": "switch",
+          "lineNumber": 11
+        },
+        {
+          "caller": "label",
+          "callee": "localeOf",
+          "lineNumber": 24
+        },
+        {
+          "caller": "label",
+          "callee": "toLanguageTag",
+          "lineNumber": 24
+        },
+        {
+          "caller": "label",
+          "callee": "utc",
+          "lineNumber": 25
+        },
+        {
+          "caller": "label",
+          "callee": "DateFormat",
+          "lineNumber": 26
+        },
+        {
+          "caller": "label",
+          "callee": "format",
+          "lineNumber": 26
+        },
+        {
+          "caller": "isoWeekday",
+          "callee": "switch",
+          "lineNumber": 33
+        },
+        {
+          "caller": "label",
+          "callee": "localeOf",
+          "lineNumber": 46
+        },
+        {
+          "caller": "label",
+          "callee": "toLanguageTag",
+          "lineNumber": 46
+        },
+        {
+          "caller": "label",
+          "callee": "utc",
+          "lineNumber": 47
+        },
+        {
+          "caller": "label",
+          "callee": "DateFormat",
+          "lineNumber": 48
+        },
+        {
+          "caller": "label",
+          "callee": "format",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 6,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/util/extensions/task_trigger_type_extensions.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "isUnknown",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "label",
+          "startLine": 9,
+          "endLine": 9,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TaskTriggerTypeExtensions",
+          "startLine": 6,
+          "endLine": 24,
+          "methods": [
+            "isUnknown",
+            "label"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "isUnknown",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "label",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "TaskTriggerTypeExtensions",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/fab_extended_anim.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 23,
+          "endLine": 23,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FloatingActionButtonAnimated",
+          "startLine": 5,
+          "endLine": 45,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "label",
+            "icon",
+            "tooltip",
+            "alternate",
+            "isExtended",
+            "onPressed"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "FloatingActionButtonAnimated",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "extended",
+          "lineNumber": 24
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 28
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 30
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedSize",
+          "lineNumber": 31
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/file_downloader.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "downloadFile",
+          "startLine": 3,
+          "endLine": 3,
+          "params": [
+            "url"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "downloadFile",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "downloadFile",
+          "callee": "AnchorElement",
+          "lineNumber": 5
+        },
+        {
+          "caller": "downloadFile",
+          "callee": "click",
+          "lineNumber": 7
+        },
+        {
+          "caller": "downloadFile",
+          "callee": "print",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/util/fladder_config.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "FladderConfig._",
+          "startLine": 3,
+          "endLine": 3,
+          "params": []
+        },
+        {
+          "name": "baseUrl",
+          "startLine": 5,
+          "endLine": 5,
+          "params": []
+        },
+        {
+          "name": "baseUrl",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "seerrBaseUrl",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "seerrBaseUrl",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "fromJson",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "json"
+          ]
+        },
+        {
+          "name": "FladderConfig._fromJson",
+          "startLine": 15,
+          "endLine": 15,
+          "params": [
+            "json"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FladderConfig",
+          "startLine": 1,
+          "endLine": 25,
+          "methods": [
+            "FladderConfig._",
+            "baseUrl",
+            "baseUrl",
+            "seerrBaseUrl",
+            "seerrBaseUrl",
+            "fromJson",
+            "FladderConfig._fromJson"
+          ],
+          "properties": [
+            "_instance",
+            "_baseUrl",
+            "_seerrBaseUrl"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FladderConfig._",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "baseUrl",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "baseUrl",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "seerrBaseUrl",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "seerrBaseUrl",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "fromJson",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "FladderConfig._fromJson",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "FladderConfig",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fromJson",
+          "callee": "_fromJson",
+          "lineNumber": 13
+        },
+        {
+          "caller": "FladderConfig._fromJson",
+          "callee": "_",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/fladder_image.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 84,
+      "nonEmptyLines": 78,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 41,
+          "endLine": 41,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FladderImage",
+          "startLine": 11,
+          "endLine": 84,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "image",
+            "frameBuilder",
+            "imageErrorBuilder",
+            "placeHolder",
+            "stackFit",
+            "fit",
+            "blurFit",
+            "alignment",
+            "disableBlur",
+            "blurOnly",
+            "decodeHeight",
+            "cachedImage"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "FladderImage",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 49
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 51
+        },
+        {
+          "caller": "build",
+          "callee": "Key",
+          "lineNumber": 52
+        },
+        {
+          "caller": "build",
+          "callee": "Image",
+          "lineNumber": 56
+        },
+        {
+          "caller": "build",
+          "callee": "BlurHashImage",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "FadeInImage",
+          "lineNumber": 66
+        },
+        {
+          "caller": "build",
+          "callee": "MemoryImage",
+          "lineNumber": 67
+        },
+        {
+          "caller": "build",
+          "callee": "ResizeImage",
+          "lineNumber": 73
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/util/focus_helper.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "isEditableTextFocused",
+          "startLine": 3,
+          "endLine": 3,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "isEditableTextFocused",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isEditableTextFocused",
+          "callee": "findAncestorWidgetOfExactType",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

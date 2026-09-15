@@ -1,0 +1,6781 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "lib/screens/shared/focused_outlined_text_field.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 84,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 48,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 56,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 67,
+          "endLine": 67,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FocusedOutlinedTextField",
+          "startLine": 6,
+          "endLine": 49,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "label",
+            "controller",
+            "maxLines",
+            "onTap",
+            "onChanged",
+            "onSubmitted",
+            "autoFillHints",
+            "inputFormatters",
+            "autocorrect",
+            "style",
+            "borderWidth",
+            "fillColor",
+            "textAlign",
+            "keyboardType",
+            "textInputAction",
+            "onFocus",
+            "errorText",
+            "enabled"
+          ]
+        },
+        {
+          "name": "FocuesOutlinedTextFieldState",
+          "startLine": 51,
+          "endLine": 89,
+          "methods": [
+            "initState",
+            "build"
+          ],
+          "properties": [
+            "focusNode",
+            "previousFocus"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "FocusedOutlinedTextField",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "FocuesOutlinedTextFieldState",
+          "line": 51,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "FocuesOutlinedTextFieldState",
+          "lineNumber": 48
+        },
+        {
+          "caller": "initState",
+          "callee": "addListener",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "OutlinedTextField",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 3,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/screens/shared/global_hotkeys.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 25,
+          "endLine": 25,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "GlobalHotkeys",
+          "startLine": 15,
+          "endLine": 63,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "child",
+            "enabledHotkeys"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "GlobalHotkeys",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "InputHandler",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "contains",
+          "lineNumber": 31
+        },
+        {
+          "caller": "build",
+          "callee": "isEditableTextFocused",
+          "lineNumber": 33
+        },
+        {
+          "caller": "build",
+          "callee": "read",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "toggleSideBar",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "navigateTo",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "LibrarySearchRoute",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "microtask",
+          "lineNumber": 45
+        },
+        {
+          "caller": "build",
+          "callee": "closeCurrentWindow",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "show",
+          "lineNumber": 48
+        },
+        {
+          "caller": "build",
+          "callee": "microtask",
+          "lineNumber": 53
+        },
+        {
+          "caller": "build",
+          "callee": "quitApplication",
+          "lineNumber": 54
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 59
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/input_fields.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 127,
+      "nonEmptyLines": 120,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 25,
+          "endLine": 25,
+          "params": [
+            "context",
+            "ref"
+          ]
+        },
+        {
+          "name": "openSimpleTextInput",
+          "startLine": 48,
+          "endLine": 56,
+          "params": [
+            "context",
+            "value",
+            "onChanged",
+            "title",
+            "description",
+            "keyboardType",
+            "placeHolder"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 87,
+          "endLine": 87,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IntInputField",
+          "startLine": 9,
+          "endLine": 46,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "value",
+            "controller",
+            "placeHolder",
+            "suffix",
+            "onSubmitted"
+          ]
+        },
+        {
+          "name": "_TextInputFieldDialog",
+          "startLine": 70,
+          "endLine": 127,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "value",
+            "title",
+            "description",
+            "onChanged",
+            "keyboardType",
+            "placeHolder"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "IntInputField",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "openSimpleTextInput",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 87,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "ConstrainedBox",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "BoxConstraints",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 31
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "OutlinedTextField",
+          "lineNumber": 33
+        },
+        {
+          "caller": "build",
+          "callee": "TextEditingController",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "toString",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "TextInputType",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "tryParse",
+          "lineNumber": 38
+        },
+        {
+          "caller": "openSimpleTextInput",
+          "callee": "showDialog",
+          "lineNumber": 57
+        },
+        {
+          "caller": "openSimpleTextInput",
+          "callee": "_TextInputFieldDialog",
+          "lineNumber": 59
+        },
+        {
+          "caller": "build",
+          "callee": "Dialog",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 89
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 97
+        },
+        {
+          "caller": "build",
+          "callee": "Divider",
+          "lineNumber": 99
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 100
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 102
+        },
+        {
+          "caller": "build",
+          "callee": "Divider",
+          "lineNumber": 104
+        },
+        {
+          "caller": "build",
+          "callee": "ListView",
+          "lineNumber": 105
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 107
+        },
+        {
+          "caller": "build",
+          "callee": "OutlinedTextField",
+          "lineNumber": 109
+        },
+        {
+          "caller": "build",
+          "callee": "TextEditingController",
+          "lineNumber": 110
+        },
+        {
+          "caller": "build",
+          "callee": "call",
+          "lineNumber": 114
+        },
+        {
+          "caller": "build",
+          "callee": "pop",
+          "lineNumber": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/banner_play_button.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 18,
+          "endLine": 18,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BannerPlayButton",
+          "startLine": 10,
+          "endLine": 56,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "item"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "BannerPlayButton",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 19
+        },
+        {
+          "caller": "build",
+          "callee": "Opacity",
+          "lineNumber": 21
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 23
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 24
+        },
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 25
+        },
+        {
+          "caller": "build",
+          "callee": "RoundedRectangleBorder",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "fill",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "scale",
+          "lineNumber": 30
+        },
+        {
+          "caller": "build",
+          "callee": "SquareProgressIndicator",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "IconButton",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "play",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 44
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/carousel_banner.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 233,
+      "nonEmptyLines": 225,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 40,
+          "endLine": 40,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CarouselBanner",
+          "startLine": 20,
+          "endLine": 33,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "controller",
+            "items",
+            "maxHeight"
+          ]
+        },
+        {
+          "name": "_CarouselBannerState",
+          "startLine": 35,
+          "endLine": 233,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "carouselController",
+            "showControls"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "CarouselBanner",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 40,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_CarouselBannerState",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "MouseRegion",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 44
+        },
+        {
+          "caller": "build",
+          "callee": "ConstrainedBox",
+          "lineNumber": 45
+        },
+        {
+          "caller": "build",
+          "callee": "BoxConstraints",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "LayoutBuilder",
+          "lineNumber": 47
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 49
+        },
+        {
+          "caller": "build",
+          "callee": "sizeOf",
+          "lineNumber": 51
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 51
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 53
+        },
+        {
+          "caller": "build",
+          "callee": "sizeOf",
+          "lineNumber": 54
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 56
+        },
+        {
+          "caller": "build",
+          "callee": "only",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "CarouselView",
+          "lineNumber": 60
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "RoundedRectangleBorder",
+          "lineNumber": 65
+        },
+        {
+          "caller": "build",
+          "callee": "mapIndexed",
+          "lineNumber": 69
+        },
+        {
+          "caller": "build",
+          "callee": "LayoutBuilder",
+          "lineNumber": 70
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 73
+        },
+        {
+          "caller": "build",
+          "callee": "navigateTo",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "ensureVisible",
+          "lineNumber": 78
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 81
+        },
+        {
+          "caller": "build",
+          "callee": "showBottomSheetPill",
+          "lineNumber": 85
+        },
+        {
+          "caller": "build",
+          "callee": "ListView",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 92
+        },
+        {
+          "caller": "build",
+          "callee": "listTileItems",
+          "lineNumber": 93
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 97
+        },
+        {
+          "caller": "build",
+          "callee": "fromLTRB",
+          "lineNumber": 101
+        },
+        {
+          "caller": "build",
+          "callee": "showMenu",
+          "lineNumber": 105
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 108
+        },
+        {
+          "caller": "build",
+          "callee": "popupMenuItems",
+          "lineNumber": 108
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 111
+        },
+        {
+          "caller": "build",
+          "callee": "FladderImage",
+          "lineNumber": 113
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 114
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 115
+        },
+        {
+          "caller": "build",
+          "callee": "LinearGradient",
+          "lineNumber": 116
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 120
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 124
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 124
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 130
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 132
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 133
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 133
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 134
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 138
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 143
+        },
+        {
+          "caller": "build",
+          "callee": "label",
+          "lineNumber": 148
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 149
+        },
+        {
+          "caller": "build",
+          "callee": "label",
+          "lineNumber": 150
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 154
+        },
+        {
+          "caller": "build",
+          "callee": "addInBetween",
+          "lineNumber": 159
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 159
+        },
+        {
+          "caller": "build",
+          "callee": "IgnorePointer",
+          "lineNumber": 163
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 164
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 165
+        },
+        {
+          "caller": "build",
+          "callee": "all",
+          "lineNumber": 166
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 167
+        },
+        {
+          "caller": "build",
+          "callee": "ExcludeFocus",
+          "lineNumber": 177
+        },
+        {
+          "caller": "build",
+          "callee": "BannerPlayButton",
+          "lineNumber": 178
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 187
+        },
+        {
+          "caller": "build",
+          "callee": "ExcludeFocus",
+          "lineNumber": 188
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedOpacity",
+          "lineNumber": 189
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 190
+        },
+        {
+          "caller": "build",
+          "callee": "IgnorePointer",
+          "lineNumber": 192
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 194
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 195
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 196
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 198
+        },
+        {
+          "caller": "build",
+          "callee": "filledTonal",
+          "lineNumber": 202
+        },
+        {
+          "caller": "build",
+          "callee": "animateTo",
+          "lineNumber": 205
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 206
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 208
+        },
+        {
+          "caller": "build",
+          "callee": "filledTonal",
+          "lineNumber": 210
+        },
+        {
+          "caller": "build",
+          "callee": "animateTo",
+          "lineNumber": 213
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 214
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 216
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/chapter_row.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 121,
+      "nonEmptyLines": 116,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 24,
+          "endLine": 24,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChapterRow",
+          "startLine": 17,
+          "endLine": 121,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "chapters",
+            "contentPadding",
+            "onPressed"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "ChapterRow",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "HorizontalList",
+          "lineNumber": 25
+        },
+        {
+          "caller": "build",
+          "callee": "chapter",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "poster",
+          "lineNumber": 27
+        },
+        {
+          "caller": "generateActions",
+          "callee": "ItemActionButton",
+          "lineNumber": 33
+        },
+        {
+          "caller": "generateActions",
+          "callee": "Text",
+          "lineNumber": 34
+        },
+        {
+          "caller": "generateActions",
+          "callee": "playFrom",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "fromLTRB",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "showMenu",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "popupMenuItems",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "showBottomSheetPill",
+          "lineNumber": 50
+        },
+        {
+          "caller": "build",
+          "callee": "ListView",
+          "lineNumber": 53
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "listTileItems",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 66
+        },
+        {
+          "caller": "build",
+          "callee": "AspectRatio",
+          "lineNumber": 69
+        },
+        {
+          "caller": "build",
+          "callee": "CachedNetworkImage",
+          "lineNumber": 71
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 79
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 81
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 82
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 83
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 84
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 89
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 93
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 101
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 102
+        },
+        {
+          "caller": "build",
+          "callee": "ExcludeFocus",
+          "lineNumber": 104
+        },
+        {
+          "caller": "build",
+          "callee": "PopupMenuButton",
+          "lineNumber": 105
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 107
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 111
+        },
+        {
+          "caller": "build",
+          "callee": "popupMenuItems",
+          "lineNumber": 111
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/components/chip_button.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChipButton",
+          "startLine": 7,
+          "endLine": 30,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "label",
+            "onPressed"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "ChipButton",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 14
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 15
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 15
+        },
+        {
+          "caller": "build",
+          "callee": "FlatButton",
+          "lineNumber": 17
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 20
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 21
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 22
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/components/item_logo.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 47,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 18,
+          "endLine": 18,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ItemLogo",
+          "startLine": 6,
+          "endLine": 50,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "item",
+            "imageAlignment",
+            "textStyle"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "ItemLogo",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "sizeOf",
+          "lineNumber": 20
+        },
+        {
+          "caller": "build",
+          "callee": "ConstrainedBox",
+          "lineNumber": 22
+        },
+        {
+          "caller": "build",
+          "callee": "BoxConstraints",
+          "lineNumber": 23
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 24
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 30
+        },
+        {
+          "caller": "build",
+          "callee": "ConstrainedBox",
+          "lineNumber": 36
+        },
+        {
+          "caller": "build",
+          "callee": "BoxConstraints",
+          "lineNumber": 37
+        },
+        {
+          "caller": "build",
+          "callee": "FladderImage",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/components/media_header.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 60,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 24,
+          "endLine": 24,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MediaHeader",
+          "startLine": 8,
+          "endLine": 65,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "name",
+            "logo",
+            "onTap",
+            "alignment",
+            "textAlign"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "MediaHeader",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "BoxConstraints",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "SelectableText",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "ConstrainedBox",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "BoxConstraints",
+          "lineNumber": 39
+        },
+        {
+          "caller": "build",
+          "callee": "sizeOf",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "sizeOf",
+          "lineNumber": 41
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 41
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "FladderImage",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 51
+        },
+        {
+          "caller": "build",
+          "callee": "fill",
+          "lineNumber": 56
+        },
+        {
+          "caller": "build",
+          "callee": "GestureDetector",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/components/media_play_button.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 249,
+      "nonEmptyLines": 231,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 31,
+          "endLine": 31,
+          "params": [
+            "context",
+            "ref"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 136,
+          "endLine": 136,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 200,
+          "endLine": 200,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "_ProgressClipper",
+          "startLine": 239,
+          "endLine": 239,
+          "params": [
+            "progress"
+          ]
+        },
+        {
+          "name": "getClip",
+          "startLine": 242,
+          "endLine": 242,
+          "params": [
+            "size"
+          ]
+        },
+        {
+          "name": "shouldReclip",
+          "startLine": 248,
+          "endLine": 248,
+          "params": [
+            "old"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MediaPlayButton",
+          "startLine": 14,
+          "endLine": 108,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "item",
+            "forceFocusOutline",
+            "showRestartOption",
+            "onPressed",
+            "onLongPressed"
+          ]
+        },
+        {
+          "name": "_PlayButton",
+          "startLine": 110,
+          "endLine": 180,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "onPressed",
+            "onLongPressed",
+            "autoFocus",
+            "forceFocusOutline",
+            "progress",
+            "buttonTitle",
+            "theme",
+            "radius",
+            "smallRadius",
+            "showRestart"
+          ]
+        },
+        {
+          "name": "_RestartButton",
+          "startLine": 182,
+          "endLine": 235,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "onPressed",
+            "onLongPressed",
+            "forceFocusOutline",
+            "theme",
+            "radius",
+            "smallRadius"
+          ]
+        },
+        {
+          "name": "_ProgressClipper",
+          "startLine": 237,
+          "endLine": 249,
+          "methods": [
+            "_ProgressClipper",
+            "getClip",
+            "shouldReclip"
+          ],
+          "properties": [
+            "progress"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "MediaPlayButton",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 200,
+          "isDefault": false
+        },
+        {
+          "name": "getClip",
+          "line": 242,
+          "isDefault": false
+        },
+        {
+          "name": "shouldReclip",
+          "line": 248,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 36
+        },
+        {
+          "caller": "buttonTitle",
+          "callee": "Padding",
+          "lineNumber": 39
+        },
+        {
+          "caller": "buttonTitle",
+          "callee": "EdgeInsets",
+          "lineNumber": 40
+        },
+        {
+          "caller": "buttonTitle",
+          "callee": "Row",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buttonTitle",
+          "callee": "Flexible",
+          "lineNumber": 45
+        },
+        {
+          "caller": "buttonTitle",
+          "callee": "Text",
+          "lineNumber": 46
+        },
+        {
+          "caller": "buttonTitle",
+          "callee": "SizedBox",
+          "lineNumber": 56
+        },
+        {
+          "caller": "buttonTitle",
+          "callee": "Icon",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedFadeSize",
+          "lineNumber": 66
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 67
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 69
+        },
+        {
+          "caller": "build",
+          "callee": "ValueKey",
+          "lineNumber": 69
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 70
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 75
+        },
+        {
+          "caller": "build",
+          "callee": "PositionProvider",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "_PlayButton",
+          "lineNumber": 78
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 81
+        },
+        {
+          "caller": "build",
+          "callee": "PositionProvider",
+          "lineNumber": 93
+        },
+        {
+          "caller": "build",
+          "callee": "_RestartButton",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 137
+        },
+        {
+          "caller": "build",
+          "callee": "horizontal",
+          "lineNumber": 138
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 139
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 140
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 143
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 150
+        },
+        {
+          "caller": "build",
+          "callee": "fill",
+          "lineNumber": 154
+        },
+        {
+          "caller": "build",
+          "callee": "DecoratedBox",
+          "lineNumber": 155
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 156
+        },
+        {
+          "caller": "build",
+          "callee": "buttonTitle",
+          "lineNumber": 163
+        },
+        {
+          "caller": "build",
+          "callee": "fill",
+          "lineNumber": 164
+        },
+        {
+          "caller": "build",
+          "callee": "ClipRect",
+          "lineNumber": 165
+        },
+        {
+          "caller": "build",
+          "callee": "_ProgressClipper",
+          "lineNumber": 166
+        },
+        {
+          "caller": "build",
+          "callee": "DecoratedBox",
+          "lineNumber": 167
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 168
+        },
+        {
+          "caller": "build",
+          "callee": "buttonTitle",
+          "lineNumber": 172
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 201
+        },
+        {
+          "caller": "build",
+          "callee": "horizontal",
+          "lineNumber": 202
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 203
+        },
+        {
+          "caller": "build",
+          "callee": "Radius",
+          "lineNumber": 204
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 207
+        },
+        {
+          "caller": "build",
+          "callee": "ensureVisible",
+          "lineNumber": 214
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 219
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 220
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 224
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 225
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 226
+        },
+        {
+          "caller": "getClip",
+          "callee": "clamp",
+          "lineNumber": 243
+        },
+        {
+          "caller": "getClip",
+          "callee": "fromLTWH",
+          "lineNumber": 244
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/components/next_up_episode.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 117,
+      "nonEmptyLines": 113,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 21,
+          "endLine": 21,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NextUpEpisode",
+          "startLine": 15,
+          "endLine": 117,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "nextEpisode",
+            "onChanged"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "NextUpEpisode",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "maxLength",
+          "lineNumber": 23
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 24
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 25
+        },
+        {
+          "caller": "build",
+          "callee": "StickyHeaderText",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "SelectableText",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "seasonEpisodeLabelFull",
+          "lineNumber": 33
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "SelectableText",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "LayoutBuilder",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "EpisodePoster",
+          "lineNumber": 48
+        },
+        {
+          "caller": "build",
+          "callee": "navigateTo",
+          "lineNumber": 51
+        },
+        {
+          "caller": "build",
+          "callee": "ensureVisible",
+          "lineNumber": 55
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 60
+        },
+        {
+          "caller": "build",
+          "callee": "HtmlWidget",
+          "lineNumber": 62
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 69
+        },
+        {
+          "caller": "build",
+          "callee": "ConstrainedBox",
+          "lineNumber": 71
+        },
+        {
+          "caller": "build",
+          "callee": "BoxConstraints",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "poster",
+          "lineNumber": 73
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "EpisodePoster",
+          "lineNumber": 75
+        },
+        {
+          "caller": "build",
+          "callee": "navigateTo",
+          "lineNumber": 78
+        },
+        {
+          "caller": "build",
+          "callee": "ensureVisible",
+          "lineNumber": 82
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 89
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build",
+          "callee": "MediaStreamInformation",
+          "lineNumber": 94
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 97
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 99
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 100
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 101
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 102
+        },
+        {
+          "caller": "build",
+          "callee": "HtmlWidget",
+          "lineNumber": 105
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 105
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/components/poster_image.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 254,
+      "nonEmptyLines": 240,
+      "functions": [
+        {
+          "name": "_resolveImage",
+          "startLine": 61,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 83,
+          "endLine": 83,
+          "params": [
+            "context",
+            "ref"
+          ]
+        },
+        {
+          "name": "_showBottomSheet",
+          "startLine": 214,
+          "endLine": 214,
+          "params": [
+            "context",
+            "ref"
+          ]
+        },
+        {
+          "name": "_showContextMenu",
+          "startLine": 236,
+          "endLine": 236,
+          "params": [
+            "context",
+            "ref",
+            "globalPos"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PosterImage",
+          "startLine": 29,
+          "endLine": 254,
+          "methods": [
+            "_resolveImage",
+            "build",
+            "_showBottomSheet",
+            "_showContextMenu"
+          ],
+          "properties": [
+            "poster",
+            "selected",
+            "playVideo",
+            "inlineTitle",
+            "excludeActions",
+            "otherActions",
+            "onUserDataChanged",
+            "onItemUpdated",
+            "onItemRemoved",
+            "onPressed",
+            "imagePriority",
+            "onFocusChanged",
+            "showSyncStatus"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "PosterImage",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_resolveImage",
+          "callee": "switch",
+          "lineNumber": 69
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 85
+        },
+        {
+          "caller": "build",
+          "callee": "UniqueKey",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "harmonizeWith",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build",
+          "callee": "Hero",
+          "lineNumber": 93
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "navigateTo",
+          "lineNumber": 99
+        },
+        {
+          "caller": "build",
+          "callee": "refreshData",
+          "lineNumber": 100
+        },
+        {
+          "caller": "build",
+          "callee": "navigateTo",
+          "lineNumber": 103
+        },
+        {
+          "caller": "build",
+          "callee": "refreshData",
+          "lineNumber": 105
+        },
+        {
+          "caller": "build",
+          "callee": "_showBottomSheet",
+          "lineNumber": 109
+        },
+        {
+          "caller": "build",
+          "callee": "_showContextMenu",
+          "lineNumber": 110
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 111
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 112
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 116
+        },
+        {
+          "caller": "build",
+          "callee": "all",
+          "lineNumber": 118
+        },
+        {
+          "caller": "build",
+          "callee": "withAlpha",
+          "lineNumber": 118
+        },
+        {
+          "caller": "build",
+          "callee": "FladderImage",
+          "lineNumber": 120
+        },
+        {
+          "caller": "build",
+          "callee": "_resolveImage",
+          "lineNumber": 121
+        },
+        {
+          "caller": "build",
+          "callee": "PosterPlaceholder",
+          "lineNumber": 122
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 127
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 129
+        },
+        {
+          "caller": "build",
+          "callee": "syncedItemProvider",
+          "lineNumber": 129
+        },
+        {
+          "caller": "build",
+          "callee": "when",
+          "lineNumber": 129
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 130
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 133
+        },
+        {
+          "caller": "build",
+          "callee": "StatusCard",
+          "lineNumber": 135
+        },
+        {
+          "caller": "build",
+          "callee": "SyncButton",
+          "lineNumber": 136
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 139
+        },
+        {
+          "caller": "build",
+          "callee": "IgnorePointer",
+          "lineNumber": 143
+        },
+        {
+          "caller": "build",
+          "callee": "SelectedPosterOverlay",
+          "lineNumber": 144
+        },
+        {
+          "caller": "build",
+          "callee": "BottomOverlaysContainer",
+          "lineNumber": 149
+        },
+        {
+          "caller": "build",
+          "callee": "InlineTitleOverlay",
+          "lineNumber": 157
+        },
+        {
+          "caller": "build",
+          "callee": "maxLength",
+          "lineNumber": 158
+        },
+        {
+          "caller": "build",
+          "callee": "UnplayedWatchedOverlay",
+          "lineNumber": 160
+        },
+        {
+          "caller": "build",
+          "callee": "VideoDurationOverlay",
+          "lineNumber": 163
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 169
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 172
+        },
+        {
+          "caller": "build",
+          "callee": "filledTonal",
+          "lineNumber": 174
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 176
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 182
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 184
+        },
+        {
+          "caller": "build",
+          "callee": "PopupMenuButton",
+          "lineNumber": 187
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 189
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 194
+        },
+        {
+          "caller": "build",
+          "callee": "popupMenuItems",
+          "lineNumber": 203
+        },
+        {
+          "caller": "_showBottomSheet",
+          "callee": "showBottomSheetPill",
+          "lineNumber": 215
+        },
+        {
+          "caller": "_showBottomSheet",
+          "callee": "ListView",
+          "lineNumber": 218
+        },
+        {
+          "caller": "_showBottomSheet",
+          "callee": "generateActions",
+          "lineNumber": 222
+        },
+        {
+          "caller": "_showBottomSheet",
+          "callee": "listTileItems",
+          "lineNumber": 231
+        },
+        {
+          "caller": "_showContextMenu",
+          "callee": "fromLTRB",
+          "lineNumber": 237
+        },
+        {
+          "caller": "_showContextMenu",
+          "callee": "showMenu",
+          "lineNumber": 238
+        },
+        {
+          "caller": "_showContextMenu",
+          "callee": "generateActions",
+          "lineNumber": 242
+        },
+        {
+          "caller": "_showContextMenu",
+          "callee": "popupMenuItems",
+          "lineNumber": 251
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/components/poster_overlays.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 275,
+      "nonEmptyLines": 251,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 24,
+          "endLine": 24,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 61,
+          "endLine": 61,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 90,
+          "endLine": 90,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 125,
+          "endLine": 125,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 258,
+          "endLine": 258,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SelectedPosterOverlay",
+          "startLine": 13,
+          "endLine": 55,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "poster",
+            "radius"
+          ]
+        },
+        {
+          "name": "FavouriteOverlay",
+          "startLine": 57,
+          "endLine": 75,
+          "methods": [
+            "build"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ProgressOverlay",
+          "startLine": 77,
+          "endLine": 112,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "progress",
+            "height",
+            "padding"
+          ]
+        },
+        {
+          "name": "UnplayedWatchedOverlay",
+          "startLine": 114,
+          "endLine": 275,
+          "methods": [
+            "build",
+            "build"
+          ],
+          "properties": [
+            "poster",
+            "padding",
+            "showFavourite",
+            "showProgress",
+            "progress",
+            "progressHeight",
+            "itemType",
+            "progressPadding"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "SelectedPosterOverlay",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "FavouriteOverlay",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "ProgressOverlay",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 258,
+          "isDefault": false
+        },
+        {
+          "name": "UnplayedWatchedOverlay",
+          "line": 114,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 25
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "all",
+          "lineNumber": 28
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 28
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 36
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 39
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 44
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 47
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 62
+        },
+        {
+          "caller": "build",
+          "callee": "StatusCard",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 66
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 94
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "add",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 97
+        },
+        {
+          "caller": "build",
+          "callee": "LinearProgressIndicator",
+          "lineNumber": 101
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 103
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 103
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 105
+        },
+        {
+          "caller": "build",
+          "callee": "watchedState",
+          "lineNumber": 126
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 128
+        },
+        {
+          "caller": "build",
+          "callee": "IgnorePointer",
+          "lineNumber": 131
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 132
+        },
+        {
+          "caller": "build",
+          "callee": "StatusCard",
+          "lineNumber": 134
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 135
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 136
+        },
+        {
+          "caller": "build",
+          "callee": "switch",
+          "lineNumber": 138
+        },
+        {
+          "caller": "build",
+          "callee": "TextStyle",
+          "lineNumber": 142
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 143
+        },
+        {
+          "caller": "build",
+          "callee": "Played",
+          "lineNumber": 149
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 149
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 152
+        },
+        {
+          "caller": "build",
+          "callee": "Unplayed",
+          "lineNumber": 154
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 154
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 175
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 177
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 180
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 182
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 184
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 185
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 186
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 189
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 190
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 191
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 195
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 197
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 199
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 202
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 203
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 205
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 226
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 228
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 229
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 230
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 232
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 259
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 261
+        },
+        {
+          "caller": "build",
+          "callee": "FavouriteOverlay",
+          "lineNumber": 264
+        },
+        {
+          "caller": "build",
+          "callee": "ProgressOverlay",
+          "lineNumber": 266
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 5,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/components/poster_placeholder.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 11,
+          "endLine": 11,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PosterPlaceholder",
+          "startLine": 6,
+          "endLine": 58,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "item"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "PosterPlaceholder",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 12
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 13
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 16
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 18
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 19
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 20
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 22
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 28
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 36
+        },
+        {
+          "caller": "build",
+          "callee": "label",
+          "lineNumber": 41
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "label",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/components/small_detail_widgets.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 99,
+      "nonEmptyLines": 91,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 18,
+          "endLine": 18,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 56,
+          "endLine": 56,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 83,
+          "endLine": 83,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Ratings",
+          "startLine": 8,
+          "endLine": 46,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "communityRating",
+            "officialRating"
+          ]
+        },
+        {
+          "name": "Tags",
+          "startLine": 48,
+          "endLine": 68,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "tags"
+          ]
+        },
+        {
+          "name": "Genres",
+          "startLine": 70,
+          "endLine": 99,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "genres",
+            "onGenreClicked",
+            "details"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "Ratings",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "Tags",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "Genres",
+          "line": 70,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 19
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 22
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 28
+        },
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 36
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "Wrap",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "map",
+          "lineNumber": 61
+        },
+        {
+          "caller": "build",
+          "callee": "ChipButton",
+          "lineNumber": 61
+        },
+        {
+          "caller": "build",
+          "callee": "capitalize",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "toList",
+          "lineNumber": 65
+        },
+        {
+          "caller": "build",
+          "callee": "Wrap",
+          "lineNumber": 84
+        },
+        {
+          "caller": "build",
+          "callee": "map",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build",
+          "callee": "ChipButton",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build",
+          "callee": "capitalize",
+          "lineNumber": 93
+        },
+        {
+          "caller": "build",
+          "callee": "toList",
+          "lineNumber": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 3,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/detailed_banner.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 138,
+      "nonEmptyLines": 132,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 33,
+          "endLine": 33,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DetailedBanner",
+          "startLine": 16,
+          "endLine": 27,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "posters",
+            "onSelect"
+          ]
+        },
+        {
+          "name": "_DetailedBannerState",
+          "startLine": 29,
+          "endLine": 138,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "selectedPoster"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "DetailedBanner",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_DetailedBannerState",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "viewSizeOf",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "paddingOf",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 36
+        },
+        {
+          "caller": "build",
+          "callee": "fill",
+          "lineNumber": 39
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "ExcludeFocus",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "translate",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "Offset",
+          "lineNumber": 44
+        },
+        {
+          "caller": "build",
+          "callee": "FractionallySizedBox",
+          "lineNumber": 45
+        },
+        {
+          "caller": "build",
+          "callee": "AspectRatio",
+          "lineNumber": 47
+        },
+        {
+          "caller": "build",
+          "callee": "CustomShaderMask",
+          "lineNumber": 49
+        },
+        {
+          "caller": "build",
+          "callee": "ValueListenableBuilder",
+          "lineNumber": 50
+        },
+        {
+          "caller": "build",
+          "callee": "FladderImage",
+          "lineNumber": 52
+        },
+        {
+          "caller": "build",
+          "callee": "ConstrainedBox",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "BoxConstraints",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "viewSizeOf",
+          "lineNumber": 65
+        },
+        {
+          "caller": "build",
+          "callee": "sizeOf",
+          "lineNumber": 66
+        },
+        {
+          "caller": "build",
+          "callee": "sizeOf",
+          "lineNumber": 67
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 68
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 71
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "Expanded",
+          "lineNumber": 77
+        },
+        {
+          "caller": "build",
+          "callee": "ExcludeFocus",
+          "lineNumber": 78
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 79
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 80
+        },
+        {
+          "caller": "build",
+          "callee": "copyWith",
+          "lineNumber": 80
+        },
+        {
+          "caller": "build",
+          "callee": "FractionallySizedBox",
+          "lineNumber": 81
+        },
+        {
+          "caller": "build",
+          "callee": "viewSizeOf",
+          "lineNumber": 82
+        },
+        {
+          "caller": "build",
+          "callee": "ValueListenableBuilder",
+          "lineNumber": 83
+        },
+        {
+          "caller": "build",
+          "callee": "OverviewHeader",
+          "lineNumber": 85
+        },
+        {
+          "caller": "build",
+          "callee": "label",
+          "lineNumber": 87
+        },
+        {
+          "caller": "build",
+          "callee": "viewSizeOf",
+          "lineNumber": 89
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 92
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 94
+        },
+        {
+          "caller": "build",
+          "callee": "viewSizeOf",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "Builder",
+          "lineNumber": 110
+        },
+        {
+          "caller": "build",
+          "callee": "FocusProvider",
+          "lineNumber": 111
+        },
+        {
+          "caller": "build",
+          "callee": "PosterRow",
+          "lineNumber": 113
+        },
+        {
+          "caller": "build",
+          "callee": "ensureVisible",
+          "lineNumber": 122
+        },
+        {
+          "caller": "build",
+          "callee": "onSelect",
+          "lineNumber": 126
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 131
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/episode_details_list.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 154,
+      "nonEmptyLines": 146,
+      "classes": [
+        {
+          "name": "EpisodeDetailsViewType",
+          "startLine": 15,
+          "endLine": 16,
+          "methods": [],
+          "properties": [
+            "list"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "EpisodeDetailsViewType",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "label",
+          "callee": "switch",
+          "lineNumber": 21
+        },
+        {
+          "caller": "build",
+          "callee": "sizeOf",
+          "lineNumber": 37
+        },
+        {
+          "caller": "build",
+          "callee": "poster",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 39
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 39
+        },
+        {
+          "caller": "build",
+          "callee": "toInt",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 41
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedSwitcher",
+          "lineNumber": 44
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 45
+        },
+        {
+          "caller": "build",
+          "callee": "switch",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "builder",
+          "lineNumber": 47
+        },
+        {
+          "caller": "build",
+          "callee": "NeverScrollableScrollPhysics",
+          "lineNumber": 49
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 55
+        },
+        {
+          "caller": "build",
+          "callee": "EpisodePoster",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 60
+        },
+        {
+          "caller": "build",
+          "callee": "navigateTo",
+          "lineNumber": 61
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 65
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 66
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 68
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 71
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "SelectableText",
+          "lineNumber": 79
+        },
+        {
+          "caller": "build",
+          "callee": "seasonEpisodeLabel",
+          "lineNumber": 80
+        },
+        {
+          "caller": "build",
+          "callee": "SelectableText",
+          "lineNumber": 84
+        },
+        {
+          "caller": "build",
+          "callee": "SelectableText",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 92
+        },
+        {
+          "caller": "build",
+          "callee": "SelectableText",
+          "lineNumber": 94
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "addPadding",
+          "lineNumber": 98
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 98
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 104
+        },
+        {
+          "caller": "build",
+          "callee": "LayoutBuilder",
+          "lineNumber": 106
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 108
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 109
+        },
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 110
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 111
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 112
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 114
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 118
+        },
+        {
+          "caller": "build",
+          "callee": "builder",
+          "lineNumber": 131
+        },
+        {
+          "caller": "build",
+          "callee": "NeverScrollableScrollPhysics",
+          "lineNumber": 134
+        },
+        {
+          "caller": "build",
+          "callee": "SliverGridDelegateWithFixedCrossAxisCount",
+          "lineNumber": 135
+        },
+        {
+          "caller": "build",
+          "callee": "toInt",
+          "lineNumber": 136
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 136
+        },
+        {
+          "caller": "build",
+          "callee": "toInt",
+          "lineNumber": 136
+        },
+        {
+          "caller": "build",
+          "callee": "EpisodePoster",
+          "lineNumber": 143
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 145
+        },
+        {
+          "caller": "build",
+          "callee": "navigateTo",
+          "lineNumber": 146
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/episode_posters.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 408,
+      "nonEmptyLines": 392,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 52,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "episodes",
+          "startLine": 60,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "dispose",
+          "startLine": 69,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 75,
+          "endLine": 75,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 254,
+          "endLine": 254,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "EpisodePosters",
+          "startLine": 28,
+          "endLine": 53,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "episodes",
+            "seasons",
+            "label",
+            "titleActionsPosition",
+            "playEpisode",
+            "contentPadding",
+            "selectedEpisode",
+            "onEpisodeTap",
+            "onFocused"
+          ]
+        },
+        {
+          "name": "_EpisodePosterState",
+          "startLine": 55,
+          "endLine": 227,
+          "methods": [
+            "episodes",
+            "dispose",
+            "build"
+          ],
+          "properties": [
+            "selectedSeason",
+            "seasonFocusNode"
+          ]
+        },
+        {
+          "name": "EpisodePoster",
+          "startLine": 229,
+          "endLine": 408,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "episode",
+            "showLabel",
+            "onTap",
+            "onLongPress",
+            "blur",
+            "actions",
+            "onFocusChanged",
+            "isCurrentEpisode",
+            "heroTag"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "EpisodePosters",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "episodes",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 254,
+          "isDefault": false
+        },
+        {
+          "name": "EpisodePoster",
+          "line": 229,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_EpisodePosterState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "episodes",
+          "callee": "where",
+          "lineNumber": 64
+        },
+        {
+          "caller": "episodes",
+          "callee": "toList",
+          "lineNumber": 64
+        },
+        {
+          "caller": "dispose",
+          "callee": "dispose",
+          "lineNumber": 70
+        },
+        {
+          "caller": "build",
+          "callee": "indexOf",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 80
+        },
+        {
+          "caller": "build",
+          "callee": "firstWhereOrNull",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build",
+          "callee": "season",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 97
+        },
+        {
+          "caller": "build",
+          "callee": "HorizontalList",
+          "lineNumber": 102
+        },
+        {
+          "caller": "build",
+          "callee": "ensureVisible",
+          "lineNumber": 110
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 115
+        },
+        {
+          "caller": "build",
+          "callee": "EnumBox",
+          "lineNumber": 116
+        },
+        {
+          "caller": "build",
+          "callee": "season",
+          "lineNumber": 118
+        },
+        {
+          "caller": "build",
+          "callee": "ItemActionButton",
+          "lineNumber": 121
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 122
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 123
+        },
+        {
+          "caller": "build",
+          "callee": "map",
+          "lineNumber": 125
+        },
+        {
+          "caller": "build",
+          "callee": "ItemActionButton",
+          "lineNumber": 126
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 127
+        },
+        {
+          "caller": "build",
+          "callee": "season",
+          "lineNumber": 127
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 129
+        },
+        {
+          "caller": "build",
+          "callee": "UniqueKey",
+          "lineNumber": 142
+        },
+        {
+          "caller": "build",
+          "callee": "EpisodePoster",
+          "lineNumber": 143
+        },
+        {
+          "caller": "build",
+          "callee": "navigateTo",
+          "lineNumber": 151
+        },
+        {
+          "caller": "build",
+          "callee": "navigateTo",
+          "lineNumber": 157
+        },
+        {
+          "caller": "build",
+          "callee": "showBottomSheetPill",
+          "lineNumber": 160
+        },
+        {
+          "caller": "build",
+          "callee": "ListView",
+          "lineNumber": 164
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 167
+        },
+        {
+          "caller": "build",
+          "callee": "listTileItems",
+          "lineNumber": 167
+        },
+        {
+          "caller": "build",
+          "callee": "toList",
+          "lineNumber": 167
+        },
+        {
+          "caller": "build",
+          "callee": "refreshData",
+          "lineNumber": 171
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 173
+        },
+        {
+          "caller": "build",
+          "callee": "FocusRow",
+          "lineNumber": 179
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 181
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 184
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 187
+        },
+        {
+          "caller": "build",
+          "callee": "SingleChildScrollView",
+          "lineNumber": 188
+        },
+        {
+          "caller": "build",
+          "callee": "Builder",
+          "lineNumber": 190
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 191
+        },
+        {
+          "caller": "build",
+          "callee": "ItemActionButton",
+          "lineNumber": 193
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 195
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 196
+        },
+        {
+          "caller": "build",
+          "callee": "map",
+          "lineNumber": 198
+        },
+        {
+          "caller": "build",
+          "callee": "ItemActionButton",
+          "lineNumber": 199
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 201
+        },
+        {
+          "caller": "build",
+          "callee": "season",
+          "lineNumber": 201
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 203
+        },
+        {
+          "caller": "build",
+          "callee": "groupButtons",
+          "lineNumber": 208
+        },
+        {
+          "caller": "build",
+          "callee": "addInBetween",
+          "lineNumber": 213
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 214
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 255
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 257
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 260
+        },
+        {
+          "caller": "build",
+          "callee": "syncedItemProvider",
+          "lineNumber": 260
+        },
+        {
+          "caller": "build",
+          "callee": "AspectRatio",
+          "lineNumber": 261
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 263
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 267
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 268
+        },
+        {
+          "caller": "build",
+          "callee": "fromLTRB",
+          "lineNumber": 275
+        },
+        {
+          "caller": "build",
+          "callee": "showMenu",
+          "lineNumber": 276
+        },
+        {
+          "caller": "build",
+          "callee": "popupMenuItems",
+          "lineNumber": 276
+        },
+        {
+          "caller": "build",
+          "callee": "Hero",
+          "lineNumber": 278
+        },
+        {
+          "caller": "build",
+          "callee": "UniqueKey",
+          "lineNumber": 279
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 280
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 281
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 283
+        },
+        {
+          "caller": "build",
+          "callee": "FladderImage",
+          "lineNumber": 285
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 290
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 290
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 298
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 300
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 301
+        },
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 302
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 305
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 306
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 307
+        },
+        {
+          "caller": "build",
+          "callee": "label",
+          "lineNumber": 308
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 309
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 317
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 319
+        },
+        {
+          "caller": "build",
+          "callee": "switch",
+          "lineNumber": 322
+        },
+        {
+          "caller": "build",
+          "callee": "AsyncValue",
+          "lineNumber": 323
+        },
+        {
+          "caller": "build",
+          "callee": "Builder",
+          "lineNumber": 323
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 326
+        },
+        {
+          "caller": "build",
+          "callee": "StatusCard",
+          "lineNumber": 328
+        },
+        {
+          "caller": "build",
+          "callee": "SyncButton",
+          "lineNumber": 329
+        },
+        {
+          "caller": "build",
+          "callee": "StatusCard",
+          "lineNumber": 335
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 337
+        },
+        {
+          "caller": "build",
+          "callee": "StatusCard",
+          "lineNumber": 342
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 343
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 344
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 352
+        },
+        {
+          "caller": "build",
+          "callee": "LinearProgressIndicator",
+          "lineNumber": 354
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 356
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 362
+        },
+        {
+          "caller": "build",
+          "callee": "ExcludeFocus",
+          "lineNumber": 363
+        },
+        {
+          "caller": "build",
+          "callee": "Align",
+          "lineNumber": 364
+        },
+        {
+          "caller": "build",
+          "callee": "PopupMenuButton",
+          "lineNumber": 366
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 368
+        },
+        {
+          "caller": "build",
+          "callee": "popupMenuItems",
+          "lineNumber": 372
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 380
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 381
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 384
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 385
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 386
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 389
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 391
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 395
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 396
+        },
+        {
+          "caller": "build",
+          "callee": "episodeLabel",
+          "lineNumber": 397
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 5,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/expanding_text.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 81,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 26,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "toggleState",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 39,
+          "endLine": 39,
+          "params": [
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ExpandingText",
+          "startLine": 12,
+          "endLine": 27,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "text",
+            "showTitle",
+            "onFocusChange",
+            "disableBottomButton"
+          ]
+        },
+        {
+          "name": "_ExpandingTextState",
+          "startLine": 29,
+          "endLine": 89,
+          "methods": [
+            "toggleState",
+            "build"
+          ],
+          "properties": [
+            "expanded"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "ExpandingText",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "toggleState",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_ExpandingTextState",
+          "lineNumber": 26
+        },
+        {
+          "caller": "toggleState",
+          "callee": "setState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "FlatButton",
+          "lineNumber": 45
+        },
+        {
+          "caller": "build",
+          "callee": "ensureVisible",
+          "lineNumber": 54
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedSize",
+          "lineNumber": 57
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 60
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 65
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 67
+        },
+        {
+          "caller": "build",
+          "callee": "HtmlWidget",
+          "lineNumber": 69
+        },
+        {
+          "caller": "build",
+          "callee": "substring",
+          "lineNumber": 70
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 70
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "translate",
+          "lineNumber": 75
+        },
+        {
+          "caller": "build",
+          "callee": "Offset",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "icon",
+          "lineNumber": 77
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 79
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/external_urls.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 104,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 22,
+          "endLine": 22,
+          "params": [
+            "context",
+            "ref"
+          ]
+        },
+        {
+          "name": "launchUrl",
+          "startLine": 52,
+          "endLine": 52,
+          "params": [
+            "context",
+            "link"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ExternalUrlsRow",
+          "startLine": 14,
+          "endLine": 50,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "urls"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "ExternalUrlsRow",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "launchUrl",
+          "line": 52,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 23
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 24
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "StickyHeaderText",
+          "lineNumber": 30
+        },
+        {
+          "caller": "build",
+          "callee": "translate",
+          "lineNumber": 33
+        },
+        {
+          "caller": "build",
+          "callee": "Offset",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build",
+          "callee": "Wrap",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "TextButton",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build",
+          "callee": "launchUrl",
+          "lineNumber": 39
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "toList",
+          "lineNumber": 43
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "parse",
+          "lineNumber": 53
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "of",
+          "lineNumber": 55
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "launchUrl",
+          "lineNumber": 56
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "Exception",
+          "lineNumber": 57
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "of",
+          "lineNumber": 61
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "of",
+          "lineNumber": 62
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "launchUrl",
+          "lineNumber": 63
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "parse",
+          "lineNumber": 64
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "partial",
+          "lineNumber": 65
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "adaptiveSheet",
+          "lineNumber": 66
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "defaults",
+          "lineNumber": 74
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "of",
+          "lineNumber": 75
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "of",
+          "lineNumber": 76
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "customtab",
+          "lineNumber": 80
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "pageSheet",
+          "lineNumber": 84
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "customtab",
+          "lineNumber": 85
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "debugPrint",
+          "lineNumber": 101
+        },
+        {
+          "caller": "launchUrl",
+          "callee": "toString",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/media_banner.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 328,
+      "nonEmptyLines": 310,
+      "functions": [
+        {
+          "name": "createState",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "initState",
+          "startLine": 47,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "dispose",
+          "startLine": 53,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "nextSlide",
+          "startLine": 58,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "previousSlide",
+          "startLine": 71,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "build",
+          "startLine": 85,
+          "endLine": 85,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "animateToTarget",
+          "startLine": 286,
+          "endLine": 286,
+          "params": [
+            "nextIndex"
+          ]
+        },
+        {
+          "name": "paint",
+          "startLine": 307,
+          "endLine": 316,
+          "params": [
+            "context",
+            "offset",
+            "parentBox",
+            "sliderTheme",
+            "enableAnimation",
+            "textDirection",
+            "thumbCenter",
+            "secondaryOffset",
+            "isDiscrete",
+            "isEnabled",
+            "additionalActiveTrackHeight"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MediaBanner",
+          "startLine": 20,
+          "endLine": 34,
+          "methods": [
+            "createState"
+          ],
+          "properties": [
+            "controller",
+            "items",
+            "maxHeight"
+          ]
+        },
+        {
+          "name": "_MediaBannerState",
+          "startLine": 36,
+          "endLine": 303,
+          "methods": [
+            "initState",
+            "dispose",
+            "nextSlide",
+            "previousSlide",
+            "build",
+            "animateToTarget"
+          ],
+          "properties": [
+            "showControls",
+            "interacting",
+            "currentPage",
+            "dragOffset",
+            "dragIntensity",
+            "slidePosition",
+            "timer"
+          ]
+        },
+        {
+          "name": "RoundedTrackShape",
+          "startLine": 305,
+          "endLine": 328,
+          "methods": [
+            "paint"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "createState",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "MediaBanner",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "initState",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "dispose",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "nextSlide",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "previousSlide",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "animateToTarget",
+          "line": 286,
+          "isDefault": false
+        },
+        {
+          "name": "paint",
+          "line": 307,
+          "isDefault": false
+        },
+        {
+          "name": "RoundedTrackShape",
+          "line": 305,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createState",
+          "callee": "_MediaBannerState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "initState",
+          "callee": "reset",
+          "lineNumber": 49
+        },
+        {
+          "caller": "dispose",
+          "callee": "cancel",
+          "lineNumber": 54
+        },
+        {
+          "caller": "nextSlide",
+          "callee": "setState",
+          "lineNumber": 60
+        },
+        {
+          "caller": "nextSlide",
+          "callee": "reset",
+          "lineNumber": 68
+        },
+        {
+          "caller": "previousSlide",
+          "callee": "setState",
+          "lineNumber": 73
+        },
+        {
+          "caller": "previousSlide",
+          "callee": "reset",
+          "lineNumber": 81
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 87
+        },
+        {
+          "caller": "build",
+          "callee": "abs",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 90
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 91
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 92
+        },
+        {
+          "caller": "build",
+          "callee": "ConstrainedBox",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "BoxConstraints",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 97
+        },
+        {
+          "caller": "build",
+          "callee": "RoundedRectangleBorder",
+          "lineNumber": 99
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 99
+        },
+        {
+          "caller": "build",
+          "callee": "MouseRegion",
+          "lineNumber": 102
+        },
+        {
+          "caller": "build",
+          "callee": "reset",
+          "lineNumber": 103
+        },
+        {
+          "caller": "build",
+          "callee": "Stack",
+          "lineNumber": 104
+        },
+        {
+          "caller": "build",
+          "callee": "Dismissible",
+          "lineNumber": 107
+        },
+        {
+          "caller": "build",
+          "callee": "Key",
+          "lineNumber": 108
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 111
+        },
+        {
+          "caller": "build",
+          "callee": "previousSlide",
+          "lineNumber": 117
+        },
+        {
+          "caller": "build",
+          "callee": "nextSlide",
+          "lineNumber": 119
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedOpacity",
+          "lineNumber": 123
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 124
+        },
+        {
+          "caller": "build",
+          "callee": "abs",
+          "lineNumber": 125
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedSwitcher",
+          "lineNumber": 126
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 127
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 128
+        },
+        {
+          "caller": "build",
+          "callee": "Key",
+          "lineNumber": 129
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 131
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 132
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 134
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 135
+        },
+        {
+          "caller": "build",
+          "callee": "all",
+          "lineNumber": 136
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 137
+        },
+        {
+          "caller": "build",
+          "callee": "LinearGradient",
+          "lineNumber": 139
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 143
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 148
+        },
+        {
+          "caller": "build",
+          "callee": "navigateTo",
+          "lineNumber": 149
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 150
+        },
+        {
+          "caller": "build",
+          "callee": "showBottomSheetPill",
+          "lineNumber": 154
+        },
+        {
+          "caller": "build",
+          "callee": "ListView",
+          "lineNumber": 157
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 161
+        },
+        {
+          "caller": "build",
+          "callee": "listTileItems",
+          "lineNumber": 162
+        },
+        {
+          "caller": "build",
+          "callee": "reset",
+          "lineNumber": 166
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 169
+        },
+        {
+          "caller": "build",
+          "callee": "fromLTRB",
+          "lineNumber": 173
+        },
+        {
+          "caller": "build",
+          "callee": "showMenu",
+          "lineNumber": 177
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 180
+        },
+        {
+          "caller": "build",
+          "callee": "popupMenuItems",
+          "lineNumber": 180
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 183
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 186
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 187
+        },
+        {
+          "caller": "build",
+          "callee": "FladderImage",
+          "lineNumber": 188
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 199
+        },
+        {
+          "caller": "build",
+          "callee": "Expanded",
+          "lineNumber": 201
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 202
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 203
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 204
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 208
+        },
+        {
+          "caller": "build",
+          "callee": "IgnorePointer",
+          "lineNumber": 209
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 210
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 214
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 215
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 218
+        },
+        {
+          "caller": "build",
+          "callee": "label",
+          "lineNumber": 223
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 224
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 225
+        },
+        {
+          "caller": "build",
+          "callee": "label",
+          "lineNumber": 226
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 228
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 229
+        },
+        {
+          "caller": "build",
+          "callee": "addInBetween",
+          "lineNumber": 233
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 233
+        },
+        {
+          "caller": "build",
+          "callee": "addInBetween",
+          "lineNumber": 237
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 237
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 241
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 242
+        },
+        {
+          "caller": "build",
+          "callee": "AnimatedOpacity",
+          "lineNumber": 243
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 245
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 246
+        },
+        {
+          "caller": "build",
+          "callee": "filledTonal",
+          "lineNumber": 249
+        },
+        {
+          "caller": "build",
+          "callee": "nextSlide",
+          "lineNumber": 250
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 251
+        },
+        {
+          "caller": "build",
+          "callee": "BannerPlayButton",
+          "lineNumber": 259
+        },
+        {
+          "caller": "build",
+          "callee": "FractionallySizedBox",
+          "lineNumber": 266
+        },
+        {
+          "caller": "build",
+          "callee": "FladderSlider",
+          "lineNumber": 268
+        },
+        {
+          "caller": "build",
+          "callee": "toDouble",
+          "lineNumber": 269
+        },
+        {
+          "caller": "build",
+          "callee": "Duration",
+          "lineNumber": 271
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 273
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 274
+        },
+        {
+          "caller": "build",
+          "callee": "toDouble",
+          "lineNumber": 275
+        },
+        {
+          "caller": "build",
+          "callee": "setState",
+          "lineNumber": 276
+        },
+        {
+          "caller": "build",
+          "callee": "round",
+          "lineNumber": 276
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 280
+        },
+        {
+          "caller": "updateItem",
+          "callee": "delayed",
+          "lineNumber": 289
+        },
+        {
+          "caller": "updateItem",
+          "callee": "Duration",
+          "lineNumber": 289
+        },
+        {
+          "caller": "updateItem",
+          "callee": "abs",
+          "lineNumber": 289
+        },
+        {
+          "caller": "updateItem",
+          "callee": "setState",
+          "lineNumber": 290
+        },
+        {
+          "caller": "updateItem",
+          "callee": "updateItem",
+          "lineNumber": 295
+        },
+        {
+          "caller": "updateItem",
+          "callee": "reset",
+          "lineNumber": 298
+        },
+        {
+          "caller": "animateToTarget",
+          "callee": "updateItem",
+          "lineNumber": 301
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 8,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/people_row.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 109,
+      "nonEmptyLines": 104,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 29,
+          "endLine": 29,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PeopleRow",
+          "startLine": 17,
+          "endLine": 109,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "people",
+            "contentPadding",
+            "onTap"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "PeopleRow",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "placeHolder",
+          "callee": "Center",
+          "lineNumber": 31
+        },
+        {
+          "caller": "placeHolder",
+          "callee": "SizedBox",
+          "lineNumber": 32
+        },
+        {
+          "caller": "placeHolder",
+          "callee": "Container",
+          "lineNumber": 35
+        },
+        {
+          "caller": "placeHolder",
+          "callee": "BoxDecoration",
+          "lineNumber": 36
+        },
+        {
+          "caller": "placeHolder",
+          "callee": "of",
+          "lineNumber": 38
+        },
+        {
+          "caller": "placeHolder",
+          "callee": "withValues",
+          "lineNumber": 38
+        },
+        {
+          "caller": "placeHolder",
+          "callee": "Center",
+          "lineNumber": 40
+        },
+        {
+          "caller": "placeHolder",
+          "callee": "Text",
+          "lineNumber": 41
+        },
+        {
+          "caller": "placeHolder",
+          "callee": "getInitials",
+          "lineNumber": 42
+        },
+        {
+          "caller": "placeHolder",
+          "callee": "of",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "HorizontalList",
+          "lineNumber": 50
+        },
+        {
+          "caller": "build",
+          "callee": "any",
+          "lineNumber": 51
+        },
+        {
+          "caller": "build",
+          "callee": "guestActor",
+          "lineNumber": 53
+        },
+        {
+          "caller": "build",
+          "callee": "poster",
+          "lineNumber": 54
+        },
+        {
+          "caller": "build",
+          "callee": "AspectRatio",
+          "lineNumber": 59
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 61
+        },
+        {
+          "caller": "build",
+          "callee": "Flexible",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 65
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 66
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 68
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 71
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 73
+        },
+        {
+          "caller": "build",
+          "callee": "push",
+          "lineNumber": 73
+        },
+        {
+          "caller": "build",
+          "callee": "MaterialPageRoute",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "PersonDetailScreen",
+          "lineNumber": 75
+        },
+        {
+          "caller": "build",
+          "callee": "FladderImage",
+          "lineNumber": 80
+        },
+        {
+          "caller": "build",
+          "callee": "placeHolder",
+          "lineNumber": 82
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 88
+        },
+        {
+          "caller": "build",
+          "callee": "ClickableText",
+          "lineNumber": 89
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 93
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "ClickableText",
+          "lineNumber": 96
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/person_list_.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 13,
+          "endLine": 13,
+          "params": [
+            "context",
+            "ref"
+          ]
+        },
+        {
+          "name": "openPersonDetailPage",
+          "startLine": 33,
+          "endLine": 33,
+          "params": [
+            "context",
+            "person"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PersonList",
+          "startLine": 6,
+          "endLine": 38,
+          "methods": [
+            "build",
+            "openPersonDetailPage"
+          ],
+          "properties": [
+            "label",
+            "people",
+            "onPersonTap"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "openPersonDetailPage",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "PersonList",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "Wrap",
+          "lineNumber": 14
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 19
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 21
+        },
+        {
+          "caller": "build",
+          "callee": "map",
+          "lineNumber": 24
+        },
+        {
+          "caller": "build",
+          "callee": "TextButton",
+          "lineNumber": 24
+        },
+        {
+          "caller": "build",
+          "callee": "openPersonDetailPage",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 27
+        },
+        {
+          "caller": "openPersonDetailPage",
+          "callee": "of",
+          "lineNumber": 34
+        },
+        {
+          "caller": "openPersonDetailPage",
+          "callee": "push",
+          "lineNumber": 34
+        },
+        {
+          "caller": "openPersonDetailPage",
+          "callee": "MaterialPageRoute",
+          "lineNumber": 34
+        },
+        {
+          "caller": "openPersonDetailPage",
+          "callee": "PersonDetailScreen",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/poster_grid.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 73,
+      "nonEmptyLines": 68,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 22,
+          "endLine": 22,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PosterGrid",
+          "startLine": 12,
+          "endLine": 73,
+          "methods": [
+            "build"
+          ],
+          "properties": [
+            "name",
+            "posters",
+            "itemBuilder",
+            "stickyHeader",
+            "onPressed"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "PosterGrid",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "sizeOf",
+          "lineNumber": 23
+        },
+        {
+          "caller": "build",
+          "callee": "poster",
+          "lineNumber": 24
+        },
+        {
+          "caller": "build",
+          "callee": "watch",
+          "lineNumber": 25
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 25
+        },
+        {
+          "caller": "build",
+          "callee": "toInt",
+          "lineNumber": 26
+        },
+        {
+          "caller": "build",
+          "callee": "builder",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "NeverScrollableScrollPhysics",
+          "lineNumber": 30
+        },
+        {
+          "caller": "build",
+          "callee": "SliverGridDelegateWithFixedCrossAxisCount",
+          "lineNumber": 31
+        },
+        {
+          "caller": "build",
+          "callee": "toInt",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "clamp",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "toInt",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build",
+          "callee": "poster",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build",
+          "callee": "PosterWidget",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build",
+          "callee": "StickyHeader",
+          "lineNumber": 49
+        },
+        {
+          "caller": "build",
+          "callee": "StickyHeaderText",
+          "lineNumber": 51
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 52
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 60
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 62
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/screens/shared/media/poster_list_item.dart",
+      "language": "dart",
+      "fileCategory": "code",
+      "totalLines": 224,
+      "nonEmptyLines": 217,
+      "functions": [
+        {
+          "name": "pressedWidget",
+          "startLine": 46,
+          "endLine": 46,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "build",
+          "startLine": 57,
+          "endLine": 57,
+          "params": [
+            "context",
+            "ref"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PosterListItem",
+          "startLine": 20,
+          "endLine": 224,
+          "methods": [
+            "pressedWidget",
+            "build"
+          ],
+          "properties": [
+            "poster",
+            "selected",
+            "subTitle",
+            "excludeActions",
+            "otherActions",
+            "onPressed",
+            "onUserDataChanged",
+            "onItemUpdated",
+            "onItemRemoved"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pressedWidget",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "build",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "PosterListItem",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pressedWidget",
+          "callee": "navigateTo",
+          "lineNumber": 49
+        },
+        {
+          "caller": "pressedWidget",
+          "callee": "navigateTo",
+          "lineNumber": 52
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 59
+        },
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 60
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 61
+        },
+        {
+          "caller": "build",
+          "callee": "SizedBox",
+          "lineNumber": 62
+        },
+        {
+          "caller": "build",
+          "callee": "read",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "select",
+          "lineNumber": 63
+        },
+        {
+          "caller": "build",
+          "callee": "Container",
+          "lineNumber": 64
+        },
+        {
+          "caller": "build",
+          "callee": "BoxDecoration",
+          "lineNumber": 65
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 66
+        },
+        {
+          "caller": "build",
+          "callee": "withValues",
+          "lineNumber": 66
+        },
+        {
+          "caller": "build",
+          "callee": "circular",
+          "lineNumber": 67
+        },
+        {
+          "caller": "build",
+          "callee": "FocusButton",
+          "lineNumber": 69
+        },
+        {
+          "caller": "build",
+          "callee": "pressedWidget",
+          "lineNumber": 70
+        },
+        {
+          "caller": "build",
+          "callee": "autoFocusOf",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "inputDeviceOf",
+          "lineNumber": 72
+        },
+        {
+          "caller": "build",
+          "callee": "ensureVisible",
+          "lineNumber": 75
+        },
+        {
+          "caller": "build",
+          "callee": "fromLTRB",
+          "lineNumber": 81
+        },
+        {
+          "caller": "build",
+          "callee": "showMenu",
+          "lineNumber": 82
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 86
+        },
+        {
+          "caller": "build",
+          "callee": "popupMenuItems",
+          "lineNumber": 95
+        },
+        {
+          "caller": "build",
+          "callee": "showBottomSheetPill",
+          "lineNumber": 99
+        },
+        {
+          "caller": "build",
+          "callee": "ListView",
+          "lineNumber": 102
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 106
+        },
+        {
+          "caller": "build",
+          "callee": "listTileItems",
+          "lineNumber": 115
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 120
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 121
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 122
+        },
+        {
+          "caller": "build",
+          "callee": "IgnorePointer",
+          "lineNumber": 126
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 127
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 128
+        },
+        {
+          "caller": "build",
+          "callee": "AspectRatio",
+          "lineNumber": 129
+        },
+        {
+          "caller": "build",
+          "callee": "Hero",
+          "lineNumber": 131
+        },
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 133
+        },
+        {
+          "caller": "build",
+          "callee": "FladderImage",
+          "lineNumber": 135
+        },
+        {
+          "caller": "build",
+          "callee": "Expanded",
+          "lineNumber": 143
+        },
+        {
+          "caller": "build",
+          "callee": "Column",
+          "lineNumber": 144
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 149
+        },
+        {
+          "caller": "build",
+          "callee": "Row",
+          "lineNumber": 154
+        },
+        {
+          "caller": "build",
+          "callee": "Spacer",
+          "lineNumber": 158
+        },
+        {
+          "caller": "build",
+          "callee": "ClickableText",
+          "lineNumber": 161
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 167
+        },
+        {
+          "caller": "build",
+          "callee": "Card",
+          "lineNumber": 176
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 177
+        },
+        {
+          "caller": "build",
+          "callee": "Padding",
+          "lineNumber": 178
+        },
+        {
+          "caller": "build",
+          "callee": "EdgeInsets",
+          "lineNumber": 179
+        },
+        {
+          "caller": "build",
+          "callee": "Text",
+          "lineNumber": 180
+        },
+        {
+          "caller": "build",
+          "callee": "page",
+          "lineNumber": 181
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 182
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 183
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 188
+        },
+        {
+          "caller": "build",
+          "callee": "of",
+          "lineNumber": 192
+        },
+        {
+          "caller": "build",
+          "callee": "Tooltip",
+          "lineNumber": 193
+        },
+        {
+          "caller": "build",
+          "callee": "PopupMenuButton",
+          "lineNumber": 195
+        },
+        {
+          "caller": "build",
+          "callee": "Icon",
+          "lineNumber": 197
+        },
+        {
+          "caller": "build",
+          "callee": "generateActions",
+          "lineNumber": 202
+        },
+        {
+          "caller": "build",
+          "callee": "popupMenuItems",
+          "lineNumber": 211
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    }
+  ]
+}
