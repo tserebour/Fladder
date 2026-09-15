@@ -108,6 +108,14 @@ class LibMPV extends BasePlayer {
         await nativePlayer.setProperty('ao', 'audiotrack');
       }
 
+      if (defaultTargetPlatform == TargetPlatform.linux) {
+        if (settings.hardwareAccel) {
+          await nativePlayer.setProperty('hwdec', 'vaapi');
+        } else {
+          await nativePlayer.setProperty('hwdec', 'no');
+        }
+      }
+
       setupAudioSession();
     }
 
@@ -193,6 +201,13 @@ class LibMPV extends BasePlayer {
       await native.setProperty('gapless-audio', 'weak');
       if (defaultTargetPlatform == TargetPlatform.android) {
         await native.setProperty('ao', 'audiotrack');
+      }
+      if (defaultTargetPlatform == TargetPlatform.linux) {
+        if (_settings.hardwareAccel) {
+          await native.setProperty('hwdec', 'vaapi');
+        } else {
+          await native.setProperty('hwdec', 'no');
+        }
       }
       await native.setProperty('start', '${startPosition.inMilliseconds / 1000}');
     }
